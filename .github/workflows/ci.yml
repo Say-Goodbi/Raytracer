@@ -1,0 +1,46 @@
+name: Publisher
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  build:
+    name: Build
+    if: github.repository == 'Say-Goodbi/Raytracer'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm run build
+  test:
+      name: Test
+      runs-on: ubuntu-latest
+      needs: build
+      steps:
+          - name: check
+            uses: actions/checkout@v4
+            with:
+              fetch-depth: 0
+          - name: test
+            run: npm run test
