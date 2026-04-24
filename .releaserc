@@ -1,0 +1,28 @@
+{
+    "branches": [
+        "main"
+    ],
+    "plugins": [
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                "preset": "conventionalcommits"
+            }
+        ],
+        "@semantic-release/release-notes-generator",
+        "@semantic-release/changelog",
+        [
+            "@semantic-release/git",
+            {
+                "assets": [
+                    "CHANGELOG.md"
+                ]
+            }
+        ],
+        "@semantic-release/github"
+    ],
+    "ci": true,
+    "dry-run": true,
+    "debug": true,
+    "preset": "angular"
+}
