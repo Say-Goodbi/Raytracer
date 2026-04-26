@@ -44,3 +44,37 @@ jobs:
               fetch-depth: 0
           - name: test
             run: npm run test
+  push_to_mirror:
+      name: Push to mirror
+      runs-on: ubuntu-latest
+      needs: test
+      steps:
+          - name: check
+            uses: actions/checkout@v4
+            with:
+              fetch-depth: 0
+          - name: mirror
+            uses: pixta-dev/repository-mirroring-action@v1
+            with:
+              target_repo_url: git@github.com:EpitechPGE2-2025/G-OOP-400-RUN-4-1-raytracer-6.git
+              ssh_private_key: ${{secrets.GIT_SSH_PRIVATE_KEY}}
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs: push_to_mirror
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run semantic-release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
