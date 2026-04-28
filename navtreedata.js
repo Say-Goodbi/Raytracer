@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Arcade", "index.html", [
+  [ "Raytracer", "index.html", [
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
