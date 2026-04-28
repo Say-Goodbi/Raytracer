@@ -1,3 +1,15 @@
 node_modules/
 commitlint.config.js
 .husky/
+
+*.o
+*.so
+not-to-push
+lib*
+Makefile
+.vscode
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+build
+dev-local
