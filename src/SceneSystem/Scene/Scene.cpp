@@ -1,0 +1,29 @@
+#include "Scene.hpp"
+
+namespace RayTracer
+{
+    Scene::Scene(Camera camera) : _camera(camera)
+    {
+    }
+
+    void Scene::addPrimitive(std::unique_ptr<IPrimitive> primitive)
+    {
+        this->_primitives.push_back(std::move(primitive));
+    }
+
+    std::vector<std::unique_ptr<IPrimitive>>& Scene::getPrimitives()
+    {
+        return this->_primitives;
+    }
+
+    void Scene::addLight(std::unique_ptr<ILight> light)
+    {
+        this->_lights.push_back(std::move(light));
+    }
+
+    std::vector<std::unique_ptr<ILight>>& Scene::getLights()
+    {
+        return this->_lights;
+    }
+
+} // namespace RayTracer
