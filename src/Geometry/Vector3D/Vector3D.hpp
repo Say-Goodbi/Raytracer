@@ -18,6 +18,7 @@ namespace Geometry
         double length(void);
 
         static double dot(const Vector3D &v1, const Vector3D &v2);
+        double dot(const Vector3D &other) const;
         static Vector3D cross(const Vector3D &a, const Vector3D &b);
         Vector3D normalize() const;
 
