@@ -4,12 +4,13 @@
 
 namespace Geometry
 {
+    /// Represents a 3D point in space.
     class Point3D
     {
     public:
-        double x;
-        double y;
-        double z;
+        double x;  ///< X coordinate
+        double y;  ///< Y coordinate
+        double z;  ///< Z coordinate
 
         Point3D(void) : x(0), y(0), z(0) {}
         Point3D(double x, double y, double z) : x(x), y(y), z(z) {}

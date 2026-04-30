@@ -1,0 +1,149 @@
+/** \mainpage Raytracer Manual
+
+\section intro Introduction
+
+This is a modular, plugin-oriented raytracing engine built in C++. It separates concerns across geometry, primitives, materials, and rendering, allowing extensibility through plugins while maintaining a clean separation of ray-casting logic from output handling.
+
+\section folders Folder Organization
+
+The repository is organized to separate project-level artifacts from core source code and runtime plugins. High-level folders:
+
+- `dev/` : Development helpers, scripts, and contribution guides.
+- `docs/` : Documentation sources (Doxygen input, guides).
+- `src/` : Primary C++ source tree (see grouping below).
+
+Within `src/` the code is grouped by concern to make navigation and extension predictable:
+
+- `Exceptions/` : Custom exception types (domain errors, runtime problems).
+- `Geometry/` : Fundamental math and geometric primitives (Point3D, Vector3D, Ray, Rectangle3D, HitRecord).
+- `Objects/` : Public object model and plugin boundaries.
+  - `Abstracts/` : Core abstract classes and interfaces (APrimitive, ARenderer, AInterface, IMaterial, ILight).
+  - `Plugins/` : Plugin implementations and plugin-facing folders (Interfaces, Lights, Materials, Primitives, Renderers).
+- `PluginManager/` : Loader and factory utilities for runtime plugins.
+- `SceneSystem/` : Scene composition and IO (Scene, SceneLoader, ConfigParser).
+- `Utils/` : Small helpers (Color, logging helpers, etc.).
+
+Grouping rationale: source is split so that algorithmic, data, and external/IO concerns live in separate folders. `Objects/Abstracts` declares extension points; `Objects/Plugins` and `PluginManager` provide runtime extensibility without changing core logic.
+
+\section architecture Architecture Overview
+
+The architecture is built on several core abstractions:
+
+\subsection arch_renderer Rendering Pipeline: ARenderer → Camera
+
+ARenderer is the abstract base for all renderers. It defines the interface:
+- \ref RayTracer::ARenderer::render "render()" — produces a 2D framebuffer
+
+\ref RayTracer::Camera "Camera" is the concrete implementation of \ref RayTracer::ARenderer "ARenderer". It:
+- Holds camera position, direction, and field-of-view (FOV)
+- Generates rays for each pixel via \ref RayTracer::Camera::generateRay "generateRay()"
+- Casts rays into the scene and computes colors via \ref RayTracer::Camera::castRay "castRay()"
+- Handles shadow computation via \ref RayTracer::Camera::computeShadow "computeShadow()"
+- Returns the fully rendered framebuffer (without writing it)
+
+**Why: Separating the renderer abstraction from output writing allows different rendering strategies (e.g., ray-tracing, path-tracing) and different output formats without duplication.
+
+\subsection arch_interface Output Pipeline: AInterface → SceneWriter
+
+\ref RayTracer::AInterface "AInterface" owns an \ref RayTracer::ARenderer "ARenderer"* and coordinates the overall application flow.
+
+\ref RayTracer::SceneWriter "SceneWriter" is a concrete \ref RayTracer::AInterface "AInterface" that:
+- Takes a \ref RayTracer::Camera "Camera" (\ref RayTracer::ARenderer "ARenderer") and output filename
+- Calls \ref RayTracer::ARenderer::render "render()" to get the framebuffer
+- Writes the framebuffer to a PPM file
+- Can be replaced by other interfaces (game loops, real-time viewers, etc.)
+
+**Why: Output handling is separate from rendering—the renderer stays stateless and doesn't know about I/O.
+
+\subsection arch_scene Scene Graph
+
+\ref RayTracer::Scene "Scene" holds:
+- A \ref RayTracer::Camera "Camera" (the active renderer)
+- A list of primitives (shapes to render)
+- A list of lights (light sources)
+
+\ref SceneLoader (planned) will parse scene descriptions and populate scenes programmatically.
+
+\subsection arch_geometry Geometry
+
+Core geometric types in the Geometry namespace:
+- \ref Geometry::Point3D "Point3D" — a 3D position
+- \ref Geometry::Vector3D "Vector3D" — a 3D direction/magnitude; supports normalize(), length(), dot, cross
+- \ref Geometry::Ray "Ray" — origin + direction, the fundamental unit cast through the scene
+- \ref Geometry::Rectangle3D "Rectangle3D" — planar screen surface (defined by two edge vectors)
+- \ref Geometry::HitRecord "HitRecord" — records intersection data: point, surface normal, ray distance, material
+
+\subsection arch_primitives Primitives: Objects & Materials
+
+\ref RayTracer::APrimitive "APrimitive" is the abstract shape base. Subclasses:
+- \ref RayTracer::Plane "Plane" — infinite flat surface
+- \ref RayTracer::Sphere "Sphere" — sphere (planned)
+
+Each primitive:
+- Stores an \ref RayTracer::IMaterial "IMaterial"* pointer
+- Implements \ref RayTracer::APrimitive::hit "hit()" to test ray–primitive intersection (returns an optional \ref Geometry::HitRecord "HitRecord")
+- Via \ref RayTracer::APrimitive::getMaterial "getMaterial()", provides shading instructions
+
+\ref RayTracer::IMaterial "IMaterial" defines shading behavior:
+- \ref RayTracer::IMaterial::computeColor "computeColor()" — computes pixel color given an intersection and lights
+
+\ref RayTracer::FlatColor "FlatColor" is a simple material that returns a constant RGB value.
+
+**Why: Decoupling geometry from appearance (material) allows reuse and runtime material swapping.
+
+\subsection arch_lights Lights
+
+\ref RayTracer::ILight "ILight" is the light abstraction:
+- \ref RayTracer::ILight::getPosition "getPosition()" → \ref Geometry::Point3D "Point3D" (e.g., point light position)
+- \ref RayTracer::ILight::computeContribution "computeContribution()" — computes light's effect at a hit point
+
+Lights are stored in the Scene and referenced during shading computations.
+
+\subsection arch_plugins Plugin System
+
+Plugins are compiled as separate dynamic libraries (.so) and can provide:
+- \ref RayTracer::APrimitive "APrimitive" subclasses — custom shapes
+- \ref RayTracer::IMaterial "IMaterial" subclasses — custom shaders
+- \ref RayTracer::ILight "ILight" subclasses — custom light types
+- \ref RayTracer::ARenderer "ARenderer" subclasses — alternative renderers (e.g., path-tracer)
+- \ref RayTracer::AInterface "AInterface" subclasses — application backends (game loop, network streaming, etc.)
+
+
+\ref PluginLoader handles runtime .so loading.
+\ref PrimitiveFactory instantiates plugins on demand.
+
+\section pipeline Rendering Pipeline
+
+1. User creates a Scene with Camera, primitives, and lights
+2. Create a Camera (ARenderer instance) with resolution and view parameters
+3. Wrap it in a SceneWriter (AInterface) with output path
+4. Call `sceneWriter->execute(scene)`
+5. SceneWriter calls `camera->render(scene)`:
+   - For each pixel (x, y):
+     - Generate normalized coordinates (u, v)
+     - Generate a ray via `camera->generateRay(u, v)`
+     - Cast the ray: `castRay(ray, scene)` returns a Color
+   - For each ray, find the closest primitive intersection
+   - If hit, compute shadow from lights, fetch material, shade via `material->computeColor()`
+   - Return 2D framebuffer
+6. SceneWriter writes framebuffer to PPM file
+
+\section design Design Rationale
+
+- **Abstraction hierarchy** — ARenderer, AInterface, APrimitive, IMaterial, ILight provide clear extension points
+- **Immutable rendering** — `render()` returns a framebuffer; no side effects
+- **Separation of concerns** — rendering logic (Camera) is independent of I/O (SceneWriter)
+- **Plugin architecture** — allows closed-source or experimental code without modifying core
+- **No output in Camera** — the Camera class is a pure filter; output is delegated
+
+\section future Future Enhancements
+
+- Path tracing (ARenderer subclass)
+- Spheres and complex primitives
+- Texture mapping (IMaterial extensions)
+- Spatial acceleration structures (BVH, KD-trees)
+- Parallel rendering (multithreaded Camera)
+- Real-time viewer (AInterface subclass)
+- Network rendering (distributed AInterface)
+
+*/
