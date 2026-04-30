@@ -30,10 +30,9 @@ namespace Geometry
         ~Ray() = default;
 
         Ray(const Geometry::Point3D& origin, const Geometry::Vector3D& direction) : origin(origin), direction(direction) {}
-
+        Point3D at(float t) const;
         Geometry::Point3D origin;
         Geometry::Vector3D direction;
-
 
     };
 } // namespace Geometry
