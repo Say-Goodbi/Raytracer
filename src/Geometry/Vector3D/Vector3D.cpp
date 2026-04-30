@@ -17,6 +17,11 @@ namespace Geometry
         return (v1.x * v2.x) + (v1.y * v2.y) + (v1.z * v2.z);
     }
 
+    double Vector3D::dot(const Vector3D &other) const
+    {
+        return (x * other.x) + (y * other.y) + (z * other.z);
+    }
+
     Vector3D Vector3D::cross(const Vector3D &a, const Vector3D &b)
     {
         return Vector3D(
