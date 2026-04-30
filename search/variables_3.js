@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['point_0',['point',['../structGeometry_1_1HitRecord.html#a0c28780afbc6189a0ec44eb9f6d2ffdb',1,'Geometry::HitRecord']]]
+  ['g_0',['g',['../structRayTracer_1_1Color.html#a2867dd8ad913426dfa277ffb141241dc',1,'RayTracer::Color']]]
 ];

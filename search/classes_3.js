@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector3d_0',['Vector3D',['../classGeometry_1_1Vector3D.html',1,'Geometry']]]
+  ['flatcolor_0',['FlatColor',['../classRayTracer_1_1FlatColor.html',1,'RayTracer']]]
 ];

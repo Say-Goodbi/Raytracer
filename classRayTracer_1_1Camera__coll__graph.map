@@ -1,0 +1,11 @@
+<map id="RayTracer::Camera" name="RayTracer::Camera">
+<area shape="rect" id="Node000001" title=" " alt="" coords="123,576,260,701"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html" title=" " alt="" coords="23,65,160,291"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="37,292,20,345,10,402,11,459,17,486,27,512,43,537,63,559,111,595,107,599,60,563,39,540,23,515,12,487,6,459,4,401,15,344,32,290"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Rectangle3D.html" title=" " alt="" coords="107,428,276,513"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="117,290,134,347,154,403,159,412,154,414,149,405,129,349,112,292"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html" title=" " alt="" coords="191,5,336,351"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="305,351,306,433,301,474,290,514,279,540,264,564,259,561,274,538,285,512,295,473,301,433,299,351"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="224,352,209,413,203,411,219,350"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="194,514,194,559,189,559,189,514"/>
+</map>

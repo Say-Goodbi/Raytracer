@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['point3d_0',['Point3D',['../classGeometry_1_1Point3D.html',1,'Geometry']]]
+  ['camera_0',['Camera',['../classRayTracer_1_1Camera.html',1,'RayTracer']]],
+  ['color_1',['Color',['../structRayTracer_1_1Color.html',1,'RayTracer']]]
 ];

@@ -1,4 +1,17 @@
 var searchData=
 [
-  ['geometry_0',['Geometry',['../namespaceGeometry.html',1,'']]]
+  ['camera_0',['camera',['../classRayTracer_1_1Camera.html',1,'RayTracer::Camera'],['../classRayTracer_1_1Camera.html#aced106cacf1ffe15f14e4bf730e51d67',1,'RayTracer::Camera::Camera()']]],
+  ['camera_2ecpp_1',['Camera.cpp',['../Camera_8cpp.html',1,'']]],
+  ['camera_2ehpp_2',['Camera.hpp',['../Camera_8hpp.html',1,'']]],
+  ['castray_3',['castRay',['../classRayTracer_1_1Renderer.html#a38c79cb50671c8455193ab0669d674f2',1,'RayTracer::Renderer']]],
+  ['color_4',['color',['../structRayTracer_1_1Color.html',1,'RayTracer::Color'],['../structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d',1,'RayTracer::Color::Color(double r, double g, double b)'],['../structRayTracer_1_1Color.html#afa5432590a85b4f39279dc5c84d66c0f',1,'RayTracer::Color::Color()'],['../structRayTracer_1_1Color.html#abee709d919baf85b9c3d1197830957a0',1,'RayTracer::Color::Color(const Color &amp;color)=default']]],
+  ['color_2ecpp_5',['Color.cpp',['../Color_8cpp.html',1,'']]],
+  ['color_2ehpp_6',['Color.hpp',['../Color_8hpp.html',1,'']]],
+  ['color_3a_3aclamp_7',['clamp',['../structRayTracer_1_1Color.html#ae749f3583bffdf5596744257593d35e6',1,'RayTracer::Color']]],
+  ['computecolor_8',['computecolor',['../classRayTracer_1_1FlatColor.html#ab7205bfa4aeee11eecb7d14698658972',1,'RayTracer::FlatColor::computeColor()'],['../classRayTracer_1_1IMaterial.html#a18c2601138a3f78d3f6ceb3d0c713a38',1,'RayTracer::IMaterial::computeColor()']]],
+  ['computecontribution_9',['computeContribution',['../classRayTracer_1_1ILight.html#aa0498718fee2e18cf30ea68ab7b2eaa6',1,'RayTracer::ILight']]],
+  ['computeshadow_10',['computeShadow',['../classRayTracer_1_1Renderer.html#a395756fccedaadd3032dc2ad42594c21',1,'RayTracer::Renderer']]],
+  ['core_2ecpp_11',['Core.cpp',['../Core_8cpp.html',1,'']]],
+  ['core_2ehpp_12',['Core.hpp',['../Core_8hpp.html',1,'']]],
+  ['cross_13',['cross',['../classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112',1,'Geometry::Vector3D']]]
 ];

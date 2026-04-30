@@ -3,6 +3,7 @@ var classGeometry_1_1Vector3D =
     [ "Vector3D", "classGeometry_1_1Vector3D.html#a3ae71c5188cb20556a1ec9b617fe8633", null ],
     [ "Vector3D", "classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d", null ],
     [ "~Vector3D", "classGeometry_1_1Vector3D.html#a6e51eece8caef13d9a403704f05f5482", null ],
+    [ "dot", "classGeometry_1_1Vector3D.html#affb9009fe58aafa334f1f5f703feceb3", null ],
     [ "length", "classGeometry_1_1Vector3D.html#ae2861f32c5661f184b655cf412e38b91", null ],
     [ "length", "classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c", null ],
     [ "normalize", "classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7", null ],

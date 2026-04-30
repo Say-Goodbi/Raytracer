@@ -1,0 +1,7 @@
+<map id="Geometry::Point3D::Point3D" name="Geometry::Point3D::Point3D">
+<area shape="rect" id="Node000001" title=" " alt="" coords="231,37,384,77"/>
+<area shape="rect" id="Node000002" href="$structGeometry_1_1HitRecord.html#ad9acc63a4529cd9a6855703c8acd1468" title=" " alt="" coords="15,5,173,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,46,173,40,174,35,218,41"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Rectangle3D.html#a2d143a0f3469df16a3e20011d382b6ef" title=" " alt="" coords="5,69,183,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,73,183,79,182,73,217,68"/>
+</map>

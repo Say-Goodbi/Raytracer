@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ray_0',['Ray',['../classGeometry_1_1Ray.html',1,'Geometry']]]
+  ['exception_0',['Exception',['../classRayTracer_1_1Exception.html',1,'RayTracer']]]
 ];

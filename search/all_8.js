@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['operator_2a_0',['operator*',['../classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62',1,'Geometry::Vector3D::operator*(double scalar) const'],['../classGeometry_1_1Vector3D.html#a2b061b80e0fb7144c2fdcf4aa9ba73bf',1,'Geometry::Vector3D::operator*(const Vector3D &amp;other) const']]],
-  ['operator_2a_3d_1',['operator*=',['../classGeometry_1_1Vector3D.html#aa26fa71f9f88ff66de210a75b10b0b47',1,'Geometry::Vector3D::operator*=(const Vector3D &amp;other)'],['../classGeometry_1_1Vector3D.html#a44855fcb4b5d49783f351c0da9366ef2',1,'Geometry::Vector3D::operator*=(double scalar)']]],
-  ['operator_2b_2',['operator+',['../classGeometry_1_1Point3D.html#a59644f9fa320bfc8f33e3761fd7577b0',1,'Geometry::Point3D::operator+()'],['../classGeometry_1_1Vector3D.html#a374498ca7780e4ff496e56d58424e111',1,'Geometry::Vector3D::operator+()']]],
-  ['operator_2b_3d_3',['operator+=',['../classGeometry_1_1Point3D.html#a6dbe50f0c19b4d98cb44c4abb00d078a',1,'Geometry::Point3D::operator+=()'],['../classGeometry_1_1Vector3D.html#a471cc97de30a83357dd993f470af3374',1,'Geometry::Vector3D::operator+=()']]],
-  ['operator_2d_4',['operator-',['../classGeometry_1_1Point3D.html#a317d081effd79290e9d5e314ee335484',1,'Geometry::Point3D::operator-()'],['../classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0',1,'Geometry::Vector3D::operator-()'],['../classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f',1,'Geometry::Point3D::operator-()']]],
-  ['operator_2d_3d_5',['operator-=',['../classGeometry_1_1Vector3D.html#a65d5104c0ddee5535b570944bf739b32',1,'Geometry::Vector3D']]],
-  ['operator_2f_6',['operator/',['../classGeometry_1_1Vector3D.html#ae922fd3535e26ab859ab96c63c67dace',1,'Geometry::Vector3D::operator/(const Vector3D &amp;other) const'],['../classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162',1,'Geometry::Vector3D::operator/(double scalar) const']]],
-  ['operator_2f_3d_7',['operator/=',['../classGeometry_1_1Vector3D.html#a052103425c5a4830dc3ff897ec40187b',1,'Geometry::Vector3D::operator/=(const Vector3D &amp;other)'],['../classGeometry_1_1Vector3D.html#a568d9aad9501935468306c59626735be',1,'Geometry::Vector3D::operator/=(double scalar)']]],
-  ['origin_8',['origin',['../classGeometry_1_1Ray.html#a07aeac3db3b6550db58351c7d090db6f',1,'Geometry::Ray']]]
+  ['height_0',['height',['../classGeometry_1_1Rectangle3D.html#af19a1a8bffed0145659d7df60921ea45',1,'Geometry::Rectangle3D']]],
+  ['hit_1',['hit',['../classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916',1,'RayTracer::Plane::hit()'],['../classRayTracer_1_1IPrimitive.html#aadd13951bb4244967d4d7ce8ce277b87',1,'RayTracer::IPrimitive::hit()']]],
+  ['hitrecord_2',['hitrecord',['../structGeometry_1_1HitRecord.html',1,'Geometry::HitRecord'],['../structGeometry_1_1HitRecord.html#ad9acc63a4529cd9a6855703c8acd1468',1,'Geometry::HitRecord::HitRecord()'],['../structGeometry_1_1HitRecord.html#a158d2c230c1851a8f6bc0e79dc4b12b5',1,'Geometry::HitRecord::HitRecord(const Point3D &amp;point, const Vector3D &amp;normal, float rayDistance, RayTracer::IMaterial *material)']]],
+  ['hitrecord_2ehpp_3',['HitRecord.hpp',['../HitRecord_8hpp.html',1,'']]]
 ];

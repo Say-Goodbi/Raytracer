@@ -1,5 +1,11 @@
 <map id="Geometry::Vector3D::length" name="Geometry::Vector3D::length">
-<area shape="rect" id="Node000001" title=" " alt="" coords="207,5,360,45"/>
-<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="5,5,159,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="408,69,561,109"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a03327345da53e7386d79d4796803f670" title=" " alt="" coords="207,5,360,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="407,68,346,48,348,43,409,63"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#afc91f068710471bce8c1bfb55bf5427f" title=" " alt="" coords="207,69,360,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="394,92,360,92,360,87,394,87"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="207,133,360,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="409,116,348,136,346,131,407,111"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title=" " alt="" coords="5,133,159,173"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="193,156,159,156,159,151,193,151"/>
 </map>

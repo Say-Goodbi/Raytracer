@@ -1,0 +1,11 @@
+<map id="RayTracer::Plane" name="RayTracer::Plane">
+<area shape="rect" id="Node000001" title=" " alt="" coords="269,413,392,539"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1IPrimitive.html" title=" " alt="" coords="5,125,155,231"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,242,133,297,169,349,218,397,271,436,267,440,214,401,165,352,129,299,102,245"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Point3D.html" title=" " alt="" coords="179,65,317,291"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,290,312,397,306,398,277,292"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html" title=" " alt="" coords="341,5,486,351"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="375,352,364,390,361,399,356,397,359,389,370,350"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1IMaterial.html" title=" " alt="" coords="511,135,655,221"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="571,222,543,286,524,321,501,352,456,396,408,433,404,428,453,392,497,349,519,318,538,284,566,220"/>
+</map>

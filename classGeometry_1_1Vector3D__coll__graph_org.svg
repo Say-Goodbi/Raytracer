@@ -31,16 +31,16 @@
 <text text-anchor="start" x="10" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="28.5" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">length()</text>
 <text text-anchor="start" x="10" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">normalize()</text>
+<text text-anchor="start" x="28.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">dot()</text>
 <text text-anchor="start" x="10" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.5" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+()</text>
+<text text-anchor="start" x="28.5" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">normalize()</text>
 <text text-anchor="start" x="10" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+=()</text>
+<text text-anchor="start" x="28.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+()</text>
 <text text-anchor="start" x="10" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;()</text>
+<text text-anchor="start" x="28.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+=()</text>
 <text text-anchor="start" x="10" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;=()</text>
-<text text-anchor="start" x="28.5" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
+<text text-anchor="start" x="28.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;()</text>
+<text text-anchor="start" x="28.5" y="-36.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 9 more...</text>
 <text text-anchor="start" x="10" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="28.5" y="-21.5" font-family="Helvetica,sans-Serif" font-size="10.00">dot()</text>
 <text text-anchor="start" x="10" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

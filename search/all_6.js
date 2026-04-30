@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['length_0',['length',['../classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c',1,'Geometry::Vector3D::length(void) const'],['../classGeometry_1_1Vector3D.html#ae2861f32c5661f184b655cf412e38b91',1,'Geometry::Vector3D::length(void)']]]
+  ['flatcolor_0',['flatcolor',['../classRayTracer_1_1FlatColor.html',1,'RayTracer::FlatColor'],['../classRayTracer_1_1FlatColor.html#a2f06ed553959604918de3f7f410ca5d9',1,'RayTracer::FlatColor::FlatColor()']]]
 ];

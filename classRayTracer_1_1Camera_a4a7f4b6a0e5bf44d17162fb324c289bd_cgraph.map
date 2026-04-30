@@ -1,0 +1,16 @@
+<map id="RayTracer::Camera::generateRay" name="RayTracer::Camera::generateRay">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,78,159,118"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc" title=" " alt="" coords="220,5,371,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,75,206,48,245,33,247,38,208,52,135,80"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="432,46,585,86"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,90,418,70,419,75,159,95"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="219,106,372,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,105,205,112,205,117,158,111"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0" title=" " alt="" coords="207,171,384,211"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="124,116,208,156,227,164,225,169,206,160,121,120"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="367,103,423,87,424,92,368,108"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" title=" " alt="" coords="432,110,585,150"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="372,125,418,126,418,131,372,130"/>
+<area shape="rect" id="Node000007" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="432,174,585,214"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="384,190,418,190,418,196,384,195"/>
+</map>

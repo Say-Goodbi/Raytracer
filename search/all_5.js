@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['imaterial_2ehpp_0',['IMaterial.hpp',['../IMaterial_8hpp.html',1,'']]],
-  ['iprimitive_2ehpp_1',['IPrimitive.hpp',['../IPrimitive_8hpp.html',1,'']]]
+  ['exception_0',['exception',['../classRayTracer_1_1Exception.html',1,'RayTracer::Exception'],['../classRayTracer_1_1Exception.html#a38a72155e42ddf63565d220b67a73dae',1,'RayTracer::Exception::Exception()']]]
 ];

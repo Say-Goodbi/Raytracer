@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['vector3d_0',['vector3d',['../classGeometry_1_1Vector3D.html',1,'Geometry::Vector3D'],['../classGeometry_1_1Vector3D.html#a3ae71c5188cb20556a1ec9b617fe8633',1,'Geometry::Vector3D::Vector3D(void)'],['../classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d',1,'Geometry::Vector3D::Vector3D(double x, double y, double z)']]],
-  ['vector3d_2ecpp_1',['Vector3D.cpp',['../Vector3D_8cpp.html',1,'']]],
-  ['vector3d_2ehpp_2',['Vector3D.hpp',['../Vector3D_8hpp.html',1,'']]]
+  ['normal_0',['normal',['../structGeometry_1_1HitRecord.html#a6bfe1027d90cfa0b6ed23f198e88a666',1,'Geometry::HitRecord']]],
+  ['normalize_1',['normalize',['../classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7',1,'Geometry::Vector3D']]]
 ];

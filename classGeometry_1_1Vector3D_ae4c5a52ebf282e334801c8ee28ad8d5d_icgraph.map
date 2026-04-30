@@ -1,21 +1,26 @@
 <map id="Geometry::Vector3D::Vector3D" name="Geometry::Vector3D::Vector3D">
-<area shape="rect" id="Node000001" title=" " alt="" coords="207,261,360,301"/>
-<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112" title=" " alt="" coords="5,5,159,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,249,253,207,229,156,197,105,157,59,141,48,144,43,160,55,201,101,233,154,258,205,274,247"/>
-<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="5,69,159,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,251,219,187,190,153,157,123,138,112,141,107,160,119,194,150,223,184,266,248"/>
-<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html#a2b061b80e0fb7144c2fdcf4aa9ba73bf" title=" " alt="" coords="5,133,159,173"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,254,206,220,157,188,134,176,137,171,160,183,209,216,251,250"/>
-<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="5,197,159,237"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="206,260,145,240,146,235,207,255"/>
-<area shape="rect" id="Node000006" href="$classGeometry_1_1Vector3D.html#a374498ca7780e4ff496e56d58424e111" title=" " alt="" coords="5,261,159,301"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="193,284,159,284,159,279,193,279"/>
-<area shape="rect" id="Node000007" href="$classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f" title=" " alt="" coords="5,325,159,365"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="207,308,146,328,145,323,206,303"/>
-<area shape="rect" id="Node000008" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="5,389,159,429"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="251,313,209,347,160,380,137,392,134,387,157,375,206,342,248,308"/>
-<area shape="rect" id="Node000009" href="$classGeometry_1_1Vector3D.html#ae922fd3535e26ab859ab96c63c67dace" title=" " alt="" coords="5,453,159,493"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="266,315,223,379,194,413,160,443,141,455,138,451,157,439,190,409,219,376,262,312"/>
-<area shape="rect" id="Node000010" href="$classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162" title=" " alt="" coords="5,517,159,557"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="274,315,258,358,233,409,201,461,160,507,144,519,141,515,157,503,197,458,229,407,253,356,269,314"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="409,280,563,320"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112" title=" " alt="" coords="208,5,361,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="472,268,456,224,432,170,400,115,359,66,334,48,338,43,363,62,404,112,437,168,461,222,477,266"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title=" " alt="" coords="6,92,159,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="472,268,456,228,433,184,401,142,382,125,360,110,311,92,258,86,206,87,159,95,158,89,206,82,259,80,312,87,363,106,385,121,405,139,437,181,461,226,477,266"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="208,120,361,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="459,271,416,222,360,174,339,162,342,158,363,170,419,218,463,268"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#a2b061b80e0fb7144c2fdcf4aa9ba73bf" title=" " alt="" coords="208,184,361,224"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="435,276,360,238,334,227,336,222,362,234,437,271"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="208,248,361,288"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="395,288,361,283,362,278,396,283"/>
+<area shape="rect" id="Node000007" href="$classGeometry_1_1Vector3D.html#a374498ca7780e4ff496e56d58424e111" title=" " alt="" coords="208,312,361,352"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="396,317,362,322,361,317,395,312"/>
+<area shape="rect" id="Node000008" href="$classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f" title=" " alt="" coords="208,376,361,416"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="437,329,362,366,336,378,334,373,360,362,435,324"/>
+<area shape="rect" id="Node000010" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="208,440,361,480"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="463,332,419,382,363,430,342,442,339,438,360,426,416,378,459,329"/>
+<area shape="rect" id="Node000011" href="$classGeometry_1_1Vector3D.html#ae922fd3535e26ab859ab96c63c67dace" title=" " alt="" coords="208,504,361,544"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="473,334,431,413,400,456,363,494,345,506,342,502,360,490,396,453,427,410,469,331"/>
+<area shape="rect" id="Node000012" href="$classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162" title=" " alt="" coords="208,568,361,608"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="479,334,465,383,441,442,408,504,387,532,363,558,347,570,344,566,360,554,383,529,403,501,436,440,460,381,474,332"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="194,130,159,125,160,120,195,125"/>
+<area shape="rect" id="Node000009" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title=" " alt="" coords="5,383,160,409"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="195,399,160,399,160,393,195,393"/>
 </map>

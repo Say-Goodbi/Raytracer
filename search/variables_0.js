@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['direction_0',['direction',['../classGeometry_1_1Ray.html#a3addd7f6af5502db0881934ee79bbaed',1,'Geometry::Ray']]]
+  ['_5fcamera_0',['_camera',['../classRayTracer_1_1Scene.html#a206e5d6a041a0edfe886fd732c05eaed',1,'RayTracer::Scene']]],
+  ['_5fcolor_1',['_color',['../classRayTracer_1_1FlatColor.html#a6ff635d843c1eeed85ee2e62a47fd9e8',1,'RayTracer::FlatColor']]],
+  ['_5fdirection_2',['_direction',['../classRayTracer_1_1Camera.html#ad52eb3b31eecc63685dff81417c0a4a3',1,'RayTracer::Camera']]],
+  ['_5ffov_3',['_fov',['../classRayTracer_1_1Camera.html#afd030b5ff9d29c786fbcf725de67085f',1,'RayTracer::Camera']]],
+  ['_5fframebuffer_4',['_frameBuffer',['../classRayTracer_1_1Renderer.html#ac72203a8b969e1d3c8d255a1eef24d27',1,'RayTracer::Renderer']]],
+  ['_5fheight_5',['_height',['../classRayTracer_1_1Renderer.html#ae2e6b0291eda5fa5aea255855df41652',1,'RayTracer::Renderer']]],
+  ['_5flights_6',['_lights',['../classRayTracer_1_1Scene.html#ac913a205d3230f928bd501be234b1b28',1,'RayTracer::Scene']]],
+  ['_5flocation_7',['_location',['../classRayTracer_1_1Exception.html#a88b7bc37cc378a164e05521f163f2452',1,'RayTracer::Exception']]],
+  ['_5fmaterial_8',['_material',['../classRayTracer_1_1APrimitive.html#a2021d91efc72065fb17b817117791425',1,'RayTracer::APrimitive::_material'],['../classRayTracer_1_1Plane.html#aae759c71670666942a098b5d587daa20',1,'RayTracer::Plane::_material']]],
+  ['_5fmessage_9',['_message',['../classRayTracer_1_1Exception.html#afe6fcbe376c02b994467e692377d65c3',1,'RayTracer::Exception']]],
+  ['_5fnormal_10',['_normal',['../classRayTracer_1_1Plane.html#afa53405199b6f3037c731ca237fd6ad6',1,'RayTracer::Plane']]],
+  ['_5fpoint_11',['_point',['../classRayTracer_1_1Plane.html#a06a43f685a218027175a1cf7d934d193',1,'RayTracer::Plane']]],
+  ['_5fposition_12',['_position',['../classRayTracer_1_1Camera.html#a1985559b3fd1daf90a597ac59f2ba515',1,'RayTracer::Camera']]],
+  ['_5fprimitives_13',['_primitives',['../classRayTracer_1_1Scene.html#a336c755a083c681285d7e9ec7efd9b22',1,'RayTracer::Scene']]],
+  ['_5fscreen_14',['_screen',['../classRayTracer_1_1Camera.html#a2dd6aea870f6a5cdba1439c7fe7d2afc',1,'RayTracer::Camera']]],
+  ['_5fwidth_15',['_width',['../classRayTracer_1_1Renderer.html#af4b3a9f021124ee4ad8cdf6d94a627c4',1,'RayTracer::Renderer']]]
 ];

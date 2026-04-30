@@ -1,0 +1,7 @@
+<map id="Geometry::Rectangle3D::Rectangle3D" name="Geometry::Rectangle3D::Rectangle3D">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,183,77"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html#a435b4574ffcf56cbe867a7d400c30949" title=" " alt="" coords="231,5,384,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,41,217,36,218,41,183,47"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#a3ae71c5188cb20556a1ec9b617fe8633" title=" " alt="" coords="231,69,384,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,68,218,73,217,78,182,73"/>
+</map>
