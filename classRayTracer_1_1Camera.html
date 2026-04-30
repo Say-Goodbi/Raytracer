@@ -92,31 +92,79 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1Camera.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classRayTracer_1_1Camera-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RayTracer::Camera Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>&gt;</code></p>
+<p>Concrete camera implementation inheriting from <a class="el" href="classRayTracer_1_1ARenderer.html" title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr...">ARenderer</a>. Holds camera position, direction, and FOV; generates rays and casts them into the scene.  
+ <a href="classRayTracer_1_1Camera.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html">Camera.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::Camera:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for RayTracer::Camera:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera__inherit__graph.svg" width="166" height="570"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::Camera:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aced106cacf1ffe15f14e4bf730e51d67" id="r_aced106cacf1ffe15f14e4bf730e51d67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#aced106cacf1ffe15f14e4bf730e51d67">Camera</a> (<a class="el" href="classGeometry_1_1Point3D.html">Geometry::Point3D</a> pos, <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> direction, float fov)</td></tr>
-<tr class="separator:aced106cacf1ffe15f14e4bf730e51d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88a1643d3067605407808bf3a5c14d4" id="r_aa88a1643d3067605407808bf3a5c14d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4">Camera</a> (<a class="el" href="classGeometry_1_1Point3D.html">Geometry::Point3D</a> pos, <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> direction, float fov, int width=800, int height=600)</td></tr>
+<tr class="separator:aa88a1643d3067605407808bf3a5c14d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985a4622654cd8ff6379cd2ae288250e" id="r_a985a4622654cd8ff6379cd2ae288250e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a985a4622654cd8ff6379cd2ae288250e">~Camera</a> ()=default</td></tr>
+<tr class="separator:a985a4622654cd8ff6379cd2ae288250e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7f4b6a0e5bf44d17162fb324c289bd" id="r_a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd">generateRay</a> (double u, double v)</td></tr>
 <tr class="separator:a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc91f068710471bce8c1bfb55bf5427f" id="r_afc91f068710471bce8c1bfb55bf5427f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#afc91f068710471bce8c1bfb55bf5427f">getWidth</a> () const</td></tr>
-<tr class="separator:afc91f068710471bce8c1bfb55bf5427f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03327345da53e7386d79d4796803f670" id="r_a03327345da53e7386d79d4796803f670"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a03327345da53e7386d79d4796803f670">getHeight</a> () const</td></tr>
-<tr class="separator:a03327345da53e7386d79d4796803f670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3735fca524537e8a0ce755bb77e9a71f" id="r_a3735fca524537e8a0ce755bb77e9a71f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="structRayTracer_1_1Color.html">Color</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f">render</a> (<a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene) override</td></tr>
+<tr class="memdesc:a3735fca524537e8a0ce755bb77e9a71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a scene and produce a framebuffer.  <br /></td></tr>
+<tr class="separator:a3735fca524537e8a0ce755bb77e9a71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88a1643d3067605407808bf3a5c14d4" id="r_aa88a1643d3067605407808bf3a5c14d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4">Camera</a> (<a class="el" href="classGeometry_1_1Point3D.html">Geometry::Point3D</a> pos, <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> direction, float fov, int width=800, int height=600)</td></tr>
+<tr class="memdesc:aa88a1643d3067605407808bf3a5c14d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:aa88a1643d3067605407808bf3a5c14d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985a4622654cd8ff6379cd2ae288250e" id="r_a985a4622654cd8ff6379cd2ae288250e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a985a4622654cd8ff6379cd2ae288250e">~Camera</a> ()=default</td></tr>
+<tr class="separator:a985a4622654cd8ff6379cd2ae288250e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a7f4b6a0e5bf44d17162fb324c289bd" id="r_a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd">generateRay</a> (double u, double v)</td></tr>
+<tr class="memdesc:a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a ray for normalized screen coordinates (u, v).  <br /></td></tr>
+<tr class="separator:a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3735fca524537e8a0ce755bb77e9a71f" id="r_a3735fca524537e8a0ce755bb77e9a71f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="structRayTracer_1_1Color.html">Color</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f">render</a> (<a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene) override</td></tr>
+<tr class="memdesc:a3735fca524537e8a0ce755bb77e9a71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the scene by casting rays and returning a framebuffer.  <br /></td></tr>
+<tr class="separator:a3735fca524537e8a0ce755bb77e9a71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classRayTracer_1_1ARenderer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRayTracer_1_1ARenderer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRayTracer_1_1ARenderer.html">RayTracer::ARenderer</a></td></tr>
+<tr class="memitem:a44a60f0d86ca19731689141bfea654c7 inherit pub_methods_classRayTracer_1_1ARenderer" id="r_a44a60f0d86ca19731689141bfea654c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ARenderer.html#a44a60f0d86ca19731689141bfea654c7">ARenderer</a> (int width, int height)</td></tr>
+<tr class="memdesc:a44a60f0d86ca19731689141bfea654c7 inherit pub_methods_classRayTracer_1_1ARenderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a44a60f0d86ca19731689141bfea654c7 inherit pub_methods_classRayTracer_1_1ARenderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef63864fd4a781f9da7fd10b2df219a inherit pub_methods_classRayTracer_1_1ARenderer" id="r_aaef63864fd4a781f9da7fd10b2df219a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ARenderer.html#aaef63864fd4a781f9da7fd10b2df219a">~ARenderer</a> ()=default</td></tr>
+<tr class="separator:aaef63864fd4a781f9da7fd10b2df219a inherit pub_methods_classRayTracer_1_1ARenderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78eaee329eba441c51332bf9ebcc7e5c inherit pub_methods_classRayTracer_1_1ARenderer" id="r_a78eaee329eba441c51332bf9ebcc7e5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ARenderer.html#a78eaee329eba441c51332bf9ebcc7e5c">getWidth</a> () const</td></tr>
+<tr class="memdesc:a78eaee329eba441c51332bf9ebcc7e5c inherit pub_methods_classRayTracer_1_1ARenderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get output width in pixels.  <br /></td></tr>
+<tr class="separator:a78eaee329eba441c51332bf9ebcc7e5c inherit pub_methods_classRayTracer_1_1ARenderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8bc108a3a1ef0f9fd700dc6fea85cb inherit pub_methods_classRayTracer_1_1ARenderer" id="r_a5b8bc108a3a1ef0f9fd700dc6fea85cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ARenderer.html#a5b8bc108a3a1ef0f9fd700dc6fea85cb">getHeight</a> () const</td></tr>
+<tr class="memdesc:a5b8bc108a3a1ef0f9fd700dc6fea85cb inherit pub_methods_classRayTracer_1_1ARenderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get output height in pixels.  <br /></td></tr>
+<tr class="separator:a5b8bc108a3a1ef0f9fd700dc6fea85cb inherit pub_methods_classRayTracer_1_1ARenderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a23a720e6aeb1c1a410b3d704cac7ce11" id="r_a23a720e6aeb1c1a410b3d704cac7ce11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRayTracer_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11">castRay</a> (<a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;ray, <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="separator:a23a720e6aeb1c1a410b3d704cac7ce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fed07788d6155ad2689dcde296dcf8" id="r_a68fed07788d6155ad2689dcde296dcf8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8">computeShadow</a> (<a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;hit, <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="separator:a68fed07788d6155ad2689dcde296dcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a720e6aeb1c1a410b3d704cac7ce11" id="r_a23a720e6aeb1c1a410b3d704cac7ce11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRayTracer_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11">castRay</a> (<a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;ray, <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memdesc:a23a720e6aeb1c1a410b3d704cac7ce11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cast a ray into the scene and compute intersection color.  <br /></td></tr>
+<tr class="separator:a23a720e6aeb1c1a410b3d704cac7ce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fed07788d6155ad2689dcde296dcf8" id="r_a68fed07788d6155ad2689dcde296dcf8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8">computeShadow</a> (<a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;hit, <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene)</td></tr>
+<tr class="memdesc:a68fed07788d6155ad2689dcde296dcf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute shadow at a hit point from all lights.  <br /></td></tr>
+<tr class="separator:a68fed07788d6155ad2689dcde296dcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -128,16 +176,30 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a2dd6aea870f6a5cdba1439c7fe7d2afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd030b5ff9d29c786fbcf725de67085f" id="r_afd030b5ff9d29c786fbcf725de67085f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#afd030b5ff9d29c786fbcf725de67085f">_fov</a></td></tr>
 <tr class="separator:afd030b5ff9d29c786fbcf725de67085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classRayTracer_1_1ARenderer"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classRayTracer_1_1ARenderer')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classRayTracer_1_1ARenderer.html">RayTracer::ARenderer</a></td></tr>
+<tr class="memitem:ab998431fb926aac5044c28b48ed0b9cc inherit pro_attribs_classRayTracer_1_1ARenderer" id="r_ab998431fb926aac5044c28b48ed0b9cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ARenderer.html#ab998431fb926aac5044c28b48ed0b9cc">_width</a></td></tr>
+<tr class="memdesc:ab998431fb926aac5044c28b48ed0b9cc inherit pro_attribs_classRayTracer_1_1ARenderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output width in pixels.  <br /></td></tr>
+<tr class="separator:ab998431fb926aac5044c28b48ed0b9cc inherit pro_attribs_classRayTracer_1_1ARenderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b6b0fc47969d1143108d7978cb2c55 inherit pro_attribs_classRayTracer_1_1ARenderer" id="r_a58b6b0fc47969d1143108d7978cb2c55"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ARenderer.html#a58b6b0fc47969d1143108d7978cb2c55">_height</a></td></tr>
+<tr class="memdesc:a58b6b0fc47969d1143108d7978cb2c55 inherit pro_attribs_classRayTracer_1_1ARenderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output height in pixels.  <br /></td></tr>
+<tr class="separator:a58b6b0fc47969d1143108d7978cb2c55 inherit pro_attribs_classRayTracer_1_1ARenderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00010">10</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<div class="textblock"><p>Concrete camera implementation inheriting from <a class="el" href="classRayTracer_1_1ARenderer.html" title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr...">ARenderer</a>. Holds camera position, direction, and FOV; generates rays and casts them into the scene. </p>
+
+<p class="definition">Definition at line <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html#l00012">12</a> of file <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html">Camera.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aced106cacf1ffe15f14e4bf730e51d67" name="aced106cacf1ffe15f14e4bf730e51d67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aced106cacf1ffe15f14e4bf730e51d67">&#9670;&#160;</a></span>Camera()</h2>
+<a id="aa88a1643d3067605407808bf3a5c14d4" name="aa88a1643d3067605407808bf3a5c14d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88a1643d3067605407808bf3a5c14d4">&#9670;&#160;</a></span>Camera() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RayTracer::Camera::Camera </td>
@@ -155,7 +217,19 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>fov</em>&#160;</td>
+          <td class="paramname"><em>fov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em> = <code>800</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em> = <code>600</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -163,15 +237,325 @@ Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00005">5</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html#l00025">25</a> of file <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_aa88a1643d3067605407808bf3a5c14d4_cgraph.svg" width="375" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a985a4622654cd8ff6379cd2ae288250e" name="a985a4622654cd8ff6379cd2ae288250e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985a4622654cd8ff6379cd2ae288250e">&#9670;&#160;</a></span>~Camera() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RayTracer::Camera::~Camera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa88a1643d3067605407808bf3a5c14d4" name="aa88a1643d3067605407808bf3a5c14d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88a1643d3067605407808bf3a5c14d4">&#9670;&#160;</a></span>Camera() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RayTracer::Camera::Camera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGeometry_1_1Point3D.html">Geometry::Point3D</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a>&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em> = <code>800</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em> = <code>600</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="classRayTracer_1_1Camera.html" title="Concrete camera implementation inheriting from ARenderer. Holds camera position, direction,...">Camera</a> position </td></tr>
+    <tr><td class="paramname">direction</td><td>View direction </td></tr>
+    <tr><td class="paramname">fov</td><td>Field of view in degrees </td></tr>
+    <tr><td class="paramname">width</td><td>Output width in pixels (default 800) </td></tr>
+    <tr><td class="paramname">height</td><td>Output height in pixels (default 600) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="SceneSystem_2Camera_2Camera_8hpp_source.html#l00035">35</a> of file <a class="el" href="SceneSystem_2Camera_2Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_aa88a1643d3067605407808bf3a5c14d4_cgraph.svg" width="375" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a985a4622654cd8ff6379cd2ae288250e" name="a985a4622654cd8ff6379cd2ae288250e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985a4622654cd8ff6379cd2ae288250e">&#9670;&#160;</a></span>~Camera() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RayTracer::Camera::~Camera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a23a720e6aeb1c1a410b3d704cac7ce11" name="a23a720e6aeb1c1a410b3d704cac7ce11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a720e6aeb1c1a410b3d704cac7ce11">&#9670;&#160;</a></span>castRay() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structRayTracer_1_1Color.html">Color</a> RayTracer::Camera::castRay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00018">18</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a23a720e6aeb1c1a410b3d704cac7ce11_cgraph.svg" width="630" height="178"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a23a720e6aeb1c1a410b3d704cac7ce11_icgraph.svg" width="366" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a23a720e6aeb1c1a410b3d704cac7ce11" name="a23a720e6aeb1c1a410b3d704cac7ce11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a720e6aeb1c1a410b3d704cac7ce11">&#9670;&#160;</a></span>castRay() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structRayTracer_1_1Color.html">Color</a> RayTracer::Camera::castRay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>ray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cast a ray into the scene and compute intersection color. </p>
+
+</div>
+</div>
+<a id="a68fed07788d6155ad2689dcde296dcf8" name="a68fed07788d6155ad2689dcde296dcf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68fed07788d6155ad2689dcde296dcf8">&#9670;&#160;</a></span>computeShadow() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RayTracer::Camera::computeShadow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;&#160;</td>
+          <td class="paramname"><em>hit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00044">44</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a68fed07788d6155ad2689dcde296dcf8_icgraph.svg" width="567" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a68fed07788d6155ad2689dcde296dcf8" name="a68fed07788d6155ad2689dcde296dcf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68fed07788d6155ad2689dcde296dcf8">&#9670;&#160;</a></span>computeShadow() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RayTracer::Camera::computeShadow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;&#160;</td>
+          <td class="paramname"><em>hit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute shadow at a hit point from all lights. </p>
+
+</div>
+</div>
 <a id="a4a7f4b6a0e5bf44d17162fb324c289bd" name="a4a7f4b6a0e5bf44d17162fb324c289bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7f4b6a0e5bf44d17162fb324c289bd">&#9670;&#160;</a></span>generateRay()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a7f4b6a0e5bf44d17162fb324c289bd">&#9670;&#160;</a></span>generateRay() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,66 +580,142 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00020">20</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00008">8</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a4a7f4b6a0e5bf44d17162fb324c289bd_cgraph.svg" width="591" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-</div>
-<a id="a03327345da53e7386d79d4796803f670" name="a03327345da53e7386d79d4796803f670"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03327345da53e7386d79d4796803f670">&#9670;&#160;</a></span>getHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int RayTracer::Camera::getHeight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00010">10</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a03327345da53e7386d79d4796803f670_cgraph.svg" width="366" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a4a7f4b6a0e5bf44d17162fb324c289bd_icgraph.svg" width="366" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="afc91f068710471bce8c1bfb55bf5427f" name="afc91f068710471bce8c1bfb55bf5427f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc91f068710471bce8c1bfb55bf5427f">&#9670;&#160;</a></span>getWidth()</h2>
+<a id="a4a7f4b6a0e5bf44d17162fb324c289bd" name="a4a7f4b6a0e5bf44d17162fb324c289bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a7f4b6a0e5bf44d17162fb324c289bd">&#9670;&#160;</a></span>generateRay() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int RayTracer::Camera::getWidth </td>
+          <td class="memname"><a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> RayTracer::Camera::generateRay </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00015">15</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<p>Generate a ray for normalized screen coordinates (u, v). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>Normalized x coordinate [0, 1] </td></tr>
+    <tr><td class="paramname">v</td><td>Normalized y coordinate [0, 1] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Ray from camera through screen point </dd></dl>
+
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_afc91f068710471bce8c1bfb55bf5427f_cgraph.svg" width="366" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+<a id="a3735fca524537e8a0ce755bb77e9a71f" name="a3735fca524537e8a0ce755bb77e9a71f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3735fca524537e8a0ce755bb77e9a71f">&#9670;&#160;</a></span>render() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; <a class="el" href="structRayTracer_1_1Color.html">Color</a> &gt; &gt; RayTracer::Camera::render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render a scene and produce a framebuffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scene</td><td>The scene to render </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>2D framebuffer with dimensions (height x width) </dd></dl>
+
+<p>Implements <a class="el" href="classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271">RayTracer::ARenderer</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00062">62</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a3735fca524537e8a0ce755bb77e9a71f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a3735fca524537e8a0ce755bb77e9a71f" name="a3735fca524537e8a0ce755bb77e9a71f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3735fca524537e8a0ce755bb77e9a71f">&#9670;&#160;</a></span>render() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; <a class="el" href="structRayTracer_1_1Color.html">Color</a> &gt; &gt; RayTracer::Camera::render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render the scene by casting rays and returning a framebuffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scene</td><td>The scene to render </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>2D framebuffer (height x width) </dd></dl>
+
+<p>Implements <a class="el" href="classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271">RayTracer::ARenderer</a>.</p>
 
 </div>
 </div>
@@ -280,7 +740,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00014">14</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html#l00016">16</a> of file <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -304,7 +764,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00016">16</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html#l00018">18</a> of file <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -328,7 +788,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00013">13</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html#l00015">15</a> of file <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -352,13 +812,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00015">15</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html#l00017">17</a> of file <a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/SceneSystem/Camera/<a class="el" href="Camera_8hpp_source.html">Camera.hpp</a></li>
-<li>src/SceneSystem/Camera/<a class="el" href="Camera_8cpp_source.html">Camera.cpp</a></li>
+<li>src/Objects/Plugins/Renderers/Camera/<a class="el" href="Objects_2Plugins_2Renderers_2Camera_2Camera_8hpp_source.html">Camera.hpp</a></li>
+<li>src/SceneSystem/Camera/<a class="el" href="SceneSystem_2Camera_2Camera_8hpp_source.html">Camera.hpp</a></li>
+<li>src/Objects/Plugins/Renderers/Camera/<a class="el" href="Camera_8cpp_source.html">Camera.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

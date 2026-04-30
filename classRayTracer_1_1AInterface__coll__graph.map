@@ -1,0 +1,5 @@
+<map id="RayTracer::AInterface" name="RayTracer::AInterface">
+<area shape="rect" id="Node000001" title="Abstract base class for application interfaces. An interface owns a renderer and orchestrates executi..." alt="" coords="6,233,159,339"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1ARenderer.html" title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr..." alt="" coords="5,5,160,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,171,85,217,80,217,80,171"/>
+</map>

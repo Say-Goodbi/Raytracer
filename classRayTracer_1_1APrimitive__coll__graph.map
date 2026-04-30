@@ -1,7 +1,5 @@
 <map id="RayTracer::APrimitive" name="RayTracer::APrimitive">
-<area shape="rect" id="Node000001" title=" " alt="" coords="88,173,243,279"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1IPrimitive.html" title=" " alt="" coords="5,5,155,111"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,121,141,172,136,175,110,124"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1IMaterial.html" title=" " alt="" coords="179,15,323,101"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,102,202,160,197,157,227,100"/>
+<area shape="rect" id="Node000001" title="Abstract base class for all primitives (renderable objects). Primitives have geometry and a material." alt="" coords="5,153,160,279"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1IMaterial.html" title="Abstract base for materials defining how surfaces shade." alt="" coords="11,5,155,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,91,85,137,80,137,80,91"/>
 </map>

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Record of a ray–primitive intersection.">
 <polygon fill="#999999" stroke="transparent" points="232,-64 119,-64 119,0 232,0 232,-64"/>
 <text text-anchor="start" x="124.5" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::HitRecord</text>
 <text text-anchor="start" x="131.5" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classGeometry_1_1Point3D.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classGeometry_1_1Point3D.html" target="_top" xlink:title="Represents a 3D point in space.">
 <polygon fill="white" stroke="transparent" points="103,-325 0,-325 0,-156 103,-156 103,-325"/>
 <text text-anchor="start" x="5.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D</text>
 <text text-anchor="start" x="8.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -73,7 +73,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classGeometry_1_1Vector3D.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classGeometry_1_1Vector3D.html" target="_top" xlink:title="Represents a 3D vector for directions or displacements.">
 <polygon fill="white" stroke="transparent" points="230,-370 121,-370 121,-111 230,-111 230,-370"/>
 <text text-anchor="start" x="126.5" y="-357.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
 <text text-anchor="start" x="131" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -127,7 +127,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classRayTracer_1_1IMaterial.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classRayTracer_1_1IMaterial.html" target="_top" xlink:title="Abstract base for materials defining how surfaces shade.">
 <polygon fill="white" stroke="transparent" points="356.5,-272.5 248.5,-272.5 248.5,-208.5 356.5,-208.5 356.5,-272.5"/>
 <text text-anchor="start" x="253.5" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::IMaterial</text>
 <text text-anchor="start" x="300.5" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>

@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1Scene.html',''); ini
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a scene containing a camera, primitives, and lights.  
+ <a href="classRayTracer_1_1Scene.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::Scene:</div>
@@ -110,32 +113,42 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1Scene.html',''); ini
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a07987a6ee97f2cf0272b9117a6097be7" id="r_a07987a6ee97f2cf0272b9117a6097be7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a07987a6ee97f2cf0272b9117a6097be7">Scene</a> (<a class="el" href="classRayTracer_1_1Camera.html">Camera</a> camera)</td></tr>
+<tr class="memdesc:a07987a6ee97f2cf0272b9117a6097be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a07987a6ee97f2cf0272b9117a6097be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59098635e9dfab454f1d848a08636b06" id="r_a59098635e9dfab454f1d848a08636b06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a59098635e9dfab454f1d848a08636b06">~Scene</a> ()=default</td></tr>
 <tr class="separator:a59098635e9dfab454f1d848a08636b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59fea4bc5a15d2a862830a0d5df4556a" id="r_a59fea4bc5a15d2a862830a0d5df4556a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a59fea4bc5a15d2a862830a0d5df4556a">addPrimitive</a> (std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1IPrimitive.html">IPrimitive</a> &gt; primitive)</td></tr>
+<tr class="memitem:a59fea4bc5a15d2a862830a0d5df4556a" id="r_a59fea4bc5a15d2a862830a0d5df4556a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a59fea4bc5a15d2a862830a0d5df4556a">addPrimitive</a> (std::unique_ptr&lt; IPrimitive &gt; primitive)</td></tr>
+<tr class="memdesc:a59fea4bc5a15d2a862830a0d5df4556a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a primitive (shape) to the scene.  <br /></td></tr>
 <tr class="separator:a59fea4bc5a15d2a862830a0d5df4556a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfbaa6ed019faf5db8b4d893d1c6d21b" id="r_acfbaa6ed019faf5db8b4d893d1c6d21b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#acfbaa6ed019faf5db8b4d893d1c6d21b">addLight</a> (std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> &gt; light)</td></tr>
+<tr class="memdesc:acfbaa6ed019faf5db8b4d893d1c6d21b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a light to the scene.  <br /></td></tr>
 <tr class="separator:acfbaa6ed019faf5db8b4d893d1c6d21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2aaebaa9d463edad900a38a5c9fdb94" id="r_ae2aaebaa9d463edad900a38a5c9fdb94"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classRayTracer_1_1Camera.html">Camera</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#ae2aaebaa9d463edad900a38a5c9fdb94">getCamera</a> () const</td></tr>
+<tr class="memdesc:ae2aaebaa9d463edad900a38a5c9fdb94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scene's camera.  <br /></td></tr>
 <tr class="separator:ae2aaebaa9d463edad900a38a5c9fdb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cf955a569ab5c1a9b77203e2f85bf6e" id="r_a3cf955a569ab5c1a9b77203e2f85bf6e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1IPrimitive.html">IPrimitive</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a3cf955a569ab5c1a9b77203e2f85bf6e">getPrimitives</a> ()</td></tr>
+<tr class="memitem:a3cf955a569ab5c1a9b77203e2f85bf6e" id="r_a3cf955a569ab5c1a9b77203e2f85bf6e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; IPrimitive &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a3cf955a569ab5c1a9b77203e2f85bf6e">getPrimitives</a> ()</td></tr>
+<tr class="memdesc:a3cf955a569ab5c1a9b77203e2f85bf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get mutable reference to primitives.  <br /></td></tr>
 <tr class="separator:a3cf955a569ab5c1a9b77203e2f85bf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a758a4075b53d8a271e82cc08c1a9f787" id="r_a758a4075b53d8a271e82cc08c1a9f787"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a758a4075b53d8a271e82cc08c1a9f787">getLights</a> ()</td></tr>
+<tr class="memdesc:a758a4075b53d8a271e82cc08c1a9f787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get mutable reference to lights.  <br /></td></tr>
 <tr class="separator:a758a4075b53d8a271e82cc08c1a9f787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a206e5d6a041a0edfe886fd732c05eaed" id="r_a206e5d6a041a0edfe886fd732c05eaed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRayTracer_1_1Camera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a206e5d6a041a0edfe886fd732c05eaed">_camera</a></td></tr>
+<tr class="memdesc:a206e5d6a041a0edfe886fd732c05eaed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active camera/renderer.  <br /></td></tr>
 <tr class="separator:a206e5d6a041a0edfe886fd732c05eaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a336c755a083c681285d7e9ec7efd9b22" id="r_a336c755a083c681285d7e9ec7efd9b22"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1IPrimitive.html">IPrimitive</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a336c755a083c681285d7e9ec7efd9b22">_primitives</a></td></tr>
+<tr class="memitem:a336c755a083c681285d7e9ec7efd9b22" id="r_a336c755a083c681285d7e9ec7efd9b22"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; IPrimitive &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a336c755a083c681285d7e9ec7efd9b22">_primitives</a></td></tr>
+<tr class="memdesc:a336c755a083c681285d7e9ec7efd9b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderable objects.  <br /></td></tr>
 <tr class="separator:a336c755a083c681285d7e9ec7efd9b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac913a205d3230f928bd501be234b1b28" id="r_ac913a205d3230f928bd501be234b1b28"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#ac913a205d3230f928bd501be234b1b28">_lights</a></td></tr>
+<tr class="memdesc:ac913a205d3230f928bd501be234b1b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light sources.  <br /></td></tr>
 <tr class="separator:ac913a205d3230f928bd501be234b1b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00009">9</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<div class="textblock"><p>Represents a scene containing a camera, primitives, and lights. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00011">11</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a07987a6ee97f2cf0272b9117a6097be7" name="a07987a6ee97f2cf0272b9117a6097be7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07987a6ee97f2cf0272b9117a6097be7">&#9670;&#160;</a></span>Scene()</h2>
@@ -152,6 +165,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>The camera for this scene </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00005">5</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 
@@ -199,6 +220,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Add a light to the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">light</td><td>Unique pointer to a light </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00019">19</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 
 </div>
@@ -212,12 +241,20 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void RayTracer::Scene::addPrimitive </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1IPrimitive.html">IPrimitive</a> &gt;&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; IPrimitive &gt;&#160;</td>
           <td class="paramname"><em>primitive</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Add a primitive (shape) to the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primitive</td><td>Unique pointer to a primitive </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00009">9</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 
@@ -238,6 +275,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the scene's camera. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the camera </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00029">29</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+
 </div>
 </div>
 <a id="a758a4075b53d8a271e82cc08c1a9f787" name="a758a4075b53d8a271e82cc08c1a9f787"></a>
@@ -255,6 +297,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get mutable reference to lights. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the lights vector </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00024">24</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 
 </div>
@@ -266,7 +311,7 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1IPrimitive.html">IPrimitive</a> &gt; &gt; &amp; RayTracer::Scene::getPrimitives </td>
+          <td class="memname">std::vector&lt; std::unique_ptr&lt; IPrimitive &gt; &gt; &amp; RayTracer::Scene::getPrimitives </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -274,14 +319,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get mutable reference to primitives. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the primitives vector </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00014">14</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
-<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Scene_a3cf955a569ab5c1a9b77203e2f85bf6e_icgraph.svg" width="440" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -306,7 +347,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00012">12</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p>Active camera/renderer. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00014">14</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +373,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00014">14</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p>Light sources. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00016">16</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 </div>
 </div>
@@ -344,7 +389,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classRayTracer_1_1IPrimitive.html">IPrimitive</a>&gt; &gt; RayTracer::Scene::_primitives</td>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;IPrimitive&gt; &gt; RayTracer::Scene::_primitives</td>
         </tr>
       </table>
   </td>
@@ -354,7 +399,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00013">13</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p>Renderable objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00015">15</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 </div>
 </div>

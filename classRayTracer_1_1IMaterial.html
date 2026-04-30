@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1IMaterial.html','');
 </div><!--header-->
 <div class="contents">
 
+<p>Abstract base for materials defining how surfaces shade.  
+ <a href="classRayTracer_1_1IMaterial.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::IMaterial:</div>
@@ -109,13 +112,15 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1IMaterial.html','');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a18c2601138a3f78d3f6ceb3d0c713a38" id="r_a18c2601138a3f78d3f6ceb3d0c713a38"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structRayTracer_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html#a18c2601138a3f78d3f6ceb3d0c713a38">computeColor</a> (<a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;hit, std::vector&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> * &gt; &amp;lights)=0</td></tr>
+<tr class="memdesc:a18c2601138a3f78d3f6ceb3d0c713a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the color at a surface hit point.  <br /></td></tr>
 <tr class="separator:a18c2601138a3f78d3f6ceb3d0c713a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4e697ade927e90e125b118ccd39ffa0" id="r_aa4e697ade927e90e125b118ccd39ffa0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html#aa4e697ade927e90e125b118ccd39ffa0">~IMaterial</a> ()=default</td></tr>
 <tr class="separator:aa4e697ade927e90e125b118ccd39ffa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="IMaterial_8hpp_source.html#l00009">9</a> of file <a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>.</p>
+<div class="textblock"><p>Abstract base for materials defining how surfaces shade. </p>
+
+<p class="definition">Definition at line <a class="el" href="IMaterial_8hpp_source.html#l00010">10</a> of file <a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa4e697ade927e90e125b118ccd39ffa0" name="aa4e697ade927e90e125b118ccd39ffa0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4e697ade927e90e125b118ccd39ffa0">&#9670;&#160;</a></span>~IMaterial()</h2>
@@ -177,10 +182,20 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Compute the color at a surface hit point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hit</td><td>The hit record with intersection data </td></tr>
+    <tr><td class="paramname">lights</td><td>Lights in the scene </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Computed color at the hit point </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/Objects/Interface/<a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a></li>
+<li>src/Objects/Abstracts/<a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

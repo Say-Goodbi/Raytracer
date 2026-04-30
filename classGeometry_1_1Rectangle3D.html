@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('classGeometry_1_1Rectangle3D.html','')
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a planar rectangular surface in 3D space. Defined by an origin and two edge vectors (width and height).  
+ <a href="classGeometry_1_1Rectangle3D.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="Rectangle3D_8hpp_source.html">Rectangle3D.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Geometry::Rectangle3D:</div>
@@ -112,20 +115,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d143a0f3469df16a3e20011d382b6ef" id="r_a2d143a0f3469df16a3e20011d382b6ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGeometry_1_1Rectangle3D.html#a2d143a0f3469df16a3e20011d382b6ef">Rectangle3D</a> ()</td></tr>
 <tr class="separator:a2d143a0f3469df16a3e20011d382b6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b17f489ad6e57c131dc0e1c8ac2f1a0" id="r_a2b17f489ad6e57c131dc0e1c8ac2f1a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Point3D.html">Point3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0">pointAt</a> (double u, double v) const</td></tr>
+<tr class="memdesc:a2b17f489ad6e57c131dc0e1c8ac2f1a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a point on the rectangle at normalized coordinates (u, v).  <br /></td></tr>
 <tr class="separator:a2b17f489ad6e57c131dc0e1c8ac2f1a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1c05588dfda25398faf61b310be67ac5" id="r_a1c05588dfda25398faf61b310be67ac5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Point3D.html">Point3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGeometry_1_1Rectangle3D.html#a1c05588dfda25398faf61b310be67ac5">origin</a></td></tr>
+<tr class="memdesc:a1c05588dfda25398faf61b310be67ac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rectangle origin.  <br /></td></tr>
 <tr class="separator:a1c05588dfda25398faf61b310be67ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5161f8ab68c90247331dc37d8c16185f" id="r_a5161f8ab68c90247331dc37d8c16185f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Vector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGeometry_1_1Rectangle3D.html#a5161f8ab68c90247331dc37d8c16185f">width</a></td></tr>
+<tr class="memdesc:a5161f8ab68c90247331dc37d8c16185f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width edge vector.  <br /></td></tr>
 <tr class="separator:a5161f8ab68c90247331dc37d8c16185f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af19a1a8bffed0145659d7df60921ea45" id="r_af19a1a8bffed0145659d7df60921ea45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Vector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGeometry_1_1Rectangle3D.html#af19a1a8bffed0145659d7df60921ea45">height</a></td></tr>
+<tr class="memdesc:af19a1a8bffed0145659d7df60921ea45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height edge vector.  <br /></td></tr>
 <tr class="separator:af19a1a8bffed0145659d7df60921ea45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Rectangle3D_8hpp_source.html#l00007">7</a> of file <a class="el" href="Rectangle3D_8hpp_source.html">Rectangle3D.hpp</a>.</p>
+<div class="textblock"><p>Represents a planar rectangular surface in 3D space. Defined by an origin and two edge vectors (width and height). </p>
+
+<p class="definition">Definition at line <a class="el" href="Rectangle3D_8hpp_source.html#l00009">9</a> of file <a class="el" href="Rectangle3D_8hpp_source.html">Rectangle3D.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2d143a0f3469df16a3e20011d382b6ef" name="a2d143a0f3469df16a3e20011d382b6ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d143a0f3469df16a3e20011d382b6ef">&#9670;&#160;</a></span>Rectangle3D()</h2>
@@ -180,6 +188,16 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get a point on the rectangle at normalized coordinates (u, v). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>Normalized u coordinate [0, 1] </td></tr>
+    <tr><td class="paramname">v</td><td>Normalized v coordinate [0, 1] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Point at origin + u*width + v*height </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="Rectangle3D_8cpp_source.html#l00007">7</a> of file <a class="el" href="Rectangle3D_8cpp_source.html">Rectangle3D.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -193,7 +211,7 @@ Public Attributes</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGeometry_1_1Rectangle3D_a2b17f489ad6e57c131dc0e1c8ac2f1a0_icgraph.svg" width="390" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGeometry_1_1Rectangle3D_a2b17f489ad6e57c131dc0e1c8ac2f1a0_icgraph.svg" width="591" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -211,7 +229,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Rectangle3D_8hpp_source.html#l00015">15</a> of file <a class="el" href="Rectangle3D_8hpp_source.html">Rectangle3D.hpp</a>.</p>
+<p>Height edge vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rectangle3D_8hpp_source.html#l00017">17</a> of file <a class="el" href="Rectangle3D_8hpp_source.html">Rectangle3D.hpp</a>.</p>
 
 </div>
 </div>
@@ -227,7 +247,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Rectangle3D_8hpp_source.html#l00013">13</a> of file <a class="el" href="Rectangle3D_8hpp_source.html">Rectangle3D.hpp</a>.</p>
+<p>Rectangle origin. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rectangle3D_8hpp_source.html#l00015">15</a> of file <a class="el" href="Rectangle3D_8hpp_source.html">Rectangle3D.hpp</a>.</p>
 
 </div>
 </div>
@@ -243,7 +265,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Rectangle3D_8hpp_source.html#l00014">14</a> of file <a class="el" href="Rectangle3D_8hpp_source.html">Rectangle3D.hpp</a>.</p>
+<p>Width edge vector. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rectangle3D_8hpp_source.html#l00016">16</a> of file <a class="el" href="Rectangle3D_8hpp_source.html">Rectangle3D.hpp</a>.</p>
 
 </div>
 </div>

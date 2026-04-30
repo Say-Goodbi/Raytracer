@@ -1,0 +1,13 @@
+<map id="src/SceneSystem/Camera/Camera.hpp" name="src/SceneSystem/Camera/Camera.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="181,5,369,45"/>
+<area shape="rect" id="Node000002" href="$Scene_8hpp.html" title=" " alt="" coords="187,93,363,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,59,278,93,273,93,273,59"/>
+<area shape="rect" id="Node000003" href="$ILight_8hpp.html" title=" " alt="" coords="5,189,164,229"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,142,124,191,122,186,223,137"/>
+<area shape="rect" id="Node000005" href="$SceneWriter_8cpp.html" title=" " alt="" coords="188,181,363,236"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="278,147,278,181,273,181,273,147"/>
+<area shape="rect" id="Node000006" href="$Scene_8cpp.html" title=" " alt="" coords="387,189,563,229"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="329,137,436,186,434,191,327,142"/>
+<area shape="rect" id="Node000004" href="$IMaterial_8hpp.html" title=" " alt="" coords="5,284,164,324"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,242,87,284,82,284,82,242"/>
+</map>

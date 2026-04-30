@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc" target="_top" xlink:title="Constructor.">
 <polygon fill="white" stroke="#666666" points="274,-156.5 161,-156.5 161,-137.5 274,-137.5 274,-156.5"/>
 <text text-anchor="middle" x="217.5" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Ray::Ray</text>
 </a>
@@ -77,7 +77,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0" target="_top" xlink:title="Get a point on the rectangle at normalized coordinates (u, v).">
 <polygon fill="white" stroke="#666666" points="284,-32 151,-32 151,-2 284,-2 284,-32"/>
 <text text-anchor="start" x="159" y="-20" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Rectangle3D</text>
 <text text-anchor="middle" x="217.5" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">::pointAt</text>
@@ -105,7 +105,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" target="_top" xlink:title="Calculate the length (magnitude) of this vector.">
 <polygon fill="white" stroke="#666666" points="435,-78 320,-78 320,-48 435,-48 435,-78"/>
 <text text-anchor="start" x="328" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
 <text text-anchor="middle" x="377.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::length</text>

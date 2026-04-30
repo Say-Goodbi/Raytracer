@@ -1,0 +1,13 @@
+<map id="src/Objects/Plugins/Interfaces/SceneWriter" name="src/Objects/Plugins/Interfaces/SceneWriter">
+<area shape="rect" id="node1" href="dir_c77b3bf6030c231ee19ea06fc3210f22.html" title="SceneWriter" alt="" coords="131,52,233,77"/>
+<area shape="rect" id="node2" href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" title="SceneSystem" alt="" coords="5,125,116,151"/>
+<area shape="poly" id="edge1" href="dir_000026_000025.html" alt="" coords="164,80,93,121,91,116,161,75"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000026_000025.html" title="1" alt="" coords="96,116,105,131"/>
+<area shape="rect" id="node3" href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" title="Abstracts" alt="" coords="141,125,223,151"/>
+<area shape="poly" id="edge2" href="dir_000026_000000.html" alt="" coords="185,78,185,112,179,112,179,78"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000026_000000.html" title="1" alt="" coords="186,100,195,114"/>
+<area shape="rect" id="node4" href="dir_a7363e98f9e0bdd87618633653859815.html" title="Utils" alt="" coords="248,125,300,151"/>
+<area shape="poly" id="edge3" href="dir_000026_000029.html" alt="" coords="198,75,250,115,247,119,195,79"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000026_000029.html" title="1" alt="" coords="245,100,254,115"/>
+<area shape="rect" id="clust1" href="dir_916293032859aa8b094682194383d44e.html" title="Interfaces" alt="" coords="121,16,243,88"/>
+</map>

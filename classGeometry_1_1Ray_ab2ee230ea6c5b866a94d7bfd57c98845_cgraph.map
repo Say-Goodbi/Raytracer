@@ -1,5 +1,5 @@
 <map id="Geometry::Ray::at" name="Geometry::Ray::at">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,144,38"/>
+<area shape="rect" id="Node000001" title="Compute a point at parameter t along the ray." alt="" coords="5,13,144,38"/>
 <area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="192,5,345,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,23,178,23,178,28,145,28"/>
 </map>

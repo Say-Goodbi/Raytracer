@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1ILight.html',''); in
 </div><!--header-->
 <div class="contents">
 
+<p>Abstract base for light sources.  
+ <a href="classRayTracer_1_1ILight.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="ILight_8hpp_source.html">ILight.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::ILight:</div>
@@ -111,13 +114,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a326a7c9dab5348ba702d7beb64982dde" id="r_a326a7c9dab5348ba702d7beb64982dde"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ILight.html#a326a7c9dab5348ba702d7beb64982dde">~ILight</a> ()=default</td></tr>
 <tr class="separator:a326a7c9dab5348ba702d7beb64982dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0498718fee2e18cf30ea68ab7b2eaa6" id="r_aa0498718fee2e18cf30ea68ab7b2eaa6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structRayTracer_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ILight.html#aa0498718fee2e18cf30ea68ab7b2eaa6">computeContribution</a> (<a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;hit, <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene)=0</td></tr>
+<tr class="memdesc:aa0498718fee2e18cf30ea68ab7b2eaa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute this light's contribution to a surface.  <br /></td></tr>
 <tr class="separator:aa0498718fee2e18cf30ea68ab7b2eaa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac75b76eed4ec368ee29fb003c3d11480" id="r_ac75b76eed4ec368ee29fb003c3d11480"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classGeometry_1_1Point3D.html">Geometry::Point3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ILight.html#ac75b76eed4ec368ee29fb003c3d11480">getPosition</a> () const =0</td></tr>
+<tr class="memdesc:ac75b76eed4ec368ee29fb003c3d11480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position of this light.  <br /></td></tr>
 <tr class="separator:ac75b76eed4ec368ee29fb003c3d11480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ILight_8hpp_source.html#l00008">8</a> of file <a class="el" href="ILight_8hpp_source.html">ILight.hpp</a>.</p>
+<div class="textblock"><p>Abstract base for light sources. </p>
+
+<p class="definition">Definition at line <a class="el" href="ILight_8hpp_source.html#l00009">9</a> of file <a class="el" href="ILight_8hpp_source.html">ILight.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a326a7c9dab5348ba702d7beb64982dde" name="a326a7c9dab5348ba702d7beb64982dde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a326a7c9dab5348ba702d7beb64982dde">&#9670;&#160;</a></span>~ILight()</h2>
@@ -179,6 +185,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Compute this light's contribution to a surface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hit</td><td>The hit record </td></tr>
+    <tr><td class="paramname">scene</td><td>The scene (for occlusion tests, etc.) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structRayTracer_1_1Color.html">Color</a> contribution from this light </dd></dl>
+
 </div>
 </div>
 <a id="ac75b76eed4ec368ee29fb003c3d11480" name="ac75b76eed4ec368ee29fb003c3d11480"></a>
@@ -204,10 +220,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the position of this light. </p>
+<dl class="section return"><dt>Returns</dt><dd>Light position as a point in space </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/Objects/Interface/<a class="el" href="ILight_8hpp_source.html">ILight.hpp</a></li>
+<li>src/Objects/Abstracts/<a class="el" href="ILight_8hpp_source.html">ILight.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('structGeometry_1_1HitRecord.html','');
 </div><!--header-->
 <div class="contents">
 
+<p>Record of a ray–primitive intersection.  
+ <a href="structGeometry_1_1HitRecord.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Geometry::HitRecord:</div>
@@ -112,22 +115,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9acc63a4529cd9a6855703c8acd1468" id="r_ad9acc63a4529cd9a6855703c8acd1468"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGeometry_1_1HitRecord.html#ad9acc63a4529cd9a6855703c8acd1468">HitRecord</a> ()</td></tr>
 <tr class="separator:ad9acc63a4529cd9a6855703c8acd1468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a158d2c230c1851a8f6bc0e79dc4b12b5" id="r_a158d2c230c1851a8f6bc0e79dc4b12b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGeometry_1_1HitRecord.html#a158d2c230c1851a8f6bc0e79dc4b12b5">HitRecord</a> (const <a class="el" href="classGeometry_1_1Point3D.html">Point3D</a> &amp;<a class="el" href="structGeometry_1_1HitRecord.html#a0c28780afbc6189a0ec44eb9f6d2ffdb">point</a>, const <a class="el" href="classGeometry_1_1Vector3D.html">Vector3D</a> &amp;<a class="el" href="structGeometry_1_1HitRecord.html#a6bfe1027d90cfa0b6ed23f198e88a666">normal</a>, float <a class="el" href="structGeometry_1_1HitRecord.html#a802ecfa085c9cfaead2111fe16e0f34b">rayDistance</a>, <a class="el" href="classRayTracer_1_1IMaterial.html">RayTracer::IMaterial</a> *<a class="el" href="structGeometry_1_1HitRecord.html#a13533bd4bf467153c60515d44fc53390">material</a>)</td></tr>
+<tr class="memdesc:a158d2c230c1851a8f6bc0e79dc4b12b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a158d2c230c1851a8f6bc0e79dc4b12b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0c28780afbc6189a0ec44eb9f6d2ffdb" id="r_a0c28780afbc6189a0ec44eb9f6d2ffdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Point3D.html">Point3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGeometry_1_1HitRecord.html#a0c28780afbc6189a0ec44eb9f6d2ffdb">point</a></td></tr>
+<tr class="memdesc:a0c28780afbc6189a0ec44eb9f6d2ffdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intersection point in world space.  <br /></td></tr>
 <tr class="separator:a0c28780afbc6189a0ec44eb9f6d2ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bfe1027d90cfa0b6ed23f198e88a666" id="r_a6bfe1027d90cfa0b6ed23f198e88a666"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Vector3D.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGeometry_1_1HitRecord.html#a6bfe1027d90cfa0b6ed23f198e88a666">normal</a></td></tr>
+<tr class="memdesc:a6bfe1027d90cfa0b6ed23f198e88a666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surface normal at intersection.  <br /></td></tr>
 <tr class="separator:a6bfe1027d90cfa0b6ed23f198e88a666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802ecfa085c9cfaead2111fe16e0f34b" id="r_a802ecfa085c9cfaead2111fe16e0f34b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGeometry_1_1HitRecord.html#a802ecfa085c9cfaead2111fe16e0f34b">rayDistance</a></td></tr>
+<tr class="memdesc:a802ecfa085c9cfaead2111fe16e0f34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance along ray to intersection.  <br /></td></tr>
 <tr class="separator:a802ecfa085c9cfaead2111fe16e0f34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13533bd4bf467153c60515d44fc53390" id="r_a13533bd4bf467153c60515d44fc53390"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRayTracer_1_1IMaterial.html">RayTracer::IMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGeometry_1_1HitRecord.html#a13533bd4bf467153c60515d44fc53390">material</a></td></tr>
+<tr class="memdesc:a13533bd4bf467153c60515d44fc53390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Material at intersection.  <br /></td></tr>
 <tr class="separator:a13533bd4bf467153c60515d44fc53390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00018">18</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
+<div class="textblock"><p>Record of a ray–primitive intersection. </p>
+
+<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00010">10</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad9acc63a4529cd9a6855703c8acd1468" name="ad9acc63a4529cd9a6855703c8acd1468"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9acc63a4529cd9a6855703c8acd1468">&#9670;&#160;</a></span>HitRecord() <span class="overload">[1/2]</span></h2>
@@ -152,7 +161,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00025">25</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00017">17</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -209,7 +218,32 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00026">26</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>Intersection point </td></tr>
+    <tr><td class="paramname">normal</td><td>Surface normal </td></tr>
+    <tr><td class="paramname">rayDistance</td><td>Distance from ray origin </td></tr>
+    <tr><td class="paramname">material</td><td>Material at hit location </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00024">24</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structGeometry_1_1HitRecord_a158d2c230c1851a8f6bc0e79dc4b12b5_cgraph.svg" width="170" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structGeometry_1_1HitRecord_a158d2c230c1851a8f6bc0e79dc4b12b5_icgraph.svg" width="170" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -226,7 +260,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00023">23</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
+<p>Material at intersection. </p>
+
+<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00015">15</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
 
 </div>
 </div>
@@ -242,7 +278,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00021">21</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
+<p>Surface normal at intersection. </p>
+
+<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00013">13</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
 
 </div>
 </div>
@@ -258,7 +296,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00020">20</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
+<p>Intersection point in world space. </p>
+
+<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00012">12</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
 
 </div>
 </div>
@@ -274,7 +314,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00022">22</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
+<p>Distance along ray to intersection. </p>
+
+<p class="definition">Definition at line <a class="el" href="HitRecord_8hpp_source.html#l00014">14</a> of file <a class="el" href="HitRecord_8hpp_source.html">HitRecord.hpp</a>.</p>
 
 </div>
 </div>

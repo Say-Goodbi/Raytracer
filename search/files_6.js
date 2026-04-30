@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['scene_2ecpp_0',['Scene.cpp',['../Scene_8cpp.html',1,'']]],
-  ['scene_2ehpp_1',['Scene.hpp',['../Scene_8hpp.html',1,'']]],
-  ['sceneloader_2ecpp_2',['SceneLoader.cpp',['../SceneLoader_8cpp.html',1,'']]],
-  ['sceneloader_2ehpp_3',['SceneLoader.hpp',['../SceneLoader_8hpp.html',1,'']]],
-  ['sphere_2ecpp_4',['Sphere.cpp',['../Sphere_8cpp.html',1,'']]],
-  ['sphere_2ehpp_5',['Sphere.hpp',['../Sphere_8hpp.html',1,'']]]
+  ['plane_2ecpp_0',['Plane.cpp',['../Plane_8cpp.html',1,'']]],
+  ['plane_2ehpp_1',['Plane.hpp',['../Plane_8hpp.html',1,'']]],
+  ['pluginmanager_2ehpp_2',['PluginManager.hpp',['../PluginManager_8hpp.html',1,'']]],
+  ['point3d_2ecpp_3',['Point3D.cpp',['../Point3D_8cpp.html',1,'']]],
+  ['point3d_2ehpp_4',['Point3D.hpp',['../Point3D_8hpp.html',1,'']]]
 ];

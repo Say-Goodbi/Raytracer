@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Raytracer: Main Page</title>
+<title>Raytracer: Raytracer Manual</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,10 +89,155 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Raytracer Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Raytracer Manual </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro"></a>
+Introduction</h1>
+<p>This is a modular, plugin-oriented raytracing engine built in C++. It separates concerns across geometry, primitives, materials, and rendering, allowing extensibility through plugins while maintaining a clean separation of ray-casting logic from output handling.</p>
+<h1><a class="anchor" id="folders"></a>
+Folder Organization</h1>
+<p>The repository is organized to separate project-level artifacts from core source code and runtime plugins. High-level folders:</p>
+<ul>
+<li><code>dev/</code> : Development helpers, scripts, and contribution guides.</li>
+<li><code>docs/</code> : Documentation sources (Doxygen input, guides).</li>
+<li><code>src/</code> : Primary C++ source tree (see grouping below).</li>
+</ul>
+<p>Within <code>src/</code> the code is grouped by concern to make navigation and extension predictable:</p>
+<ul>
+<li><code>Exceptions/</code> : Custom exception types (domain errors, runtime problems).</li>
+<li><code>Geometry/</code> : Fundamental math and geometric primitives (Point3D, Vector3D, Ray, Rectangle3D, HitRecord).</li>
+<li><code>Objects/</code> : Public object model and plugin boundaries.<ul>
+<li><code>Abstracts/</code> : Core abstract classes and interfaces (APrimitive, ARenderer, AInterface, IMaterial, ILight).</li>
+<li><code>Plugins/</code> : Plugin implementations and plugin-facing folders (Interfaces, Lights, Materials, Primitives, Renderers).</li>
+</ul>
+</li>
+<li><code>PluginManager/</code> : Loader and factory utilities for runtime plugins.</li>
+<li><code>SceneSystem/</code> : Scene composition and IO (Scene, SceneLoader, ConfigParser).</li>
+<li><code>Utils/</code> : Small helpers (Color, logging helpers, etc.).</li>
+</ul>
+<p>Grouping rationale: source is split so that algorithmic, data, and external/IO concerns live in separate folders. <code>Objects/Abstracts</code> declares extension points; <code>Objects/Plugins</code> and <code>PluginManager</code> provide runtime extensibility without changing core logic.</p>
+<h1><a class="anchor" id="architecture"></a>
+Architecture Overview</h1>
+<p>The architecture is built on several core abstractions:</p>
+<h2><a class="anchor" id="arch_renderer"></a>
+Rendering Pipeline: ARenderer → Camera</h2>
+<p>ARenderer is the abstract base for all renderers. It defines the interface:</p><ul>
+<li><a class="el" href="classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271">render()</a> — produces a 2D framebuffer</li>
+</ul>
+<p><a class="el" href="classRayTracer_1_1Camera.html">Camera</a> is the concrete implementation of <a class="el" href="classRayTracer_1_1ARenderer.html">ARenderer</a>. It:</p><ul>
+<li>Holds camera position, direction, and field-of-view (FOV)</li>
+<li>Generates rays for each pixel via <a class="el" href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd">generateRay()</a></li>
+<li>Casts rays into the scene and computes colors via <a class="el" href="classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11">castRay()</a></li>
+<li>Handles shadow computation via <a class="el" href="classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8">computeShadow()</a></li>
+<li><p class="startli">Returns the fully rendered framebuffer (without writing it)</p>
+<p class="startli">Why: Separating the renderer abstraction from output writing allows different rendering strategies (e.g., ray-tracing, path-tracing) and different output formats without duplication.</p>
+</li>
+</ul>
+<h2><a class="anchor" id="arch_interface"></a>
+Output Pipeline: AInterface → SceneWriter</h2>
+<p><a class="el" href="classRayTracer_1_1AInterface.html">AInterface</a> owns an <a class="el" href="classRayTracer_1_1ARenderer.html">ARenderer</a>* and coordinates the overall application flow.</p>
+<p><a class="el" href="classRayTracer_1_1SceneWriter.html">SceneWriter</a> is a concrete <a class="el" href="classRayTracer_1_1AInterface.html">AInterface</a> that:</p><ul>
+<li>Takes a <a class="el" href="classRayTracer_1_1Camera.html">Camera</a> (<a class="el" href="classRayTracer_1_1ARenderer.html">ARenderer</a>) and output filename</li>
+<li>Calls <a class="el" href="classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271">render()</a> to get the framebuffer</li>
+<li>Writes the framebuffer to a PPM file</li>
+<li><p class="startli">Can be replaced by other interfaces (game loops, real-time viewers, etc.)</p>
+<p class="startli">Why: Output handling is separate from rendering—the renderer stays stateless and doesn't know about I/O.</p>
+</li>
+</ul>
+<h2><a class="anchor" id="arch_scene"></a>
+Scene Graph</h2>
+<p><a class="el" href="classRayTracer_1_1Scene.html">Scene</a> holds:</p><ul>
+<li>A <a class="el" href="classRayTracer_1_1Camera.html">Camera</a> (the active renderer)</li>
+<li>A list of primitives (shapes to render)</li>
+<li>A list of lights (light sources)</li>
+</ul>
+<p>SceneLoader (planned) will parse scene descriptions and populate scenes programmatically.</p>
+<h2><a class="anchor" id="arch_geometry"></a>
+Geometry</h2>
+<p>Core geometric types in the <a class="el" href="namespaceGeometry.html">Geometry</a> namespace:</p><ul>
+<li><a class="el" href="classGeometry_1_1Point3D.html">Point3D</a> — a 3D position</li>
+<li><a class="el" href="classGeometry_1_1Vector3D.html">Vector3D</a> — a 3D direction/magnitude; supports normalize(), length(), dot, cross</li>
+<li><a class="el" href="classGeometry_1_1Ray.html">Ray</a> — origin + direction, the fundamental unit cast through the scene</li>
+<li><a class="el" href="classGeometry_1_1Rectangle3D.html">Rectangle3D</a> — planar screen surface (defined by two edge vectors)</li>
+<li><a class="el" href="structGeometry_1_1HitRecord.html">HitRecord</a> — records intersection data: point, surface normal, ray distance, material</li>
+</ul>
+<h2><a class="anchor" id="arch_primitives"></a>
+Primitives: Objects &amp; Materials</h2>
+<p><a class="el" href="classRayTracer_1_1APrimitive.html">APrimitive</a> is the abstract shape base. Subclasses:</p><ul>
+<li><a class="el" href="classRayTracer_1_1Plane.html">Plane</a> — infinite flat surface</li>
+<li>Sphere — sphere (planned)</li>
+</ul>
+<p>Each primitive:</p><ul>
+<li>Stores an <a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a>* pointer</li>
+<li>Implements <a class="el" href="classRayTracer_1_1APrimitive.html#af00a66a6a6b8d251f5d21e1cc5077c6b">hit()</a> to test ray–primitive intersection (returns an optional <a class="el" href="structGeometry_1_1HitRecord.html">HitRecord</a>)</li>
+<li>Via <a class="el" href="classRayTracer_1_1APrimitive.html#acdc1a350e79537fa0b9c8588a170bdcf">getMaterial()</a>, provides shading instructions</li>
+</ul>
+<p><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> defines shading behavior:</p><ul>
+<li><a class="el" href="classRayTracer_1_1IMaterial.html#a18c2601138a3f78d3f6ceb3d0c713a38">computeColor()</a> — computes pixel color given an intersection and lights</li>
+</ul>
+<p><a class="el" href="classRayTracer_1_1FlatColor.html">FlatColor</a> is a simple material that returns a constant RGB value.</p>
+<p>Why: Decoupling geometry from appearance (material) allows reuse and runtime material swapping.</p>
+<h2><a class="anchor" id="arch_lights"></a>
+Lights</h2>
+<p><a class="el" href="classRayTracer_1_1ILight.html">ILight</a> is the light abstraction:</p><ul>
+<li><a class="el" href="classRayTracer_1_1ILight.html#ac75b76eed4ec368ee29fb003c3d11480">getPosition()</a> → <a class="el" href="classGeometry_1_1Point3D.html">Point3D</a> (e.g., point light position)</li>
+<li><a class="el" href="classRayTracer_1_1ILight.html#aa0498718fee2e18cf30ea68ab7b2eaa6">computeContribution()</a> — computes light's effect at a hit point</li>
+</ul>
+<p>Lights are stored in the Scene and referenced during shading computations.</p>
+<h2><a class="anchor" id="arch_plugins"></a>
+Plugin System</h2>
+<p>Plugins are compiled as separate dynamic libraries (.so) and can provide:</p><ul>
+<li><a class="el" href="classRayTracer_1_1APrimitive.html">APrimitive</a> subclasses — custom shapes</li>
+<li><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> subclasses — custom shaders</li>
+<li><a class="el" href="classRayTracer_1_1ILight.html">ILight</a> subclasses — custom light types</li>
+<li><a class="el" href="classRayTracer_1_1ARenderer.html">ARenderer</a> subclasses — alternative renderers (e.g., path-tracer)</li>
+<li><a class="el" href="classRayTracer_1_1AInterface.html">AInterface</a> subclasses — application backends (game loop, network streaming, etc.)</li>
+</ul>
+<p>PluginLoader handles runtime .so loading. PrimitiveFactory instantiates plugins on demand.</p>
+<h1><a class="anchor" id="pipeline"></a>
+Rendering Pipeline</h1>
+<ol type="1">
+<li>User creates a Scene with Camera, primitives, and lights</li>
+<li>Create a Camera (ARenderer instance) with resolution and view parameters</li>
+<li>Wrap it in a SceneWriter (AInterface) with output path</li>
+<li>Call <code>sceneWriter-&gt;execute(scene)</code></li>
+<li>SceneWriter calls <code>camera-&gt;render(scene)</code>:<ul>
+<li>For each pixel (x, y):<ul>
+<li>Generate normalized coordinates (u, v)</li>
+<li>Generate a ray via <code>camera-&gt;generateRay(u, v)</code></li>
+<li>Cast the ray: <code>castRay(ray, scene)</code> returns a Color</li>
+</ul>
+</li>
+<li>For each ray, find the closest primitive intersection</li>
+<li>If hit, compute shadow from lights, fetch material, shade via <code>material-&gt;computeColor()</code></li>
+<li>Return 2D framebuffer</li>
+</ul>
+</li>
+<li>SceneWriter writes framebuffer to PPM file</li>
+</ol>
+<h1><a class="anchor" id="design"></a>
+Design Rationale</h1>
+<ul>
+<li><b>Abstraction hierarchy</b> — ARenderer, AInterface, APrimitive, IMaterial, ILight provide clear extension points</li>
+<li><b>Immutable rendering</b> — <code>render()</code> returns a framebuffer; no side effects</li>
+<li><b>Separation of concerns</b> — rendering logic (Camera) is independent of I/O (SceneWriter)</li>
+<li><b>Plugin architecture</b> — allows closed-source or experimental code without modifying core</li>
+<li><b>No output in Camera</b> — the Camera class is a pure filter; output is delegated</li>
+</ul>
+<h1><a class="anchor" id="future"></a>
+Future Enhancements</h1>
+<ul>
+<li>Path tracing (ARenderer subclass)</li>
+<li>Spheres and complex primitives</li>
+<li>Texture mapping (IMaterial extensions)</li>
+<li>Spatial acceleration structures (BVH, KD-trees)</li>
+<li>Parallel rendering (multithreaded Camera)</li>
+<li>Real-time viewer (AInterface subclass)</li>
+<li>Network rendering (distributed AInterface) </li>
+</ul>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

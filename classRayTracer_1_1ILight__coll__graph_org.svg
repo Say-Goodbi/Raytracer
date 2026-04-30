@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Abstract base for light sources.">
 <polygon fill="#999999" stroke="transparent" points="132,-79 0,-79 0,0 132,0 132,-79"/>
 <text text-anchor="start" x="25" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::ILight</text>
 <text text-anchor="start" x="64" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>

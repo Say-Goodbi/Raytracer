@@ -1,0 +1,5 @@
+<map id="RayTracer::ARenderer::render" name="RayTracer::ARenderer::render">
+<area shape="rect" id="Node000001" title="Render a scene and produce a framebuffer." alt="" coords="227,5,389,45"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1SceneWriter.html#a148f4441944d104f0248d7723b5fbc54" title="Render the scene and write the framebuffer to a PPM file." alt="" coords="5,5,179,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,28,179,28,179,23,213,23"/>
+</map>

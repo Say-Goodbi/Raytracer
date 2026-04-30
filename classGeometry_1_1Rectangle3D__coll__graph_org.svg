@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Represents a planar rectangular surface in 3D space. Defined by an origin and two edge vectors (width...">
 <polygon fill="#999999" stroke="transparent" points="177,-64 50,-64 50,0 177,0 177,-64"/>
 <text text-anchor="start" x="55.5" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Rectangle3D</text>
 <text text-anchor="start" x="112" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
@@ -28,7 +28,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classGeometry_1_1Point3D.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classGeometry_1_1Point3D.html" target="_top" xlink:title="Represents a 3D point in space.">
 <polygon fill="white" stroke="transparent" points="103,-336 0,-336 0,-167 103,-167 103,-336"/>
 <text text-anchor="start" x="5.5" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D</text>
 <text text-anchor="start" x="8.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -71,7 +71,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classGeometry_1_1Vector3D.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classGeometry_1_1Vector3D.html" target="_top" xlink:title="Represents a 3D vector for directions or displacements.">
 <polygon fill="white" stroke="transparent" points="230,-381 121,-381 121,-122 230,-122 230,-381"/>
 <text text-anchor="start" x="126.5" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
 <text text-anchor="start" x="131" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

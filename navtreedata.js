@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "Raytracer", "index.html", [
+    [ "Raytracer Manual", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -39,19 +40,15 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"AMaterial_8hpp.html",
-"classRayTracer_1_1Plane.html#aad26406644051e626d8ef6d2e6391c18"
+"AInterface_8hpp.html",
+"classRayTracer_1_1FlatColor.html#a2f06ed553959604918de3f7f410ca5d9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
