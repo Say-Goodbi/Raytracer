@@ -4,6 +4,7 @@
 #include "../../Objects/Interface/ILight.hpp"
 #include <vector>
 #include <memory>
+
 namespace RayTracer
 {
     class Scene

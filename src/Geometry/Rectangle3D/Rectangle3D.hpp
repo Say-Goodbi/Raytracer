@@ -1,7 +1,7 @@
 #pragma once
-
 #include "../Point3D/Point3D.hpp"
 #include "../Vector3D/Vector3D.hpp"
+
 namespace Geometry
 {
     class Rectangle3D
