@@ -1,10 +1,10 @@
 <map id="RayTracer::Camera::castRay" name="RayTracer::Camera::castRay">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,54,159,94"/>
+<area shape="rect" id="Node000001" title="Trace a single ray in the scene and compute the resulting color." alt="" coords="5,54,159,94"/>
 <area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="453,64,624,89"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,51,159,31,206,16,262,6,306,3,350,6,406,16,459,33,505,55,502,59,457,38,405,22,350,11,306,8,262,11,207,22,161,36,119,56"/>
 <area shape="rect" id="Node000003" href="$structRayTracer_1_1Color.html#ae749f3583bffdf5596744257593d35e6" title=" " alt="" coords="218,32,394,57"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,61,204,55,205,60,159,66"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8" title=" " alt="" coords="229,82,383,122"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8" title="Determine whether a hit point is shadowed by any primitive." alt="" coords="229,82,383,122"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,81,216,88,215,93,159,86"/>
 <area shape="rect" id="Node000005" href="$structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8" title=" " alt="" coords="207,146,405,172"/>
 <area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="121,91,208,131,236,140,234,145,206,136,119,96"/>

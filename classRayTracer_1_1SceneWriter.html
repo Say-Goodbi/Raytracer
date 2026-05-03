@@ -150,7 +150,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Concrete interface implementation that renders a scene and writes output to a PPM file. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneWriter_8hpp_source.html#l00008">8</a> of file <a class="el" href="SceneWriter_8hpp_source.html">SceneWriter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SceneWriter_8hpp_source.html#l00007">7</a> of file <a class="el" href="SceneWriter_8hpp_source.html">SceneWriter.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a15622a3205869a4e472e37ed311efb43" name="a15622a3205869a4e472e37ed311efb43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15622a3205869a4e472e37ed311efb43">&#9670;&#160;</a></span>SceneWriter()</h2>
@@ -182,19 +182,14 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">renderer</td><td>The renderer to use for rendering </td></tr>
-    <tr><td class="paramname">outputFile</td><td>Output PPM file path (default "output.ppm") </td></tr>
+    <tr><td class="paramname">outputFile</td><td>Output PPM file path (default "output.ppm")</td></tr>
+    <tr><td class="paramname">renderer</td><td>Pointer to the renderer (<a class="el" href="classRayTracer_1_1ARenderer.html" title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr...">ARenderer</a>) that will generate the framebuffer </td></tr>
+    <tr><td class="paramname">outputFile</td><td>Path to the output PPM file to be written </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="SceneWriter_8cpp_source.html#l00008">8</a> of file <a class="el" href="SceneWriter_8cpp_source.html">SceneWriter.cpp</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1SceneWriter_a15622a3205869a4e472e37ed311efb43_cgraph.svg" width="394" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="SceneWriter_8cpp_source.html#l00014">14</a> of file <a class="el" href="SceneWriter_8cpp_source.html">SceneWriter.cpp</a>.</p>
 
 </div>
 </div>
@@ -249,23 +244,37 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Render the scene and write the framebuffer to a PPM file. </p>
+<p>Render the scene and write the result to a PPM file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scene</td><td>The scene to render and output </td></tr>
+    <tr><td class="paramname">scene</td><td>The scene to render and output</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Output format: PPM (Portable Pixmap) P3 (ASCII) format PPM structure:</p><ul>
+<li>Header: "P3\n"</li>
+<li>Dimensions: "width height\n"</li>
+<li>Max color value: "255\n"</li>
+<li>Pixel data: R G B values (0-255) per line, one pixel per line</li>
+</ul>
+<p>Algorithm:</p><ol type="1">
+<li>Call renderer-&gt;render(scene) to get the framebuffer</li>
+<li>Extract framebuffer dimensions (height × width)</li>
+<li>Open output file for writing</li>
+<li>Write PPM header with dimensions</li>
+<li>Iterate through each pixel [y][x] and write RGB values (converted to 0-255 range)</li>
+<li>Close the file</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scene</td><td>The scene to render and write </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Implements <a class="el" href="classRayTracer_1_1AInterface.html#a0559b88b0596f291c0ab3da0889b8fbe">RayTracer::AInterface</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="SceneWriter_8cpp_source.html#l00013">13</a> of file <a class="el" href="SceneWriter_8cpp_source.html">SceneWriter.cpp</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1SceneWriter_a148f4441944d104f0248d7723b5fbc54_cgraph.svg" width="395" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="SceneWriter_8cpp_source.html#l00039">39</a> of file <a class="el" href="SceneWriter_8cpp_source.html">SceneWriter.cpp</a>.</p>
 
 </div>
 </div>
@@ -292,13 +301,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Output file path. </p>
 
-<p class="definition">Definition at line <a class="el" href="SceneWriter_8hpp_source.html#l00011">11</a> of file <a class="el" href="SceneWriter_8hpp_source.html">SceneWriter.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="SceneWriter_8hpp_source.html#l00010">10</a> of file <a class="el" href="SceneWriter_8hpp_source.html">SceneWriter.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/Objects/Plugins/Interfaces/SceneWriter/<a class="el" href="SceneWriter_8hpp_source.html">SceneWriter.hpp</a></li>
-<li>src/Objects/Plugins/Interfaces/SceneWriter/<a class="el" href="SceneWriter_8cpp_source.html">SceneWriter.cpp</a></li>
+<li>src/CorePlugin/Interfaces/SceneWriter/<a class="el" href="SceneWriter_8hpp_source.html">SceneWriter.hpp</a></li>
+<li>src/CorePlugin/Interfaces/SceneWriter/<a class="el" href="SceneWriter_8cpp_source.html">SceneWriter.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

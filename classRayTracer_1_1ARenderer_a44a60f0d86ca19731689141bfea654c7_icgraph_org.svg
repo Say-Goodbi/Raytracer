@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" target="_top" xlink:title="Constructor.">
+<g id="a_Node000002"><a xlink:href="classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" target="_top" xlink:title="Construct a camera renderer.">
 <polygon fill="white" stroke="#666666" points="115,-30 0,-30 0,0 115,0 115,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="57.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Camera</text>

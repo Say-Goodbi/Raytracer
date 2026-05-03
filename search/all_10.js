@@ -9,7 +9,8 @@ var searchData=
   ['scenewriter_6',['scenewriter',['../index.html#arch_interface',1,'Output Pipeline: AInterface → SceneWriter'],['../classRayTracer_1_1SceneWriter.html',1,'RayTracer::SceneWriter'],['../classRayTracer_1_1SceneWriter.html#a15622a3205869a4e472e37ed311efb43',1,'RayTracer::SceneWriter::SceneWriter()']]],
   ['scenewriter_2ecpp_7',['SceneWriter.cpp',['../SceneWriter_8cpp.html',1,'']]],
   ['scenewriter_2ehpp_8',['SceneWriter.hpp',['../SceneWriter_8hpp.html',1,'']]],
-  ['sphere_2ecpp_9',['Sphere.cpp',['../Sphere_8cpp.html',1,'']]],
-  ['sphere_2ehpp_10',['Sphere.hpp',['../Sphere_8hpp.html',1,'']]],
-  ['system_11',['Plugin System',['../index.html#arch_plugins',1,'']]]
+  ['setting_9',['Setting',['../IPlugin_8hpp.html#a259ff2be4550e7df8dfeedce48ec60fb',1,'IPlugin.hpp']]],
+  ['sphere_2ecpp_10',['Sphere.cpp',['../Sphere_8cpp.html',1,'']]],
+  ['sphere_2ehpp_11',['Sphere.hpp',['../Sphere_8hpp.html',1,'']]],
+  ['system_20coreplugin_12',['Plugin System &amp; CorePlugin',['../index.html#arch_plugins',1,'']]]
 ];

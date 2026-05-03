@@ -20,5 +20,8 @@ var annotated_dup =
       [ "Plane", "classRayTracer_1_1Plane.html", "classRayTracer_1_1Plane" ],
       [ "Scene", "classRayTracer_1_1Scene.html", "classRayTracer_1_1Scene" ],
       [ "SceneWriter", "classRayTracer_1_1SceneWriter.html", "classRayTracer_1_1SceneWriter" ]
-    ] ]
+    ] ],
+    [ "CorePlugin", "classCorePlugin.html", "classCorePlugin" ],
+    [ "IPlugin", "classIPlugin.html", "classIPlugin" ],
+    [ "PluginManager", "classPluginManager.html", "classPluginManager" ]
 ];

@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 576;
+var viewWidth = 577;
 var viewHeight = 460;
 var sectionId = 'dynsection-2';
 </script>
@@ -58,9 +58,9 @@ var sectionId = 'dynsection-2';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="568,-246 453,-246 453,-216 568,-216 568,-246"/>
-<text text-anchor="start" x="461" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="middle" x="510.5" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">::Vector3D</text>
+<polygon fill="#999999" stroke="#666666" points="569,-246 454,-246 454,-216 569,-216 569,-246"/>
+<text text-anchor="start" x="462" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
+<text text-anchor="middle" x="511.5" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">::Vector3D</text>
 </a>
 </g>
 </g>
@@ -68,9 +68,9 @@ var sectionId = 'dynsection-2';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="417,-452 302,-452 302,-422 417,-422 417,-452"/>
-<text text-anchor="start" x="310" y="-440" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="middle" x="359.5" y="-429" font-family="Helvetica,sans-Serif" font-size="10.00">::cross</text>
+<polygon fill="white" stroke="#666666" points="418,-452 303,-452 303,-422 418,-422 418,-452"/>
+<text text-anchor="start" x="311" y="-440" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
+<text text-anchor="middle" x="360.5" y="-429" font-family="Helvetica,sans-Serif" font-size="10.00">::cross</text>
 </a>
 </g>
 </g>
@@ -78,18 +78,18 @@ var sectionId = 'dynsection-2';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M501.99,-255.74C489.61,-292.92 461.76,-363.57 417,-408 411.52,-413.44 404.82,-418.07 397.96,-421.93"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="505.33,-256.78 505.07,-246.19 498.67,-254.63 505.33,-256.78"/>
+<path fill="none" stroke="#63b8ff" d="M502.99,-255.74C490.61,-292.92 462.76,-363.57 418,-408 412.52,-413.44 405.82,-418.07 398.96,-421.93"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="506.33,-256.78 506.07,-246.19 499.67,-254.63 506.33,-256.78"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="266,-387 151,-387 151,-357 266,-357 266,-387"/>
-<text text-anchor="start" x="159" y="-375" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
-<text text-anchor="middle" x="208.5" y="-364" font-family="Helvetica,sans-Serif" font-size="10.00">generateRay</text>
+<g id="a_Node000003"><a xlink:href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" target="_top" xlink:title="Generate a world&#45;space ray from normalized screen coordinates.">
+<polygon fill="white" stroke="#666666" points="266.5,-387 151.5,-387 151.5,-357 266.5,-357 266.5,-387"/>
+<text text-anchor="start" x="159.5" y="-375" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
+<text text-anchor="middle" x="209" y="-364" font-family="Helvetica,sans-Serif" font-size="10.00">generateRay</text>
 </a>
 </g>
 </g>
@@ -97,8 +97,8 @@ var sectionId = 'dynsection-2';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M501.82,-256.11C489.89,-290.18 463.32,-349.7 417,-375 370.68,-400.3 309.42,-395.66 265.49,-387.06"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="505.21,-257.02 505.06,-246.42 498.57,-254.8 505.21,-257.02"/>
+<path fill="none" stroke="#63b8ff" d="M502.82,-256.11C490.89,-290.18 464.32,-349.7 418,-375 371.41,-400.45 309.74,-395.68 265.67,-387.01"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="506.21,-257.02 506.06,-246.42 499.57,-254.8 506.21,-257.02"/>
 </a>
 </g>
 </g>
@@ -106,9 +106,9 @@ var sectionId = 'dynsection-2';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="417,-366 302,-366 302,-336 417,-336 417,-366"/>
-<text text-anchor="start" x="310" y="-354" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="middle" x="359.5" y="-343" font-family="Helvetica,sans-Serif" font-size="10.00">::normalize</text>
+<polygon fill="white" stroke="#666666" points="418,-366 303,-366 303,-336 418,-336 418,-366"/>
+<text text-anchor="start" x="311" y="-354" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
+<text text-anchor="middle" x="360.5" y="-343" font-family="Helvetica,sans-Serif" font-size="10.00">::normalize</text>
 </a>
 </g>
 </g>
@@ -116,8 +116,8 @@ var sectionId = 'dynsection-2';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M491.88,-254.03C474.68,-275.26 446.79,-306.5 417,-327 412.17,-330.32 406.81,-333.33 401.37,-335.99"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="494.66,-256.15 498.15,-246.15 489.19,-251.79 494.66,-256.15"/>
+<path fill="none" stroke="#63b8ff" d="M492.88,-254.03C475.68,-275.26 447.79,-306.5 418,-327 413.17,-330.32 407.81,-333.33 402.37,-335.99"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="495.66,-256.15 499.15,-246.15 490.19,-251.79 495.66,-256.15"/>
 </a>
 </g>
 </g>
@@ -125,9 +125,9 @@ var sectionId = 'dynsection-2';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="classGeometry_1_1Vector3D.html#a2b061b80e0fb7144c2fdcf4aa9ba73bf" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="417,-318 302,-318 302,-288 417,-288 417,-318"/>
-<text text-anchor="start" x="310" y="-306" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="middle" x="359.5" y="-295" font-family="Helvetica,sans-Serif" font-size="10.00">::operator*</text>
+<polygon fill="white" stroke="#666666" points="418,-318 303,-318 303,-288 418,-288 418,-318"/>
+<text text-anchor="start" x="311" y="-306" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
+<text text-anchor="middle" x="360.5" y="-295" font-family="Helvetica,sans-Serif" font-size="10.00">::operator*</text>
 </a>
 </g>
 </g>
@@ -135,8 +135,8 @@ var sectionId = 'dynsection-2';
 <g id="edge6_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
 <g id="a_edge6_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M472.87,-250.83C456.01,-259.75 435.64,-270.22 417,-279 410.64,-282 403.8,-285.04 397.15,-287.92"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="474.66,-253.84 481.85,-246.06 471.38,-247.66 474.66,-253.84"/>
+<path fill="none" stroke="#63b8ff" d="M473.87,-250.83C457.01,-259.75 436.64,-270.22 418,-279 411.64,-282 404.8,-285.04 398.15,-287.92"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="475.66,-253.84 482.85,-246.06 472.38,-247.66 475.66,-253.84"/>
 </a>
 </g>
 </g>
@@ -144,9 +144,9 @@ var sectionId = 'dynsection-2';
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:href="classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="417,-270 302,-270 302,-240 417,-240 417,-270"/>
-<text text-anchor="start" x="310" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="middle" x="359.5" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">::operator*</text>
+<polygon fill="white" stroke="#666666" points="418,-270 303,-270 303,-240 418,-240 418,-270"/>
+<text text-anchor="start" x="311" y="-258" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
+<text text-anchor="middle" x="360.5" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">::operator*</text>
 </a>
 </g>
 </g>
@@ -154,8 +154,8 @@ var sectionId = 'dynsection-2';
 <g id="edge7_Node000001_Node000007" class="edge">
 <title>Node1&#45;&gt;Node7</title>
 <g id="a_edge7_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M442.77,-241.75C434.2,-243.13 425.49,-244.53 417.1,-245.88"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="443.43,-245.19 452.74,-240.14 442.32,-238.28 443.43,-245.19"/>
+<path fill="none" stroke="#63b8ff" d="M443.77,-241.75C435.2,-243.13 426.49,-244.53 418.1,-245.88"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="444.43,-245.19 453.74,-240.14 443.32,-238.28 444.43,-245.19"/>
 </a>
 </g>
 </g>
@@ -163,9 +163,9 @@ var sectionId = 'dynsection-2';
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:href="classGeometry_1_1Vector3D.html#a374498ca7780e4ff496e56d58424e111" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="417,-222 302,-222 302,-192 417,-192 417,-222"/>
-<text text-anchor="start" x="310" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="middle" x="359.5" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">::operator+</text>
+<polygon fill="white" stroke="#666666" points="418,-222 303,-222 303,-192 418,-192 418,-222"/>
+<text text-anchor="start" x="311" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
+<text text-anchor="middle" x="360.5" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">::operator+</text>
 </a>
 </g>
 </g>
@@ -173,8 +173,8 @@ var sectionId = 'dynsection-2';
 <g id="edge8_Node000001_Node000008" class="edge">
 <title>Node1&#45;&gt;Node8</title>
 <g id="a_edge8_Node000001_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M442.77,-220.25C434.2,-218.87 425.49,-217.47 417.1,-216.12"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="442.32,-223.72 452.74,-221.86 443.43,-216.81 442.32,-223.72"/>
+<path fill="none" stroke="#63b8ff" d="M443.77,-220.25C435.2,-218.87 426.49,-217.47 418.1,-216.12"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="443.32,-223.72 453.74,-221.86 444.43,-216.81 443.32,-223.72"/>
 </a>
 </g>
 </g>
@@ -182,9 +182,9 @@ var sectionId = 'dynsection-2';
 <g id="Node000009" class="node">
 <title>Node9</title>
 <g id="a_Node000009"><a xlink:href="classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="417,-174 302,-174 302,-144 417,-144 417,-174"/>
-<text text-anchor="start" x="310" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D::</text>
-<text text-anchor="middle" x="359.5" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;</text>
+<polygon fill="white" stroke="#666666" points="418,-174 303,-174 303,-144 418,-144 418,-174"/>
+<text text-anchor="start" x="311" y="-162" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D::</text>
+<text text-anchor="middle" x="360.5" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;</text>
 </a>
 </g>
 </g>
@@ -192,37 +192,18 @@ var sectionId = 'dynsection-2';
 <g id="edge9_Node000001_Node000009" class="edge">
 <title>Node1&#45;&gt;Node9</title>
 <g id="a_edge9_Node000001_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M472.87,-211.17C456.01,-202.25 435.64,-191.78 417,-183 410.64,-180 403.8,-176.96 397.15,-174.08"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="471.38,-214.34 481.85,-215.94 474.66,-208.16 471.38,-214.34"/>
-</a>
-</g>
-</g>
-<!-- Node10 -->
-<g id="Node000010" class="node">
-<title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="417,-126 302,-126 302,-96 417,-96 417,-126"/>
-<text text-anchor="start" x="310" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="middle" x="359.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">::operator&#45;</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node10 -->
-<g id="edge10_Node000001_Node000010" class="edge">
-<title>Node1&#45;&gt;Node10</title>
-<g id="a_edge10_Node000001_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M491.88,-207.97C474.68,-186.74 446.79,-155.5 417,-135 412.17,-131.68 406.81,-128.67 401.37,-126.01"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="489.19,-210.21 498.15,-215.85 494.66,-205.85 489.19,-210.21"/>
+<path fill="none" stroke="#63b8ff" d="M473.87,-211.17C457.01,-202.25 436.64,-191.78 418,-183 411.64,-180 404.8,-176.96 398.15,-174.08"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="472.38,-214.34 482.85,-215.94 475.66,-208.16 472.38,-214.34"/>
 </a>
 </g>
 </g>
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classGeometry_1_1Vector3D.html#ae922fd3535e26ab859ab96c63c67dace" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="417,-78 302,-78 302,-48 417,-48 417,-78"/>
-<text text-anchor="start" x="310" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="middle" x="359.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::operator/</text>
+<g id="a_Node000011"><a xlink:href="classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="418,-126 303,-126 303,-96 418,-96 418,-126"/>
+<text text-anchor="start" x="311" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
+<text text-anchor="middle" x="360.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">::operator&#45;</text>
 </a>
 </g>
 </g>
@@ -230,18 +211,18 @@ var sectionId = 'dynsection-2';
 <g id="edge11_Node000001_Node000011" class="edge">
 <title>Node1&#45;&gt;Node11</title>
 <g id="a_edge11_Node000001_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M499.31,-206.49C485.1,-174.98 456.55,-120.37 417,-87 413.01,-83.63 408.47,-80.68 403.75,-78.09"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="496.19,-208.1 503.42,-215.85 502.6,-205.28 496.19,-208.1"/>
+<path fill="none" stroke="#63b8ff" d="M492.88,-207.97C475.68,-186.74 447.79,-155.5 418,-135 413.17,-131.68 407.81,-128.67 402.37,-126.01"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="490.19,-210.21 499.15,-215.85 495.66,-205.85 490.19,-210.21"/>
 </a>
 </g>
 </g>
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="417,-30 302,-30 302,0 417,0 417,-30"/>
-<text text-anchor="start" x="310" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="middle" x="359.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::operator/</text>
+<g id="a_Node000012"><a xlink:href="classGeometry_1_1Vector3D.html#ae922fd3535e26ab859ab96c63c67dace" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="418,-78 303,-78 303,-48 418,-48 418,-78"/>
+<text text-anchor="start" x="311" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
+<text text-anchor="middle" x="360.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">::operator/</text>
 </a>
 </g>
 </g>
@@ -249,15 +230,34 @@ var sectionId = 'dynsection-2';
 <g id="edge12_Node000001_Node000012" class="edge">
 <title>Node1&#45;&gt;Node12</title>
 <g id="a_edge12_Node000001_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M503.61,-206.07C492.9,-165.84 466.65,-86.35 417,-39 413.45,-35.62 409.36,-32.67 405.02,-30.12"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="500.24,-207.04 506.11,-215.86 507.02,-205.31 500.24,-207.04"/>
+<path fill="none" stroke="#63b8ff" d="M500.31,-206.49C486.1,-174.98 457.55,-120.37 418,-87 414.01,-83.63 409.47,-80.68 404.75,-78.09"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="497.19,-208.1 504.42,-215.85 503.6,-205.28 497.19,-208.1"/>
+</a>
+</g>
+</g>
+<!-- Node13 -->
+<g id="Node000013" class="node">
+<title>Node13</title>
+<g id="a_Node000013"><a xlink:href="classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="418,-30 303,-30 303,0 418,0 418,-30"/>
+<text text-anchor="start" x="311" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
+<text text-anchor="middle" x="360.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::operator/</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node13 -->
+<g id="edge13_Node000001_Node000013" class="edge">
+<title>Node1&#45;&gt;Node13</title>
+<g id="a_edge13_Node000001_Node000013"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M504.61,-206.07C493.9,-165.84 467.65,-86.35 418,-39 414.45,-35.62 410.36,-32.67 406.02,-30.12"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="501.24,-207.04 507.11,-215.86 508.02,-205.31 501.24,-207.04"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" target="_top" xlink:title="Render a scene and produce a framebuffer.">
+<g id="a_Node000004"><a xlink:href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" target="_top" xlink:title="Render a full scene into a 2D framebuffer.">
 <polygon fill="white" stroke="#666666" points="115,-387 0,-387 0,-357 115,-357 115,-387"/>
 <text text-anchor="start" x="8" y="-375" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="57.5" y="-364" font-family="Helvetica,sans-Serif" font-size="10.00">render</text>
@@ -268,8 +268,8 @@ var sectionId = 'dynsection-2';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M140.49,-372C132.01,-372 123.4,-372 115.1,-372"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="140.74,-375.5 150.74,-372 140.74,-368.5 140.74,-375.5"/>
+<path fill="none" stroke="#63b8ff" d="M141.31,-372C132.56,-372 123.66,-372 115.1,-372"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="141.48,-375.5 151.48,-372 141.48,-368.5 141.48,-375.5"/>
 </a>
 </g>
 </g>
@@ -277,8 +277,26 @@ var sectionId = 'dynsection-2';
 <g id="edge5_Node000005_Node000003" class="edge">
 <title>Node5&#45;&gt;Node3</title>
 <g id="a_edge5_Node000005_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M291.77,-360.4C283.2,-361.61 274.49,-362.84 266.1,-364.02"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="292.33,-363.86 301.74,-359 291.35,-356.93 292.33,-363.86"/>
+<path fill="none" stroke="#63b8ff" d="M292.81,-360.37C284.06,-361.6 275.16,-362.85 266.6,-364.05"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="293.56,-363.8 302.98,-358.94 292.59,-356.86 293.56,-363.8"/>
+</a>
+</g>
+</g>
+<!-- Node10 -->
+<g id="Node000010" class="node">
+<title>Node10</title>
+<g id="a_Node000010"><a xlink:href="classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" target="_top" xlink:title="Test ray–plane intersection using the algebraic plane equation.">
+<polygon fill="white" stroke="#666666" points="267,-168.5 151,-168.5 151,-149.5 267,-149.5 267,-168.5"/>
+<text text-anchor="middle" x="209" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Plane::hit</text>
+</a>
+</g>
+</g>
+<!-- Node9&#45;&gt;Node10 -->
+<g id="edge10_Node000009_Node000010" class="edge">
+<title>Node9&#45;&gt;Node10</title>
+<g id="a_edge10_Node000009_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M292.95,-159C284.32,-159 275.55,-159 267.1,-159"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="292.98,-162.5 302.98,-159 292.98,-155.5 292.98,-162.5"/>
 </a>
 </g>
 </g>

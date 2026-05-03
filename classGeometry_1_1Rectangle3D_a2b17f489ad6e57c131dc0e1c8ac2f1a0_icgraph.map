@@ -1,7 +1,7 @@
 <map id="Geometry::Rectangle3D::pointAt" name="Geometry::Rectangle3D::pointAt">
 <area shape="rect" id="Node000001" title="Get a point on the rectangle at normalized coordinates (u, v)." alt="" coords="408,5,585,45"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title=" " alt="" coords="207,5,360,45"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Generate a world&#45;space ray from normalized screen coordinates." alt="" coords="207,5,360,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,28,360,28,360,23,394,23"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render a scene and produce a framebuffer." alt="" coords="5,5,159,45"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render a full scene into a 2D framebuffer." alt="" coords="5,5,159,45"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
 </map>

@@ -1,19 +1,5 @@
 <map id="src/Geometry/Rectangle3D/Rectangle3D.hpp" name="src/Geometry/Rectangle3D/Rectangle3D.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="217,5,415,45"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,203,45"/>
 <area shape="rect" id="Node000002" href="$Rectangle3D_8cpp.html" title=" " alt="" coords="5,93,203,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,53,151,96,149,91,256,48"/>
-<area shape="rect" id="Node000003" href="$FlatColor_8hpp.html" title=" " alt="" coords="227,93,405,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="319,59,319,93,313,93,313,59"/>
-<area shape="rect" id="Node000004" href="$SceneSystem_2Camera_2Camera_8hpp.html" title=" " alt="" coords="429,93,617,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="375,48,478,91,476,96,373,53"/>
-<area shape="rect" id="Node000005" href="$Scene_8hpp.html" title=" " alt="" coords="435,181,611,221"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="525,147,525,181,520,181,520,147"/>
-<area shape="rect" id="Node000006" href="$ILight_8hpp.html" title=" " alt="" coords="253,277,411,317"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="473,230,372,279,369,274,471,225"/>
-<area shape="rect" id="Node000008" href="$SceneWriter_8cpp.html" title=" " alt="" coords="435,269,610,324"/>
-<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="525,235,525,269,520,269,520,235"/>
-<area shape="rect" id="Node000009" href="$Scene_8cpp.html" title=" " alt="" coords="635,277,811,317"/>
-<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="577,225,683,274,681,279,574,230"/>
-<area shape="rect" id="Node000007" href="$IMaterial_8hpp.html" title=" " alt="" coords="253,372,411,412"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="335,330,335,372,329,372,329,330"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,59,107,93,101,93,101,59"/>
 </map>

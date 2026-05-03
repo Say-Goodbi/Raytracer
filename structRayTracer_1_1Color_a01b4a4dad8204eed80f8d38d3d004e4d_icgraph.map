@@ -1,6 +1,6 @@
 <map id="RayTracer::Color::Color" name="RayTracer::Color::Color">
 <area shape="rect" id="Node000001" title=" " alt="" coords="659,79,829,105"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11" title=" " alt="" coords="207,23,360,63"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11" title="Trace a single ray in the scene and compute the resulting color." alt="" coords="207,23,360,63"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="714,73,667,44,639,30,610,20,545,10,479,9,416,16,361,26,360,20,416,10,479,4,546,4,611,15,641,25,670,39,717,69"/>
 <area shape="rect" id="Node000004" href="$structRayTracer_1_1Color.html#a3a5645c19c0b60a67b3dfac325727248" title=" " alt="" coords="410,30,609,55"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="669,79,570,58,571,53,670,74"/>
@@ -10,7 +10,7 @@
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="670,110,571,131,570,126,669,105"/>
 <area shape="rect" id="Node000007" href="$structRayTracer_1_1Color.html#ad224166942560c4b3930f6ec1939602f" title=" " alt="" coords="411,178,607,203"/>
 <area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="713,114,666,142,612,168,573,180,571,175,610,163,664,137,711,110"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render a scene and produce a framebuffer." alt="" coords="5,23,159,63"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render a full scene into a 2D framebuffer." alt="" coords="5,23,159,63"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,45,159,45,159,40,193,40"/>
 <area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="437,79,360,62,361,57,438,74"/>
 </map>

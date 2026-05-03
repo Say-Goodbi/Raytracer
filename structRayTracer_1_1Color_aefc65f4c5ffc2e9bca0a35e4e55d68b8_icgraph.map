@@ -1,7 +1,7 @@
 <map id="RayTracer::Color::operator*" name="RayTracer::Color::operator*">
 <area shape="rect" id="Node000001" title=" " alt="" coords="408,13,607,38"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11" title=" " alt="" coords="207,5,360,45"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11" title="Trace a single ray in the scene and compute the resulting color." alt="" coords="207,5,360,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,28,360,28,360,23,394,23"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render a scene and produce a framebuffer." alt="" coords="5,5,159,45"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render a full scene into a 2D framebuffer." alt="" coords="5,5,159,45"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
 </map>

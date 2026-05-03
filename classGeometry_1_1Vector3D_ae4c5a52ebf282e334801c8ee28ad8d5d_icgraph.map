@@ -1,26 +1,28 @@
 <map id="Geometry::Vector3D::Vector3D" name="Geometry::Vector3D::Vector3D">
-<area shape="rect" id="Node000001" title=" " alt="" coords="609,280,763,320"/>
-<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112" title=" " alt="" coords="408,5,561,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="672,268,656,224,632,170,600,115,559,66,534,48,538,43,563,62,604,112,637,168,661,222,677,266"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title=" " alt="" coords="207,92,360,132"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="672,268,656,228,633,184,601,142,582,125,560,110,511,92,459,86,407,88,360,95,359,89,407,82,459,80,513,87,563,106,585,121,605,139,637,181,661,226,677,266"/>
-<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="408,120,561,160"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="659,271,616,222,560,174,539,162,542,158,563,170,619,218,663,268"/>
-<area shape="rect" id="Node000006" href="$classGeometry_1_1Vector3D.html#a2b061b80e0fb7144c2fdcf4aa9ba73bf" title=" " alt="" coords="408,184,561,224"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="635,276,560,238,534,227,536,222,562,234,637,271"/>
-<area shape="rect" id="Node000007" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="408,248,561,288"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="595,288,561,283,562,278,596,283"/>
-<area shape="rect" id="Node000008" href="$classGeometry_1_1Vector3D.html#a374498ca7780e4ff496e56d58424e111" title=" " alt="" coords="408,312,561,352"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="596,317,562,322,561,317,595,312"/>
-<area shape="rect" id="Node000009" href="$classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f" title=" " alt="" coords="408,376,561,416"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="637,329,562,366,536,378,534,373,560,362,635,324"/>
-<area shape="rect" id="Node000010" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="408,440,561,480"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="663,332,619,382,563,430,542,442,539,438,560,426,616,378,659,329"/>
-<area shape="rect" id="Node000011" href="$classGeometry_1_1Vector3D.html#ae922fd3535e26ab859ab96c63c67dace" title=" " alt="" coords="408,504,561,544"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="673,334,631,413,600,456,563,494,545,506,542,502,560,490,596,453,627,410,669,331"/>
-<area shape="rect" id="Node000012" href="$classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162" title=" " alt="" coords="408,568,561,608"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="679,334,665,383,641,442,608,504,587,532,563,558,547,570,544,566,560,554,583,529,603,501,636,440,660,381,674,332"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render a scene and produce a framebuffer." alt="" coords="5,92,159,132"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,115,159,115,159,109,193,109"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="394,130,360,125,361,120,395,125"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="611,280,764,320"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112" title=" " alt="" coords="409,5,563,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="673,268,657,224,633,170,601,115,561,66,536,48,539,43,565,62,605,112,638,168,662,222,678,266"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Generate a world&#45;space ray from normalized screen coordinates." alt="" coords="207,92,361,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="673,268,658,228,634,184,602,142,583,125,561,110,512,92,460,86,408,87,360,95,359,89,407,82,460,80,514,87,564,106,586,121,606,139,639,181,662,226,678,266"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="409,120,563,160"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="661,271,617,222,561,174,540,162,543,158,564,170,621,218,665,268"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1Vector3D.html#a2b061b80e0fb7144c2fdcf4aa9ba73bf" title=" " alt="" coords="409,184,563,224"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="636,276,562,238,535,227,537,222,564,234,638,271"/>
+<area shape="rect" id="Node000007" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="409,248,563,288"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="597,288,562,283,563,278,597,283"/>
+<area shape="rect" id="Node000008" href="$classGeometry_1_1Vector3D.html#a374498ca7780e4ff496e56d58424e111" title=" " alt="" coords="409,312,563,352"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="597,317,563,322,562,317,597,312"/>
+<area shape="rect" id="Node000009" href="$classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f" title=" " alt="" coords="409,376,563,416"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="638,329,564,366,537,378,535,373,562,362,636,324"/>
+<area shape="rect" id="Node000011" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="409,440,563,480"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="665,332,621,382,564,430,543,442,540,438,561,426,617,378,661,329"/>
+<area shape="rect" id="Node000012" href="$classGeometry_1_1Vector3D.html#ae922fd3535e26ab859ab96c63c67dace" title=" " alt="" coords="409,504,563,544"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="675,334,632,413,601,456,564,494,546,506,544,502,561,490,597,453,628,410,670,331"/>
+<area shape="rect" id="Node000013" href="$classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162" title=" " alt="" coords="409,568,563,608"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="681,334,666,383,642,442,609,504,588,532,564,558,548,570,545,566,561,554,584,529,604,501,637,440,661,381,676,332"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render a full scene into a 2D framebuffer." alt="" coords="5,92,159,132"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,115,159,115,159,109,194,109"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="395,130,360,125,361,120,396,125"/>
+<area shape="rect" id="Node000010" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title="Test ray–plane intersection using the algebraic plane equation." alt="" coords="207,383,361,409"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="396,399,361,399,361,393,396,393"/>
 </map>

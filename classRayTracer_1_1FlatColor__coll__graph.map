@@ -1,5 +1,7 @@
 <map id="RayTracer::FlatColor" name="RayTracer::FlatColor">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,313,151,419"/>
-<area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html" title=" " alt="" coords="17,5,139,251"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,251,81,297,75,297,75,251"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="83,313,229,419"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1IMaterial.html" title="Abstract base for materials defining how surfaces shade." alt="" coords="5,85,149,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,183,141,312,136,314,93,184"/>
+<area shape="rect" id="Node000003" href="$structRayTracer_1_1Color.html" title=" " alt="" coords="174,5,295,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,252,181,299,176,297,192,250"/>
 </map>

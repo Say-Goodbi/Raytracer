@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 594;
+var viewWidth = 595;
 var viewHeight = 172;
 var sectionId = 'dynsection-2';
 </script>
@@ -58,9 +58,9 @@ var sectionId = 'dynsection-2';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="586,-102 471,-102 471,-72 586,-72 586,-102"/>
-<text text-anchor="start" x="479" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D::</text>
-<text text-anchor="middle" x="528.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">Point3D</text>
+<polygon fill="#999999" stroke="#666666" points="587,-102 472,-102 472,-72 587,-72 587,-102"/>
+<text text-anchor="start" x="480" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D::</text>
+<text text-anchor="middle" x="529.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">Point3D</text>
 </a>
 </g>
 </g>
@@ -68,8 +68,8 @@ var sectionId = 'dynsection-2';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classGeometry_1_1Ray.html#ab2ee230ea6c5b866a94d7bfd57c98845" target="_top" xlink:title="Compute a point at parameter t along the ray.">
-<polygon fill="white" stroke="#666666" points="420.5,-163.5 316.5,-163.5 316.5,-144.5 420.5,-144.5 420.5,-163.5"/>
-<text text-anchor="middle" x="368.5" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Ray::at</text>
+<polygon fill="white" stroke="#666666" points="421.5,-163.5 317.5,-163.5 317.5,-144.5 421.5,-144.5 421.5,-163.5"/>
+<text text-anchor="middle" x="369.5" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Ray::at</text>
 </a>
 </g>
 </g>
@@ -77,37 +77,18 @@ var sectionId = 'dynsection-2';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M492.81,-107.07C475.77,-116.39 454.7,-127.12 435,-135 426.1,-138.56 416.27,-141.77 406.99,-144.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="494.78,-109.97 501.83,-102.06 491.39,-103.85 494.78,-109.97"/>
-</a>
-</g>
-</g>
-<!-- Node3 -->
-<g id="Node000003" class="node">
-<title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classGeometry_1_1Point3D.html#a59644f9fa320bfc8f33e3761fd7577b0" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="426,-126 311,-126 311,-96 426,-96 426,-126"/>
-<text text-anchor="start" x="319" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D::</text>
-<text text-anchor="middle" x="368.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">operator+</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node3 -->
-<g id="edge2_Node000001_Node000003" class="edge">
-<title>Node1&#45;&gt;Node3</title>
-<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M460.89,-97.12C449.36,-98.87 437.47,-100.68 426.23,-102.38"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="461.54,-100.56 470.9,-95.6 460.49,-93.64 461.54,-100.56"/>
+<path fill="none" stroke="#63b8ff" d="M493.81,-107.07C476.77,-116.39 455.7,-127.12 436,-135 427.1,-138.56 417.27,-141.77 407.99,-144.5"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="495.78,-109.97 502.83,-102.06 492.39,-103.85 495.78,-109.97"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classGeometry_1_1Point3D.html#a317d081effd79290e9d5e314ee335484" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="426,-78 311,-78 311,-48 426,-48 426,-78"/>
-<text text-anchor="start" x="319" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D::</text>
-<text text-anchor="middle" x="368.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;</text>
+<g id="a_Node000004"><a xlink:href="classGeometry_1_1Point3D.html#a59644f9fa320bfc8f33e3761fd7577b0" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="427,-126 312,-126 312,-96 427,-96 427,-126"/>
+<text text-anchor="start" x="320" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D::</text>
+<text text-anchor="middle" x="369.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">operator+</text>
 </a>
 </g>
 </g>
@@ -115,18 +96,18 @@ var sectionId = 'dynsection-2';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M460.89,-76.88C449.36,-75.13 437.47,-73.32 426.23,-71.62"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="460.49,-80.36 470.9,-78.4 461.54,-73.44 460.49,-80.36"/>
+<path fill="none" stroke="#63b8ff" d="M461.89,-97.12C450.36,-98.87 438.47,-100.68 427.23,-102.38"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="462.54,-100.56 471.9,-95.6 461.49,-93.64 462.54,-100.56"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0" target="_top" xlink:title="Get a point on the rectangle at normalized coordinates (u, v).">
-<polygon fill="white" stroke="#666666" points="435,-30 302,-30 302,0 435,0 435,-30"/>
-<text text-anchor="start" x="310" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Rectangle3D</text>
-<text text-anchor="middle" x="368.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::pointAt</text>
+<g id="a_Node000005"><a xlink:href="classGeometry_1_1Point3D.html#a317d081effd79290e9d5e314ee335484" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="427,-78 312,-78 312,-48 427,-48 427,-78"/>
+<text text-anchor="start" x="320" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D::</text>
+<text text-anchor="middle" x="369.5" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;</text>
 </a>
 </g>
 </g>
@@ -134,37 +115,55 @@ var sectionId = 'dynsection-2';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M491.45,-66.93C474.55,-57.88 454,-47.37 435,-39 428.02,-35.92 420.51,-32.91 413.15,-30.11"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="489.96,-70.11 500.42,-71.79 493.29,-63.95 489.96,-70.11"/>
+<path fill="none" stroke="#63b8ff" d="M461.89,-76.88C450.36,-75.13 438.47,-73.32 427.23,-71.62"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="461.49,-80.36 471.9,-78.4 462.54,-73.44 461.49,-80.36"/>
 </a>
 </g>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="266,-30 151,-30 151,0 266,0 266,-30"/>
-<text text-anchor="start" x="159" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
-<text text-anchor="middle" x="208.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">generateRay</text>
+<g id="a_Node000006"><a xlink:href="classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0" target="_top" xlink:title="Get a point on the rectangle at normalized coordinates (u, v).">
+<polygon fill="white" stroke="#666666" points="436,-30 303,-30 303,0 436,0 436,-30"/>
+<text text-anchor="start" x="311" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Rectangle3D</text>
+<text text-anchor="middle" x="369.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::pointAt</text>
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node6 -->
-<g id="edge5_Node000005_Node000006" class="edge">
-<title>Node5&#45;&gt;Node6</title>
-<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M291.78,-15C283.14,-15 274.45,-15 266.13,-15"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="291.87,-18.5 301.87,-15 291.87,-11.5 291.87,-18.5"/>
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge5_Node000001_Node000006" class="edge">
+<title>Node1&#45;&gt;Node6</title>
+<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M492.45,-66.93C475.55,-57.88 455,-47.37 436,-39 429.02,-35.92 421.51,-32.91 414.15,-30.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="490.96,-70.11 501.42,-71.79 494.29,-63.95 490.96,-70.11"/>
+</a>
+</g>
+</g>
+<!-- Node3 -->
+<g id="Node000003" class="node">
+<title>Node3</title>
+<g id="a_Node000003"><a xlink:href="classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" target="_top" xlink:title="Test ray–plane intersection using the algebraic plane equation.">
+<polygon fill="white" stroke="#666666" points="267,-163.5 151,-163.5 151,-144.5 267,-144.5 267,-163.5"/>
+<text text-anchor="middle" x="209" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Plane::hit</text>
+</a>
+</g>
+</g>
+<!-- Node2&#45;&gt;Node3 -->
+<g id="edge2_Node000002_Node000003" class="edge">
+<title>Node2&#45;&gt;Node3</title>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M307.13,-154C294.02,-154 280.21,-154 267.25,-154"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="307.48,-157.5 317.48,-154 307.48,-150.5 307.48,-157.5"/>
 </a>
 </g>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" target="_top" xlink:title="Render a scene and produce a framebuffer.">
-<polygon fill="white" stroke="#666666" points="115,-30 0,-30 0,0 115,0 115,-30"/>
-<text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
-<text text-anchor="middle" x="57.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">render</text>
+<g id="a_Node000007"><a xlink:href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" target="_top" xlink:title="Generate a world&#45;space ray from normalized screen coordinates.">
+<polygon fill="white" stroke="#666666" points="266.5,-30 151.5,-30 151.5,0 266.5,0 266.5,-30"/>
+<text text-anchor="start" x="159.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
+<text text-anchor="middle" x="209" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">generateRay</text>
 </a>
 </g>
 </g>
@@ -172,8 +171,27 @@ var sectionId = 'dynsection-2';
 <g id="edge6_Node000006_Node000007" class="edge">
 <title>Node6&#45;&gt;Node7</title>
 <g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M140.49,-15C132.01,-15 123.4,-15 115.1,-15"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="140.74,-18.5 150.74,-15 140.74,-11.5 140.74,-18.5"/>
+<path fill="none" stroke="#63b8ff" d="M292.54,-15C283.87,-15 275.16,-15 266.81,-15"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="292.66,-18.5 302.66,-15 292.66,-11.5 292.66,-18.5"/>
+</a>
+</g>
+</g>
+<!-- Node8 -->
+<g id="Node000008" class="node">
+<title>Node8</title>
+<g id="a_Node000008"><a xlink:href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" target="_top" xlink:title="Render a full scene into a 2D framebuffer.">
+<polygon fill="white" stroke="#666666" points="115,-30 0,-30 0,0 115,0 115,-30"/>
+<text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
+<text text-anchor="middle" x="57.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">render</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge7_Node000007_Node000008" class="edge">
+<title>Node7&#45;&gt;Node8</title>
+<g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M141.31,-15C132.56,-15 123.66,-15 115.1,-15"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="141.48,-18.5 151.48,-15 141.48,-11.5 141.48,-18.5"/>
 </a>
 </g>
 </g>

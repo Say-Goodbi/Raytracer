@@ -40,7 +40,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Typedefs", "globals_type.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -48,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AInterface_8hpp.html",
-"classRayTracer_1_1FlatColor.html#a2f06ed553959604918de3f7f410ca5d9"
+"classRayTracer_1_1Exception.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

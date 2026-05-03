@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Generate a world&#45;space ray from normalized screen coordinates.">
 <polygon fill="#999999" stroke="#666666" points="266,-30 151,-30 151,0 266,0 266,-30"/>
 <text text-anchor="start" x="159" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="208.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">generateRay</text>
@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" target="_top" xlink:title="Render a scene and produce a framebuffer.">
+<g id="a_Node000002"><a xlink:href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" target="_top" xlink:title="Render a full scene into a 2D framebuffer.">
 <polygon fill="white" stroke="#666666" points="115,-30 0,-30 0,0 115,0 115,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="57.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">render</text>

@@ -1,5 +1,5 @@
 <map id="RayTracer::Camera::generateRay" name="RayTracer::Camera::generateRay">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,78,159,118"/>
+<area shape="rect" id="Node000001" title="Generate a world&#45;space ray from normalized screen coordinates." alt="" coords="5,78,159,118"/>
 <area shape="rect" id="Node000002" href="$classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc" title="Constructor." alt="" coords="220,5,371,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,75,206,48,245,33,247,38,208,52,135,80"/>
 <area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="432,46,585,86"/>

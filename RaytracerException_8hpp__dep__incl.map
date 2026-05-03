@@ -1,5 +1,11 @@
 <map id="src/Exceptions/RaytracerException/RaytracerException.hpp" name="src/Exceptions/RaytracerException/RaytracerException.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,251,45"/>
-<area shape="rect" id="Node000002" href="$RaytracerException_8cpp.html" title=" " alt="" coords="6,93,250,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,59,131,93,125,93,125,59"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="121,5,366,45"/>
+<area shape="rect" id="Node000002" href="$RaytracerException_8cpp.html" title=" " alt="" coords="5,93,249,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,56,155,95,151,91,205,52"/>
+<area shape="rect" id="Node000003" href="$IPlugin_8hpp.html" title=" " alt="" coords="274,101,445,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,52,345,98,342,103,279,56"/>
+<area shape="rect" id="Node000004" href="$CorePlugin_8hpp.html" title=" " alt="" coords="251,181,468,207"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="362,140,362,181,357,181,357,140"/>
+<area shape="rect" id="Node000005" href="$CorePlugin_8cpp.html" title=" " alt="" coords="251,255,467,280"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="362,220,362,255,357,255,357,220"/>
 </map>

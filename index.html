@@ -98,26 +98,51 @@ Introduction</h1>
 <p>This is a modular, plugin-oriented raytracing engine built in C++. It separates concerns across geometry, primitives, materials, and rendering, allowing extensibility through plugins while maintaining a clean separation of ray-casting logic from output handling.</p>
 <h1><a class="anchor" id="folders"></a>
 Folder Organization</h1>
-<p>The repository is organized to separate project-level artifacts from core source code and runtime plugins. High-level folders:</p>
+<p>The repository is organized to separate project-level artifacts from core source code and implementations. High-level folders:</p>
 <ul>
 <li><code>dev/</code> : Development helpers, scripts, and contribution guides.</li>
 <li><code>docs/</code> : Documentation sources (Doxygen input, guides).</li>
-<li><code>src/</code> : Primary C++ source tree (see grouping below).</li>
+<li><code>src/</code> : Primary C++ source tree (see detailed grouping below).</li>
 </ul>
-<p>Within <code>src/</code> the code is grouped by concern to make navigation and extension predictable:</p>
+<p>Within <code>src/</code>, code is organized by concern and role:</p>
+<h2><a class="anchor" id="folders_core"></a>
+Core Framework (Interface Definitions)</h2>
+<p>These folders define the plugin architecture and core abstractions—they never depend on implementations:</p>
 <ul>
-<li><code>Exceptions/</code> : Custom exception types (domain errors, runtime problems).</li>
-<li><code>Geometry/</code> : Fundamental math and geometric primitives (Point3D, Vector3D, Ray, Rectangle3D, HitRecord).</li>
-<li><code>Objects/</code> : Public object model and plugin boundaries.<ul>
-<li><code>Abstracts/</code> : Core abstract classes and interfaces (APrimitive, ARenderer, AInterface, IMaterial, ILight).</li>
-<li><code>Plugins/</code> : Plugin implementations and plugin-facing folders (Interfaces, Lights, Materials, Primitives, Renderers).</li>
+<li><code>Objects/</code> : Plugin system boundaries and abstract base classes<ul>
+<li><code>Abstracts/</code> : Core abstract interfaces (ARenderer, AInterface, APrimitive, IMaterial, ILight)</li>
+<li><code><a class="el" href="IPlugin_8hpp.html">IPlugin.hpp</a></code> : Plugin interface for runtime component factories</li>
 </ul>
 </li>
-<li><code>PluginManager/</code> : Loader and factory utilities for runtime plugins.</li>
-<li><code>SceneSystem/</code> : Scene composition and IO (Scene, SceneLoader, ConfigParser).</li>
-<li><code>Utils/</code> : Small helpers (Color, logging helpers, etc.).</li>
+<li><code>Exceptions/</code> : Custom exception types (domain errors, runtime problems)</li>
+<li><code>Geometry/</code> : Fundamental math and geometric primitives</li>
+<li><code>Utils/</code> : Small helpers (Color, etc.)</li>
+<li><code>SceneSystem/</code> : Scene composition and plugin management</li>
 </ul>
-<p>Grouping rationale: source is split so that algorithmic, data, and external/IO concerns live in separate folders. <code>Objects/Abstracts</code> declares extension points; <code>Objects/Plugins</code> and <code>PluginManager</code> provide runtime extensibility without changing core logic.</p>
+<h2><a class="anchor" id="folders_impl"></a>
+Plugin Implementation (CorePlugin)</h2>
+<p>The <code>CorePlugin/</code> folder contains the built-in plugin providing essential raytracing functionality:</p>
+<ul>
+<li><code><a class="el" href="CorePlugin_8hpp.html">CorePlugin.hpp</a>/cpp</code> : Plugin entry point; provides component factories</li>
+<li><code>Renderers/Camera/</code> : Camera implementation (ARenderer subclass)</li>
+<li><code>Interfaces/SceneWriter/</code> : PPM file output (AInterface subclass)</li>
+<li><code>Primitives/</code> : Renderable shapes (APrimitive subclasses)</li>
+<li><code>Materials/</code> : Surface shaders (IMaterial subclasses)</li>
+<li><code>Lights/</code> : Light sources (ILight subclasses, currently empty)</li>
+</ul>
+<h2><a class="anchor" id="folders_rationale"></a>
+Design Rationale</h2>
+<p>Separation of Plugin System from Implementations:**</p><ul>
+<li><code>Objects/Abstracts/</code> defines the plugin contract (what plugins must implement)</li>
+<li><code>CorePlugin/</code> is one concrete plugin implementation; other plugins would extend the same abstractions</li>
+<li><p class="startli">This allows third-party or experimental plugins without modifying core code</p>
+<p class="startli">Layering:**</p>
+</li>
+<li>Geometric primitives (Geometry/) are independent of rendering logic</li>
+<li>Abstract interfaces (Objects/) are independent of implementations</li>
+<li>Implementations (CorePlugin/) depend on abstractions but abstractions don't depend on implementations</li>
+<li>This follows dependency inversion and allows clean extension</li>
+</ul>
 <h1><a class="anchor" id="architecture"></a>
 Architecture Overview</h1>
 <p>The architecture is built on several core abstractions:</p>
@@ -187,7 +212,7 @@ Lights</h2>
 </ul>
 <p>Lights are stored in the Scene and referenced during shading computations.</p>
 <h2><a class="anchor" id="arch_plugins"></a>
-Plugin System</h2>
+Plugin System &amp; CorePlugin</h2>
 <p>Plugins are compiled as separate dynamic libraries (.so) and can provide:</p><ul>
 <li><a class="el" href="classRayTracer_1_1APrimitive.html">APrimitive</a> subclasses — custom shapes</li>
 <li><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> subclasses — custom shaders</li>
@@ -196,6 +221,7 @@ Plugin System</h2>
 <li><a class="el" href="classRayTracer_1_1AInterface.html">AInterface</a> subclasses — application backends (game loop, network streaming, etc.)</li>
 </ul>
 <p>PluginLoader handles runtime .so loading. PrimitiveFactory instantiates plugins on demand.</p>
+<p>The CorePlugin is the built-in plugin providing essential components.</p>
 <h1><a class="anchor" id="pipeline"></a>
 Rendering Pipeline</h1>
 <ol type="1">

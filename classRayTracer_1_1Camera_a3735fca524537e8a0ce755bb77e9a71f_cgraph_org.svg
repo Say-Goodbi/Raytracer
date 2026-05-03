@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Render a scene and produce a framebuffer.">
+<g id="a_Node000001"><a xlink:title="Render a full scene into a 2D framebuffer.">
 <polygon fill="#999999" stroke="#666666" points="115,-183 0,-183 0,-153 115,-153 115,-183"/>
 <text text-anchor="start" x="8" y="-171" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="57.5" y="-160" font-family="Helvetica,sans-Serif" font-size="10.00">render</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11" target="_top" xlink:title="Trace a single ray in the scene and compute the resulting color.">
 <polygon fill="white" stroke="#666666" points="266,-242 151,-242 151,-212 266,-212 266,-242"/>
 <text text-anchor="start" x="159" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="208.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">castRay</text>
@@ -40,7 +40,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" target="_top" xlink:title="Generate a world&#45;space ray from normalized screen coordinates.">
 <polygon fill="white" stroke="#666666" points="266,-124 151,-124 151,-94 266,-94 266,-124"/>
 <text text-anchor="start" x="159" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="208.5" y="-101" font-family="Helvetica,sans-Serif" font-size="10.00">generateRay</text>
@@ -95,7 +95,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8" target="_top" xlink:title="Determine whether a hit point is shadowed by any primitive.">
 <polygon fill="white" stroke="#666666" points="434,-242 319,-242 319,-212 434,-212 434,-242"/>
 <text text-anchor="start" x="327" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="376.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">computeShadow</text>

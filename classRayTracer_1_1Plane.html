@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a89abfbbe3d4332fdd3505b799d90952e" id="r_a89abfbbe3d4332fdd3505b799d90952e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Plane.html#a89abfbbe3d4332fdd3505b799d90952e">~Plane</a> ()=default</td></tr>
 <tr class="separator:a89abfbbe3d4332fdd3505b799d90952e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b741696eb186f6ec9df62e58e795916" id="r_a7b741696eb186f6ec9df62e58e795916"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916">hit</a> (const <a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;ray) const override</td></tr>
-<tr class="memdesc:a7b741696eb186f6ec9df62e58e795916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test ray intersection with this primitive.  <br /></td></tr>
+<tr class="memdesc:a7b741696eb186f6ec9df62e58e795916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test ray–plane intersection using the algebraic plane equation.  <br /></td></tr>
 <tr class="separator:a7b741696eb186f6ec9df62e58e795916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classRayTracer_1_1APrimitive"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRayTracer_1_1APrimitive')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRayTracer_1_1APrimitive.html">RayTracer::APrimitive</a></td></tr>
 <tr class="memitem:a526c473a6b8bf97b4aa98e953e814dd7 inherit pub_methods_classRayTracer_1_1APrimitive" id="r_a526c473a6b8bf97b4aa98e953e814dd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#a526c473a6b8bf97b4aa98e953e814dd7">APrimitive</a> (<a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> *material)</td></tr>
@@ -187,6 +187,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="Plane_8hpp_source.html#l00014">14</a> of file <a class="el" href="Plane_8hpp_source.html">Plane.hpp</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Plane_aad26406644051e626d8ef6d2e6391c18_cgraph.svg" width="396" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -265,18 +272,37 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Test ray intersection with this primitive. </p>
+<p>Test ray–plane intersection using the algebraic plane equation. </p>
+<p>Algorithm: Solve for intersection parameter t along the ray. Ray equation: P(t) = ray.origin + t * ray.direction <a class="el" href="classRayTracer_1_1Plane.html">Plane</a> equation: (P - _point) · _normal = 0</p>
+<p>Substituting the ray into the plane equation: t = ((_point - ray.origin) · _normal) / (ray.direction · _normal)</p>
+<p>Steps:</p><ol type="1">
+<li>Compute denominator = ray.direction · _normal<ul>
+<li>If |denominator| &lt; 1e-6: ray is parallel to plane (no intersection)</li>
+</ul>
+</li>
+<li>Compute numerator = (_point - ray.origin) · _normal</li>
+<li>Solve t = numerator / denominator</li>
+<li>If t &gt;= 0: intersection is in front of ray origin (valid hit)</li>
+<li>Return HitRecord with intersection point, normal, distance, and material</li>
+</ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ray</td><td>The ray to test </td></tr>
+    <tr><td class="paramname">ray</td><td>The ray to test against the plane </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Optional HitRecord if intersection occurs, empty otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Optional HitRecord if intersection occurs with t &gt;= 0, empty otherwise </dd></dl>
 
 <p>Implements <a class="el" href="classRayTracer_1_1APrimitive.html#af00a66a6a6b8d251f5d21e1cc5077c6b">RayTracer::APrimitive</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Plane_8cpp_source.html#l00005">5</a> of file <a class="el" href="Plane_8cpp_source.html">Plane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Plane_8cpp_source.html#l00026">26</a> of file <a class="el" href="Plane_8cpp_source.html">Plane.cpp</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Plane_a7b741696eb186f6ec9df62e58e795916_cgraph.svg" width="598" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -330,8 +356,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/Objects/Plugins/Primitives/Plane/<a class="el" href="Plane_8hpp_source.html">Plane.hpp</a></li>
-<li>src/Objects/Plugins/Primitives/Plane/<a class="el" href="Plane_8cpp_source.html">Plane.cpp</a></li>
+<li>src/CorePlugin/Primitives/Plane/<a class="el" href="Plane_8hpp_source.html">Plane.hpp</a></li>
+<li>src/CorePlugin/Primitives/Plane/<a class="el" href="Plane_8cpp_source.html">Plane.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

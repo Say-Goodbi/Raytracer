@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Trace a single ray in the scene and compute the resulting color.">
 <polygon fill="#999999" stroke="#666666" points="115,-88.5 0,-88.5 0,-58.5 115,-58.5 115,-88.5"/>
 <text text-anchor="start" x="8" y="-76.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="57.5" y="-65.5" font-family="Helvetica,sans-Serif" font-size="10.00">castRay</text>
@@ -57,7 +57,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8" target="_top" xlink:title="Determine whether a hit point is shadowed by any primitive.">
 <polygon fill="white" stroke="#666666" points="283,-67.5 168,-67.5 168,-37.5 283,-37.5 283,-67.5"/>
 <text text-anchor="start" x="176" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="225.5" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">computeShadow</text>
