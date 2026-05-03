@@ -6,24 +6,49 @@ This is a modular, plugin-oriented raytracing engine built in C++. It separates 
 
 \section folders Folder Organization
 
-The repository is organized to separate project-level artifacts from core source code and runtime plugins. High-level folders:
+The repository is organized to separate project-level artifacts from core source code and implementations. High-level folders:
 
 - `dev/` : Development helpers, scripts, and contribution guides.
 - `docs/` : Documentation sources (Doxygen input, guides).
-- `src/` : Primary C++ source tree (see grouping below).
+- `src/` : Primary C++ source tree (see detailed grouping below).
 
-Within `src/` the code is grouped by concern to make navigation and extension predictable:
+Within `src/`, code is organized by concern and role:
 
-- `Exceptions/` : Custom exception types (domain errors, runtime problems).
-- `Geometry/` : Fundamental math and geometric primitives (Point3D, Vector3D, Ray, Rectangle3D, HitRecord).
-- `Objects/` : Public object model and plugin boundaries.
-  - `Abstracts/` : Core abstract classes and interfaces (APrimitive, ARenderer, AInterface, IMaterial, ILight).
-  - `Plugins/` : Plugin implementations and plugin-facing folders (Interfaces, Lights, Materials, Primitives, Renderers).
-- `PluginManager/` : Loader and factory utilities for runtime plugins.
-- `SceneSystem/` : Scene composition and IO (Scene, SceneLoader, ConfigParser).
-- `Utils/` : Small helpers (Color, logging helpers, etc.).
+\subsection folders_core Core Framework (Interface Definitions)
 
-Grouping rationale: source is split so that algorithmic, data, and external/IO concerns live in separate folders. `Objects/Abstracts` declares extension points; `Objects/Plugins` and `PluginManager` provide runtime extensibility without changing core logic.
+These folders define the plugin architecture and core abstractions—they never depend on implementations:
+
+- `Objects/` : Plugin system boundaries and abstract base classes
+  - `Abstracts/` : Core abstract interfaces (ARenderer, AInterface, APrimitive, IMaterial, ILight)
+  - `IPlugin.hpp` : Plugin interface for runtime component factories
+- `Exceptions/` : Custom exception types (domain errors, runtime problems)
+- `Geometry/` : Fundamental math and geometric primitives
+- `Utils/` : Small helpers (Color, etc.)
+- `SceneSystem/` : Scene composition and plugin management
+
+\subsection folders_impl Plugin Implementation (CorePlugin)
+
+The `CorePlugin/` folder contains the built-in plugin providing essential raytracing functionality:
+
+- `CorePlugin.hpp/cpp` : Plugin entry point; provides component factories
+- `Renderers/Camera/` : Camera implementation (ARenderer subclass)
+- `Interfaces/SceneWriter/` : PPM file output (AInterface subclass)
+- `Primitives/` : Renderable shapes (APrimitive subclasses)
+- `Materials/` : Surface shaders (IMaterial subclasses)
+- `Lights/` : Light sources (ILight subclasses, currently empty)
+
+\subsection folders_rationale Design Rationale
+
+**Separation of Plugin System from Implementations:**
+- `Objects/Abstracts/` defines the plugin contract (what plugins must implement)
+- `CorePlugin/` is one concrete plugin implementation; other plugins would extend the same abstractions
+- This allows third-party or experimental plugins without modifying core code
+
+**Layering:**
+- Geometric primitives (Geometry/) are independent of rendering logic
+- Abstract interfaces (Objects/) are independent of implementations
+- Implementations (CorePlugin/) depend on abstractions but abstractions don't depend on implementations
+- This follows dependency inversion and allows clean extension
 
 \section architecture Architecture Overview
 
@@ -99,7 +124,7 @@ Each primitive:
 
 Lights are stored in the Scene and referenced during shading computations.
 
-\subsection arch_plugins Plugin System
+\subsection arch_plugins Plugin System & CorePlugin
 
 Plugins are compiled as separate dynamic libraries (.so) and can provide:
 - \ref RayTracer::APrimitive "APrimitive" subclasses — custom shapes
@@ -108,9 +133,10 @@ Plugins are compiled as separate dynamic libraries (.so) and can provide:
 - \ref RayTracer::ARenderer "ARenderer" subclasses — alternative renderers (e.g., path-tracer)
 - \ref RayTracer::AInterface "AInterface" subclasses — application backends (game loop, network streaming, etc.)
 
-
 \ref PluginLoader handles runtime .so loading.
 \ref PrimitiveFactory instantiates plugins on demand.
+
+The \ref RayTracer::CorePlugin "CorePlugin" is the built-in plugin providing essential components.
 
 \section pipeline Rendering Pipeline
 

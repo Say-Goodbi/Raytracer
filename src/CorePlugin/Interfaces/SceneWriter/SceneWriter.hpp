@@ -1,6 +1,5 @@
 #pragma once
-#include "../../../Abstracts/AInterface/AInterface.hpp"
-#include <string>
+#include "../../../IPlugin.hpp"
 
 namespace RayTracer
 {
