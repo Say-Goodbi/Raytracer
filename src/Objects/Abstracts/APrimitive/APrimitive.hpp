@@ -1,5 +1,5 @@
 #pragma once
-#include "../../Interface/IMaterial.hpp"
+#include "../IMaterial.hpp"
 
 namespace RayTracer
 {

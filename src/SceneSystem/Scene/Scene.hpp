@@ -1,7 +1,7 @@
 #pragma once
 #include "../Camera/Camera.hpp"
-#include "../../Objects/Interface/IPrimitive.hpp"
-#include "../../Objects/Interface/ILight.hpp"
+#include "../../Objects/Abstracts/APrimitive/APrimitive.hpp"
+#include "../../Objects/Abstracts/ILight.hpp"
 #include <vector>
 #include <memory>
 

@@ -5,13 +5,16 @@
 
 namespace RayTracer
 {
-    class FlatColor
+    class FlatColor : public IMaterial
     {
         protected:
             Color _color;
         public: 
             FlatColor(const Color& color) : _color(color) {};
-            virtual ~FlatColor() = default;
-            virtual Color computeColor(Geometry::HitRecord& hit, std::vector<ILight*>& lights) = 0;
+            ~FlatColor() = default;
+            Color computeColor(Geometry::HitRecord& hit, std::vector<ILight*>& lights) override
+            {
+                return this->_color;
+            }
     };
 } // namespace RayTracer
