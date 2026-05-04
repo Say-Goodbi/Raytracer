@@ -2,7 +2,7 @@
 
 namespace Geometry
 {
-    Point3D Ray::at(float t)
+    Point3D Ray::at(float t) const
     {
         return Point3D(
             origin.x + (direction.x * t),

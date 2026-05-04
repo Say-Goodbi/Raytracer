@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../Abstracts/APrimitive/APrimitive.hpp"
-#include "../../Abstracts/IMaterial.hpp"
+#include "../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
+#include "../../../Objects/Abstracts/IMaterial.hpp"
 
 namespace RayTracer
 {
