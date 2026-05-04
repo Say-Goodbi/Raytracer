@@ -10,7 +10,7 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="318,120,360,98,407,78,438,69,440,74,409,83,362,103,321,124"/>
 <area shape="rect" id="Node000005" href="$classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8" title="Determine whether a hit point is shadowed by any primitive." alt="" coords="445,93,599,133"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="360,130,431,121,432,126,361,135"/>
-<area shape="rect" id="Node000006" href="$classRayTracer_1_1Scene.html#a3cf955a569ab5c1a9b77203e2f85bf6e" title="Get mutable reference to primitives." alt="" coords="408,157,636,183"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1Scene.html#a936da7ffad11da5b049f315d1ce94a9e" title="Get mutable reference to primitives." alt="" coords="408,157,636,183"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="361,148,401,153,400,158,360,154"/>
 <area shape="rect" id="Node000007" href="$structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8" title=" " alt="" coords="423,207,621,232"/>
 <area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="328,160,409,192,442,201,441,206,407,197,326,165"/>

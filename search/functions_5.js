@@ -9,6 +9,6 @@ var searchData=
   ['getmaterial_6',['getMaterial',['../classRayTracer_1_1APrimitive.html#acdc1a350e79537fa0b9c8588a170bdcf',1,'RayTracer::APrimitive']]],
   ['getname_7',['getname',['../classCorePlugin.html#afd65fe65d4a486e9208fcb6a29140581',1,'CorePlugin::getName()'],['../classIPlugin.html#a58f4b80e2e486068559ef774c612b8e6',1,'IPlugin::getName()']]],
   ['getposition_8',['getPosition',['../classRayTracer_1_1ILight.html#ac75b76eed4ec368ee29fb003c3d11480',1,'RayTracer::ILight']]],
-  ['getprimitives_9',['getPrimitives',['../classRayTracer_1_1Scene.html#a3cf955a569ab5c1a9b77203e2f85bf6e',1,'RayTracer::Scene']]],
+  ['getprimitives_9',['getPrimitives',['../classRayTracer_1_1Scene.html#a936da7ffad11da5b049f315d1ce94a9e',1,'RayTracer::Scene']]],
   ['getwidth_10',['getWidth',['../classRayTracer_1_1ARenderer.html#a78eaee329eba441c51332bf9ebcc7e5c',1,'RayTracer::ARenderer']]]
 ];

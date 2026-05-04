@@ -6,7 +6,7 @@ var classRayTracer_1_1Scene =
     [ "addPrimitive", "classRayTracer_1_1Scene.html#a27d1880f69135b1897fb50ccba237d20", null ],
     [ "getCamera", "classRayTracer_1_1Scene.html#ae2aaebaa9d463edad900a38a5c9fdb94", null ],
     [ "getLights", "classRayTracer_1_1Scene.html#a758a4075b53d8a271e82cc08c1a9f787", null ],
-    [ "getPrimitives", "classRayTracer_1_1Scene.html#a3cf955a569ab5c1a9b77203e2f85bf6e", null ],
+    [ "getPrimitives", "classRayTracer_1_1Scene.html#a936da7ffad11da5b049f315d1ce94a9e", null ],
     [ "_camera", "classRayTracer_1_1Scene.html#a206e5d6a041a0edfe886fd732c05eaed", null ],
     [ "_lights", "classRayTracer_1_1Scene.html#ac913a205d3230f928bd501be234b1b28", null ],
     [ "_primitives", "classRayTracer_1_1Scene.html#a95c81d1176a59583a47b7edcb5c9645d", null ]

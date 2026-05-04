@@ -160,7 +160,7 @@ var sectionId = 'dynsection-8';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classRayTracer_1_1Scene.html#a3cf955a569ab5c1a9b77203e2f85bf6e" target="_top" xlink:title="Get mutable reference to primitives.">
+<g id="a_Node000006"><a xlink:href="classRayTracer_1_1Scene.html#a936da7ffad11da5b049f315d1ce94a9e" target="_top" xlink:title="Get mutable reference to primitives.">
 <polygon fill="white" stroke="#666666" points="473,-230.5 302,-230.5 302,-211.5 473,-211.5 473,-230.5"/>
 <text text-anchor="middle" x="387.5" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Scene::getPrimitives</text>
 </a>

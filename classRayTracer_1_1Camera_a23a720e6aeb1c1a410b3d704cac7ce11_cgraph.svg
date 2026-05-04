@@ -86,7 +86,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classRayTracer_1_1Scene.html#a3cf955a569ab5c1a9b77203e2f85bf6e" target="_top" xlink:title="Get mutable reference to primitives.">
+<g id="a_Node000005"><a xlink:href="classRayTracer_1_1Scene.html#a936da7ffad11da5b049f315d1ce94a9e" target="_top" xlink:title="Get mutable reference to primitives.">
 <polygon fill="white" stroke="#666666" points="322,-56 151,-56 151,-37 322,-37 322,-56"/>
 <text text-anchor="middle" x="236.5" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Scene::getPrimitives</text>
 </a>
