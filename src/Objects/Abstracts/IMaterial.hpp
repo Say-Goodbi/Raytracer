@@ -14,7 +14,7 @@ namespace RayTracer
         /// @param hit The hit record with intersection data
         /// @param lights Lights in the scene
         /// @return Computed color at the hit point
-        virtual Color computeColor(Geometry::HitRecord& hit, std::vector<ILight*>& lights) = 0;
+        virtual Color computeColor(Geometry::HitRecord& hit, std::vector<std::unique_ptr<ILight>>& lights) = 0;
         virtual ~IMaterial() = default;
     };
 } // namespace RayTracer

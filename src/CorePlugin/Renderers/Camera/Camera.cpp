@@ -1,6 +1,6 @@
 #include "Camera.hpp"
-#include "../Scene/Scene.hpp"
-#include "../../Objects/Abstracts/APrimitive/APrimitive.hpp"
+#include "../../../SceneSystem/Scene/Scene.hpp"
+#include "../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
 #include <vector>
 
 namespace RayTracer
@@ -45,14 +45,14 @@ namespace RayTracer
     Color Camera::castRay(Geometry::Ray& ray, Scene& scene)
     {
         std::optional<Geometry::HitRecord> closest;
-        IPrimitive* hitPrimitive = nullptr;
+        APrimitive* hitPrimitive = nullptr;
 
         // Find the closest intersection point along the ray
         for (const auto &primitive : scene.getPrimitives()) {
             std::optional<Geometry::HitRecord> hit = primitive->hit(ray);
             if (hit && (!closest || hit->rayDistance < closest->rayDistance)) {
                 closest = hit;
-                hitPrimitive = primitive;
+                hitPrimitive = primitive.get(); // Safe to use get() since the raw pointer is used only within this scope and the unique_ptr owns the lifetime
             }
         }
 

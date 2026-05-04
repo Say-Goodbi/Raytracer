@@ -11,7 +11,7 @@
 #include <functional>
 #include <variant>
 #include "../Exceptions/RaytracerException/RaytracerException.hpp"
-#include "Abstracts/AInterface.hpp"
+#include "Abstracts/AInterface/AInterface.hpp"
 #include "Abstracts/APrimitive/APrimitive.hpp"
 #include "Abstracts/ARenderer/ARenderer.hpp"
 #include "Abstracts/ILight.hpp"

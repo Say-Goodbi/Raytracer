@@ -1,5 +1,5 @@
 #pragma once
-#include "../../../IPlugin.hpp"
+#include "../../../Objects/IPlugin.hpp"
 
 namespace RayTracer
 {

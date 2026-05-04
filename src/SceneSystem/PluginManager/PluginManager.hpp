@@ -9,7 +9,7 @@
 #pragma once
 #include <dlfcn.h>
 // Only AInterface, APrimitive, ARenderer, ILight and IMaterial are relevant for plugins.
-#include "../IPlugin.hpp"
+#include "../../Objects/IPlugin.hpp"
 
 class PluginManager
 {
