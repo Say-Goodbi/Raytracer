@@ -15,7 +15,7 @@ var searchData=
   ['_5fplugins_12',['_plugins',['../classPluginManager.html#a6573d9007f6cbeecc062ba646d0edc3b',1,'PluginManager']]],
   ['_5fpoint_13',['_point',['../classRayTracer_1_1Plane.html#a06a43f685a218027175a1cf7d934d193',1,'RayTracer::Plane']]],
   ['_5fposition_14',['_position',['../classRayTracer_1_1Camera.html#a1985559b3fd1daf90a597ac59f2ba515',1,'RayTracer::Camera']]],
-  ['_5fprimitives_15',['_primitives',['../classRayTracer_1_1Scene.html#a336c755a083c681285d7e9ec7efd9b22',1,'RayTracer::Scene']]],
+  ['_5fprimitives_15',['_primitives',['../classRayTracer_1_1Scene.html#a95c81d1176a59583a47b7edcb5c9645d',1,'RayTracer::Scene']]],
   ['_5frenderer_16',['_renderer',['../classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0',1,'RayTracer::AInterface']]],
   ['_5fscreen_17',['_screen',['../classRayTracer_1_1Camera.html#a2dd6aea870f6a5cdba1439c7fe7d2afc',1,'RayTracer::Camera']]],
   ['_5fwidth_18',['_width',['../classRayTracer_1_1ARenderer.html#ab998431fb926aac5044c28b48ed0b9cc',1,'RayTracer::ARenderer']]]

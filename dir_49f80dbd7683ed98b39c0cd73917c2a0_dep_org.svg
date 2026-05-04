@@ -27,29 +27,38 @@
 <g id="node1" class="node">
 <title>dir_55b41fb77a5097913bc464fb6a145e9c</title>
 <g id="a_node1"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Objects">
-<polygon fill="#a2b4d6" stroke="red" points="170.5,-35 117.5,-35 117.5,-16 170.5,-16 170.5,-35"/>
-<text text-anchor="middle" x="144" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Objects</text>
+<polygon fill="#a2b4d6" stroke="red" points="130.5,-35 77.5,-35 77.5,-16 130.5,-16 130.5,-35"/>
+<text text-anchor="middle" x="104" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Objects</text>
+</a>
+</g>
+</g>
+<!-- dir_bcfcb44c233f404c9bb161aac5c4d104 -->
+<g id="node2" class="node">
+<title>dir_bcfcb44c233f404c9bb161aac5c4d104</title>
+<g id="a_node2"><a xlink:href="dir_bcfcb44c233f404c9bb161aac5c4d104.html" target="_top" xlink:title="CorePlugin">
+<polygon fill="#a2b4d6" stroke="red" points="217.5,-35 148.5,-35 148.5,-16 217.5,-16 217.5,-35"/>
+<text text-anchor="middle" x="183" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">CorePlugin</text>
 </a>
 </g>
 </g>
 <!-- dir_49f80dbd7683ed98b39c0cd73917c2a0 -->
-<g id="node2" class="node">
+<g id="node3" class="node">
 <title>dir_49f80dbd7683ed98b39c0cd73917c2a0</title>
 <text text-anchor="middle" x="334" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">SceneSystem</text>
 </g>
 <!-- dir_c885c4bcce55d6fe81345b3413717718 -->
-<g id="node3" class="node">
+<g id="node4" class="node">
 <title>dir_c885c4bcce55d6fe81345b3413717718</title>
-<g id="a_node3"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="PluginManager">
+<g id="a_node4"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="PluginManager">
 <polygon fill="#a2b4d6" stroke="#404040" points="274.5,-90 185.5,-90 185.5,-71 274.5,-71 274.5,-90"/>
 <text text-anchor="middle" x="230" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">PluginManager</text>
 </a>
 </g>
 </g>
 <!-- dir_d463935c42a880f8392bc37d38dc00e7 -->
-<g id="node4" class="node">
+<g id="node5" class="node">
 <title>dir_d463935c42a880f8392bc37d38dc00e7</title>
-<g id="a_node4"><a xlink:href="dir_d463935c42a880f8392bc37d38dc00e7.html" target="_top" xlink:title="Scene">
+<g id="a_node5"><a xlink:href="dir_d463935c42a880f8392bc37d38dc00e7.html" target="_top" xlink:title="Scene">
 <polygon fill="#a2b4d6" stroke="#404040" points="167,-90 121,-90 121,-71 167,-71 167,-90"/>
 <text text-anchor="middle" x="144" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">Scene</text>
 </a>
@@ -59,19 +68,32 @@
 <g id="edge1" class="edge">
 <title>dir_d463935c42a880f8392bc37d38dc00e7&#45;&gt;dir_55b41fb77a5097913bc464fb6a145e9c</title>
 <g id="a_edge1"><a xlink:href="dir_000022_000013.html" target="_top">
-<path fill="none" stroke="#63b8ff" d="M144,-70.75C144,-63.8 144,-53.85 144,-45.13"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="147.5,-45.09 144,-35.09 140.5,-45.09 147.5,-45.09"/>
+<path fill="none" stroke="#63b8ff" d="M137.39,-70.75C131.74,-63.26 123.46,-52.28 116.55,-43.13"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="119.3,-40.96 110.48,-35.09 113.71,-45.18 119.3,-40.96"/>
 </a>
 </g>
 <g id="a_edge1&#45;headlabel"><a xlink:href="dir_000022_000013.html" target="_top" xlink:title="2">
-<text text-anchor="middle" x="150.34" y="-46.18" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#63b8ff">2</text>
+<text text-anchor="middle" x="123.73" y="-39.62" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#63b8ff">2</text>
+</a>
+</g>
+</g>
+<!-- dir_d463935c42a880f8392bc37d38dc00e7&#45;&gt;dir_bcfcb44c233f404c9bb161aac5c4d104 -->
+<g id="edge2" class="edge">
+<title>dir_d463935c42a880f8392bc37d38dc00e7&#45;&gt;dir_bcfcb44c233f404c9bb161aac5c4d104</title>
+<g id="a_edge2"><a xlink:href="dir_000022_000006.html" target="_top">
+<path fill="none" stroke="#63b8ff" d="M150.44,-70.75C155.89,-63.34 163.86,-52.5 170.56,-43.41"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="173.57,-45.22 176.68,-35.09 167.93,-41.07 173.57,-45.22"/>
+</a>
+</g>
+<g id="a_edge2&#45;headlabel"><a xlink:href="dir_000022_000006.html" target="_top" xlink:title="1">
+<text text-anchor="middle" x="173.73" y="-47.3" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#63b8ff">1</text>
 </a>
 </g>
 </g>
 <!-- dir_371f18151ff53c40093199b356fa9271 -->
-<g id="node5" class="node">
+<g id="node6" class="node">
 <title>dir_371f18151ff53c40093199b356fa9271</title>
-<g id="a_node5"><a xlink:href="dir_371f18151ff53c40093199b356fa9271.html" target="_top" xlink:title="SceneLoader">
+<g id="a_node6"><a xlink:href="dir_371f18151ff53c40093199b356fa9271.html" target="_top" xlink:title="SceneLoader">
 <polygon fill="#a2b4d6" stroke="#404040" points="102.5,-90 23.5,-90 23.5,-71 102.5,-71 102.5,-90"/>
 <text text-anchor="middle" x="63" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">SceneLoader</text>
 </a>

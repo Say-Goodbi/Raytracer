@@ -1,7 +1,7 @@
 var searchData=
 [
   ['addlight_0',['addLight',['../classRayTracer_1_1Scene.html#acfbaa6ed019faf5db8b4d893d1c6d21b',1,'RayTracer::Scene']]],
-  ['addprimitive_1',['addPrimitive',['../classRayTracer_1_1Scene.html#a59fea4bc5a15d2a862830a0d5df4556a',1,'RayTracer::Scene']]],
+  ['addprimitive_1',['addPrimitive',['../classRayTracer_1_1Scene.html#a27d1880f69135b1897fb50ccba237d20',1,'RayTracer::Scene']]],
   ['ainterface_2',['ainterface',['../classRayTracer_1_1AInterface.html',1,'RayTracer::AInterface'],['../classRayTracer_1_1AInterface.html#a9efa593bb26fb12020906f1b6b8944d6',1,'RayTracer::AInterface::AInterface()']]],
   ['ainterface_20→_20scenewriter_3',['Output Pipeline: AInterface → SceneWriter',['../index.html#arch_interface',1,'']]],
   ['ainterface_2ehpp_4',['AInterface.hpp',['../AInterface_8hpp.html',1,'']]],

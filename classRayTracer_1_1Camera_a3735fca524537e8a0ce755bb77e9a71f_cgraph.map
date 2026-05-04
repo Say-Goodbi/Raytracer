@@ -1,29 +1,31 @@
 <map id="RayTracer::Camera::render" name="RayTracer::Camera::render">
-<area shape="rect" id="Node000001" title="Render a full scene into a 2D framebuffer." alt="" coords="5,164,159,204"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11" title="Trace a single ray in the scene and compute the resulting color." alt="" coords="207,85,360,125"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,161,218,127,220,132,135,166"/>
-<area shape="rect" id="Node000007" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Generate a world&#45;space ray from normalized screen coordinates." alt="" coords="207,242,360,282"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="135,201,220,235,218,240,133,206"/>
-<area shape="rect" id="Node000003" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="655,67,825,92"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="305,82,349,48,377,32,407,20,462,6,507,3,551,8,607,20,660,36,706,58,704,63,658,41,606,25,551,14,507,8,463,11,409,25,380,37,352,53,308,87"/>
-<area shape="rect" id="Node000004" href="$structRayTracer_1_1Color.html#ae749f3583bffdf5596744257593d35e6" title=" " alt="" coords="419,35,595,60"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="360,83,407,70,443,61,444,66,409,75,361,88"/>
-<area shape="rect" id="Node000005" href="$classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8" title="Determine whether a hit point is shadowed by any primitive." alt="" coords="431,85,584,125"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="360,102,417,102,417,108,360,108"/>
-<area shape="rect" id="Node000006" href="$structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8" title=" " alt="" coords="408,150,607,175"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="361,122,409,134,444,143,443,149,407,139,360,127"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="563,147,606,134,699,96,701,101,608,139,565,152"/>
-<area shape="rect" id="Node000008" href="$classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc" title="Constructor." alt="" coords="432,199,583,224"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="360,242,437,225,438,230,361,247"/>
-<area shape="rect" id="Node000009" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="663,240,817,280"/>
-<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="360,259,649,257,649,263,360,264"/>
-<area shape="rect" id="Node000010" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="431,300,584,340"/>
-<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="361,279,418,294,417,299,360,284"/>
-<area shape="rect" id="Node000012" href="$classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0" title="Get a point on the rectangle at normalized coordinates (u, v)." alt="" coords="419,365,596,405"/>
-<area shape="poly" id="edge13_Node000007_Node000012" title=" " alt="" coords="309,280,354,315,409,349,427,357,424,362,407,354,351,319,306,284"/>
-<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="584,297,649,280,651,285,585,302"/>
-<area shape="rect" id="Node000011" href="$classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" title="Calculate the length (magnitude) of this vector." alt="" coords="663,304,817,344"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="585,318,649,319,649,325,585,324"/>
-<area shape="rect" id="Node000013" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="663,368,817,408"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="596,383,650,384,649,389,596,389"/>
+<area shape="rect" id="Node000001" title="Render a full scene into a 2D framebuffer." alt="" coords="5,225,159,265"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11" title="Trace a single ray in the scene and compute the resulting color." alt="" coords="207,122,360,162"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,222,230,166,232,171,123,227"/>
+<area shape="rect" id="Node000008" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Generate a world&#45;space ray from normalized screen coordinates." alt="" coords="207,299,360,339"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="138,262,217,292,215,297,136,267"/>
+<area shape="rect" id="Node000003" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="684,100,855,125"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,120,341,71,372,46,407,28,469,8,521,3,573,11,637,28,668,39,697,55,745,89,742,94,695,60,666,44,635,33,572,16,521,9,470,13,409,33,375,51,345,75,301,124"/>
+<area shape="rect" id="Node000004" href="$structRayTracer_1_1Color.html#ae749f3583bffdf5596744257593d35e6" title=" " alt="" coords="434,43,610,68"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="318,120,360,98,407,78,438,69,440,74,409,83,362,103,321,124"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8" title="Determine whether a hit point is shadowed by any primitive." alt="" coords="445,93,599,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="360,130,431,121,432,126,361,135"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1Scene.html#a3cf955a569ab5c1a9b77203e2f85bf6e" title="Get mutable reference to primitives." alt="" coords="408,157,636,183"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="361,148,401,153,400,158,360,154"/>
+<area shape="rect" id="Node000007" href="$structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8" title=" " alt="" coords="423,207,621,232"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="328,160,409,192,442,201,441,206,407,197,326,165"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="596,204,635,192,692,163,739,131,742,136,694,167,637,197,597,209"/>
+<area shape="rect" id="Node000009" href="$classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc" title="Constructor." alt="" coords="447,256,597,281"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="360,300,447,282,449,287,361,306"/>
+<area shape="rect" id="Node000010" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="693,297,846,337"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="360,316,679,315,679,320,360,322"/>
+<area shape="rect" id="Node000011" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="445,357,599,397"/>
+<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="361,335,432,353,431,358,360,340"/>
+<area shape="rect" id="Node000013" href="$classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0" title="Get a point on the rectangle at normalized coordinates (u, v)." alt="" coords="433,422,611,462"/>
+<area shape="poly" id="edge14_Node000008_Node000013" title=" " alt="" coords="309,337,354,372,409,406,429,415,426,420,407,411,351,377,306,341"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="598,356,679,336,680,341,599,361"/>
+<area shape="rect" id="Node000012" href="$classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" title="Calculate the length (magnitude) of this vector." alt="" coords="693,361,846,401"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="599,375,679,377,679,382,599,381"/>
+<area shape="rect" id="Node000014" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="693,425,846,465"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="611,440,679,441,679,446,611,446"/>
 </map>
