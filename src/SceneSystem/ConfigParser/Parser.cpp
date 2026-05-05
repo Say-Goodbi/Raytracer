@@ -89,6 +89,57 @@ void RayTracer::Parser::insert_value(RayTracer::Object &obj, const std::string &
 }
 
 /**
+ * @brief Inserts a vector of objects into the object structure, creating nested objects as needed.
+ * @param obj The object to insert the vector into
+ * @param name The name of the vector
+ * @param s The libconfig setting (array or list of groups) to extract the vector from
+ * @return void
+ */
+void RayTracer::Parser::insert_vector_object(RayTracer::Object &obj, const std::string &name, const libconfig::Setting &s)
+{
+    RayTracer::VectorObject vectorObj;
+
+    for (int i = 0; i < s.getLength(); ++i)
+    {
+        const libconfig::Setting &groupElement = s[i];
+        if (groupElement.isGroup())
+        {
+            RayTracer::Object groupObj;
+            parseSettings(groupElement, groupObj, "");
+            vectorObj.push_back(std::move(groupObj));
+        }
+    }
+
+    size_t lastDot = name.rfind('.');
+
+    if (lastDot != std::string::npos)
+    {
+        std::string parentName = name.substr(0, lastDot);
+        std::string childName = name.substr(lastDot + 1);
+        RayTracer::Object *parentObj = &obj;
+        size_t dotPos = parentName.find('.');
+
+        while (dotPos != std::string::npos)
+        {
+            std::string currentPart = parentName.substr(0, dotPos);
+            if (parentObj->find(currentPart) == parentObj->end())
+            {
+                (*parentObj)[currentPart] = RayTracer::NodePtr(new RayTracer::Node{RayTracer::Object{}});
+            }
+            parentObj = &std::get<RayTracer::Object>((*parentObj)[currentPart]->value);
+            parentName = parentName.substr(dotPos + 1);
+            dotPos = parentName.find('.');
+        }
+        if (parentObj->find(parentName) == parentObj->end())
+            (*parentObj)[parentName] = RayTracer::NodePtr(new RayTracer::Node{RayTracer::Object{}});
+        parentObj = &std::get<RayTracer::Object>((*parentObj)[parentName]->value);
+        (*parentObj)[childName] = RayTracer::NodePtr(new RayTracer::Node{std::move(vectorObj)});
+    }
+    else
+        obj[name] = RayTracer::NodePtr(new RayTracer::Node{std::move(vectorObj)});
+}
+
+/**
  * @brief Parses the settings from a libconfig setting and inserts them into the object structure.
  * @param setting The libconfig setting to parse
  * @param result The object to insert the parsed values into
@@ -104,15 +155,16 @@ void RayTracer::Parser::parseSettings(const libconfig::Setting &setting, RayTrac
         if (s.isGroup())
             parseSettings(s, result, prefix + s.getName() + ".");
         else if (s.isArray() || s.isList())
-            for (int j = 0; j < s.getLength(); ++j)
-            {
-                const libconfig::Setting &arrayElement = s[j];
-
-                if (arrayElement.isGroup())
-                    parseSettings(arrayElement, result, prefix + s.getName() + "[" + std::to_string(j) + "].");
-                else
+        {
+            if (s.getLength() > 0 && s[0].isGroup())
+                insert_vector_object(result, prefix + s.getName(), s);
+            else
+                for (int j = 0; j < s.getLength(); ++j)
+                {
+                    const libconfig::Setting &arrayElement = s[j];
                     insert_value(result, prefix + s.getName() + "[" + std::to_string(j) + "].", arrayElement);
-            }
+                }
+        }
         else
             insert_value(result, prefix, s);
     }

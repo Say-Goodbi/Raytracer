@@ -4,7 +4,20 @@ This directory contains the implementation of the `Parser` class, which is respo
 
 ## Description of the Nodes
 
-The `Parser` class defines a `Node` structure that represents a node in the configuration tree. Each node contains a value, which can be a scalar value (boolean, integer, float, or string) or an object (a collection of key-value pairs). The `Node` structure is used to build a hierarchical representation of the configuration settings.
+The configuration settings are stored in a tree-like structure, where each node can be a scalar value (such as an integer, float, string, or boolean), an object (a collection of key-value pairs), or a vector of objects (a list of objects). The `Node` struct is defined to represent this structure, and it uses `std::variant` to allow for different types of values.
+
+```cpp
+struct Node;
+typedef std::variant<int, long long, float, std::string, bool> ScalarValue;
+typedef std::unique_ptr<Node> NodePtr;
+typedef std::map<std::string, NodePtr> Object;
+typedef std::vector<Object> VectorObject;
+
+struct Node
+{
+    std::variant<ScalarValue, Object, VectorObject> value;
+};
+```
 
 ## Usage
 
@@ -14,11 +27,12 @@ To use the `Parser` class, you can create an instance of the class by providing 
 ```cpp
 try {
     RayTracer::Parser parser("config.cfg");
-    const RayTracer::Object &rootObject = std::get<RayTracer::Object>(parser._node->value);
-    const RayTracer::Node &cameraNode = *rootObject.at("camera");
-    const RayTracer::Object &cameraObject = std::get<RayTracer::Object>(cameraNode.value);
-    const RayTracer::Node &fieldOfViewNode = *cameraObject.at("fieldOfView");
-    const RayTracer::ScalarValue &fieldOfViewValue = std::get<RayTracer::ScalarValue>(fieldOfViewNode.value);
+      const RayTracer::Object &rootObject = std::get<RayTracer::Object>(parser._node->value);
+      const RayTracer::Node &cameraNode = *rootObject.at("camera");
+      const RayTracer::Object &cameraObject = std::get<RayTracer::Object>(cameraNode.value);
+      const RayTracer::Node &fieldOfViewNode = *cameraObject.at("fieldOfView");
+      const RayTracer::ScalarValue &fieldOfViewValue = std::get<RayTracer::ScalarValue>(fieldOfViewNode.value);
+      std::cout << "Camera field of view: " << std::get<float>(fieldOfViewValue) << " degrees" << std::endl;
 } catch (const RayTracer::RaytracerException &e) {
     std::cerr << "Error: " << e.what() << std::endl;
 }
@@ -89,44 +103,50 @@ lights:
   lights = {
     ambient = 0.4
     diffuse = 0.6
-    point[0] = {
-      x = 400
-      y = 100
-      z = 500
-    }
+    point = [
+      {
+        x = 400
+        y = 100
+        z = 500
+      }
+    ]
   }
   primitives = {
-    planes[0] = {
-      axis = Z
-      color = {
-        b = 255
-        g = 64
-        r = 64
+    planes = [
+      {
+        axis = Z
+        color = {
+          b = 255
+          g = 64
+          r = 64
+        }
+        position = -20
       }
-      position = -20
-    }
-    spheres[0] = {
-      color = {
-        b = 64
-        g = 64
-        r = 255
+    ]
+    spheres = [
+      {
+        color = {
+          b = 64
+          g = 64
+          r = 255
+        }
+        r = 25
+        x = 60
+        y = 5
+        z = 40
       }
-      r = 25
-      x = 60
-      y = 5
-      z = 40
-    }
-    spheres[1] = {
-      color = {
-        b = 64
-        g = 255
-        r = 64
+      {
+        color = {
+          b = 64
+          g = 255
+          r = 64
+        }
+        r = 35
+        x = -40
+        y = 20
+        z = -10
       }
-      r = 35
-      x = -40
-      y = 20
-      z = -10
-    }
+    ]
   }
 }
 ```
