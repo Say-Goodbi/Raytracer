@@ -6,12 +6,12 @@ namespace RayTracer
     {
     }
 
-    void Scene::addPrimitive(std::unique_ptr<IPrimitive> primitive)
+    void Scene::addPrimitive(std::unique_ptr<APrimitive> primitive)
     {
         this->_primitives.push_back(std::move(primitive));
     }
 
-    std::vector<std::unique_ptr<IPrimitive>>& Scene::getPrimitives()
+    std::vector<std::unique_ptr<APrimitive>>& Scene::getPrimitives()
     {
         return this->_primitives;
     }
