@@ -37,14 +37,6 @@ namespace RayTracer
          */
         Color castRay(Geometry::Ray& ray, Scene& scene);
 
-        /**
-         * @brief Determine whether a hit point is shadowed by any primitive.
-         * @param hit Intersection data for the shaded point.
-         * @param scene Scene containing primitives and lights.
-         * @return True if the point is in shadow for at least one light.
-         */
-        bool computeShadow(Geometry::HitRecord& hit, Scene& scene);
-    
     protected:
     public:
         /**
@@ -55,7 +47,7 @@ namespace RayTracer
          * @param width Output framebuffer width.
          * @param height Output framebuffer height.
          */
-        Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width = 800, int height = 600) 
+        Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width = 800, int height = 600)
         : ARenderer(width, height), _position(pos), _direction(direction), _fov(fov) {};
 
         ~Camera() = default;
