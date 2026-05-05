@@ -2,6 +2,7 @@
 #include "../../../SceneSystem/Scene/Scene.hpp"
 #include "../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
 #include <vector>
+#include "../../../Utils/Utils.hpp"
 
 namespace RayTracer
 {
@@ -20,12 +21,13 @@ namespace RayTracer
     {
         Geometry::Point3D screenPoint = this->_screen.pointAt(u, v);
         Geometry::Vector3D rayDirection = Geometry::Vector3D(
-            screenPoint.x - this->_position.x,
-            screenPoint.y - this->_position.y,
-            screenPoint.z - this->_position.z).normalize();
+                                              screenPoint.x - this->_position.x,
+                                              screenPoint.y - this->_position.y,
+                                              screenPoint.z - this->_position.z)
+                                              .normalize();
         return Geometry::Ray(this->_position, rayDirection);
     }
-    
+
     /**
      * @brief Cast a ray into the scene and compute the resulting pixel color.
      *
@@ -42,10 +44,10 @@ namespace RayTracer
      * @param scene Reference to the scene containing primitives and lights
      * @return Resulting pixel color (R, G, B)
      */
-    Color Camera::castRay(Geometry::Ray& ray, Scene& scene)
+    Color Camera::castRay(const Geometry::Ray &ray, Scene &scene, int depth)
     {
         std::optional<Geometry::HitRecord> closest;
-        APrimitive* hitPrimitive = nullptr;
+        APrimitive *hitPrimitive = nullptr;
 
         // Find the closest intersection point along the ray
         for (const auto &primitive : scene.getPrimitives()) {
@@ -55,55 +57,29 @@ namespace RayTracer
                 hitPrimitive = primitive.get(); // Safe to use get() since the raw pointer is used only within this scope and the unique_ptr owns the lifetime
             }
         }
-
         if (!closest)
-            return Color(0, 0, 0);  // No intersection: return black
+            return Color(0, 0, 0); // No intersection: return black (AKA: background, maybe change to a blue background ?)
 
-        // Compute shadow and base material color
-        bool inShadow = computeShadow(closest.value(), scene);
-        
-        Color finalColor = hitPrimitive->getMaterial()->computeColor(closest.value(), scene.getLights());
+        IMaterial *mat = closest->material;
+        Color emitted = mat->emission();
 
-        if (inShadow)
-            finalColor = finalColor * 0.1f;  // Darken by 90% if in shadow
+        Geometry::Vector3D viewDir = (ray.direction * -1).normalize();
 
-        return finalColor.clamp();
+        float u1 = Utils::rng();
+        float u2 = Utils::rng();
+        Geometry::Vector3D bounceDir = mat->sample(closest->normal, viewDir, u1, u2);
+        float p = mat->pdf(closest->normal, viewDir, bounceDir);
+
+        if (p < 1e-6f)
+            return emitted;
+
+        Geometry::Ray bounceRay(closest->point + closest->normal * 1e-4, bounceDir); // 1e-4 bias to avoid self-intersection
+        Color incoming = castRay(bounceRay, scene, depth - 1);
+        Color brdf = mat->evaluate(closest->normal, viewDir, bounceDir);
+        float cosTheta = std::max(0.0f, (float)closest->normal.dot(bounceDir));
+        return emitted + brdf * incoming * (cosTheta / p);
     }
-    
-    /**
-     * @brief Determine if a hit point is in shadow.
-     *
-     * For each light in the scene:
-     * 1. Compute the direction from the hit point toward the light
-     * 2. Create a shadow ray from the hit point (with small epsilon offset to avoid self-intersection)
-     * 3. Check if any primitive blocks the ray before reaching the light
-     * 4. If any primitive blocks, the point is in shadow
-     *
-     * Shadow bias (0.001f): Small offset along surface normal to prevent self-shadowing artifacts
-     *
-     * @param hit The hit record at the intersection point
-     * @param scene Reference to the scene containing primitives and lights
-     * @return true if the hit point is in shadow from any light, false otherwise
-     */
-    bool Camera::computeShadow(Geometry::HitRecord &hit, Scene &scene)
-    {
-        for (const auto &light : scene.getLights()) {
-            Geometry::Vector3D toLight = light->getPosition() - hit.point;
-            float distanceToLight = toLight.length();
-            Geometry::Vector3D direction = toLight.normalize();
 
-            // Use small epsilon offset (shadow bias) to avoid self-intersection artifacts
-            Geometry::Point3D shadowOrigin = hit.point + direction * 0.001f;
-            Geometry::Ray shadowRay(shadowOrigin, direction);
-            for (const auto &primitive : scene.getPrimitives()) {
-                std::optional<Geometry::HitRecord> shadowHit = primitive->hit(shadowRay);
-                if (shadowHit && shadowHit->rayDistance < distanceToLight)
-                    return true;  // Primitive blocks light: in shadow
-            }
-        }
-        return false;  // No primitives block light: not in shadow
-    }
-    
     /**
      * @brief Render the scene to a 2D framebuffer.
      *
@@ -117,21 +93,23 @@ namespace RayTracer
      * @param scene The scene to render
      * @return 2D vector of colors: frame[height][width]
      */
-    std::vector<std::vector<Color>> Camera::render(Scene& scene)
+    std::vector<std::vector<Color>> Camera::render(Scene &scene)
     {
         std::vector<std::vector<Color>> frameBuffer;
         frameBuffer.resize(_height, std::vector<Color>(_width));
 
-        for (int y = 0; y < _height; ++y) {
-            for (int x = 0; x < _width; ++x) {
-                double u = static_cast<double>(x) / (_width - 1);
-                double v = static_cast<double>(y) / (_height - 1);
-                Geometry::Ray ray = generateRay(u, v);
-                frameBuffer[y][x] = castRay(ray, scene);
+        for (int y = 0; y < _height; y++) {
+            for (int x = 0; x < _width; x++) {
+                Color accumulated(0, 0, 0);
+                for (int s = 0; s < _samplesPerPixel; s++) {
+                    double u = (x + Utils::rng()) / (_width - 1);
+                    double v = (y + Utils::rng()) / (_height - 1);
+                    Geometry::Ray ray = generateRay(u, v);
+                    accumulated = accumulated + castRay(ray, scene, _maxDepth);
+                }
+                frameBuffer[y][x] = (accumulated * (1.0 / _samplesPerPixel)).clamp();
             }
         }
-
         return frameBuffer;
     }
-
 } // namespace RayTracer

@@ -29,21 +29,19 @@ namespace RayTracer
         /// Field of view in degrees.
         float _fov;
 
+        int _maxDepth = 8;
+        /// Number of rays used to sample one Pixel. Higher values reduce noise but increase render time.
+        int _samplesPerPixel = 64;
+
+
         /**
          * @brief Trace a single ray in the scene and compute the resulting color.
          * @param ray Ray to cast.
          * @param scene Scene containing primitives and lights.
+         * @param depth Recursion depth for reflection/refraction.
          * @return Final shaded color for this ray.
          */
-        Color castRay(Geometry::Ray& ray, Scene& scene);
-
-        /**
-         * @brief Determine whether a hit point is shadowed by any primitive.
-         * @param hit Intersection data for the shaded point.
-         * @param scene Scene containing primitives and lights.
-         * @return True if the point is in shadow for at least one light.
-         */
-        bool computeShadow(Geometry::HitRecord& hit, Scene& scene);
+        Color Camera::castRay(const Geometry::Ray& ray, Scene& scene, int depth);
     
     protected:
     public:
