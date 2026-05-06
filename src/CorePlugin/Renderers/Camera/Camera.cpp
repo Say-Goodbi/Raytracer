@@ -7,15 +7,14 @@
 namespace RayTracer
 {
     /**
-     * @brief Generate a ray from the camera through a screen coordinate.
+     * @brief Build a world-space ray from normalized screen coordinates.
      *
-     * Converts normalized screen coordinates (u, v) ∈ [0,1] into a world-space ray
-     * by first mapping to the screen rectangle in world space, then computing the
-     * ray direction from camera position to screen point.
+     * Maps (u, v) ∈ [0, 1]² onto the screen rectangle in world space, then
+     * returns a ray from the camera position toward that point.
      *
-     * @param u Normalized horizontal screen coordinate (0 = left, 1 = right)
-     * @param v Normalized vertical screen coordinate (0 = top, 1 = bottom)
-     * @return Ray from camera position with direction toward the screen point
+     * @param u Horizontal position (0 = left, 1 = right).
+     * @param v Vertical position (0 = top, 1 = bottom).
+     * @return Unit-direction ray from the camera through the screen point.
      */
     Geometry::Ray Camera::generateRay(double u, double v)
     {
@@ -29,20 +28,35 @@ namespace RayTracer
     }
 
     /**
-     * @brief Cast a ray into the scene and compute the resulting pixel color.
+     * @brief Evaluate the rendering equation along a ray, deterministically.
      *
-     * Algorithm:
-     * 1. Test the ray against all primitives to find the closest intersection
-     * 2. If no intersection, return black (0, 0, 0)
-     * 3. If intersection found:
-     *    a. Check if the hit point is in shadow by casting rays to all lights
-     *    b. Compute color using the hit material's shader
-     *    c. Darken by 90% if in shadow
-     * 4. Clamp color components to [0, 1] range
+     * Implements the standard Monte Carlo path-tracing estimator:
+     * @code
+     *   L(x, ωo) = Le(x, ωo) + ∫ f(x, ωi, ωo) Li(x, ωi) cosθi dωi
+     * @endcode
+     * but evaluates the integral at a **single deterministic direction** supplied
+     * by `IMaterial::sample()` instead of drawing a random sample.  The
+     * estimator is then:
+     * @code
+     *   L ≈ Le + f(ωi, ωo) * Li(ωi) * cosθi / pdf(ωi)
+     * @endcode
+     * This removes noise and makes rendering fully reproducible at the cost of
+     * variance reduction that random multi-sampling would otherwise provide.
      *
-     * @param ray The ray to cast into the scene
-     * @param scene Reference to the scene containing primitives and lights
-     * @return Resulting pixel color (R, G, B)
+     * Steps:
+     * 1. Return black if the bounce budget is exhausted.
+     * 2. Find the nearest primitive intersection; return black on miss.
+     * 3. Query the material for its emitted radiance (`Le`).
+     * 4. Ask the material for a deterministic bounce direction (`ωi`).
+     * 5. If `pdf(ωi) ≈ 0`, return only the emitted term (degenerate surface).
+     * 6. Recurse along `ωi` (with a small normal-bias offset to avoid
+     *    self-intersection) to get incoming radiance `Li`.
+     * 7. Combine: `Le + brdf * Li * cosθ / pdf`.
+     *
+     * @param ray   Incoming ray to evaluate.
+     * @param scene Scene containing all primitives.
+     * @param depth Remaining bounce budget; returns black when ≤ 0.
+     * @return Radiance estimate along @p ray.
      */
     Color Camera::castRay(const Geometry::Ray &ray, Scene &scene, int depth) {
         if (depth <= 0)
@@ -76,17 +90,23 @@ namespace RayTracer
     }
 
     /**
-     * @brief Render the scene to a 2D framebuffer.
+     * @brief Render the scene into a 2D framebuffer.
      *
-     * Iterates over each pixel in the output framebuffer and:
-     * 1. Computes normalized screen coordinates (u, v)
-     * 2. Generates a ray for that pixel via generateRay()
-     * 3. Casts the ray and stores the result in the framebuffer
+     * Each pixel is super-sampled with a deterministic stratified grid of
+     * `_sqrtSamples × _sqrtSamples` sub-pixel rays.  Sample positions are
+     * fixed at the **center of each sub-cell** — no jitter, no random offset —
+     * keeping the overall render fully deterministic.
      *
-     * Output format: frame[y][x] where y = row (0 = top), x = column (0 = left)
+     * Per-pixel steps:
+     * 1. Iterate over the `_sqrtSamples × _sqrtSamples` sub-cell grid.
+     * 2. Compute the sub-cell center in normalized screen space (u, v).
+     * 3. Generate and path-trace a ray via `generateRay()` + `castRay()`.
+     * 4. Average all sub-pixel radiance values and clamp to [0, 1].
      *
-     * @param scene The scene to render
-     * @return 2D vector of colors: frame[height][width]
+     * Output layout: `frame[y][x]`, y = 0 at the top, x = 0 at the left.
+     *
+     * @param scene Scene to render.
+     * @return 2D grid of clamped colors: `frame[height][width]`.
      */
     std::vector<std::vector<Color>> Camera::render(Scene& scene) {
         std::vector<std::vector<Color>> framebuffer(_height, std::vector<Color>(_width));

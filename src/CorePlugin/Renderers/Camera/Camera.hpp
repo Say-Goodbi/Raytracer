@@ -11,11 +11,20 @@ namespace RayTracer
 {
     /**
      * @class Camera
-     * @brief Concrete renderer plugin that implements camera-based ray casting.
+     * @brief Renderer that evaluates the rendering equation deterministically.
      *
-     * The camera converts normalized screen coordinates into rays, traces those
-     * rays against scene primitives, applies basic shadowing, and returns the
-     * resulting framebuffer.
+     * This camera uses the Monte Carlo path-tracing framework (BRDF evaluation,
+     * PDF weighting, recursive bounces) but removes all randomness:
+     *
+     * - **Bounce directions** are chosen deterministically by each material's
+     *   `IMaterial::sample()` (e.g. perfect specular reflection, cosine-lobe
+     *   centroid) instead of being drawn from a random distribution.
+     * - **Anti-aliasing** is done with a fixed stratified sub-pixel grid
+     *   (`_sqrtSamples × _sqrtSamples` evenly-spaced samples) rather than
+     *   jittered or random samples.
+     *
+     * The result is fully reproducible: identical inputs always produce
+     * identical output, with no noise and no need for a random seed.
      */
     class Camera : public ARenderer
     {
@@ -28,48 +37,51 @@ namespace RayTracer
         Geometry::Rectangle3D _screen;
         /// Field of view in degrees.
         float _fov;
-        /// Maximum recursion depth for ray bounces
+        /// Maximum number of recursive ray bounces before the path is terminated.
         int _maxDepth = 8;
-        /// 2 means 4 rays per pixel, 3 means 9 rays per pixel, etc.
+        /// Side length of the per-pixel stratified sample grid (total samples = _sqrtSamples²).
         int _sqrtSamples = 2;
 
-
         /**
-         * @brief Trace a single ray in the scene and compute the resulting color.
-         * @param ray Ray to cast.
-         * @param scene Scene containing primitives and lights.
-         * @param depth Recursion depth for reflection/refraction.
-         * @return Final shaded color for this ray.
+         * @brief Evaluate the rendering equation along a ray, deterministically.
+         *
+         * At each surface hit the bounce direction comes from `IMaterial::sample()`,
+         * which is deterministic — no random numbers are involved.
+         *
+         * @param ray   Incoming ray to evaluate.
+         * @param scene Scene containing all primitives.
+         * @param depth Remaining bounce budget; returns black when ≤ 0.
+         * @return Radiance estimate along @p ray.
          */
-        Color Camera::castRay(const Geometry::Ray& ray, Scene& scene, int depth);
-    
+        Color castRay(const Geometry::Ray& ray, Scene& scene, int depth);
+
     protected:
     public:
         /**
          * @brief Construct a camera renderer.
-         * @param pos Camera position.
-         * @param direction Camera forward direction.
-         * @param fov Field of view in degrees.
-         * @param width Output framebuffer width.
-         * @param height Output framebuffer height.
+         * @param pos       Camera position in world space.
+         * @param direction Camera forward direction (need not be unit length).
+         * @param fov       Horizontal field of view in degrees.
+         * @param width     Output framebuffer width in pixels (default 800).
+         * @param height    Output framebuffer height in pixels (default 600).
          */
-        Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width = 800, int height = 600) 
+        Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width = 800, int height = 600)
         : ARenderer(width, height), _position(pos), _direction(direction), _fov(fov) {};
 
         ~Camera() = default;
 
         /**
-         * @brief Generate a world-space ray from normalized screen coordinates.
-         * @param u Horizontal coordinate in [0, 1].
-         * @param v Vertical coordinate in [0, 1].
-         * @return Ray emitted from the camera through the screen point.
+         * @brief Build a world-space ray from normalized screen coordinates.
+         * @param u Horizontal position in [0, 1] (0 = left, 1 = right).
+         * @param v Vertical position in [0, 1] (0 = top, 1 = bottom).
+         * @return Normalized ray from the camera through the given screen point.
          */
         Geometry::Ray generateRay(double u, double v);
 
         /**
-         * @brief Render a full scene into a 2D framebuffer.
+         * @brief Render the scene into a 2D framebuffer.
          * @param scene Scene to render.
-         * @return 2D framebuffer of colors (height x width).
+         * @return 2D grid of clamped colors: `frame[y][x]`, row-major, top-to-bottom.
          */
         std::vector<std::vector<Color>> render(Scene& scene) override;
     };
