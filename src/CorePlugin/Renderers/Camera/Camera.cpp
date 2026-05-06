@@ -74,19 +74,23 @@ namespace RayTracer
         IMaterial *mat = closest->material;
         Color emitted = mat->emission();
 
+        Color directLight(0, 0, 0);
+        for (const auto& light : scene.getLights())
+            directLight = directLight + light->computeLight(*closest, scene.getPrimitives());
+
         Geometry::Vector3D viewDir = (ray.direction * -1).normalize();
 
         Geometry::Vector3D bounceDir = mat->sample(closest->normal, viewDir);
         float p = mat->pdf(closest->normal, viewDir, bounceDir);
 
         if (p < 1e-6f)
-            return emitted;
+            return emitted + directLight;
 
         Geometry::Ray bounceRay(closest->point + closest->normal * 1e-4, bounceDir); // 1e-4 bias to avoid self-intersection
         Color incoming = castRay(bounceRay, scene, depth - 1);
         Color brdf = mat->evaluate(closest->normal, viewDir, bounceDir);
         float cosTheta = std::max(0.0f, (float)closest->normal.dot(bounceDir));
-        return emitted + brdf * incoming * (cosTheta / p);
+        return emitted + directLight + brdf * incoming * (cosTheta / p);
     }
 
     /**
