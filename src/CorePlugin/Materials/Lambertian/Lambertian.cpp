@@ -10,8 +10,10 @@ namespace RayTracer
         return _albedo * (1.0 / M_PI);
     }
 
-    Geometry::Vector3D Lambertian::sample(const Geometry::Vector3D& normal, const Geometry::Vector3D&, float u1, float u2) const
+    Geometry::Vector3D Lambertian::sample(const Geometry::Vector3D& normal, const Geometry::Vector3D&) const
     {
+        float u1 = 0.5f; // ADDED THESES FLOATS SINCE THE SAMPLE FUNCTION IS NOW DETERMINISTIC, WE CAN USE FIXED VALUES FOR u1 AND u2
+        float u2 = 0.5f;
         float phi = 2.0f * M_PI * u1;
         float sinTheta = std::sqrt(1.0f - u2);
         Geometry::Vector3D local(sinTheta * std::cos(phi), sinTheta * std::sin(phi), std::sqrt(u2));

@@ -44,18 +44,15 @@ namespace RayTracer
      * @param scene Reference to the scene containing primitives and lights
      * @return Resulting pixel color (R, G, B)
      */
-    Color Camera::castRay(const Geometry::Ray &ray, Scene &scene, int depth)
-    {
+    Color Camera::castRay(const Geometry::Ray &ray, Scene &scene, int depth) {
+        if (depth <= 0)
+            return Color(0, 0, 0);
         std::optional<Geometry::HitRecord> closest;
-        APrimitive *hitPrimitive = nullptr;
 
-        // Find the closest intersection point along the ray
         for (const auto &primitive : scene.getPrimitives()) {
             std::optional<Geometry::HitRecord> hit = primitive->hit(ray);
-            if (hit && (!closest || hit->rayDistance < closest->rayDistance)) {
+            if (hit && (!closest || hit->rayDistance < closest->rayDistance))
                 closest = hit;
-                hitPrimitive = primitive.get(); // Safe to use get() since the raw pointer is used only within this scope and the unique_ptr owns the lifetime
-            }
         }
         if (!closest)
             return Color(0, 0, 0); // No intersection: return black (AKA: background, maybe change to a blue background ?)
@@ -65,9 +62,7 @@ namespace RayTracer
 
         Geometry::Vector3D viewDir = (ray.direction * -1).normalize();
 
-        float u1 = Utils::rng();
-        float u2 = Utils::rng();
-        Geometry::Vector3D bounceDir = mat->sample(closest->normal, viewDir, u1, u2);
+        Geometry::Vector3D bounceDir = mat->sample(closest->normal, viewDir);
         float p = mat->pdf(closest->normal, viewDir, bounceDir);
 
         if (p < 1e-6f)
@@ -93,23 +88,26 @@ namespace RayTracer
      * @param scene The scene to render
      * @return 2D vector of colors: frame[height][width]
      */
-    std::vector<std::vector<Color>> Camera::render(Scene &scene)
-    {
-        std::vector<std::vector<Color>> frameBuffer;
-        frameBuffer.resize(_height, std::vector<Color>(_width));
+    std::vector<std::vector<Color>> Camera::render(Scene& scene) {
+        std::vector<std::vector<Color>> framebuffer(_height, std::vector<Color>(_width));
 
         for (int y = 0; y < _height; y++) {
             for (int x = 0; x < _width; x++) {
                 Color accumulated(0, 0, 0);
-                for (int s = 0; s < _samplesPerPixel; s++) {
-                    double u = (x + Utils::rng()) / (_width - 1);
-                    double v = (y + Utils::rng()) / (_height - 1);
-                    Geometry::Ray ray = generateRay(u, v);
-                    accumulated = accumulated + castRay(ray, scene, _maxDepth);
+
+                for (int sy = 0; sy < _sqrtSamples; sy++) {
+                    for (int sx = 0; sx < _sqrtSamples; sx++) {
+                        double u = (x + (sx + 0.5) / _sqrtSamples) / (_width - 1);
+                        double v = (y + (sy + 0.5) / _sqrtSamples) / (_height - 1);
+                        Geometry::Ray ray = generateRay(u, v);
+                        accumulated = accumulated + castRay(ray, scene, _maxDepth);
+                    }
                 }
-                frameBuffer[y][x] = (accumulated * (1.0 / _samplesPerPixel)).clamp();
+
+                int totalSamples = _sqrtSamples * _sqrtSamples;
+                framebuffer[y][x] = (accumulated * (1.0 / totalSamples)).clamp();
             }
         }
-        return frameBuffer;
+        return framebuffer;
     }
 } // namespace RayTracer

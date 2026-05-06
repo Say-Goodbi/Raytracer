@@ -32,7 +32,7 @@ namespace RayTracer
             ~Lambertian() = default;
 
             Color evaluate(const Geometry::Vector3D&, const Geometry::Vector3D&, const Geometry::Vector3D&) const override;
-            Geometry::Vector3D sample(const Geometry::Vector3D& normal, const Geometry::Vector3D&, float u1, float u2) const override;
+            Geometry::Vector3D sample(const Geometry::Vector3D& normal, const Geometry::Vector3D&) const override;
             float pdf(const Geometry::Vector3D& normal, const Geometry::Vector3D&, const Geometry::Vector3D& sampleDir) const override;
     };
 } // namespace RayTracer

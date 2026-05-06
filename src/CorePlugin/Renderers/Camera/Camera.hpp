@@ -28,10 +28,10 @@ namespace RayTracer
         Geometry::Rectangle3D _screen;
         /// Field of view in degrees.
         float _fov;
-
+        /// Maximum recursion depth for ray bounces
         int _maxDepth = 8;
-        /// Number of rays used to sample one Pixel. Higher values reduce noise but increase render time.
-        int _samplesPerPixel = 64;
+        /// 2 means 4 rays per pixel, 3 means 9 rays per pixel, etc.
+        int _sqrtSamples = 2;
 
 
         /**
