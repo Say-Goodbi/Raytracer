@@ -51,14 +51,14 @@ bool PluginManager::loadPlugin(const std::string& path)
         dlclose(handle);
         return false;
     }
-    std::map<std::string, std::function<Component(Setting)>> initializers = pluginInstance->getInitializers();
+    std::map<std::string, std::function<Component(NodePtr)>> initializers = pluginInstance->getInitializers();
     delete pluginInstance;
     overrideInitializers(initializers);
     _plugins[pluginName] = initializers;
     return true;
 }
 
-void PluginManager::overrideInitializers(const std::map<std::string, std::function<Component(Setting)>>& newInitializers)
+void PluginManager::overrideInitializers(const std::map<std::string, std::function<Component(NodePtr)>>& newInitializers)
 {
     for (const auto& pair : newInitializers) {
         const std::string& name = pair.first;
@@ -72,7 +72,7 @@ void PluginManager::overrideInitializers(const std::map<std::string, std::functi
     }
 }
 
-function<Component(Setting)> PluginManager::getInitializer(const std::string& name)
+function<Component(NodePtr)> PluginManager::getInitializer(const std::string& name)
 {
     for (const auto& pluginPair : _plugins) {
         const auto& initializers = std::get<1>(pluginPair.second);

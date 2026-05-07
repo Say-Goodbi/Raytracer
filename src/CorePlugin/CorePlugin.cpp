@@ -1,25 +1,25 @@
-#include "CorePlugin.hpp"
 #include "Interfaces/SceneWriter/SceneWriter.hpp"
 #include "Materials/FlatColor.hpp"
 
-std::string CorePlugin::getName() const
+extern "C"
 {
-    return "CorePlugin";
-}
+    std::string getName() const { return "CorePlugin"; };
 
-std::map<std::string, std::function<Component(Setting)>> CorePlugin::getInitializers() const
-{
-    return {
-        {"SceneWriter", [](Setting setting) -> Component {
-            auto settingsMap = std::get<std::map<std::string, Setting>>(setting);
-            auto renderer = std::get<ARenderer*>(settingsMap["renderer"]);
-            auto outputFile = std::get<std::string>(settingsMap["outputFile"]);
-            return SceneWriter(renderer, outputFile);
-        }},
-        {"FlatColor", [](Setting setting) -> Component {
-            auto settingsMap = std::get<std::map<std::string, Setting>>(setting);
-            auto color = std::get<Color>(settingsMap["color"]);
-            return FlatColor(color);
-        }}
-    };
+    std::map<std::string, std::function<Component(NodePtr)>> getInitializers()
+    {
+        return {
+            {"SceneWriter", [](NodePtr node) -> Component
+             {
+                 auto settingsMap = std::get<RayTracer::Object>(node->value);
+                 auto renderer = std::get<ARenderer>(std::get<RayTracer::ScalarValue>(settingsMap.at("renderer")));
+                 auto outputFile = std::get<std::string>(std::get<RayTracer::ScalarValue>(settingsMap.at("outputFile")));
+                 return SceneWriter(renderer, outputFile);
+             }},
+            {"FlatColor", [](NodePtr node) -> Component
+             {
+                 auto settingsMap = std::get<RayTracer::Object>(node->value);
+                 auto color = std::get<Color>(std::get<RayTracer::ScalarValue>(settingsMap.at("color")));
+                 return FlatColor(color);
+             }}};
+    }
 }
