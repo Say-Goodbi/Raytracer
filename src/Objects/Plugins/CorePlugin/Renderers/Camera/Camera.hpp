@@ -1,10 +1,10 @@
 #pragma once
-#include "../../../Objects/Abstracts/ARenderer/ARenderer.hpp"
-#include "../../../Geometry/Point3D/Point3D.hpp"
-#include "../../../Geometry/Vector3D/Vector3D.hpp"
-#include "../../../Geometry/Rectangle3D/Rectangle3D.hpp"
-#include "../../../Geometry/Ray/Ray.hpp"
-#include "../../../Geometry/HitRecord/HitRecord.hpp"
+#include "../../../../../Objects/Abstracts/ARenderer/ARenderer.hpp"
+#include "../../../../../Geometry/Point3D/Point3D.hpp"
+#include "../../../../../Geometry/Vector3D/Vector3D.hpp"
+#include "../../../../../Geometry/Rectangle3D/Rectangle3D.hpp"
+#include "../../../../../Geometry/Ray/Ray.hpp"
+#include "../../../../../Geometry/HitRecord/HitRecord.hpp"
 #include <optional>
 
 namespace RayTracer

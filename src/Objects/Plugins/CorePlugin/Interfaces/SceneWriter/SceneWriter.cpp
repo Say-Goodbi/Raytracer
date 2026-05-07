@@ -1,6 +1,6 @@
 #include "SceneWriter.hpp"
-#include "../../../../SceneSystem/Scene/Scene.hpp"
-#include "../../../../Utils/Color.hpp"
+#include "../../../../../SceneSystem/Scene/Scene.hpp"
+#include "../../../../../Utils/Color.hpp"
 #include <fstream>
 
 namespace RayTracer

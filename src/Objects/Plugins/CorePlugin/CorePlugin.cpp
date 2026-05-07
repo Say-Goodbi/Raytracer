@@ -1,6 +1,6 @@
 #include "CorePlugin.hpp"
 #include "Interfaces/SceneWriter/SceneWriter.hpp"
-#include "Materials/FlatColor.hpp"
+#include "../../../../Materials/FlatColor.hpp"
 
 std::string CorePlugin::getName() const
 {

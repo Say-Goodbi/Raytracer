@@ -18,8 +18,9 @@
 
 #pragma once
 
-#include "../../../Utils/Color.hpp"
-#include "../../../Objects/Abstracts/IMaterial.hpp"
+#include "../../../../../Utils/Color.hpp"
+#include "../../../../../Objects/Abstracts/IMaterial.hpp"
+
 namespace RayTracer
 {
     class Lambertian : public IMaterial

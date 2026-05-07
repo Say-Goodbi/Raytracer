@@ -1,8 +1,8 @@
 #include "Camera.hpp"
-#include "../../../SceneSystem/Scene/Scene.hpp"
-#include "../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
+#include "../../../../../SceneSystem/Scene/Scene.hpp"
+#include "../../../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
 #include <vector>
-#include "../../../Utils/Utils.hpp"
+#include "../../../../../Utils/Utils.hpp"
 
 namespace RayTracer
 {

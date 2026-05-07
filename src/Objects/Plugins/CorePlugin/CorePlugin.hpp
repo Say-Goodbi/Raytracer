@@ -1,5 +1,5 @@
 #pragma once
-#include "../Objects/IPlugin.hpp"
+#include "../../../Objects/IPlugin.hpp"
 
 /**
  * @class CorePlugin
