@@ -11,7 +11,7 @@ namespace RayTracer
         Color() : r(0), g(0), b(0) {}
         Color(double r, double g, double b) : r(r), g(g), b(b) {}
 
-        Color Color::clamp(void);
+        Color clamp(void);
 
         Color operator*(double scalar) const
         {

@@ -1,5 +1,4 @@
 #pragma once
-#include "../../Geometry/HitRecord/HitRecord.hpp"
 #include "../../Utils/Color.hpp"
 #include "ILight.hpp"
 #include <vector>

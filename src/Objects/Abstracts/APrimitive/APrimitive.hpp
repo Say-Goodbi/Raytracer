@@ -1,5 +1,8 @@
 #pragma once
 #include "../IMaterial.hpp"
+#include <optional>
+
+namespace Geometry { class Ray; }
 
 namespace RayTracer
 {
