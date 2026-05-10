@@ -27,11 +27,11 @@ std::unique_ptr<APrimitive> RayTracer::SceneLoader::createPrimitive(RayTracer::O
     if (std::get<RayTracer::Object>(primitives->value).find("planes") != std::get<RayTracer::Object>(primitives->value).end())
     {
         const RayTracer::Object &planes = std::get<RayTracer::Object>(primitives->value).at("planes");
-        Geometry::Point3D point = {0.0, 0.0, 0.0};
-        Geometry::Vector3D normal = {0.0, 0.0, 0.0};
-        RayTracer::Color color = {0.0, 0.0, 0.0};
         for (const RayTracer::Object &planesNode : std::get<RayTracer::Object>(planes->value))
         {
+            Geometry::Point3D point = {0.0, 0.0, 0.0};
+            Geometry::Vector3D normal = {0.0, 0.0, 0.0};
+            RayTracer::Color color = {0.0, 0.0, 0.0};
             for (const auto &[key, nodePtr] : planesNode)
             {
                 if (key == "point")
@@ -64,11 +64,11 @@ std::unique_ptr<ILight> RayTracer::SceneLoader::createLight(RayTracer::Object &l
     if (std::get<RayTracer::Object>(lights->value).find("point") != std::get<RayTracer::Object>(lights->value).end())
     {
         const RayTracer::Object &point = std::get<RayTracer::Object>(lights->value).at("point");
-        Geometry::Point3D _position = {0.0, 0.0, 0.0};
-        double _intensity = 0.0;
-        RayTracer::Color _color = {0.0, 0.0, 0.0};
         for (const RayTracer::Object &sphereNode : std::get<RayTracer::Object>(point->value))
         {
+            Geometry::Point3D _position = {0.0, 0.0, 0.0};
+            double _intensity = 0.0;
+            RayTracer::Color _color = {0.0, 0.0, 0.0};
             for (const auto &[key, nodePtr] : sphereNode)
             {
                 if (key == "position")
@@ -91,11 +91,11 @@ std::unique_ptr<ILight> RayTracer::SceneLoader::createLight(RayTracer::Object &l
     if (std::get<RayTracer::Object>(lights->value).find("directional") != std::get<RayTracer::Object>(lights->value).end())
     {
         const RayTracer::Object &directional = std::get<RayTracer::Object>(lights->value).at("directional");
-        Geometry::Vector3D _direction = {0.0, 0.0, 0.0};
-        double _intensity = 0.0;
-        RayTracer::Color _color = {0.0, 0.0, 0.0};
         for (const RayTracer::Object &sphereNode : std::get<RayTracer::Object>(directional->value))
         {
+            Geometry::Vector3D _direction = {0.0, 0.0, 0.0};
+            double _intensity = 0.0;
+            RayTracer::Color _color = {0.0, 0.0, 0.0};
             RayTracer::DirectionalLight directionalLight = new RayTracer::DirectionalLight();
             for (const auto &[key, nodePtr] : sphereNode)
             {
