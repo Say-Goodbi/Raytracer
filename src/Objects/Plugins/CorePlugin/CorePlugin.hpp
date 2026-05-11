@@ -10,19 +10,22 @@
  * This plugin is always loaded and provides the essential components needed
  * for basic raytracing output and shading.
  */
-class CorePlugin : public IPlugin
+
+namespace RayTracer
 {
+    class CorePlugin : public IPlugin
+    {
     public:
-        ~CorePlugin() override = default;
-
-        /**
-         * @brief Get the plugin name.
-         *
-         * @return "CorePlugin"
-         */
-        std::string getName() const override;
-
-        /**
+    ~CorePlugin() override = default;
+    
+    /**
+     * @brief Get the plugin name.
+     *
+     * @return "CorePlugin"
+     */
+    std::string getName() const override;
+    
+    /**
          * @brief Get the component initializers provided by this plugin.
          *
          * Returns a map of component names to factory functions. Each factory
@@ -35,4 +38,5 @@ class CorePlugin : public IPlugin
          * @return Map of component name → initializer function
          */
         std::map<std::string, std::function<Component(Setting)>> getInitializers() const override;
-};
+    };
+} // namespace RayTracer

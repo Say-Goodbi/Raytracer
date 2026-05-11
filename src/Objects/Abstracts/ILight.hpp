@@ -1,12 +1,12 @@
 #pragma once
 #include "../../Geometry/HitRecord/HitRecord.hpp"
 #include "../../Utils/Color.hpp"
-#include "../../Objects/Abstracts/APrimitive/APrimitive.hpp"
 #include <vector>
 #include <memory>
 
 namespace RayTracer
 {
+    class APrimitive;
     class ILight
     {
     public:
