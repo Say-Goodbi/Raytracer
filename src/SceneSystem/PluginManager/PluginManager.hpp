@@ -8,8 +8,10 @@
 
 #pragma once
 #include <dlfcn.h>
+#include <dirent.h>
+#include <iostream>
 // Only AInterface, APrimitive, ARenderer, ILight and IMaterial are relevant for plugins.
-#include "../../Objects/IPlugin.hpp"
+#include "../../Objects/Plugin.hpp"
 
 namespace RayTracer
 {

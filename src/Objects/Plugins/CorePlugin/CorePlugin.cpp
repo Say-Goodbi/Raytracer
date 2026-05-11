@@ -11,15 +11,17 @@ extern "C"
             {"SceneWriter", [](NodePtr node) -> Component
              {
                  auto settingsMap = std::get<RayTracer::Object>(node->value);
-                 auto renderer = std::get<ARenderer>(std::get<RayTracer::ScalarValue>(settingsMap.at("renderer")));
+                 auto rendererPtr = std::get<std::shared_ptr<ARenderer>>(std::get<RayTracer::ScalarValue>(settingsMap.at("renderer")));
                  auto outputFile = std::get<std::string>(std::get<RayTracer::ScalarValue>(settingsMap.at("outputFile")));
-                 return SceneWriter(renderer, outputFile);
+                 auto sw = std::make_shared<SceneWriter>(rendererPtr.get(), outputFile);
+                 return std::static_pointer_cast<RayTracer::AInterface>(sw);
              }},
             {"FlatColor", [](NodePtr node) -> Component
              {
                  auto settingsMap = std::get<RayTracer::Object>(node->value);
                  auto color = std::get<Color>(std::get<RayTracer::ScalarValue>(settingsMap.at("color")));
-                 return FlatColor(color);
+                 auto mat = std::make_shared<FlatColor>(color);
+                 return std::static_pointer_cast<RayTracer::IMaterial>(mat);
              }}};
     }
 }

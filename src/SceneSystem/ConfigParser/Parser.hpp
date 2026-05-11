@@ -1,23 +1,13 @@
+#pragma once
 #include <libconfig.h++>
 #include <variant>
 #include <map>
 #include <vector>
 #include <memory>
-#include "../../Exceptions/RaytracerException/RaytracerException.hpp"
+#include "../../Objects/Plugin.hpp"
 
 namespace RayTracer
 {
-    struct Node;
-    typedef std::variant<int, long long, float, std::string, bool> ScalarValue;
-    typedef std::unique_ptr<Node> NodePtr;
-    typedef std::map<std::string, NodePtr> Object;
-    typedef std::vector<Object> VectorObject;
-
-    struct Node
-    {
-        std::variant<ScalarValue, Object, VectorObject> value;
-    };
-
     class Parser
     {
     private:

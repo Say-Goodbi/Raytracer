@@ -1,7 +1,5 @@
 #pragma once
-#include "../../CorePlugin/Renderers/Camera/Camera.hpp"
-#include "../../Objects/Abstracts/APrimitive/APrimitive.hpp"
-#include "../../Objects/Abstracts/ILight.hpp"
+#include "../../Objects/Plugin.hpp"
 #include <vector>
 #include <memory>
 
@@ -11,14 +9,14 @@ namespace RayTracer
     class Scene
     {
         private:
-            Camera _camera;                                        ///< Active camera/renderer
+            ARenderer& _renderer;                  ///< Active camera/renderer
             std::vector<std::unique_ptr<APrimitive>> _primitives;  ///< Renderable objects
             std::vector<std::unique_ptr<ILight>> _lights;          ///< Light sources
         protected:
         public:
             /// Constructor.
-            /// @param camera The camera for this scene
-            Scene(Camera camera);
+            /// @param camera The renderer for this scene
+            Scene(ARenderer& camera);
             ~Scene() = default;
 
             /// Add a primitive (shape) to the scene.
@@ -31,7 +29,7 @@ namespace RayTracer
 
             /// Get the scene's camera.
             /// @return Reference to the camera
-            const Camera& getCamera() const;
+            const ARenderer& getRenderer() const;
 
             /// Get mutable reference to primitives.
             /// @return Reference to the primitives vector

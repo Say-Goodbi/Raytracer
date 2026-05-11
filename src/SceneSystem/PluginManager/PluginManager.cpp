@@ -1,6 +1,4 @@
 #include "PluginManager.hpp"
-#include <dirent.h>
-#include <iostream>
 
 RayTracer::PluginManager::PluginManager(std::string pluginDirectory) : _pluginDirectory(pluginDirectory)
 {
@@ -10,7 +8,6 @@ RayTracer::PluginManager::PluginManager(std::string pluginDirectory) : _pluginDi
 void RayTracer::PluginManager::loadPlugins()
 {
     _plugins.clear();
-    _plugins["CorePlugin"] = CorePlugin().getInitializers();
     struct dirent* entry = nullptr;
     DIR* dir = opendir(_pluginDirectory.c_str());
     if (!dir)
@@ -22,6 +19,8 @@ void RayTracer::PluginManager::loadPlugins()
             loadPlugin(path);
         }
     }
+    if (_plugins.find("CorePlugin") == _plugins.end())
+        std::cerr << "Warning: CorePlugin not found. The application may not function correctly without it." << std::endl;
     closedir(dir);
 }
 
@@ -32,27 +31,25 @@ bool RayTracer::PluginManager::loadPlugin(const std::string& path)
         std::cerr << "Failed to load plugin: " << path << " - " << dlerror() << std::endl;
         return false;
     }
-    RayTracer::IPlugin* (*getFunc)() = reinterpret_cast<RayTracer::IPlugin* (*)()>(dlsym(handle, "getPlugin"));
-    if (!getFunc) {
-        std::cerr << "Failed to find getPlugin function in: " << path << " - " << dlerror() << std::endl;
+    using GetNameFn = std::string (*)();
+    using InitializersMap = std::map<std::string, std::function<RayTracer::Component(RayTracer::NodePtr)>>;
+    using GetInitializersFn = InitializersMap (*)();
+
+    GetNameFn getName = reinterpret_cast<GetNameFn>(dlsym(handle, "getName"));
+    GetInitializersFn getInitializers = reinterpret_cast<GetInitializersFn>(dlsym(handle, "getInitializers"));
+
+    if (getName == nullptr || getInitializers == nullptr) {
+        std::cerr << "Failed to find plugin functions in: " << path << " - " << dlerror() << std::endl;
         dlclose(handle);
         return false;
     }
-    RayTracer::IPlugin* pluginInstance = getFunc();
-    if (!pluginInstance) {
-        std::cerr << "Failed to create plugin instance from: " << path << std::endl;
-        dlclose(handle);
-        return false;
-    }
-    std::string pluginName = pluginInstance->getName();
+    std::string pluginName = getName();
     if (_plugins.find(pluginName) != _plugins.end()) {
         std::cerr << "Plugin with name " << pluginName << " already loaded. Skipping: " << path << std::endl;
-        delete pluginInstance;
         dlclose(handle);
         return false;
     }
-    std::map<std::string, std::function<RayTracer::Component(RayTracer::NodePtr)>> initializers = pluginInstance->getInitializers();
-    delete pluginInstance;
+    InitializersMap initializers = getInitializers();
     overrideInitializers(initializers);
     _plugins[pluginName] = initializers;
     return true;
@@ -80,5 +77,5 @@ std::function<RayTracer::Component(RayTracer::NodePtr)> RayTracer::PluginManager
             return initializers.at(name);
         }
     }
-    return nullptr;
+    return std::function<RayTracer::Component(RayTracer::NodePtr)>();
 }

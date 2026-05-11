@@ -2,7 +2,7 @@
 
 namespace RayTracer
 {
-    Scene::Scene(Camera camera) : _camera(camera)
+    Scene::Scene(ARenderer& camera) : _renderer(camera)
     {
     }
 
@@ -26,9 +26,9 @@ namespace RayTracer
         return this->_lights;
     }
 
-    const Camera& Scene::getCamera() const
+    const ARenderer& Scene::getRenderer() const
     {
-        return this->_camera;
+        return this->_renderer;
     }
 
 } // namespace RayTracer
