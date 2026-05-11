@@ -7,8 +7,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/plugins)
 
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(LIBCONFIG REQUIRED libconfig++)
+include(FetchContent)
+FetchContent_Declare(
+    libconfig
+    GIT_REPOSITORY https://github.com/hyperrealm/libconfig.git
+)
+set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(BUILD_TESTS    OFF CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(libconfig)
 
 add_compile_options(-O3 -ffast-math -march=native)
 
@@ -30,13 +36,10 @@ add_executable(raytracer
     ${INTERFACE_SOURCES}
 )
 
-target_include_directories(raytracer PRIVATE
-    src
-    ${LIBCONFIG_INCLUDE_DIRS}
-)
+target_include_directories(raytracer PRIVATE src)
 
 target_link_libraries(raytracer PRIVATE
-    ${LIBCONFIG_LIBRARIES}
+    config++
     dl
 )
 
@@ -56,13 +59,8 @@ foreach(PLUGIN_DIR ${PLUGIN_DIRS})
 
         set_target_properties(${PLUGIN_NAME} PROPERTIES PREFIX "")
 
-        target_include_directories(${PLUGIN_NAME} PRIVATE
-            src
-            ${LIBCONFIG_INCLUDE_DIRS}
-        )
+        target_include_directories(${PLUGIN_NAME} PRIVATE src)
 
-        target_link_libraries(${PLUGIN_NAME} PRIVATE
-            ${LIBCONFIG_LIBRARIES}
-        )
+        target_link_libraries(${PLUGIN_NAME} PRIVATE config++)
     endif()
 endforeach()
