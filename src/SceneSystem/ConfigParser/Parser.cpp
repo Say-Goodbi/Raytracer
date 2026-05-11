@@ -5,7 +5,7 @@ RayTracer::Parser::Parser(const std::string &filename) : _root(nullptr)
     _cfg.readFile(filename.c_str());
     _root = &_cfg.getRoot();
     if (!_root)
-        throw RayTracer::RaytracerException("Failed to read configuration file: " + filename);
+        throw RayTracer::Exception("Failed to read configuration file: " + filename);
     _node = RayTracer::NodePtr(new RayTracer::Node);
     _node->value = RayTracer::Object{};
     RayTracer::Object &rootObj = std::get<RayTracer::Object>(_node->value);

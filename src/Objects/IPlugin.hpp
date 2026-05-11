@@ -20,16 +20,17 @@
 
 namespace RayTracer
 {
-    struct Node
-    {
-        std::variant<ScalarValue, Object, VectorObject> value;
-    };
-    
+    struct Node;
     typedef std::variant<AInterface, APrimitive, ARenderer, ILight, IMaterial> Component; ///< Type alias for any pluggable class type (interface, primitive, renderer, light, material) that a plugin can register
     typedef std::variant<int, long long, float, double, std::string, bool, Component> ScalarValue;
     typedef std::unique_ptr<Node> NodePtr;
     typedef std::map<std::string, NodePtr> Object;
     typedef std::vector<Object> VectorObject;
+    
+    struct Node
+    {
+        std::variant<ScalarValue, Object, VectorObject> value;
+    };
     
     class IPlugin
     {

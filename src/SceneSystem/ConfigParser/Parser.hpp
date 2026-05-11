@@ -1,5 +1,9 @@
 #include <libconfig.h++>
-#include "RaytracerException.hpp"
+#include <variant>
+#include <map>
+#include <vector>
+#include <memory>
+#include "../../Exceptions/RaytracerException/RaytracerException.hpp"
 
 namespace RayTracer
 {
