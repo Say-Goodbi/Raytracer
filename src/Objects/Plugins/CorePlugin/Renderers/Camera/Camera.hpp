@@ -65,8 +65,7 @@ namespace RayTracer
          * @param width     Output framebuffer width in pixels (default 800).
          * @param height    Output framebuffer height in pixels (default 600).
          */
-        Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width = 800, int height = 600)
-        : ARenderer(width, height), _position(pos), _direction(direction), _fov(fov) {};
+        Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width = 800, int height = 600);
 
         ~Camera() = default;
 

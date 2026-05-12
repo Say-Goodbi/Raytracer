@@ -2,10 +2,45 @@
 #include "../../../../../SceneSystem/Scene/Scene.hpp"
 #include "../../../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
 #include <vector>
+#include <cmath>
 #include "../../../../../Utils/Utils.hpp"
 
 namespace RayTracer
 {
+    Camera::Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width, int height)
+        : ARenderer(width, height), _position(pos), _direction(direction), _fov(fov)
+    {
+        Geometry::Vector3D forward = (direction.length() > 1e-6)
+            ? direction.normalize()
+            : Geometry::Vector3D(0, 1, 0); // default: look toward +y
+
+        Geometry::Vector3D worldUp = (std::abs(forward.z) > 0.9)
+            ? Geometry::Vector3D(0, 1, 0)
+            : Geometry::Vector3D(0, 0, 1); // z-up unless looking straight up/down
+
+        Geometry::Vector3D right     = Geometry::Vector3D::cross(forward, worldUp).normalize();
+        Geometry::Vector3D screenUp  = Geometry::Vector3D::cross(right, forward).normalize();
+
+        double fovRad = fov * M_PI / 180.0;
+        double halfW  = std::tan(fovRad / 2.0);
+        double halfH  = halfW * ((double)height / width);
+
+        // Screen center is 1 unit in front of the camera
+        Geometry::Point3D center(pos.x + forward.x, pos.y + forward.y, pos.z + forward.z);
+
+        // Top-left corner: move left by halfW and up by halfH
+        _screen.origin = Geometry::Point3D(
+            center.x - right.x * halfW + screenUp.x * halfH,
+            center.y - right.y * halfW + screenUp.y * halfH,
+            center.z - right.z * halfW + screenUp.z * halfH);
+
+        // Width vector spans the full horizontal extent (left → right)
+        _screen.width = Geometry::Vector3D(right.x * 2*halfW, right.y * 2*halfW, right.z * 2*halfW);
+
+        // Height vector spans the full vertical extent (top → bottom)
+        _screen.height = Geometry::Vector3D(-screenUp.x * 2*halfH, -screenUp.y * 2*halfH, -screenUp.z * 2*halfH);
+    }
+
     /**
      * @brief Build a world-space ray from normalized screen coordinates.
      *
@@ -83,14 +118,15 @@ namespace RayTracer
         Geometry::Vector3D bounceDir = mat->sample(closest->normal, viewDir);
         float p = mat->pdf(closest->normal, viewDir, bounceDir);
 
+        Color brdf = mat->evaluate(closest->normal, viewDir, bounceDir);
+
         if (p < 1e-6f)
-            return emitted + directLight;
+            return emitted + brdf * directLight;
 
         Geometry::Ray bounceRay(closest->point + closest->normal * 1e-4, bounceDir); // 1e-4 bias to avoid self-intersection
         Color incoming = castRay(bounceRay, scene, depth - 1);
-        Color brdf = mat->evaluate(closest->normal, viewDir, bounceDir);
         float cosTheta = std::max(0.0f, (float)closest->normal.dot(bounceDir));
-        return emitted + directLight + brdf * incoming * (cosTheta / p);
+        return emitted + brdf * (directLight + incoming * (cosTheta / p));
     }
 
     /**

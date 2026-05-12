@@ -5,6 +5,7 @@
 #include "../../../Utils/Color.hpp"
 #include "Materials/Lambertian/Lambertian.hpp"
 #include "Primitives/Plane/Plane.hpp"
+#include "Primitives/Sphere/Sphere.hpp"
 #include "Lights/PointLight/PointLight.hpp"
 #include "Lights/DirectionalLight/DirectionalLight.hpp"
 #include "Lights/AmbientLight/AmbientLight.hpp"
@@ -80,23 +81,40 @@ extern "C"
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_normal.at("y")->value)),
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_normal.at("z")->value)));
                     RayTracer::Color color = RayTracer::Color(
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)),
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)),
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)));
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
                     std::shared_ptr<RayTracer::Lambertian> material = std::make_shared<RayTracer::Lambertian>(color);
 
                     std::shared_ptr<RayTracer::APrimitive> plane = std::make_shared<RayTracer::Plane>(point, normal, material.get());
                     return std::static_pointer_cast<RayTracer::APrimitive>(plane);
                 }
             },
-            // {
-            //     "Spheres", [](RayTracer::NodePtr node) -> RayTracer::Component
-            //     {
+            {
+                "spheres", [](RayTracer::NodePtr node) -> RayTracer::Component
+                {
+                    const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
 
-            //         std::shared_ptr<RayTracer::APrimitive> sphere = std::make_shared<RayTracer::Sphere>();
-            //         return std::static_pointer_cast<RayTracer::APrimitive>(sphere);
-            //     }
-            // },
+                    if (settingsMap.find("center") == settingsMap.end() || settingsMap.find("radius") == settingsMap.end() || settingsMap.find("color") == settingsMap.end())
+                        throw RayTracer::Exception("Missing required parameters for Sphere primitive: center, radius, color");
+
+                    const RayTracer::Object &ref_center = std::get<RayTracer::Object>(settingsMap.at("center")->value);
+                    const RayTracer::Object &ref_color = std::get<RayTracer::Object>(settingsMap.at("color")->value);
+                    const float radius = std::get<float>(std::get<RayTracer::ScalarValue>(settingsMap.at("radius")->value));
+                    Geometry::Point3D center = Geometry::Point3D(
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_center.at("x")->value)),
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_center.at("y")->value)),
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_center.at("z")->value)));
+                    RayTracer::Color color = RayTracer::Color(
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
+                    std::shared_ptr<RayTracer::Lambertian> material = std::make_shared<RayTracer::Lambertian>(color);
+
+                    std::shared_ptr<RayTracer::APrimitive> sphere = std::make_shared<RayTracer::Sphere>(center, radius, material.get());
+                    return std::static_pointer_cast<RayTracer::APrimitive>(sphere);
+                }
+            },
             // Light
             {
                 "point", [](RayTracer::NodePtr node) -> RayTracer::Component
@@ -114,9 +132,9 @@ extern "C"
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_position.at("y")->value)),
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_position.at("z")->value)));
                     RayTracer::Color color = RayTracer::Color(
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)),
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)),
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)));
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
 
                     std::shared_ptr<RayTracer::ILight> pointLight = std::make_shared<RayTracer::PointLight>(position, intensity, color);
                     return std::static_pointer_cast<RayTracer::ILight>(pointLight);
@@ -138,9 +156,9 @@ extern "C"
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_position.at("y")->value)),
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_position.at("z")->value)));
                     RayTracer::Color color = RayTracer::Color(
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)),
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)),
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)));
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
 
                     std::shared_ptr<RayTracer::ILight> directionalLight = std::make_shared<RayTracer::DirectionalLight>(position, intensity, color);
                     return std::static_pointer_cast<RayTracer::ILight>(directionalLight);
@@ -157,9 +175,9 @@ extern "C"
                     const RayTracer::Object &ref_color = std::get<RayTracer::Object>(settingsMap.at("color")->value);
                     const float ambient = std::get<float>(std::get<RayTracer::ScalarValue>(settingsMap.at("multiplier")->value));
                     RayTracer::Color color = RayTracer::Color(
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)),
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)),
-                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)));
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
 
                     std::shared_ptr<RayTracer::ILight> ambientLight = std::make_shared<RayTracer::AmbientLight>(ambient, color);
                     return std::static_pointer_cast<RayTracer::ILight>(ambientLight);
