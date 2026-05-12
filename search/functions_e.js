@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['what_0',['what',['../classRayTracer_1_1Exception.html#a174d44d7e2d2b77ab9eefe9fb25c5647',1,'RayTracer::Exception']]]
+  ['updatecamera_0',['updateCamera',['../classRayTracer_1_1Scene.html#ac424dda50f9256b506b8a1a10f1b78f5',1,'RayTracer::Scene']]]
 ];

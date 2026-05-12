@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Raytracer: src/CorePlugin/CorePlugin.cpp File Reference</title>
+<title>Raytracer: src/Objects/Plugins/CorePlugin/CorePlugin.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,12 +90,23 @@ $(document).ready(function(){initNavTree('CorePlugin_8cpp.html',''); initResizab
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">CorePlugin.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="CorePlugin_8hpp_source.html">CorePlugin.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="SceneWriter_8hpp_source.html">Interfaces/SceneWriter/SceneWriter.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="FlatColor_8hpp_source.html">Materials/FlatColor.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="SceneWriter_8hpp_source.html">Interfaces/SceneWriter/SceneWriter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Plugin_8hpp_source.html">../../Plugin.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Point3D_8hpp_source.html">../../../Geometry/Point3D/Point3D.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Vector3D_8hpp_source.html">../../../Geometry/Vector3D/Vector3D.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Color_8hpp_source.html">../../../Utils/Color.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Lambertian_8hpp_source.html">Materials/Lambertian/Lambertian.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Plane_8hpp_source.html">Primitives/Plane/Plane.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Sphere_8hpp_source.html">Primitives/Sphere/Sphere.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="PointLight_8hpp_source.html">Lights/PointLight/PointLight.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="DirectionalLight_8hpp_source.html">Lights/DirectionalLight/DirectionalLight.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="AmbientLight_8hpp_source.html">Lights/AmbientLight/AmbientLight.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Camera_8hpp_source.html">Renderers/Camera/Camera.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for CorePlugin.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -105,12 +116,66 @@ $(document).ready(function(){initNavTree('CorePlugin_8cpp.html',''); initResizab
 </div>
 </div>
 <p><a href="CorePlugin_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac0fc966d4386ddb71d99361e3fccb311" id="r_ac0fc966d4386ddb71d99361e3fccb311"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CorePlugin_8cpp.html#ac0fc966d4386ddb71d99361e3fccb311">getName</a> ()</td></tr>
+<tr class="separator:ac0fc966d4386ddb71d99361e3fccb311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e14e2166e2799c71d21f343a3d543f3" id="r_a0e14e2166e2799c71d21f343a3d543f3"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::function&lt; <a class="el" href="namespaceRayTracer.html#a228fef096342529f46bdf5298d0adb06">RayTracer::Component</a>(<a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">RayTracer::NodePtr</a>)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3">getInitializers</a> ()</td></tr>
+<tr class="separator:a0e14e2166e2799c71d21f343a3d543f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a0e14e2166e2799c71d21f343a3d543f3" name="a0e14e2166e2799c71d21f343a3d543f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e14e2166e2799c71d21f343a3d543f3">&#9670;&#160;</a></span>getInitializers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::function&lt; <a class="el" href="namespaceRayTracer.html#a228fef096342529f46bdf5298d0adb06">RayTracer::Component</a>(<a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">RayTracer::NodePtr</a>)&gt; &gt; getInitializers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00018">18</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="CorePlugin_8cpp_a0e14e2166e2799c71d21f343a3d543f3_cgraph.svg" width="340" height="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac0fc966d4386ddb71d99361e3fccb311" name="ac0fc966d4386ddb71d99361e3fccb311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0fc966d4386ddb71d99361e3fccb311">&#9670;&#160;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00016">16</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_bcfcb44c233f404c9bb161aac5c4d104.html">CorePlugin</a></li><li class="navelem"><a class="el" href="CorePlugin_8cpp.html">CorePlugin.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_55b41fb77a5097913bc464fb6a145e9c.html">Objects</a></li><li class="navelem"><a class="el" href="dir_86cf0aee3ebd28cdfb001e081edcf295.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_bcb78dd210b4a6eed89bcede11e18332.html">CorePlugin</a></li><li class="navelem"><a class="el" href="CorePlugin_8cpp.html">CorePlugin.cpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

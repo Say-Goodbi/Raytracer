@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flatcolor_0',['FlatColor',['../classRayTracer_1_1FlatColor.html',1,'RayTracer']]]
+  ['exception_0',['Exception',['../classRayTracer_1_1Exception.html',1,'RayTracer']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['component_0',['Component',['../IPlugin_8hpp.html#aae882faa450f65caa51786ca7ebd010b',1,'IPlugin.hpp']]]
+  ['component_0',['Component',['../namespaceRayTracer.html#a228fef096342529f46bdf5298d0adb06',1,'RayTracer']]]
 ];

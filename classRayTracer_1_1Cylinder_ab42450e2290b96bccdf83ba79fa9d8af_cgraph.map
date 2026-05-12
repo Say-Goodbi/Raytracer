@@ -1,0 +1,34 @@
+<map id="RayTracer::Cylinder::hit" name="RayTracer::Cylinder::hit">
+<area shape="rect" id="Node000001" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="5,273,179,298"/>
+<area shape="rect" id="Node000002" href="$structGeometry_1_1HitRecord.html#a158d2c230c1851a8f6bc0e79dc4b12b5" title="Constructor." alt="" coords="239,5,397,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,271,110,230,136,172,175,110,198,81,225,55,232,50,235,55,228,59,202,85,179,113,141,175,115,232,100,273"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Ray.html#ab2ee230ea6c5b866a94d7bfd57c98845" title="Compute a point at parameter t along the ray." alt="" coords="249,70,387,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,271,114,238,142,193,179,145,225,105,235,99,238,103,228,109,183,149,146,196,119,240,101,274"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#affb9009fe58aafa334f1f5f703feceb3" title=" " alt="" coords="227,119,409,145"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="101,271,150,215,186,183,225,155,242,147,244,152,228,160,189,187,154,219,105,274"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1APrimitive.html#acdc1a350e79537fa0b9c8588a170bdcf" title="Get the material of this primitive." alt="" coords="237,169,399,209"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="117,270,226,219,244,212,246,217,228,224,119,275"/>
+<area shape="rect" id="Node000007" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="241,297,395,337"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="179,295,228,302,227,307,179,300"/>
+<area shape="rect" id="Node000010" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="241,361,395,401"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="119,296,228,347,246,354,244,359,226,352,117,301"/>
+<area shape="rect" id="Node000011" href="$classGeometry_1_1Point3D.html#a59644f9fa320bfc8f33e3761fd7577b0" title=" " alt="" coords="241,233,395,273"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="179,270,227,263,228,269,179,276"/>
+<area shape="rect" id="Node000012" href="$classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f" title=" " alt="" coords="241,425,395,465"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="105,296,155,351,190,383,228,411,239,417,236,422,225,416,186,387,151,355,101,300"/>
+<area shape="rect" id="Node000013" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="241,489,395,529"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="101,297,118,332,146,380,183,431,228,475,236,480,233,485,225,479,179,434,141,383,113,335,96,299"/>
+<area shape="rect" id="Node000014" href="$classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162" title=" " alt="" coords="241,553,395,593"/>
+<area shape="poly" id="edge17_Node000001_Node000014" title=" " alt="" coords="99,297,112,343,138,408,176,478,200,511,228,539,234,544,231,548,225,543,196,514,171,481,133,410,107,344,94,299"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="457,148,611,188"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="375,93,410,104,486,139,484,144,408,109,373,98"/>
+<area shape="rect" id="Node000008" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="457,425,611,465"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="385,335,411,347,460,380,503,414,499,418,457,384,408,352,383,340"/>
+<area shape="rect" id="Node000009" href="$classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" title="Calculate the length (magnitude) of this vector." alt="" coords="457,297,611,337"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="395,315,444,315,444,320,395,320"/>
+<area shape="poly" id="edge10_Node000010_Node000008" title=" " alt="" coords="387,399,453,419,452,424,385,404"/>
+<area shape="poly" id="edge12_Node000011_Node000004" title=" " alt="" coords="377,231,408,219,474,191,476,196,410,224,379,236"/>
+<area shape="poly" id="edge14_Node000012_Node000008" title=" " alt="" coords="395,443,444,443,444,448,395,448"/>
+<area shape="poly" id="edge16_Node000013_Node000008" title=" " alt="" coords="385,487,452,467,453,472,387,492"/>
+<area shape="poly" id="edge18_Node000014_Node000008" title=" " alt="" coords="383,551,408,539,457,507,499,473,503,477,460,511,411,544,385,556"/>
+</map>

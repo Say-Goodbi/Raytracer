@@ -1,0 +1,7 @@
+<map id="RayTracer::Scene::addLights" name="RayTracer::Scene::addLights">
+<area shape="rect" id="Node000001" title="Add lights to the scene." alt="" coords="5,35,209,60"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Scene.html#ad36d89648fcb66900a06ee71b8324bcc" title="Add a light to the scene." alt="" coords="257,5,455,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,33,244,29,244,34,210,38"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1PluginManager.html#a12a011c7eb217200fcabaf40b57da4c7" title="Get an initializer function pointer from a loaded plugin." alt="" coords="261,55,451,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,56,247,60,247,66,209,61"/>
+</map>

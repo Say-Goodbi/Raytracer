@@ -19,6 +19,7 @@ var classGeometry_1_1Vector3D =
     [ "operator/", "classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162", null ],
     [ "operator/=", "classGeometry_1_1Vector3D.html#a052103425c5a4830dc3ff897ec40187b", null ],
     [ "operator/=", "classGeometry_1_1Vector3D.html#a568d9aad9501935468306c59626735be", null ],
+    [ "operator=", "classGeometry_1_1Vector3D.html#a4f0165ac7ffb25816ce35d148b6524fa", null ],
     [ "x", "classGeometry_1_1Vector3D.html#a8d080edf07c310c91637d62168d63c55", null ],
     [ "y", "classGeometry_1_1Vector3D.html#a2a86be2f3492c95ef88242ff394e7bca", null ],
     [ "z", "classGeometry_1_1Vector3D.html#ad4d3573a63506a5f131160830d2952f2", null ]

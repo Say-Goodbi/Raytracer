@@ -1,0 +1,7 @@
+<map id="RayTracer::AmbientLight::computeLight" name="RayTracer::AmbientLight::computeLight">
+<area shape="rect" id="Node000001" title="Ambient light never casts shadows, just returns color * intensity." alt="" coords="5,5,187,45"/>
+<area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8" title=" " alt="" coords="235,13,433,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,23,221,23,221,28,187,28"/>
+<area shape="rect" id="Node000003" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="481,13,652,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,23,468,23,468,28,434,28"/>
+</map>

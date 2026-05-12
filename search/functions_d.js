@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['vector3d_0',['vector3d',['../classGeometry_1_1Vector3D.html#a3ae71c5188cb20556a1ec9b617fe8633',1,'Geometry::Vector3D::Vector3D(void)'],['../classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d',1,'Geometry::Vector3D::Vector3D(double x, double y, double z)']]]
+  ['sample_0',['sample',['../classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838',1,'RayTracer::Lambertian::sample()'],['../classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80',1,'RayTracer::IMaterial::sample()']]],
+  ['scene_1',['scene',['../classRayTracer_1_1Scene.html#a277945e924155a3d5b90a4d4317f826e',1,'RayTracer::Scene::Scene(ARenderer &amp;camera)'],['../classRayTracer_1_1Scene.html#a1906266d9207db0c4edadc318b5d4275',1,'RayTracer::Scene::Scene(void)']]],
+  ['sceneloader_2',['SceneLoader',['../classRayTracer_1_1SceneLoader.html#a4de4a46229ec18f85513e607030764a1',1,'RayTracer::SceneLoader']]],
+  ['scenewriter_3',['SceneWriter',['../classRayTracer_1_1SceneWriter.html#a15622a3205869a4e472e37ed311efb43',1,'RayTracer::SceneWriter']]],
+  ['sphere_4',['Sphere',['../classRayTracer_1_1Sphere.html#aa89da13cd4b5a7ecaa87c23d4bda1385',1,'RayTracer::Sphere']]]
 ];

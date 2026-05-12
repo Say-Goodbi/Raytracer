@@ -1,7 +1,17 @@
 <map id="RayTracer::Color::operator*" name="RayTracer::Color::operator*">
-<area shape="rect" id="Node000001" title=" " alt="" coords="408,13,607,38"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11" title="Trace a single ray in the scene and compute the resulting color." alt="" coords="207,5,360,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,28,360,28,360,23,394,23"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render a full scene into a 2D framebuffer." alt="" coords="5,5,159,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="452,183,651,209"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="229,29,382,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="523,177,470,134,403,90,363,72,366,67,405,86,473,130,527,172"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,59,159,99"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="513,180,462,156,403,135,340,118,275,105,159,89,159,83,276,100,341,113,405,129,464,151,515,175"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1AmbientLight.html#a8dd2be46eadb8f46021064b6f182c359" title="Ambient light never casts shadows, just returns color * intensity." alt="" coords="215,144,396,184"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="440,184,396,178,397,173,440,179"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1DirectionalLight.html#a7170b3c9d9e2c2e697139f0dae68ab5b" title="Compute light contribution, shadow ray cast in opposite direction." alt="" coords="207,208,404,248"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="440,213,405,218,404,213,440,208"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20" title="Compute light contribution." alt="" coords="226,272,385,312"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="512,217,405,262,372,274,370,269,403,258,510,212"/>
+<area shape="rect" id="Node000007" href="$classRayTracer_1_1Lambertian.html#ac5339d746050833c746e209d65d9a9da" title="Evaluate the BRDF for a given pair of directions." alt="" coords="221,336,389,376"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="531,221,477,273,443,302,405,326,380,338,378,334,403,322,440,297,474,269,528,217"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="343,18,330,11,305,8,284,10,271,15,267,21,269,28,264,30,261,20,268,10,283,5,305,3,331,6,345,13"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="215,64,159,71,158,66,214,59"/>
 </map>

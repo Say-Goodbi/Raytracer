@@ -91,7 +91,9 @@ $(document).ready(function(){initNavTree('namespaceRayTracer.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">RayTracer Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -101,6 +103,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1AInterface.html">AInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for application interfaces. An interface owns a renderer and orchestrates execution (e.g., rendering and output).  <a href="classRayTracer_1_1AInterface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1AmbientLight.html">AmbientLight</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html">APrimitive</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for all primitives (renderable objects). Primitives have geometry and a material.  <a href="classRayTracer_1_1APrimitive.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,29 +112,191 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for all renderers. Defines the interface for rendering a scene and producing a framebuffer.  <a href="classRayTracer_1_1ARenderer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html">Camera</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete renderer plugin that implements camera-based ray casting.  <a href="classRayTracer_1_1Camera.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderer that evaluates the rendering equation deterministically.  <a href="classRayTracer_1_1Camera.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRayTracer_1_1Color.html">Color</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Cylinder.html">Cylinder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1DirectionalLight.html">DirectionalLight</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directional light — no position, only a direction (simulates sunlight).  <a href="classRayTracer_1_1DirectionalLight.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Exception.html">Exception</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1FlatColor.html">FlatColor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ILight.html">ILight</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base for light sources.  <a href="classRayTracer_1_1ILight.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base for materials defining how surfaces shade.  <a href="classRayTracer_1_1IMaterial.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface for physically-based surface materials.  <a href="classRayTracer_1_1IMaterial.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Lambertian.html">Lambertian</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRayTracer_1_1Node.html">Node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Parser.html">Parser</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Plane.html">Plane</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html">PluginManager</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PointLight.html">PointLight</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A punctual light source emitting equally in all directions.  <a href="classRayTracer_1_1PointLight.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html">Scene</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a scene containing a camera, primitives, and lights.  <a href="classRayTracer_1_1Scene.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1SceneLoader.html">SceneLoader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1SceneWriter.html">SceneWriter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete interface implementation that renders a scene and writes output to a PPM file.  <a href="classRayTracer_1_1SceneWriter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Utils.html">Utils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0d75a276a4fa11368f78465554f4e1ed" id="r_a0d75a276a4fa11368f78465554f4e1ed"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structRayTracer_1_1Node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html#a0d75a276a4fa11368f78465554f4e1ed">Node</a></td></tr>
+<tr class="separator:a0d75a276a4fa11368f78465554f4e1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228fef096342529f46bdf5298d0adb06" id="r_a228fef096342529f46bdf5298d0adb06"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1AInterface.html">AInterface</a> &gt;, std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1APrimitive.html">APrimitive</a> &gt;, std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1ARenderer.html">ARenderer</a> &gt;, std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> &gt;, std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html#a228fef096342529f46bdf5298d0adb06">Component</a></td></tr>
+<tr class="memdesc:a228fef096342529f46bdf5298d0adb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for any pluggable class type (interface, primitive, renderer, light, material) that a plugin can register.  <br /></td></tr>
+<tr class="separator:a228fef096342529f46bdf5298d0adb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9feb69729b51161cd40926040c42c562" id="r_a9feb69729b51161cd40926040c42c562"><td class="memItemLeft" align="right" valign="top">typedef std::variant&lt; int, long long, float, double, std::string, bool, <a class="el" href="namespaceRayTracer.html#a228fef096342529f46bdf5298d0adb06">Component</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html#a9feb69729b51161cd40926040c42c562">ScalarValue</a></td></tr>
+<tr class="separator:a9feb69729b51161cd40926040c42c562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4fc8b90b2ae3342f5cd44b5043166c" id="r_adb4fc8b90b2ae3342f5cd44b5043166c"><td class="memItemLeft" align="right" valign="top">typedef std::unique_ptr&lt; <a class="el" href="structRayTracer_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">NodePtr</a></td></tr>
+<tr class="separator:adb4fc8b90b2ae3342f5cd44b5043166c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972ce89ab46bfa7617ab7b96b25db984" id="r_a972ce89ab46bfa7617ab7b96b25db984"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">NodePtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html#a972ce89ab46bfa7617ab7b96b25db984">Object</a></td></tr>
+<tr class="separator:a972ce89ab46bfa7617ab7b96b25db984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584b5ad8785cb508b96bb9d8fc14bd60" id="r_a584b5ad8785cb508b96bb9d8fc14bd60"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="namespaceRayTracer.html#a972ce89ab46bfa7617ab7b96b25db984">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html#a584b5ad8785cb508b96bb9d8fc14bd60">VectorObject</a></td></tr>
+<tr class="separator:a584b5ad8785cb508b96bb9d8fc14bd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab1df109502a449ddaefce71c0d041175" id="r_ab1df109502a449ddaefce71c0d041175"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::function&lt; void(<a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">NodePtr</a> &amp;, <a class="el" href="classRayTracer_1_1PluginManager.html">PluginManager</a> &amp;, std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &gt; &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html#ab1df109502a449ddaefce71c0d041175">_componentCreators</a></td></tr>
+<tr class="separator:ab1df109502a449ddaefce71c0d041175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a228fef096342529f46bdf5298d0adb06" name="a228fef096342529f46bdf5298d0adb06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a228fef096342529f46bdf5298d0adb06">&#9670;&#160;</a></span>Component</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::variant&lt;std::shared_ptr&lt;<a class="el" href="classRayTracer_1_1AInterface.html">AInterface</a>&gt;, std::shared_ptr&lt;<a class="el" href="classRayTracer_1_1APrimitive.html">APrimitive</a>&gt;, std::shared_ptr&lt;<a class="el" href="classRayTracer_1_1ARenderer.html">ARenderer</a>&gt;, std::shared_ptr&lt;<a class="el" href="classRayTracer_1_1ILight.html">ILight</a>&gt;, std::shared_ptr&lt;<a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a>&gt; &gt; <a class="el" href="namespaceRayTracer.html#a228fef096342529f46bdf5298d0adb06">RayTracer::Component</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type alias for any pluggable class type (interface, primitive, renderer, light, material) that a plugin can register. </p>
+
+<p class="definition">Definition at line <a class="el" href="Plugin_8hpp_source.html#l00025">25</a> of file <a class="el" href="Plugin_8hpp_source.html">Plugin.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0d75a276a4fa11368f78465554f4e1ed" name="a0d75a276a4fa11368f78465554f4e1ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d75a276a4fa11368f78465554f4e1ed">&#9670;&#160;</a></span>Node</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structRayTracer_1_1Node.html">Node</a> <a class="el" href="structRayTracer_1_1Node.html">RayTracer::Node</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Plugin_8hpp_source.html#l00024">24</a> of file <a class="el" href="Plugin_8hpp_source.html">Plugin.hpp</a>.</p>
+
+</div>
+</div>
+<a id="adb4fc8b90b2ae3342f5cd44b5043166c" name="adb4fc8b90b2ae3342f5cd44b5043166c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb4fc8b90b2ae3342f5cd44b5043166c">&#9670;&#160;</a></span>NodePtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unique_ptr&lt;<a class="el" href="structRayTracer_1_1Node.html">Node</a>&gt; <a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">RayTracer::NodePtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Plugin_8hpp_source.html#l00027">27</a> of file <a class="el" href="Plugin_8hpp_source.html">Plugin.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a972ce89ab46bfa7617ab7b96b25db984" name="a972ce89ab46bfa7617ab7b96b25db984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972ce89ab46bfa7617ab7b96b25db984">&#9670;&#160;</a></span>Object</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">NodePtr</a>&gt; <a class="el" href="namespaceRayTracer.html#a972ce89ab46bfa7617ab7b96b25db984">RayTracer::Object</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Plugin_8hpp_source.html#l00028">28</a> of file <a class="el" href="Plugin_8hpp_source.html">Plugin.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9feb69729b51161cd40926040c42c562" name="a9feb69729b51161cd40926040c42c562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9feb69729b51161cd40926040c42c562">&#9670;&#160;</a></span>ScalarValue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::variant&lt;int, long long, float, double, std::string, bool, <a class="el" href="namespaceRayTracer.html#a228fef096342529f46bdf5298d0adb06">Component</a>&gt; <a class="el" href="namespaceRayTracer.html#a9feb69729b51161cd40926040c42c562">RayTracer::ScalarValue</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Plugin_8hpp_source.html#l00026">26</a> of file <a class="el" href="Plugin_8hpp_source.html">Plugin.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a584b5ad8785cb508b96bb9d8fc14bd60" name="a584b5ad8785cb508b96bb9d8fc14bd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a584b5ad8785cb508b96bb9d8fc14bd60">&#9670;&#160;</a></span>VectorObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="namespaceRayTracer.html#a972ce89ab46bfa7617ab7b96b25db984">Object</a>&gt; <a class="el" href="namespaceRayTracer.html#a584b5ad8785cb508b96bb9d8fc14bd60">RayTracer::VectorObject</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Plugin_8hpp_source.html#l00029">29</a> of file <a class="el" href="Plugin_8hpp_source.html">Plugin.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ab1df109502a449ddaefce71c0d041175" name="ab1df109502a449ddaefce71c0d041175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1df109502a449ddaefce71c0d041175">&#9670;&#160;</a></span>_componentCreators</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::function&lt; void(<a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">NodePtr</a> &amp;, <a class="el" href="classRayTracer_1_1PluginManager.html">PluginManager</a> &amp;, std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &gt; &amp;)&gt; &gt; RayTracer::_componentCreators</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        {<span class="stringliteral">&quot;camera&quot;</span>, [](<a class="code hl_typedef" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">NodePtr</a> &amp;obj, PluginManager &amp;pluginManager, std::unique_ptr&lt;Scene&gt; &amp;scene) { scene-&gt;updateCamera(obj, pluginManager); }},</div>
+<div class="line">        {<span class="stringliteral">&quot;primitives&quot;</span>, [](NodePtr &amp;obj, PluginManager &amp;pluginManager, std::unique_ptr&lt;Scene&gt; &amp;scene) { scene-&gt;addPrimitives(obj, pluginManager); }},</div>
+<div class="line">        {<span class="stringliteral">&quot;lights&quot;</span>, [](<a class="code hl_typedef" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">NodePtr</a> &amp;obj, PluginManager &amp;pluginManager, std::unique_ptr&lt;Scene&gt; &amp;scene) { scene-&gt;addLights(obj, pluginManager); }}</div>
+<div class="line">    }</div>
+<div class="ttc" id="anamespaceRayTracer_html_adb4fc8b90b2ae3342f5cd44b5043166c"><div class="ttname"><a href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">RayTracer::NodePtr</a></div><div class="ttdeci">std::unique_ptr&lt; Node &gt; NodePtr</div><div class="ttdef"><b>Definition</b> <a href="Plugin_8hpp_source.html#l00027">Plugin.hpp:27</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="SceneLoader_8cpp_source.html#l00004">4</a> of file <a class="el" href="SceneLoader_8cpp_source.html">SceneLoader.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

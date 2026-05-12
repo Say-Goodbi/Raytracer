@@ -1,0 +1,9 @@
+<map id="RayTracer::PluginManager::getInitializer" name="RayTracer::PluginManager::getInitializer">
+<area shape="rect" id="Node000001" title="Get an initializer function pointer from a loaded plugin." alt="" coords="284,47,475,87"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Scene.html#a37894460ad0cd8ea084724011434e87c" title="Add lights to the scene." alt="" coords="19,5,223,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,49,188,33,189,28,271,44"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Scene.html#a1a093437840c6f1feefa3af43e73e2e8" title="Add primitives to the scene." alt="" coords="5,55,236,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,70,236,70,236,65,270,65"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Scene.html#ac424dda50f9256b506b8a1a10f1b78f5" title="Update the scene&#39;s camera." alt="" coords="27,105,214,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="276,93,212,107,211,102,275,88"/>
+</map>

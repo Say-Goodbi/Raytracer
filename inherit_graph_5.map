@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classIPlugin.html" title=" " alt="" coords="5,5,72,31"/>
-<area shape="rect" id="Node000001" href="$classCorePlugin.html" title="Built&#45;in plugin providing core raytracer functionality." alt="" coords="120,5,212,31"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="86,15,120,15,120,21,86,21"/>
+<area shape="rect" id="Node000000" href="$classRayTracer_1_1AInterface.html" title="Abstract base class for application interfaces. An interface owns a renderer and orchestrates executi..." alt="" coords="5,5,167,31"/>
+<area shape="rect" id="Node000001" href="$classRayTracer_1_1SceneWriter.html" title="Concrete interface implementation that renders a scene and writes output to a PPM file." alt="" coords="215,5,388,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="181,15,214,15,214,21,181,21"/>
 </map>

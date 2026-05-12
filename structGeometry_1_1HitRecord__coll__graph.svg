@@ -41,32 +41,34 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classGeometry_1_1Point3D.html" target="_top" xlink:title="Represents a 3D point in space.">
-<polygon fill="white" stroke="transparent" points="103,-325 0,-325 0,-156 103,-156 103,-325"/>
-<text text-anchor="start" x="5.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D</text>
-<text text-anchor="start" x="8.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">x</text>
-<text text-anchor="start" x="8.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">y</text>
-<text text-anchor="start" x="8.5" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">z</text>
-<text text-anchor="start" x="8.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point3D()</text>
-<text text-anchor="start" x="8.5" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point3D()</text>
-<text text-anchor="start" x="8.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">~Point3D()</text>
-<text text-anchor="start" x="8.5" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+()</text>
-<text text-anchor="start" x="8.5" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;()</text>
-<text text-anchor="start" x="8.5" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+=()</text>
-<text text-anchor="start" x="8.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="25.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;()</text>
-<polygon fill="#666666" stroke="#666666" points="0.5,-307.5 0.5,-307.5 103.5,-307.5 103.5,-307.5 0.5,-307.5"/>
-<polygon fill="#666666" stroke="#666666" points="0.5,-262.5 0.5,-262.5 23.5,-262.5 23.5,-262.5 0.5,-262.5"/>
-<polygon fill="#666666" stroke="#666666" points="23.5,-262.5 23.5,-262.5 103.5,-262.5 103.5,-262.5 23.5,-262.5"/>
-<polygon fill="none" stroke="#666666" points="0,-156 0,-325 103,-325 103,-156 0,-156"/>
+<polygon fill="white" stroke="transparent" points="103,-332.5 0,-332.5 0,-148.5 103,-148.5 103,-332.5"/>
+<text text-anchor="start" x="5.5" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Point3D</text>
+<text text-anchor="start" x="8.5" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00">x</text>
+<text text-anchor="start" x="8.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">y</text>
+<text text-anchor="start" x="8.5" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">z</text>
+<text text-anchor="start" x="8.5" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point3D()</text>
+<text text-anchor="start" x="8.5" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point3D()</text>
+<text text-anchor="start" x="8.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">~Point3D()</text>
+<text text-anchor="start" x="8.5" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+()</text>
+<text text-anchor="start" x="8.5" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;()</text>
+<text text-anchor="start" x="8.5" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+=()</text>
+<text text-anchor="start" x="8.5" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;()</text>
+<text text-anchor="start" x="8.5" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="25.5" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator=()</text>
+<polygon fill="#666666" stroke="#666666" points="0.5,-315.5 0.5,-315.5 103.5,-315.5 103.5,-315.5 0.5,-315.5"/>
+<polygon fill="#666666" stroke="#666666" points="0.5,-270.5 0.5,-270.5 23.5,-270.5 23.5,-270.5 0.5,-270.5"/>
+<polygon fill="#666666" stroke="#666666" points="23.5,-270.5 23.5,-270.5 103.5,-270.5 103.5,-270.5 23.5,-270.5"/>
+<polygon fill="none" stroke="#666666" points="0,-148.5 0,-332.5 103,-332.5 103,-148.5 0,-148.5"/>
 </a>
 </g>
 </g>
@@ -74,7 +76,7 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M87.14,-155.74C94.58,-140.52 102.83,-125.03 111.5,-111 120.15,-97.01 124.11,-94.75 134.5,-82 136.81,-79.17 139.2,-76.25 141.62,-73.32"/>
+<path fill="none" stroke="#63b8ff" d="M90.87,-148.23C97.3,-135.47 104.25,-122.73 111.5,-111 120.15,-97.01 124.11,-94.75 134.5,-82 136.81,-79.17 139.2,-76.25 141.62,-73.32"/>
 <polygon fill="none" stroke="#63b8ff" points="141.69,-73.24 142.44,-66.07 149.35,-64 148.6,-71.18 141.69,-73.24"/>
 </a>
 </g>
@@ -86,40 +88,40 @@
 <g id="a_Node000003"><a xlink:href="classGeometry_1_1Vector3D.html" target="_top" xlink:title="Represents a 3D vector for directions or displacements.">
 <polygon fill="white" stroke="transparent" points="230,-370 121,-370 121,-111 230,-111 230,-370"/>
 <text text-anchor="start" x="126.5" y="-357.5" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry::Vector3D</text>
-<text text-anchor="start" x="131" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">x</text>
-<text text-anchor="start" x="131" y="-327.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-327.5" font-family="Helvetica,sans-Serif" font-size="10.00">y</text>
-<text text-anchor="start" x="131" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">z</text>
-<text text-anchor="start" x="131" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D()</text>
-<text text-anchor="start" x="131" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D()</text>
-<text text-anchor="start" x="131" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">~Vector3D()</text>
-<text text-anchor="start" x="131" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">length()</text>
-<text text-anchor="start" x="131" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">length()</text>
-<text text-anchor="start" x="131" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">dot()</text>
-<text text-anchor="start" x="131" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">normalize()</text>
-<text text-anchor="start" x="131" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+()</text>
-<text text-anchor="start" x="131" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+=()</text>
-<text text-anchor="start" x="131" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;()</text>
-<text text-anchor="start" x="149.5" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 9 more...</text>
-<text text-anchor="start" x="131" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">dot()</text>
-<text text-anchor="start" x="131" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="149.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">cross()</text>
+<text text-anchor="start" x="129.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">x</text>
+<text text-anchor="start" x="129.5" y="-327.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-327.5" font-family="Helvetica,sans-Serif" font-size="10.00">y</text>
+<text text-anchor="start" x="129.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">z</text>
+<text text-anchor="start" x="129.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D()</text>
+<text text-anchor="start" x="129.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D()</text>
+<text text-anchor="start" x="129.5" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">~Vector3D()</text>
+<text text-anchor="start" x="129.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">length()</text>
+<text text-anchor="start" x="129.5" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">length()</text>
+<text text-anchor="start" x="129.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">dot()</text>
+<text text-anchor="start" x="129.5" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">normalize()</text>
+<text text-anchor="start" x="129.5" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+()</text>
+<text text-anchor="start" x="129.5" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator+=()</text>
+<text text-anchor="start" x="129.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">operator&#45;()</text>
+<text text-anchor="start" x="146.5" y="-147.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
+<text text-anchor="start" x="129.5" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">dot()</text>
+<text text-anchor="start" x="129.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="146.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">cross()</text>
 <polygon fill="#666666" stroke="#666666" points="121.5,-352.5 121.5,-352.5 230.5,-352.5 230.5,-352.5 121.5,-352.5"/>
-<polygon fill="#666666" stroke="#666666" points="121.5,-307.5 121.5,-307.5 147.5,-307.5 147.5,-307.5 121.5,-307.5"/>
-<polygon fill="#666666" stroke="#666666" points="147.5,-307.5 147.5,-307.5 230.5,-307.5 230.5,-307.5 147.5,-307.5"/>
+<polygon fill="#666666" stroke="#666666" points="121.5,-307.5 121.5,-307.5 144.5,-307.5 144.5,-307.5 121.5,-307.5"/>
+<polygon fill="#666666" stroke="#666666" points="144.5,-307.5 144.5,-307.5 230.5,-307.5 230.5,-307.5 144.5,-307.5"/>
 <polygon fill="none" stroke="#666666" points="121,-111 121,-370 230,-370 230,-111 121,-111"/>
 </a>
 </g>
@@ -137,17 +139,23 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classRayTracer_1_1IMaterial.html" target="_top" xlink:title="Abstract base for materials defining how surfaces shade.">
-<polygon fill="white" stroke="transparent" points="356.5,-272.5 248.5,-272.5 248.5,-208.5 356.5,-208.5 356.5,-272.5"/>
-<text text-anchor="start" x="253.5" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::IMaterial</text>
-<text text-anchor="start" x="300.5" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="255" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="270.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">computeColor()</text>
-<text text-anchor="start" x="255" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="270.5" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00">~IMaterial()</text>
-<polygon fill="#666666" stroke="#666666" points="248.5,-255.5 248.5,-255.5 356.5,-255.5 356.5,-255.5 248.5,-255.5"/>
-<polygon fill="#666666" stroke="#666666" points="248.5,-240.5 248.5,-240.5 356.5,-240.5 356.5,-240.5 248.5,-240.5"/>
-<polygon fill="none" stroke="#666666" points="248.5,-208.5 248.5,-272.5 356.5,-272.5 356.5,-208.5 248.5,-208.5"/>
+<g id="a_Node000004"><a xlink:href="classRayTracer_1_1IMaterial.html" target="_top" xlink:title="Interface for physically&#45;based surface materials.">
+<polygon fill="white" stroke="transparent" points="356.5,-295 248.5,-295 248.5,-186 356.5,-186 356.5,-295"/>
+<text text-anchor="start" x="253.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::IMaterial</text>
+<text text-anchor="start" x="300.5" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="259" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="278.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">~IMaterial()</text>
+<text text-anchor="start" x="259" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="278.5" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">evaluate()</text>
+<text text-anchor="start" x="259" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="278.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">sample()</text>
+<text text-anchor="start" x="259" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="278.5" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">pdf()</text>
+<text text-anchor="start" x="259" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="278.5" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">emission()</text>
+<polygon fill="#666666" stroke="#666666" points="248.5,-277.5 248.5,-277.5 356.5,-277.5 356.5,-277.5 248.5,-277.5"/>
+<polygon fill="#666666" stroke="#666666" points="248.5,-262.5 248.5,-262.5 356.5,-262.5 356.5,-262.5 248.5,-262.5"/>
+<polygon fill="none" stroke="#666666" points="248.5,-186 248.5,-295 356.5,-295 356.5,-186 248.5,-186"/>
 </a>
 </g>
 </g>
@@ -155,7 +163,7 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M291.01,-208.48C277.95,-175.41 254.62,-122.35 225.5,-82 223.36,-79.04 221.04,-76.1 218.6,-73.22"/>
+<path fill="none" stroke="#63b8ff" d="M281.73,-185.91C268.15,-154.2 248.65,-114.09 225.5,-82 223.36,-79.04 221.04,-76.1 218.6,-73.22"/>
 <polygon fill="none" stroke="#63b8ff" points="218.55,-73.16 211.57,-71.38 210.53,-64.24 217.51,-66.03 218.55,-73.16"/>
 </a>
 </g>

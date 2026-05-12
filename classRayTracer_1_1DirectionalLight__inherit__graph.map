@@ -1,0 +1,5 @@
+<map id="RayTracer::DirectionalLight" name="RayTracer::DirectionalLight">
+<area shape="rect" id="Node000001" title="Directional light — no position, only a direction (simulates sunlight)." alt="" coords="5,139,195,284"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1ILight.html" title=" " alt="" coords="36,5,164,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,104,103,138,97,138,97,104"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Geometry::Vector3D::length" name="Geometry::Vector3D::length">
+<area shape="rect" id="Node000001" title=" " alt="" coords="212,37,365,77"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="8,5,161,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,46,161,40,162,35,199,41"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20" title="Compute light contribution." alt="" coords="5,69,164,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,74,165,80,164,74,198,69"/>
+</map>

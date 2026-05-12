@@ -1,4 +1,4 @@
 var PluginManager_8hpp =
 [
-    [ "PluginManager", "classPluginManager.html", "classPluginManager" ]
+    [ "RayTracer::PluginManager", "classRayTracer_1_1PluginManager.html", "classRayTracer_1_1PluginManager" ]
 ];

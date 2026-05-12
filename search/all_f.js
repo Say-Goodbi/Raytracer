@@ -2,7 +2,7 @@ var searchData=
 [
   ['r_0',['r',['../structRayTracer_1_1Color.html#a743e525cffb3a3a3b63267b76b615432',1,'RayTracer::Color']]],
   ['rationale_1',['rationale',['../index.html#design',1,'Design Rationale'],['../index.html#folders_rationale',1,'Design Rationale']]],
-  ['ray_2',['ray',['../classGeometry_1_1Ray.html#abe7add913d44f65b63866b04f7c7f841',1,'Geometry::Ray::Ray()=default'],['../classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc',1,'Geometry::Ray::Ray(const Geometry::Point3D &amp;origin, const Geometry::Vector3D &amp;direction)'],['../classGeometry_1_1Ray.html',1,'Geometry::Ray']]],
+  ['ray_2',['ray',['../classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc',1,'Geometry::Ray::Ray()'],['../classGeometry_1_1Ray.html',1,'Geometry::Ray'],['../classGeometry_1_1Ray.html#abe7add913d44f65b63866b04f7c7f841',1,'Geometry::Ray::Ray()']]],
   ['ray_2ecpp_3',['Ray.cpp',['../Ray_8cpp.html',1,'']]],
   ['ray_2ehpp_4',['Ray.hpp',['../Ray_8hpp.html',1,'']]],
   ['raydistance_5',['rayDistance',['../structGeometry_1_1HitRecord.html#a802ecfa085c9cfaead2111fe16e0f34b',1,'Geometry::HitRecord']]],
@@ -15,5 +15,6 @@ var searchData=
   ['rectangle3d_2ehpp_12',['Rectangle3D.hpp',['../Rectangle3D_8hpp.html',1,'']]],
   ['render_13',['render',['../classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f',1,'RayTracer::Camera::render()'],['../classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271',1,'RayTracer::ARenderer::render()']]],
   ['rendering_20pipeline_14',['Rendering Pipeline',['../index.html#pipeline',1,'']]],
-  ['rendering_20pipeline_3a_20arenderer_20→_20camera_15',['Rendering Pipeline: ARenderer → Camera',['../index.html#arch_renderer',1,'']]]
+  ['rendering_20pipeline_3a_20arenderer_20→_20camera_15',['Rendering Pipeline: ARenderer → Camera',['../index.html#arch_renderer',1,'']]],
+  ['rng_16',['rng',['../classRayTracer_1_1Utils.html#a30d72a060a1b268a6ca81e900c2616d1',1,'RayTracer::Utils']]]
 ];

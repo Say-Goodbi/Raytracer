@@ -1,0 +1,5 @@
+<map id="RayTracer::Sphere" name="RayTracer::Sphere">
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,179,148,304"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1APrimitive.html" title="Abstract base class for all primitives (renderable objects). Primitives have geometry and a material." alt="" coords="5,5,160,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,145,85,178,80,178,80,145"/>
+</map>

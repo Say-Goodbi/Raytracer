@@ -1,0 +1,6 @@
+<map id="RayTracer::Camera::castRay" name="RayTracer::Camera::castRay">
+<area shape="rect" id="Node000001" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="207,29,360,69"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="317,18,305,11,283,8,264,10,253,15,249,21,251,28,246,30,243,20,249,11,263,5,283,3,307,6,320,13"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,29,159,69"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="193,52,159,52,159,47,193,47"/>
+</map>

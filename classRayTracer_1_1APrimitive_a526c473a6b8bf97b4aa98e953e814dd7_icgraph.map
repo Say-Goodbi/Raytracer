@@ -1,5 +1,9 @@
 <map id="RayTracer::APrimitive::APrimitive" name="RayTracer::APrimitive::APrimitive">
-<area shape="rect" id="Node000001" title="Constructor." alt="" coords="228,5,391,45"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Plane.html#aad26406644051e626d8ef6d2e6391c18" title=" " alt="" coords="5,13,180,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,28,180,28,180,23,214,23"/>
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="228,63,391,103"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Cylinder.html#a42af0cea83f7e299521660a6d84e2a3c" title=" " alt="" coords="19,5,167,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,62,166,47,168,42,221,56"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Plane.html#aad26406644051e626d8ef6d2e6391c18" title=" " alt="" coords="5,70,180,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,85,180,85,180,80,214,80"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Sphere.html#aa89da13cd4b5a7ecaa87c23d4bda1385" title=" " alt="" coords="19,120,166,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,109,167,123,166,118,220,104"/>
 </map>

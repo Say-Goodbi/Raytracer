@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['what_0',['what',['../classRayTracer_1_1Exception.html#a174d44d7e2d2b77ab9eefe9fb25c5647',1,'RayTracer::Exception']]],
-  ['width_1',['width',['../classGeometry_1_1Rectangle3D.html#a5161f8ab68c90247331dc37d8c16185f',1,'Geometry::Rectangle3D']]]
+  ['updatecamera_0',['updateCamera',['../classRayTracer_1_1Scene.html#ac424dda50f9256b506b8a1a10f1b78f5',1,'RayTracer::Scene']]],
+  ['utils_1',['Utils',['../classRayTracer_1_1Utils.html',1,'RayTracer']]],
+  ['utils_2ecpp_2',['Utils.cpp',['../Utils_8cpp.html',1,'']]],
+  ['utils_2ehpp_3',['Utils.hpp',['../Utils_8hpp.html',1,'']]]
 ];

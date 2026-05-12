@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_0',['z',['../classGeometry_1_1Point3D.html#a298ddde523f3cdd5227989382f86c586',1,'Geometry::Point3D::z'],['../classGeometry_1_1Vector3D.html#ad4d3573a63506a5f131160830d2952f2',1,'Geometry::Vector3D::z']]]
+  ['x_0',['x',['../classGeometry_1_1Point3D.html#a82e0325c1ce64aca0e0a4418bafa6cff',1,'Geometry::Point3D::x'],['../classGeometry_1_1Vector3D.html#a8d080edf07c310c91637d62168d63c55',1,'Geometry::Vector3D::x']]]
 ];

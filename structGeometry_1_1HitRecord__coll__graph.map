@@ -1,9 +1,9 @@
 <map id="Geometry::HitRecord" name="Geometry::HitRecord">
 <area shape="rect" id="Node000001" title="Record of a ray–primitive intersection." alt="" coords="164,413,315,499"/>
-<area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="5,65,143,291"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,290,156,349,187,388,196,399,192,403,183,391,152,352,119,292"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="5,55,143,301"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,300,156,349,187,388,196,399,192,403,183,391,152,352,124,302"/>
 <area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html" title="Represents a 3D vector for directions or displacements." alt="" coords="167,5,312,351"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,351,242,397,237,397,237,351"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1IMaterial.html" title="Abstract base for materials defining how surfaces shade." alt="" coords="337,135,481,221"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="396,222,360,303,336,348,308,391,299,403,295,399,304,388,331,345,355,300,391,220"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1IMaterial.html" title="Interface for physically&#45;based surface materials." alt="" coords="337,105,481,251"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="383,252,351,321,308,391,299,403,295,399,304,388,346,319,379,250"/>
 </map>

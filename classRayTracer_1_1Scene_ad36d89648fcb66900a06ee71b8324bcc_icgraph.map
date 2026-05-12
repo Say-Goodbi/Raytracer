@@ -1,0 +1,5 @@
+<map id="RayTracer::Scene::addLight" name="RayTracer::Scene::addLight">
+<area shape="rect" id="Node000001" title="Add a light to the scene." alt="" coords="257,5,455,31"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Scene.html#a37894460ad0cd8ea084724011434e87c" title="Add lights to the scene." alt="" coords="5,5,209,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,21,209,21,209,15,244,15"/>
+</map>

@@ -1,9 +1,0 @@
-<map id="PluginManager::PluginManager" name="PluginManager::PluginManager">
-<area shape="rect" id="Node000001" title="Constructor that loads plugins from the default directory;." alt="" coords="5,5,229,31"/>
-<area shape="rect" id="Node000002" href="$classPluginManager.html#a685e9abd87edf1e34fd8a29258cf19e0" title="Loads all plugins within the directory." alt="" coords="277,5,480,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,15,263,15,263,21,229,21"/>
-<area shape="rect" id="Node000003" href="$classPluginManager.html#a8e407ffe215f71a33f06c4fbb3927445" title="Load a plugin from a shared library file." alt="" coords="528,5,723,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="480,15,514,15,514,21,480,21"/>
-<area shape="rect" id="Node000004" href="$classIPlugin.html#a58f4b80e2e486068559ef774c612b8e6" title="Get the name of the plugin." alt="" coords="771,5,905,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="723,15,757,15,757,21,723,21"/>
-</map>

@@ -1,11 +1,11 @@
 <map id="RayTracer::Plane" name="RayTracer::Plane">
-<area shape="rect" id="Node000001" title=" " alt="" coords="192,561,315,687"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1APrimitive.html" title="Abstract base class for all primitives (renderable objects). Primitives have geometry and a material." alt="" coords="5,263,160,389"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,399,174,497,213,560,209,562,170,500,117,402"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1IMaterial.html" title="Abstract base for materials defining how surfaces shade." alt="" coords="11,5,155,91"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,91,85,246,80,246,80,91"/>
-<area shape="rect" id="Node000004" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="185,213,322,439"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,439,256,545,251,545,251,439"/>
-<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html" title="Represents a 3D vector for directions or displacements." alt="" coords="346,153,491,499"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="348,480,337,500,307,549,303,546,332,497,344,477"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="192,621,315,747"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1APrimitive.html" title="Abstract base class for all primitives (renderable objects). Primitives have geometry and a material." alt="" coords="5,323,160,449"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,459,174,557,213,620,209,622,170,560,117,462"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1IMaterial.html" title="Interface for physically&#45;based surface materials." alt="" coords="11,5,155,151"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,151,85,307,80,307,80,151"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="185,263,322,509"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,509,256,605,251,605,251,509"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html" title="Represents a 3D vector for directions or displacements." alt="" coords="346,213,491,559"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="348,540,337,560,307,609,303,606,332,557,344,537"/>
 </map>

@@ -1,3 +1,3 @@
 <map id="RayTracer::IMaterial" name="RayTracer::IMaterial">
-<area shape="rect" id="Node000001" title="Abstract base for materials defining how surfaces shade." alt="" coords="5,5,149,91"/>
+<area shape="rect" id="Node000001" title="Interface for physically&#45;based surface materials." alt="" coords="5,5,149,151"/>
 </map>

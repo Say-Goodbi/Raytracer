@@ -1,0 +1,7 @@
+<map id="RayTracer::SceneLoader" name="RayTracer::SceneLoader">
+<area shape="rect" id="Node000001" title=" " alt="" coords="112,273,281,379"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1PluginManager.html" title=" " alt="" coords="5,15,188,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,200,158,248,162,258,158,260,153,250,131,202"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Parser.html" title=" " alt="" coords="213,5,383,211"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="286,212,271,251,265,261,260,259,266,248,281,210"/>
+</map>

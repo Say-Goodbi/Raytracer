@@ -1,0 +1,7 @@
+<map id="Geometry::Vector3D::cross" name="Geometry::Vector3D::cross">
+<area shape="rect" id="Node000001" title=" " alt="" coords="221,37,375,77"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="13,5,166,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,46,166,40,167,34,208,41"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838" title="Return the deterministic bounce direction for this material." alt="" coords="5,69,173,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,74,174,79,173,74,207,68"/>
+</map>

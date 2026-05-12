@@ -1,0 +1,7 @@
+<map id="RayTracer::Lambertian::evaluate" name="RayTracer::Lambertian::evaluate">
+<area shape="rect" id="Node000001" title="Evaluate the BRDF for a given pair of directions." alt="" coords="5,5,173,45"/>
+<area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8" title=" " alt="" coords="221,13,420,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,23,208,23,208,28,174,28"/>
+<area shape="rect" id="Node000003" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="468,13,639,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,23,454,23,454,28,420,28"/>
+</map>

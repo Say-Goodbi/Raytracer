@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('PluginManager_8hpp.html',''); initResi
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">PluginManager.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -99,32 +100,39 @@ $(document).ready(function(){initNavTree('PluginManager_8hpp.html',''); initResi
 <p>Plugin manager for loading and managing plugins.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;dlfcn.h&gt;</code><br />
-<code>#include &quot;../IPlugin.hpp&quot;</code><br />
+<code>#include &lt;dirent.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="Plugin_8hpp_source.html">../../Objects/Plugin.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for PluginManager.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="PluginManager_8hpp__incl.svg" width="246" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="PluginManager_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="PluginManager_8hpp__dep__incl.svg" width="246" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="PluginManager_8hpp__dep__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="PluginManager_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPluginManager.html">PluginManager</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html">RayTracer::PluginManager</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceRayTracer" id="r_namespaceRayTracer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html">RayTracer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Plugin manager for loading and managing plugins. </p>
-<p>This file defines the <a class="el" href="classPluginManager.html">PluginManager</a> class, which is responsible for loading and managing plugins in the ray tracer application. The <a class="el" href="classPluginManager.html">PluginManager</a> allows for dynamic loading of plugins at runtime, enabling users to extend the functionality of the ray tracer without modifying the core codebase. </p>
+<p>This file defines the PluginManager class, which is responsible for loading and managing plugins in the ray tracer application. The PluginManager allows for dynamic loading of plugins at runtime, enabling users to extend the functionality of the ray tracer without modifying the core codebase. </p>
 
 <p class="definition">Definition in file <a class="el" href="PluginManager_8hpp_source.html">PluginManager.hpp</a>.</p>
 </div></div><!-- contents -->

@@ -111,7 +111,7 @@ Core Framework (Interface Definitions)</h2>
 <ul>
 <li><code>Objects/</code> : Plugin system boundaries and abstract base classes<ul>
 <li><code>Abstracts/</code> : Core abstract interfaces (ARenderer, AInterface, APrimitive, IMaterial, ILight)</li>
-<li><code><a class="el" href="IPlugin_8hpp.html">IPlugin.hpp</a></code> : Plugin interface for runtime component factories</li>
+<li><code>IPlugin.hpp</code> : Plugin interface for runtime component factories</li>
 </ul>
 </li>
 <li><code>Exceptions/</code> : Custom exception types (domain errors, runtime problems)</li>
@@ -123,7 +123,7 @@ Core Framework (Interface Definitions)</h2>
 Plugin Implementation (CorePlugin)</h2>
 <p>The <code>CorePlugin/</code> folder contains the built-in plugin providing essential raytracing functionality:</p>
 <ul>
-<li><code><a class="el" href="CorePlugin_8hpp.html">CorePlugin.hpp</a>/cpp</code> : Plugin entry point; provides component factories</li>
+<li><code>CorePlugin.hpp/cpp</code> : Plugin entry point; provides component factories</li>
 <li><code>Renderers/Camera/</code> : Camera implementation (ARenderer subclass)</li>
 <li><code>Interfaces/SceneWriter/</code> : PPM file output (AInterface subclass)</li>
 <li><code>Primitives/</code> : Renderable shapes (APrimitive subclasses)</li>
@@ -154,8 +154,8 @@ Rendering Pipeline: ARenderer → Camera</h2>
 <p><a class="el" href="classRayTracer_1_1Camera.html">Camera</a> is the concrete implementation of <a class="el" href="classRayTracer_1_1ARenderer.html">ARenderer</a>. It:</p><ul>
 <li>Holds camera position, direction, and field-of-view (FOV)</li>
 <li>Generates rays for each pixel via <a class="el" href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd">generateRay()</a></li>
-<li>Casts rays into the scene and computes colors via <a class="el" href="classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11">castRay()</a></li>
-<li>Handles shadow computation via <a class="el" href="classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8">computeShadow()</a></li>
+<li>Casts rays into the scene and computes colors via <a class="el" href="classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571">castRay()</a></li>
+<li>Handles shadow computation via computeShadow()</li>
 <li><p class="startli">Returns the fully rendered framebuffer (without writing it)</p>
 <p class="startli">Why: Separating the renderer abstraction from output writing allows different rendering strategies (e.g., ray-tracing, path-tracing) and different output formats without duplication.</p>
 </li>
@@ -192,7 +192,7 @@ Geometry</h2>
 Primitives: Objects &amp; Materials</h2>
 <p><a class="el" href="classRayTracer_1_1APrimitive.html">APrimitive</a> is the abstract shape base. Subclasses:</p><ul>
 <li><a class="el" href="classRayTracer_1_1Plane.html">Plane</a> — infinite flat surface</li>
-<li>Sphere — sphere (planned)</li>
+<li><a class="el" href="classRayTracer_1_1Sphere.html">Sphere</a> — sphere (planned)</li>
 </ul>
 <p>Each primitive:</p><ul>
 <li>Stores an <a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a>* pointer</li>
@@ -200,15 +200,15 @@ Primitives: Objects &amp; Materials</h2>
 <li>Via <a class="el" href="classRayTracer_1_1APrimitive.html#acdc1a350e79537fa0b9c8588a170bdcf">getMaterial()</a>, provides shading instructions</li>
 </ul>
 <p><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> defines shading behavior:</p><ul>
-<li><a class="el" href="classRayTracer_1_1IMaterial.html#a18c2601138a3f78d3f6ceb3d0c713a38">computeColor()</a> — computes pixel color given an intersection and lights</li>
+<li>computeColor() — computes pixel color given an intersection and lights</li>
 </ul>
-<p><a class="el" href="classRayTracer_1_1FlatColor.html">FlatColor</a> is a simple material that returns a constant RGB value.</p>
+<p>FlatColor is a simple material that returns a constant RGB value.</p>
 <p>Why: Decoupling geometry from appearance (material) allows reuse and runtime material swapping.</p>
 <h2><a class="anchor" id="arch_lights"></a>
 Lights</h2>
 <p><a class="el" href="classRayTracer_1_1ILight.html">ILight</a> is the light abstraction:</p><ul>
-<li><a class="el" href="classRayTracer_1_1ILight.html#ac75b76eed4ec368ee29fb003c3d11480">getPosition()</a> → <a class="el" href="classGeometry_1_1Point3D.html">Point3D</a> (e.g., point light position)</li>
-<li><a class="el" href="classRayTracer_1_1ILight.html#aa0498718fee2e18cf30ea68ab7b2eaa6">computeContribution()</a> — computes light's effect at a hit point</li>
+<li>getPosition() → <a class="el" href="classGeometry_1_1Point3D.html">Point3D</a> (e.g., point light position)</li>
+<li>computeContribution() — computes light's effect at a hit point</li>
 </ul>
 <p>Lights are stored in the Scene and referenced during shading computations.</p>
 <h2><a class="anchor" id="arch_plugins"></a>

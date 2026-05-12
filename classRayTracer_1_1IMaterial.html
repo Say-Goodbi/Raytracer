@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Raytracer: RayTracer::IMaterial Class Reference</title>
+<title>Raytracer: RayTracer::IMaterial Interface Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,11 +93,11 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1IMaterial.html','');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classRayTracer_1_1IMaterial-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">RayTracer::IMaterial Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">RayTracer::IMaterial Interface Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Abstract base for materials defining how surfaces shade.  
+<p>Interface for physically-based surface materials.  
  <a href="classRayTracer_1_1IMaterial.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>&gt;</code></p>
@@ -106,28 +106,43 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1IMaterial.html','');
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial__inherit__graph.svg" width="156" height="250"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial__inherit__graph.svg" width="171" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::IMaterial:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial__coll__graph.svg" width="155" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial__coll__graph.svg" width="155" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a18c2601138a3f78d3f6ceb3d0c713a38" id="r_a18c2601138a3f78d3f6ceb3d0c713a38"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structRayTracer_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html#a18c2601138a3f78d3f6ceb3d0c713a38">computeColor</a> (<a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;hit, std::vector&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> * &gt; &amp;lights)=0</td></tr>
-<tr class="memdesc:a18c2601138a3f78d3f6ceb3d0c713a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the color at a surface hit point.  <br /></td></tr>
-<tr class="separator:a18c2601138a3f78d3f6ceb3d0c713a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4e697ade927e90e125b118ccd39ffa0" id="r_aa4e697ade927e90e125b118ccd39ffa0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html#aa4e697ade927e90e125b118ccd39ffa0">~IMaterial</a> ()=default</td></tr>
 <tr class="separator:aa4e697ade927e90e125b118ccd39ffa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d43460913f09c692f84affec665226" id="r_a98d43460913f09c692f84affec665226"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structRayTracer_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html#a98d43460913f09c692f84affec665226">evaluate</a> (const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;normal, const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;viewDir, const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;lightDir) const =0</td></tr>
+<tr class="memdesc:a98d43460913f09c692f84affec665226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the BRDF for a given pair of directions.  <br /></td></tr>
+<tr class="separator:a98d43460913f09c692f84affec665226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade12fb28f824d8b9f9627bc3692afa80" id="r_ade12fb28f824d8b9f9627bc3692afa80"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80">sample</a> (const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;normal, const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;viewDir) const =0</td></tr>
+<tr class="memdesc:ade12fb28f824d8b9f9627bc3692afa80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the deterministic bounce direction for this material.  <br /></td></tr>
+<tr class="separator:ade12fb28f824d8b9f9627bc3692afa80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3e2b7f5cf291a25885aaf2d39d5582" id="r_a2b3e2b7f5cf291a25885aaf2d39d5582"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html#a2b3e2b7f5cf291a25885aaf2d39d5582">pdf</a> (const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;normal, const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;viewDir, const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;sampleDir) const =0</td></tr>
+<tr class="memdesc:a2b3e2b7f5cf291a25885aaf2d39d5582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the probability density of the direction from <code><a class="el" href="classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80" title="Return the deterministic bounce direction for this material.">sample()</a></code>.  <br /></td></tr>
+<tr class="separator:a2b3e2b7f5cf291a25885aaf2d39d5582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4b1bdc4f1ec9f555277b4b87199bb9" id="r_acd4b1bdc4f1ec9f555277b4b87199bb9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structRayTracer_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1IMaterial.html#acd4b1bdc4f1ec9f555277b4b87199bb9">emission</a> () const =0</td></tr>
+<tr class="memdesc:acd4b1bdc4f1ec9f555277b4b87199bb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the radiance emitted by this surface.  <br /></td></tr>
+<tr class="separator:acd4b1bdc4f1ec9f555277b4b87199bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Abstract base for materials defining how surfaces shade. </p>
+<div class="textblock"><p>Interface for physically-based surface materials. </p>
+<p>Defines the three quantities the path tracer needs to evaluate the rendering equation at a surface hit — plus an emission term for light-emitting surfaces:</p>
+<div class="fragment"><div class="line">L ≈ <a class="code hl_function" href="classRayTracer_1_1IMaterial.html#acd4b1bdc4f1ec9f555277b4b87199bb9">emission</a>() + <a class="code hl_function" href="classRayTracer_1_1IMaterial.html#a98d43460913f09c692f84affec665226">evaluate</a>(ωi, ωo) * Li * cosθ / <a class="code hl_function" href="classRayTracer_1_1IMaterial.html#a2b3e2b7f5cf291a25885aaf2d39d5582">pdf</a>(ωi)</div>
+<div class="ttc" id="aclassRayTracer_1_1IMaterial_html_a2b3e2b7f5cf291a25885aaf2d39d5582"><div class="ttname"><a href="classRayTracer_1_1IMaterial.html#a2b3e2b7f5cf291a25885aaf2d39d5582">RayTracer::IMaterial::pdf</a></div><div class="ttdeci">virtual float pdf(const Geometry::Vector3D &amp;normal, const Geometry::Vector3D &amp;viewDir, const Geometry::Vector3D &amp;sampleDir) const =0</div><div class="ttdoc">Return the probability density of the direction from sample().</div></div>
+<div class="ttc" id="aclassRayTracer_1_1IMaterial_html_a98d43460913f09c692f84affec665226"><div class="ttname"><a href="classRayTracer_1_1IMaterial.html#a98d43460913f09c692f84affec665226">RayTracer::IMaterial::evaluate</a></div><div class="ttdeci">virtual Color evaluate(const Geometry::Vector3D &amp;normal, const Geometry::Vector3D &amp;viewDir, const Geometry::Vector3D &amp;lightDir) const =0</div><div class="ttdoc">Evaluate the BRDF for a given pair of directions.</div></div>
+<div class="ttc" id="aclassRayTracer_1_1IMaterial_html_acd4b1bdc4f1ec9f555277b4b87199bb9"><div class="ttname"><a href="classRayTracer_1_1IMaterial.html#acd4b1bdc4f1ec9f555277b4b87199bb9">RayTracer::IMaterial::emission</a></div><div class="ttdeci">virtual Color emission() const =0</div><div class="ttdoc">Return the radiance emitted by this surface.</div></div>
+</div><!-- fragment --><p>Because the renderer is deterministic, <code><a class="el" href="classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80" title="Return the deterministic bounce direction for this material.">sample()</a></code> must return a <b>fixed</b> direction (e.g. perfect mirror direction, cosine-lobe centroid) rather than drawing from a random distribution. <code><a class="el" href="classRayTracer_1_1IMaterial.html#a2b3e2b7f5cf291a25885aaf2d39d5582" title="Return the probability density of the direction from sample().">pdf()</a></code> must be consistent with that choice so the Monte Carlo weight <code>cosθ / pdf</code> remains correct. </p>
 
-<p class="definition">Definition at line <a class="el" href="IMaterial_8hpp_source.html#l00010">10</a> of file <a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="IMaterial_8hpp_source.html#l00025">25</a> of file <a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa4e697ade927e90e125b118ccd39ffa0" name="aa4e697ade927e90e125b118ccd39ffa0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4e697ade927e90e125b118ccd39ffa0">&#9670;&#160;</a></span>~IMaterial()</h2>
@@ -155,8 +170,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a18c2601138a3f78d3f6ceb3d0c713a38" name="a18c2601138a3f78d3f6ceb3d0c713a38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18c2601138a3f78d3f6ceb3d0c713a38">&#9670;&#160;</a></span>computeColor()</h2>
+<a id="acd4b1bdc4f1ec9f555277b4b87199bb9" name="acd4b1bdc4f1ec9f555277b4b87199bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4b1bdc4f1ec9f555277b4b87199bb9">&#9670;&#160;</a></span>emission()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,21 +180,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="structRayTracer_1_1Color.html">Color</a> RayTracer::IMaterial::computeColor </td>
+          <td class="memname">virtual <a class="el" href="structRayTracer_1_1Color.html">Color</a> RayTracer::IMaterial::emission </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;&#160;</td>
-          <td class="paramname"><em>hit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lights</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -189,21 +193,204 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute the color at a surface hit point. </p>
+<p>Return the radiance emitted by this surface. </p>
+<p>Non-emissive materials should return <code>Color(0, 0, 0)</code>. Light sources return their emission color here; the path tracer adds it to the scattered term unconditionally.</p>
+<dl class="section return"><dt>Returns</dt><dd>Emitted radiance as an RGB color. </dd></dl>
+
+<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#a6205c3776a49354dab5d02f983c196e1">RayTracer::Lambertian</a>.</p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_acd4b1bdc4f1ec9f555277b4b87199bb9_icgraph.svg" width="566" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a98d43460913f09c692f84affec665226" name="a98d43460913f09c692f84affec665226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d43460913f09c692f84affec665226">&#9670;&#160;</a></span>evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structRayTracer_1_1Color.html">Color</a> RayTracer::IMaterial::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>viewDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>lightDir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluate the BRDF for a given pair of directions. </p>
+<p>Returns the fraction of light arriving from <code>lightDir</code> that is scattered toward <code>viewDir</code> at a surface with the given <code>normal</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hit</td><td>The hit record with intersection data </td></tr>
-    <tr><td class="paramname">lights</td><td>Lights in the scene </td></tr>
+    <tr><td class="paramname">normal</td><td>Unit surface normal at the hit point. </td></tr>
+    <tr><td class="paramname">viewDir</td><td>Unit direction toward the viewer (away from surface). </td></tr>
+    <tr><td class="paramname">lightDir</td><td>Unit direction toward the light / bounce origin. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Computed color at the hit point </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>BRDF value as an RGB multiplier (component-wise). </dd></dl>
 
-<p>Implemented in <a class="el" href="classRayTracer_1_1FlatColor.html#aafae40ac23530b995ee0605c00710b3e">RayTracer::FlatColor</a>.</p>
+<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#ac5339d746050833c746e209d65d9a9da">RayTracer::Lambertian</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_a98d43460913f09c692f84affec665226_icgraph.svg" width="566" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="a2b3e2b7f5cf291a25885aaf2d39d5582" name="a2b3e2b7f5cf291a25885aaf2d39d5582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b3e2b7f5cf291a25885aaf2d39d5582">&#9670;&#160;</a></span>pdf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float RayTracer::IMaterial::pdf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>viewDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>sampleDir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the probability density of the direction from <code><a class="el" href="classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80" title="Return the deterministic bounce direction for this material.">sample()</a></code>. </p>
+<p>Must be consistent with the direction returned by <code><a class="el" href="classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80" title="Return the deterministic bounce direction for this material.">sample()</a></code> so that the estimator weight <code>cosθ / pdf</code> correctly accounts for the choice of bounce direction. A value near zero indicates a degenerate or impossible direction; the integrator will skip the bounce in that case.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normal</td><td>Unit surface normal at the hit point. </td></tr>
+    <tr><td class="paramname">viewDir</td><td>Unit direction toward the viewer. </td></tr>
+    <tr><td class="paramname">sampleDir</td><td>Unit direction returned by <code><a class="el" href="classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80" title="Return the deterministic bounce direction for this material.">sample()</a></code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PDF value ≥ 0 for <code>sampleDir</code> under this material's distribution. </dd></dl>
+
+<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#a0a74c9347b24b236af1e44c302ac7c5e">RayTracer::Lambertian</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_a2b3e2b7f5cf291a25885aaf2d39d5582_icgraph.svg" width="595" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ade12fb28f824d8b9f9627bc3692afa80" name="ade12fb28f824d8b9f9627bc3692afa80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade12fb28f824d8b9f9627bc3692afa80">&#9670;&#160;</a></span>sample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> RayTracer::IMaterial::sample </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>viewDir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the deterministic bounce direction for this material. </p>
+<p>Instead of sampling randomly from the material's lobe distribution, implementations return a single representative direction (e.g. the perfect reflection vector, the hemisphere normal, or the lobe centroid). This keeps the entire render free of random numbers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">normal</td><td>Unit surface normal at the hit point. </td></tr>
+    <tr><td class="paramname">viewDir</td><td>Unit direction toward the viewer (away from surface). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Unit bounce direction in the hemisphere above <code>normal</code>. </dd></dl>
+
+<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838">RayTracer::Lambertian</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_ade12fb28f824d8b9f9627bc3692afa80_icgraph.svg" width="566" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this interface was generated from the following file:<ul>
 <li>src/Objects/Abstracts/<a class="el" href="IMaterial_8hpp_source.html">IMaterial.hpp</a></li>
 </ul>
 </div><!-- contents -->

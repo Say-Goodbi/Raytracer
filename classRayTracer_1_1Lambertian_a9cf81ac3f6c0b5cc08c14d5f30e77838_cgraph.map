@@ -1,0 +1,13 @@
+<map id="RayTracer::Lambertian::sample" name="RayTracer::Lambertian::sample">
+<area shape="rect" id="Node000001" title="Return the deterministic bounce direction for this material." alt="" coords="5,24,173,64"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="423,24,576,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,21,221,9,298,3,375,9,421,18,420,23,374,14,298,8,222,14,160,26"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112" title=" " alt="" coords="221,24,375,64"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,41,208,41,208,46,174,46"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="221,88,375,128"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="156,61,220,81,219,86,154,66"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="375,41,409,41,409,46,375,46"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="361,85,422,65,424,70,362,90"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" title="Calculate the length (magnitude) of this vector." alt="" coords="423,88,576,128"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="375,105,409,105,409,110,375,110"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="RayTracer::Lambertian::pdf" name="RayTracer::Lambertian::pdf">
+<area shape="rect" id="Node000001" title="Return the probability density of the direction from sample()." alt="" coords="5,5,203,31"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#affb9009fe58aafa334f1f5f703feceb3" title=" " alt="" coords="251,5,433,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,15,237,15,237,21,203,21"/>
+</map>

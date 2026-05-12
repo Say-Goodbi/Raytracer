@@ -1,0 +1,9 @@
+<map id="RayTracer::DirectionalLight" name="RayTracer::DirectionalLight">
+<area shape="rect" id="Node000001" title="Directional light — no position, only a direction (simulates sunlight)." alt="" coords="136,413,325,519"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1ILight.html" title=" " alt="" coords="5,135,133,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,232,117,290,148,349,190,412,186,415,143,352,112,292,87,234"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html" title="Represents a 3D vector for directions or displacements." alt="" coords="158,5,303,351"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,351,233,397,228,397,228,351"/>
+<area shape="rect" id="Node000004" href="$structRayTracer_1_1Color.html" title=" " alt="" coords="328,55,448,301"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="355,302,336,348,312,391,303,402,299,399,307,388,331,345,350,300"/>
+</map>

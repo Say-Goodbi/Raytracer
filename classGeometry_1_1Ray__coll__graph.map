@@ -1,7 +1,7 @@
 <map id="Geometry::Ray" name="Geometry::Ray">
 <area shape="rect" id="Node000001" title="Represents a ray: an origin point and a direction vector." alt="" coords="101,413,212,539"/>
-<area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="5,65,143,291"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,290,138,397,132,398,103,292"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="5,55,143,301"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,300,138,397,133,398,105,301"/>
 <area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html" title="Represents a 3D vector for directions or displacements." alt="" coords="167,5,312,351"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,351,194,390,191,399,186,397,189,389,200,350"/>
 </map>

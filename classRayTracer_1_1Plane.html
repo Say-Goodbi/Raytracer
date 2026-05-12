@@ -144,7 +144,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="Plane_8hpp_source.html#l00008">8</a> of file <a class="el" href="Plane_8hpp_source.html">Plane.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Plane_8hpp_source.html#l00010">10</a> of file <a class="el" href="Plane_8hpp_source.html">Plane.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aad26406644051e626d8ef6d2e6391c18" name="aad26406644051e626d8ef6d2e6391c18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad26406644051e626d8ef6d2e6391c18">&#9670;&#160;</a></span>Plane() <span class="overload">[1/2]</span></h2>
@@ -186,7 +186,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Plane_8hpp_source.html#l00014">14</a> of file <a class="el" href="Plane_8hpp_source.html">Plane.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Plane_8hpp_source.html#l00016">16</a> of file <a class="el" href="Plane_8hpp_source.html">Plane.hpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -282,7 +282,8 @@ Private Attributes</h2></td></tr>
 </li>
 <li>Compute numerator = (_point - ray.origin) · _normal</li>
 <li>Solve t = numerator / denominator</li>
-<li>If t &gt;= 0: intersection is in front of ray origin (valid hit)</li>
+<li>If t &gt; 1e-4: intersection is in front of ray origin (epsilon avoids self-intersection)</li>
+<li>Flip normal toward the incoming ray (for correct back-face shading)</li>
 <li>Return HitRecord with intersection point, normal, distance, and material</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -295,13 +296,13 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classRayTracer_1_1APrimitive.html#af00a66a6a6b8d251f5d21e1cc5077c6b">RayTracer::APrimitive</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Plane_8cpp_source.html#l00026">26</a> of file <a class="el" href="Plane_8cpp_source.html">Plane.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Plane_8cpp_source.html#l00027">27</a> of file <a class="el" href="Plane_8cpp_source.html">Plane.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Plane_a7b741696eb186f6ec9df62e58e795916_cgraph.svg" width="598" height="158"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Plane_a7b741696eb186f6ec9df62e58e795916_cgraph.svg" width="598" height="343"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -327,7 +328,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Plane_8hpp_source.html#l00012">12</a> of file <a class="el" href="Plane_8hpp_source.html">Plane.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Plane_8hpp_source.html#l00014">14</a> of file <a class="el" href="Plane_8hpp_source.html">Plane.hpp</a>.</p>
 
 </div>
 </div>
@@ -351,13 +352,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Plane_8hpp_source.html#l00011">11</a> of file <a class="el" href="Plane_8hpp_source.html">Plane.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Plane_8hpp_source.html#l00013">13</a> of file <a class="el" href="Plane_8hpp_source.html">Plane.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/CorePlugin/Primitives/Plane/<a class="el" href="Plane_8hpp_source.html">Plane.hpp</a></li>
-<li>src/CorePlugin/Primitives/Plane/<a class="el" href="Plane_8cpp_source.html">Plane.cpp</a></li>
+<li>src/Objects/Plugins/CorePlugin/Primitives/Plane/<a class="el" href="Plane_8hpp_source.html">Plane.hpp</a></li>
+<li>src/Objects/Plugins/CorePlugin/Primitives/Plane/<a class="el" href="Plane_8cpp_source.html">Plane.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,0 +1,5 @@
+<map id="RayTracer::AmbientLight" name="RayTracer::AmbientLight">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,139,179,264"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1ILight.html" title=" " alt="" coords="28,5,156,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,104,95,138,89,138,89,104"/>
+</map>

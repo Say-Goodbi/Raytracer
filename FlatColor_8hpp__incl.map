@@ -1,9 +1,0 @@
-<map id="src/CorePlugin/Materials/FlatColor.hpp" name="src/CorePlugin/Materials/FlatColor.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="231,5,411,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,196,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="273,48,162,91,160,86,271,43"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="221,93,421,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="323,46,323,79,318,79,318,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="444,101,597,126"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="366,43,483,93,480,98,364,48"/>
-</map>

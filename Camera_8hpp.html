@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Raytracer: src/CorePlugin/Renderers/Camera/Camera.hpp File Reference</title>
+<title>Raytracer: src/Objects/Plugins/CorePlugin/Renderers/Camera/Camera.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,26 +96,26 @@ $(document).ready(function(){initNavTree('Camera_8hpp.html',''); initResizable()
   <div class="headertitle"><div class="title">Camera.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="ARenderer_8hpp_source.html">../../../Objects/Abstracts/ARenderer/ARenderer.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Point3D_8hpp_source.html">../../../Geometry/Point3D/Point3D.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Vector3D_8hpp_source.html">../../../Geometry/Vector3D/Vector3D.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Rectangle3D_8hpp_source.html">../../../Geometry/Rectangle3D/Rectangle3D.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Ray_8hpp_source.html">../../../Geometry/Ray/Ray.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="HitRecord_8hpp_source.html">../../../Geometry/HitRecord/HitRecord.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="ARenderer_8hpp_source.html">../../../../../Objects/Abstracts/ARenderer/ARenderer.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Point3D_8hpp_source.html">../../../../../Geometry/Point3D/Point3D.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Vector3D_8hpp_source.html">../../../../../Geometry/Vector3D/Vector3D.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Rectangle3D_8hpp_source.html">../../../../../Geometry/Rectangle3D/Rectangle3D.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ray_8hpp_source.html">../../../../../Geometry/Ray/Ray.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="HitRecord_8hpp_source.html">../../../../../Geometry/HitRecord/HitRecord.hpp</a>&quot;</code><br />
 <code>#include &lt;optional&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Camera.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Camera_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Camera_8hpp__incl.svg" width="100%" height="591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Camera_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Camera_8hpp__dep__incl.svg" width="400" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="Camera_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('Camera_8hpp.html',''); initResizable()
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html">RayTracer::Camera</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete renderer plugin that implements camera-based ray casting.  <a href="classRayTracer_1_1Camera.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderer that evaluates the rendering equation deterministically.  <a href="classRayTracer_1_1Camera.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -136,7 +136,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_bcfcb44c233f404c9bb161aac5c4d104.html">CorePlugin</a></li><li class="navelem"><a class="el" href="dir_1464897b71746278a6e7f57ced29b213.html">Renderers</a></li><li class="navelem"><a class="el" href="dir_2c482b1f67f1b4ea4dec60c2047654f0.html">Camera</a></li><li class="navelem"><a class="el" href="Camera_8hpp.html">Camera.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_55b41fb77a5097913bc464fb6a145e9c.html">Objects</a></li><li class="navelem"><a class="el" href="dir_86cf0aee3ebd28cdfb001e081edcf295.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_bcb78dd210b4a6eed89bcede11e18332.html">CorePlugin</a></li><li class="navelem"><a class="el" href="dir_c186a0af92c282e284ae6676b3418fef.html">Renderers</a></li><li class="navelem"><a class="el" href="dir_4b7372ac769ee66d8d36ecfdcabec754.html">Camera</a></li><li class="navelem"><a class="el" href="Camera_8hpp.html">Camera.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

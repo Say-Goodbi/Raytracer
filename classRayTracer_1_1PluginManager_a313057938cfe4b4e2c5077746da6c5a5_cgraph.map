@@ -1,0 +1,9 @@
+<map id="RayTracer::PluginManager::PluginManager" name="RayTracer::PluginManager::PluginManager">
+<area shape="rect" id="Node000001" title="Constructor that loads plugins from the default directory;." alt="" coords="5,5,196,45"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1PluginManager.html#afb07503950646c896c8f542b69899e73" title="Loads all plugins within the directory." alt="" coords="244,5,435,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,23,230,23,230,28,196,28"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1PluginManager.html#a104e84e1a73c2e56d93ce1c25a193dbe" title="Load a plugin from a shared library file." alt="" coords="483,5,673,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="435,23,469,23,469,28,435,28"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1PluginManager.html#a8547716095e146d83d3169b637b12f44" title=" " alt="" coords="721,5,912,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="674,23,707,23,707,28,674,28"/>
+</map>

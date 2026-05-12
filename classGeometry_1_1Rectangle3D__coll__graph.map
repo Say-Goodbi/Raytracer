@@ -1,7 +1,7 @@
 <map id="Geometry::Rectangle3D" name="Geometry::Rectangle3D">
 <area shape="rect" id="Node000001" title="Represents a planar rectangular surface in 3D space. Defined by an origin and two edge vectors (width..." alt="" coords="72,428,241,513"/>
-<area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="5,65,143,291"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,290,143,412,138,413,103,292"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="5,55,143,301"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,300,143,411,138,413,106,302"/>
 <area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html" title="Represents a 3D vector for directions or displacements." alt="" coords="167,5,312,351"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,352,199,405,195,415,190,412,194,403,211,350"/>
 </map>

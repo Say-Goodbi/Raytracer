@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1Camera.html',''); in
 </div><!--header-->
 <div class="contents">
 
-<p>Concrete renderer plugin that implements camera-based ray casting.  
+<p>Renderer that evaluates the rendering equation deterministically.  
  <a href="classRayTracer_1_1Camera.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>&gt;</code></p>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1Camera.html',''); in
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera__inherit__graph.svg" width="166" height="450"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera__inherit__graph.svg" width="166" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::Camera:</div>
@@ -126,10 +126,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a985a4622654cd8ff6379cd2ae288250e" id="r_a985a4622654cd8ff6379cd2ae288250e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a985a4622654cd8ff6379cd2ae288250e">~Camera</a> ()=default</td></tr>
 <tr class="separator:a985a4622654cd8ff6379cd2ae288250e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7f4b6a0e5bf44d17162fb324c289bd" id="r_a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd">generateRay</a> (double u, double v)</td></tr>
-<tr class="memdesc:a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a world-space ray from normalized screen coordinates.  <br /></td></tr>
+<tr class="memdesc:a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a world-space ray from normalized screen coordinates.  <br /></td></tr>
 <tr class="separator:a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3735fca524537e8a0ce755bb77e9a71f" id="r_a3735fca524537e8a0ce755bb77e9a71f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="structRayTracer_1_1Color.html">Color</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f">render</a> (<a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene) override</td></tr>
-<tr class="memdesc:a3735fca524537e8a0ce755bb77e9a71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a full scene into a 2D framebuffer.  <br /></td></tr>
+<tr class="memdesc:a3735fca524537e8a0ce755bb77e9a71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the scene into a 2D framebuffer.  <br /></td></tr>
 <tr class="separator:a3735fca524537e8a0ce755bb77e9a71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classRayTracer_1_1ARenderer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRayTracer_1_1ARenderer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRayTracer_1_1ARenderer.html">RayTracer::ARenderer</a></td></tr>
 <tr class="memitem:a44a60f0d86ca19731689141bfea654c7 inherit pub_methods_classRayTracer_1_1ARenderer" id="r_a44a60f0d86ca19731689141bfea654c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1ARenderer.html#a44a60f0d86ca19731689141bfea654c7">ARenderer</a> (int width, int height)</td></tr>
@@ -146,27 +146,30 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a23a720e6aeb1c1a410b3d704cac7ce11" id="r_a23a720e6aeb1c1a410b3d704cac7ce11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRayTracer_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a23a720e6aeb1c1a410b3d704cac7ce11">castRay</a> (<a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;ray, <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="memdesc:a23a720e6aeb1c1a410b3d704cac7ce11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trace a single ray in the scene and compute the resulting color.  <br /></td></tr>
-<tr class="separator:a23a720e6aeb1c1a410b3d704cac7ce11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68fed07788d6155ad2689dcde296dcf8" id="r_a68fed07788d6155ad2689dcde296dcf8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a68fed07788d6155ad2689dcde296dcf8">computeShadow</a> (<a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;hit, <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene)</td></tr>
-<tr class="memdesc:a68fed07788d6155ad2689dcde296dcf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a hit point is shadowed by any primitive.  <br /></td></tr>
-<tr class="separator:a68fed07788d6155ad2689dcde296dcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd2251f34b6dda51fe338512e598571" id="r_a7cd2251f34b6dda51fe338512e598571"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRayTracer_1_1Color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571">castRay</a> (const <a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;ray, <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;scene, int depth)</td></tr>
+<tr class="memdesc:a7cd2251f34b6dda51fe338512e598571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the rendering equation along a ray, deterministically.  <br /></td></tr>
+<tr class="separator:a7cd2251f34b6dda51fe338512e598571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1985559b3fd1daf90a597ac59f2ba515" id="r_a1985559b3fd1daf90a597ac59f2ba515"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Point3D.html">Geometry::Point3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a1985559b3fd1daf90a597ac59f2ba515">_position</a></td></tr>
-<tr class="memdesc:a1985559b3fd1daf90a597ac59f2ba515"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classRayTracer_1_1Camera.html" title="Concrete renderer plugin that implements camera-based ray casting.">Camera</a> world-space position.  <br /></td></tr>
+<tr class="memdesc:a1985559b3fd1daf90a597ac59f2ba515"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> world-space position.  <br /></td></tr>
 <tr class="separator:a1985559b3fd1daf90a597ac59f2ba515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad52eb3b31eecc63685dff81417c0a4a3" id="r_ad52eb3b31eecc63685dff81417c0a4a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#ad52eb3b31eecc63685dff81417c0a4a3">_direction</a></td></tr>
-<tr class="memdesc:ad52eb3b31eecc63685dff81417c0a4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classRayTracer_1_1Camera.html" title="Concrete renderer plugin that implements camera-based ray casting.">Camera</a> forward direction.  <br /></td></tr>
+<tr class="memdesc:ad52eb3b31eecc63685dff81417c0a4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> forward direction.  <br /></td></tr>
 <tr class="separator:ad52eb3b31eecc63685dff81417c0a4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dd6aea870f6a5cdba1439c7fe7d2afc" id="r_a2dd6aea870f6a5cdba1439c7fe7d2afc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Rectangle3D.html">Geometry::Rectangle3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a2dd6aea870f6a5cdba1439c7fe7d2afc">_screen</a></td></tr>
-<tr class="memdesc:a2dd6aea870f6a5cdba1439c7fe7d2afc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classRayTracer_1_1Camera.html" title="Concrete renderer plugin that implements camera-based ray casting.">Camera</a> projection/screen rectangle in world space.  <br /></td></tr>
+<tr class="memdesc:a2dd6aea870f6a5cdba1439c7fe7d2afc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> projection/screen rectangle in world space.  <br /></td></tr>
 <tr class="separator:a2dd6aea870f6a5cdba1439c7fe7d2afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd030b5ff9d29c786fbcf725de67085f" id="r_afd030b5ff9d29c786fbcf725de67085f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#afd030b5ff9d29c786fbcf725de67085f">_fov</a></td></tr>
 <tr class="memdesc:afd030b5ff9d29c786fbcf725de67085f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field of view in degrees.  <br /></td></tr>
 <tr class="separator:afd030b5ff9d29c786fbcf725de67085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825cc6f2b9d15e5b1ee67a7e23d866e8" id="r_a825cc6f2b9d15e5b1ee67a7e23d866e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a825cc6f2b9d15e5b1ee67a7e23d866e8">_maxDepth</a> = 8</td></tr>
+<tr class="memdesc:a825cc6f2b9d15e5b1ee67a7e23d866e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of recursive ray bounces before the path is terminated.  <br /></td></tr>
+<tr class="separator:a825cc6f2b9d15e5b1ee67a7e23d866e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5deba042fbd465270df347f8c16b8038" id="r_a5deba042fbd465270df347f8c16b8038"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a5deba042fbd465270df347f8c16b8038">_sqrtSamples</a> = 2</td></tr>
+<tr class="memdesc:a5deba042fbd465270df347f8c16b8038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Side length of the per-pixel stratified sample grid (total samples = _sqrtSamples²).  <br /></td></tr>
+<tr class="separator:a5deba042fbd465270df347f8c16b8038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -179,19 +182,21 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a58b6b0fc47969d1143108d7978cb2c55 inherit pro_attribs_classRayTracer_1_1ARenderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Concrete renderer plugin that implements camera-based ray casting. </p>
-<p>The camera converts normalized screen coordinates into rays, traces those rays against scene primitives, applies basic shadowing, and returns the resulting framebuffer. </p>
+<div class="textblock"><p>Renderer that evaluates the rendering equation deterministically. </p>
+<p>This camera uses the Monte Carlo path-tracing framework (BRDF evaluation, PDF weighting, recursive bounces) but removes all randomness:</p>
+<ul>
+<li><b>Bounce directions</b> are chosen deterministically by each material's <code><a class="el" href="classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80" title="Return the deterministic bounce direction for this material.">IMaterial::sample()</a></code> (e.g. perfect specular reflection, cosine-lobe centroid) instead of being drawn from a random distribution.</li>
+<li><b>Anti-aliasing</b> is done with a fixed stratified sub-pixel grid (<code>_sqrtSamples × _sqrtSamples</code> evenly-spaced samples) rather than jittered or random samples.</li>
+</ul>
+<p>The result is fully reproducible: identical inputs always produce identical output, with no noise and no need for a random seed. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00020">20</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00029">29</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa88a1643d3067605407808bf3a5c14d4" name="aa88a1643d3067605407808bf3a5c14d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa88a1643d3067605407808bf3a5c14d4">&#9670;&#160;</a></span>Camera()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RayTracer::Camera::Camera </td>
@@ -229,32 +234,27 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Construct a camera renderer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pos</td><td><a class="el" href="classRayTracer_1_1Camera.html" title="Concrete renderer plugin that implements camera-based ray casting.">Camera</a> position. </td></tr>
-    <tr><td class="paramname">direction</td><td><a class="el" href="classRayTracer_1_1Camera.html" title="Concrete renderer plugin that implements camera-based ray casting.">Camera</a> forward direction. </td></tr>
-    <tr><td class="paramname">fov</td><td>Field of view in degrees. </td></tr>
-    <tr><td class="paramname">width</td><td>Output framebuffer width. </td></tr>
-    <tr><td class="paramname">height</td><td>Output framebuffer height. </td></tr>
+    <tr><td class="paramname">pos</td><td><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> position in world space. </td></tr>
+    <tr><td class="paramname">direction</td><td><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> forward direction (need not be unit length). </td></tr>
+    <tr><td class="paramname">fov</td><td>Horizontal field of view in degrees. </td></tr>
+    <tr><td class="paramname">width</td><td>Output framebuffer width in pixels (default 800). </td></tr>
+    <tr><td class="paramname">height</td><td>Output framebuffer height in pixels (default 600). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00058">58</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00010">10</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_aa88a1643d3067605407808bf3a5c14d4_cgraph.svg" width="375" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_aa88a1643d3067605407808bf3a5c14d4_cgraph.svg" width="576" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -285,8 +285,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a23a720e6aeb1c1a410b3d704cac7ce11" name="a23a720e6aeb1c1a410b3d704cac7ce11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23a720e6aeb1c1a410b3d704cac7ce11">&#9670;&#160;</a></span>castRay()</h2>
+<a id="a7cd2251f34b6dda51fe338512e598571" name="a7cd2251f34b6dda51fe338512e598571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd2251f34b6dda51fe338512e598571">&#9670;&#160;</a></span>castRay()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,14 +297,20 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structRayTracer_1_1Color.html">Color</a> RayTracer::Camera::castRay </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;&#160;</td>
           <td class="paramname"><em>ray</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em>&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -319,116 +325,53 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Trace a single ray in the scene and compute the resulting color. </p>
-<p>Cast a ray into the scene and compute the resulting pixel color.</p>
+<p>Evaluate the rendering equation along a ray, deterministically. </p>
+<p>At each surface hit the bounce direction comes from <code><a class="el" href="classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80" title="Return the deterministic bounce direction for this material.">IMaterial::sample()</a></code>, which is deterministic — no random numbers are involved.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ray</td><td>Ray to cast. </td></tr>
-    <tr><td class="paramname">scene</td><td><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">Scene</a> containing primitives and lights. </td></tr>
+    <tr><td class="paramname">ray</td><td>Incoming ray to evaluate. </td></tr>
+    <tr><td class="paramname">scene</td><td><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">Scene</a> containing all primitives. </td></tr>
+    <tr><td class="paramname">depth</td><td>Remaining bounce budget; returns black when ≤ 0. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Final shaded color for this ray.</dd></dl>
-<p>Algorithm:</p><ol type="1">
-<li>Test the ray against all primitives to find the closest intersection</li>
-<li>If no intersection, return black (0, 0, 0)</li>
-<li>If intersection found: a. Check if the hit point is in shadow by casting rays to all lights b. Compute color using the hit material's shader c. Darken by 90% if in shadow</li>
-<li>Clamp color components to [0, 1] range</li>
+<dl class="section return"><dt>Returns</dt><dd>Radiance estimate along <code>ray</code>.</dd></dl>
+<p>Implements the standard Monte Carlo path-tracing estimator: </p><div class="fragment"><div class="line">L(x, ωo) = Le(x, ωo) + ∫ f(x, ωi, ωo) Li(x, ωi) cosθi dωi</div>
+</div><!-- fragment --><p> but evaluates the integral at a <b>single deterministic direction</b> supplied by <code><a class="el" href="classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80" title="Return the deterministic bounce direction for this material.">IMaterial::sample()</a></code> instead of drawing a random sample. The estimator is then: </p><div class="fragment"><div class="line">L ≈ Le + f(ωi, ωo) * Li(ωi) * cosθi / pdf(ωi)</div>
+</div><!-- fragment --><p> This removes noise and makes rendering fully reproducible at the cost of variance reduction that random multi-sampling would otherwise provide.</p>
+<p>Steps:</p><ol type="1">
+<li>Return black if the bounce budget is exhausted.</li>
+<li>Find the nearest primitive intersection; return black on miss.</li>
+<li>Query the material for its emitted radiance (<code>Le</code>).</li>
+<li>Ask the material for a deterministic bounce direction (<code>ωi</code>).</li>
+<li>If <code>pdf(ωi) ≈ 0</code>, return only the emitted term (degenerate surface).</li>
+<li>Recurse along <code>ωi</code> (with a small normal-bias offset to avoid self-intersection) to get incoming radiance <code>Li</code>.</li>
+<li>Combine: <code>Le + brdf * Li * cosθ / pdf</code>.</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ray</td><td>The ray to cast into the scene </td></tr>
-    <tr><td class="paramname">scene</td><td>Reference to the scene containing primitives and lights </td></tr>
+    <tr><td class="paramname">ray</td><td>Incoming ray to evaluate. </td></tr>
+    <tr><td class="paramname">scene</td><td><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">Scene</a> containing all primitives. </td></tr>
+    <tr><td class="paramname">depth</td><td>Remaining bounce budget; returns black when ≤ 0. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Resulting pixel color (R, G, B) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Radiance estimate along <code>ray</code>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00045">45</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00096">96</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a23a720e6aeb1c1a410b3d704cac7ce11_cgraph.svg" width="659" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a7cd2251f34b6dda51fe338512e598571_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a23a720e6aeb1c1a410b3d704cac7ce11_icgraph.svg" width="366" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="a68fed07788d6155ad2689dcde296dcf8" name="a68fed07788d6155ad2689dcde296dcf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68fed07788d6155ad2689dcde296dcf8">&#9670;&#160;</a></span>computeShadow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool RayTracer::Camera::computeShadow </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &amp;&#160;</td>
-          <td class="paramname"><em>hit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &amp;&#160;</td>
-          <td class="paramname"><em>scene</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Determine whether a hit point is shadowed by any primitive. </p>
-<p>Determine if a hit point is in shadow.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hit</td><td>Intersection data for the shaded point. </td></tr>
-    <tr><td class="paramname">scene</td><td><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">Scene</a> containing primitives and lights. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the point is in shadow for at least one light.</dd></dl>
-<p>For each light in the scene:</p><ol type="1">
-<li>Compute the direction from the hit point toward the light</li>
-<li>Create a shadow ray from the hit point (with small epsilon offset to avoid self-intersection)</li>
-<li>Check if any primitive blocks the ray before reaching the light</li>
-<li>If any primitive blocks, the point is in shadow</li>
-</ol>
-<p>Shadow bias (0.001f): Small offset along surface normal to prevent self-shadowing artifacts</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hit</td><td>The hit record at the intersection point </td></tr>
-    <tr><td class="paramname">scene</td><td>Reference to the scene containing primitives and lights </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the hit point is in shadow from any light, false otherwise </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00088">88</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a68fed07788d6155ad2689dcde296dcf8_icgraph.svg" width="567" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a7cd2251f34b6dda51fe338512e598571_icgraph.svg" width="366" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -459,39 +402,38 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate a world-space ray from normalized screen coordinates. </p>
-<p>Generate a ray from the camera through a screen coordinate.</p>
+<p>Build a world-space ray from normalized screen coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">u</td><td>Horizontal coordinate in [0, 1]. </td></tr>
-    <tr><td class="paramname">v</td><td>Vertical coordinate in [0, 1]. </td></tr>
+    <tr><td class="paramname">u</td><td>Horizontal position in [0, 1] (0 = left, 1 = right). </td></tr>
+    <tr><td class="paramname">v</td><td>Vertical position in [0, 1] (0 = top, 1 = bottom). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ray emitted from the camera through the screen point.</dd></dl>
-<p>Converts normalized screen coordinates (u, v) ∈ [0,1] into a world-space ray by first mapping to the screen rectangle in world space, then computing the ray direction from camera position to screen point.</p>
+<dl class="section return"><dt>Returns</dt><dd>Normalized ray from the camera through the given screen point.</dd></dl>
+<p>Maps (u, v) ∈ [0, 1]² onto the screen rectangle in world space, then returns a ray from the camera position toward that point.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">u</td><td>Normalized horizontal screen coordinate (0 = left, 1 = right) </td></tr>
-    <tr><td class="paramname">v</td><td>Normalized vertical screen coordinate (0 = top, 1 = bottom) </td></tr>
+    <tr><td class="paramname">u</td><td>Horizontal position (0 = left, 1 = right). </td></tr>
+    <tr><td class="paramname">v</td><td>Vertical position (0 = top, 1 = bottom). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ray from camera position with direction toward the screen point </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Unit-direction ray from the camera through the screen point. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00019">19</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00054">54</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a4a7f4b6a0e5bf44d17162fb324c289bd_cgraph.svg" width="591" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a4a7f4b6a0e5bf44d17162fb324c289bd_cgraph.svg" width="591" height="220"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a4a7f4b6a0e5bf44d17162fb324c289bd_icgraph.svg" width="366" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -521,37 +463,38 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Render a full scene into a 2D framebuffer. </p>
-<p>Render the scene to a 2D framebuffer.</p>
+<p>Render the scene into a 2D framebuffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scene</td><td><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">Scene</a> to render. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>2D framebuffer of colors (height x width).</dd></dl>
-<p>Iterates over each pixel in the output framebuffer and:</p><ol type="1">
-<li>Computes normalized screen coordinates (u, v)</li>
-<li>Generates a ray for that pixel via <a class="el" href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Generate a world-space ray from normalized screen coordinates.">generateRay()</a></li>
-<li>Casts the ray and stores the result in the framebuffer</li>
+<dl class="section return"><dt>Returns</dt><dd>2D grid of clamped colors: <code>frame[y][x]</code>, row-major, top-to-bottom.</dd></dl>
+<p>Each pixel is super-sampled with a deterministic stratified grid of <code>_sqrtSamples × _sqrtSamples</code> sub-pixel rays. Sample positions are fixed at the <b>center of each sub-cell</b> — no jitter, no random offset — keeping the overall render fully deterministic.</p>
+<p>Per-pixel steps:</p><ol type="1">
+<li>Iterate over the <code>_sqrtSamples × _sqrtSamples</code> sub-cell grid.</li>
+<li>Compute the sub-cell center in normalized screen space (u, v).</li>
+<li>Generate and path-trace a ray via <code><a class="el" href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world-space ray from normalized screen coordinates.">generateRay()</a></code> + <code><a class="el" href="classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically.">castRay()</a></code>.</li>
+<li>Average all sub-pixel radiance values and clamp to [0, 1].</li>
 </ol>
-<p>Output format: frame[y][x] where y = row (0 = top), x = column (0 = left)</p>
+<p>Output layout: <code>frame[y][x]</code>, y = 0 at the top, x = 0 at the left.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scene</td><td>The scene to render </td></tr>
+    <tr><td class="paramname">scene</td><td><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">Scene</a> to render. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>2D vector of colors: frame[height][width] </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>2D grid of clamped colors: <code>frame[height][width]</code>. </dd></dl>
 
 <p>Implements <a class="el" href="classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271">RayTracer::ARenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00120">120</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00151">151</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a3735fca524537e8a0ce755bb77e9a71f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -578,9 +521,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classRayTracer_1_1Camera.html" title="Concrete renderer plugin that implements camera-based ray casting.">Camera</a> forward direction. </p>
+<p><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> forward direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00026">26</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00035">35</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -606,7 +549,33 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Field of view in degrees. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00030">30</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00039">39</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a825cc6f2b9d15e5b1ee67a7e23d866e8" name="a825cc6f2b9d15e5b1ee67a7e23d866e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a825cc6f2b9d15e5b1ee67a7e23d866e8">&#9670;&#160;</a></span>_maxDepth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RayTracer::Camera::_maxDepth = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maximum number of recursive ray bounces before the path is terminated. </p>
+
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00041">41</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -630,9 +599,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classRayTracer_1_1Camera.html" title="Concrete renderer plugin that implements camera-based ray casting.">Camera</a> world-space position. </p>
+<p><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> world-space position. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00024">24</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00033">33</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -656,15 +625,41 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classRayTracer_1_1Camera.html" title="Concrete renderer plugin that implements camera-based ray casting.">Camera</a> projection/screen rectangle in world space. </p>
+<p><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> projection/screen rectangle in world space. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00028">28</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00037">37</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5deba042fbd465270df347f8c16b8038" name="a5deba042fbd465270df347f8c16b8038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5deba042fbd465270df347f8c16b8038">&#9670;&#160;</a></span>_sqrtSamples</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RayTracer::Camera::_sqrtSamples = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Side length of the per-pixel stratified sample grid (total samples = _sqrtSamples²). </p>
+
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00043">43</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/CorePlugin/Renderers/Camera/<a class="el" href="Camera_8hpp_source.html">Camera.hpp</a></li>
-<li>src/CorePlugin/Renderers/Camera/<a class="el" href="Camera_8cpp_source.html">Camera.cpp</a></li>
+<li>src/Objects/Plugins/CorePlugin/Renderers/Camera/<a class="el" href="Camera_8hpp_source.html">Camera.hpp</a></li>
+<li>src/Objects/Plugins/CorePlugin/Renderers/Camera/<a class="el" href="Camera_8cpp_source.html">Camera.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

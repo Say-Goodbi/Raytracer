@@ -1,5 +1,5 @@
 <map id="RayTracer::Camera" name="RayTracer::Camera">
-<area shape="rect" id="Node000001" title="Concrete renderer plugin that implements camera&#45;based ray casting." alt="" coords="9,219,156,444"/>
+<area shape="rect" id="Node000001" title="Renderer that evaluates the rendering equation deterministically." alt="" coords="14,219,151,464"/>
 <area shape="rect" id="Node000002" href="$classRayTracer_1_1ARenderer.html" title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr..." alt="" coords="5,5,160,171"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,184,85,218,80,218,80,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,184,85,219,80,219,80,184"/>
 </map>

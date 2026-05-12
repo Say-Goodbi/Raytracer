@@ -1,0 +1,5 @@
+<map id="RayTracer::Scene::addPrimitive" name="RayTracer::Scene::addPrimitive">
+<area shape="rect" id="Node000001" title="Add a primitive (shape) to the scene." alt="" coords="284,5,508,31"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Scene.html#a1a093437840c6f1feefa3af43e73e2e8" title="Add primitives to the scene." alt="" coords="5,5,236,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
+</map>

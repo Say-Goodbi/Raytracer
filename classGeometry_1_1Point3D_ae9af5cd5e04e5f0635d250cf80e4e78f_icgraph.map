@@ -1,5 +1,9 @@
 <map id="Geometry::Point3D::operator&#45;" name="Geometry::Point3D::operator&#45;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="208,5,361,45"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title="Test ray–plane intersection using the algebraic plane equation." alt="" coords="5,13,160,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,28,160,28,160,23,195,23"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="227,47,380,87"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="5,5,179,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,49,146,33,148,28,214,44"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title="Test ray–plane intersection using the algebraic plane equation." alt="" coords="15,55,169,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,70,170,70,170,65,213,65"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Sphere.html#a40d439c5a658465a6eeef01f7679ecc9" title="Test ray intersection with this primitive." alt="" coords="10,104,174,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="214,91,148,107,146,101,213,86"/>
 </map>

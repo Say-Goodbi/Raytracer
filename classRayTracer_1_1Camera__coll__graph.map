@@ -1,13 +1,13 @@
 <map id="RayTracer::Camera" name="RayTracer::Camera">
-<area shape="rect" id="Node000001" title="Concrete renderer plugin that implements camera&#45;based ray casting." alt="" coords="191,656,337,821"/>
+<area shape="rect" id="Node000001" title="Renderer that evaluates the rendering equation deterministically." alt="" coords="195,656,333,841"/>
 <area shape="rect" id="Node000002" href="$classRayTracer_1_1ARenderer.html" title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr..." alt="" coords="5,428,160,593"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,602,200,654,196,657,155,606"/>
-<area shape="rect" id="Node000003" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="194,65,331,291"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,291,227,359,219,435,216,515,223,593,233,639,227,640,217,594,211,515,214,435,222,359,233,290"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,603,197,657,193,660,152,606"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="194,55,331,301"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,301,227,368,219,442,217,518,223,593,232,639,227,640,217,594,212,518,214,441,221,367,232,301"/>
 <area shape="rect" id="Node000005" href="$classGeometry_1_1Rectangle3D.html" title="Represents a planar rectangular surface in 3D space. Defined by an origin and two edge vectors (width..." alt="" coords="302,468,471,553"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="307,290,368,452,363,453,302,292"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="311,300,368,452,363,454,306,302"/>
 <area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html" title="Represents a 3D vector for directions or displacements." alt="" coords="382,5,527,351"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="510,351,518,411,518,474,509,536,486,595,460,631,427,662,391,687,354,707,351,702,388,682,424,657,456,627,482,592,504,535,513,474,513,412,505,351"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="509,351,517,411,517,474,508,536,486,595,460,633,425,666,387,693,349,715,347,710,385,689,422,662,456,630,482,592,503,535,512,474,511,411,504,351"/>
 <area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="422,352,401,452,396,451,417,351"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="366,555,319,642,314,640,362,553"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="367,555,321,643,317,641,363,552"/>
 </map>

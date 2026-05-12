@@ -1,0 +1,8 @@
+<map id="RayTracer::ILight::computeLight" name="RayTracer::ILight::computeLight">
+<area shape="rect" id="Node000001" title="Compute this light&#39;s contribution to a surface. Handles both direct illumination and shadow testing i..." alt="" coords="408,29,547,69"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="207,29,360,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,52,361,52,361,47,394,47"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="316,17,304,11,283,8,265,10,254,15,250,21,252,28,247,30,245,20,251,11,264,5,283,3,306,6,318,13"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,29,159,69"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="193,52,159,52,159,47,193,47"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="getInitializers" name="getInitializers">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,63,116,88"/>
+<area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="164,5,335,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,60,163,41,191,32,193,37,165,46,103,65"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="173,55,326,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,73,159,73,159,78,116,78"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="173,119,326,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="100,86,178,112,176,117,98,91"/>
+</map>
