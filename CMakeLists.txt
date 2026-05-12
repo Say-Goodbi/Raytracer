@@ -30,10 +30,16 @@ file(GLOB_RECURSE INTERFACE_SOURCES
 file(GLOB         MAIN_ENTRY    src/*.cpp)          # picks up main.cpp when added
 file(GLOB_RECURSE SYSTEM_SOURCES src/SceneSystem/*.cpp)
 
+# SceneWriter is used directly in main.cpp but lives in the plugin tree
+set(SCENE_WRITER_SOURCES
+    src/Objects/Plugins/CorePlugin/Interfaces/SceneWriter/SceneWriter.cpp
+)
+
 add_executable(raytracer
     ${MAIN_ENTRY}
     ${SYSTEM_SOURCES}
     ${INTERFACE_SOURCES}
+    ${SCENE_WRITER_SOURCES}
 )
 
 target_include_directories(raytracer PRIVATE src)
@@ -42,6 +48,9 @@ target_link_libraries(raytracer PRIVATE
     config++
     dl
 )
+
+# Export all symbols from the main binary so dlopen'd plugins can resolve them
+target_link_options(raytracer PRIVATE -rdynamic)
 
 # ── Plugin shared libraries (.so) ─────────────────────────────────────────────
 file(GLOB PLUGIN_DIRS ${CMAKE_SOURCE_DIR}/src/Objects/Plugins/*)
