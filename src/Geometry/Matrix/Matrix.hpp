@@ -127,9 +127,9 @@ namespace Geometry
                     for (int j = 0; j < OtherCols; ++j) {
                         float sum = 0.0f;
                         for (int k = 0; k < Cols; ++k) {
-                            sum += data[i][k] * other.data[k][j];
+                            sum += data[i][k] * other(k,j);
                         }
-                        result.data[i][j] = sum;
+                        result(i,j) = sum;
                     }
                 }
                 return result;

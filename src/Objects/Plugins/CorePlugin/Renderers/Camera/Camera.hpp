@@ -5,6 +5,7 @@
 #include "../../../../../Geometry/Rectangle3D/Rectangle3D.hpp"
 #include "../../../../../Geometry/Ray/Ray.hpp"
 #include "../../../../../Geometry/HitRecord/HitRecord.hpp"
+#include "../../../../../Geometry/TransformMatrix/TransformMatrix.hpp"
 #include <optional>
 
 namespace RayTracer
@@ -29,10 +30,8 @@ namespace RayTracer
     class Camera : public ARenderer
     {
     private:
-        /// Camera world-space position.
-        Geometry::Point3D _position;
-        /// Camera forward direction.
-        Geometry::Vector3D _direction;
+        /// Camera transform (world-space): encodes position + orientation.
+        Geometry::TransformMatrix _transform;
         /// Camera projection/screen rectangle in world space.
         Geometry::Rectangle3D _screen;
         /// Field of view in degrees.
@@ -67,6 +66,17 @@ namespace RayTracer
          */
         Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width = 800, int height = 600);
 
+        /**
+         * @brief Construct a camera from a 4x4 affine transform matrix.
+         * @param transform Camera-to-world transform (columns = right, up, forward, translation).
+         */
+        Camera(Geometry::TransformMatrix transform, float fov, int width = 800, int height = 600);
+
+    private:
+        /// Rebuild the _screen rectangle from the current _transform and _fov.
+        void buildScreenFromTransform();
+
+    public:
         ~Camera() = default;
 
         /**

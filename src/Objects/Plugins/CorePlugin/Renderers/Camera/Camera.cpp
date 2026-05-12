@@ -8,8 +8,9 @@
 namespace RayTracer
 {
     Camera::Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width, int height)
-        : ARenderer(width, height), _position(pos), _direction(direction), _fov(fov)
+        : ARenderer(width, height), _fov(fov)
     {
+        // Build a transform matrix from position + forward direction.
         Geometry::Vector3D forward = (direction.length() > 1e-6)
             ? direction.normalize()
             : Geometry::Vector3D(0, 1, 0); // default: look toward +y
@@ -21,24 +22,22 @@ namespace RayTracer
         Geometry::Vector3D right     = Geometry::Vector3D::cross(forward, worldUp).normalize();
         Geometry::Vector3D screenUp  = Geometry::Vector3D::cross(right, forward).normalize();
 
-        double fovRad = fov * M_PI / 180.0;
-        double halfW  = std::tan(fovRad / 2.0);
-        double halfH  = halfW * ((double)height / width);
+        Geometry::TransformMatrix t = Geometry::TransformMatrix::identity();
+        // columns: right, up, forward
+        t(0,0) = right.x;  t(1,0) = right.y;  t(2,0) = right.z;
+        t(0,1) = screenUp.x; t(1,1) = screenUp.y; t(2,1) = screenUp.z;
+        t(0,2) = forward.x; t(1,2) = forward.y; t(2,2) = forward.z;
+        // translation
+        t(0,3) = pos.x; t(1,3) = pos.y; t(2,3) = pos.z;
 
-        // Screen center is 1 unit in front of the camera
-        Geometry::Point3D center(pos.x + forward.x, pos.y + forward.y, pos.z + forward.z);
+        _transform = t;
+        buildScreenFromTransform();
+    }
 
-        // Top-left corner: move left by halfW and up by halfH
-        _screen.origin = Geometry::Point3D(
-            center.x - right.x * halfW + screenUp.x * halfH,
-            center.y - right.y * halfW + screenUp.y * halfH,
-            center.z - right.z * halfW + screenUp.z * halfH);
-
-        // Width vector spans the full horizontal extent (left → right)
-        _screen.width = Geometry::Vector3D(right.x * 2*halfW, right.y * 2*halfW, right.z * 2*halfW);
-
-        // Height vector spans the full vertical extent (top → bottom)
-        _screen.height = Geometry::Vector3D(-screenUp.x * 2*halfH, -screenUp.y * 2*halfH, -screenUp.z * 2*halfH);
+    Camera::Camera(Geometry::TransformMatrix transform, float fov, int width, int height)
+        : ARenderer(width, height), _transform(transform), _fov(fov)
+    {
+        buildScreenFromTransform();
     }
 
     /**
@@ -54,12 +53,61 @@ namespace RayTracer
     Geometry::Ray Camera::generateRay(double u, double v)
     {
         Geometry::Point3D screenPoint = this->_screen.pointAt(u, v);
+        Geometry::Point3D origin = this->_transform * Geometry::Point3D(0, 0, 0);
         Geometry::Vector3D rayDirection = Geometry::Vector3D(
-                                              screenPoint.x - this->_position.x,
-                                              screenPoint.y - this->_position.y,
-                                              screenPoint.z - this->_position.z)
+                                              screenPoint.x - origin.x,
+                                              screenPoint.y - origin.y,
+                                              screenPoint.z - origin.z)
                                               .normalize();
-        return Geometry::Ray(this->_position, rayDirection);
+        return Geometry::Ray(origin, rayDirection);
+    }
+
+    void Camera::buildScreenFromTransform()
+    {
+        // Extract basis columns and translation from _transform
+        Geometry::Point3D pos(
+            _transform(0,3),
+            _transform(1,3),
+            _transform(2,3));
+
+        Geometry::Vector3D right(
+            _transform(0,0),
+            _transform(1,0),
+            _transform(2,0));
+
+        Geometry::Vector3D up(
+            _transform(0,1),
+            _transform(1,1),
+            _transform(2,1));
+
+        Geometry::Vector3D forward(
+            _transform(0,2),
+            _transform(1,2),
+            _transform(2,2));
+
+        // Normalize basis vectors (in case transform wasn't orthonormal)
+        forward = (forward.length() > 1e-6) ? forward.normalize() : Geometry::Vector3D(0, 1, 0);
+        right = (right.length() > 1e-6) ? right.normalize() : Geometry::Vector3D::cross(forward, Geometry::Vector3D(0,0,1)).normalize();
+        up = Geometry::Vector3D::cross(right, forward).normalize();
+
+        double fovRad = _fov * M_PI / 180.0;
+        double halfW  = std::tan(fovRad / 2.0);
+        double halfH  = halfW * ((double)_height / _width);
+
+        // Screen center is 1 unit in front of the camera
+        Geometry::Point3D center(pos.x + forward.x, pos.y + forward.y, pos.z + forward.z);
+
+        // Top-left corner: move left by halfW and up by halfH
+        _screen.origin = Geometry::Point3D(
+            center.x - right.x * halfW + up.x * halfH,
+            center.y - right.y * halfW + up.y * halfH,
+            center.z - right.z * halfW + up.z * halfH);
+
+        // Width vector spans the full horizontal extent (left → right)
+        _screen.width = Geometry::Vector3D(right.x * 2*halfW, right.y * 2*halfW, right.z * 2*halfW);
+
+        // Height vector spans the full vertical extent (top → bottom)
+        _screen.height = Geometry::Vector3D(-up.x * 2*halfH, -up.y * 2*halfH, -up.z * 2*halfH);
     }
 
     /**
