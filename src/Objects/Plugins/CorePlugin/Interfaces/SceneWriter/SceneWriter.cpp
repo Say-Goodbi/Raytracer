@@ -38,7 +38,7 @@ namespace RayTracer
      */
     void SceneWriter::execute(Scene& scene)
     {
-        auto frameBuffer = _renderer->render(scene);
+        std::vector<std::vector<RayTracer::Color>> frameBuffer = _renderer->render(scene);
         if (frameBuffer.empty())
             return;
 
