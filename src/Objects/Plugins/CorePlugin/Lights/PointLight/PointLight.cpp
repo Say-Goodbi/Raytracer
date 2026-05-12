@@ -1,5 +1,5 @@
 #include "PointLight.hpp"
-#include "../../../Geometry/Ray/Ray.hpp"
+#include "../../../../../Geometry/Ray/Ray.hpp"
 #include <algorithm>
 
 namespace RayTracer
@@ -20,7 +20,7 @@ namespace RayTracer
      * @param primitives Scene primitives used for occlusion testing
      * @return Color contribution from this light, attenuated if occluded
      */
-    Color PointLight::computeLight(const Geometry::HitRecord& hit, const std::vector<std::unique_ptr<APrimitive>>& primitives) const
+    Color PointLight::computeLight(const Geometry::HitRecord& hit, const std::vector<std::shared_ptr<APrimitive>>& primitives) const
     {
         // 1. direction from hit point toward the light
         Geometry::Vector3D toLight = Geometry::Vector3D(
@@ -42,11 +42,11 @@ namespace RayTracer
         );
 
         // 3. occlusion test — check if any primitive blocks the light
-        for (const auto& primitive : primitives) {
-            auto obstruction = primitive->hit(shadowRay);
-            if (obstruction && obstruction->rayDistance < lightDistance)
-                return Color(0, 0, 0);
-        }
+        // for (const auto& primitive : primitives) {
+        //     auto obstruction = primitive->hit(shadowRay);
+        //     if (obstruction && obstruction->rayDistance < lightDistance)
+        //         return Color(0, 0, 0);
+        // }
 
         // 4. no obstacle — return full diffuse contribution
         double diffuse = std::max(0.0, hit.normal.dot(toLightNorm));

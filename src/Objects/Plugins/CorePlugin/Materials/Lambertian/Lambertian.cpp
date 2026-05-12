@@ -3,7 +3,6 @@
 namespace RayTracer
 {
     Lambertian::Lambertian(const Color& albedo) : _albedo(albedo) {}
-    Lambertian::~Lambertian() = default;
 
     Color Lambertian::evaluate(const Geometry::Vector3D&, const Geometry::Vector3D&, const Geometry::Vector3D&) const
     {
@@ -34,5 +33,10 @@ namespace RayTracer
     float Lambertian::pdf(const Geometry::Vector3D& normal, const Geometry::Vector3D&, const Geometry::Vector3D& sampleDir) const
     {
         return std::max(0.0f, (float)normal.dot(sampleDir)) / M_PI;
+    }
+
+    Color Lambertian::emission() const
+    {
+        return Color(0, 0, 0);
     }
 } // namespace RayTracer

@@ -3,6 +3,7 @@ node_modules/
 commitlint.config.js
 .husky/
 
+raytracer
 *.o
 *.so
 not-to-push

@@ -16,6 +16,6 @@ namespace RayTracer
         /// @param hit The hit record
         /// @param primitives Scene primitives for occlusion tests
         /// @return Color contribution from this light, attenuated if occluded
-        virtual Color computeLight(const Geometry::HitRecord& hit, const std::vector<std::unique_ptr<APrimitive>>& primitives) const = 0;
+        virtual Color computeLight(const Geometry::HitRecord& hit, const std::vector<std::shared_ptr<APrimitive>>& primitives) const = 0;
     };
 } // namespace RayTracer

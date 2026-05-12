@@ -14,6 +14,6 @@ namespace RayTracer
         ~AmbientLight() = default;
 
         /// @brief Ambient light never casts shadows, just returns color * intensity
-        Color computeLight( const Geometry::HitRecord& hit, const std::vector<std::unique_ptr<APrimitive>>& primitives) const override;
+        Color computeLight( const Geometry::HitRecord& hit, const std::vector<std::shared_ptr<APrimitive>>& primitives) const override;
     };
 } // namespace RayTracer

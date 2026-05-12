@@ -1,7 +1,7 @@
 #include "DirectionalLight.hpp"
-#include "../../../Geometry/Ray/Ray.hpp"
-#include "../../../Geometry/HitRecord/HitRecord.hpp"
-#include "../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
+#include "../../../../../Geometry/Ray/Ray.hpp"
+#include "../../../../../Geometry/HitRecord/HitRecord.hpp"
+#include "../../../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
 #include <algorithm>
 
 namespace RayTracer
@@ -13,7 +13,7 @@ namespace RayTracer
     /// Shadow ray is cast in the opposite direction of the light.
     /// No distance limit since the light is infinitely far away.
     Color DirectionalLight::computeLight(
-        const Geometry::HitRecord& hit, const std::vector<std::unique_ptr<APrimitive>>& primitives) const
+        const Geometry::HitRecord& hit, const std::vector<std::shared_ptr<APrimitive>>& primitives) const
     {
         // shadow ray in opposite direction of the light
         Geometry::Vector3D toLight = Geometry::Vector3D(
@@ -32,11 +32,11 @@ namespace RayTracer
         );
 
         // occlusion test — no distance limit, light is far
-        for (const auto& primitive : primitives) {
-            auto obstruction = primitive->hit(shadowRay);
-            if (obstruction)
-                return Color(0, 0, 0); // fully occluded, ambient handles the base intensity
-        }
+        // for (const auto& primitive : primitives) {
+        //     auto obstruction = primitive->hit(shadowRay);
+        //     if (obstruction)
+        //         return Color(0, 0, 0); // fully occluded, ambient handles the base intensity
+        // }
 
         double diffuse = std::max(0.0, hit.normal.dot(toLight));
         return _color * _intensity * diffuse;
