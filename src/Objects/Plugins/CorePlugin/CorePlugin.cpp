@@ -86,7 +86,7 @@ extern "C"
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
                     std::shared_ptr<RayTracer::Lambertian> material = std::make_shared<RayTracer::Lambertian>(color);
 
-                    std::shared_ptr<RayTracer::APrimitive> plane = std::make_shared<RayTracer::Plane>(point, normal, material.get());
+                    std::shared_ptr<RayTracer::APrimitive> plane = std::make_shared<RayTracer::Plane>(point, normal, material);
                     return std::static_pointer_cast<RayTracer::APrimitive>(plane);
                 }
             },
@@ -111,7 +111,7 @@ extern "C"
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
                     std::shared_ptr<RayTracer::Lambertian> material = std::make_shared<RayTracer::Lambertian>(color);
 
-                    std::shared_ptr<RayTracer::APrimitive> sphere = std::make_shared<RayTracer::Sphere>(center, radius, material.get());
+                    std::shared_ptr<RayTracer::APrimitive> sphere = std::make_shared<RayTracer::Sphere>(center, radius, material);
                     return std::static_pointer_cast<RayTracer::APrimitive>(sphere);
                 }
             },
