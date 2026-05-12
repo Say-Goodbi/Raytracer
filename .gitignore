@@ -3,6 +3,7 @@ node_modules/
 commitlint.config.js
 .husky/
 
+raytracer
 *.o
 *.so
 not-to-push
@@ -15,3 +16,4 @@ cmake_install.cmake
 build
 dev-local
 *.json
+*.cfg

@@ -24,4 +24,12 @@ namespace Geometry
     {
         return Vector3D(x - other.x, y - other.y, z - other.z);
     }
+
+    Point3D &Point3D::operator=(const Point3D &other)
+    {
+        x = other.x;
+        y = other.y;
+        z = other.z;
+        return *this;
+    }
 }

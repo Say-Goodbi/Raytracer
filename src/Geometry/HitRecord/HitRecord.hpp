@@ -2,7 +2,8 @@
 
 #include "../Point3D/Point3D.hpp"
 #include "../Vector3D/Vector3D.hpp"
-#include "../../Objects/Abstracts/IMaterial.hpp"
+
+namespace RayTracer { class IMaterial; }
 
 namespace Geometry
 {

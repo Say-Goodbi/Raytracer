@@ -113,4 +113,12 @@ namespace Geometry
         z /= scalar;
         return *this;
     }
+
+    Vector3D Vector3D::operator=(const Vector3D &other)
+    {
+        x = other.x;
+        y = other.y;
+        z = other.z;
+        return *this;
+    }    
 }

@@ -1,5 +1,7 @@
 #pragma once
 #include "../IMaterial.hpp"
+#include <optional>
+#include "../../../Geometry/Ray/Ray.hpp"
 
 namespace RayTracer
 {
