@@ -6,6 +6,7 @@
 #include "Materials/Lambertian/Lambertian.hpp"
 #include "Primitives/Plane/Plane.hpp"
 #include "Primitives/Sphere/Sphere.hpp"
+#include "Primitives/Cylinder/Cylinder.hpp"
 #include "Lights/PointLight/PointLight.hpp"
 #include "Lights/DirectionalLight/DirectionalLight.hpp"
 #include "Lights/AmbientLight/AmbientLight.hpp"
@@ -100,6 +101,35 @@ extern "C"
                     return std::static_pointer_cast<RayTracer::APrimitive>(sphere);
                 }
             },
+            {
+                "cylinders", [](RayTracer::NodePtr node) -> RayTracer::Component
+                {
+                    const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
+
+                    if (settingsMap.find("origin") == settingsMap.end() || settingsMap.find("axis") == settingsMap.end() || settingsMap.find("radius") == settingsMap.end() || settingsMap.find("color") == settingsMap.end())
+                        throw RayTracer::Exception("Missing required parameters for Cylinder primitive: origin, axis, radius, color");
+
+                    const RayTracer::Object &ref_origin = std::get<RayTracer::Object>(settingsMap.at("origin")->value);
+                    const RayTracer::Object &ref_axis = std::get<RayTracer::Object>(settingsMap.at("axis")->value);
+                    const RayTracer::Object &ref_color = std::get<RayTracer::Object>(settingsMap.at("color")->value);
+                    const float radius = std::get<float>(std::get<RayTracer::ScalarValue>(settingsMap.at("radius")->value));
+                    Geometry::Point3D origin = Geometry::Point3D(
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_origin.at("x")->value)),
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_origin.at("y")->value)),
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_origin.at("z")->value)));
+                    Geometry::Vector3D axis = Geometry::Vector3D(
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_axis.at("x")->value)),
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_axis.at("y")->value)),
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_axis.at("z")->value)));
+                    RayTracer::Color color = RayTracer::Color(
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)) / 255.0,
+                        std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
+                    std::shared_ptr<RayTracer::Lambertian> material = std::make_shared<RayTracer::Lambertian>(color);
+                    std::shared_ptr<RayTracer::APrimitive> cylinder = std::make_shared<RayTracer::Cylinder>(origin, axis, radius, material);
+                    return std::static_pointer_cast<RayTracer::APrimitive>(cylinder);
+                }
+            },
             // Light
             {
                 "point", [](RayTracer::NodePtr node) -> RayTracer::Component
@@ -170,4 +200,4 @@ extern "C"
             }
         };
     }
-}
+};
