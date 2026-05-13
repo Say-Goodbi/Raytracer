@@ -31,12 +31,12 @@ namespace RayTracer
             toLight
         );
 
-        // occlusion test — no distance limit, light is far
-        // for (const auto& primitive : primitives) {
-        //     auto obstruction = primitive->hit(shadowRay);
-        //     if (obstruction)
-        //         return Color(0, 0, 0); // fully occluded, ambient handles the base intensity
-        // }
+        // occlusion test
+        for (const auto& primitive : primitives) {
+            auto obstruction = primitive->hit(shadowRay);
+            if (obstruction)
+                return Color(0, 0, 0);
+        }
 
         double diffuse = std::max(0.0, hit.normal.dot(toLight));
         return _color * _intensity * diffuse;
