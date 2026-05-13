@@ -2,7 +2,7 @@
 
 namespace RayTracer
 {
-    Lambertian::Lambertian(const Color& albedo) : _albedo(albedo) {}
+    Lambertian::Lambertian(const Color& albedo) : AMaterial(albedo) {}
 
     Color Lambertian::evaluate(const Geometry::Vector3D&, const Geometry::Vector3D&, const Geometry::Vector3D&) const
     {
