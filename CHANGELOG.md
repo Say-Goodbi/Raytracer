@@ -1,3 +1,39 @@
+## [1.2.1](https://github.com/Say-Goodbi/Raytracer/compare/v1.2.0...v1.2.1) (2026-05-12)
+
+
+### Bug Fixes
+
+* cmake ([4f5ef2b](https://github.com/Say-Goodbi/Raytracer/commit/4f5ef2b534842fad8e06753c590d1ecc8ba04af0))
+
+# [1.2.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.1.0...v1.2.0) (2026-05-12)
+
+
+### Bug Fixes
+
+* compile errors reducted to SceneLoader, which needs heavy rework ([d0f91f9](https://github.com/Say-Goodbi/Raytracer/commit/d0f91f9976519a135e1239137d880c809e379b4d))
+* package management ([55eb931](https://github.com/Say-Goodbi/Raytracer/commit/55eb9319435dcede835e9925b179b856dfaa8a38))
+* update include paths and improve type safety in color computation ([4515900](https://github.com/Say-Goodbi/Raytracer/commit/4515900abe208b99c10e391e4d378a3422c31948))
+* updated the rendenring logic ([1bd4291](https://github.com/Say-Goodbi/Raytracer/commit/1bd4291c87df729ecf4f0226319d92c3736c28f6))
+
+
+### Features
+
+* cmakelist ([be9cc6f](https://github.com/Say-Goodbi/Raytracer/commit/be9cc6f6800ef7ab801439e9923dcd1cd2bd1efa))
+* cylinder primitive ([aad303c](https://github.com/Say-Goodbi/Raytracer/commit/aad303c59fcbacc3037db919607f878367d1ff97))
+* implement Monte Carlo path tracing with PBR material interface ([428f2cf](https://github.com/Say-Goodbi/Raytracer/commit/428f2cfdc520524b1d663d027bd0ea1760f4e886))
+* **light:** add ambient light implementation ([8393035](https://github.com/Say-Goodbi/Raytracer/commit/8393035c3432f48a0086342746db54df5ffcb301))
+* **light:** add directional light implementation ([7a2a710](https://github.com/Say-Goodbi/Raytracer/commit/7a2a71052e84c00c5c3785ba96fb0cf0d27bb460))
+* **light:** add point light implementation ([a7ae251](https://github.com/Say-Goodbi/Raytracer/commit/a7ae2518c28fcc803c9ba044466fc35449af5c3d))
+* **light:** incorporate direct light calculation in ray casting ([f10f7b7](https://github.com/Say-Goodbi/Raytracer/commit/f10f7b7b694b938449b9db474eec8d787c7ea41f))
+* main ([901edd8](https://github.com/Say-Goodbi/Raytracer/commit/901edd80157d2c541e32952d7aa524d18ff34e8f))
+* **parser:** add support for vector objects in configuration parsing ([5779baf](https://github.com/Say-Goodbi/Raytracer/commit/5779baf54c7eeaf4b55b7828697fd72c10a93905))
+* **parser:** implement configuration parser class for reading and parsing settings ([e33d25a](https://github.com/Say-Goodbi/Raytracer/commit/e33d25ad1c7f559f4568c1b70506ee2e48c87419))
+* replace FlatColor with Lambertian BRDF and fix Plane hit ([1081413](https://github.com/Say-Goodbi/Raytracer/commit/108141380b3175c81fad3a12825cf66cc7a432fd))
+* **scene:** implement scene and scene loader with camera and light configurations ([1975de5](https://github.com/Say-Goodbi/Raytracer/commit/1975de57fe65798dbf503e9b21d85113c93e2752))
+* sphere primitive ([ded6db6](https://github.com/Say-Goodbi/Raytracer/commit/ded6db6b1a32b304fa95a25d2a3c6c3366088618))
+* sphere primitive ([f6a4f97](https://github.com/Say-Goodbi/Raytracer/commit/f6a4f9752f2bbc0bfdd4c5605807c756df442e3b))
+* utils random generator ([5401306](https://github.com/Say-Goodbi/Raytracer/commit/5401306ae5a6fd30168c3773794fa926e9fbac1c))
+
 # [1.1.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.0.0...v1.1.0) (2026-04-30)
 
 
