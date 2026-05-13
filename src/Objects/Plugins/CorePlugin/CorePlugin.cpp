@@ -18,21 +18,6 @@ extern "C"
     std::map<std::string, std::function<RayTracer::Component(RayTracer::NodePtr)>> getInitializers()
     {
         return {
-            // @todo Fix :
-            // {"SceneWriter", [](RayTracer::NodePtr node) -> RayTracer::Component
-            //  {
-            //      RayTracer::Object settingsMap = std::get<RayTracer::Object>(node->value);
-            //      auto rendererPtr = std::get<std::shared_ptr<RayTracer::ARenderer>>(std::get<RayTracer::ScalarValue>(settingsMap.at("renderer")));
-            //      auto outputFile = std::get<std::string>(std::get<RayTracer::ScalarValue>(settingsMap.at("outputFile")));
-            //      auto sw = std::make_shared<RayTracer::SceneWriter>(rendererPtr.get(), outputFile);
-            //      return std::static_pointer_cast<RayTracer::AInterface>(sw);
-            //  }}
-            // {
-            //     "Camera", [](RayTracer::NodePtr node) -> RayTracer::Component
-            //     {
-            //         return ;
-            //     }
-            // },
             {
                 "camera", [](RayTracer::NodePtr node) -> RayTracer::Component
                 {
