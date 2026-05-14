@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.3.1...v1.4.0) (2026-05-14)
+
+
+### Bug Fixes
+
+* camera matrix initialization maths and config files rotations ([f89b7e3](https://github.com/Say-Goodbi/Raytracer/commit/f89b7e3ff17c657a4ee2b70e90754f37c6f07f0e))
+* missing default key components throws an error instead of crashing ([19d2964](https://github.com/Say-Goodbi/Raytracer/commit/19d29647a336ef600a76d05875502a0046104ac5))
+
+
+### Features
+
+* acceleration data structure inside scenes, using bounding volume hierarchy (bvh) built on surface area heuristic (sah) ([da2829e](https://github.com/Say-Goodbi/Raytracer/commit/da2829ee2fe1af8954b49828dc8e1818fc3d2265))
+* primitives holding bounding boxes method aabb ([42f883c](https://github.com/Say-Goodbi/Raytracer/commit/42f883c557e2d2ed67c3993bcd0b409c27f3d153))
+
 ## [1.3.1](https://github.com/Say-Goodbi/Raytracer/compare/v1.3.0...v1.3.1) (2026-05-14)
 
 
