@@ -1,9 +1,11 @@
 #include "Interfaces/SceneWriter/SceneWriter.hpp"
+#include <cmath>
 #include "../../Plugin.hpp"
 #include "../../../Geometry/Point3D/Point3D.hpp"
 #include "../../../Geometry/Vector3D/Vector3D.hpp"
 #include "../../../Utils/Color.hpp"
 #include "Materials/Lambertian/Lambertian.hpp"
+#include "Materials/Phong/Phong.hpp"
 #include "Primitives/Plane/Plane.hpp"
 #include "Primitives/Sphere/Sphere.hpp"
 #include "Primitives/Cylinder/Cylinder.hpp"
@@ -18,6 +20,10 @@ extern "C"
         {"lambertian", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
         {
             return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Lambertian>(color));
+        }},
+        {"phong", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
+        {
+            return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Phong>(color));
         }}
     };
 
@@ -60,7 +66,14 @@ extern "C"
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_rotation.at("y")->value)),
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_rotation.at("z")->value)));
 
-                    std::shared_ptr<RayTracer::ARenderer> camera = std::make_shared<RayTracer::Camera>(position, rotation, fieldOfView, width, height);
+                    // Convert Euler rotation to a direction vector 
+                    float rx = rotation.x * (float)(M_PI / 180.0);
+                    float ry = rotation.y * (float)(M_PI / 180.0);
+                    Geometry::Vector3D forward(
+                        -std::sin(ry) * std::cos(rx),
+                         std::cos(ry) * std::cos(rx),
+                         std::sin(rx));
+                    std::shared_ptr<RayTracer::ARenderer> camera = std::make_shared<RayTracer::Camera>(position, forward, fieldOfView, width, height);
                     return std::static_pointer_cast<RayTracer::ARenderer>(camera);
                 }
             },
