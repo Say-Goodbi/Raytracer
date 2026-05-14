@@ -59,6 +59,9 @@ extern "C"
                     const float fieldOfView = settingsMap.find("fieldOfView") != settingsMap.end()
                         ? Raytracer::fromNode<float>(settingsMap.at("fieldOfView"))
                         : 50.0f;
+                    const bool useBVH = settingsMap.find("bvh") != settingsMap.end()
+                        ? Raytracer::fromNode<bool>(settingsMap.at("bvh"))
+                        : true;
 
                     Geometry::TransformMatrix transform = Geometry::TransformMatrix::translation(
                         static_cast<float>(position.x),
@@ -70,11 +73,12 @@ extern "C"
                         static_cast<float>(scale.y),
                         static_cast<float>(scale.z)
                     );
-                    transform *= Geometry::TransformMatrix::rotationY(static_cast<float>(rotation.y));
+                    // Apply rotations in explicit axis order: X (pitch), then Y (yaw), then Z (roll)
                     transform *= Geometry::TransformMatrix::rotationX(static_cast<float>(rotation.x));
+                    transform *= Geometry::TransformMatrix::rotationY(static_cast<float>(rotation.y));
                     transform *= Geometry::TransformMatrix::rotationZ(static_cast<float>(rotation.z));
 
-                    std::shared_ptr<RayTracer::ARenderer> camera = std::make_shared<RayTracer::Camera>(transform, fieldOfView, resolution.first, resolution.second);
+                    std::shared_ptr<RayTracer::ARenderer> camera = std::make_shared<RayTracer::Camera>(transform, fieldOfView, resolution.first, resolution.second, useBVH);
                     return std::static_pointer_cast<RayTracer::ARenderer>(camera);
                 }
             },

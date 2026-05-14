@@ -1,0 +1,51 @@
+/**
+ * @page space_partitioning Space Partitioning
+ *
+ * This branch adds an optional BVH acceleration structure for scene traversal.
+ * The implementation is centered around the scene boundary, not the renderer:
+ * the camera only toggles preparation, while `Scene` owns the cached BVH and the
+ * fallback list of unbounded primitives.
+ *
+ * Relevant code:
+ * - [RayTracer::Scene::prepareAccelerationStructure](../src/SceneSystem/Scene/Scene.cpp#L41) builds the per-render acceleration state
+ * - [RayTracer::Scene::hit](../src/SceneSystem/Scene/Scene.cpp#L64) answers ray queries using the cached BVH when enabled
+ * - [RayTracer::Camera::render](../src/Objects/Plugins/CorePlugin/Renderers/Camera/Camera.cpp#L181) triggers the scene preparation step once per frame
+ * - [RayTracer::Camera::castRay](../src/Objects/Plugins/CorePlugin/Renderers/Camera/Camera.cpp#L142) now queries the scene instead of owning traversal data
+ * - [RayTracer::BVH](../src/SceneSystem/BVH/BVH.hpp#L14) contains the SAH builder and tree traversal
+ * - [RayTracer::APrimitive::getBounds](../src/Objects/Abstracts/APrimitive/APrimitive.hpp#L30) defines the contract used to decide whether a primitive can enter the tree
+ *
+ * BVH build flow:
+ * 1. `RayTracer::Scene::prepareAccelerationStructure()` walks the current primitive list.
+ * 2. Primitives that return a finite `getBounds()` are inserted into the BVH candidate set.
+ * 3. Primitives without bounds are stored in the unbounded fallback list.
+ * 4. `BVH` builds a hierarchy by sorting candidate records by centroid on each axis.
+ * 5. Each split is scored with a surface area heuristic using the child areas and primitive counts.
+ * 6. The cheapest split is chosen recursively until a leaf is small enough or no split improves the cost.
+ *
+ * Behavior:
+ * - BVH is enabled only when the camera initializer contains `useBVH = true`
+ * - the camera asks `Scene` to prepare acceleration data, but does not own the BVH itself
+ * - `Scene` stores the BVH and the unbounded fallback primitives for the current render pass
+ * - bounded primitives are inserted into the tree
+ * - unbounded primitives, such as planes and infinite cylinders, stay on the linear fallback path
+ * - when the flag is absent or false, the renderer keeps the original linear traversal
+ *
+ * Camera settings supported by the initializer include individual defaults:
+ * - `resolution`: `800 x 600`
+ * - `scale`: `(1, 1, 1)`
+ * - `position`: `(0, 0, 0)`
+ * - `rotation`: `(0, 0, 0)`
+ * - `fieldOfView`: `50`
+ * - `useBVH`: `false`
+ *
+ * Notes:
+ * - `Sphere` exposes finite bounds and participates in BVH construction through [getBounds](../src/Objects/Plugins/CorePlugin/Primitives/Sphere/Sphere.cpp#L29).
+ * - `Plane` and `Cylinder` currently return no bounds, so they remain outside the tree.
+ * - The BVH is rebuilt at render time from the current scene primitive list and cached inside `Scene`.
+ * - The renderer still computes lighting from the same scene lights after the nearest hit has been found.
+ *
+ * Why this shape:
+ * - It keeps traversal state close to the scene data that owns the primitives.
+ * - It avoids passing temporary acceleration objects through every ray bounce.
+ * - It makes the camera responsible only for view setup and frame orchestration.
+ */
