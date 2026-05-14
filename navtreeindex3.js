@@ -1,0 +1,23 @@
+var NAVTREEINDEX3 =
+{
+"structRayTracer_1_1Color.html#a327b4006c4abe3faf3491929b8ee1a7c":[3,0,1,6,6],
+"structRayTracer_1_1Color.html#a3a5645c19c0b60a67b3dfac325727248":[3,0,1,6,4],
+"structRayTracer_1_1Color.html#a3a5645c19c0b60a67b3dfac325727248":[2,0,1,6,4],
+"structRayTracer_1_1Color.html#a743e525cffb3a3a3b63267b76b615432":[3,0,1,6,10],
+"structRayTracer_1_1Color.html#a743e525cffb3a3a3b63267b76b615432":[2,0,1,6,10],
+"structRayTracer_1_1Color.html#abee709d919baf85b9c3d1197830957a0":[3,0,1,6,0],
+"structRayTracer_1_1Color.html#abee709d919baf85b9c3d1197830957a0":[2,0,1,6,0],
+"structRayTracer_1_1Color.html#ac6ad4511d2e9abc6bcbb5401532702ae":[3,0,1,6,8],
+"structRayTracer_1_1Color.html#ac6ad4511d2e9abc6bcbb5401532702ae":[2,0,1,6,8],
+"structRayTracer_1_1Color.html#ad224166942560c4b3930f6ec1939602f":[2,0,1,6,7],
+"structRayTracer_1_1Color.html#ad224166942560c4b3930f6ec1939602f":[3,0,1,6,7],
+"structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8":[3,0,1,6,5],
+"structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8":[2,0,1,6,5],
+"structRayTracer_1_1Color.html#afa5432590a85b4f39279dc5c84d66c0f":[3,0,1,6,1],
+"structRayTracer_1_1Color.html#afa5432590a85b4f39279dc5c84d66c0f":[2,0,1,6,1],
+"structRayTracer_1_1Node.html":[2,0,1,14],
+"structRayTracer_1_1Node.html":[3,0,1,14],
+"structRayTracer_1_1Node.html#ac29da55cad5c5065be2b90994023e81f":[2,0,1,14,0],
+"structRayTracer_1_1Node.html#ac29da55cad5c5065be2b90994023e81f":[3,0,1,14,0],
+"todo.html":[1]
+};

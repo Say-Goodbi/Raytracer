@@ -1,82 +1,84 @@
 <map id="Geometry::Vector3D::Vector3D" name="Geometry::Vector3D::Vector3D">
-<area shape="rect" id="Node000001" title=" " alt="" coords="703,570,856,610"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="5,123,159,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="771,557,756,454,731,320,715,254,696,193,676,145,653,112,600,67,550,36,499,17,448,9,395,10,338,20,208,57,177,70,149,87,105,125,101,121,146,83,175,65,206,51,336,14,394,5,448,4,501,12,552,31,603,63,657,108,680,142,701,192,720,252,737,319,762,453,777,556"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="703,602,856,642"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="5,124,159,164"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="772,589,758,480,734,337,717,265,698,200,677,147,653,112,601,67,550,36,500,17,448,9,395,10,338,20,208,57,177,70,149,88,105,125,101,121,146,84,175,65,206,52,337,15,394,5,449,4,501,12,552,31,604,63,657,109,682,145,703,198,722,264,739,336,763,479,777,588"/>
 <area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a27ae8f34a8cb15a3ffd5e23498d894cb" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="208,181,404,221"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="770,557,758,503,736,436,701,368,679,337,653,309,616,292,547,269,384,223,385,218,549,264,618,287,656,305,683,333,706,365,740,434,763,502,775,556"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="772,589,761,529,740,453,725,414,705,375,681,340,653,309,617,291,548,269,386,224,387,219,550,264,619,286,656,304,686,336,710,373,729,411,745,451,766,527,777,588"/>
 <area shape="rect" id="Node000005" href="$classRayTracer_1_1DirectionalLight.html#a7170b3c9d9e2c2e697139f0dae68ab5b" title="Compute light contribution, shadow ray cast in opposite direction." alt="" coords="455,794,653,834"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="768,624,750,661,726,704,695,747,656,784,637,796,634,791,653,780,691,744,722,701,746,658,763,622"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="763,656,720,721,691,755,656,785,635,797,632,792,653,780,687,751,716,718,759,653"/>
 <area shape="rect" id="Node000006" href="$classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20" title="Compute light contribution." alt="" coords="227,245,385,285"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="767,558,752,513,729,459,696,405,676,381,653,360,607,336,537,315,385,281,386,276,539,309,609,332,656,356,680,378,700,402,733,457,757,511,772,556"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="769,589,756,538,734,476,700,413,678,384,653,359,634,347,607,335,538,313,385,280,386,275,539,308,609,330,636,342,656,355,682,380,704,410,739,474,761,537,775,588"/>
 <area shape="rect" id="Node000007" href="$classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112" title=" " alt="" coords="477,181,631,221"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="772,557,763,492,742,408,726,364,706,321,682,280,653,244,624,223,627,219,657,240,686,277,711,319,731,362,747,407,768,491,778,556"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="774,589,765,519,746,427,730,378,710,330,684,285,653,244,624,223,627,219,657,240,689,282,715,328,735,376,751,425,771,518,779,588"/>
 <area shape="rect" id="Node000008" href="$classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838" title="Return the deterministic bounce direction for this material." alt="" coords="222,66,390,106"/>
-<area shape="poly" id="edge51_Node000001_Node000008" title=" " alt="" coords="776,556,772,477,766,427,756,373,741,318,719,264,690,214,653,171,625,148,593,130,524,104,454,91,390,86,390,81,455,86,526,99,596,125,628,144,657,167,694,211,724,262,746,316,761,372,772,426,778,477,781,556"/>
-<area shape="rect" id="Node000009" href="$classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd" title="Return the deterministic bounce direction for this material." alt="" coords="211,488,401,513"/>
-<area shape="poly" id="edge52_Node000001_Node000009" title=" " alt="" coords="735,565,696,545,654,529,589,514,523,505,401,500,402,495,524,500,590,509,655,523,699,540,737,560"/>
-<area shape="rect" id="Node000010" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="229,309,383,349"/>
-<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="762,558,745,524,720,484,690,446,653,413,621,394,587,378,515,355,445,341,382,334,383,329,446,336,517,350,589,374,624,390,656,409,694,442,725,481,749,521,767,556"/>
-<area shape="rect" id="Node000012" href="$CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3" title=" " alt="" coords="499,859,609,884"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="774,624,760,674,737,734,703,796,682,824,656,848,635,861,611,869,609,864,632,856,653,844,678,820,699,793,733,732,755,672,769,623"/>
-<area shape="rect" id="Node000013" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="477,423,631,463"/>
-<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="748,562,705,522,653,484,616,466,618,461,656,480,709,518,752,558"/>
-<area shape="rect" id="Node000020" href="$classGeometry_1_1Vector3D.html#a2b061b80e0fb7144c2fdcf4aa9ba73bf" title=" " alt="" coords="477,909,631,949"/>
-<area shape="poly" id="edge29_Node000001_Node000020" title=" " alt="" coords="777,624,765,682,744,756,728,795,708,832,685,868,656,899,632,915,629,910,653,895,681,864,704,830,723,792,739,754,760,681,771,623"/>
-<area shape="rect" id="Node000021" href="$classGeometry_1_1TransformMatrix.html#a065621a852d662251597213f484ea3f6" title=" " alt="" coords="453,973,655,1013"/>
-<area shape="poly" id="edge30_Node000001_Node000021" title=" " alt="" coords="779,624,772,694,752,784,736,832,716,879,689,923,657,963,641,975,637,970,653,959,685,920,711,877,731,830,747,783,766,693,774,623"/>
-<area shape="rect" id="Node000022" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="477,602,631,642"/>
-<area shape="poly" id="edge31_Node000001_Node000022" title=" " alt="" coords="690,605,631,614,631,608,689,600"/>
-<area shape="rect" id="Node000024" href="$classGeometry_1_1Vector3D.html#a374498ca7780e4ff496e56d58424e111" title=" " alt="" coords="477,1037,631,1077"/>
-<area shape="poly" id="edge38_Node000001_Node000024" title=" " alt="" coords="781,624,777,704,760,812,745,870,723,926,694,979,656,1027,633,1043,630,1039,653,1023,689,976,718,924,740,868,755,811,772,704,776,623"/>
-<area shape="rect" id="Node000025" href="$classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f" title=" " alt="" coords="477,730,631,770"/>
-<area shape="poly" id="edge39_Node000001_Node000025" title=" " alt="" coords="757,623,714,673,686,698,656,720,632,732,630,728,653,716,683,694,710,669,753,619"/>
-<area shape="rect" id="Node000026" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="477,538,631,578"/>
-<area shape="poly" id="edge43_Node000001_Node000026" title=" " alt="" coords="689,580,631,572,631,566,690,575"/>
-<area shape="rect" id="Node000027" href="$classGeometry_1_1Vector3D.html#ae922fd3535e26ab859ab96c63c67dace" title=" " alt="" coords="477,1101,631,1141"/>
-<area shape="poly" id="edge48_Node000001_Node000027" title=" " alt="" coords="777,624,762,729,736,868,720,938,701,1002,680,1054,657,1090,632,1108,629,1104,653,1087,675,1052,696,1000,715,937,731,867,756,729,771,623"/>
-<area shape="rect" id="Node000028" href="$classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162" title=" " alt="" coords="477,666,631,706"/>
-<area shape="poly" id="edge49_Node000001_Node000028" title=" " alt="" coords="732,619,656,656,624,668,622,663,654,652,730,614"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="213,180,158,165,160,160,215,175"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="5,187,159,227"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="194,207,159,208,159,202,194,201"/>
-<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="464,182,405,171,275,157,159,149,159,144,276,151,406,166,465,177"/>
-<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="463,203,404,203,404,198,463,198"/>
-<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="503,176,404,127,360,109,362,104,406,122,505,172"/>
-<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="542,234,480,368,442,434,424,460,407,477,384,490,382,486,404,473,420,456,438,431,475,365,537,232"/>
-<area shape="rect" id="Node000011" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,423,159,463"/>
-<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="255,357,123,426,121,421,252,353"/>
-<area shape="poly" id="edge16_Node000013_Node000002" title=" " alt="" coords="463,426,299,388,205,363,187,340,179,316,177,293,178,270,178,223,172,200,157,177,143,166,147,162,161,174,177,198,184,223,183,270,182,293,184,315,192,337,208,358,300,383,465,421"/>
-<area shape="poly" id="edge18_Node000013_Node000003" title=" " alt="" coords="532,413,468,313,433,265,404,235,384,223,386,218,407,231,437,262,473,310,536,410"/>
-<area shape="poly" id="edge21_Node000013_Node000006" title=" " alt="" coords="524,415,461,349,429,318,404,299,381,287,383,282,407,294,432,314,464,345,528,411"/>
-<area shape="poly" id="edge27_Node000013_Node000008" title=" " alt="" coords="538,412,486,300,448,233,403,170,370,136,335,108,339,104,373,132,407,167,452,230,491,298,542,410"/>
-<area shape="poly" id="edge28_Node000013_Node000009" title=" " alt="" coords="464,467,362,491,361,485,463,462"/>
-<area shape="poly" id="edge23_Node000013_Node000010" title=" " alt="" coords="487,420,452,403,428,386,404,370,364,351,366,346,407,365,431,382,455,398,490,416"/>
-<area shape="rect" id="Node000014" href="$classRayTracer_1_1DirectionalLight.html#a682bc429176da9bb6b1694703b44ba0e" title=" " alt="" coords="207,423,405,463"/>
-<area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="463,446,405,446,405,441,463,441"/>
-<area shape="rect" id="Node000015" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="229,538,383,578"/>
-<area shape="poly" id="edge19_Node000013_Node000015" title=" " alt="" coords="510,473,406,527,373,540,371,535,404,522,507,468"/>
-<area shape="rect" id="Node000016" href="$classRayTracer_1_1Phong.html#a2526bd20be0b2cbb045250c4a6573b27" title="Evaluate the BRDF for a given pair of directions." alt="" coords="207,652,405,677"/>
-<area shape="poly" id="edge22_Node000013_Node000016" title=" " alt="" coords="512,473,482,498,456,527,440,558,435,586,428,614,420,628,407,641,387,654,384,650,404,637,416,624,423,612,430,585,435,556,451,524,479,494,509,469"/>
-<area shape="rect" id="Node000017" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="219,751,393,776"/>
-<area shape="poly" id="edge24_Node000013_Node000017" title=" " alt="" coords="509,473,480,498,456,527,442,557,437,584,438,637,439,662,437,688,427,714,407,740,390,753,387,748,403,736,422,711,432,687,434,662,433,637,431,584,437,555,451,525,476,494,505,469"/>
-<area shape="rect" id="Node000018" href="$classRayTracer_1_1Sphere.html#a40d439c5a658465a6eeef01f7679ecc9" title="Test ray intersection with this primitive." alt="" coords="224,701,388,727"/>
-<area shape="poly" id="edge25_Node000013_Node000018" title=" " alt="" coords="510,473,481,498,456,527,444,550,439,571,437,612,432,651,424,671,407,691,389,703,386,699,404,687,419,668,427,649,431,611,433,570,439,548,451,525,477,494,507,469"/>
-<area shape="rect" id="Node000019" href="$classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2" title="Return the probability density of the direction from sample()." alt="" coords="225,603,387,628"/>
-<area shape="poly" id="edge26_Node000013_Node000019" title=" " alt="" coords="516,474,455,528,442,546,434,562,424,577,407,592,381,605,379,600,404,588,420,574,429,559,437,543,451,524,512,470"/>
-<area shape="poly" id="edge20_Node000015_Node000011" title=" " alt="" coords="224,535,205,527,152,497,108,466,111,461,155,492,208,522,226,530"/>
-<area shape="poly" id="edge37_Node000022_Node000009" title=" " alt="" coords="463,599,452,592,436,576,427,559,419,543,404,528,379,516,381,511,407,524,423,540,432,556,440,573,455,588,466,595"/>
-<area shape="poly" id="edge32_Node000022_Node000015" title=" " alt="" coords="463,601,382,580,383,575,464,596"/>
-<area shape="poly" id="edge33_Node000022_Node000016" title=" " alt="" coords="464,640,381,655,380,649,463,635"/>
-<area shape="poly" id="edge34_Node000022_Node000017" title=" " alt="" coords="466,648,455,656,439,676,432,697,425,719,407,740,384,753,382,748,404,736,420,716,427,696,434,674,452,652,463,644"/>
-<area shape="poly" id="edge36_Node000022_Node000019" title=" " alt="" coords="463,622,387,620,387,615,464,617"/>
-<area shape="rect" id="Node000023" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title="Test ray–plane intersection using the algebraic plane equation." alt="" coords="229,800,383,825"/>
-<area shape="poly" id="edge35_Node000022_Node000023" title=" " alt="" coords="467,647,455,656,442,672,436,688,432,721,429,755,421,773,407,789,385,803,382,799,404,785,417,770,424,754,427,721,431,687,438,669,451,652,463,643"/>
-<area shape="poly" id="edge40_Node000025_Node000017" title=" " alt="" coords="464,757,393,761,393,756,464,752"/>
-<area shape="poly" id="edge42_Node000025_Node000018" title=" " alt="" coords="463,740,388,728,389,723,464,734"/>
-<area shape="poly" id="edge41_Node000025_Node000023" title=" " alt="" coords="465,775,358,803,356,797,463,770"/>
-<area shape="poly" id="edge47_Node000026_Node000009" title=" " alt="" coords="463,540,361,516,362,511,464,535"/>
-<area shape="poly" id="edge44_Node000026_Node000016" title=" " alt="" coords="466,586,455,592,441,604,432,617,422,629,407,642,377,654,375,650,404,637,418,626,427,613,437,601,452,588,464,581"/>
-<area shape="poly" id="edge45_Node000026_Node000017" title=" " alt="" coords="467,582,455,592,442,610,435,628,433,665,430,702,422,721,407,740,388,753,385,748,404,736,418,719,425,701,427,664,430,626,437,607,451,588,464,578"/>
-<area shape="poly" id="edge46_Node000026_Node000019" title=" " alt="" coords="464,581,362,605,361,600,463,576"/>
-<area shape="poly" id="edge50_Node000028_Node000017" title=" " alt="" coords="476,713,454,720,406,741,363,753,361,748,404,735,452,716,474,708"/>
+<area shape="poly" id="edge52_Node000001_Node000008" title=" " alt="" coords="771,589,755,492,729,366,713,304,695,247,674,202,653,171,625,148,593,130,560,115,525,104,454,91,390,86,390,81,455,85,526,99,562,110,596,125,628,144,657,167,679,199,700,245,718,302,734,365,760,491,776,588"/>
+<area shape="rect" id="Node000009" href="$classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd" title="Return the deterministic bounce direction for this material." alt="" coords="211,488,401,514"/>
+<area shape="poly" id="edge53_Node000001_Node000009" title=" " alt="" coords="748,595,706,558,681,542,654,529,590,510,524,500,460,496,402,496,402,491,460,490,525,495,591,505,656,524,683,537,709,554,752,591"/>
+<area shape="rect" id="Node000010" href="$namespaceRaytracer.html#af4800ab171090b01c2b9dcf5ab91894e" title=" " alt="" coords="463,858,645,898"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="771,656,755,700,731,751,699,803,656,848,638,861,635,856,653,844,694,800,727,749,750,698,766,655"/>
+<area shape="rect" id="Node000011" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="229,309,383,349"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="765,590,750,549,726,501,694,454,653,414,622,394,588,377,516,353,446,339,383,333,383,328,446,334,518,348,590,372,624,389,656,410,698,450,730,498,754,547,770,588"/>
+<area shape="rect" id="Node000013" href="$CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3" title=" " alt="" coords="499,923,609,948"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="776,657,764,713,742,782,726,817,707,852,684,884,656,912,635,926,610,934,609,929,632,921,653,908,680,881,703,849,722,815,737,780,759,711,771,656"/>
+<area shape="rect" id="Node000014" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="477,424,631,464"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="755,593,712,538,684,509,653,485,619,466,621,461,656,480,687,506,716,534,759,589"/>
+<area shape="rect" id="Node000021" href="$classGeometry_1_1Vector3D.html#a2b061b80e0fb7144c2fdcf4aa9ba73bf" title=" " alt="" coords="477,973,631,1013"/>
+<area shape="poly" id="edge30_Node000001_Node000021" title=" " alt="" coords="778,656,769,720,748,803,732,846,712,888,687,928,656,963,633,979,630,975,653,959,683,925,707,886,727,844,743,801,763,719,773,655"/>
+<area shape="rect" id="Node000022" href="$classGeometry_1_1TransformMatrix.html#a065621a852d662251597213f484ea3f6" title=" " alt="" coords="453,1037,655,1077"/>
+<area shape="poly" id="edge31_Node000001_Node000022" title=" " alt="" coords="780,656,774,732,756,831,741,883,719,935,692,984,657,1027,641,1039,638,1035,653,1023,687,981,715,933,736,882,751,829,769,731,775,656"/>
+<area shape="rect" id="Node000023" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="477,602,631,642"/>
+<area shape="poly" id="edge32_Node000001_Node000023" title=" " alt="" coords="689,625,631,625,631,620,689,620"/>
+<area shape="rect" id="Node000025" href="$classGeometry_1_1Vector3D.html#a374498ca7780e4ff496e56d58424e111" title=" " alt="" coords="477,1101,631,1141"/>
+<area shape="poly" id="edge39_Node000001_Node000025" title=" " alt="" coords="776,656,760,755,734,885,699,1009,679,1057,657,1091,632,1108,629,1104,653,1087,674,1055,694,1007,729,884,755,754,771,655"/>
+<area shape="rect" id="Node000026" href="$classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f" title=" " alt="" coords="477,730,631,770"/>
+<area shape="poly" id="edge40_Node000001_Node000026" title=" " alt="" coords="748,654,706,688,656,721,629,733,627,728,653,716,703,684,745,650"/>
+<area shape="rect" id="Node000027" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="477,538,631,578"/>
+<area shape="poly" id="edge44_Node000001_Node000027" title=" " alt="" coords="694,601,624,581,626,576,696,596"/>
+<area shape="rect" id="Node000028" href="$classGeometry_1_1Vector3D.html#ae922fd3535e26ab859ab96c63c67dace" title=" " alt="" coords="477,1165,631,1205"/>
+<area shape="poly" id="edge49_Node000001_Node000028" title=" " alt="" coords="777,656,763,768,738,917,722,991,703,1060,681,1116,657,1155,632,1172,629,1168,653,1151,677,1113,698,1058,717,990,733,916,758,767,772,656"/>
+<area shape="rect" id="Node000029" href="$classGeometry_1_1Vector3D.html#ac56b7f7705a5b7a2a4694d419b003162" title=" " alt="" coords="477,666,631,706"/>
+<area shape="poly" id="edge50_Node000001_Node000029" title=" " alt="" coords="696,649,626,669,624,664,694,644"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="213,180,158,166,160,161,215,175"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="5,188,159,228"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="194,207,159,208,159,203,194,202"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="464,182,405,172,275,157,159,149,159,144,276,152,406,166,465,177"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="463,204,404,204,404,198,463,198"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="503,177,404,127,360,109,362,104,406,123,505,172"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="542,234,480,368,442,435,424,460,407,478,384,491,382,486,404,474,420,457,438,432,475,365,537,232"/>
+<area shape="rect" id="Node000012" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,424,159,464"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="255,358,123,426,121,421,252,353"/>
+<area shape="poly" id="edge17_Node000014_Node000002" title=" " alt="" coords="463,426,299,388,205,363,187,340,179,317,177,293,178,270,178,224,172,201,157,177,143,166,147,162,161,174,177,199,184,223,183,270,182,293,184,315,192,337,208,359,300,383,465,421"/>
+<area shape="poly" id="edge19_Node000014_Node000003" title=" " alt="" coords="532,413,468,314,433,266,404,235,384,223,386,219,407,231,437,262,473,311,536,410"/>
+<area shape="poly" id="edge22_Node000014_Node000006" title=" " alt="" coords="524,415,461,349,429,319,404,299,381,288,383,283,407,295,432,315,464,345,528,412"/>
+<area shape="poly" id="edge28_Node000014_Node000008" title=" " alt="" coords="538,412,486,300,448,234,403,171,370,136,335,109,339,105,373,132,407,167,452,231,491,298,542,410"/>
+<area shape="poly" id="edge29_Node000014_Node000009" title=" " alt="" coords="464,467,362,491,361,486,463,462"/>
+<area shape="poly" id="edge24_Node000014_Node000011" title=" " alt="" coords="487,421,452,403,428,386,404,370,364,352,366,347,407,365,431,382,455,399,490,416"/>
+<area shape="rect" id="Node000015" href="$classRayTracer_1_1DirectionalLight.html#a682bc429176da9bb6b1694703b44ba0e" title=" " alt="" coords="207,424,405,464"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="463,446,405,446,405,441,463,441"/>
+<area shape="rect" id="Node000016" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="229,538,383,578"/>
+<area shape="poly" id="edge20_Node000014_Node000016" title=" " alt="" coords="510,473,406,527,373,541,371,536,404,523,507,468"/>
+<area shape="rect" id="Node000017" href="$classRayTracer_1_1Phong.html#a2526bd20be0b2cbb045250c4a6573b27" title="Evaluate the BRDF for a given pair of directions." alt="" coords="207,603,405,628"/>
+<area shape="poly" id="edge23_Node000014_Node000017" title=" " alt="" coords="516,474,455,528,442,546,434,562,424,577,407,593,381,605,379,601,404,588,420,574,429,559,437,543,451,525,512,470"/>
+<area shape="rect" id="Node000018" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="219,751,393,776"/>
+<area shape="poly" id="edge25_Node000014_Node000018" title=" " alt="" coords="509,474,480,498,456,528,442,557,437,585,438,637,439,663,437,688,427,714,407,740,390,753,387,749,403,736,422,711,432,687,434,662,433,637,431,584,437,555,451,525,476,494,505,470"/>
+<area shape="rect" id="Node000019" href="$classRayTracer_1_1Sphere.html#a40d439c5a658465a6eeef01f7679ecc9" title="Test ray intersection with this primitive." alt="" coords="224,702,388,727"/>
+<area shape="poly" id="edge26_Node000014_Node000019" title=" " alt="" coords="510,474,481,498,456,528,444,550,439,571,437,612,432,651,424,671,407,691,389,704,386,699,404,687,419,668,427,650,431,611,433,571,439,548,451,525,477,494,507,470"/>
+<area shape="rect" id="Node000020" href="$classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2" title="Return the probability density of the direction from sample()." alt="" coords="225,652,387,678"/>
+<area shape="poly" id="edge27_Node000014_Node000020" title=" " alt="" coords="512,474,482,498,456,528,440,558,435,587,428,614,420,628,407,642,387,655,384,650,404,638,416,625,423,612,430,586,435,557,451,525,479,495,509,470"/>
+<area shape="poly" id="edge21_Node000016_Node000012" title=" " alt="" coords="224,536,205,527,152,497,108,466,111,462,155,492,208,523,226,531"/>
+<area shape="poly" id="edge38_Node000023_Node000009" title=" " alt="" coords="463,600,452,592,436,576,427,559,419,543,404,529,379,516,381,511,407,524,423,540,432,557,440,573,455,588,466,595"/>
+<area shape="poly" id="edge33_Node000023_Node000016" title=" " alt="" coords="463,602,382,581,383,575,464,597"/>
+<area shape="poly" id="edge34_Node000023_Node000017" title=" " alt="" coords="464,623,406,621,406,616,464,617"/>
+<area shape="poly" id="edge35_Node000023_Node000018" title=" " alt="" coords="466,649,455,656,439,677,432,698,425,719,407,740,384,753,382,749,404,736,420,717,427,696,434,674,452,652,463,644"/>
+<area shape="poly" id="edge37_Node000023_Node000020" title=" " alt="" coords="464,640,381,655,380,650,463,635"/>
+<area shape="rect" id="Node000024" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title="Test ray–plane intersection using the algebraic plane equation." alt="" coords="229,800,383,826"/>
+<area shape="poly" id="edge36_Node000023_Node000024" title=" " alt="" coords="467,647,455,656,442,672,436,688,432,722,429,756,421,773,407,790,385,804,382,799,404,786,417,770,424,754,427,721,431,687,438,670,451,652,463,643"/>
+<area shape="poly" id="edge41_Node000026_Node000018" title=" " alt="" coords="464,758,393,762,393,756,464,753"/>
+<area shape="poly" id="edge43_Node000026_Node000019" title=" " alt="" coords="463,740,388,729,389,724,464,735"/>
+<area shape="poly" id="edge42_Node000026_Node000024" title=" " alt="" coords="465,776,358,803,356,798,463,770"/>
+<area shape="poly" id="edge48_Node000027_Node000009" title=" " alt="" coords="463,540,361,516,362,511,464,535"/>
+<area shape="poly" id="edge45_Node000027_Node000017" title=" " alt="" coords="464,582,362,606,361,600,463,577"/>
+<area shape="poly" id="edge46_Node000027_Node000018" title=" " alt="" coords="467,583,455,592,442,610,435,628,433,665,430,703,422,722,407,740,388,753,385,749,404,736,418,719,425,702,427,665,430,627,437,608,451,589,464,579"/>
+<area shape="poly" id="edge47_Node000027_Node000020" title=" " alt="" coords="466,586,455,593,441,605,432,617,422,630,407,642,377,655,375,650,404,637,418,626,427,614,437,601,452,588,464,582"/>
+<area shape="poly" id="edge51_Node000029_Node000018" title=" " alt="" coords="476,713,454,721,406,741,363,754,361,748,404,736,452,716,474,708"/>
 </map>

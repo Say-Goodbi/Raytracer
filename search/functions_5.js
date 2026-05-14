@@ -1,15 +1,14 @@
 var searchData=
 [
-  ['generateray_0',['generateRay',['../classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd',1,'RayTracer::Camera']]],
-  ['getheight_1',['getHeight',['../classRayTracer_1_1ARenderer.html#a5b8bc108a3a1ef0f9fd700dc6fea85cb',1,'RayTracer::ARenderer']]],
-  ['getinitializer_2',['getInitializer',['../classRayTracer_1_1PluginManager.html#a12a011c7eb217200fcabaf40b57da4c7',1,'RayTracer::PluginManager']]],
-  ['getinitializers_3',['getInitializers',['../CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3',1,'CorePlugin.cpp']]],
-  ['getlights_4',['getLights',['../classRayTracer_1_1Scene.html#a43b223d3c67aa2b66eb5eca01470f09d',1,'RayTracer::Scene']]],
-  ['getmaterial_5',['getMaterial',['../classRayTracer_1_1APrimitive.html#acdc1a350e79537fa0b9c8588a170bdcf',1,'RayTracer::APrimitive']]],
-  ['getmaterialinstance_6',['getMaterialInstance',['../CorePlugin_8cpp.html#ae5215844996d60e041a8a21b4d0057c0',1,'CorePlugin.cpp']]],
-  ['getname_7',['getName',['../CorePlugin_8cpp.html#ac0fc966d4386ddb71d99361e3fccb311',1,'CorePlugin.cpp']]],
-  ['getprimitives_8',['getPrimitives',['../classRayTracer_1_1Scene.html#a8aa62e8397ea4837bb5a4c12aef5eb54',1,'RayTracer::Scene']]],
-  ['getrenderer_9',['getRenderer',['../classRayTracer_1_1Scene.html#af40ecae80eb7540d3541b49f441fe509',1,'RayTracer::Scene']]],
-  ['getvalue_10',['getValue',['../classRayTracer_1_1Parser.html#aeba7e2f0e2fcf1a56e16c916168009cb',1,'RayTracer::Parser']]],
-  ['getwidth_11',['getWidth',['../classRayTracer_1_1ARenderer.html#a78eaee329eba441c51332bf9ebcc7e5c',1,'RayTracer::ARenderer']]]
+  ['field_0',['field',['../namespaceRaytracer_1_1Detail.html#aaf5eb8709fdbf8c9ada29f363df14edc',1,'Raytracer::Detail']]],
+  ['fromnode_1',['fromNode',['../namespaceRaytracer.html#adde05dcb8eb3b70ba2b7803aeb10a72f',1,'Raytracer']]],
+  ['fromnode_3c_20double_20_3e_2',['fromNode&lt; double &gt;',['../namespaceRaytracer.html#aaaf073f2cc5fb9c0fb551fcf49941170',1,'Raytracer']]],
+  ['fromnode_3c_20float_20_3e_3',['fromNode&lt; float &gt;',['../namespaceRaytracer.html#a8d927671ee9422b82e3589e7e10a05a3',1,'Raytracer']]],
+  ['fromnode_3c_20geometry_3a_3apoint3d_20_3e_4',['fromNode&lt; Geometry::Point3D &gt;',['../namespaceRaytracer.html#a4804feabf04b641269bc1db2afd57459',1,'Raytracer']]],
+  ['fromnode_3c_20geometry_3a_3atransformmatrix_20_3e_5',['fromNode&lt; Geometry::TransformMatrix &gt;',['../namespaceRaytracer.html#a3383e6835a38ae30771c728347d5e556',1,'Raytracer']]],
+  ['fromnode_3c_20geometry_3a_3avector3d_20_3e_6',['fromNode&lt; Geometry::Vector3D &gt;',['../namespaceRaytracer.html#af4800ab171090b01c2b9dcf5ab91894e',1,'Raytracer']]],
+  ['fromnode_3c_20int_20_3e_7',['fromNode&lt; int &gt;',['../namespaceRaytracer.html#a366eadd2dc045d3245ec531ed7142c3e',1,'Raytracer']]],
+  ['fromnode_3c_20raytracer_3a_3acolor_20_3e_8',['fromNode&lt; RayTracer::Color &gt;',['../namespaceRaytracer.html#a5c5b3d136a2f89527b6a5c31d3500ca8',1,'Raytracer']]],
+  ['fromnode_3c_20std_3a_3apair_3c_20int_2c_20int_20_3e_20_3e_9',['fromNode&lt; std::pair&lt; int, int &gt; &gt;',['../namespaceRaytracer.html#ae1fbe632653fe1d401f929ad2e6d1d12',1,'Raytracer']]],
+  ['fromnode_3c_20std_3a_3astring_20_3e_10',['fromNode&lt; std::string &gt;',['../namespaceRaytracer.html#a9232f609f59060baeefcf17df136cb42',1,'Raytracer']]]
 ];

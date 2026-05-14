@@ -1,0 +1,11 @@
+<map id="Raytracer::fromNode&lt; RayTracer::Color &gt;" name="Raytracer::fromNode&lt; RayTracer::Color &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,87,164,127"/>
+<area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="212,5,383,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,85,211,41,234,32,236,37,213,46,123,90"/>
+<area shape="rect" id="Node000003" href="$namespaceRaytracer_1_1Detail.html#af79c6a33c6a410a927b7b3246b97ad2e" title=" " alt="" coords="227,55,367,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,93,213,85,214,91,165,98"/>
+<area shape="rect" id="Node000004" href="$namespaceRaytracer_1_1Detail.html#aaf5eb8709fdbf8c9ada29f363df14edc" title=" " alt="" coords="227,119,367,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,117,214,124,213,129,164,122"/>
+<area shape="rect" id="Node000005" href="$namespaceRaytracer.html#adde05dcb8eb3b70ba2b7803aeb10a72f" title=" " alt="" coords="218,184,377,209"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="123,125,213,169,236,177,234,182,211,174,120,130"/>
+</map>

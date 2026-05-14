@@ -26,6 +26,7 @@ var annotated_dup =
       [ "Lambertian", "classRayTracer_1_1Lambertian.html", "classRayTracer_1_1Lambertian" ],
       [ "Node", "structRayTracer_1_1Node.html", "structRayTracer_1_1Node" ],
       [ "Parser", "classRayTracer_1_1Parser.html", "classRayTracer_1_1Parser" ],
+      [ "ParsingException", "classRayTracer_1_1ParsingException.html", "classRayTracer_1_1ParsingException" ],
       [ "Phong", "classRayTracer_1_1Phong.html", "classRayTracer_1_1Phong" ],
       [ "Plane", "classRayTracer_1_1Plane.html", "classRayTracer_1_1Plane" ],
       [ "PluginManager", "classRayTracer_1_1PluginManager.html", "classRayTracer_1_1PluginManager" ],

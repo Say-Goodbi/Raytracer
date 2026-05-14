@@ -12,16 +12,16 @@
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="755,322,657,372,613,390,610,385,655,367,752,317"/>
 <area shape="rect" id="Node000007" href="$classRayTracer_1_1Phong.html#a5e0b821a0516e1fbdcd25f358a46d83d" title="Return the radiance emitted by this surface." alt="" coords="454,453,655,478"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="774,326,727,384,694,416,657,442,628,455,626,450,655,438,691,412,723,381,770,322"/>
-<area shape="rect" id="Node000008" href="$CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3" title=" " alt="" coords="499,502,610,527"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="780,327,762,364,735,409,700,455,658,493,635,504,611,512,610,506,633,500,654,488,697,451,731,406,757,362,775,324"/>
+<area shape="rect" id="Node000008" href="$namespaceRaytracer.html#a5c5b3d136a2f89527b6a5c31d3500ca8" title=" " alt="" coords="475,503,634,543"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="779,327,761,364,734,408,700,454,658,493,636,506,633,501,654,489,696,450,730,405,756,361,775,324"/>
 <area shape="rect" id="Node000009" href="$structRayTracer_1_1Color.html#a3a5645c19c0b60a67b3dfac325727248" title=" " alt="" coords="455,79,654,105"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="773,276,727,202,694,162,655,128,613,107,615,102,657,123,697,158,731,199,778,273"/>
 <area shape="rect" id="Node000010" href="$structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8" title=" " alt="" coords="455,237,654,262"/>
 <area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="716,287,614,265,615,259,717,282"/>
 <area shape="rect" id="Node000014" href="$structRayTracer_1_1Color.html#a327b4006c4abe3faf3491929b8ee1a7c" title=" " alt="" coords="453,185,656,210"/>
 <area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="757,282,710,254,655,226,613,213,615,208,657,222,713,249,760,278"/>
-<area shape="rect" id="Node000015" href="$structRayTracer_1_1Color.html#ad224166942560c4b3930f6ec1939602f" title=" " alt="" coords="457,551,653,577"/>
-<area shape="poly" id="edge22_Node000001_Node000015" title=" " alt="" coords="784,327,768,374,743,432,707,492,684,519,658,542,638,554,635,549,654,538,680,515,702,489,738,430,763,372,779,325"/>
+<area shape="rect" id="Node000015" href="$structRayTracer_1_1Color.html#ad224166942560c4b3930f6ec1939602f" title=" " alt="" coords="457,567,653,593"/>
+<area shape="poly" id="edge22_Node000001_Node000015" title=" " alt="" coords="785,327,770,376,745,439,708,502,685,532,658,557,636,569,633,565,654,553,681,528,704,499,740,436,765,375,779,326"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="216,105,159,113,159,107,215,100"/>
 <area shape="poly" id="edge9_Node000009_Node000002" title=" " alt="" coords="441,94,383,94,383,88,441,89"/>
 <area shape="poly" id="edge11_Node000010_Node000002" title=" " alt="" coords="475,235,452,224,436,212,426,201,403,175,331,113,334,109,407,171,430,197,440,208,455,219,477,230"/>

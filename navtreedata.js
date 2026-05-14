@@ -31,6 +31,7 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ]
       ] ]
@@ -59,8 +60,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AInterface_8hpp.html",
-"classGeometry_1_1Vector3D.html#aa26fa71f9f88ff66de210a75b10b0b47",
-"classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20"
+"classGeometry_1_1Vector3D.html#a3ae71c5188cb20556a1ec9b617fe8633",
+"classRayTracer_1_1PluginManager.html",
+"structRayTracer_1_1Color.html#a327b4006c4abe3faf3491929b8ee1a7c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -10,11 +10,13 @@ var searchData=
   ['sceneloader_7',['sceneloader',['../classRayTracer_1_1SceneLoader.html',1,'RayTracer::SceneLoader'],['../classRayTracer_1_1SceneLoader.html#a4de4a46229ec18f85513e607030764a1',1,'RayTracer::SceneLoader::SceneLoader()']]],
   ['sceneloader_2ecpp_8',['SceneLoader.cpp',['../SceneLoader_8cpp.html',1,'']]],
   ['sceneloader_2ehpp_9',['SceneLoader.hpp',['../SceneLoader_8hpp.html',1,'']]],
-  ['scenewriter_10',['scenewriter',['../index.html#arch_interface',1,'Output Pipeline: AInterface → SceneWriter'],['../classRayTracer_1_1SceneWriter.html#a15622a3205869a4e472e37ed311efb43',1,'RayTracer::SceneWriter::SceneWriter()'],['../classRayTracer_1_1SceneWriter.html',1,'RayTracer::SceneWriter']]],
-  ['scenewriter_2ecpp_11',['SceneWriter.cpp',['../SceneWriter_8cpp.html',1,'']]],
-  ['scenewriter_2ehpp_12',['SceneWriter.hpp',['../SceneWriter_8hpp.html',1,'']]],
-  ['sphere_13',['sphere',['../classRayTracer_1_1Sphere.html#a650db381c2a60dd2430c563048111e28',1,'RayTracer::Sphere::Sphere()'],['../classRayTracer_1_1Sphere.html',1,'RayTracer::Sphere']]],
-  ['sphere_2ecpp_14',['Sphere.cpp',['../Sphere_8cpp.html',1,'']]],
-  ['sphere_2ehpp_15',['Sphere.hpp',['../Sphere_8hpp.html',1,'']]],
-  ['system_20coreplugin_16',['Plugin System &amp; CorePlugin',['../index.html#arch_plugins',1,'']]]
+  ['scenenodehelpers_2ehpp_10',['SceneNodeHelpers.hpp',['../SceneNodeHelpers_8hpp.html',1,'']]],
+  ['scenewriter_11',['scenewriter',['../index.html#arch_interface',1,'Output Pipeline: AInterface → SceneWriter'],['../classRayTracer_1_1SceneWriter.html#a15622a3205869a4e472e37ed311efb43',1,'RayTracer::SceneWriter::SceneWriter()'],['../classRayTracer_1_1SceneWriter.html',1,'RayTracer::SceneWriter']]],
+  ['scenewriter_2ecpp_12',['SceneWriter.cpp',['../SceneWriter_8cpp.html',1,'']]],
+  ['scenewriter_2ehpp_13',['SceneWriter.hpp',['../SceneWriter_8hpp.html',1,'']]],
+  ['sphere_14',['sphere',['../classRayTracer_1_1Sphere.html#a650db381c2a60dd2430c563048111e28',1,'RayTracer::Sphere::Sphere()'],['../classRayTracer_1_1Sphere.html',1,'RayTracer::Sphere']]],
+  ['sphere_2ecpp_15',['Sphere.cpp',['../Sphere_8cpp.html',1,'']]],
+  ['sphere_2ehpp_16',['Sphere.hpp',['../Sphere_8hpp.html',1,'']]],
+  ['stringfromscalar_17',['stringFromScalar',['../namespaceRaytracer_1_1Detail.html#a0fb3d790adf21dd83245d47a130eb866',1,'Raytracer::Detail']]],
+  ['system_20coreplugin_18',['Plugin System &amp; CorePlugin',['../index.html#arch_plugins',1,'']]]
 ];

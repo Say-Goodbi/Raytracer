@@ -14,7 +14,8 @@ var hierarchy =
     [ "RayTracer::Color", "structRayTracer_1_1Color.html", null ],
     [ "std::exception", null, [
       [ "RayTracer::Exception", "classRayTracer_1_1Exception.html", [
-        [ "RayTracer::DivisionByZeroException", "classRayTracer_1_1DivisionByZeroException.html", null ]
+        [ "RayTracer::DivisionByZeroException", "classRayTracer_1_1DivisionByZeroException.html", null ],
+        [ "RayTracer::ParsingException", "classRayTracer_1_1ParsingException.html", null ]
       ] ]
     ] ],
     [ "Geometry::HitRecord", "structGeometry_1_1HitRecord.html", null ],

@@ -1,7 +1,7 @@
 <map id="src/SceneSystem/PluginManager" name="src/SceneSystem/PluginManager">
 <area shape="rect" id="node1" href="dir_c885c4bcce55d6fe81345b3413717718.html" title="PluginManager" alt="" coords="26,52,145,77"/>
 <area shape="rect" id="node2" href="dir_55b41fb77a5097913bc464fb6a145e9c.html" title="Objects" alt="" coords="50,125,121,151"/>
-<area shape="poly" id="edge1" href="dir_000024_000021.html" alt="" coords="88,78,88,112,83,112,83,78"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000024_000021.html" title="1" alt="" coords="89,100,98,114"/>
+<area shape="poly" id="edge1" href="dir_000025_000021.html" alt="" coords="88,78,88,112,83,112,83,78"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000025_000021.html" title="1" alt="" coords="89,100,98,114"/>
 <area shape="rect" id="clust1" href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" title="SceneSystem" alt="" coords="16,16,155,88"/>
 </map>

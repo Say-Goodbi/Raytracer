@@ -9,5 +9,6 @@ var searchData=
   ['ambientlight_6',['AmbientLight',['../classRayTracer_1_1AmbientLight.html#a5b12101e2c3a0fa405dddc627d57e344',1,'RayTracer::AmbientLight']]],
   ['aprimitive_7',['APrimitive',['../classRayTracer_1_1APrimitive.html#ae9f067217ef30e7d9c816f247420d672',1,'RayTracer::APrimitive']]],
   ['arenderer_8',['ARenderer',['../classRayTracer_1_1ARenderer.html#a44a60f0d86ca19731689141bfea654c7',1,'RayTracer::ARenderer']]],
-  ['at_9',['at',['../classGeometry_1_1Ray.html#ab2ee230ea6c5b866a94d7bfd57c98845',1,'Geometry::Ray']]]
+  ['asobject_9',['asObject',['../namespaceRaytracer_1_1Detail.html#af79c6a33c6a410a927b7b3246b97ad2e',1,'Raytracer::Detail']]],
+  ['at_10',['at',['../classGeometry_1_1Ray.html#ab2ee230ea6c5b866a94d7bfd57c98845',1,'Geometry::Ray']]]
 ];
