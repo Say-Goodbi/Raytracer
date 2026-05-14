@@ -19,5 +19,6 @@ namespace RayTracer
             Cylinder() = default;
             ~Cylinder() = default;
             std::optional<Geometry::HitRecord> hit(const Geometry::Ray& ray) const override;
+            std::optional<Geometry::AABB> getBounds() const override;
     };
 } // namespace RayTracer

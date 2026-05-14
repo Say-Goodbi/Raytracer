@@ -37,4 +37,9 @@ namespace RayTracer
         }
         return std::nullopt;
     }
+
+    std::optional<Geometry::AABB> Plane::getBounds() const
+    {
+        return std::nullopt;
+    }
 } // namespace RayTracer
