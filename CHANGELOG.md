@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/Say-Goodbi/Raytracer/compare/v1.3.0...v1.3.1) (2026-05-14)
+
+
+### Bug Fixes
+
+* update camera configurations and add parsing exception handling, with component loader helpers ([b7f776e](https://github.com/Say-Goodbi/Raytracer/commit/b7f776e0510941c5c7f83f4dff98763201f0bba6))
+
 # [1.3.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.2.1...v1.3.0) (2026-05-14)
 
 
