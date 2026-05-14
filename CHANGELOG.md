@@ -1,3 +1,20 @@
+# [1.3.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.2.1...v1.3.0) (2026-05-14)
+
+
+### Bug Fixes
+
+* matrix protected value access ([962e8e2](https://github.com/Say-Goodbi/Raytracer/commit/962e8e2d39501ed82ff3f08ea28f1d96b64dee93))
+
+
+### Features
+
+* add cylinder primitive support in CorePlugin ([a6fda0c](https://github.com/Say-Goodbi/Raytracer/commit/a6fda0c4ee1cd14a1841aecc7bcd239737b9646a))
+* add DivisionByZeroException and Matrix class implementation ([b19db2d](https://github.com/Say-Goodbi/Raytracer/commit/b19db2d0c24a0f94e694ce4b4abca302af13f0e3))
+* add DivisionByZeroException and Matrix class implementation ([77dc3d3](https://github.com/Say-Goodbi/Raytracer/commit/77dc3d3694c75549a49614e866e53b0ef3aeaebc))
+* camera now uses 4x4 affine transformation matrix ([8d40543](https://github.com/Say-Goodbi/Raytracer/commit/8d40543c060d7a0836d44766828b62fe894dc5a0))
+* implement material handling and support for lambertian material in CorePlugin ([0548ad9](https://github.com/Say-Goodbi/Raytracer/commit/0548ad939f0b59603970ff21ecc8eed0f81b5ca3))
+* phong material + fix ([add9195](https://github.com/Say-Goodbi/Raytracer/commit/add919524a0b5a830dfc8fb309df728504110db6))
+
 ## [1.2.1](https://github.com/Say-Goodbi/Raytracer/compare/v1.2.0...v1.2.1) (2026-05-12)
 
 
