@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "Raytracer", "index.html", [
     [ "Raytracer Manual", "index.html", "index" ],
+    [ "Space Partitioning", "space_partitioning.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -59,10 +60,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AInterface_8hpp.html",
-"classGeometry_1_1Vector3D.html#a3ae71c5188cb20556a1ec9b617fe8633",
-"classRayTracer_1_1PluginManager.html",
-"structRayTracer_1_1Color.html#a327b4006c4abe3faf3491929b8ee1a7c"
+"AABB_8hpp.html",
+"classGeometry_1_1TransformMatrix.html#a181d7a1621ca0af8a71291b02eb6f81f",
+"classRayTracer_1_1Parser.html#aeba7e2f0e2fcf1a56e16c916168009cb",
+"namespaceGeometry.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

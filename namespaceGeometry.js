@@ -1,5 +1,6 @@
 var namespaceGeometry =
 [
+    [ "AABB", "classGeometry_1_1AABB.html", "classGeometry_1_1AABB" ],
     [ "HitRecord", "structGeometry_1_1HitRecord.html", "structGeometry_1_1HitRecord" ],
     [ "Matrix", "classGeometry_1_1Matrix.html", "classGeometry_1_1Matrix" ],
     [ "Point3D", "classGeometry_1_1Point3D.html", "classGeometry_1_1Point3D" ],

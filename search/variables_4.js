@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['height_0',['height',['../classGeometry_1_1Rectangle3D.html#af19a1a8bffed0145659d7df60921ea45',1,'Geometry::Rectangle3D']]]
+  ['g_0',['g',['../structRayTracer_1_1Color.html#a2867dd8ad913426dfa277ffb141241dc',1,'RayTracer::Color']]]
 ];

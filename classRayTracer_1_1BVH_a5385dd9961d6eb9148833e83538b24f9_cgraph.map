@@ -1,0 +1,12 @@
+<map id="RayTracer::BVH::hit" name="RayTracer::BVH::hit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,152,80"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1BVH.html#aa28c211e870f890ee8b318cb0356beb7" title=" " alt="" coords="200,55,381,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,65,186,65,186,70,152,70"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="256,56,249,46,253,36,267,30,291,28,320,32,332,41,328,45,318,37,291,33,268,35,256,40,254,46,260,53"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1APrimitive.html#af00a66a6a6b8d251f5d21e1cc5077c6b" title="Test ray intersection with this primitive." alt="" coords="429,5,616,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="350,52,448,31,449,36,352,57"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1AABB.html#a8c406537b6e233f459bf9c258f7ad911" title=" " alt="" coords="445,55,600,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="382,65,432,65,432,70,382,70"/>
+<area shape="rect" id="Node000005" href="$structRayTracer_1_1BVH_1_1Node.html#adf1c12ea3158748487372080e28a8315" title=" " alt="" coords="441,105,605,145"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="344,77,429,99,427,104,342,83"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="RayTracer::Sphere::getBounds" name="RayTracer::Sphere::getBounds">
+<area shape="rect" id="Node000001" title="Get the primitive&#39;s axis&#45;aligned bounds, if any. Unbounded primitives may return std::nullopt." alt="" coords="5,87,152,127"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1AABB.html#ae2037890566d429b5b2f933a6ca9900c" title=" " alt="" coords="200,5,375,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,85,199,41,222,32,224,37,201,46,114,90"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="211,55,364,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,94,196,87,197,92,152,99"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Point3D.html#a59644f9fa320bfc8f33e3761fd7577b0" title=" " alt="" coords="211,119,364,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="152,116,197,123,196,128,152,121"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1Point3D.html#a317d081effd79290e9d5e314ee335484" title=" " alt="" coords="211,183,364,223"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="116,125,201,169,217,176,215,181,199,174,113,130"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="423,151,576,191"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="365,148,409,155,409,160,364,154"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="364,189,409,182,409,188,365,194"/>
+</map>

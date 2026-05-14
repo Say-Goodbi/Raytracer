@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['raytracer_20manual_0',['Raytracer Manual',['../index.html',1,'']]]
+  ['partitioning_0',['Space Partitioning',['../space_partitioning.html',1,'']]]
 ];

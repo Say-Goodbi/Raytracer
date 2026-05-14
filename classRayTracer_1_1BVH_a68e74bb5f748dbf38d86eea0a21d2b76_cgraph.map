@@ -1,0 +1,26 @@
+<map id="RayTracer::BVH::BVH" name="RayTracer::BVH::BVH">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,263,164,288"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1BVH.html#a6d1f432f54cdd62367f622f22be4eb90" title=" " alt="" coords="225,127,388,152"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,261,271,158,274,162,108,265"/>
+<area shape="rect" id="Node000008" href="$classGeometry_1_1AABB.html#ab0044437bd506a05e83b4fa2154112bd" title=" " alt="" coords="713,263,904,288"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="164,273,699,273,699,278,164,278"/>
+<area shape="rect" id="Node000009" href="$classRayTracer_1_1BVH.html#a35dd93780219d96db4c13861d755dc50" title=" " alt="" coords="212,313,401,353"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="135,286,216,307,215,312,134,291"/>
+<area shape="poly" id="edge8_Node000002_Node000002" title=" " alt="" coords="271,129,263,119,267,109,282,102,307,100,337,104,350,113,346,117,335,109,307,106,283,108,270,112,268,118,275,125"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1AABB.html#ae2037890566d429b5b2f933a6ca9900c" title=" " alt="" coords="952,62,1127,87"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,125,370,76,407,51,448,32,522,13,598,5,674,3,749,8,820,18,884,30,986,55,985,60,883,35,819,23,748,14,674,9,598,10,523,19,450,37,410,55,374,81,321,129"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="963,205,1116,245"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="332,150,385,175,450,197,585,219,721,229,846,231,949,228,949,234,846,237,721,235,584,224,449,202,383,180,330,155"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1BVH.html#ae7a593c0ee607404fdc95024f8a17fab" title=" " alt="" coords="452,148,663,188"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="388,146,438,152,438,157,388,151"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1AABB.html#ad625c435b383175aae100d15fa0f3cca" title=" " alt="" coords="723,126,894,151"/>
+<area shape="poly" id="edge10_Node000002_Node000006" title=" " alt="" coords="388,134,449,133,665,133,710,134,710,139,665,138,449,138,388,140"/>
+<area shape="rect" id="Node000007" href="$classGeometry_1_1AABB.html#a90d5e4b3068744113a03a307ef1ab258" title=" " alt="" coords="449,47,665,72"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="344,124,449,89,498,74,500,79,450,94,345,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="662,153,709,147,710,152,663,158"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="855,123,979,88,980,93,856,128"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="845,149,973,198,972,203,843,154"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="867,260,949,242,950,247,868,265"/>
+<area shape="rect" id="Node000010" href="$classRayTracer_1_1APrimitive.html#a6860e01f9fe7dba5d0a8301aba44efa0" title="Get the primitive&#39;s axis&#45;aligned bounds, if any. Unbounded primitives may return std::nullopt." alt="" coords="476,313,639,353"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="401,330,462,330,462,336,401,336"/>
+</map>

@@ -9,5 +9,6 @@ var searchData=
   ['insert_5fvalue_6',['insert_value',['../classRayTracer_1_1Parser.html#adce47cc9cf11b659b1741cc50521c03c',1,'RayTracer::Parser']]],
   ['insert_5fvector_5fobject_7',['insert_vector_object',['../classRayTracer_1_1Parser.html#a19bd0b85bbfe1180aef1f13fac4024ad',1,'RayTracer::Parser']]],
   ['interface_20definitions_8',['Core Framework (Interface Definitions)',['../index.html#folders_core',1,'']]],
-  ['introduction_9',['Introduction',['../index.html#intro',1,'']]]
+  ['introduction_9',['Introduction',['../index.html#intro',1,'']]],
+  ['isleaf_10',['isLeaf',['../structRayTracer_1_1BVH_1_1Node.html#adf1c12ea3158748487372080e28a8315',1,'RayTracer::BVH::Node']]]
 ];

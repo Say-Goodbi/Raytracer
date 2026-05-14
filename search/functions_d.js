@@ -9,5 +9,7 @@ var searchData=
   ['pluginmanager_6',['PluginManager',['../classRayTracer_1_1PluginManager.html#a313057938cfe4b4e2c5077746da6c5a5',1,'RayTracer::PluginManager']]],
   ['point3d_7',['point3d',['../classGeometry_1_1Point3D.html#a435b4574ffcf56cbe867a7d400c30949',1,'Geometry::Point3D::Point3D(void)'],['../classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d',1,'Geometry::Point3D::Point3D(double x, double y, double z)']]],
   ['pointat_8',['pointAt',['../classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0',1,'Geometry::Rectangle3D']]],
-  ['pointlight_9',['PointLight',['../classRayTracer_1_1PointLight.html#abb0bed47008dfe0693bf7eace117c86d',1,'RayTracer::PointLight']]]
+  ['pointlight_9',['PointLight',['../classRayTracer_1_1PointLight.html#abb0bed47008dfe0693bf7eace117c86d',1,'RayTracer::PointLight']]],
+  ['prepareaccelerationstructure_10',['prepareAccelerationStructure',['../classRayTracer_1_1Scene.html#a95fa63f62bcc5ebefabf3209eb5af01a',1,'RayTracer::Scene']]],
+  ['primitivebounds_11',['primitiveBounds',['../classRayTracer_1_1BVH.html#a35dd93780219d96db4c13861d755dc50',1,'RayTracer::BVH']]]
 ];

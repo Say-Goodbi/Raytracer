@@ -1,11 +1,18 @@
 <map id="RayTracer::APrimitive::hit" name="RayTracer::APrimitive::hit">
-<area shape="rect" id="Node000001" title="Test ray intersection with this primitive." alt="" coords="452,77,639,102"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="229,5,382,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="483,76,380,48,382,43,484,70"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1DirectionalLight.html#a7170b3c9d9e2c2e697139f0dae68ab5b" title="Compute light contribution, shadow ray cast in opposite direction." alt="" coords="207,69,404,109"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="438,92,404,92,404,87,438,87"/>
-<area shape="rect" id="Node000005" href="$classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20" title="Compute light contribution." alt="" coords="226,133,385,173"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="484,108,382,136,380,131,483,103"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,5,159,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,28,159,28,159,23,215,23"/>
+<area shape="rect" id="Node000001" title="Test ray intersection with this primitive." alt="" coords="1055,77,1241,102"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1DirectionalLight.html#a7170b3c9d9e2c2e697139f0dae68ab5b" title="Compute light contribution, shadow ray cast in opposite direction." alt="" coords="809,5,1007,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1086,76,983,48,985,43,1087,70"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20" title="Compute light contribution." alt="" coords="829,69,987,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1041,92,988,92,988,87,1041,87"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1BVH.html#aa28c211e870f890ee8b318cb0356beb7" title=" " alt="" coords="817,158,999,183"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1098,109,947,160,946,155,1096,104"/>
+<area shape="poly" id="edge8_Node000004_Node000004" title=" " alt="" coords="947,148,936,140,908,137,885,139,872,144,870,149,876,156,872,160,865,150,869,140,883,134,908,131,938,135,950,144"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1BVH.html#a5385dd9961d6eb9148833e83538b24f9" title=" " alt="" coords="615,158,761,183"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="803,173,762,173,762,168,803,168"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1Scene.html#a67328ab35346b609ab3b7220fa08098c" title="Find the closest hit for a ray using the current acceleration state." alt="" coords="408,158,567,183"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="601,173,567,173,567,168,601,168"/>
+<area shape="rect" id="Node000007" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="207,151,360,191"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="394,173,361,173,361,168,394,168"/>
+<area shape="rect" id="Node000008" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,151,159,191"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="193,173,159,173,159,168,193,168"/>
 </map>

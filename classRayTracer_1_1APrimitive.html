@@ -107,14 +107,14 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1APrimitive.html','')
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive__inherit__graph.svg" width="454" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive__inherit__graph.svg" width="454" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::APrimitive:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive__coll__graph.svg" width="166" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive__coll__graph.svg" width="166" height="156"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af00a66a6a6b8d251f5d21e1cc5077c6b" id="r_af00a66a6a6b8d251f5d21e1cc5077c6b"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; <a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#af00a66a6a6b8d251f5d21e1cc5077c6b">hit</a> (const <a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;ray) const =0</td></tr>
 <tr class="memdesc:af00a66a6a6b8d251f5d21e1cc5077c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test ray intersection with this primitive.  <br /></td></tr>
 <tr class="separator:af00a66a6a6b8d251f5d21e1cc5077c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6860e01f9fe7dba5d0a8301aba44efa0" id="r_a6860e01f9fe7dba5d0a8301aba44efa0"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; <a class="el" href="classGeometry_1_1AABB.html">Geometry::AABB</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#a6860e01f9fe7dba5d0a8301aba44efa0">getBounds</a> () const =0</td></tr>
+<tr class="memdesc:a6860e01f9fe7dba5d0a8301aba44efa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the primitive's axis-aligned bounds, if any. Unbounded primitives may return std::nullopt.  <br /></td></tr>
+<tr class="separator:a6860e01f9fe7dba5d0a8301aba44efa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc1a350e79537fa0b9c8588a170bdcf" id="r_acdc1a350e79537fa0b9c8588a170bdcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#acdc1a350e79537fa0b9c8588a170bdcf">getMaterial</a> () const</td></tr>
 <tr class="memdesc:acdc1a350e79537fa0b9c8588a170bdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the material of this primitive.  <br /></td></tr>
 <tr class="separator:acdc1a350e79537fa0b9c8588a170bdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,7 +143,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for all primitives (renderable objects). Primitives have geometry and a material. </p>
 
-<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00011">11</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00012">12</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae9f067217ef30e7d9c816f247420d672" name="ae9f067217ef30e7d9c816f247420d672"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9f067217ef30e7d9c816f247420d672">&#9670;&#160;</a></span>APrimitive()</h2>
@@ -174,7 +177,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00019">19</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00020">20</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -211,6 +214,42 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6860e01f9fe7dba5d0a8301aba44efa0" name="a6860e01f9fe7dba5d0a8301aba44efa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6860e01f9fe7dba5d0a8301aba44efa0">&#9670;&#160;</a></span>getBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::optional&lt; <a class="el" href="classGeometry_1_1AABB.html">Geometry::AABB</a> &gt; RayTracer::APrimitive::getBounds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the primitive's axis-aligned bounds, if any. Unbounded primitives may return std::nullopt. </p>
+
+<p>Implemented in <a class="el" href="classRayTracer_1_1Cylinder.html#a0c2d2c5ee007e06c19fcf504323e0de5">RayTracer::Cylinder</a>, <a class="el" href="classRayTracer_1_1Plane.html#a69c3cdfd8ba4d3b45d3ddad4d82f0af1">RayTracer::Plane</a>, and <a class="el" href="classRayTracer_1_1Sphere.html#a873777f6a7ae521b8e940f7b94c80fd8">RayTracer::Sphere</a>.</p>
+<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive_a6860e01f9fe7dba5d0a8301aba44efa0_icgraph.svg" width="619" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="acdc1a350e79537fa0b9c8588a170bdcf" name="acdc1a350e79537fa0b9c8588a170bdcf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acdc1a350e79537fa0b9c8588a170bdcf">&#9670;&#160;</a></span>getMaterial()</h2>
 
@@ -230,11 +269,11 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the material </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="APrimitive_8cpp_source.html#l00005">5</a> of file <a class="el" href="APrimitive_8cpp_source.html">APrimitive.cpp</a>.</p>
-<div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive_acdc1a350e79537fa0b9c8588a170bdcf_icgraph.svg" width="395" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -274,12 +313,12 @@ Private Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Optional HitRecord if intersection occurs, empty otherwise </dd></dl>
 
 <p>Implemented in <a class="el" href="classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af">RayTracer::Cylinder</a>, <a class="el" href="classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916">RayTracer::Plane</a>, and <a class="el" href="classRayTracer_1_1Sphere.html#a40d439c5a658465a6eeef01f7679ecc9">RayTracer::Sphere</a>.</p>
-<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive_af00a66a6a6b8d251f5d21e1cc5077c6b_icgraph.svg" width="644" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive_af00a66a6a6b8d251f5d21e1cc5077c6b_icgraph.svg" width="100%" height="447"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -307,7 +346,7 @@ Private Attributes</h2></td></tr>
 
 <p>Material defining shading behavior. </p>
 
-<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00014">14</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00015">15</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
 
 </div>
 </div>

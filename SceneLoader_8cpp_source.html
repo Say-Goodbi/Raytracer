@@ -114,17 +114,16 @@ $(document).ready(function(){initNavTree('SceneLoader_8cpp_source.html',''); ini
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        std::unique_ptr&lt;Scene&gt; scene = std::make_unique&lt;Scene&gt;();</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">if</span> (!<span class="keyword">this</span>-&gt;_parser._node)</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">throw</span> RayTracer::Exception(<span class="stringliteral">&quot;Failed to parse scene configuration file.&quot;</span>);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[key, nodePtr] : std::get&lt;Object&gt;(_parser._node-&gt;value))</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[componentKey, creator] : _componentCreators) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <span class="keywordflow">if</span> (key != componentKey)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                creator(nodePtr, _pluginManager, scene);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            }</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">return</span> scene;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">throw</span> RayTracer::ParsingException(<span class="stringliteral">&quot;Failed to parse scene configuration file.&quot;</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;[componentKey, creator] : _componentCreators) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keyword">auto</span> it = std::get&lt;Object&gt;(_parser._node-&gt;value).find(componentKey);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordflow">if</span> (it == std::get&lt;Object&gt;(_parser._node-&gt;value).end())</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keywordflow">throw</span> RayTracer::ParsingException(<span class="stringliteral">&quot;Missing required component in scene configuration: &quot;</span> + componentKey);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            creator(it-&gt;second, _pluginManager, scene);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">return</span> scene;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 <div class="ttc" id="aclassRayTracer_1_1SceneLoader_html"><div class="ttname"><a href="classRayTracer_1_1SceneLoader.html">RayTracer::SceneLoader</a></div><div class="ttdef"><b>Definition</b> <a href="SceneLoader_8hpp_source.html#l00009">SceneLoader.hpp:10</a></div></div>
 <div class="ttc" id="aclassRayTracer_1_1SceneLoader_html_a4de4a46229ec18f85513e607030764a1"><div class="ttname"><a href="classRayTracer_1_1SceneLoader.html#a4de4a46229ec18f85513e607030764a1">RayTracer::SceneLoader::SceneLoader</a></div><div class="ttdeci">SceneLoader(const std::string &amp;filename)</div><div class="ttdef"><b>Definition</b> <a href="SceneLoader_8cpp_source.html#l00010">SceneLoader.cpp:10</a></div></div>
 <div class="ttc" id="aclassRayTracer_1_1SceneLoader_html_a8d35f4daaeb937683de2a9f572ba0137"><div class="ttname"><a href="classRayTracer_1_1SceneLoader.html#a8d35f4daaeb937683de2a9f572ba0137">RayTracer::SceneLoader::loadScene</a></div><div class="ttdeci">std::unique_ptr&lt; Scene &gt; loadScene(void)</div><div class="ttdoc">Load a scene from a configuration file.</div><div class="ttdef"><b>Definition</b> <a href="SceneLoader_8cpp_source.html#l00012">SceneLoader.cpp:12</a></div></div>

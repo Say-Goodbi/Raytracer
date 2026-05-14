@@ -104,14 +104,14 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1Cylinder.html',''); 
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Cylinder__inherit__graph.svg" width="166" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Cylinder__inherit__graph.svg" width="166" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::Cylinder:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Cylinder__coll__graph.svg" width="498" height="544"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Cylinder__coll__graph.svg" width="498" height="564"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -125,6 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab42450e2290b96bccdf83ba79fa9d8af" id="r_ab42450e2290b96bccdf83ba79fa9d8af"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af">hit</a> (const <a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;ray) const override</td></tr>
 <tr class="memdesc:ab42450e2290b96bccdf83ba79fa9d8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test ray–cylinder intersection using the quadratic form of the cylinder equation.  <br /></td></tr>
 <tr class="separator:ab42450e2290b96bccdf83ba79fa9d8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2d2c5ee007e06c19fcf504323e0de5" id="r_a0c2d2c5ee007e06c19fcf504323e0de5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classGeometry_1_1AABB.html">Geometry::AABB</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Cylinder.html#a0c2d2c5ee007e06c19fcf504323e0de5">getBounds</a> () const override</td></tr>
+<tr class="memdesc:a0c2d2c5ee007e06c19fcf504323e0de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the primitive's axis-aligned bounds, if any. Unbounded primitives may return std::nullopt.  <br /></td></tr>
+<tr class="separator:a0c2d2c5ee007e06c19fcf504323e0de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classRayTracer_1_1APrimitive"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRayTracer_1_1APrimitive')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRayTracer_1_1APrimitive.html">RayTracer::APrimitive</a></td></tr>
 <tr class="memitem:ae9f067217ef30e7d9c816f247420d672 inherit pub_methods_classRayTracer_1_1APrimitive" id="r_ae9f067217ef30e7d9c816f247420d672"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#ae9f067217ef30e7d9c816f247420d672">APrimitive</a> (std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> &gt; material)</td></tr>
 <tr class="memdesc:ae9f067217ef30e7d9c816f247420d672 inherit pub_methods_classRayTracer_1_1APrimitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
@@ -256,6 +259,37 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0c2d2c5ee007e06c19fcf504323e0de5" name="a0c2d2c5ee007e06c19fcf504323e0de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c2d2c5ee007e06c19fcf504323e0de5">&#9670;&#160;</a></span>getBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="classGeometry_1_1AABB.html">Geometry::AABB</a> &gt; RayTracer::Cylinder::getBounds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the primitive's axis-aligned bounds, if any. Unbounded primitives may return std::nullopt. </p>
+
+<p>Implements <a class="el" href="classRayTracer_1_1APrimitive.html#a6860e01f9fe7dba5d0a8301aba44efa0">RayTracer::APrimitive</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Cylinder_8cpp_source.html#l00071">71</a> of file <a class="el" href="Cylinder_8cpp_source.html">Cylinder.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ab42450e2290b96bccdf83ba79fa9d8af" name="ab42450e2290b96bccdf83ba79fa9d8af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab42450e2290b96bccdf83ba79fa9d8af">&#9670;&#160;</a></span>hit()</h2>
 

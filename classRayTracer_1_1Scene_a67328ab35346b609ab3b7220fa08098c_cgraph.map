@@ -1,0 +1,14 @@
+<map id="RayTracer::Scene::hit" name="RayTracer::Scene::hit">
+<area shape="rect" id="Node000001" title="Find the closest hit for a ray using the current acceleration state." alt="" coords="5,55,164,80"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1BVH.html#a5385dd9961d6eb9148833e83538b24f9" title=" " alt="" coords="212,55,359,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,65,198,65,198,70,164,70"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1BVH.html#aa28c211e870f890ee8b318cb0356beb7" title=" " alt="" coords="407,55,588,80"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="359,65,393,65,393,70,359,70"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="463,56,455,46,459,36,474,30,497,28,527,32,538,41,535,45,525,37,497,33,475,35,463,40,461,46,467,53"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1APrimitive.html#af00a66a6a6b8d251f5d21e1cc5077c6b" title="Test ray intersection with this primitive." alt="" coords="636,5,823,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="557,52,655,31,656,36,558,57"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1AABB.html#a8c406537b6e233f459bf9c258f7ad911" title=" " alt="" coords="652,55,807,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="589,65,638,65,638,70,589,70"/>
+<area shape="rect" id="Node000006" href="$structRayTracer_1_1BVH_1_1Node.html#adf1c12ea3158748487372080e28a8315" title=" " alt="" coords="647,105,811,145"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="550,77,635,99,634,104,549,83"/>
+</map>

@@ -9,7 +9,7 @@
 <area shape="rect" id="Node000008" href="$classGeometry_1_1TransformMatrix.html#a065621a852d662251597213f484ea3f6" title=" " alt="" coords="408,195,609,235"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="721,140,610,185,576,197,574,192,608,180,719,135"/>
 <area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="421,66,357,48,358,43,422,60"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="207,69,360,109"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#a502f05c3a82d9627f26300d71569ffad" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="207,69,360,109"/>
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="397,91,360,91,360,86,397,85"/>
 <area shape="rect" id="Node000006" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="207,133,360,173"/>
 <area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="394,155,360,155,360,150,394,149"/>

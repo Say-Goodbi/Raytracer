@@ -1,0 +1,5 @@
+<map id="RayTracer::Scene::prepareAccelerationStructure" name="RayTracer::Scene::prepareAccelerationStructure">
+<area shape="rect" id="Node000001" title="Prepare the scene hit structure for the next render pass." alt="" coords="5,5,196,45"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1APrimitive.html#a6860e01f9fe7dba5d0a8301aba44efa0" title="Get the primitive&#39;s axis&#45;aligned bounds, if any. Unbounded primitives may return std::nullopt." alt="" coords="244,5,407,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,23,230,23,230,28,196,28"/>
+</map>

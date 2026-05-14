@@ -1,0 +1,17 @@
+<map id="RayTracer::BVH::build" name="RayTracer::BVH::build">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,69,168,95"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="48,71,40,61,44,51,60,45,87,43,120,46,133,56,129,60,118,51,87,48,61,50,48,55,45,60,52,67"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1AABB.html#ae2037890566d429b5b2f933a6ca9900c" title=" " alt="" coords="699,13,873,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,67,157,44,215,26,341,9,468,3,586,5,685,12,685,17,586,11,468,8,342,14,217,31,159,49,112,72"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="709,63,863,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,92,171,103,216,111,346,120,477,117,597,107,695,95,696,100,597,113,477,122,346,125,216,117,170,108,128,97"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1BVH.html#ae7a593c0ee607404fdc95024f8a17fab" title=" " alt="" coords="219,62,429,102"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,79,205,79,205,85,168,85"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1AABB.html#ad625c435b383175aae100d15fa0f3cca" title=" " alt="" coords="480,41,651,67"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="128,67,170,56,216,47,281,42,346,40,466,43,466,49,346,45,281,47,216,53,171,61,129,72"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1AABB.html#a90d5e4b3068744113a03a307ef1ab258" title=" " alt="" coords="216,177,432,203"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="108,93,156,123,217,155,259,171,257,176,215,160,153,128,105,97"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="429,67,466,63,467,68,430,72"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="651,40,685,36,685,41,651,46"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="651,63,696,69,695,74,651,68"/>
+</map>

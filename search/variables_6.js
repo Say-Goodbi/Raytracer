@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normal_0',['normal',['../structGeometry_1_1HitRecord.html#a6bfe1027d90cfa0b6ed23f198e88a666',1,'Geometry::HitRecord']]]
+  ['left_0',['left',['../structRayTracer_1_1BVH_1_1Node.html#a6e3eb4a49670951bb7eb165081daef94',1,'RayTracer::BVH::Node']]]
 ];

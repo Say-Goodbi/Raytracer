@@ -25,7 +25,7 @@
 <area shape="rect" id="Node000015" href="$classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd" title="Return the deterministic bounce direction for this material." alt="" coords="211,637,401,662"/>
 <area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="526,385,513,438,491,503,456,569,434,600,407,626,386,639,384,634,404,622,430,596,452,567,486,501,508,436,521,384"/>
 <area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="225,114,206,107,120,67,122,62,208,102,227,109"/>
-<area shape="rect" id="Node000005" href="$classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="5,116,159,156"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1Camera.html#a502f05c3a82d9627f26300d71569ffad" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="5,116,159,156"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="194,139,159,139,159,133,194,133"/>
 <area shape="rect" id="Node000007" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,269,159,309"/>
 <area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="227,227,208,235,124,272,122,267,206,230,226,222"/>

@@ -1,0 +1,5 @@
+<map id="Geometry::Point3D::operator&#45;" name="Geometry::Point3D::operator&#45;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="200,5,353,45"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Sphere.html#a873777f6a7ae521b8e940f7b94c80fd8" title="Get the primitive&#39;s axis&#45;aligned bounds, if any. Unbounded primitives may return std::nullopt." alt="" coords="5,5,152,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,28,152,28,152,23,186,23"/>
+</map>

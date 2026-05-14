@@ -6,5 +6,6 @@ var searchData=
   ['sceneloader_3',['SceneLoader',['../classRayTracer_1_1SceneLoader.html#a4de4a46229ec18f85513e607030764a1',1,'RayTracer::SceneLoader']]],
   ['scenewriter_4',['SceneWriter',['../classRayTracer_1_1SceneWriter.html#a15622a3205869a4e472e37ed311efb43',1,'RayTracer::SceneWriter']]],
   ['sphere_5',['Sphere',['../classRayTracer_1_1Sphere.html#a650db381c2a60dd2430c563048111e28',1,'RayTracer::Sphere']]],
-  ['stringfromscalar_6',['stringFromScalar',['../namespaceRaytracer_1_1Detail.html#a0fb3d790adf21dd83245d47a130eb866',1,'Raytracer::Detail']]]
+  ['stringfromscalar_6',['stringFromScalar',['../namespaceRaytracer_1_1Detail.html#a0fb3d790adf21dd83245d47a130eb866',1,'Raytracer::Detail']]],
+  ['surfacearea_7',['surfaceArea',['../classGeometry_1_1AABB.html#a90d5e4b3068744113a03a307ef1ab258',1,'Geometry::AABB']]]
 ];

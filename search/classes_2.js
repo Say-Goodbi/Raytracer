@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['directionallight_0',['DirectionalLight',['../classRayTracer_1_1DirectionalLight.html',1,'RayTracer']]],
-  ['divisionbyzeroexception_1',['DivisionByZeroException',['../classRayTracer_1_1DivisionByZeroException.html',1,'RayTracer']]]
+  ['camera_0',['Camera',['../classRayTracer_1_1Camera.html',1,'RayTracer']]],
+  ['color_1',['Color',['../structRayTracer_1_1Color.html',1,'RayTracer']]],
+  ['cylinder_2',['Cylinder',['../classRayTracer_1_1Cylinder.html',1,'RayTracer']]]
 ];

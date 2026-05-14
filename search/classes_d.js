@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utils_0',['Utils',['../classRayTracer_1_1Utils.html',1,'RayTracer']]]
+  ['transformmatrix_0',['TransformMatrix',['../classGeometry_1_1TransformMatrix.html',1,'Geometry']]]
 ];

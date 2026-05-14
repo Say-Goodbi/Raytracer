@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['transformmatrix_0',['TransformMatrix',['../classGeometry_1_1TransformMatrix.html',1,'Geometry']]]
+  ['scene_0',['Scene',['../classRayTracer_1_1Scene.html',1,'RayTracer']]],
+  ['sceneloader_1',['SceneLoader',['../classRayTracer_1_1SceneLoader.html',1,'RayTracer']]],
+  ['scenewriter_2',['SceneWriter',['../classRayTracer_1_1SceneWriter.html',1,'RayTracer']]],
+  ['sphere_3',['Sphere',['../classRayTracer_1_1Sphere.html',1,'RayTracer']]]
 ];

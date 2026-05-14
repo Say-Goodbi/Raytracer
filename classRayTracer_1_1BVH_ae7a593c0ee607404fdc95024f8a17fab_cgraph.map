@@ -1,0 +1,9 @@
+<map id="RayTracer::BVH::boundsFromRecords" name="RayTracer::BVH::boundsFromRecords">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,216,67"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1AABB.html#ad625c435b383175aae100d15fa0f3cca" title=" " alt="" coords="264,35,435,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,45,250,45,250,50,216,50"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1AABB.html#ae2037890566d429b5b2f933a6ca9900c" title=" " alt="" coords="483,5,657,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="435,33,469,29,469,34,435,39"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="493,55,647,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="435,56,480,61,479,67,435,61"/>
+</map>

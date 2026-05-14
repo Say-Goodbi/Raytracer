@@ -14,9 +14,12 @@ var searchData=
   ['scenewriter_11',['scenewriter',['../index.html#arch_interface',1,'Output Pipeline: AInterface → SceneWriter'],['../classRayTracer_1_1SceneWriter.html#a15622a3205869a4e472e37ed311efb43',1,'RayTracer::SceneWriter::SceneWriter()'],['../classRayTracer_1_1SceneWriter.html',1,'RayTracer::SceneWriter']]],
   ['scenewriter_2ecpp_12',['SceneWriter.cpp',['../SceneWriter_8cpp.html',1,'']]],
   ['scenewriter_2ehpp_13',['SceneWriter.hpp',['../SceneWriter_8hpp.html',1,'']]],
-  ['sphere_14',['sphere',['../classRayTracer_1_1Sphere.html#a650db381c2a60dd2430c563048111e28',1,'RayTracer::Sphere::Sphere()'],['../classRayTracer_1_1Sphere.html',1,'RayTracer::Sphere']]],
-  ['sphere_2ecpp_15',['Sphere.cpp',['../Sphere_8cpp.html',1,'']]],
-  ['sphere_2ehpp_16',['Sphere.hpp',['../Sphere_8hpp.html',1,'']]],
-  ['stringfromscalar_17',['stringFromScalar',['../namespaceRaytracer_1_1Detail.html#a0fb3d790adf21dd83245d47a130eb866',1,'Raytracer::Detail']]],
-  ['system_20coreplugin_18',['Plugin System &amp; CorePlugin',['../index.html#arch_plugins',1,'']]]
+  ['space_20partitioning_14',['Space Partitioning',['../space_partitioning.html',1,'']]],
+  ['space_2dpartitioning_2edox_15',['space-partitioning.dox',['../space-partitioning_8dox.html',1,'']]],
+  ['sphere_16',['sphere',['../classRayTracer_1_1Sphere.html#a650db381c2a60dd2430c563048111e28',1,'RayTracer::Sphere::Sphere()'],['../classRayTracer_1_1Sphere.html',1,'RayTracer::Sphere']]],
+  ['sphere_2ecpp_17',['Sphere.cpp',['../Sphere_8cpp.html',1,'']]],
+  ['sphere_2ehpp_18',['Sphere.hpp',['../Sphere_8hpp.html',1,'']]],
+  ['stringfromscalar_19',['stringFromScalar',['../namespaceRaytracer_1_1Detail.html#a0fb3d790adf21dd83245d47a130eb866',1,'Raytracer::Detail']]],
+  ['surfacearea_20',['surfaceArea',['../classGeometry_1_1AABB.html#a90d5e4b3068744113a03a307ef1ab258',1,'Geometry::AABB']]],
+  ['system_20coreplugin_21',['Plugin System &amp; CorePlugin',['../index.html#arch_plugins',1,'']]]
 ];

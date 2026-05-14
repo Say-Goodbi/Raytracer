@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['main_2edox_1',['main.dox',['../main_8dox.html',1,'']]],
-  ['matrix_2ehpp_2',['Matrix.hpp',['../Matrix_8hpp.html',1,'']]]
+  ['lambertian_2ecpp_0',['Lambertian.cpp',['../Lambertian_8cpp.html',1,'']]],
+  ['lambertian_2ehpp_1',['Lambertian.hpp',['../Lambertian_8hpp.html',1,'']]]
 ];

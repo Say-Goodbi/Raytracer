@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['todo_20list_0',['Todo List',['../todo.html',1,'']]]
+  ['raytracer_20manual_0',['Raytracer Manual',['../index.html',1,'']]]
 ];

@@ -1,0 +1,7 @@
+<map id="RayTracer::Scene::hit" name="RayTracer::Scene::hit">
+<area shape="rect" id="Node000001" title="Find the closest hit for a ray using the current acceleration state." alt="" coords="408,13,567,38"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="207,5,360,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,28,361,28,361,23,394,23"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,5,159,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
+</map>

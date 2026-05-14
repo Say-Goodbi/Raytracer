@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "Geometry", "namespaceGeometry.html", [
+      [ "AABB", "classGeometry_1_1AABB.html", "classGeometry_1_1AABB" ],
       [ "HitRecord", "structGeometry_1_1HitRecord.html", "structGeometry_1_1HitRecord" ],
       [ "Matrix", "classGeometry_1_1Matrix.html", "classGeometry_1_1Matrix" ],
       [ "Point3D", "classGeometry_1_1Point3D.html", "classGeometry_1_1Point3D" ],
@@ -15,6 +16,7 @@ var annotated_dup =
       [ "AmbientLight", "classRayTracer_1_1AmbientLight.html", "classRayTracer_1_1AmbientLight" ],
       [ "APrimitive", "classRayTracer_1_1APrimitive.html", "classRayTracer_1_1APrimitive" ],
       [ "ARenderer", "classRayTracer_1_1ARenderer.html", "classRayTracer_1_1ARenderer" ],
+      [ "BVH", "classRayTracer_1_1BVH.html", "classRayTracer_1_1BVH" ],
       [ "Camera", "classRayTracer_1_1Camera.html", "classRayTracer_1_1Camera" ],
       [ "Color", "structRayTracer_1_1Color.html", "structRayTracer_1_1Color" ],
       [ "Cylinder", "classRayTracer_1_1Cylinder.html", "classRayTracer_1_1Cylinder" ],

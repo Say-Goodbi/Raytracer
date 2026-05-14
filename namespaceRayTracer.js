@@ -5,6 +5,7 @@ var namespaceRayTracer =
     [ "AmbientLight", "classRayTracer_1_1AmbientLight.html", "classRayTracer_1_1AmbientLight" ],
     [ "APrimitive", "classRayTracer_1_1APrimitive.html", "classRayTracer_1_1APrimitive" ],
     [ "ARenderer", "classRayTracer_1_1ARenderer.html", "classRayTracer_1_1ARenderer" ],
+    [ "BVH", "classRayTracer_1_1BVH.html", "classRayTracer_1_1BVH" ],
     [ "Camera", "classRayTracer_1_1Camera.html", "classRayTracer_1_1Camera" ],
     [ "Color", "structRayTracer_1_1Color.html", "structRayTracer_1_1Color" ],
     [ "Cylinder", "classRayTracer_1_1Cylinder.html", "classRayTracer_1_1Cylinder" ],

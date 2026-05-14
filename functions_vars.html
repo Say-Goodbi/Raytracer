@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <h3><a id="index__5F" name="index__5F"></a>- _ -</h3><ul>
 <li>_albedo&#160;:&#160;<a class="el" href="classRayTracer_1_1AMaterial.html#ae2ea6ddadfc7b62210ec15030e782e47">RayTracer::AMaterial</a></li>
 <li>_axis&#160;:&#160;<a class="el" href="classRayTracer_1_1Cylinder.html#ae66bba95840bbb8dfea6369a8296576c">RayTracer::Cylinder</a></li>
+<li>_bvh&#160;:&#160;<a class="el" href="classRayTracer_1_1Scene.html#a9595d84ba5f4051ce68f77c92fb60d81">RayTracer::Scene</a></li>
 <li>_center&#160;:&#160;<a class="el" href="classRayTracer_1_1Sphere.html#a52dcb02648fb13e20b1585ad44d4ec68">RayTracer::Sphere</a></li>
 <li>_cfg&#160;:&#160;<a class="el" href="classRayTracer_1_1Parser.html#a397013e3d0d9ffd7cc8e17bc692a5f31">RayTracer::Parser</a></li>
 <li>_color&#160;:&#160;<a class="el" href="classRayTracer_1_1AmbientLight.html#ab791b47863c1aa4790a1d0a3cd82c057">RayTracer::AmbientLight</a>, <a class="el" href="classRayTracer_1_1DirectionalLight.html#a8be45e7338a09559c41a5195befe8714">RayTracer::DirectionalLight</a>, <a class="el" href="classRayTracer_1_1PointLight.html#a06fd971b26244c8e00654e7cba293792">RayTracer::PointLight</a></li>
@@ -120,17 +121,25 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>_primitives&#160;:&#160;<a class="el" href="classRayTracer_1_1Scene.html#a3dc195cccae11c3bbb2357456d3fc8b4">RayTracer::Scene</a></li>
 <li>_radius&#160;:&#160;<a class="el" href="classRayTracer_1_1Cylinder.html#a106a8660cb42595fcb3606691c848c17">RayTracer::Cylinder</a>, <a class="el" href="classRayTracer_1_1Sphere.html#a2e45edb1294ff002b47439e69e8ee9db">RayTracer::Sphere</a></li>
 <li>_renderer&#160;:&#160;<a class="el" href="classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0">RayTracer::AInterface</a>, <a class="el" href="classRayTracer_1_1Scene.html#a754f50a09a5c693554f7424496657d07">RayTracer::Scene</a></li>
-<li>_root&#160;:&#160;<a class="el" href="classRayTracer_1_1Parser.html#a958164903ab312cbaf14e783d73beb89">RayTracer::Parser</a></li>
+<li>_root&#160;:&#160;<a class="el" href="classRayTracer_1_1BVH.html#a4c53b860aff82c489a44591277487d26">RayTracer::BVH</a>, <a class="el" href="classRayTracer_1_1Parser.html#a958164903ab312cbaf14e783d73beb89">RayTracer::Parser</a></li>
 <li>_screen&#160;:&#160;<a class="el" href="classRayTracer_1_1Camera.html#a2dd6aea870f6a5cdba1439c7fe7d2afc">RayTracer::Camera</a></li>
 <li>_shininess&#160;:&#160;<a class="el" href="classRayTracer_1_1Phong.html#ac9a276ebff2dd38c634d10d084f7c2d3">RayTracer::Phong</a></li>
 <li>_sqrtSamples&#160;:&#160;<a class="el" href="classRayTracer_1_1Camera.html#a5deba042fbd465270df347f8c16b8038">RayTracer::Camera</a></li>
 <li>_transform&#160;:&#160;<a class="el" href="classRayTracer_1_1Camera.html#a29065ba881e1be60e734f4bf6dfad072">RayTracer::Camera</a></li>
+<li>_unboundedPrimitives&#160;:&#160;<a class="el" href="classRayTracer_1_1Scene.html#a6470ce977b5b52fe48678c712f3ba03c">RayTracer::Scene</a></li>
+<li>_useBVH&#160;:&#160;<a class="el" href="classRayTracer_1_1Camera.html#abe07071acb44d6a8eef1b0116945a831">RayTracer::Camera</a>, <a class="el" href="classRayTracer_1_1Scene.html#af98e4bab00cba1dccd7121fd8ac12f14">RayTracer::Scene</a></li>
 <li>_width&#160;:&#160;<a class="el" href="classRayTracer_1_1ARenderer.html#ab998431fb926aac5044c28b48ed0b9cc">RayTracer::ARenderer</a></li>
 </ul>
 
 
 <h3><a id="index_b" name="index_b"></a>- b -</h3><ul>
 <li>b&#160;:&#160;<a class="el" href="structRayTracer_1_1Color.html#ac6ad4511d2e9abc6bcbb5401532702ae">RayTracer::Color</a></li>
+<li>bounds&#160;:&#160;<a class="el" href="structRayTracer_1_1BVH_1_1Node.html#ac3798ce4b64b35dbd2ec06a2155563ef">RayTracer::BVH::Node</a>, <a class="el" href="structRayTracer_1_1BVH_1_1Record.html#ada6c5ebb801ce1a410a3086071790a4e">RayTracer::BVH::Record</a></li>
+</ul>
+
+
+<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>centroid&#160;:&#160;<a class="el" href="structRayTracer_1_1BVH_1_1Record.html#add468d38aed2175dfcac89b79bd28384">RayTracer::BVH::Record</a></li>
 </ul>
 
 
@@ -150,8 +159,15 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </ul>
 
 
+<h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>left&#160;:&#160;<a class="el" href="structRayTracer_1_1BVH_1_1Node.html#a6e3eb4a49670951bb7eb165081daef94">RayTracer::BVH::Node</a></li>
+</ul>
+
+
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
 <li>material&#160;:&#160;<a class="el" href="structGeometry_1_1HitRecord.html#a13533bd4bf467153c60515d44fc53390">Geometry::HitRecord</a></li>
+<li>maximum&#160;:&#160;<a class="el" href="classGeometry_1_1AABB.html#a8efa9497265d064c730fbf776395d5c2">Geometry::AABB</a></li>
+<li>minimum&#160;:&#160;<a class="el" href="classGeometry_1_1AABB.html#a3fce17711f3085f3ef6b3dcb4532b892">Geometry::AABB</a></li>
 </ul>
 
 
@@ -167,12 +183,15 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
 <li>point&#160;:&#160;<a class="el" href="structGeometry_1_1HitRecord.html#a0c28780afbc6189a0ec44eb9f6d2ffdb">Geometry::HitRecord</a></li>
+<li>primitive&#160;:&#160;<a class="el" href="structRayTracer_1_1BVH_1_1Record.html#ad2729cab4f6c247c0c0b397d1f2eeea8">RayTracer::BVH::Record</a></li>
+<li>primitives&#160;:&#160;<a class="el" href="structRayTracer_1_1BVH_1_1Node.html#ac794a5fc0ce301ec4e27c8a8c9cf0c4f">RayTracer::BVH::Node</a></li>
 </ul>
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
 <li>r&#160;:&#160;<a class="el" href="structRayTracer_1_1Color.html#a743e525cffb3a3a3b63267b76b615432">RayTracer::Color</a></li>
 <li>rayDistance&#160;:&#160;<a class="el" href="structGeometry_1_1HitRecord.html#a802ecfa085c9cfaead2111fe16e0f34b">Geometry::HitRecord</a></li>
+<li>right&#160;:&#160;<a class="el" href="structRayTracer_1_1BVH_1_1Node.html#a9f74ad3fe044b03a0c5bbe6cd0cdc372">RayTracer::BVH::Node</a></li>
 </ul>
 
 

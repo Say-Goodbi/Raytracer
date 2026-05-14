@@ -1,26 +1,21 @@
 <map id="Geometry::Matrix::identity" name="Geometry::Matrix::identity">
-<area shape="rect" id="Node000001" title="Create an identity matrix." alt="" coords="533,173,728,198"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="308,5,461,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="607,164,554,112,521,84,484,60,459,48,461,43,487,55,524,80,558,108,611,160"/>
-<area shape="rect" id="Node000003" href="$classGeometry_1_1TransformMatrix.html#acff8638f8a3e9f4ed6e462c1b39c4083" title=" " alt="" coords="284,69,485,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="589,169,484,124,451,112,452,107,486,119,591,164"/>
-<area shape="rect" id="Node000006" href="$classGeometry_1_1TransformMatrix.html#a75fbc44956cff1212e332c49862f6b09" title=" " alt="" coords="284,133,485,173"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="519,174,485,169,486,164,520,168"/>
-<area shape="rect" id="Node000007" href="$classGeometry_1_1TransformMatrix.html#aea39d6665c49e892c46f10c545622ec5" title=" " alt="" coords="284,197,485,237"/>
-<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="520,202,486,207,485,202,519,197"/>
-<area shape="rect" id="Node000008" href="$classGeometry_1_1TransformMatrix.html#a5c6d12321bf1dcf7aa84380811b20798" title=" " alt="" coords="284,325,485,365"/>
-<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="611,210,558,263,524,291,487,316,461,328,459,323,484,311,521,287,554,259,607,206"/>
-<area shape="rect" id="Node000009" href="$classGeometry_1_1TransformMatrix.html#a02574645df377db5928c2dbaf0bf7315" title=" " alt="" coords="284,261,485,301"/>
-<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="591,206,486,252,452,264,451,259,484,247,589,202"/>
-<area shape="rect" id="Node000004" href="$namespaceRaytracer.html#a3383e6835a38ae30771c728347d5e556" title=" " alt="" coords="5,137,236,177"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,115,200,140,198,135,293,110"/>
-<area shape="rect" id="Node000005" href="$CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3" title=" " alt="" coords="65,205,176,230"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="294,118,286,123,270,140,263,157,254,175,238,191,208,206,177,215,176,209,206,201,234,187,250,171,258,155,266,137,282,119,291,113"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="270,158,236,158,236,153,270,152"/>
-<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="289,179,175,207,173,202,287,174"/>
-<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="282,197,209,180,210,175,283,192"/>
-<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="270,220,176,220,176,215,270,215"/>
-<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="300,323,283,316,202,272,139,233,142,228,204,268,285,311,302,318"/>
-<area shape="poly" id="edge14_Node000009_Node000004" title=" " alt="" coords="293,258,282,251,267,237,258,222,249,208,234,194,207,180,209,175,238,190,253,204,262,219,271,233,286,247,295,253"/>
-<area shape="poly" id="edge15_Node000009_Node000005" title=" " alt="" coords="287,261,173,233,175,227,289,255"/>
+<area shape="rect" id="Node000001" title="Create an identity matrix." alt="" coords="413,173,608,198"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="188,5,341,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,164,434,112,401,84,364,60,339,48,341,43,367,55,404,80,438,108,491,160"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1TransformMatrix.html#acff8638f8a3e9f4ed6e462c1b39c4083" title=" " alt="" coords="164,69,365,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="469,169,364,124,331,112,332,107,366,119,471,164"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1TransformMatrix.html#a75fbc44956cff1212e332c49862f6b09" title=" " alt="" coords="164,133,365,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="399,174,365,169,366,164,400,168"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1TransformMatrix.html#aea39d6665c49e892c46f10c545622ec5" title=" " alt="" coords="164,197,365,237"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="400,202,366,207,365,202,399,197"/>
+<area shape="rect" id="Node000007" href="$classGeometry_1_1TransformMatrix.html#a5c6d12321bf1dcf7aa84380811b20798" title=" " alt="" coords="164,261,365,301"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="471,206,366,252,332,264,331,259,364,247,469,202"/>
+<area shape="rect" id="Node000008" href="$classGeometry_1_1TransformMatrix.html#a02574645df377db5928c2dbaf0bf7315" title=" " alt="" coords="164,325,365,365"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="491,210,438,263,404,291,367,316,341,328,339,323,364,311,401,287,434,259,487,206"/>
+<area shape="rect" id="Node000004" href="$CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3" title=" " alt="" coords="5,205,116,230"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="177,117,165,124,138,143,112,166,74,206,71,202,108,162,134,139,163,119,175,113"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="188,180,103,207,101,202,186,175"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="150,220,116,220,116,215,150,215"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="186,260,101,233,103,228,188,255"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="175,322,163,316,134,296,108,273,71,232,74,229,112,269,138,292,165,311,177,317"/>
 </map>

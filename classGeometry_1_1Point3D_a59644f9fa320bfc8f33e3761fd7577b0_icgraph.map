@@ -1,5 +1,7 @@
 <map id="Geometry::Point3D::operator+" name="Geometry::Point3D::operator+">
-<area shape="rect" id="Node000001" title=" " alt="" coords="227,5,380,45"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="5,13,179,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,28,179,28,179,23,213,23"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="227,35,380,75"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Sphere.html#a873777f6a7ae521b8e940f7b94c80fd8" title="Get the primitive&#39;s axis&#45;aligned bounds, if any. Unbounded primitives may return std::nullopt." alt="" coords="19,5,165,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,45,165,38,166,33,214,40"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="5,70,179,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,69,179,74,178,69,213,64"/>
 </map>

@@ -1,9 +1,9 @@
 <map id="RayTracer::APrimitive" name="RayTracer::APrimitive">
-<area shape="rect" id="Node000001" title="Abstract base class for all primitives (renderable objects). Primitives have geometry and a material." alt="" coords="154,5,309,131"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Cylinder.html" title=" " alt="" coords="5,179,145,344"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,143,144,180,140,177,170,140"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Plane.html" title=" " alt="" coords="170,189,293,334"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,144,234,188,229,188,229,144"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1Sphere.html" title=" " alt="" coords="317,199,447,324"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="290,140,335,196,331,200,286,143"/>
+<area shape="rect" id="Node000001" title="Abstract base class for all primitives (renderable objects). Primitives have geometry and a material." alt="" coords="154,5,309,151"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Cylinder.html" title=" " alt="" coords="5,199,145,384"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,164,145,200,141,197,168,160"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Plane.html" title=" " alt="" coords="170,209,293,374"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,165,234,209,229,209,229,165"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Sphere.html" title=" " alt="" coords="317,219,447,364"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,161,333,217,329,220,289,164"/>
 </map>
