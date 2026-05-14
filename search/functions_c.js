@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['ray_0',['ray',['../classGeometry_1_1Ray.html#abe7add913d44f65b63866b04f7c7f841',1,'Geometry::Ray::Ray()=default'],['../classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc',1,'Geometry::Ray::Ray(const Geometry::Point3D &amp;origin, const Geometry::Vector3D &amp;direction)']]],
-  ['rectangle3d_1',['Rectangle3D',['../classGeometry_1_1Rectangle3D.html#a2d143a0f3469df16a3e20011d382b6ef',1,'Geometry::Rectangle3D']]],
-  ['render_2',['render',['../classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f',1,'RayTracer::Camera::render()'],['../classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271',1,'RayTracer::ARenderer::render()']]],
-  ['rng_3',['rng',['../classRayTracer_1_1Utils.html#a30d72a060a1b268a6ca81e900c2616d1',1,'RayTracer::Utils']]]
+  ['parser_0',['Parser',['../classRayTracer_1_1Parser.html#a5ab3f58e2b011af0dece753b83783139',1,'RayTracer::Parser']]],
+  ['parsesettings_1',['parseSettings',['../classRayTracer_1_1Parser.html#a1300e4cb2112d8161e2e255f7ca00e43',1,'RayTracer::Parser']]],
+  ['pdf_2',['pdf',['../classRayTracer_1_1Lambertian.html#a0a74c9347b24b236af1e44c302ac7c5e',1,'RayTracer::Lambertian::pdf()'],['../classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2',1,'RayTracer::Phong::pdf()'],['../classRayTracer_1_1IMaterial.html#a2b3e2b7f5cf291a25885aaf2d39d5582',1,'RayTracer::IMaterial::pdf()']]],
+  ['phong_3',['Phong',['../classRayTracer_1_1Phong.html#aed034ba959eedee570e3572385c8ae09',1,'RayTracer::Phong']]],
+  ['plane_4',['plane',['../classRayTracer_1_1Plane.html#a7a3b16442a1acae3cfd9c1f32c848f1b',1,'RayTracer::Plane::Plane(const Geometry::Point3D &amp;point, const Geometry::Vector3D &amp;normal, std::shared_ptr&lt; IMaterial &gt; material)'],['../classRayTracer_1_1Plane.html#a8a0456601757b3ca8c3b7bf742b6fb9e',1,'RayTracer::Plane::Plane()=default']]],
+  ['pluginmanager_5',['PluginManager',['../classRayTracer_1_1PluginManager.html#a313057938cfe4b4e2c5077746da6c5a5',1,'RayTracer::PluginManager']]],
+  ['point3d_6',['point3d',['../classGeometry_1_1Point3D.html#a435b4574ffcf56cbe867a7d400c30949',1,'Geometry::Point3D::Point3D(void)'],['../classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d',1,'Geometry::Point3D::Point3D(double x, double y, double z)']]],
+  ['pointat_7',['pointAt',['../classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0',1,'Geometry::Rectangle3D']]],
+  ['pointlight_8',['PointLight',['../classRayTracer_1_1PointLight.html#abb0bed47008dfe0693bf7eace117c86d',1,'RayTracer::PointLight']]]
 ];

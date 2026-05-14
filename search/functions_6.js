@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['insert_5fvalue_0',['insert_value',['../classRayTracer_1_1Parser.html#adce47cc9cf11b659b1741cc50521c03c',1,'RayTracer::Parser']]],
-  ['insert_5fvector_5fobject_1',['insert_vector_object',['../classRayTracer_1_1Parser.html#a19bd0b85bbfe1180aef1f13fac4024ad',1,'RayTracer::Parser']]]
+  ['hit_0',['hit',['../classRayTracer_1_1APrimitive.html#af00a66a6a6b8d251f5d21e1cc5077c6b',1,'RayTracer::APrimitive::hit()'],['../classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916',1,'RayTracer::Plane::hit()'],['../classRayTracer_1_1Sphere.html#a40d439c5a658465a6eeef01f7679ecc9',1,'RayTracer::Sphere::hit()'],['../classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af',1,'RayTracer::Cylinder::hit()']]],
+  ['hitrecord_1',['hitrecord',['../structGeometry_1_1HitRecord.html#ad9acc63a4529cd9a6855703c8acd1468',1,'Geometry::HitRecord::HitRecord()'],['../structGeometry_1_1HitRecord.html#a158d2c230c1851a8f6bc0e79dc4b12b5',1,'Geometry::HitRecord::HitRecord(const Point3D &amp;point, const Vector3D &amp;normal, float rayDistance, RayTracer::IMaterial *material)']]]
 ];

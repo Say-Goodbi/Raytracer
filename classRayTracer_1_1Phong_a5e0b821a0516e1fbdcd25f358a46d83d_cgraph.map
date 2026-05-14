@@ -1,0 +1,5 @@
+<map id="RayTracer::Phong::emission" name="RayTracer::Phong::emission">
+<area shape="rect" id="Node000001" title="Return the radiance emitted by this surface." alt="" coords="5,5,207,31"/>
+<area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="255,5,425,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,15,241,15,241,21,207,21"/>
+</map>

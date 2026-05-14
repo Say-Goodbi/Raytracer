@@ -13,7 +13,9 @@ var hierarchy =
     ] ],
     [ "RayTracer::Color", "structRayTracer_1_1Color.html", null ],
     [ "std::exception", null, [
-      [ "RayTracer::Exception", "classRayTracer_1_1Exception.html", null ]
+      [ "RayTracer::Exception", "classRayTracer_1_1Exception.html", [
+        [ "RayTracer::DivisionByZeroException", "classRayTracer_1_1DivisionByZeroException.html", null ]
+      ] ]
     ] ],
     [ "Geometry::HitRecord", "structGeometry_1_1HitRecord.html", null ],
     [ "RayTracer::ILight", "classRayTracer_1_1ILight.html", [
@@ -22,7 +24,14 @@ var hierarchy =
       [ "RayTracer::PointLight", "classRayTracer_1_1PointLight.html", null ]
     ] ],
     [ "RayTracer::IMaterial", "classRayTracer_1_1IMaterial.html", [
-      [ "RayTracer::Lambertian", "classRayTracer_1_1Lambertian.html", null ]
+      [ "RayTracer::AMaterial", "classRayTracer_1_1AMaterial.html", [
+        [ "RayTracer::Lambertian", "classRayTracer_1_1Lambertian.html", null ],
+        [ "RayTracer::Phong", "classRayTracer_1_1Phong.html", null ]
+      ] ]
+    ] ],
+    [ "Geometry::Matrix< Rows, Cols >", "classGeometry_1_1Matrix.html", null ],
+    [ "Geometry::Matrix< 4, 4 >", "classGeometry_1_1Matrix.html", [
+      [ "Geometry::TransformMatrix", "classGeometry_1_1TransformMatrix.html", null ]
     ] ],
     [ "RayTracer::Node", "structRayTracer_1_1Node.html", null ],
     [ "RayTracer::Parser", "classRayTracer_1_1Parser.html", null ],

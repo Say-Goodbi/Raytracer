@@ -1,24 +1,4 @@
 var searchData=
 [
-  ['_7eainterface_0',['~AInterface',['../classRayTracer_1_1AInterface.html#ae2fe1a990d5f102c8fda3b8060fae374',1,'RayTracer::AInterface']]],
-  ['_7eambientlight_1',['~AmbientLight',['../classRayTracer_1_1AmbientLight.html#a321542a2961c28b56617b39ce5510caf',1,'RayTracer::AmbientLight']]],
-  ['_7eaprimitive_2',['~APrimitive',['../classRayTracer_1_1APrimitive.html#afedd539df706faef436f8540c49f07ed',1,'RayTracer::APrimitive']]],
-  ['_7earenderer_3',['~ARenderer',['../classRayTracer_1_1ARenderer.html#aaef63864fd4a781f9da7fd10b2df219a',1,'RayTracer::ARenderer']]],
-  ['_7ecamera_4',['~Camera',['../classRayTracer_1_1Camera.html#a985a4622654cd8ff6379cd2ae288250e',1,'RayTracer::Camera']]],
-  ['_7ecylinder_5',['~Cylinder',['../classRayTracer_1_1Cylinder.html#aae031c8e2c7a1f27f9be4a22c8d79480',1,'RayTracer::Cylinder']]],
-  ['_7edirectionallight_6',['~DirectionalLight',['../classRayTracer_1_1DirectionalLight.html#a420cdab751fdf7cdf3f14c0e9c3fbf8f',1,'RayTracer::DirectionalLight']]],
-  ['_7eilight_7',['~ILight',['../classRayTracer_1_1ILight.html#a326a7c9dab5348ba702d7beb64982dde',1,'RayTracer::ILight']]],
-  ['_7eimaterial_8',['~IMaterial',['../classRayTracer_1_1IMaterial.html#aa4e697ade927e90e125b118ccd39ffa0',1,'RayTracer::IMaterial']]],
-  ['_7elambertian_9',['~Lambertian',['../classRayTracer_1_1Lambertian.html#a21dcf33d90c731fc34d57f30f96f8f28',1,'RayTracer::Lambertian']]],
-  ['_7eparser_10',['~Parser',['../classRayTracer_1_1Parser.html#af02ead863f3e535a315557e4a41442b3',1,'RayTracer::Parser']]],
-  ['_7eplane_11',['~Plane',['../classRayTracer_1_1Plane.html#a89abfbbe3d4332fdd3505b799d90952e',1,'RayTracer::Plane']]],
-  ['_7epluginmanager_12',['~PluginManager',['../classRayTracer_1_1PluginManager.html#a4e280953ad8564afd93eac6aad5af276',1,'RayTracer::PluginManager']]],
-  ['_7epoint3d_13',['~Point3D',['../classGeometry_1_1Point3D.html#a1aed9cca6b35cc6998638d22a0bd1ba2',1,'Geometry::Point3D']]],
-  ['_7epointlight_14',['~PointLight',['../classRayTracer_1_1PointLight.html#ad8e4fe2174471c00e7f31b6c588deb95',1,'RayTracer::PointLight']]],
-  ['_7eray_15',['~Ray',['../classGeometry_1_1Ray.html#a51bd5c66c850fa0bf6e4676e237b0640',1,'Geometry::Ray']]],
-  ['_7escene_16',['~Scene',['../classRayTracer_1_1Scene.html#a59098635e9dfab454f1d848a08636b06',1,'RayTracer::Scene']]],
-  ['_7esceneloader_17',['~SceneLoader',['../classRayTracer_1_1SceneLoader.html#ac127d479d36376499673a093ef9918a3',1,'RayTracer::SceneLoader']]],
-  ['_7escenewriter_18',['~SceneWriter',['../classRayTracer_1_1SceneWriter.html#ac9bdbbe85a18b940a4fef2a6afe87d02',1,'RayTracer::SceneWriter']]],
-  ['_7esphere_19',['~Sphere',['../classRayTracer_1_1Sphere.html#aae9ad95b4bcdb83731dda31abf60a9a4',1,'RayTracer::Sphere']]],
-  ['_7evector3d_20',['~Vector3D',['../classGeometry_1_1Vector3D.html#a6e51eece8caef13d9a403704f05f5482',1,'Geometry::Vector3D']]]
+  ['vector3d_0',['vector3d',['../classGeometry_1_1Vector3D.html#a3ae71c5188cb20556a1ec9b617fe8633',1,'Geometry::Vector3D::Vector3D(void)'],['../classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d',1,'Geometry::Vector3D::Vector3D(double x, double y, double z)']]]
 ];

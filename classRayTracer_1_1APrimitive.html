@@ -114,14 +114,14 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1APrimitive.html','')
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive__coll__graph.svg" width="166" height="344"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive__coll__graph.svg" width="166" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a526c473a6b8bf97b4aa98e953e814dd7" id="r_a526c473a6b8bf97b4aa98e953e814dd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#a526c473a6b8bf97b4aa98e953e814dd7">APrimitive</a> (<a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> *material)</td></tr>
-<tr class="memdesc:a526c473a6b8bf97b4aa98e953e814dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:a526c473a6b8bf97b4aa98e953e814dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f067217ef30e7d9c816f247420d672" id="r_ae9f067217ef30e7d9c816f247420d672"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#ae9f067217ef30e7d9c816f247420d672">APrimitive</a> (std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> &gt; material)</td></tr>
+<tr class="memdesc:ae9f067217ef30e7d9c816f247420d672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:ae9f067217ef30e7d9c816f247420d672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afedd539df706faef436f8540c49f07ed" id="r_afedd539df706faef436f8540c49f07ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#afedd539df706faef436f8540c49f07ed">~APrimitive</a> ()=default</td></tr>
 <tr class="separator:afedd539df706faef436f8540c49f07ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af00a66a6a6b8d251f5d21e1cc5077c6b" id="r_af00a66a6a6b8d251f5d21e1cc5077c6b"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; <a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#af00a66a6a6b8d251f5d21e1cc5077c6b">hit</a> (const <a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;ray) const =0</td></tr>
@@ -133,17 +133,17 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a2021d91efc72065fb17b817117791425" id="r_a2021d91efc72065fb17b817117791425"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#a2021d91efc72065fb17b817117791425">_material</a></td></tr>
-<tr class="memdesc:a2021d91efc72065fb17b817117791425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Material defining shading behavior.  <br /></td></tr>
-<tr class="separator:a2021d91efc72065fb17b817117791425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6c50dc90a7feab8a0f90bab46b2f3f" id="r_a5c6c50dc90a7feab8a0f90bab46b2f3f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1APrimitive.html#a5c6c50dc90a7feab8a0f90bab46b2f3f">_material</a></td></tr>
+<tr class="memdesc:a5c6c50dc90a7feab8a0f90bab46b2f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Material defining shading behavior.  <br /></td></tr>
+<tr class="separator:a5c6c50dc90a7feab8a0f90bab46b2f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for all primitives (renderable objects). Primitives have geometry and a material. </p>
 
-<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00010">10</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00011">11</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a526c473a6b8bf97b4aa98e953e814dd7" name="a526c473a6b8bf97b4aa98e953e814dd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a526c473a6b8bf97b4aa98e953e814dd7">&#9670;&#160;</a></span>APrimitive()</h2>
+<a id="ae9f067217ef30e7d9c816f247420d672" name="ae9f067217ef30e7d9c816f247420d672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f067217ef30e7d9c816f247420d672">&#9670;&#160;</a></span>APrimitive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,7 +154,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">RayTracer::APrimitive::APrimitive </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a> &gt;&#160;</td>
           <td class="paramname"><em>material</em></td><td>)</td>
           <td></td>
         </tr>
@@ -174,13 +174,13 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00018">18</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00019">19</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive_a526c473a6b8bf97b4aa98e953e814dd7_icgraph.svg" width="396" height="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive_ae9f067217ef30e7d9c816f247420d672_icgraph.svg" width="396" height="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -279,14 +279,14 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive_af00a66a6a6b8d251f5d21e1cc5077c6b_icgraph.svg" width="600" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1APrimitive_af00a66a6a6b8d251f5d21e1cc5077c6b_icgraph.svg" width="644" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2021d91efc72065fb17b817117791425" name="a2021d91efc72065fb17b817117791425"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2021d91efc72065fb17b817117791425">&#9670;&#160;</a></span>_material</h2>
+<a id="a5c6c50dc90a7feab8a0f90bab46b2f3f" name="a5c6c50dc90a7feab8a0f90bab46b2f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6c50dc90a7feab8a0f90bab46b2f3f">&#9670;&#160;</a></span>_material</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,7 +295,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a>* RayTracer::APrimitive::_material</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classRayTracer_1_1IMaterial.html">IMaterial</a>&gt; RayTracer::APrimitive::_material</td>
         </tr>
       </table>
   </td>
@@ -307,7 +307,7 @@ Private Attributes</h2></td></tr>
 
 <p>Material defining shading behavior. </p>
 
-<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00013">13</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="APrimitive_8hpp_source.html#l00014">14</a> of file <a class="el" href="APrimitive_8hpp_source.html">APrimitive.hpp</a>.</p>
 
 </div>
 </div>

@@ -1,0 +1,21 @@
+<map id="RayTracer::Phong::sample" name="RayTracer::Phong::sample">
+<area shape="rect" id="Node000001" title="Return the deterministic bounce direction for this material." alt="" coords="5,135,196,160"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="475,156,628,196"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,133,162,78,200,49,243,27,294,10,336,3,378,8,428,27,463,50,494,80,518,112,536,142,531,144,514,115,490,83,460,54,425,31,377,13,336,8,295,15,245,31,203,53,165,82,114,137"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112" title=" " alt="" coords="259,41,412,81"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,132,243,90,263,83,265,88,245,95,136,137"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html#affb9009fe58aafa334f1f5f703feceb3" title=" " alt="" coords="244,106,427,131"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="196,133,230,129,231,134,196,138"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="259,284,412,324"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="116,159,169,212,205,242,245,269,257,276,255,280,243,274,202,246,165,215,112,163"/>
+<area shape="rect" id="Node000007" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="259,156,412,196"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="196,156,245,162,245,168,196,162"/>
+<area shape="rect" id="Node000008" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="259,220,412,260"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="132,158,245,205,264,212,262,217,243,210,130,163"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="401,79,428,91,474,117,515,145,512,150,471,122,425,95,398,83"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="400,281,425,269,475,237,517,203,520,207,478,241,428,274,402,286"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" title="Calculate the length (magnitude) of this vector." alt="" coords="475,284,628,324"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="412,301,461,301,461,306,412,306"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="412,173,461,173,461,178,412,178"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="403,217,469,197,471,202,404,222"/>
+</map>

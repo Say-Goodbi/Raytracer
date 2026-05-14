@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['camera_0',['camera',['../classRayTracer_1_1Camera.html',1,'RayTracer::Camera'],['../classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4',1,'RayTracer::Camera::Camera()'],['../index.html#arch_renderer',1,'Rendering Pipeline: ARenderer → Camera']]],
+  ['camera_0',['camera',['../classRayTracer_1_1Camera.html',1,'RayTracer::Camera'],['../classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4',1,'RayTracer::Camera::Camera(Geometry::Point3D pos, Geometry::Vector3D direction, float fov, int width=800, int height=600)'],['../classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8',1,'RayTracer::Camera::Camera(Geometry::TransformMatrix transform, float fov, int width=800, int height=600)'],['../index.html#arch_renderer',1,'Rendering Pipeline: ARenderer → Camera']]],
   ['camera_2ecpp_1',['Camera.cpp',['../Camera_8cpp.html',1,'']]],
   ['camera_2ehpp_2',['Camera.hpp',['../Camera_8hpp.html',1,'']]],
   ['castray_3',['castRay',['../classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571',1,'RayTracer::Camera']]],
@@ -14,7 +14,7 @@ var searchData=
   ['coreplugin_11',['coreplugin',['../index.html#folders_impl',1,'Plugin Implementation (CorePlugin)'],['../index.html#arch_plugins',1,'Plugin System &amp; CorePlugin']]],
   ['coreplugin_2ecpp_12',['CorePlugin.cpp',['../CorePlugin_8cpp.html',1,'']]],
   ['cross_13',['cross',['../classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112',1,'Geometry::Vector3D']]],
-  ['cylinder_14',['cylinder',['../classRayTracer_1_1Cylinder.html#a42af0cea83f7e299521660a6d84e2a3c',1,'RayTracer::Cylinder::Cylinder(const Geometry::Point3D &amp;origin, const Geometry::Vector3D &amp;axis, float radius, IMaterial *material)'],['../classRayTracer_1_1Cylinder.html#a0689fe008ba21ea9e8a12d10d2853560',1,'RayTracer::Cylinder::Cylinder()=default'],['../classRayTracer_1_1Cylinder.html',1,'RayTracer::Cylinder']]],
+  ['cylinder_14',['cylinder',['../classRayTracer_1_1Cylinder.html#a2f36e686899ddfb803009b7d808dd2bf',1,'RayTracer::Cylinder::Cylinder(const Geometry::Point3D &amp;origin, const Geometry::Vector3D &amp;axis, float radius, std::shared_ptr&lt; IMaterial &gt; material)'],['../classRayTracer_1_1Cylinder.html#a0689fe008ba21ea9e8a12d10d2853560',1,'RayTracer::Cylinder::Cylinder()=default'],['../classRayTracer_1_1Cylinder.html',1,'RayTracer::Cylinder']]],
   ['cylinder_2ecpp_15',['Cylinder.cpp',['../Cylinder_8cpp.html',1,'']]],
   ['cylinder_2ehpp_16',['Cylinder.hpp',['../Cylinder_8hpp.html',1,'']]]
 ];

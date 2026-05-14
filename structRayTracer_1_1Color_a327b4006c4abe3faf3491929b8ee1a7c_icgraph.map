@@ -1,9 +1,10 @@
 <map id="RayTracer::Color::operator+" name="RayTracer::Color::operator+">
-<area shape="rect" id="Node000001" title=" " alt="" coords="408,66,611,91"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="207,29,360,69"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="398,67,360,62,361,57,398,62"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,59,159,99"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="394,84,360,84,207,84,159,83,159,78,207,79,360,79,394,78"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="317,18,305,11,283,8,264,10,253,15,249,21,251,28,246,30,243,20,249,11,263,5,283,3,307,6,320,13"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="193,65,159,70,158,65,193,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="453,70,656,95"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="229,5,383,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="485,69,382,46,383,40,486,64"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,35,159,75"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="439,79,159,62,159,56,440,73"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Phong.html#a2526bd20be0b2cbb045250c4a6573b27" title="Evaluate the BRDF for a given pair of directions." alt="" coords="207,121,405,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="479,101,370,123,368,118,478,96"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="216,40,159,47,159,42,215,34"/>
 </map>

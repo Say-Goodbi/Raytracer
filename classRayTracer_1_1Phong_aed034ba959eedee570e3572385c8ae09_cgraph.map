@@ -1,0 +1,7 @@
+<map id="RayTracer::Phong::Phong" name="RayTracer::Phong::Phong">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,188,38"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1AMaterial.html#ad17852e0877f59841ee734e96def74d9" title=" " alt="" coords="236,5,393,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,23,222,23,222,28,188,28"/>
+<area shape="rect" id="Node000003" href="$structRayTracer_1_1Color.html#abee709d919baf85b9c3d1197830957a0" title=" " alt="" coords="441,13,612,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,23,428,23,428,28,393,28"/>
+</map>

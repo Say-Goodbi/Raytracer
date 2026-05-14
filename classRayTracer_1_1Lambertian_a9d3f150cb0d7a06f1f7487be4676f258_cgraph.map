@@ -1,5 +1,7 @@
 <map id="RayTracer::Lambertian::Lambertian" name="RayTracer::Lambertian::Lambertian">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,173,45"/>
-<area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html#abee709d919baf85b9c3d1197830957a0" title=" " alt="" coords="221,13,392,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,23,207,23,207,28,174,28"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1AMaterial.html#ad17852e0877f59841ee734e96def74d9" title=" " alt="" coords="221,5,379,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,23,208,23,208,28,173,28"/>
+<area shape="rect" id="Node000003" href="$structRayTracer_1_1Color.html#abee709d919baf85b9c3d1197830957a0" title=" " alt="" coords="427,13,597,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,23,413,23,413,28,379,28"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="Geometry::TransformMatrix::operator*" name="Geometry::TransformMatrix::operator*">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,207,75"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="283,5,436,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,40,268,33,269,38,207,46"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Matrix.html#a55bca424225b20c0490c21b93faea578" title="Mutable element access." alt="" coords="255,70,464,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,63,241,67,241,72,206,68"/>
+</map>

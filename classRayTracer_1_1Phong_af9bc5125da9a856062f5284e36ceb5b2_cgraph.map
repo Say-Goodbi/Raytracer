@@ -1,0 +1,17 @@
+<map id="RayTracer::Phong::pdf" name="RayTracer::Phong::pdf">
+<area shape="rect" id="Node000001" title="Return the probability density of the direction from sample()." alt="" coords="5,95,168,120"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#affb9009fe58aafa334f1f5f703feceb3" title=" " alt="" coords="216,5,399,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,92,157,67,215,41,240,32,242,37,217,46,160,72,112,97"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="231,183,384,223"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,118,217,169,234,176,232,181,215,174,110,122"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="231,55,384,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="168,93,217,86,218,91,169,98"/>
+<area shape="rect" id="Node000007" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="231,119,384,159"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="169,117,218,124,217,129,168,122"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="447,119,600,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="375,181,441,161,443,166,376,186"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" title="Calculate the length (magnitude) of this vector." alt="" coords="447,183,600,223"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="384,201,433,201,433,206,384,206"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="376,93,443,113,441,118,375,98"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="384,137,433,137,433,142,384,142"/>
+</map>

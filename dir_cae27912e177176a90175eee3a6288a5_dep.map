@@ -1,23 +1,31 @@
 <map id="src/Geometry" name="src/Geometry">
-<area shape="rect" id="node2" href="dir_37eb9d2b3a414f0c179a331c39486cda.html" title="HitRecord" alt="" coords="237,63,323,88"/>
-<area shape="rect" id="node3" href="dir_49ecc20c75f7da62827c52a55b3b86cf.html" title="Point3D" alt="" coords="139,136,213,161"/>
-<area shape="poly" id="edge1" href="dir_000013_000022.html" alt="" coords="265,90,206,130,203,126,262,86"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000013_000022.html" title="1" alt="" coords="208,125,217,140"/>
-<area shape="rect" id="node6" href="dir_6eefb68cd3149097f299b4102f7bbcf3.html" title="Vector3D" alt="" coords="166,209,247,235"/>
-<area shape="poly" id="edge2" href="dir_000013_000036.html" alt="" coords="276,90,221,198,216,196,272,87"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000013_000036.html" title="1" alt="" coords="224,189,233,204"/>
-<area shape="poly" id="edge3" href="dir_000022_000036.html" alt="" coords="184,161,199,196,194,198,179,163"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000022_000036.html" title="1" alt="" coords="198,182,207,197"/>
-<area shape="rect" id="node4" href="dir_4e9b8b6eaba08cbf3ffcb62dfe843921.html" title="Ray" alt="" coords="166,63,213,88"/>
-<area shape="poly" id="edge4" href="dir_000025_000022.html" alt="" coords="190,89,183,123,178,122,185,88"/>
-<area shape="rect" id="edge4-headlabel" href="dir_000025_000022.html" title="1" alt="" coords="185,112,194,127"/>
-<area shape="poly" id="edge5" href="dir_000025_000036.html" alt="" coords="201,87,216,108,228,135,229,168,221,197,216,196,224,167,223,137,211,111,197,90"/>
-<area shape="rect" id="edge5-headlabel" href="dir_000025_000036.html" title="1" alt="" coords="223,188,232,203"/>
-<area shape="rect" id="node5" href="dir_498bb990ca805a1b3fa8f109c549a65a.html" title="Rectangle3D" alt="" coords="37,63,142,88"/>
-<area shape="poly" id="edge6" href="dir_000027_000022.html" alt="" coords="105,86,153,125,150,129,102,90"/>
-<area shape="rect" id="edge6-headlabel" href="dir_000027_000022.html" title="1" alt="" coords="148,110,158,125"/>
-<area shape="poly" id="edge7" href="dir_000027_000036.html" alt="" coords="95,87,108,121,130,160,152,182,177,200,173,204,149,186,126,163,103,124,90,89"/>
-<area shape="rect" id="edge7-headlabel" href="dir_000027_000036.html" title="1" alt="" coords="171,185,180,200"/>
-<area shape="rect" id="clust2" href="dir_cae27912e177176a90175eee3a6288a5.html" alt="" coords="27,52,445,245"/>
-<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="16,16,456,256"/>
+<area shape="rect" id="node2" href="dir_37eb9d2b3a414f0c179a331c39486cda.html" title="HitRecord" alt="" coords="261,63,347,88"/>
+<area shape="rect" id="node4" href="dir_49ecc20c75f7da62827c52a55b3b86cf.html" title="Point3D" alt="" coords="239,136,313,161"/>
+<area shape="poly" id="edge1" href="dir_000015_000026.html" alt="" coords="302,89,288,124,283,122,297,87"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000015_000026.html" title="1" alt="" coords="290,115,300,129"/>
+<area shape="rect" id="node8" href="dir_6eefb68cd3149097f299b4102f7bbcf3.html" title="Vector3D" alt="" coords="235,209,317,235"/>
+<area shape="poly" id="edge2" href="dir_000015_000041.html" alt="" coords="314,87,328,121,331,142,328,162,316,184,302,202,297,198,312,181,323,160,326,142,323,122,309,89"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000015_000041.html" title="1" alt="" coords="304,195,313,210"/>
+<area shape="rect" id="node3" href="dir_db4a8bb9a30e47be947f40f6e0a76447.html" title="Matrix" alt="" coords="124,136,188,161"/>
+<area shape="poly" id="edge3" href="dir_000026_000041.html" alt="" coords="279,162,279,196,273,196,273,162"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000026_000041.html" title="1" alt="" coords="280,184,289,198"/>
+<area shape="rect" id="node5" href="dir_4e9b8b6eaba08cbf3ffcb62dfe843921.html" title="Ray" alt="" coords="190,63,237,88"/>
+<area shape="poly" id="edge4" href="dir_000029_000026.html" alt="" coords="226,87,259,124,255,127,222,90"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000029_000026.html" title="1" alt="" coords="255,109,265,124"/>
+<area shape="poly" id="edge5" href="dir_000029_000041.html" alt="" coords="216,88,219,121,230,160,242,180,256,198,252,201,238,183,226,162,214,122,211,88"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000029_000041.html" title="1" alt="" coords="253,183,262,198"/>
+<area shape="rect" id="node6" href="dir_498bb990ca805a1b3fa8f109c549a65a.html" title="Rectangle3D" alt="" coords="371,63,477,88"/>
+<area shape="poly" id="edge6" href="dir_000031_000026.html" alt="" coords="401,90,314,132,311,128,399,86"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000031_000026.html" title="1" alt="" coords="316,128,325,143"/>
+<area shape="poly" id="edge7" href="dir_000031_000041.html" alt="" coords="414,90,299,202,296,198,410,87"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000031_000041.html" title="1" alt="" coords="302,195,311,210"/>
+<area shape="rect" id="node7" href="dir_43555c1bcca249a7d9415ba560af925b.html" title="TransformMatrix" alt="" coords="37,63,166,88"/>
+<area shape="poly" id="edge10" href="dir_000039_000020.html" alt="" coords="112,87,141,124,137,127,108,90"/>
+<area shape="rect" id="edge10-headlabel" href="dir_000039_000020.html" title="1" alt="" coords="138,109,147,124"/>
+<area shape="poly" id="edge8" href="dir_000039_000026.html" alt="" coords="130,86,236,128,234,133,128,90"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000039_000026.html" title="1" alt="" coords="229,114,238,128"/>
+<area shape="poly" id="edge9" href="dir_000039_000041.html" alt="" coords="102,89,101,123,105,143,114,160,137,181,164,196,193,206,222,213,221,218,192,212,162,201,134,185,110,163,100,144,96,124,97,88"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000039_000041.html" title="1" alt="" coords="214,199,223,214"/>
+<area shape="rect" id="clust2" href="dir_cae27912e177176a90175eee3a6288a5.html" alt="" coords="27,52,599,245"/>
+<area shape="rect" id="clust1" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" title="src" alt="" coords="16,16,609,256"/>
 </map>

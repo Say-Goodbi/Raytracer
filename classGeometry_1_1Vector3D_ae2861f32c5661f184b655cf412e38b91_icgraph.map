@@ -1,7 +1,12 @@
 <map id="Geometry::Vector3D::length" name="Geometry::Vector3D::length">
-<area shape="rect" id="Node000001" title=" " alt="" coords="212,37,365,77"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="8,5,161,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,46,161,40,162,35,199,41"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20" title="Compute light contribution." alt="" coords="5,69,164,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,74,165,80,164,74,198,69"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="451,63,604,103"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="5,5,159,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="444,62,402,53,274,38,159,30,159,25,275,32,403,48,445,57"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a27ae8f34a8cb15a3ffd5e23498d894cb" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="207,63,403,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="437,85,403,85,403,80,437,80"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20" title="Compute light contribution." alt="" coords="225,127,384,167"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="445,109,376,129,374,124,443,104"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="213,62,158,48,159,42,214,57"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="5,69,159,109"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="193,89,159,90,159,84,193,83"/>
 </map>

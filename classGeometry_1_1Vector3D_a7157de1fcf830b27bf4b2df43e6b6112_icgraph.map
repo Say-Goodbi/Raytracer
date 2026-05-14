@@ -1,7 +1,14 @@
 <map id="Geometry::Vector3D::cross" name="Geometry::Vector3D::cross">
-<area shape="rect" id="Node000001" title=" " alt="" coords="221,37,375,77"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="13,5,166,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,46,166,40,167,34,208,41"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838" title="Return the deterministic bounce direction for this material." alt="" coords="5,69,173,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,74,174,79,173,74,207,68"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="451,95,604,135"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="5,5,159,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,90,444,69,402,53,339,39,275,31,159,26,159,20,275,25,340,34,403,48,446,65,485,85"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a27ae8f34a8cb15a3ffd5e23498d894cb" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="207,63,403,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="436,104,402,99,403,94,437,99"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838" title="Return the deterministic bounce direction for this material." alt="" coords="221,127,389,167"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="437,130,389,137,389,132,436,125"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd" title="Return the deterministic bounce direction for this material." alt="" coords="209,191,400,217"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="482,144,404,181,364,194,363,189,402,176,479,139"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="213,62,158,48,159,42,214,57"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="5,69,159,109"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="193,89,159,90,159,84,193,83"/>
 </map>

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['emission_0',['emission',['../classRayTracer_1_1Lambertian.html#a6205c3776a49354dab5d02f983c196e1',1,'RayTracer::Lambertian::emission()'],['../classRayTracer_1_1IMaterial.html#acd4b1bdc4f1ec9f555277b4b87199bb9',1,'RayTracer::IMaterial::emission()']]],
-  ['evaluate_1',['evaluate',['../classRayTracer_1_1Lambertian.html#ac5339d746050833c746e209d65d9a9da',1,'RayTracer::Lambertian::evaluate()'],['../classRayTracer_1_1IMaterial.html#a98d43460913f09c692f84affec665226',1,'RayTracer::IMaterial::evaluate()']]],
-  ['exception_2',['Exception',['../classRayTracer_1_1Exception.html#a38a72155e42ddf63565d220b67a73dae',1,'RayTracer::Exception']]],
-  ['execute_3',['execute',['../classRayTracer_1_1SceneWriter.html#a148f4441944d104f0248d7723b5fbc54',1,'RayTracer::SceneWriter::execute()'],['../classRayTracer_1_1AInterface.html#a0559b88b0596f291c0ab3da0889b8fbe',1,'RayTracer::AInterface::execute()']]]
+  ['directionallight_0',['DirectionalLight',['../classRayTracer_1_1DirectionalLight.html#a682bc429176da9bb6b1694703b44ba0e',1,'RayTracer::DirectionalLight']]],
+  ['divisionbyzeroexception_1',['DivisionByZeroException',['../classRayTracer_1_1DivisionByZeroException.html#a4ea65d73351362a36824975c9e9c3b81',1,'RayTracer::DivisionByZeroException']]],
+  ['dot_2',['dot',['../classGeometry_1_1Vector3D.html#afd038692c679cc53b060b8c732b859e3',1,'Geometry::Vector3D::dot(const Vector3D &amp;v1, const Vector3D &amp;v2)'],['../classGeometry_1_1Vector3D.html#affb9009fe58aafa334f1f5f703feceb3',1,'Geometry::Vector3D::dot(const Vector3D &amp;other) const']]]
 ];

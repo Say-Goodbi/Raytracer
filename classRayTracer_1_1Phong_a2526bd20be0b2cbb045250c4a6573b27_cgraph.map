@@ -1,0 +1,24 @@
+<map id="RayTracer::Phong::evaluate" name="RayTracer::Phong::evaluate">
+<area shape="rect" id="Node000001" title="Evaluate the BRDF for a given pair of directions." alt="" coords="5,159,204,184"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Vector3D.html#affb9009fe58aafa334f1f5f703feceb3" title=" " alt="" coords="262,5,445,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,157,169,101,208,69,251,41,270,33,272,37,253,46,211,73,173,105,119,160"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="277,183,430,223"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,181,263,189,262,194,203,187"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1Vector3D.html#aa583eecc673b26ce6058e6dd00238a62" title=" " alt="" coords="277,55,430,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="132,156,251,105,272,97,274,102,253,110,134,161"/>
+<area shape="rect" id="Node000007" href="$structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8" title=" " alt="" coords="254,248,453,273"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="133,182,188,207,253,233,283,242,281,247,251,238,185,212,131,187"/>
+<area shape="rect" id="Node000009" href="$structRayTracer_1_1Color.html#a327b4006c4abe3faf3491929b8ee1a7c" title=" " alt="" coords="252,297,455,323"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="120,182,175,232,212,260,253,284,270,291,268,295,251,288,209,264,171,236,117,186"/>
+<area shape="rect" id="Node000010" href="$classGeometry_1_1Vector3D.html#a12618c1c19f8fdd6ad13fa1c7c9147c0" title=" " alt="" coords="277,119,430,159"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="203,156,262,148,263,154,204,161"/>
+<area shape="rect" id="Node000004" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="511,119,665,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="427,181,501,160,502,165,428,186"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" title="Calculate the length (magnitude) of this vector." alt="" coords="511,183,665,223"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="431,201,498,201,498,206,431,206"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="428,93,502,113,501,118,427,98"/>
+<area shape="rect" id="Node000008" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="503,272,673,297"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="453,268,489,272,489,277,452,273"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="454,296,489,293,490,298,455,302"/>
+<area shape="poly" id="edge12_Node000010_Node000004" title=" " alt="" coords="431,137,498,137,498,142,431,142"/>
+</map>

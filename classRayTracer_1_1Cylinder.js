@@ -1,6 +1,6 @@
 var classRayTracer_1_1Cylinder =
 [
-    [ "Cylinder", "classRayTracer_1_1Cylinder.html#a42af0cea83f7e299521660a6d84e2a3c", null ],
+    [ "Cylinder", "classRayTracer_1_1Cylinder.html#a2f36e686899ddfb803009b7d808dd2bf", null ],
     [ "Cylinder", "classRayTracer_1_1Cylinder.html#a0689fe008ba21ea9e8a12d10d2853560", null ],
     [ "~Cylinder", "classRayTracer_1_1Cylinder.html#aae031c8e2c7a1f27f9be4a22c8d79480", null ],
     [ "hit", "classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af", null ],

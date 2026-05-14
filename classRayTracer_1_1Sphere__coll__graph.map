@@ -1,9 +1,7 @@
 <map id="RayTracer::Sphere" name="RayTracer::Sphere">
-<area shape="rect" id="Node000001" title=" " alt="" coords="103,521,233,627"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1APrimitive.html" title="Abstract base class for all primitives (renderable objects). Primitives have geometry and a material." alt="" coords="5,273,160,399"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,411,152,520,147,522,107,413"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1IMaterial.html" title="Interface for physically&#45;based surface materials." alt="" coords="11,5,155,151"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,151,85,257,80,257,80,151"/>
-<area shape="rect" id="Node000004" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="185,213,322,459"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,460,195,507,190,505,207,458"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,313,233,419"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1APrimitive.html" title="Abstract base class for all primitives (renderable objects). Primitives have geometry and a material." alt="" coords="5,65,160,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,203,152,312,147,314,107,205"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Point3D.html" title="Represents a 3D point in space." alt="" coords="185,5,322,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,252,195,299,190,297,207,250"/>
 </map>

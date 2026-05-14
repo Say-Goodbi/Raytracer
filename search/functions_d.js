@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['sample_0',['sample',['../classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838',1,'RayTracer::Lambertian::sample()'],['../classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80',1,'RayTracer::IMaterial::sample()']]],
-  ['scene_1',['scene',['../classRayTracer_1_1Scene.html#a277945e924155a3d5b90a4d4317f826e',1,'RayTracer::Scene::Scene(ARenderer &amp;camera)'],['../classRayTracer_1_1Scene.html#a1906266d9207db0c4edadc318b5d4275',1,'RayTracer::Scene::Scene(void)']]],
-  ['sceneloader_2',['SceneLoader',['../classRayTracer_1_1SceneLoader.html#a4de4a46229ec18f85513e607030764a1',1,'RayTracer::SceneLoader']]],
-  ['scenewriter_3',['SceneWriter',['../classRayTracer_1_1SceneWriter.html#a15622a3205869a4e472e37ed311efb43',1,'RayTracer::SceneWriter']]],
-  ['sphere_4',['Sphere',['../classRayTracer_1_1Sphere.html#aa89da13cd4b5a7ecaa87c23d4bda1385',1,'RayTracer::Sphere']]]
+  ['ray_0',['ray',['../classGeometry_1_1Ray.html#abe7add913d44f65b63866b04f7c7f841',1,'Geometry::Ray::Ray()=default'],['../classGeometry_1_1Ray.html#a009af874883eaeca399a3c5c144df2fc',1,'Geometry::Ray::Ray(const Geometry::Point3D &amp;origin, const Geometry::Vector3D &amp;direction)']]],
+  ['rectangle3d_1',['Rectangle3D',['../classGeometry_1_1Rectangle3D.html#a2d143a0f3469df16a3e20011d382b6ef',1,'Geometry::Rectangle3D']]],
+  ['render_2',['render',['../classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f',1,'RayTracer::Camera::render()'],['../classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271',1,'RayTracer::ARenderer::render()']]],
+  ['rng_3',['rng',['../classRayTracer_1_1Utils.html#a30d72a060a1b268a6ca81e900c2616d1',1,'RayTracer::Utils']]],
+  ['rotationx_4',['rotationX',['../classGeometry_1_1TransformMatrix.html#acff8638f8a3e9f4ed6e462c1b39c4083',1,'Geometry::TransformMatrix']]],
+  ['rotationy_5',['rotationY',['../classGeometry_1_1TransformMatrix.html#a75fbc44956cff1212e332c49862f6b09',1,'Geometry::TransformMatrix']]],
+  ['rotationz_6',['rotationZ',['../classGeometry_1_1TransformMatrix.html#aea39d6665c49e892c46f10c545622ec5',1,'Geometry::TransformMatrix']]]
 ];

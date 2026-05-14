@@ -1,11 +1,15 @@
 <map id="RayTracer::Color::Color" name="RayTracer::Color::Color">
-<area shape="rect" id="Node000001" title=" " alt="" coords="251,109,421,134"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1AmbientLight.html#a5b12101e2c3a0fa405dddc627d57e344" title=" " alt="" coords="13,5,195,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,105,202,60,170,48,172,43,204,55,300,100"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1DirectionalLight.html#a682bc429176da9bb6b1694703b44ba0e" title=" " alt="" coords="5,69,203,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,110,203,106,203,100,238,105"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1Lambertian.html#a9d3f150cb0d7a06f1f7487be4676f258" title=" " alt="" coords="20,133,188,173"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,138,189,144,188,139,237,132"/>
-<area shape="rect" id="Node000005" href="$classRayTracer_1_1PointLight.html#abb0bed47008dfe0693bf7eace117c86d" title=" " alt="" coords="25,197,183,237"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="300,143,204,188,172,200,170,195,202,183,298,138"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="481,137,652,162"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1AMaterial.html#ad17852e0877f59841ee734e96def74d9" title=" " alt="" coords="256,33,413,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="528,133,432,88,400,76,402,71,434,83,531,128"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1AmbientLight.html#a5b12101e2c3a0fa405dddc627d57e344" title=" " alt="" coords="244,97,425,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="468,138,425,132,426,127,468,133"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1DirectionalLight.html#a682bc429176da9bb6b1694703b44ba0e" title=" " alt="" coords="236,161,433,201"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="468,166,434,170,433,165,468,160"/>
+<area shape="rect" id="Node000007" href="$classRayTracer_1_1PointLight.html#abb0bed47008dfe0693bf7eace117c86d" title=" " alt="" coords="255,225,414,265"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="531,171,434,216,402,228,400,223,432,211,528,166"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Lambertian.html#a9d3f150cb0d7a06f1f7487be4676f258" title=" " alt="" coords="13,5,181,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="242,45,181,38,181,33,242,40"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Phong.html#aed034ba959eedee570e3572385c8ae09" title=" " alt="" coords="5,70,188,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="243,67,189,74,188,69,242,62"/>
 </map>

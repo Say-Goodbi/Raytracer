@@ -1,14 +1,7 @@
 var searchData=
 [
-  ['generateray_0',['generateRay',['../classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd',1,'RayTracer::Camera']]],
-  ['getheight_1',['getHeight',['../classRayTracer_1_1ARenderer.html#a5b8bc108a3a1ef0f9fd700dc6fea85cb',1,'RayTracer::ARenderer']]],
-  ['getinitializer_2',['getInitializer',['../classRayTracer_1_1PluginManager.html#a12a011c7eb217200fcabaf40b57da4c7',1,'RayTracer::PluginManager']]],
-  ['getinitializers_3',['getInitializers',['../CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3',1,'CorePlugin.cpp']]],
-  ['getlights_4',['getLights',['../classRayTracer_1_1Scene.html#a43b223d3c67aa2b66eb5eca01470f09d',1,'RayTracer::Scene']]],
-  ['getmaterial_5',['getMaterial',['../classRayTracer_1_1APrimitive.html#acdc1a350e79537fa0b9c8588a170bdcf',1,'RayTracer::APrimitive']]],
-  ['getname_6',['getName',['../CorePlugin_8cpp.html#ac0fc966d4386ddb71d99361e3fccb311',1,'CorePlugin.cpp']]],
-  ['getprimitives_7',['getPrimitives',['../classRayTracer_1_1Scene.html#a8aa62e8397ea4837bb5a4c12aef5eb54',1,'RayTracer::Scene']]],
-  ['getrenderer_8',['getRenderer',['../classRayTracer_1_1Scene.html#af40ecae80eb7540d3541b49f441fe509',1,'RayTracer::Scene']]],
-  ['getvalue_9',['getValue',['../classRayTracer_1_1Parser.html#aeba7e2f0e2fcf1a56e16c916168009cb',1,'RayTracer::Parser']]],
-  ['getwidth_10',['getWidth',['../classRayTracer_1_1ARenderer.html#a78eaee329eba441c51332bf9ebcc7e5c',1,'RayTracer::ARenderer']]]
+  ['emission_0',['emission',['../classRayTracer_1_1Lambertian.html#a6205c3776a49354dab5d02f983c196e1',1,'RayTracer::Lambertian::emission()'],['../classRayTracer_1_1Phong.html#a5e0b821a0516e1fbdcd25f358a46d83d',1,'RayTracer::Phong::emission()'],['../classRayTracer_1_1IMaterial.html#acd4b1bdc4f1ec9f555277b4b87199bb9',1,'RayTracer::IMaterial::emission()']]],
+  ['evaluate_1',['evaluate',['../classRayTracer_1_1Lambertian.html#ac5339d746050833c746e209d65d9a9da',1,'RayTracer::Lambertian::evaluate()'],['../classRayTracer_1_1Phong.html#a2526bd20be0b2cbb045250c4a6573b27',1,'RayTracer::Phong::evaluate()'],['../classRayTracer_1_1IMaterial.html#a98d43460913f09c692f84affec665226',1,'RayTracer::IMaterial::evaluate()']]],
+  ['exception_2',['Exception',['../classRayTracer_1_1Exception.html#a38a72155e42ddf63565d220b67a73dae',1,'RayTracer::Exception']]],
+  ['execute_3',['execute',['../classRayTracer_1_1SceneWriter.html#a148f4441944d104f0248d7723b5fbc54',1,'RayTracer::SceneWriter::execute()'],['../classRayTracer_1_1AInterface.html#a0559b88b0596f291c0ab3da0889b8fbe',1,'RayTracer::AInterface::execute()']]]
 ];
