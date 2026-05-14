@@ -14,6 +14,22 @@
 
 extern "C"
 {
+    std::map<std::string, std::function<std::shared_ptr<RayTracer::IMaterial>(const RayTracer::Color &)>> _materials = {
+        {"lambertian", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
+        {
+            return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Lambertian>(color));
+        }}
+    };
+
+    std::shared_ptr<RayTracer::IMaterial> getMaterialInstance(const std::string &type, const RayTracer::Color &color)
+    {
+        std::map<std::string, std::function<std::shared_ptr<RayTracer::IMaterial>(const RayTracer::Color &)>>::const_iterator it = _materials.find(type);
+    
+        if (it == _materials.end())
+            throw RayTracer::Exception("Unknown material type: " + type);
+        return it->second(color);
+    }
+
     std::string getName() { return "CorePlugin"; };
 
     std::map<std::string, std::function<RayTracer::Component(RayTracer::NodePtr)>> getInitializers()
@@ -23,6 +39,8 @@ extern "C"
                 "camera", [](RayTracer::NodePtr node) -> RayTracer::Component
                 {
                     const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
+
+                    
 
                     if (settingsMap.find("resolution") == settingsMap.end() || settingsMap.find("position") == settingsMap.end() || settingsMap.find("rotation") == settingsMap.end() || settingsMap.find("fieldOfView") == settingsMap.end())
                         throw RayTracer::Exception("Missing required parameters for Camera: resolution, position, rotation, fieldOfView");
@@ -70,9 +88,11 @@ extern "C"
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)) / 255.0,
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)) / 255.0,
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
-                    std::shared_ptr<RayTracer::Lambertian> material = std::make_shared<RayTracer::Lambertian>(color);
+                        std::string material = std::string("lambertian");
+                    if (settingsMap.find("material") != settingsMap.end())
+                        material = std::get<std::string>(std::get<RayTracer::ScalarValue>(settingsMap.at("material")->value));
 
-                    std::shared_ptr<RayTracer::APrimitive> plane = std::make_shared<RayTracer::Plane>(point, normal, material);
+                    std::shared_ptr<RayTracer::APrimitive> plane = std::make_shared<RayTracer::Plane>(point, normal, getMaterialInstance(material, color));
                     return std::static_pointer_cast<RayTracer::APrimitive>(plane);
                 }
             },
@@ -95,9 +115,10 @@ extern "C"
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)) / 255.0,
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)) / 255.0,
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
-                    std::shared_ptr<RayTracer::Lambertian> material = std::make_shared<RayTracer::Lambertian>(color);
-
-                    std::shared_ptr<RayTracer::APrimitive> sphere = std::make_shared<RayTracer::Sphere>(center, radius, material);
+                    std::string material = std::string("lambertian");
+                    if (settingsMap.find("material") != settingsMap.end())
+                        material = std::get<std::string>(std::get<RayTracer::ScalarValue>(settingsMap.at("material")->value));
+                    std::shared_ptr<RayTracer::APrimitive> sphere = std::make_shared<RayTracer::Sphere>(center, radius, getMaterialInstance(material, color));
                     return std::static_pointer_cast<RayTracer::APrimitive>(sphere);
                 }
             },
@@ -125,8 +146,10 @@ extern "C"
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("r")->value)) / 255.0,
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("g")->value)) / 255.0,
                         std::get<float>(std::get<RayTracer::ScalarValue>(ref_color.at("b")->value)) / 255.0);
-                    std::shared_ptr<RayTracer::Lambertian> material = std::make_shared<RayTracer::Lambertian>(color);
-                    std::shared_ptr<RayTracer::APrimitive> cylinder = std::make_shared<RayTracer::Cylinder>(origin, axis, radius, material);
+                    std::string material = std::string("lambertian");
+                    if (settingsMap.find("material") != settingsMap.end())
+                        material = std::get<std::string>(std::get<RayTracer::ScalarValue>(settingsMap.at("material")->value));
+                    std::shared_ptr<RayTracer::APrimitive> cylinder = std::make_shared<RayTracer::Cylinder>(origin, axis, radius, getMaterialInstance(material, color));
                     return std::static_pointer_cast<RayTracer::APrimitive>(cylinder);
                 }
             },
