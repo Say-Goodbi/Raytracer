@@ -14,14 +14,13 @@ namespace RayTracer {
         std::unique_ptr<Scene> scene = std::make_unique<Scene>();
 
         if (!this->_parser._node)
-            throw RayTracer::Exception("Failed to parse scene configuration file.");
-        for (auto &[key, nodePtr] : std::get<Object>(_parser._node->value))
-            for (auto &[componentKey, creator] : _componentCreators) {
-                if (key != componentKey)
-                    continue;
-                creator(nodePtr, _pluginManager, scene);
-                break;
-            }
+            throw RayTracer::ParsingException("Failed to parse scene configuration file.");
+        for (auto &[componentKey, creator] : _componentCreators) {
+            auto it = std::get<Object>(_parser._node->value).find(componentKey);
+            if (it == std::get<Object>(_parser._node->value).end())
+                throw RayTracer::ParsingException("Missing required component in scene configuration: " + componentKey);
+            creator(it->second, _pluginManager, scene);
+        }
         return scene;
     }
 }
