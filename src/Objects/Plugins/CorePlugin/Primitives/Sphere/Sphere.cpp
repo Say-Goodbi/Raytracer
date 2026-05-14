@@ -1,9 +1,10 @@
 #include "Sphere.hpp"
+#include <memory>
 
 namespace RayTracer
 {
-    Sphere::Sphere(Geometry::Point3D center, float radius, IMaterial *material)
-        : APrimitive(material), _center(center), _radius(radius)
+    Sphere::Sphere(Geometry::Point3D center, float radius, std::shared_ptr<IMaterial> material)
+        : APrimitive(std::move(material)), _center(center), _radius(radius)
     {
     }
 

@@ -1,5 +1,6 @@
 #pragma once
 #include "../IMaterial.hpp"
+#include <memory>
 #include <optional>
 #include "../../../Geometry/Ray/Ray.hpp"
 
@@ -10,12 +11,12 @@ namespace RayTracer
     class APrimitive
     {
     private:
-        IMaterial *_material;  ///< Material defining shading behavior
+        std::shared_ptr<IMaterial> _material;  ///< Material defining shading behavior
 
     public:
         /// Constructor.
         /// @param material The material for this primitive
-        APrimitive(IMaterial *material) : _material(material) {};
+        APrimitive(std::shared_ptr<IMaterial> material) : _material(std::move(material)) {};
         virtual ~APrimitive() = default;
 
         /// Test ray intersection with this primitive.

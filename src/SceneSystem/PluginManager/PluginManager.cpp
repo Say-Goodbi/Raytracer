@@ -49,6 +49,7 @@ bool RayTracer::PluginManager::loadPlugin(const std::string& path)
         dlclose(handle);
         return false;
     }
+    dlclose(handle);
     InitializersMap initializers = getInitializers();
     overrideInitializers(initializers);
     _plugins[pluginName] = initializers;

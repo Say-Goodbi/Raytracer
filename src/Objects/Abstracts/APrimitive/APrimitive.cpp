@@ -4,6 +4,6 @@ namespace RayTracer
 {
     IMaterial *APrimitive::getMaterial() const
     {
-        return this->_material;
+        return this->_material.get();
     }
 } // namespace RayTracer

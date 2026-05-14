@@ -1,5 +1,6 @@
 #include "PointLight.hpp"
 #include "../../../../../Geometry/Ray/Ray.hpp"
+#include "../../../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
 #include <algorithm>
 
 namespace RayTracer
@@ -41,12 +42,12 @@ namespace RayTracer
             toLightNorm
         );
 
-        // 3. occlusion test — check if any primitive blocks the light
-        // for (const auto& primitive : primitives) {
-        //     auto obstruction = primitive->hit(shadowRay);
-        //     if (obstruction && obstruction->rayDistance < lightDistance)
-        //         return Color(0, 0, 0);
-        // }
+        // 3. occlusion test,  check if any primitive blocks the light
+        for (const auto& primitive : primitives) {
+            auto obstruction = primitive->hit(shadowRay);
+            if (obstruction && obstruction->rayDistance < lightDistance)
+                return Color(0, 0, 0);
+        }
 
         // 4. no obstacle — return full diffuse contribution
         double diffuse = std::max(0.0, hit.normal.dot(toLightNorm));

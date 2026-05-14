@@ -3,6 +3,7 @@
 #include "../../../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
 #include "../../../../../Objects/Abstracts/IMaterial.hpp"
 #include "../../../../../Geometry/Ray/Ray.hpp"
+#include <memory>
 #include <optional>
 
 namespace RayTracer
@@ -14,7 +15,7 @@ namespace RayTracer
             Geometry::Vector3D _axis;
             float _radius;
         public:
-            Cylinder(const Geometry::Point3D& origin, const Geometry::Vector3D& axis, float radius, IMaterial *material) : APrimitive(material), _origin(origin), _axis(axis), _radius(radius) {}
+            Cylinder(const Geometry::Point3D& origin, const Geometry::Vector3D& axis, float radius, std::shared_ptr<IMaterial> material) : APrimitive(std::move(material)), _origin(origin), _axis(axis), _radius(radius) {}
             Cylinder() = default;
             ~Cylinder() = default;
             std::optional<Geometry::HitRecord> hit(const Geometry::Ray& ray) const override;

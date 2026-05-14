@@ -19,14 +19,13 @@
 #pragma once
 
 #include "../../../../../Utils/Color.hpp"
-#include "../../../../../Objects/Abstracts/IMaterial.hpp"
+#include "../../../../../Objects/Abstracts/AMaterial/AMaterial.hpp"
 
 namespace RayTracer
 {
-    class Lambertian : public IMaterial
+    class Lambertian : public AMaterial
     {
         private:
-            Color _albedo;
         protected:
         public:
             Lambertian(const Color& albedo);
