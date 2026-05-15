@@ -150,11 +150,24 @@ namespace RayTracer
         IMaterial *mat = closest->material;
         Color emitted = mat->emission();
 
+        Geometry::Vector3D viewDir = (ray.direction * -1).normalize();
+        Geometry::Vector3D bounceDir = mat->sample(closest->normal, viewDir);
+        float p = mat->pdf(closest->normal, viewDir, bounceDir);
+
+        if (p < 1e-6f) {
+            // Specular / glass: pure recursive bounce, no direct lighting
+            Geometry::Point3D bounceOrigin(
+                closest->point.x + bounceDir.x * 1e-4f,
+                closest->point.y + bounceDir.y * 1e-4f,
+                closest->point.z + bounceDir.z * 1e-4f);
+            Color tint = mat->evaluate(closest->normal, viewDir, bounceDir) * M_PI;
+            return emitted + tint * castRay(Geometry::Ray(bounceOrigin, bounceDir), scene, depth - 1);
+        }
+
         Color directLight(0, 0, 0);
         for (const auto& light : scene.getLights())
             directLight = directLight + light->computeLight(*closest, scene.getPrimitives());
 
-        Geometry::Vector3D viewDir = (ray.direction * -1).normalize();
         Color albedo = mat->evaluate(closest->normal, viewDir, closest->normal) * M_PI;
         return emitted + albedo * directLight;
     }

@@ -4,6 +4,7 @@
 #include "../../../SceneSystem/SceneNodeHelpers/SceneNodeHelpers.hpp"
 #include "Materials/Lambertian/Lambertian.hpp"
 #include "Materials/Phong/Phong.hpp"
+#include "Materials/Glass/Glass.hpp"
 #include "Primitives/Plane/Plane.hpp"
 #include "Primitives/Sphere/Sphere.hpp"
 #include "Primitives/Cylinder/Cylinder.hpp"
@@ -11,6 +12,7 @@
 #include "Lights/DirectionalLight/DirectionalLight.hpp"
 #include "Lights/AmbientLight/AmbientLight.hpp"
 #include "Renderers/Camera/Camera.hpp"
+
 
 extern "C"
 {
@@ -22,6 +24,10 @@ extern "C"
         {"phong", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
         {
             return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Phong>(color));
+        }},
+        {"glass", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
+        {
+            return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Glass>(color));
         }}
     };
 
