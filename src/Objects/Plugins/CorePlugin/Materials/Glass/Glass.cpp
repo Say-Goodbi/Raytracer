@@ -32,7 +32,7 @@ namespace RayTracer
         if (k < 0)
             return n * (2.0f * cosi) - viewDir;
         else
-            return viewDir * (-eta) + n * (eta * cosi - std::sqrt(k));
+            return viewDir * (-eta) + n * (eta * cosi + std::sqrt(k));
     }
 
 
