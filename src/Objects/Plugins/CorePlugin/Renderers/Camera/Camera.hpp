@@ -7,6 +7,7 @@
 #include "../../../../../Geometry/HitRecord/HitRecord.hpp"
 #include "../../../../../Geometry/TransformMatrix/TransformMatrix.hpp"
 #include <optional>
+#include <vector>
 
 namespace RayTracer
 {
@@ -36,6 +37,8 @@ namespace RayTracer
         Geometry::Rectangle3D _screen;
         /// Field of view in degrees.
         float _fov;
+        /// Whether to accelerate primitive hits with a BVH.
+        bool _useBVH;
         /// Maximum number of recursive ray bounces before the path is terminated.
         int _maxDepth = 8;
         /// Side length of the per-pixel stratified sample grid (total samples = _sqrtSamples²).
@@ -70,7 +73,7 @@ namespace RayTracer
          * @brief Construct a camera from a 4x4 affine transform matrix.
          * @param transform Camera-to-world transform (columns = right, up, forward, translation).
          */
-        Camera(Geometry::TransformMatrix transform, float fov, int width = 800, int height = 600);
+        Camera(Geometry::TransformMatrix transform, float fov, int width = 800, int height = 600, bool useBVH = false);
 
     private:
         /// Rebuild the _screen rectangle from the current _transform and _fov.

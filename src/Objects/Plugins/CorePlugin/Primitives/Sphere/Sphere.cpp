@@ -29,4 +29,10 @@ namespace RayTracer
         }
         return std::nullopt;
     }
+
+    std::optional<Geometry::AABB> Sphere::getBounds() const
+    {
+        Geometry::Vector3D radiusVector(_radius, _radius, _radius);
+        return Geometry::AABB(_center - radiusVector, _center + radiusVector);
+    }
 } // namespace RayTracer

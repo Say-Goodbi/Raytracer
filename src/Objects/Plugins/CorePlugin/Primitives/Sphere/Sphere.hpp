@@ -13,5 +13,6 @@ namespace RayTracer
             Sphere(Geometry::Point3D center, float radius, std::shared_ptr<IMaterial> material);
             ~Sphere() = default;
             std::optional<Geometry::HitRecord> hit(const Geometry::Ray& ray) const override;
+            std::optional<Geometry::AABB> getBounds() const override;
     };
 } // namespace RayTracer

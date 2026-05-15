@@ -1,12 +1,28 @@
 #include "Scene.hpp"
 
+namespace
+{
+    std::optional<Geometry::HitRecord> findClosestLinear(const Geometry::Ray &ray, const std::vector<std::shared_ptr<RayTracer::APrimitive>> &primitives)
+    {
+        std::optional<Geometry::HitRecord> closest;
+
+        for (const auto &primitive : primitives)
+        {
+            std::optional<Geometry::HitRecord> hit = primitive->hit(ray);
+            if (hit && (!closest || hit->rayDistance < closest->rayDistance))
+                closest = hit;
+        }
+        return closest;
+    }
+}
+
 namespace RayTracer
 {
-    Scene::Scene(ARenderer &camera) : _renderer(&camera, [](ARenderer *) {})
+    Scene::Scene(ARenderer &camera) : _renderer(&camera, [](ARenderer *) {}), _useBVH(false)
     {
     }
 
-    Scene::Scene(void) : _renderer(nullptr) {}
+    Scene::Scene(void) : _renderer(nullptr), _useBVH(false) {}
 
     void Scene::updateCamera(RayTracer::NodePtr &camera, PluginManager &pluginManager)
     {
@@ -20,6 +36,46 @@ namespace RayTracer
     void Scene::addPrimitive(std::shared_ptr<APrimitive> primitive)
     {
         this->_primitives.push_back(primitive);
+    }
+
+    void Scene::prepareAccelerationStructure(bool useBVH)
+    {
+        this->_useBVH = useBVH;
+        this->_bvh.reset();
+        this->_unboundedPrimitives.clear();
+
+        if (!this->_useBVH)
+            return;
+
+        std::vector<std::shared_ptr<APrimitive>> boundedPrimitives;
+        boundedPrimitives.reserve(this->_primitives.size());
+
+        for (const auto &primitive : this->_primitives)
+        {
+            if (primitive->getBounds())
+                boundedPrimitives.push_back(primitive);
+            else
+                this->_unboundedPrimitives.push_back(primitive);
+        }
+
+        this->_bvh.emplace(boundedPrimitives);
+    }
+
+    std::optional<Geometry::HitRecord> Scene::hit(const Geometry::Ray &ray) const
+    {
+        if (!this->_useBVH)
+            return findClosestLinear(ray, this->_primitives);
+
+        std::optional<Geometry::HitRecord> closest;
+
+        if (this->_bvh)
+            closest = this->_bvh->hit(ray);
+
+        std::optional<Geometry::HitRecord> linearHit = findClosestLinear(ray, this->_unboundedPrimitives);
+        if (linearHit && (!closest || linearHit->rayDistance < closest->rayDistance))
+            closest = linearHit;
+
+        return closest;
     }
 
     void Scene::addPrimitives(RayTracer::NodePtr &primitives, PluginManager &pluginManager)

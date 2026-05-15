@@ -12,7 +12,7 @@
 #include <memory>
 #include <variant>
 #include <map>
-#include "../Exceptions/RaytracerException/RaytracerException.hpp"
+#include "../Exceptions/ParsingException/ParsingException.hpp"
 #include "Abstracts/AInterface/AInterface.hpp"
 #include "Abstracts/APrimitive/APrimitive.hpp"
 #include "Abstracts/ARenderer/ARenderer.hpp"
