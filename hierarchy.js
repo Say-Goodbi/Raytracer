@@ -28,6 +28,7 @@ var hierarchy =
     ] ],
     [ "RayTracer::IMaterial", "classRayTracer_1_1IMaterial.html", [
       [ "RayTracer::AMaterial", "classRayTracer_1_1AMaterial.html", [
+        [ "RayTracer::Glass", "classRayTracer_1_1Glass.html", null ],
         [ "RayTracer::Lambertian", "classRayTracer_1_1Lambertian.html", null ],
         [ "RayTracer::Phong", "classRayTracer_1_1Phong.html", null ]
       ] ]

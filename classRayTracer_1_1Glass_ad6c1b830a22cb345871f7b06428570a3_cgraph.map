@@ -1,0 +1,5 @@
+<map id="RayTracer::Glass::emission" name="RayTracer::Glass::emission">
+<area shape="rect" id="Node000001" title="Return the radiance emitted by this surface." alt="" coords="5,5,203,31"/>
+<area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="251,5,421,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,15,237,15,237,21,203,21"/>
+</map>

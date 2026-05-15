@@ -1,0 +1,7 @@
+<map id="RayTracer::Glass::evaluate" name="RayTracer::Glass::evaluate">
+<area shape="rect" id="Node000001" title="Evaluate the BRDF for a given pair of directions." alt="" coords="5,5,200,31"/>
+<area shape="rect" id="Node000002" href="$structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8" title=" " alt="" coords="248,5,447,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,15,234,15,234,21,200,21"/>
+<area shape="rect" id="Node000003" href="$structRayTracer_1_1Color.html#a01b4a4dad8204eed80f8d38d3d004e4d" title=" " alt="" coords="495,5,665,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="447,15,481,15,481,21,447,21"/>
+</map>

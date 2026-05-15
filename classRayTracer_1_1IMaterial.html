@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1IMaterial.html','');
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial__inherit__graph.svg" width="323" height="523"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial__inherit__graph.svg" width="482" height="523"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::IMaterial:</div>
@@ -197,13 +197,13 @@ Public Member Functions</h2></td></tr>
 <p>Non-emissive materials should return <code>Color(0, 0, 0)</code>. Light sources return their emission color here; the path tracer adds it to the scattered term unconditionally.</p>
 <dl class="section return"><dt>Returns</dt><dd>Emitted radiance as an RGB color. </dd></dl>
 
-<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#a6205c3776a49354dab5d02f983c196e1">RayTracer::Lambertian</a>, and <a class="el" href="classRayTracer_1_1Phong.html#a5e0b821a0516e1fbdcd25f358a46d83d">RayTracer::Phong</a>.</p>
+<p>Implemented in <a class="el" href="classRayTracer_1_1Glass.html#ad6c1b830a22cb345871f7b06428570a3">RayTracer::Glass</a>, <a class="el" href="classRayTracer_1_1Lambertian.html#a6205c3776a49354dab5d02f983c196e1">RayTracer::Lambertian</a>, and <a class="el" href="classRayTracer_1_1Phong.html#a5e0b821a0516e1fbdcd25f358a46d83d">RayTracer::Phong</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_acd4b1bdc4f1ec9f555277b4b87199bb9_icgraph.svg" width="566" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_acd4b1bdc4f1ec9f555277b4b87199bb9_icgraph.svg" width="566" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -260,13 +260,13 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>BRDF value as an RGB multiplier (component-wise). </dd></dl>
 
-<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#ac5339d746050833c746e209d65d9a9da">RayTracer::Lambertian</a>, and <a class="el" href="classRayTracer_1_1Phong.html#a2526bd20be0b2cbb045250c4a6573b27">RayTracer::Phong</a>.</p>
+<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#ac5339d746050833c746e209d65d9a9da">RayTracer::Lambertian</a>, <a class="el" href="classRayTracer_1_1Glass.html#a86bc818fd7cb123e51df9e7b72aa5642">RayTracer::Glass</a>, and <a class="el" href="classRayTracer_1_1Phong.html#a2526bd20be0b2cbb045250c4a6573b27">RayTracer::Phong</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_a98d43460913f09c692f84affec665226_icgraph.svg" width="566" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_a98d43460913f09c692f84affec665226_icgraph.svg" width="566" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -323,7 +323,14 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>PDF value ≥ 0 for <code>sampleDir</code> under this material's distribution. </dd></dl>
 
-<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#a0a74c9347b24b236af1e44c302ac7c5e">RayTracer::Lambertian</a>, and <a class="el" href="classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2">RayTracer::Phong</a>.</p>
+<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#a0a74c9347b24b236af1e44c302ac7c5e">RayTracer::Lambertian</a>, <a class="el" href="classRayTracer_1_1Glass.html#abb0cef9dba78c9009feddb657ab45cef">RayTracer::Glass</a>, and <a class="el" href="classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2">RayTracer::Phong</a>.</p>
+<div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_a2b3e2b7f5cf291a25885aaf2d39d5582_icgraph.svg" width="595" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -372,7 +379,14 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Unit bounce direction in the hemisphere above <code>normal</code>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838">RayTracer::Lambertian</a>, and <a class="el" href="classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd">RayTracer::Phong</a>.</p>
+<p>Implemented in <a class="el" href="classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838">RayTracer::Lambertian</a>, <a class="el" href="classRayTracer_1_1Glass.html#a2c9fb925e8ccd41d68e1126530937c84">RayTracer::Glass</a>, and <a class="el" href="classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd">RayTracer::Phong</a>.</p>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1IMaterial_ade12fb28f824d8b9f9627bc3692afa80_icgraph.svg" width="566" height="75"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>

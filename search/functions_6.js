@@ -12,5 +12,6 @@ var searchData=
   ['getprimitives_9',['getPrimitives',['../classRayTracer_1_1Scene.html#a8aa62e8397ea4837bb5a4c12aef5eb54',1,'RayTracer::Scene']]],
   ['getrenderer_10',['getRenderer',['../classRayTracer_1_1Scene.html#af40ecae80eb7540d3541b49f441fe509',1,'RayTracer::Scene']]],
   ['getvalue_11',['getValue',['../classRayTracer_1_1Parser.html#aeba7e2f0e2fcf1a56e16c916168009cb',1,'RayTracer::Parser']]],
-  ['getwidth_12',['getWidth',['../classRayTracer_1_1ARenderer.html#a78eaee329eba441c51332bf9ebcc7e5c',1,'RayTracer::ARenderer']]]
+  ['getwidth_12',['getWidth',['../classRayTracer_1_1ARenderer.html#a78eaee329eba441c51332bf9ebcc7e5c',1,'RayTracer::ARenderer']]],
+  ['glass_13',['Glass',['../classRayTracer_1_1Glass.html#a827a2ec2242a30350a976f193b157a90',1,'RayTracer::Glass']]]
 ];

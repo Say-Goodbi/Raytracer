@@ -1,0 +1,9 @@
+<map id="RayTracer::Glass" name="RayTracer::Glass">
+<area shape="rect" id="Node000001" title=" " alt="" coords="87,468,222,633"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1AMaterial.html" title="Abstract base class for all materials. Defines the interface for evaluating the BRDF,..." alt="" coords="80,313,229,419"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,433,157,468,152,468,152,433"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1IMaterial.html" title="Interface for physically&#45;based surface materials." alt="" coords="5,55,149,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,213,140,312,135,314,103,215"/>
+<area shape="rect" id="Node000004" href="$structRayTracer_1_1Color.html" title=" " alt="" coords="173,5,293,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="195,252,180,299,174,297,190,250"/>
+</map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ilight_0',['ILight',['../classRayTracer_1_1ILight.html',1,'RayTracer']]],
-  ['imaterial_1',['IMaterial',['../classRayTracer_1_1IMaterial.html',1,'RayTracer']]]
+  ['hitrecord_0',['HitRecord',['../structGeometry_1_1HitRecord.html',1,'Geometry']]]
 ];

@@ -29,13 +29,14 @@ var searchData=
   ['_5fposition_26',['_position',['../classRayTracer_1_1PointLight.html#a68bf40fd17b23dde0c6ba7d583e26772',1,'RayTracer::PointLight']]],
   ['_5fprimitives_27',['_primitives',['../classRayTracer_1_1Scene.html#a3dc195cccae11c3bbb2357456d3fc8b4',1,'RayTracer::Scene']]],
   ['_5fradius_28',['_radius',['../classRayTracer_1_1Cylinder.html#a106a8660cb42595fcb3606691c848c17',1,'RayTracer::Cylinder::_radius'],['../classRayTracer_1_1Sphere.html#a2e45edb1294ff002b47439e69e8ee9db',1,'RayTracer::Sphere::_radius']]],
-  ['_5frenderer_29',['_renderer',['../classRayTracer_1_1Scene.html#a754f50a09a5c693554f7424496657d07',1,'RayTracer::Scene::_renderer'],['../classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0',1,'RayTracer::AInterface::_renderer']]],
-  ['_5froot_30',['_root',['../classRayTracer_1_1BVH.html#a4c53b860aff82c489a44591277487d26',1,'RayTracer::BVH::_root'],['../classRayTracer_1_1Parser.html#a958164903ab312cbaf14e783d73beb89',1,'RayTracer::Parser::_root']]],
-  ['_5fscreen_31',['_screen',['../classRayTracer_1_1Camera.html#a2dd6aea870f6a5cdba1439c7fe7d2afc',1,'RayTracer::Camera']]],
-  ['_5fshininess_32',['_shininess',['../classRayTracer_1_1Phong.html#ac9a276ebff2dd38c634d10d084f7c2d3',1,'RayTracer::Phong']]],
-  ['_5fsqrtsamples_33',['_sqrtSamples',['../classRayTracer_1_1Camera.html#a5deba042fbd465270df347f8c16b8038',1,'RayTracer::Camera']]],
-  ['_5ftransform_34',['_transform',['../classRayTracer_1_1Camera.html#a29065ba881e1be60e734f4bf6dfad072',1,'RayTracer::Camera']]],
-  ['_5funboundedprimitives_35',['_unboundedPrimitives',['../classRayTracer_1_1Scene.html#a6470ce977b5b52fe48678c712f3ba03c',1,'RayTracer::Scene']]],
-  ['_5fusebvh_36',['_usebvh',['../classRayTracer_1_1Scene.html#af98e4bab00cba1dccd7121fd8ac12f14',1,'RayTracer::Scene::_useBVH'],['../classRayTracer_1_1Camera.html#abe07071acb44d6a8eef1b0116945a831',1,'RayTracer::Camera::_useBVH']]],
-  ['_5fwidth_37',['_width',['../classRayTracer_1_1ARenderer.html#ab998431fb926aac5044c28b48ed0b9cc',1,'RayTracer::ARenderer']]]
+  ['_5frefractiveindex_29',['_refractiveIndex',['../classRayTracer_1_1Glass.html#a635d46f3acf7a262238e6165c39bdda8',1,'RayTracer::Glass']]],
+  ['_5frenderer_30',['_renderer',['../classRayTracer_1_1Scene.html#a754f50a09a5c693554f7424496657d07',1,'RayTracer::Scene::_renderer'],['../classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0',1,'RayTracer::AInterface::_renderer']]],
+  ['_5froot_31',['_root',['../classRayTracer_1_1BVH.html#a4c53b860aff82c489a44591277487d26',1,'RayTracer::BVH::_root'],['../classRayTracer_1_1Parser.html#a958164903ab312cbaf14e783d73beb89',1,'RayTracer::Parser::_root']]],
+  ['_5fscreen_32',['_screen',['../classRayTracer_1_1Camera.html#a2dd6aea870f6a5cdba1439c7fe7d2afc',1,'RayTracer::Camera']]],
+  ['_5fshininess_33',['_shininess',['../classRayTracer_1_1Phong.html#ac9a276ebff2dd38c634d10d084f7c2d3',1,'RayTracer::Phong']]],
+  ['_5fsqrtsamples_34',['_sqrtSamples',['../classRayTracer_1_1Camera.html#a5deba042fbd465270df347f8c16b8038',1,'RayTracer::Camera']]],
+  ['_5ftransform_35',['_transform',['../classRayTracer_1_1Camera.html#a29065ba881e1be60e734f4bf6dfad072',1,'RayTracer::Camera']]],
+  ['_5funboundedprimitives_36',['_unboundedPrimitives',['../classRayTracer_1_1Scene.html#a6470ce977b5b52fe48678c712f3ba03c',1,'RayTracer::Scene']]],
+  ['_5fusebvh_37',['_usebvh',['../classRayTracer_1_1Scene.html#af98e4bab00cba1dccd7121fd8ac12f14',1,'RayTracer::Scene::_useBVH'],['../classRayTracer_1_1Camera.html#abe07071acb44d6a8eef1b0116945a831',1,'RayTracer::Camera::_useBVH']]],
+  ['_5fwidth_38',['_width',['../classRayTracer_1_1ARenderer.html#ab998431fb926aac5044c28b48ed0b9cc',1,'RayTracer::ARenderer']]]
 ];

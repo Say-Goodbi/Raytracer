@@ -1,11 +1,13 @@
 <map id="Geometry::Vector3D::operator&#45;" name="Geometry::Vector3D::operator&#45;">
-<area shape="rect" id="Node000001" title=" " alt="" coords="252,73,405,113"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="252,97,405,137"/>
 <area shape="rect" id="Node000002" href="$classRayTracer_1_1Phong.html#a2526bd20be0b2cbb045250c4a6573b27" title="Evaluate the BRDF for a given pair of directions." alt="" coords="5,5,204,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,70,203,45,164,33,165,28,205,39,271,65"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,91,247,66,203,44,169,33,171,28,205,40,250,62,290,86"/>
 <area shape="rect" id="Node000003" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="18,55,191,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,85,191,80,192,74,239,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,99,162,83,164,77,239,94"/>
 <area shape="rect" id="Node000004" href="$classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2" title="Return the probability density of the direction from sample()." alt="" coords="23,104,186,129"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="238,105,186,111,186,105,238,100"/>
-<area shape="rect" id="Node000005" href="$classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd" title="Return the deterministic bounce direction for this material." alt="" coords="9,153,200,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="268,120,205,143,160,156,159,151,203,138,266,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="238,119,186,119,186,114,238,114"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1Glass.html#a2c9fb925e8ccd41d68e1126530937c84" title="Return the deterministic bounce direction for this material." alt="" coords="11,153,198,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="239,139,164,156,162,151,238,134"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd" title="Return the deterministic bounce direction for this material." alt="" coords="9,203,200,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="289,147,249,171,205,192,167,205,166,200,203,188,246,166,286,142"/>
 </map>

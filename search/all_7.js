@@ -2,8 +2,8 @@ var searchData=
 [
   ['g_0',['g',['../structRayTracer_1_1Color.html#a2867dd8ad913426dfa277ffb141241dc',1,'RayTracer::Color']]],
   ['generateray_1',['generateRay',['../classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd',1,'RayTracer::Camera']]],
-  ['geometry_2',['geometry',['../index.html#arch_geometry',1,'Geometry'],['../namespaceGeometry.html',1,'Geometry']]],
-  ['getbounds_3',['getbounds',['../classRayTracer_1_1Plane.html#a69c3cdfd8ba4d3b45d3ddad4d82f0af1',1,'RayTracer::Plane::getBounds()'],['../classRayTracer_1_1Sphere.html#a873777f6a7ae521b8e940f7b94c80fd8',1,'RayTracer::Sphere::getBounds()'],['../classRayTracer_1_1Cylinder.html#a0c2d2c5ee007e06c19fcf504323e0de5',1,'RayTracer::Cylinder::getBounds()'],['../classRayTracer_1_1APrimitive.html#a6860e01f9fe7dba5d0a8301aba44efa0',1,'RayTracer::APrimitive::getBounds()']]],
+  ['geometry_2',['geometry',['../namespaceGeometry.html',1,'Geometry'],['../index.html#arch_geometry',1,'Geometry']]],
+  ['getbounds_3',['getbounds',['../classRayTracer_1_1APrimitive.html#a6860e01f9fe7dba5d0a8301aba44efa0',1,'RayTracer::APrimitive::getBounds()'],['../classRayTracer_1_1Plane.html#a69c3cdfd8ba4d3b45d3ddad4d82f0af1',1,'RayTracer::Plane::getBounds()'],['../classRayTracer_1_1Sphere.html#a873777f6a7ae521b8e940f7b94c80fd8',1,'RayTracer::Sphere::getBounds()'],['../classRayTracer_1_1Cylinder.html#a0c2d2c5ee007e06c19fcf504323e0de5',1,'RayTracer::Cylinder::getBounds()']]],
   ['getheight_4',['getHeight',['../classRayTracer_1_1ARenderer.html#a5b8bc108a3a1ef0f9fd700dc6fea85cb',1,'RayTracer::ARenderer']]],
   ['getinitializer_5',['getInitializer',['../classRayTracer_1_1PluginManager.html#a12a011c7eb217200fcabaf40b57da4c7',1,'RayTracer::PluginManager']]],
   ['getinitializers_6',['getInitializers',['../CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3',1,'CorePlugin.cpp']]],
@@ -15,5 +15,8 @@ var searchData=
   ['getrenderer_12',['getRenderer',['../classRayTracer_1_1Scene.html#af40ecae80eb7540d3541b49f441fe509',1,'RayTracer::Scene']]],
   ['getvalue_13',['getValue',['../classRayTracer_1_1Parser.html#aeba7e2f0e2fcf1a56e16c916168009cb',1,'RayTracer::Parser']]],
   ['getwidth_14',['getWidth',['../classRayTracer_1_1ARenderer.html#a78eaee329eba441c51332bf9ebcc7e5c',1,'RayTracer::ARenderer']]],
-  ['graph_15',['Scene Graph',['../index.html#arch_scene',1,'']]]
+  ['glass_15',['glass',['../classRayTracer_1_1Glass.html',1,'RayTracer::Glass'],['../classRayTracer_1_1Glass.html#a827a2ec2242a30350a976f193b157a90',1,'RayTracer::Glass::Glass()']]],
+  ['glass_2ecpp_16',['Glass.cpp',['../Glass_8cpp.html',1,'']]],
+  ['glass_2ehpp_17',['Glass.hpp',['../Glass_8hpp.html',1,'']]],
+  ['graph_18',['Scene Graph',['../index.html#arch_scene',1,'']]]
 ];

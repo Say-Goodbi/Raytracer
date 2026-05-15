@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hitrecord_0',['HitRecord',['../structGeometry_1_1HitRecord.html',1,'Geometry']]]
+  ['glass_0',['Glass',['../classRayTracer_1_1Glass.html',1,'RayTracer']]]
 ];

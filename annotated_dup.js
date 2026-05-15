@@ -23,6 +23,7 @@ var annotated_dup =
       [ "DirectionalLight", "classRayTracer_1_1DirectionalLight.html", "classRayTracer_1_1DirectionalLight" ],
       [ "DivisionByZeroException", "classRayTracer_1_1DivisionByZeroException.html", "classRayTracer_1_1DivisionByZeroException" ],
       [ "Exception", "classRayTracer_1_1Exception.html", "classRayTracer_1_1Exception" ],
+      [ "Glass", "classRayTracer_1_1Glass.html", "classRayTracer_1_1Glass" ],
       [ "ILight", "classRayTracer_1_1ILight.html", "classRayTracer_1_1ILight" ],
       [ "IMaterial", "classRayTracer_1_1IMaterial.html", "classRayTracer_1_1IMaterial" ],
       [ "Lambertian", "classRayTracer_1_1Lambertian.html", "classRayTracer_1_1Lambertian" ],

@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('CorePlugin_8cpp.html',''); initResizab
 <code>#include &quot;<a class="el" href="SceneNodeHelpers_8hpp_source.html">../../../SceneSystem/SceneNodeHelpers/SceneNodeHelpers.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Lambertian_8hpp_source.html">Materials/Lambertian/Lambertian.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Phong_8hpp_source.html">Materials/Phong/Phong.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Glass_8hpp_source.html">Materials/Glass/Glass.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Plane_8hpp_source.html">Primitives/Plane/Plane.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Sphere_8hpp_source.html">Primitives/Sphere/Sphere.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Cylinder_8hpp_source.html">Primitives/Cylinder/Cylinder.hpp</a>&quot;</code><br />
@@ -149,7 +150,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00039">39</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00045">45</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -186,7 +187,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00028">28</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00034">34</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -212,7 +213,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00037">37</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00043">43</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -236,11 +237,15 @@ Variables</h2></td></tr>
 <div class="line">        {<span class="stringliteral">&quot;phong&quot;</span>, [](<span class="keyword">const</span> <a class="code hl_struct" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;color) -&gt; std::shared_ptr&lt;RayTracer::IMaterial&gt;</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keywordflow">return</span> std::static_pointer_cast&lt;RayTracer::IMaterial&gt;(std::make_shared&lt;RayTracer::Phong&gt;(color));</div>
+<div class="line">        }},</div>
+<div class="line">        {<span class="stringliteral">&quot;glass&quot;</span>, [](<span class="keyword">const</span> <a class="code hl_struct" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;color) -&gt; std::shared_ptr&lt;RayTracer::IMaterial&gt;</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span> std::static_pointer_cast&lt;RayTracer::IMaterial&gt;(std::make_shared&lt;RayTracer::Glass&gt;(color));</div>
 <div class="line">        }}</div>
 <div class="line">    }</div>
 <div class="ttc" id="astructRayTracer_1_1Color_html"><div class="ttname"><a href="structRayTracer_1_1Color.html">RayTracer::Color</a></div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00005">Color.hpp:6</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00017">17</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00019">19</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 
 </div>
 </div>

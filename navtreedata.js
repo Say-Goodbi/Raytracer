@@ -61,9 +61,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AABB_8hpp.html",
-"classGeometry_1_1TransformMatrix.html#a181d7a1621ca0af8a71291b02eb6f81f",
-"classRayTracer_1_1Parser.html#aeba7e2f0e2fcf1a56e16c916168009cb",
-"namespaceGeometry.html"
+"classGeometry_1_1TransformMatrix.html#a065621a852d662251597213f484ea3f6",
+"classRayTracer_1_1Lambertian.html#a9d3f150cb0d7a06f1f7487be4676f258",
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
