@@ -23,6 +23,8 @@ namespace RayTracer
             std::map<std::string, std::map<std::string, std::function<Component(NodePtr)>>> _plugins; ///< Map of plugin names to their keyword-initializer pairs
             std::vector<void*> _handles; ///< dlopen handles for loaded plugins
 
+            void unloadPlugins();
+
             /// Load a plugin from a shared library file.
             /// @param path Filesystem path to the shared library (.so)
             /// @return True if the plugin was loaded successfully, false otherwise

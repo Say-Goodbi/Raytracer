@@ -3,6 +3,8 @@
 #include "../../../../../Objects/Abstracts/APrimitive/APrimitive.hpp"
 #include <vector>
 #include <cmath>
+#include <mutex>
+#include "../../../../../Utils/FrameBufferMutex.hpp"
 #include "../../../../../Utils/Utils.hpp"
 
 namespace RayTracer
@@ -194,15 +196,19 @@ namespace RayTracer
     std::vector<std::vector<Color>> Camera::render(Scene& scene, std::vector<std::vector<Color>>& framebuffer) {
         scene.prepareAccelerationStructure(_useBVH);
 
-        // Ensure framebuffer is the correct size
-        if ((int)framebuffer.size() != _height) framebuffer.assign(_height, std::vector<Color>(_width));
-        else {
-            for (auto &row : framebuffer) {
-                if ((int)row.size() != _width) row.assign(_width, Color(0,0,0));
+        {
+            std::unique_lock<std::shared_mutex> lock(FrameBufferMutex());
+            // Ensure framebuffer is the correct size before incremental updates start.
+            if ((int)framebuffer.size() != _height) framebuffer.assign(_height, std::vector<Color>(_width));
+            else {
+                for (auto &row : framebuffer) {
+                    if ((int)row.size() != _width) row.assign(_width, Color(0,0,0));
+                }
             }
         }
 
         for (int y = 0; y < _height; y++) {
+            std::vector<Color> row(_width, Color(0, 0, 0));
             for (int x = 0; x < _width; x++) {
                 Color accumulated(0, 0, 0);
 
@@ -216,7 +222,12 @@ namespace RayTracer
                 }
 
                 int totalSamples = _sqrtSamples * _sqrtSamples;
-                framebuffer[y][x] = (accumulated * (1.0 / totalSamples)).clamp();
+                row[x] = (accumulated * (1.0 / totalSamples)).clamp();
+            }
+
+            {
+                std::unique_lock<std::shared_mutex> lock(FrameBufferMutex());
+                framebuffer[y] = std::move(row);
             }
         }
         return framebuffer;
