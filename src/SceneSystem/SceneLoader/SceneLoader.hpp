@@ -9,10 +9,10 @@ namespace RayTracer
     class SceneLoader
     {
     private:
-        PluginManager _pluginManager; ///< Manages plugins for the scene loader
+        PluginManager& _pluginManager; ///< Manages plugins for the scene loader
         Parser _parser;               ///< Parses configuration files
     public:
-        SceneLoader(const std::string &filename);
+        SceneLoader(PluginManager &manager, const std::string &filename);
         ~SceneLoader() = default;
 
         /// Load a scene from a configuration file.

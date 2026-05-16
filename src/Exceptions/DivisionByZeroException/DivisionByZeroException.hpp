@@ -1,5 +1,5 @@
 #pragma once
-#include "RaytracerException.hpp"
+#include "../RaytracerException/RaytracerException.hpp"
 
 namespace RayTracer
 {

@@ -12,11 +12,11 @@ namespace RayTracer
         /// Constructor.
         /// @param renderer The renderer to use for rendering
         /// @param outputFile Output PPM file path (default "output.ppm")
-        SceneWriter(ARenderer* renderer, const std::string& outputFile = "output.ppm");
+        SceneWriter() = default;
         ~SceneWriter() override = default;
 
         /// Render the scene and write the framebuffer to a PPM file.
         /// @param scene The scene to render and output
-        void execute(Scene& scene) override;
+        void execute(Scene& scene, std::map<std::string, std::string> &parameters) override;
     };
 } // namespace RayTracer

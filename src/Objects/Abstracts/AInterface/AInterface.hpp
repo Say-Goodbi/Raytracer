@@ -14,12 +14,14 @@ namespace RayTracer
 
     public:
         /// Constructor.
-        /// @param renderer The renderer to use for rendering scenes
-        AInterface(ARenderer* renderer) : _renderer(renderer) {}
+        AInterface() = default;
         virtual ~AInterface() = default;
+
+        /// Attach the renderer used by the interface.
+        void setRenderer(ARenderer* renderer) { _renderer = renderer; }
 
         /// Execute the interface's main behavior (e.g., render and output a scene).
         /// @param scene The scene to process
-        virtual void execute(Scene& scene) = 0;
+        virtual void execute(Scene& scene, std::map<std::string, std::string> &parameters) = 0;
     };
 } // namespace RayTracer
