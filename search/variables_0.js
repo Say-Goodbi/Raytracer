@@ -23,7 +23,7 @@ var searchData=
   ['_5foutputfile_20',['_outputFile',['../classRayTracer_1_1SceneWriter.html#aca1c15e39a2ec4be945d4fe246c7c9d8',1,'RayTracer::SceneWriter']]],
   ['_5fparser_21',['_parser',['../classRayTracer_1_1SceneLoader.html#ab4b30d36c224928d18861c2b2873a2f9',1,'RayTracer::SceneLoader']]],
   ['_5fplugindirectory_22',['_pluginDirectory',['../classRayTracer_1_1PluginManager.html#a989a2fd75ccf6cd72a35eef81eea7102',1,'RayTracer::PluginManager']]],
-  ['_5fpluginmanager_23',['_pluginManager',['../classRayTracer_1_1SceneLoader.html#ae620bcb2575f034955a45e0e44d1cdf2',1,'RayTracer::SceneLoader']]],
+  ['_5fpluginmanager_23',['_pluginManager',['../classRayTracer_1_1SceneLoader.html#a4a47a95860b8e6cd459fca49375e1208',1,'RayTracer::SceneLoader']]],
   ['_5fplugins_24',['_plugins',['../classRayTracer_1_1PluginManager.html#a5155a2c980e79b53fe4da6298824f552',1,'RayTracer::PluginManager']]],
   ['_5fpoint_25',['_point',['../classRayTracer_1_1Plane.html#a06a43f685a218027175a1cf7d934d193',1,'RayTracer::Plane']]],
   ['_5fposition_26',['_position',['../classRayTracer_1_1PointLight.html#a68bf40fd17b23dde0c6ba7d583e26772',1,'RayTracer::PointLight']]],

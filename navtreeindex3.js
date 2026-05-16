@@ -1,7 +1,9 @@
 var NAVTREEINDEX3 =
 {
-"index.html":[],
+"globals_vars.html":[5,1,2],
+"hierarchy.html":[4,2],
 "index.html":[0],
+"index.html":[],
 "index.html#arch_geometry":[0,2,3],
 "index.html#arch_interface":[0,2,1],
 "index.html#arch_lights":[0,2,5],

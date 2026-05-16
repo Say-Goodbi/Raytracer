@@ -1,9 +1,7 @@
 <map id="src/Objects/Plugins/CorePlugin/Interfaces/SceneWriter/SceneWriter.hpp" name="src/Objects/Plugins/CorePlugin/Interfaces/SceneWriter/SceneWriter.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="227,5,442,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,5,326,60"/>
 <area shape="rect" id="Node000002" href="$CorePlugin_8cpp.html" title=" " alt="" coords="5,115,203,155"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,68,148,118,146,113,261,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,71,127,117,124,113,177,67"/>
 <area shape="rect" id="Node000003" href="$SceneWriter_8cpp.html" title=" " alt="" coords="227,108,442,163"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="337,74,337,108,332,108,332,74"/>
-<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="466,123,571,148"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="396,64,499,120,496,125,393,69"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,67,306,106,303,110,258,71"/>
 </map>

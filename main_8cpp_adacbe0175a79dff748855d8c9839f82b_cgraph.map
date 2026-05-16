@@ -1,9 +1,9 @@
 <map id="main" name="main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,45,60,70"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1SceneWriter.html#a148f4441944d104f0248d7723b5fbc54" title="Render the scene and write the framebuffer to a PPM file." alt="" coords="108,5,281,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,49,94,43,95,48,61,55"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1Exception.html#a174d44d7e2d2b77ab9eefe9fb25c5647" title=" " alt="" coords="115,69,274,109"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="61,60,102,68,101,74,60,65"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271" title="Render a scene and produce a framebuffer." alt="" coords="329,5,492,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="282,23,316,23,316,28,282,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,77,60,102"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1AInterface.html#adbecc4c827299afb611ce7d6caba4f0c" title="Execute the interface&#39;s main behavior (e.g., render and output a scene)." alt="" coords="108,5,269,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,75,107,55,123,48,125,53,109,60,61,80"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1AInterface.html#a5a886f9377ffbcfe0654e3ff472130f2" title="Attach the renderer used by the interface." alt="" coords="108,69,269,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,87,94,87,94,92,60,92"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Exception.html#a174d44d7e2d2b77ab9eefe9fb25c5647" title=" " alt="" coords="109,133,268,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="61,98,109,119,125,126,123,130,107,124,59,103"/>
 </map>

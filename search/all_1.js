@@ -6,7 +6,7 @@ var searchData=
   ['addlights_3',['addLights',['../classRayTracer_1_1Scene.html#a37894460ad0cd8ea084724011434e87c',1,'RayTracer::Scene']]],
   ['addprimitive_4',['addPrimitive',['../classRayTracer_1_1Scene.html#acb59069386fc995fa53f6b2bfc4b00b3',1,'RayTracer::Scene']]],
   ['addprimitives_5',['addPrimitives',['../classRayTracer_1_1Scene.html#a1a093437840c6f1feefa3af43e73e2e8',1,'RayTracer::Scene']]],
-  ['ainterface_6',['ainterface',['../classRayTracer_1_1AInterface.html',1,'RayTracer::AInterface'],['../classRayTracer_1_1AInterface.html#a9efa593bb26fb12020906f1b6b8944d6',1,'RayTracer::AInterface::AInterface()']]],
+  ['ainterface_6',['ainterface',['../classRayTracer_1_1AInterface.html',1,'RayTracer::AInterface'],['../classRayTracer_1_1AInterface.html#a0ffd9052c93e0458490753d9555ed321',1,'RayTracer::AInterface::AInterface()']]],
   ['ainterface_20→_20scenewriter_7',['Output Pipeline: AInterface → SceneWriter',['../index.html#arch_interface',1,'']]],
   ['ainterface_2ehpp_8',['AInterface.hpp',['../AInterface_8hpp.html',1,'']]],
   ['amaterial_9',['amaterial',['../classRayTracer_1_1AMaterial.html',1,'RayTracer::AMaterial'],['../classRayTracer_1_1AMaterial.html#ad17852e0877f59841ee734e96def74d9',1,'RayTracer::AMaterial::AMaterial(const Color &amp;albedo)'],['../classRayTracer_1_1AMaterial.html#abb78b70e4bd3b6bc310458d5383bf0ab',1,'RayTracer::AMaterial::AMaterial()=default']]],

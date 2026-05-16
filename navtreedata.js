@@ -62,8 +62,8 @@ var NAVTREEINDEX =
 [
 "AABB_8hpp.html",
 "classGeometry_1_1TransformMatrix.html#a065621a852d662251597213f484ea3f6",
-"classRayTracer_1_1Lambertian.html#a9d3f150cb0d7a06f1f7487be4676f258",
-"index.html"
+"classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838",
+"globals_vars.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
