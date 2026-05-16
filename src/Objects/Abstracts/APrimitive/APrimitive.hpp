@@ -2,6 +2,7 @@
 #include "../IMaterial.hpp"
 #include <memory>
 #include <optional>
+#include "../../../Geometry/AABB/AABB.hpp"
 #include "../../../Geometry/Ray/Ray.hpp"
 
 namespace RayTracer
@@ -23,6 +24,10 @@ namespace RayTracer
         /// @param ray The ray to test
         /// @return Optional HitRecord if intersection occurs, empty otherwise
         virtual std::optional<Geometry::HitRecord> hit(const Geometry::Ray& ray) const = 0;
+
+        /// Get the primitive's axis-aligned bounds, if any.
+        /// Unbounded primitives may return std::nullopt.
+        virtual std::optional<Geometry::AABB> getBounds() const = 0;
 
         /// Get the material of this primitive.
         /// @return Pointer to the material

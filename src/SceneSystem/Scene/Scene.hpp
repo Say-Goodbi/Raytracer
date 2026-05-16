@@ -1,8 +1,11 @@
 #pragma once
 #include "../../Objects/Plugin.hpp"
 #include "../PluginManager/PluginManager.hpp"
+#include "../BVH/BVH.hpp"
+#include "../../Geometry/Ray/Ray.hpp"
 #include <vector>
 #include <memory>
+#include <optional>
 
 namespace RayTracer
 {
@@ -13,6 +16,9 @@ namespace RayTracer
             std::shared_ptr<ARenderer> _renderer;                  ///< Active camera/renderer
             std::vector<std::shared_ptr<APrimitive>> _primitives;  ///< Renderable objects
             std::vector<std::shared_ptr<ILight>> _lights;          ///< Light sources
+            bool _useBVH;
+            std::optional<BVH> _bvh;
+            std::vector<std::shared_ptr<APrimitive>> _unboundedPrimitives;
         protected:
         public:
             /// Constructor.
@@ -33,6 +39,15 @@ namespace RayTracer
             /// Add a light to the scene.
             /// @param light Shared pointer to a light
             void addLight(std::shared_ptr<ILight> light);
+
+            /// Prepare the scene hit structure for the next render pass.
+            /// @param useBVH Whether to build and use the BVH acceleration structure.
+            void prepareAccelerationStructure(bool useBVH);
+
+            /// Find the closest hit for a ray using the current acceleration state.
+            /// @param ray Ray to trace through the scene.
+            /// @return Closest hit record, if any.
+            std::optional<Geometry::HitRecord> hit(const Geometry::Ray &ray) const;
 
             /// Add lights to the scene.
             /// @param lightSettings Configuration settings for the lights to add

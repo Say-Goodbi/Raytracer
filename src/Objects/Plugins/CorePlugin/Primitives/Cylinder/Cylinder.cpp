@@ -67,4 +67,9 @@ namespace RayTracer
         Geometry::Vector3D outwardNormal = (hitPoint - axisPoint) / static_cast<double>(_radius);
         return Geometry::HitRecord(hitPoint, outwardNormal, t, this->getMaterial());
     }
+
+    std::optional<Geometry::AABB> Cylinder::getBounds() const
+    {
+        return std::nullopt;
+    }
 } // namespace RayTracer

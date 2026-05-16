@@ -34,8 +34,8 @@ namespace RayTracer
         buildScreenFromTransform();
     }
 
-    Camera::Camera(Geometry::TransformMatrix transform, float fov, int width, int height)
-        : ARenderer(width, height), _transform(transform), _fov(fov)
+    Camera::Camera(Geometry::TransformMatrix transform, float fov, int width, int height, bool useBVH)
+        : ARenderer(width, height), _transform(transform), _fov(fov), _useBVH(useBVH)
     {
         buildScreenFromTransform();
     }
@@ -142,24 +142,32 @@ namespace RayTracer
     Color Camera::castRay(const Geometry::Ray &ray, Scene &scene, int depth) {
         if (depth <= 0)
             return Color(0, 0, 0);
-        std::optional<Geometry::HitRecord> closest;
+        std::optional<Geometry::HitRecord> closest = scene.hit(ray);
 
-        for (const auto &primitive : scene.getPrimitives()) {
-            std::optional<Geometry::HitRecord> hit = primitive->hit(ray);
-            if (hit && (!closest || hit->rayDistance < closest->rayDistance))
-                closest = hit;
-        }
         if (!closest)
             return Color(0, 0, 0); // No intersection: return black (AKA: background, maybe change to a blue background ?)
 
         IMaterial *mat = closest->material;
         Color emitted = mat->emission();
 
+        Geometry::Vector3D viewDir = (ray.direction * -1).normalize();
+        Geometry::Vector3D bounceDir = mat->sample(closest->normal, viewDir);
+        float p = mat->pdf(closest->normal, viewDir, bounceDir);
+
+        if (p < 1e-6f) {
+            // Specular / glass: pure recursive bounce, no direct lighting
+            Geometry::Point3D bounceOrigin(
+                closest->point.x + bounceDir.x * 1e-4f,
+                closest->point.y + bounceDir.y * 1e-4f,
+                closest->point.z + bounceDir.z * 1e-4f);
+            Color tint = mat->evaluate(closest->normal, viewDir, bounceDir) * M_PI;
+            return emitted + tint * castRay(Geometry::Ray(bounceOrigin, bounceDir), scene, depth - 1);
+        }
+
         Color directLight(0, 0, 0);
         for (const auto& light : scene.getLights())
             directLight = directLight + light->computeLight(*closest, scene.getPrimitives());
 
-        Geometry::Vector3D viewDir = (ray.direction * -1).normalize();
         Color albedo = mat->evaluate(closest->normal, viewDir, closest->normal) * M_PI;
         return emitted + albedo * directLight;
     }
@@ -184,6 +192,7 @@ namespace RayTracer
      * @return 2D grid of clamped colors: `frame[height][width]`.
      */
     std::vector<std::vector<Color>> Camera::render(Scene& scene) {
+        scene.prepareAccelerationStructure(_useBVH);
         std::vector<std::vector<Color>> framebuffer(_height, std::vector<Color>(_width));
 
         for (int y = 0; y < _height; y++) {

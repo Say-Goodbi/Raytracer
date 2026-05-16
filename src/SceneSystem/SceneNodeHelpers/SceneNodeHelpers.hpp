@@ -55,6 +55,19 @@ namespace Raytracer
     }
 
     template<>
+    inline bool fromNode<bool>(const RayTracer::NodePtr &node)
+    {
+        if (!node || !std::holds_alternative<RayTracer::ScalarValue>(node->value))
+            throw RayTracer::Exception("Expected a scalar node");
+
+        const RayTracer::ScalarValue &value = std::get<RayTracer::ScalarValue>(node->value);
+        if (std::holds_alternative<bool>(value))
+            return std::get<bool>(value);
+
+        return Detail::numericFromScalar(value) != 0.0;
+    }
+
+    template<>
     inline double fromNode<double>(const RayTracer::NodePtr &node)
     {
         if (!node || !std::holds_alternative<RayTracer::ScalarValue>(node->value))
@@ -108,28 +121,5 @@ namespace Raytracer
     {
         const RayTracer::Object &object = Detail::asObject(node);
         return std::make_pair(fromNode<int>(Detail::field(object, "width")), fromNode<int>(Detail::field(object, "height")));
-    }
-
-    template<>
-    inline Geometry::TransformMatrix fromNode<Geometry::TransformMatrix>(const RayTracer::NodePtr &node)
-    {
-        const RayTracer::Object &object = Detail::asObject(node);
-        Geometry::TransformMatrix transform;
-
-        if (object.find("position") != object.end())
-        {
-            const Geometry::Point3D position = fromNode<Geometry::Point3D>(Detail::field(object, "position"));
-            transform = Geometry::TransformMatrix::translation(static_cast<float>(position.x), static_cast<float>(position.y), static_cast<float>(position.z));
-        }
-
-        if (object.find("rotation") != object.end())
-        {
-            const Geometry::Vector3D rotation = fromNode<Geometry::Vector3D>(Detail::field(object, "rotation"));
-            transform *= Geometry::TransformMatrix::rotationY(static_cast<float>(rotation.y));
-            transform *= Geometry::TransformMatrix::rotationX(static_cast<float>(rotation.x));
-            transform *= Geometry::TransformMatrix::rotationZ(static_cast<float>(rotation.z));
-        }
-
-        return transform;
     }
 }
