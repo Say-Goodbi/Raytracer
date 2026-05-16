@@ -73,3 +73,20 @@ foreach(PLUGIN_DIR ${PLUGIN_DIRS})
         target_link_libraries(${PLUGIN_NAME} PRIVATE config++)
     endif()
 endforeach()
+
+# ── Unit tests ───────────────────────────────────────────────────────────────
+
+enable_testing()
+
+file(GLOB_RECURSE TEST_SOURCES tests/*.cpp)
+
+add_executable(tests_run
+    ${TEST_SOURCES}
+    ${INTERFACE_SOURCES}
+)
+
+target_link_libraries(tests_run PRIVATE criterion)
+
+# register the tests executable with CTest
+add_test(NAME tests_run COMMAND tests_run)
+set_tests_properties(tests_run PROPERTIES WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
