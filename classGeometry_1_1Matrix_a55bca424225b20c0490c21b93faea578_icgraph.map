@@ -13,6 +13,6 @@
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="397,91,360,91,360,86,397,85"/>
 <area shape="rect" id="Node000006" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="207,133,360,173"/>
 <area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="394,155,360,155,360,150,394,149"/>
-<area shape="rect" id="Node000007" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,133,159,173"/>
+<area shape="rect" id="Node000007" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,133,159,173"/>
 <area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="193,156,159,156,159,151,193,151"/>
 </map>

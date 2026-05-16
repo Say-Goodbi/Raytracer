@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['lambertian_2ecpp_0',['Lambertian.cpp',['../Lambertian_8cpp.html',1,'']]],
-  ['lambertian_2ehpp_1',['Lambertian.hpp',['../Lambertian_8hpp.html',1,'']]]
+  ['ilight_2ehpp_0',['ILight.hpp',['../ILight_8hpp.html',1,'']]],
+  ['imaterial_2ehpp_1',['IMaterial.hpp',['../IMaterial_8hpp.html',1,'']]],
+  ['interfaces_2edox_2',['interfaces.dox',['../interfaces_8dox.html',1,'']]]
 ];

@@ -1,5 +1,7 @@
 <map id="RayTracer::AInterface" name="RayTracer::AInterface">
-<area shape="rect" id="Node000001" title="Abstract base class for application interfaces. An interface owns a renderer and orchestrates executi..." alt="" coords="11,5,165,131"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1SceneWriter.html" title="Concrete interface implementation that renders a scene and writes output to a PPM file." alt="" coords="5,179,171,284"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,145,91,178,85,178,85,145"/>
+<area shape="rect" id="Node000001" title="Abstract base class for application interfaces. An interface owns a renderer and orchestrates executi..." alt="" coords="115,5,269,131"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Livescene.html" title="Concrete interface implementation that renders a scene in an SFML window." alt="" coords="5,179,184,364"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,145,141,180,137,177,154,142"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1SceneWriter.html" title="Concrete interface implementation that renders a scene and writes output to a PPM file." alt="" coords="208,219,373,324"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,142,268,217,263,219,226,144"/>
 </map>

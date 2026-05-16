@@ -14,6 +14,6 @@
 <area shape="rect" id="Node000007" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="207,151,360,191"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="394,173,361,173,361,168,394,168"/>
 <area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="317,139,305,132,283,129,264,131,253,136,249,142,251,150,246,151,243,141,249,132,263,126,283,124,307,127,320,134"/>
-<area shape="rect" id="Node000008" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,151,159,191"/>
+<area shape="rect" id="Node000008" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,151,159,191"/>
 <area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="193,173,159,173,159,168,193,168"/>
 </map>

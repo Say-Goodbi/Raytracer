@@ -167,7 +167,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" target="_top" xlink:title="Render the scene into a 2D framebuffer.">
+<g id="a_Node000003"><a xlink:href="classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" target="_top" xlink:title="Render the scene into a 2D framebuffer.">
 <polygon fill="white" stroke="#666666" points="115,-252.5 0,-252.5 0,-222.5 115,-222.5 115,-252.5"/>
 <text text-anchor="start" x="8" y="-240.5" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="57.5" y="-229.5" font-family="Helvetica,sans-Serif" font-size="10.00">render</text>

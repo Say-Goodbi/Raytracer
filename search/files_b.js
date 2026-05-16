@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['scene_2ecpp_0',['Scene.cpp',['../Scene_8cpp.html',1,'']]],
-  ['scene_2ehpp_1',['Scene.hpp',['../Scene_8hpp.html',1,'']]],
-  ['sceneloader_2ecpp_2',['SceneLoader.cpp',['../SceneLoader_8cpp.html',1,'']]],
-  ['sceneloader_2ehpp_3',['SceneLoader.hpp',['../SceneLoader_8hpp.html',1,'']]],
-  ['scenenodehelpers_2ehpp_4',['SceneNodeHelpers.hpp',['../SceneNodeHelpers_8hpp.html',1,'']]],
-  ['scenewriter_2ecpp_5',['SceneWriter.cpp',['../SceneWriter_8cpp.html',1,'']]],
-  ['scenewriter_2ehpp_6',['SceneWriter.hpp',['../SceneWriter_8hpp.html',1,'']]],
-  ['space_2dpartitioning_2edox_7',['space-partitioning.dox',['../space-partitioning_8dox.html',1,'']]],
-  ['sphere_2ecpp_8',['Sphere.cpp',['../Sphere_8cpp.html',1,'']]],
-  ['sphere_2ehpp_9',['Sphere.hpp',['../Sphere_8hpp.html',1,'']]]
+  ['ray_2ecpp_0',['Ray.cpp',['../Ray_8cpp.html',1,'']]],
+  ['ray_2ehpp_1',['Ray.hpp',['../Ray_8hpp.html',1,'']]],
+  ['raytracerexception_2ecpp_2',['RaytracerException.cpp',['../RaytracerException_8cpp.html',1,'']]],
+  ['raytracerexception_2ehpp_3',['RaytracerException.hpp',['../RaytracerException_8hpp.html',1,'']]],
+  ['rectangle3d_2ecpp_4',['Rectangle3D.cpp',['../Rectangle3D_8cpp.html',1,'']]],
+  ['rectangle3d_2ehpp_5',['Rectangle3D.hpp',['../Rectangle3D_8hpp.html',1,'']]],
+  ['renderer_2edox_6',['renderer.dox',['../renderer_8dox.html',1,'']]]
 ];

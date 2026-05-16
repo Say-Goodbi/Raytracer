@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['partitioning_0',['Space Partitioning',['../space_partitioning.html',1,'']]]
+  ['geometry_20math_0',['Geometry &amp; Math',['../geometry_page.html',1,'index']]]
 ];

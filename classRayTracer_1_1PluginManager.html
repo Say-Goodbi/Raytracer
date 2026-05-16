@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1PluginManager.html',
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1PluginManager__coll__graph.svg" width="194" height="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1PluginManager__coll__graph.svg" width="194" height="236"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -113,8 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a313057938cfe4b4e2c5077746da6c5a5" id="r_a313057938cfe4b4e2c5077746da6c5a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html#a313057938cfe4b4e2c5077746da6c5a5">PluginManager</a> (std::string pluginDirectory)</td></tr>
 <tr class="memdesc:a313057938cfe4b4e2c5077746da6c5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that loads plugins from the default directory;.  <br /></td></tr>
 <tr class="separator:a313057938cfe4b4e2c5077746da6c5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e280953ad8564afd93eac6aad5af276" id="r_a4e280953ad8564afd93eac6aad5af276"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html#a4e280953ad8564afd93eac6aad5af276">~PluginManager</a> ()=default</td></tr>
-<tr class="separator:a4e280953ad8564afd93eac6aad5af276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf81f6b41781aaaf330e79425fa3bd05" id="r_aaf81f6b41781aaaf330e79425fa3bd05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html#aaf81f6b41781aaaf330e79425fa3bd05">~PluginManager</a> ()</td></tr>
+<tr class="separator:aaf81f6b41781aaaf330e79425fa3bd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb07503950646c896c8f542b69899e73" id="r_afb07503950646c896c8f542b69899e73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html#afb07503950646c896c8f542b69899e73">loadPlugins</a> ()</td></tr>
 <tr class="memdesc:afb07503950646c896c8f542b69899e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all plugins within the directory.  <br /></td></tr>
 <tr class="separator:afb07503950646c896c8f542b69899e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:abf3979dacce74d5248af85b011fbd28e" id="r_abf3979dacce74d5248af85b011fbd28e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html#abf3979dacce74d5248af85b011fbd28e">unloadPlugins</a> ()</td></tr>
+<tr class="separator:abf3979dacce74d5248af85b011fbd28e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a104e84e1a73c2e56d93ce1c25a193dbe" id="r_a104e84e1a73c2e56d93ce1c25a193dbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html#a104e84e1a73c2e56d93ce1c25a193dbe">loadPlugin</a> (const std::string &amp;path)</td></tr>
 <tr class="memdesc:a104e84e1a73c2e56d93ce1c25a193dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a plugin from a shared library file.  <br /></td></tr>
 <tr class="separator:a104e84e1a73c2e56d93ce1c25a193dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,10 +140,13 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5155a2c980e79b53fe4da6298824f552" id="r_a5155a2c980e79b53fe4da6298824f552"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::map&lt; std::string, std::function&lt; <a class="el" href="namespaceRayTracer.html#a228fef096342529f46bdf5298d0adb06">Component</a>(<a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">NodePtr</a>)&gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html#a5155a2c980e79b53fe4da6298824f552">_plugins</a></td></tr>
 <tr class="memdesc:a5155a2c980e79b53fe4da6298824f552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map of plugin names to their keyword-initializer pairs.  <br /></td></tr>
 <tr class="separator:a5155a2c980e79b53fe4da6298824f552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56672a5192a8ea4fe61b77c74775ad91" id="r_a56672a5192a8ea4fe61b77c74775ad91"><td class="memItemLeft" align="right" valign="top">std::vector&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1PluginManager.html#a56672a5192a8ea4fe61b77c74775ad91">_handles</a></td></tr>
+<tr class="memdesc:a56672a5192a8ea4fe61b77c74775ad91"><td class="mdescLeft">&#160;</td><td class="mdescRight">dlopen handles for loaded plugins  <br /></td></tr>
+<tr class="separator:a56672a5192a8ea4fe61b77c74775ad91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="PluginManager_8hpp_source.html#l00018">18</a> of file <a class="el" href="PluginManager_8hpp_source.html">PluginManager.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PluginManager_8hpp_source.html#l00019">19</a> of file <a class="el" href="PluginManager_8hpp_source.html">PluginManager.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a313057938cfe4b4e2c5077746da6c5a5" name="a313057938cfe4b4e2c5077746da6c5a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a313057938cfe4b4e2c5077746da6c5a5">&#9670;&#160;</a></span>PluginManager()</h2>
@@ -172,14 +177,11 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e280953ad8564afd93eac6aad5af276" name="a4e280953ad8564afd93eac6aad5af276"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e280953ad8564afd93eac6aad5af276">&#9670;&#160;</a></span>~PluginManager()</h2>
+<a id="aaf81f6b41781aaaf330e79425fa3bd05" name="aaf81f6b41781aaaf330e79425fa3bd05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf81f6b41781aaaf330e79425fa3bd05">&#9670;&#160;</a></span>~PluginManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RayTracer::PluginManager::~PluginManager </td>
@@ -188,12 +190,9 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="PluginManager_8cpp_source.html#l00008">8</a> of file <a class="el" href="PluginManager_8cpp_source.html">PluginManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -223,7 +222,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the requested function, or nullptr if not found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="PluginManager_8cpp_source.html#l00073">73</a> of file <a class="el" href="PluginManager_8cpp_source.html">PluginManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PluginManager_8cpp_source.html#l00081">81</a> of file <a class="el" href="PluginManager_8cpp_source.html">PluginManager.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -267,7 +266,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the plugin was loaded successfully, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="PluginManager_8cpp_source.html#l00027">27</a> of file <a class="el" href="PluginManager_8cpp_source.html">PluginManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PluginManager_8cpp_source.html#l00035">35</a> of file <a class="el" href="PluginManager_8cpp_source.html">PluginManager.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -302,7 +301,7 @@ Private Attributes</h2></td></tr>
 
 <p>Loads all plugins within the directory. </p>
 
-<p class="definition">Definition at line <a class="el" href="PluginManager_8cpp_source.html#l00008">8</a> of file <a class="el" href="PluginManager_8cpp_source.html">PluginManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PluginManager_8cpp_source.html#l00016">16</a> of file <a class="el" href="PluginManager_8cpp_source.html">PluginManager.cpp</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -344,7 +343,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="PluginManager_8cpp_source.html#l00059">59</a> of file <a class="el" href="PluginManager_8cpp_source.html">PluginManager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PluginManager_8cpp_source.html#l00067">67</a> of file <a class="el" href="PluginManager_8cpp_source.html">PluginManager.cpp</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -355,7 +354,58 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="abf3979dacce74d5248af85b011fbd28e" name="abf3979dacce74d5248af85b011fbd28e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf3979dacce74d5248af85b011fbd28e">&#9670;&#160;</a></span>unloadPlugins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RayTracer::PluginManager::unloadPlugins </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a56672a5192a8ea4fe61b77c74775ad91" name="a56672a5192a8ea4fe61b77c74775ad91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56672a5192a8ea4fe61b77c74775ad91">&#9670;&#160;</a></span>_handles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;void*&gt; RayTracer::PluginManager::_handles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dlopen handles for loaded plugins </p>
+
+<p class="definition">Definition at line <a class="el" href="PluginManager_8hpp_source.html#l00024">24</a> of file <a class="el" href="PluginManager_8hpp_source.html">PluginManager.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a989a2fd75ccf6cd72a35eef81eea7102" name="a989a2fd75ccf6cd72a35eef81eea7102"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a989a2fd75ccf6cd72a35eef81eea7102">&#9670;&#160;</a></span>_pluginDirectory</h2>
 
@@ -378,7 +428,7 @@ Private Attributes</h2></td></tr>
 
 <p>Directory where plugins are located. </p>
 
-<p class="definition">Definition at line <a class="el" href="PluginManager_8hpp_source.html#l00021">21</a> of file <a class="el" href="PluginManager_8hpp_source.html">PluginManager.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PluginManager_8hpp_source.html#l00022">22</a> of file <a class="el" href="PluginManager_8hpp_source.html">PluginManager.hpp</a>.</p>
 
 </div>
 </div>
@@ -404,7 +454,7 @@ Private Attributes</h2></td></tr>
 
 <p>Map of plugin names to their keyword-initializer pairs. </p>
 
-<p class="definition">Definition at line <a class="el" href="PluginManager_8hpp_source.html#l00022">22</a> of file <a class="el" href="PluginManager_8hpp_source.html">PluginManager.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="PluginManager_8hpp_source.html#l00023">23</a> of file <a class="el" href="PluginManager_8hpp_source.html">PluginManager.hpp</a>.</p>
 
 </div>
 </div>

@@ -15,6 +15,6 @@
 <area shape="rect" id="Node000009" href="$classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd" title="Return the deterministic bounce direction for this material." alt="" coords="211,341,401,366"/>
 <area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="507,238,464,286,437,310,407,330,377,343,375,338,404,326,433,306,460,282,503,235"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="344,18,330,11,306,8,285,10,272,15,267,21,270,28,265,30,262,20,269,10,284,5,306,3,332,6,346,13"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,29,159,69"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,29,159,69"/>
 <area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="216,52,159,52,159,47,216,47"/>
 </map>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['→_20camera_0',['Rendering Pipeline: ARenderer → Camera',['../index.html#arch_renderer',1,'']]],
-  ['→_20scenewriter_1',['Output Pipeline: AInterface → SceneWriter',['../index.html#arch_interface',1,'']]]
+  ['—_20castray_0',['Path Tracing — castRay',['../renderer_page.html#rend_pathtrace',1,'']]]
 ];

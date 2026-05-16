@@ -27,6 +27,7 @@ var annotated_dup =
       [ "ILight", "classRayTracer_1_1ILight.html", "classRayTracer_1_1ILight" ],
       [ "IMaterial", "classRayTracer_1_1IMaterial.html", "classRayTracer_1_1IMaterial" ],
       [ "Lambertian", "classRayTracer_1_1Lambertian.html", "classRayTracer_1_1Lambertian" ],
+      [ "Livescene", "classRayTracer_1_1Livescene.html", "classRayTracer_1_1Livescene" ],
       [ "Node", "structRayTracer_1_1Node.html", "structRayTracer_1_1Node" ],
       [ "Parser", "classRayTracer_1_1Parser.html", "classRayTracer_1_1Parser" ],
       [ "ParsingException", "classRayTracer_1_1ParsingException.html", "classRayTracer_1_1ParsingException" ],

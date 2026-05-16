@@ -1,0 +1,7 @@
+<map id="RayTracer::Livescene" name="RayTracer::Livescene">
+<area shape="rect" id="Node000001" title="Concrete interface implementation that renders a scene in an SFML window." alt="" coords="5,428,184,613"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1AInterface.html" title="Abstract base class for application interfaces. An interface owns a renderer and orchestrates executi..." alt="" coords="18,253,171,379"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,393,97,428,92,428,92,393"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1ARenderer.html" title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr..." alt="" coords="17,5,172,191"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,191,97,237,92,237,92,191"/>
+</map>

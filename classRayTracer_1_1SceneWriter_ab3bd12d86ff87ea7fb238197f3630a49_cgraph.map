@@ -1,5 +1,7 @@
 <map id="RayTracer::SceneWriter::execute" name="RayTracer::SceneWriter::execute">
 <area shape="rect" id="Node000001" title="Render the scene and write the framebuffer to a PPM file." alt="" coords="5,5,179,45"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1ARenderer.html#ad1e1ffbb9c94875192cfdfac41d57271" title="Render a scene and produce a framebuffer." alt="" coords="227,5,389,45"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1ARenderer.html#a3280ccfc3779b2f93695b65e94166294" title="Convenience: allocate a framebuffer of the renderer&#39;s size and call the two&#45;argument render overload." alt="" coords="227,5,389,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,23,213,23,213,28,179,28"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1ARenderer.html#aba1715a2e7e2f5555194f9ed67fb2d69" title="Render a scene into the provided framebuffer and return it. Implementations should fill/resize frameb..." alt="" coords="437,5,600,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,23,424,23,424,28,390,28"/>
 </map>

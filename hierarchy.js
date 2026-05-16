@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "Geometry::AABB", "classGeometry_1_1AABB.html", null ],
     [ "RayTracer::AInterface", "classRayTracer_1_1AInterface.html", [
+      [ "RayTracer::Livescene", "classRayTracer_1_1Livescene.html", null ],
       [ "RayTracer::SceneWriter", "classRayTracer_1_1SceneWriter.html", null ]
     ] ],
     [ "RayTracer::APrimitive", "classRayTracer_1_1APrimitive.html", [

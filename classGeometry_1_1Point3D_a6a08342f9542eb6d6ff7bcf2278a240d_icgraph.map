@@ -44,7 +44,7 @@
 <area shape="rect" id="Node000010" href="$classRayTracer_1_1Camera.html#a502f05c3a82d9627f26300d71569ffad" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="479,499,633,539"/>
 <area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="717,481,634,502,632,497,716,476"/>
 <area shape="poly" id="edge12_Node000011_Node000011" title=" " alt="" coords="598,575,583,568,556,565,532,567,518,572,512,578,515,586,510,587,507,577,515,568,531,562,556,560,585,563,601,570"/>
-<area shape="rect" id="Node000012" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="231,619,384,659"/>
+<area shape="rect" id="Node000012" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="231,619,384,659"/>
 <area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="466,621,384,632,384,626,465,616"/>
 <area shape="poly" id="edge15_Node000013_Node000007" title=" " alt="" coords="198,382,164,378,165,373,198,377"/>
 <area shape="poly" id="edge20_Node000017_Node000012" title=" " alt="" coords="465,662,384,651,384,646,466,656"/>

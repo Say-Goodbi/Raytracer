@@ -9,7 +9,7 @@
 <area shape="rect" id="Node000006" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="229,221,382,261"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="494,167,405,212,374,224,372,219,403,207,492,162"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="343,18,330,11,305,8,284,10,271,15,267,21,269,28,264,30,261,20,268,10,283,5,305,3,331,6,345,13"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,125,159,165"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,125,159,165"/>
 <area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="226,77,208,84,119,128,117,123,206,79,224,72"/>
 <area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="224,219,206,212,117,168,119,163,208,207,226,214"/>
 </map>

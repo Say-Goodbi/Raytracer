@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['manual_0',['Raytracer Manual',['../index.html',1,'']]]
+  ['exceptions_0',['Utilities &amp; Exceptions',['../utils_page.html',1,'index']]]
 ];

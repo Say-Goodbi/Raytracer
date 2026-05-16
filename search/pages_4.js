@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['space_20partitioning_0',['Space Partitioning',['../space_partitioning.html',1,'']]]
+  ['lights_0',['Lights',['../lights_page.html',1,'index']]],
+  ['list_1',['Todo List',['../todo.html',1,'']]]
 ];

@@ -16,6 +16,7 @@ var namespaceRayTracer =
     [ "ILight", "classRayTracer_1_1ILight.html", "classRayTracer_1_1ILight" ],
     [ "IMaterial", "classRayTracer_1_1IMaterial.html", "classRayTracer_1_1IMaterial" ],
     [ "Lambertian", "classRayTracer_1_1Lambertian.html", "classRayTracer_1_1Lambertian" ],
+    [ "Livescene", "classRayTracer_1_1Livescene.html", "classRayTracer_1_1Livescene" ],
     [ "Node", "structRayTracer_1_1Node.html", "structRayTracer_1_1Node" ],
     [ "Parser", "classRayTracer_1_1Parser.html", "classRayTracer_1_1Parser" ],
     [ "ParsingException", "classRayTracer_1_1ParsingException.html", "classRayTracer_1_1ParsingException" ],
@@ -34,5 +35,6 @@ var namespaceRayTracer =
     [ "Object", "namespaceRayTracer.html#a972ce89ab46bfa7617ab7b96b25db984", null ],
     [ "ScalarValue", "namespaceRayTracer.html#a9feb69729b51161cd40926040c42c562", null ],
     [ "VectorObject", "namespaceRayTracer.html#a584b5ad8785cb508b96bb9d8fc14bd60", null ],
+    [ "FrameBufferMutex", "namespaceRayTracer.html#a3a908bb35774e440b38b116966136c16", null ],
     [ "_componentCreators", "namespaceRayTracer.html#ab1df109502a449ddaefce71c0d041175", null ]
 ];

@@ -47,26 +47,28 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classRayTracer_1_1ARenderer.html" target="_top" xlink:title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr...">
-<polygon fill="white" stroke="transparent" points="116,-385 0,-385 0,-261 116,-261 116,-385"/>
-<text text-anchor="start" x="5" y="-373" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::ARenderer</text>
-<text text-anchor="start" x="11" y="-358" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="31" y="-358" font-family="Helvetica,sans-Serif" font-size="10.00">_width</text>
-<text text-anchor="start" x="11" y="-343" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="31" y="-343" font-family="Helvetica,sans-Serif" font-size="10.00">_height</text>
-<text text-anchor="start" x="11" y="-328" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="31" y="-328" font-family="Helvetica,sans-Serif" font-size="10.00">ARenderer()</text>
-<text text-anchor="start" x="11" y="-313" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="31" y="-313" font-family="Helvetica,sans-Serif" font-size="10.00">~ARenderer()</text>
-<text text-anchor="start" x="11" y="-298" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="31" y="-298" font-family="Helvetica,sans-Serif" font-size="10.00">render()</text>
-<text text-anchor="start" x="11" y="-283" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="31" y="-283" font-family="Helvetica,sans-Serif" font-size="10.00">getWidth()</text>
-<text text-anchor="start" x="11" y="-268" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="31" y="-268" font-family="Helvetica,sans-Serif" font-size="10.00">getHeight()</text>
-<polygon fill="#666666" stroke="#666666" points="0,-368 0,-368 116,-368 116,-368 0,-368"/>
-<polygon fill="#666666" stroke="#666666" points="0,-338 0,-338 29,-338 29,-338 0,-338"/>
-<polygon fill="#666666" stroke="#666666" points="29,-338 29,-338 116,-338 116,-338 29,-338"/>
-<polygon fill="none" stroke="#666666" points="0,-261 0,-385 116,-385 116,-261 0,-261"/>
+<polygon fill="white" stroke="transparent" points="116,-392.5 0,-392.5 0,-253.5 116,-253.5 116,-392.5"/>
+<text text-anchor="start" x="5" y="-380" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::ARenderer</text>
+<text text-anchor="start" x="11" y="-365" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="31" y="-365" font-family="Helvetica,sans-Serif" font-size="10.00">_width</text>
+<text text-anchor="start" x="11" y="-350" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="31" y="-350" font-family="Helvetica,sans-Serif" font-size="10.00">_height</text>
+<text text-anchor="start" x="11" y="-335" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="31" y="-335" font-family="Helvetica,sans-Serif" font-size="10.00">ARenderer()</text>
+<text text-anchor="start" x="11" y="-320" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="31" y="-320" font-family="Helvetica,sans-Serif" font-size="10.00">~ARenderer()</text>
+<text text-anchor="start" x="11" y="-305" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="31" y="-305" font-family="Helvetica,sans-Serif" font-size="10.00">render()</text>
+<text text-anchor="start" x="11" y="-290" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="31" y="-290" font-family="Helvetica,sans-Serif" font-size="10.00">render()</text>
+<text text-anchor="start" x="11" y="-275" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="31" y="-275" font-family="Helvetica,sans-Serif" font-size="10.00">getWidth()</text>
+<text text-anchor="start" x="11" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="31" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00">getHeight()</text>
+<polygon fill="#666666" stroke="#666666" points="0,-375 0,-375 116,-375 116,-375 0,-375"/>
+<polygon fill="#666666" stroke="#666666" points="0,-345 0,-345 29,-345 29,-345 0,-345"/>
+<polygon fill="#666666" stroke="#666666" points="29,-345 29,-345 116,-345 116,-345 29,-345"/>
+<polygon fill="none" stroke="#666666" points="0,-253.5 0,-392.5 116,-392.5 116,-253.5 0,-253.5"/>
 </a>
 </g>
 </g>
@@ -74,8 +76,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M103.23,-252.49C117.25,-230.93 132.93,-206.84 147.76,-184.05"/>
-<polygon fill="none" stroke="#63b8ff" points="100.25,-250.64 97.73,-260.93 106.12,-254.46 100.25,-250.64"/>
+<path fill="none" stroke="#63b8ff" d="M108.25,-244.76C120.92,-225.29 134.64,-204.21 147.71,-184.13"/>
+<polygon fill="none" stroke="#63b8ff" points="105.23,-243 102.7,-253.29 111.09,-246.82 105.23,-243"/>
 </a>
 </g>
 </g>

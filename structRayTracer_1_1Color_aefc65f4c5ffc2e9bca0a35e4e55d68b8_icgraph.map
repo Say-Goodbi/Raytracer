@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="453,247,652,273"/>
 <area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="229,29,383,69"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="534,237,481,165,445,125,404,90,371,72,373,67,407,86,449,121,486,162,538,234"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,59,159,99"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,59,159,99"/>
 <area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="530,239,477,185,442,157,404,134,342,111,278,96,215,87,159,82,159,77,215,81,279,91,344,106,406,130,445,153,481,181,534,235"/>
 <area shape="rect" id="Node000004" href="$classRayTracer_1_1AmbientLight.html#a8dd2be46eadb8f46021064b6f182c359" title="Ambient light never casts shadows, just returns color * intensity." alt="" coords="215,144,397,184"/>
 <area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="511,244,404,198,371,187,373,182,406,194,513,239"/>

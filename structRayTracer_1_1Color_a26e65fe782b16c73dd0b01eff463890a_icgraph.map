@@ -1,5 +1,5 @@
 <map id="RayTracer::Color::clamp" name="RayTracer::Color::clamp">
 <area shape="rect" id="Node000001" title=" " alt="" coords="207,13,383,38"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,5,159,45"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,5,159,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
 </map>

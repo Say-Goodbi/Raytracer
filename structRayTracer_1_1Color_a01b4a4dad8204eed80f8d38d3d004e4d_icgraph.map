@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="704,334,875,360"/>
 <area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="229,87,383,127"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="778,322,762,279,737,228,701,177,679,155,655,137,623,121,588,109,516,95,446,93,383,97,383,92,446,88,517,90,590,104,625,116,657,133,683,151,705,174,741,225,767,277,783,320"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a3735fca524537e8a0ce755bb77e9a71f" title="Render the scene into a 2D framebuffer." alt="" coords="5,116,159,156"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,116,159,156"/>
 <area shape="poly" id="edge26_Node000001_Node000003" title=" " alt="" coords="780,322,766,272,741,211,705,149,681,121,654,97,597,59,543,32,493,16,442,9,391,10,335,19,208,54,178,66,150,83,106,118,102,114,147,78,175,61,206,49,334,13,390,5,443,4,494,11,545,27,599,54,658,93,685,117,709,145,746,209,771,271,785,320"/>
 <area shape="rect" id="Node000004" href="$classRayTracer_1_1DirectionalLight.html#a7170b3c9d9e2c2e697139f0dae68ab5b" title="Compute light contribution, shadow ray cast in opposite direction." alt="" coords="207,252,405,292"/>
 <area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="749,331,704,314,655,299,591,288,525,280,405,274,405,269,526,275,592,282,657,294,706,309,751,326"/>
