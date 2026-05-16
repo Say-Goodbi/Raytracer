@@ -1,0 +1,88 @@
+/**
+ * @page utils_page Utilities & Exceptions
+ *
+ * **Source files:** `src/Utils/`, `src/Exceptions/`
+ *
+ * Small shared helpers and the exception hierarchy used across the engine.
+ *
+ * ---
+ *
+ * @section util_color Color
+ *
+ * **Source:** `src/Utils/Color.hpp`
+ *
+ * @ref RayTracer::Color is a plain struct representing an RGB color with `double`
+ * channels `r`, `g`, `b`.
+ *
+ * Operators:
+ * - `Color * double` / `double * Color` — scalar multiplication
+ * - `Color * Color` — component-wise multiplication (for BRDF weighting)
+ * - `Color + Color`, `Color - Color` — component-wise addition/subtraction
+ *
+ * Key method:
+ * - `clamp()` — clamps each channel to `[0.0, 1.0]` before writing to the framebuffer
+ *
+ * Used everywhere a color value is passed: framebuffer pixels, material albedo,
+ * light tints, BRDF results, and ray radiance accumulation in
+ * @ref RayTracer::Camera::castRay.
+ *
+ * ---
+ *
+ * @section util_utils Utils
+ *
+ * **Source:** `src/Utils/Utils.hpp`
+ *
+ * @ref RayTracer::Utils is a static utility class.
+ *
+ * Key method:
+ * - `Utils::rng()` — returns a `double` in `[0, 1)`. Used sparingly; the renderer
+ *   itself is deterministic and relies on stratified sampling rather than random numbers.
+ *
+ * ---
+ *
+ * @section util_mutex FrameBufferMutex
+ *
+ * **Source:** `src/Utils/FrameBufferMutex.hpp`
+ *
+ * Namespace `RayTracer` — provides thread-safe access to the 2D framebuffer shared
+ * between the render thread and the display thread in @ref RayTracer::Livescene.
+ *
+ * Wraps the framebuffer (`std::vector<std::vector<Color>>`) with a `std::mutex`.
+ * @ref RayTracer::Livescene acquires the lock when copying rendered tiles into the
+ * buffer and again when transferring the buffer into an SFML texture for display.
+ *
+ * Without this guard, the display thread could read a partially-updated row and produce
+ * visual tearing or undefined behavior.
+ *
+ * ---
+ *
+ * @section util_exceptions Exception Hierarchy
+ *
+ * **Source:** `src/Exceptions/`
+ *
+ * All engine exceptions derive from a common base so callers can catch either a specific
+ * error or any engine error with a single handler.
+ *
+ * @ref RayTracer::Exception (`src/Exceptions/RaytracerException/RaytracerException.hpp`)
+ * — base class, inherits from `std::exception`.
+ * - Members: `_message` (`std::string`), `_location` (`std::source_location`)
+ * - `what()` — returns the error message string
+ * - Source location is captured automatically at the throw site, enabling precise
+ *   diagnostics without manual `__FILE__`/`__LINE__` boilerplate.
+ *
+ * @ref RayTracer::ParsingException (`src/Exceptions/ParsingException/ParsingException.hpp`)
+ * — thrown by @ref RayTracer::Parser and `fromNode<T>()` helpers when a config file is
+ * malformed or a required field is missing.
+ *
+ * @ref RayTracer::DivisionByZeroException (`src/Exceptions/DivisionByZeroException/DivisionByZeroException.hpp`)
+ * — thrown by geometry operations that detect a division by zero (e.g. normalizing a
+ * zero-length vector).
+ *
+ * Hierarchy:
+ * @code{.unparsed}
+ * std::exception
+ *   └── RayTracer::Exception
+ *         ├── RayTracer::ParsingException
+ *         └── RayTracer::DivisionByZeroException
+ * @endcode
+ */

@@ -5,6 +5,14 @@ RayTracer::PluginManager::PluginManager(std::string pluginDirectory) : _pluginDi
     loadPlugins();
 }
 
+RayTracer::PluginManager::~PluginManager()
+{
+    for (void* h : _handles) {
+        //if (h)
+          //  dlclose(h);
+    }
+}
+
 void RayTracer::PluginManager::loadPlugins()
 {
     _plugins.clear();
@@ -49,10 +57,10 @@ bool RayTracer::PluginManager::loadPlugin(const std::string& path)
         dlclose(handle);
         return false;
     }
-    dlclose(handle);
     InitializersMap initializers = getInitializers();
     overrideInitializers(initializers);
     _plugins[pluginName] = initializers;
+    _handles.push_back(handle);
     return true;
 }
 

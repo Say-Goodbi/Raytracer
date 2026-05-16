@@ -10,6 +10,7 @@
 #include <dlfcn.h>
 #include <dirent.h>
 #include <iostream>
+#include <vector>
 // Only AInterface, APrimitive, ARenderer, ILight and IMaterial are relevant for plugins.
 #include "../../Objects/Plugin.hpp"
 
@@ -20,6 +21,9 @@ namespace RayTracer
         private:
             std::string _pluginDirectory; ///< Directory where plugins are located
             std::map<std::string, std::map<std::string, std::function<Component(NodePtr)>>> _plugins; ///< Map of plugin names to their keyword-initializer pairs
+            std::vector<void*> _handles; ///< dlopen handles for loaded plugins
+
+            void unloadPlugins();
 
             /// Load a plugin from a shared library file.
             /// @param path Filesystem path to the shared library (.so)
@@ -29,7 +33,7 @@ namespace RayTracer
 
         public:
             PluginManager(std::string pluginDirectory); ///< Constructor that loads plugins from the default directory;
-            ~PluginManager() = default;
+            ~PluginManager();
 
             /// Loads all plugins within the directory.
             void loadPlugins();

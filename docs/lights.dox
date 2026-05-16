@@ -1,0 +1,85 @@
+/**
+ * @page lights_page Lights
+ *
+ * **Source files:** `src/Objects/Plugins/CorePlugin/Lights/`
+ *
+ * Lights implement @ref RayTracer::ILight and contribute illumination to each
+ * ray-primitive intersection during @ref RayTracer::Camera::castRay. The single
+ * interface method is:
+ *
+ * ```cpp
+ * computeLight(const HitRecord&, const std::vector<std::shared_ptr<APrimitive>>&)
+ * ```
+ *
+ * The primitive list is provided so each light can cast a **shadow ray**: a test ray
+ * fired toward the light source to detect occluding geometry. If any primitive blocks
+ * the path, the light returns zero contribution for that hit point.
+ *
+ * ---
+ *
+ * @section light_point PointLight
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Lights/PointLight/PointLight.hpp`
+ *
+ * @ref RayTracer::PointLight emits light equally in all directions from a fixed position
+ * in world space.
+ *
+ * Members:
+ * - `_position` — @ref Geometry::Point3D, world-space light position
+ * - `_intensity` — `double`, energy scalar
+ * - `_color` — @ref RayTracer::Color, light tint
+ *
+ * Behavior:
+ * - Fires a shadow ray from the hit point to `_position`.
+ * - Returns zero if any primitive in the scene occludes the path.
+ * - Otherwise returns `intensity * color * cosTheta`, where `cosTheta` is the dot product
+ *   of the surface normal with the direction to the light.
+ *
+ * ---
+ *
+ * @section light_directional DirectionalLight
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Lights/DirectionalLight/DirectionalLight.hpp`
+ *
+ * @ref RayTracer::DirectionalLight simulates a distant light source (e.g. the sun) with
+ * parallel rays and no falloff over distance.
+ *
+ * Members:
+ * - `_direction` — @ref Geometry::Vector3D, the direction light travels (toward the scene)
+ * - `_intensity` — `double`, energy scalar
+ * - `_color` — @ref RayTracer::Color, light tint
+ *
+ * Behavior:
+ * - Shadow ray fires in the opposite of `_direction` (toward the light).
+ * - Returns zero if occluded, otherwise `intensity * color * cosTheta`.
+ * - Intensity is constant regardless of distance from the hit point.
+ *
+ * ---
+ *
+ * @section light_ambient AmbientLight
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Lights/AmbientLight/AmbientLight.hpp`
+ *
+ * @ref RayTracer::AmbientLight provides a constant background illumination with no
+ * directional dependence and no shadow testing.
+ *
+ * Members:
+ * - `_intensity` — `float`, energy scalar
+ * - `_color` — @ref RayTracer::Color, ambient tint
+ *
+ * Behavior:
+ * - No shadow ray is cast.
+ * - Returns `intensity * color` uniformly at every hit point regardless of geometry.
+ *
+ * Typically used to approximate indirect lighting or to prevent fully-unlit regions.
+ *
+ * ---
+ *
+ * @section light_extending Extending with New Lights
+ *
+ * To add a new light type:
+ * 1. Subclass @ref RayTracer::ILight.
+ * 2. Implement `computeLight()`, casting shadow rays as needed via the provided
+ *    primitive list.
+ * 3. Register the class in a plugin's initializer map. See @ref plugin_system_page.
+ */

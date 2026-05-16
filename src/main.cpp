@@ -52,7 +52,7 @@ int main(int ac, char *av[])
         interface->setRenderer(scene->getRenderer().get());
         interface->execute(*scene, parameters);
     }
-    catch (const RayTracer::Exception &e) {
+    catch (const std::exception &e) {
         std::cerr << "Error: " << e.what() << std::endl;
         return EXIT_FAILURE;
     }

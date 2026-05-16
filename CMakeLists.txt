@@ -16,6 +16,8 @@ set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(BUILD_TESTS    OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(libconfig)
 
+find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+
 add_compile_options(-O3 -ffast-math -march=native)
 
 # ── Interface sources (compiled into binary and each plugin) ──────────────────
@@ -30,16 +32,10 @@ file(GLOB_RECURSE INTERFACE_SOURCES
 file(GLOB         MAIN_ENTRY    src/*.cpp)          # picks up main.cpp when added
 file(GLOB_RECURSE SYSTEM_SOURCES src/SceneSystem/*.cpp)
 
-# SceneWriter is used directly in main.cpp but lives in the plugin tree
-set(SCENE_WRITER_SOURCES
-    src/Objects/Plugins/CorePlugin/Interfaces/SceneWriter/SceneWriter.cpp
-)
-
 add_executable(raytracer
     ${MAIN_ENTRY}
     ${SYSTEM_SOURCES}
     ${INTERFACE_SOURCES}
-    ${SCENE_WRITER_SOURCES}
 )
 
 target_include_directories(raytracer PRIVATE src)
@@ -71,5 +67,9 @@ foreach(PLUGIN_DIR ${PLUGIN_DIRS})
         target_include_directories(${PLUGIN_NAME} PRIVATE src)
 
         target_link_libraries(${PLUGIN_NAME} PRIVATE config++)
+
+        if (PLUGIN_NAME STREQUAL "LivescenePlugin")
+            target_link_libraries(${PLUGIN_NAME} PRIVATE sfml-graphics sfml-window sfml-system)
+        endif()
     endif()
 endforeach()

@@ -1,0 +1,112 @@
+/**
+ * @page plugin_system_page Plugin System
+ *
+ * **Source files:** `src/Objects/Plugin.hpp`, `src/SceneSystem/PluginManager/`
+ *
+ * The plugin system allows new primitives, materials, lights, renderers, and interfaces
+ * to be compiled as separate shared libraries and loaded at runtime without modifying
+ * the core engine.
+ *
+ * ---
+ *
+ * @section ps_types Component & Node Types
+ *
+ * **Source:** `src/Objects/Plugin.hpp`
+ *
+ * This header defines the type vocabulary shared between the plugin loader and all
+ * plugins.
+ *
+ * **ScalarValue** — a `std::variant` holding any scalar configuration value:
+ * `int`, `long long`, `float`, `double`, `std::string`, `bool`, or a `Component`.
+ *
+ * **Component** — a `std::variant` of all plugin base types:
+ * `std::shared_ptr<AInterface>`, `APrimitive`, `ARenderer`, `ILight`, `IMaterial`.
+ * This is the type-erased result returned by every plugin constructor.
+ *
+ * **Node** — a recursive union holding one of:
+ * - `ScalarValue` — a leaf value
+ * - `Object` — `std::map<std::string, NodePtr>`, a key-value configuration block
+ * - `VectorObject` — `std::vector<Object>`, an array of configuration blocks
+ *
+ * The @ref RayTracer::Parser converts a libconfig++ file into a `Node` tree.
+ * The @ref RayTracer::SceneLoader then walks that tree to instantiate components via
+ * @ref RayTracer::PluginManager.
+ *
+ * ---
+ *
+ * @section ps_manager PluginManager
+ *
+ * **Source:** `src/SceneSystem/PluginManager/PluginManager.hpp`
+ *
+ * @ref RayTracer::PluginManager handles all runtime `.so` loading and the component
+ * constructor registry.
+ *
+ * Members:
+ * - `_pluginDirectory` — directory scanned for `.so` files at startup
+ * - `_plugins` — map of class names to their keyword-initializer pairs
+ * - `_handles` — `dlopen` handles kept alive for the lifetime of the manager
+ *
+ * Key methods:
+ * - `PluginManager(std::string pluginDirectory)` — sets the search directory
+ * - `loadPlugins()` — scans the directory and calls `loadPlugin()` for each `.so`
+ * - `loadPlugin(const std::string& path)` — `dlopen`s a single `.so`, retrieves its
+ *   exported initializer map, and merges it into `_plugins`
+ * - `getInitializer(const std::string& name)` — returns the constructor function for the
+ *   named component class; throws if not found
+ * - `unloadPlugins()` — closes all `dlopen` handles
+ *
+ * ---
+ *
+ * @section ps_flow Loading Flow
+ *
+ * @code{.unparsed}
+ * PluginManager::loadPlugins()
+ *       │
+ *       ▼
+ * dlopen("plugins/CorePlugin.so")
+ *       │
+ *       ▼  (plugin exports)
+ * map<string, InitFn> {
+ *   "Camera"            → Camera constructor,
+ *   "Sphere"            → Sphere constructor,
+ *   "Lambertian"        → Lambertian constructor,
+ *   "PointLight"        → PointLight constructor,
+ *   "SceneWriter"       → SceneWriter constructor,
+ *   ...
+ * }
+ *       │
+ *       ▼
+ * PluginManager merges into _plugins registry
+ *       │
+ *       ▼
+ * SceneLoader::loadScene()
+ *   calls PluginManager::getInitializer("Camera")
+ *   → invokes constructor with Node config
+ *   → receives Component variant
+ *   → extracts shared_ptr<ARenderer>, adds to Scene
+ * @endcode
+ *
+ * ---
+ *
+ * @section ps_writing Writing a Plugin
+ *
+ * A plugin must:
+ *
+ * 1. Implement one or more classes derived from @ref RayTracer::APrimitive,
+ *    @ref RayTracer::IMaterial, @ref RayTracer::ILight, @ref RayTracer::ARenderer, or
+ *    @ref RayTracer::AInterface.
+ *
+ * 2. Export a C-linkage initializer function that returns a
+ *    `std::map<std::string, InitializerFn>` mapping class names to constructor lambdas.
+ *    Each lambda accepts a `NodePtr` (configuration) and returns a `Component`.
+ *
+ * 3. Compile the plugin as a shared library with `-shared -fPIC` and place the resulting
+ *    `.so` in the plugins directory.
+ *
+ * The @ref RayTracer::PluginManager will discover and register it on the next
+ * `loadPlugins()` call, and @ref RayTracer::SceneLoader will be able to instantiate it
+ * by name from a scene config file.
+ *
+ * See built-in examples in `src/Objects/Plugins/CorePlugin/` and
+ * `src/Objects/Plugins/LivescenePlugin/`.
+ */
