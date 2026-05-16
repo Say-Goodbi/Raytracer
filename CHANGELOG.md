@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.4.0...v1.5.0) (2026-05-16)
+
+
+### Bug Fixes
+
+* another iteration of glass ([de5ff8c](https://github.com/Say-Goodbi/Raytracer/commit/de5ff8c81f28a4ae89f3f76bf4d621272724678e))
+
+
+### Features
+
+* enhance SceneWriter and SceneLoader to support dynamic parameters and improve interface handling, allowing modular interfaces ([a7533cb](https://github.com/Say-Goodbi/Raytracer/commit/a7533cbace35ac0805ab5da0f01069cdf3b5dff8))
+* glass material ([2135a1e](https://github.com/Say-Goodbi/Raytracer/commit/2135a1eed921eff7cfda9448905ab2d04f554ee7))
+
 # [1.4.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.3.1...v1.4.0) (2026-05-14)
 
 
