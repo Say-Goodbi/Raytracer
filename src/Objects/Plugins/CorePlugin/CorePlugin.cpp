@@ -147,7 +147,10 @@ extern "C"
                     std::string material = std::string("lambertian");
                     if (settingsMap.find("material") != settingsMap.end())
                         material = Raytracer::fromNode<std::string>(settingsMap.at("material"));
-                    std::shared_ptr<RayTracer::APrimitive> cylinder = std::make_shared<RayTracer::Cylinder>(origin, axis, radius, getMaterialInstance(material, color));
+                    float height = 0.0f;
+                    if (settingsMap.find("height") != settingsMap.end())
+                        height = Raytracer::fromNode<float>(settingsMap.at("height"));
+                    std::shared_ptr<RayTracer::APrimitive> cylinder = std::make_shared<RayTracer::Cylinder>(origin, axis, radius, getMaterialInstance(material, color), height);
                     return std::static_pointer_cast<RayTracer::APrimitive>(cylinder);
                 }
             },

@@ -55,17 +55,22 @@ namespace RayTracer
         if (disc < 0.0)
             return std::nullopt;
         double sqrtDisc = std::sqrt(disc);
-        double t = (-B - sqrtDisc) / (2.0 * A);
-        if (t < 1e-4) {
-            t = (-B + sqrtDisc) / (2.0 * A);
-            if (t < 1e-4)
+        double t1 = (-B - sqrtDisc) / (2.0 * A);
+        double t2 = (-B + sqrtDisc) / (2.0 * A);
+
+        auto tryHit = [&](double t) -> std::optional<Geometry::HitRecord> {
+            if (t < 1e-4) return std::nullopt;
+            Geometry::Point3D hitPoint = ray.at(static_cast<float>(t));
+            double proj = axis.dot(hitPoint - _origin);
+            if (_height > 0.0f && (proj < 0.0 || proj > static_cast<double>(_height)))
                 return std::nullopt;
-        }
-        Geometry::Point3D hitPoint = ray.at(static_cast<float>(t));
-        double proj = axis.dot(hitPoint - _origin);
-        Geometry::Point3D axisPoint = _origin + axis * proj;
-        Geometry::Vector3D outwardNormal = (hitPoint - axisPoint) / static_cast<double>(_radius);
-        return Geometry::HitRecord(hitPoint, outwardNormal, t, this->getMaterial());
+            Geometry::Point3D axisPoint = _origin + axis * proj;
+            Geometry::Vector3D outwardNormal = (hitPoint - axisPoint) / static_cast<double>(_radius);
+            return Geometry::HitRecord(hitPoint, outwardNormal, t, this->getMaterial());
+        };
+
+        if (auto rec = tryHit(t1)) return rec;
+        return tryHit(t2);
     }
 
     std::optional<Geometry::AABB> Cylinder::getBounds() const
