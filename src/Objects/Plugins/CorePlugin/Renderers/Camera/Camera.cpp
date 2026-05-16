@@ -191,9 +191,16 @@ namespace RayTracer
      * @param scene Scene to render.
      * @return 2D grid of clamped colors: `frame[height][width]`.
      */
-    std::vector<std::vector<Color>> Camera::render(Scene& scene) {
+    std::vector<std::vector<Color>> Camera::render(Scene& scene, std::vector<std::vector<Color>>& framebuffer) {
         scene.prepareAccelerationStructure(_useBVH);
-        std::vector<std::vector<Color>> framebuffer(_height, std::vector<Color>(_width));
+
+        // Ensure framebuffer is the correct size
+        if ((int)framebuffer.size() != _height) framebuffer.assign(_height, std::vector<Color>(_width));
+        else {
+            for (auto &row : framebuffer) {
+                if ((int)row.size() != _width) row.assign(_width, Color(0,0,0));
+            }
+        }
 
         for (int y = 0; y < _height; y++) {
             for (int x = 0; x < _width; x++) {

@@ -16,6 +16,8 @@ set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(BUILD_TESTS    OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(libconfig)
 
+find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+
 add_compile_options(-O3 -ffast-math -march=native)
 
 # ── Interface sources (compiled into binary and each plugin) ──────────────────
@@ -71,5 +73,9 @@ foreach(PLUGIN_DIR ${PLUGIN_DIRS})
         target_include_directories(${PLUGIN_NAME} PRIVATE src)
 
         target_link_libraries(${PLUGIN_NAME} PRIVATE config++)
+
+        if (PLUGIN_NAME STREQUAL "LivescenePlugin")
+            target_link_libraries(${PLUGIN_NAME} PRIVATE sfml-graphics sfml-window sfml-system)
+        endif()
     endif()
 endforeach()

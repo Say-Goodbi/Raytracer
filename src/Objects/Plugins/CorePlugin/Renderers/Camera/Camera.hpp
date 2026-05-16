@@ -95,6 +95,6 @@ namespace RayTracer
          * @param scene Scene to render.
          * @return 2D grid of clamped colors: `frame[y][x]`, row-major, top-to-bottom.
          */
-        std::vector<std::vector<Color>> render(Scene& scene) override;
+        std::vector<std::vector<Color>> render(Scene& scene, std::vector<std::vector<Color>>& framebuffer) override;
     };
 } // namespace RayTracer
