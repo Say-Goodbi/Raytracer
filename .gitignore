@@ -16,4 +16,4 @@ cmake_install.cmake
 build
 dev-local
 *.json
-output.ppm
+*.ppm

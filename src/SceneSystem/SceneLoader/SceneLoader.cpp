@@ -7,7 +7,7 @@ namespace RayTracer {
         {"lights", [](NodePtr &obj, PluginManager &pluginManager, std::unique_ptr<Scene> &scene) { scene->addLights(obj, pluginManager); }}
     };
 
-    SceneLoader::SceneLoader(const std::string &filename) : _pluginManager("plugins"), _parser(filename) {}
+    SceneLoader::SceneLoader(PluginManager &manager, const std::string &filename) : _pluginManager(manager), _parser(filename) {}
 
     std::unique_ptr<Scene> SceneLoader::loadScene(void)
     {

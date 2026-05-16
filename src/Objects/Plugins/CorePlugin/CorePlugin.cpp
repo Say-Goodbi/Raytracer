@@ -40,6 +40,12 @@ extern "C"
     {
         return {
             {
+                "SceneWriter", [](RayTracer::NodePtr) -> RayTracer::Component
+                {
+                    return std::static_pointer_cast<RayTracer::AInterface>(std::make_shared<RayTracer::SceneWriter>());
+                }
+            },
+            {
                 "camera", [](RayTracer::NodePtr node) -> RayTracer::Component
                 {
                     const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);

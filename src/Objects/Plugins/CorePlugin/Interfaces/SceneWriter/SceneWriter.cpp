@@ -6,17 +6,6 @@
 namespace RayTracer
 {
     /**
-     * @brief Constructor.
-     *
-     * @param renderer Pointer to the renderer (ARenderer) that will generate the framebuffer
-     * @param outputFile Path to the output PPM file to be written
-     */
-    SceneWriter::SceneWriter(ARenderer* renderer, const std::string& outputFile)
-    : AInterface(renderer), _outputFile(outputFile)
-    {
-    }
-
-    /**
      * @brief Render the scene and write the result to a PPM file.
      *
      * Output format: PPM (Portable Pixmap) P3 (ASCII) format
@@ -36,16 +25,21 @@ namespace RayTracer
      *
      * @param scene The scene to render and write
      */
-    void SceneWriter::execute(Scene& scene)
+    void SceneWriter::execute(Scene& scene, std::map<std::string, std::string> &parameters)
     {
+        std::string outputFile = parameters.find("o") != parameters.end() ? parameters.find("o")->second : "output.ppm";
+        int nb_threads = parameters.find("t") != parameters.end() ? atoi(parameters.find("t")->second.c_str()) : 1;
+
+        if (nb_threads < 1)
+            throw RayTracer::Exception("Invalid number of threads specified. Must be at least 1.");
+
         std::vector<std::vector<RayTracer::Color>> frameBuffer = _renderer->render(scene);
         if (frameBuffer.empty())
             return;
-
         int height = static_cast<int>(frameBuffer.size());
         int width = static_cast<int>(frameBuffer[0].size());
 
-        std::ofstream ofs(_outputFile, std::ios::out);
+        std::ofstream ofs(outputFile, std::ios::out);
         if (!ofs)
             return;
 
@@ -64,5 +58,6 @@ namespace RayTracer
         }
 
         ofs.close();
+        std::cout << "Scene rendered and written to " << outputFile << std::endl;
     }
 } // namespace RayTracer
