@@ -32,16 +32,10 @@ file(GLOB_RECURSE INTERFACE_SOURCES
 file(GLOB         MAIN_ENTRY    src/*.cpp)          # picks up main.cpp when added
 file(GLOB_RECURSE SYSTEM_SOURCES src/SceneSystem/*.cpp)
 
-# SceneWriter is used directly in main.cpp but lives in the plugin tree
-set(SCENE_WRITER_SOURCES
-    src/Objects/Plugins/CorePlugin/Interfaces/SceneWriter/SceneWriter.cpp
-)
-
 add_executable(raytracer
     ${MAIN_ENTRY}
     ${SYSTEM_SOURCES}
     ${INTERFACE_SOURCES}
-    ${SCENE_WRITER_SOURCES}
 )
 
 target_include_directories(raytracer PRIVATE src)
