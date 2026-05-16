@@ -1,3 +1,18 @@
+# [1.6.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.5.0...v1.6.0) (2026-05-16)
+
+
+### Bug Fixes
+
+* cylinder height + scenes calibration ([4756b48](https://github.com/Say-Goodbi/Raytracer/commit/4756b484c358d430b20a2bf96b168620526d5687))
+
+
+### Features
+
+* add Livescene plugin for real-time scene rendering with SFML integration. ([f998316](https://github.com/Say-Goodbi/Raytracer/commit/f998316184c4f0db193866e14da04d63a3715eff))
+* implement framebuffer mutex for thread-safe rendering and add unloadPlugins method in PluginManager ([c9f561d](https://github.com/Say-Goodbi/Raytracer/commit/c9f561d77d3af0b660d36a566e3d19bd8277dbcb))
+* new complete documentation ([16548a7](https://github.com/Say-Goodbi/Raytracer/commit/16548a7e730e9bc40ffec5484a8acfbdb40c7552))
+* new scene ([68d1819](https://github.com/Say-Goodbi/Raytracer/commit/68d181913245b3c03a022c3332582217b3d007fc))
+
 # [1.5.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.4.0...v1.5.0) (2026-05-16)
 
 
