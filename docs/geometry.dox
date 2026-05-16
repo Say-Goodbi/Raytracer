@@ -1,0 +1,159 @@
+/**
+ * @page geometry_page Geometry & Math
+ *
+ * **Source files:** `src/Geometry/`
+ *
+ * All geometric primitives live in the `Geometry` namespace and have no dependency on
+ * the rendering or plugin layers. They are the lowest-level building blocks used by
+ * every other component.
+ *
+ * ---
+ *
+ * @section geo_vector Vector3D
+ *
+ * **Source:** `src/Geometry/Vector3D/Vector3D.hpp`
+ *
+ * @ref Geometry::Vector3D represents a 3D direction or magnitude with components
+ * `x`, `y`, `z` (all `double`).
+ *
+ * Key methods:
+ * - @ref Geometry::Vector3D::length "length()" — Euclidean norm
+ * - @ref Geometry::Vector3D::normalize "normalize()" — unit-length copy
+ * - @ref Geometry::Vector3D::dot "dot(v)" — scalar dot product
+ * - @ref Geometry::Vector3D::cross "cross(v)" — right-hand cross product
+ *
+ * Operators: `+`, `-`, `*` (scalar and component-wise), `/` (scalar and component-wise),
+ * and their assignment variants.
+ *
+ * Used everywhere rays, normals, and bounce directions appear.
+ *
+ * ---
+ *
+ * @section geo_point Point3D
+ *
+ * **Source:** `src/Geometry/Point3D/Point3D.hpp`
+ *
+ * @ref Geometry::Point3D represents a position in 3D space (`x`, `y`, `z` as `double`).
+ *
+ * Point-vector arithmetic:
+ * - `Point3D + Vector3D` → `Point3D` — translate a point
+ * - `Point3D - Vector3D` → `Point3D` — translate in reverse
+ * - `Point3D - Point3D` → `Vector3D` — displacement vector between two points
+ * - `+=` for in-place translation
+ *
+ * Kept separate from @ref Geometry::Vector3D to enforce the geometric distinction
+ * between positions and directions at the type level.
+ *
+ * ---
+ *
+ * @section geo_ray Ray
+ *
+ * **Source:** `src/Geometry/Ray/Ray.hpp`
+ *
+ * @ref Geometry::Ray is the fundamental unit shot through the scene during rendering.
+ *
+ * Members:
+ * - `origin` — @ref Geometry::Point3D, where the ray starts
+ * - `direction` — @ref Geometry::Vector3D, the direction it travels
+ *
+ * Key method:
+ * - @ref Geometry::Ray::at "at(t)" — returns the @ref Geometry::Point3D at parameter
+ *   `t` along the ray: `origin + t * direction`
+ *
+ * Created by @ref RayTracer::Camera::generateRay and passed into
+ * @ref RayTracer::Scene::hit for intersection tests.
+ *
+ * ---
+ *
+ * @section geo_matrix Matrix
+ *
+ * **Source:** `src/Geometry/Matrix/Matrix.hpp`
+ *
+ * @ref Geometry::Matrix is a generic row-major matrix template `Matrix<Rows, Cols>` with
+ * `float` storage.
+ *
+ * Factory:
+ * - `Matrix::identity()` — static factory for square identity matrices
+ *
+ * Element access:
+ * - `operator(row, col)` — returns a reference to the element
+ *
+ * Operators: `+`, `-`, `*` (matrix–matrix and matrix–scalar), `+=`, `-=`, `*=`.
+ *
+ * Used as the base class for @ref Geometry::TransformMatrix.
+ *
+ * ---
+ *
+ * @section geo_transform TransformMatrix
+ *
+ * **Source:** `src/Geometry/TransformMatrix/TransformMatrix.hpp`
+ *
+ * @ref Geometry::TransformMatrix extends `Matrix<4, 4>` with affine transform semantics.
+ *
+ * Static factories:
+ * - `TransformMatrix::translation(tx, ty, tz)`
+ * - `TransformMatrix::scaling(sx, sy, sz)`
+ * - `TransformMatrix::rotationX(angle)`, `rotationY(angle)`, `rotationZ(angle)`
+ *
+ * Application operators:
+ * - `operator*(Point3D)` — transform a point (applies translation)
+ * - `operator*(Vector3D)` — transform a direction (ignores translation)
+ *
+ * Used by @ref RayTracer::Camera to encode camera position, rotation, and scale into
+ * a single matrix.
+ *
+ * ---
+ *
+ * @section geo_aabb AABB
+ *
+ * **Source:** `src/Geometry/AABB/AABB.hpp`
+ *
+ * @ref Geometry::AABB (Axis-Aligned Bounding Box) is an interval in 3D space defined by
+ * two corner points: `minimum` and `maximum` (both @ref Geometry::Point3D).
+ *
+ * Key methods:
+ * - `AABB::unite(a, b)` — static merge of two AABBs into their union
+ * - `centroid()` — midpoint of the box, used by the @ref RayTracer::BVH SAH splitter
+ * - `surfaceArea()` — total surface area, used in the SAH cost formula
+ * - `hit(ray, tMin, tMax)` — fast slab test for ray–AABB intersection
+ *
+ * Returned by @ref RayTracer::APrimitive::getBounds. Primitives that cannot provide a
+ * finite AABB (e.g. @ref RayTracer::Plane) return an empty optional and bypass the
+ * @ref RayTracer::BVH. See @ref space_partitioning.
+ *
+ * ---
+ *
+ * @section geo_rect Rectangle3D
+ *
+ * **Source:** `src/Geometry/Rectangle3D/Rectangle3D.hpp`
+ *
+ * @ref Geometry::Rectangle3D defines a planar rectangular region in 3D space using:
+ * - `origin` — @ref Geometry::Point3D, one corner of the rectangle
+ * - `width` — @ref Geometry::Vector3D, first edge direction and length
+ * - `height` — @ref Geometry::Vector3D, second edge direction and length
+ *
+ * Key method:
+ * - `pointAt(u, v)` — returns the @ref Geometry::Point3D at normalized coordinates
+ *   `(u, v) ∈ [0, 1]²` across the rectangle's surface
+ *
+ * Used by @ref RayTracer::Camera as the virtual projection screen from which rays are
+ * generated via @ref RayTracer::Camera::generateRay.
+ *
+ * ---
+ *
+ * @section geo_hitrecord HitRecord
+ *
+ * **Source:** `src/Geometry/HitRecord/HitRecord.hpp`
+ *
+ * @ref Geometry::HitRecord is a plain struct that carries all data about a successful
+ * ray–primitive intersection:
+ *
+ * - `point` — @ref Geometry::Point3D, the world-space intersection point
+ * - `normal` — @ref Geometry::Vector3D, outward surface normal at the hit
+ * - `rayDistance` — `float`, parametric distance `t` along the ray
+ * - `material` — `IMaterial*`, pointer to the surface material at the hit
+ *
+ * Returned as `std::optional<HitRecord>` by @ref RayTracer::APrimitive::hit and
+ * @ref RayTracer::Scene::hit. Consumed by @ref RayTracer::Camera::castRay to evaluate
+ * lighting and schedule the next bounce via @ref RayTracer::IMaterial::sample.
+ */

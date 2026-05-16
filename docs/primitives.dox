@@ -1,0 +1,82 @@
+/**
+ * @page primitives_page Primitives
+ *
+ * **Source files:** `src/Objects/Plugins/CorePlugin/Primitives/`
+ *
+ * Primitives are renderable shapes. Each one derives from @ref RayTracer::APrimitive
+ * and must implement two pure virtual methods:
+ * - `hit(const Ray&)` — ray–shape intersection test
+ * - `getBounds()` — optional @ref Geometry::AABB for BVH participation
+ *
+ * A primitive that returns a finite bounding box from `getBounds()` is inserted into the
+ * @ref RayTracer::BVH; one that returns `std::nullopt` falls back to the linear traversal
+ * path. See @ref space_partitioning.
+ *
+ * Every primitive stores a `std::shared_ptr<IMaterial>` obtained from its config node
+ * via @ref RayTracer::PluginManager.
+ *
+ * ---
+ *
+ * @section prim_sphere Sphere
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Primitives/Sphere/Sphere.hpp`
+ *
+ * @ref RayTracer::Sphere is a finite closed surface.
+ *
+ * Members:
+ * - `_center` — @ref Geometry::Point3D, world-space center
+ * - `_radius` — `float`, sphere radius
+ *
+ * Intersection: solves the quadratic `|P(t) - center|² = radius²` for `t`.
+ *
+ * Bounds: `getBounds()` returns a finite @ref Geometry::AABB with corners at
+ * `center ± radius` on each axis. **Sphere participates in @ref RayTracer::BVH.**
+ *
+ * ---
+ *
+ * @section prim_plane Plane
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Primitives/Plane/Plane.hpp`
+ *
+ * @ref RayTracer::Plane is an infinite flat surface.
+ *
+ * Members:
+ * - `_point` — @ref Geometry::Point3D, any point on the plane
+ * - `_normal` — @ref Geometry::Vector3D, outward surface normal
+ *
+ * Intersection: solves `(P(t) - point) · normal = 0` for `t`.
+ *
+ * Bounds: `getBounds()` returns `std::nullopt` — the plane has no finite bounding box.
+ * **Plane stays on the linear fallback path and never enters the @ref RayTracer::BVH.**
+ *
+ * ---
+ *
+ * @section prim_cylinder Cylinder
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Primitives/Cylinder/Cylinder.hpp`
+ *
+ * @ref RayTracer::Cylinder is a circular tube with an optional height cap.
+ *
+ * Members:
+ * - `_origin` — @ref Geometry::Point3D, base center of the cylinder
+ * - `_axis` — @ref Geometry::Vector3D, direction along which the cylinder extends
+ * - `_radius` — `float`, tube radius
+ * - `_height` — `float`, total height; a value of `0` means infinite extent
+ *
+ * Intersection: solves the ray–cylinder quadratic in the local frame aligned to `_axis`.
+ *
+ * Bounds: `getBounds()` returns `std::nullopt` for infinite cylinders (height = 0).
+ * **Infinite cylinders stay on the linear fallback path;** finite cylinders may return
+ * a finite @ref Geometry::AABB and participate in the @ref RayTracer::BVH.
+ *
+ * ---
+ *
+ * @section prim_extending Extending with New Primitives
+ *
+ * To add a new shape:
+ * 1. Subclass @ref RayTracer::APrimitive.
+ * 2. Implement `hit()` returning `std::optional<HitRecord>`.
+ * 3. Implement `getBounds()` returning a finite @ref Geometry::AABB if the shape is
+ *    bounded, or `std::nullopt` if it is infinite.
+ * 4. Register it in a plugin's initializer map. See @ref plugin_system_page.
+ */

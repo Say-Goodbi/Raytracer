@@ -1,0 +1,127 @@
+/**
+ * @page abstracts_page Abstract Interfaces
+ *
+ * **Source files:** `src/Objects/Abstracts/`
+ *
+ * These abstract base classes define the plugin contract. No concrete implementation
+ * may appear here — the abstracts depend only on @ref geometry_page and each other.
+ * All plugin components must derive from one of these classes.
+ *
+ * ---
+ *
+ * @section abs_ainterface AInterface
+ *
+ * **Source:** `src/Objects/Abstracts/AInterface/AInterface.hpp`
+ *
+ * @ref RayTracer::AInterface is the application backend base. It owns an
+ * @ref RayTracer::ARenderer and coordinates the top-level execution flow.
+ *
+ * Members:
+ * - `_renderer` — `ARenderer*`, the active renderer
+ *
+ * Key methods:
+ * - `setRenderer(ARenderer*)` — inject the renderer
+ * - `execute(Scene&, std::map<std::string, std::string>&)` — **pure virtual**;
+ *   implementations drive the full render-output cycle
+ *
+ * Concrete implementations: @ref RayTracer::SceneWriter (PPM output),
+ * @ref RayTracer::Livescene (SFML real-time viewer). See @ref interfaces_page.
+ *
+ * ---
+ *
+ * @section abs_arenderer ARenderer
+ *
+ * **Source:** `src/Objects/Abstracts/ARenderer/ARenderer.hpp`
+ *
+ * @ref RayTracer::ARenderer is the base for all renderers. It holds output resolution
+ * and defines the render contract.
+ *
+ * Members:
+ * - `_width`, `_height` — output framebuffer dimensions
+ *
+ * Key methods:
+ * - `render(Scene&, std::vector<std::vector<Color>>&)` — **pure virtual**; fills the
+ *   caller-provided 2D framebuffer
+ * - `render(Scene&)` — convenience overload that allocates the buffer and returns it
+ * - `getWidth()`, `getHeight()` — dimension accessors
+ *
+ * The renderer is stateless with respect to output — it never writes files or opens
+ * windows. All I/O is handled by @ref RayTracer::AInterface.
+ *
+ * Concrete implementation: @ref RayTracer::Camera. See @ref renderer_page.
+ *
+ * ---
+ *
+ * @section abs_aprimitive APrimitive
+ *
+ * **Source:** `src/Objects/Abstracts/APrimitive/APrimitive.hpp`
+ *
+ * @ref RayTracer::APrimitive is the base for all renderable shapes.
+ *
+ * Members:
+ * - `_material` — `std::shared_ptr<IMaterial>`, the surface material
+ *
+ * Key methods:
+ * - `hit(const Ray&)` — **pure virtual**; returns `std::optional<HitRecord>` for the
+ *   nearest intersection along the ray, or `std::nullopt` if no hit
+ * - `getBounds()` — **pure virtual**; returns `std::optional<AABB>`. Bounded primitives
+ *   return a finite box and participate in the @ref RayTracer::BVH; unbounded ones
+ *   (e.g. @ref RayTracer::Plane) return `std::nullopt` and stay on the linear path
+ * - `getMaterial()` — returns the `IMaterial` pointer for shading
+ *
+ * Concrete implementations: @ref RayTracer::Sphere, @ref RayTracer::Plane,
+ * @ref RayTracer::Cylinder. See @ref primitives_page.
+ *
+ * ---
+ *
+ * @section abs_imaterial IMaterial
+ *
+ * **Source:** `src/Objects/Abstracts/IMaterial.hpp`
+ *
+ * @ref RayTracer::IMaterial defines the physically-based material contract used during
+ * path tracing. Every shading evaluation goes through this interface.
+ *
+ * Key methods:
+ * - `evaluate(normal, viewDir, lightDir)` — evaluates the BRDF at a surface point;
+ *   returns a @ref RayTracer::Color representing reflectance
+ * - `sample(normal, viewDir)` — returns a deterministic outgoing @ref Geometry::Vector3D
+ *   for the next ray bounce (no randomness — uses a fixed hemisphere strategy)
+ * - `pdf(normal, viewDir, sampleDir)` — probability density of the sampled direction,
+ *   used to weight the Monte Carlo estimator
+ * - `emission()` — returns emitted @ref RayTracer::Color for emissive surfaces;
+ *   non-emissive materials return black
+ *
+ * Concrete implementations: @ref RayTracer::Lambertian, @ref RayTracer::Phong,
+ * @ref RayTracer::Glass. See @ref materials_page.
+ *
+ * ---
+ *
+ * @section abs_amaterial AMaterial
+ *
+ * **Source:** `src/Objects/Abstracts/AMaterial/AMaterial.hpp`
+ *
+ * @ref RayTracer::AMaterial extends @ref RayTracer::IMaterial with a common albedo field.
+ *
+ * Members:
+ * - `_albedo` — @ref RayTracer::Color, the base surface color
+ *
+ * All standard materials in CorePlugin derive from @ref RayTracer::AMaterial rather than
+ * directly from @ref RayTracer::IMaterial, sharing the albedo storage and constructor.
+ *
+ * ---
+ *
+ * @section abs_ilight ILight
+ *
+ * **Source:** `src/Objects/Abstracts/ILight.hpp`
+ *
+ * @ref RayTracer::ILight is the interface for all light sources.
+ *
+ * Key method:
+ * - `computeLight(const HitRecord&, const std::vector<std::shared_ptr<APrimitive>>&)` —
+ *   computes the light's contribution at the intersection point. The primitive list is
+ *   provided for shadow ray casting: the light shoots a shadow ray toward itself and
+ *   returns zero if any primitive occludes it.
+ *
+ * Concrete implementations: @ref RayTracer::PointLight, @ref RayTracer::DirectionalLight,
+ * @ref RayTracer::AmbientLight. See @ref lights_page.
+ */

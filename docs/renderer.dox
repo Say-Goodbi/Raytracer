@@ -1,0 +1,89 @@
+/**
+ * @page renderer_page Renderer
+ *
+ * **Source files:** `src/Objects/Plugins/CorePlugin/Renderers/Camera/`
+ *
+ * The renderer is the component that turns a @ref RayTracer::Scene into a 2D framebuffer.
+ * @ref RayTracer::Camera is the sole concrete implementation of @ref RayTracer::ARenderer
+ * in CorePlugin, implementing deterministic path tracing with stratified sampling.
+ *
+ * ---
+ *
+ * @section rend_camera Camera
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Renderers/Camera/Camera.hpp`
+ *
+ * @ref RayTracer::Camera derives from @ref RayTracer::ARenderer.
+ *
+ * @subsection rend_members Members
+ *
+ * | Member | Type | Default | Description |
+ * |--------|------|---------|-------------|
+ * | `_transform` | `TransformMatrix` | identity | World-space camera pose |
+ * | `_screen` | `Rectangle3D` | 1×1 unit screen | Virtual projection surface |
+ * | `_fov` | `float` | `50` | Horizontal field of view in degrees |
+ * | `_sqrtSamples` | `int` | `2` | Samples per axis (total = sqrtSamples²) |
+ * | `_maxDepth` | `int` | `8` | Maximum recursive ray bounces |
+ * | `_useBVH` | `bool` | `false` | Enable @ref RayTracer::BVH acceleration |
+ *
+ * @subsection rend_construction Construction
+ *
+ * Two constructor forms are supported:
+ * - From explicit position and direction vectors — the camera builds its
+ *   @ref Geometry::TransformMatrix internally.
+ * - From a pre-built @ref Geometry::TransformMatrix — for callers that have already
+ *   composed translation, rotation, and scale.
+ *
+ * When loaded from a config file the following fields are read via
+ * `fromNode<T>()` (see @ref scene_system_page):
+ * - `resolution` → `std::pair<int,int>`, framebuffer dimensions
+ * - `position` → @ref Geometry::Point3D
+ * - `rotation` → @ref Geometry::Vector3D (Euler angles)
+ * - `scale` → @ref Geometry::Vector3D (default `(1,1,1)`)
+ * - `fieldOfView` → `float` (default `50`)
+ * - `useBVH` → `bool` (default `false`)
+ *
+ * @subsection rend_ray_gen Ray Generation
+ *
+ * `generateRay(double u, double v)` maps normalized screen coordinates
+ * `(u, v) ∈ [0, 1]²` to a world-space @ref Geometry::Ray :
+ *
+ * 1. Compute the screen point via @ref Geometry::Rectangle3D::pointAt "Rectangle3D::pointAt(u, v)".
+ * 2. Apply `_transform` to convert from camera space to world space.
+ * 3. Return a @ref Geometry::Ray from the camera origin through the screen point.
+ *
+ * @subsection rend_stratified Stratified Sampling
+ *
+ * Each pixel is divided into a `_sqrtSamples × _sqrtSamples` grid (default `2 × 2 = 4`
+ * samples per pixel). For each cell, the sample point is at the center of that cell in
+ * pixel space, producing a uniform stratified pattern with no randomness.
+ *
+ * The resulting color samples are averaged to produce the final pixel value.
+ *
+ * @subsection rend_pathtrace Path Tracing — castRay
+ *
+ * `castRay(Ray, Scene, depth)` implements the recursive rendering equation:
+ *
+ * 1. Call @ref RayTracer::Scene::hit with the current ray. If no intersection, return
+ *    the background color (black).
+ * 2. Retrieve the @ref Geometry::HitRecord — intersection point, normal, and
+ *    @ref RayTracer::IMaterial pointer.
+ * 3. Accumulate direct illumination by iterating all lights in the scene and calling
+ *    @ref RayTracer::ILight::computeLight (shadow rays included).
+ * 4. If `depth < _maxDepth`, compute the next bounce:
+ *    - `direction = material->sample(normal, viewDir)` — deterministic outgoing direction
+ *    - `weight = material->evaluate(normal, viewDir, direction) / material->pdf(...)` — BRDF weight
+ *    - `indirect = castRay(bounceRay, scene, depth + 1)` — recurse
+ *    - Add `weight * indirect` to the accumulated color.
+ * 5. Add `material->emission()` for emissive surfaces.
+ * 6. Return the total accumulated @ref RayTracer::Color.
+ *
+ * @subsection rend_bvh BVH Integration
+ *
+ * When `_useBVH = true`, @ref RayTracer::Camera::render calls
+ * @ref RayTracer::Scene::prepareAccelerationStructure before iterating pixels.
+ * Subsequent `castRay` calls query @ref RayTracer::Scene::hit, which routes bounded
+ * primitives through the @ref RayTracer::BVH and unbounded ones through linear search.
+ *
+ * See @ref space_partitioning for the full BVH documentation.
+ */

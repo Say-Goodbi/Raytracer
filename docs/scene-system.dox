@@ -1,0 +1,111 @@
+/**
+ * @page scene_system_page Scene System
+ *
+ * **Source files:** `src/SceneSystem/`
+ *
+ * The scene system is responsible for loading config files, instantiating plugin
+ * components, managing the scene graph, and providing ray-intersection queries to the
+ * renderer. See also @subpage space_partitioning for the BVH acceleration structure.
+ *
+ * ---
+ *
+ * @section ss_scene Scene
+ *
+ * **Source:** `src/SceneSystem/Scene/Scene.hpp`
+ *
+ * @ref RayTracer::Scene is the central scene container. It owns all renderable data and
+ * serves as the query point for ray casting.
+ *
+ * Members:
+ * - `_renderer` — `std::shared_ptr<ARenderer>`, the active camera/renderer
+ * - `_primitives` — `std::vector<std::shared_ptr<APrimitive>>`, all renderable shapes
+ * - `_lights` — `std::vector<std::shared_ptr<ILight>>`, all light sources
+ * - `_bvh` — `std::optional<BVH>`, cached acceleration structure
+ * - `_unboundedPrimitives` — primitives excluded from BVH (infinite planes, etc.)
+ * - `_useBVH` — flag toggled by the renderer before each frame
+ *
+ * Key methods:
+ * - `addPrimitive(std::shared_ptr<APrimitive>)` — append a single primitive
+ * - `addPrimitives(NodePtr&, PluginManager)` — parse and add primitives from config
+ * - `addLight(std::shared_ptr<ILight>)` — append a single light
+ * - `addLights(NodePtr&, PluginManager)` — parse and add lights from config
+ * - `updateCamera(NodePtr&, PluginManager)` — replace the renderer from config
+ * - `prepareAccelerationStructure(bool useBVH)` — build or discard the @ref RayTracer::BVH
+ * - `hit(const Ray&)` — returns the nearest `std::optional<HitRecord>` across all
+ *   primitives, using the @ref RayTracer::BVH when available
+ * - `getRenderer()`, `getPrimitives()`, `getLights()` — accessors used by the renderer
+ *
+ * The `hit()` method routes through the @ref RayTracer::BVH for bounded primitives and
+ * falls back to a linear scan for unbounded ones. See @ref space_partitioning.
+ *
+ * ---
+ *
+ * @section ss_loader SceneLoader
+ *
+ * **Source:** `src/SceneSystem/SceneLoader/SceneLoader.hpp`
+ *
+ * @ref RayTracer::SceneLoader bridges configuration parsing and scene construction.
+ *
+ * Members:
+ * - `_pluginManager` — reference to the @ref RayTracer::PluginManager registry
+ * - `_parser` — internal @ref RayTracer::Parser instance
+ *
+ * Key method:
+ * - `loadScene()` — parses the config file via @ref RayTracer::Parser, then walks the
+ *   resulting @ref RayTracer::Node tree: for each section (camera, primitives, lights)
+ *   it calls @ref RayTracer::PluginManager::getInitializer to construct the component
+ *   and populates a freshly-created @ref RayTracer::Scene. Returns
+ *   `std::unique_ptr<Scene>`.
+ *
+ * ---
+ *
+ * @section ss_parser Parser
+ *
+ * **Source:** `src/SceneSystem/ConfigParser/Parser.hpp`
+ *
+ * @ref RayTracer::Parser wraps libconfig++ and converts a `.cfg` scene file into a
+ * `Node` tree (see @ref plugin_system_page for the `Node` type definition).
+ *
+ * Members:
+ * - `_cfg` — `libconfig::Config`, the parsed libconfig object
+ * - `_root` — `libconfig::Setting*`, root of the config tree
+ * - `_node` — `NodePtr`, the converted `Node` tree
+ *
+ * Key methods:
+ * - `Parser(const std::string& filename)` — reads and parses the config file
+ * - `getValue(libconfig::Setting&, ScalarValue&)` — extracts a scalar from a setting
+ * - `insert_value(Object&, std::string, libconfig::Setting&)` — inserts a scalar field
+ * - `insert_vector_object(Object&, std::string, libconfig::Setting&)` — inserts an array
+ * - `parseSettings(libconfig::Setting&, Object&, std::string)` — recursive tree walk
+ *
+ * ---
+ *
+ * @section ss_helpers SceneNodeHelpers
+ *
+ * **Source:** `src/SceneSystem/SceneNodeHelpers/SceneNodeHelpers.hpp`
+ *
+ * Namespace `Raytracer` — template utility functions for extracting typed values from
+ * a `Node` tree.
+ *
+ * Primary function:
+ * - `fromNode<T>(NodePtr)` — converts a `Node` to type `T`
+ *
+ * Specializations provided for: `bool`, `double`, `float`, `int`, `std::string`,
+ * @ref Geometry::Point3D, @ref Geometry::Vector3D, @ref RayTracer::Color,
+ * `std::pair<int,int>`.
+ *
+ * Helper utilities:
+ * - `asObject(NodePtr)` — asserts the node holds an `Object` and returns it
+ * - `field(Object, name)` — extracts a required field by name; throws on missing key
+ * - `numericFromScalar(ScalarValue)` — coerces any numeric `ScalarValue` to `double`
+ * - `stringFromScalar(ScalarValue)` — extracts the `std::string` from a `ScalarValue`
+ *
+ * These helpers are used by every plugin constructor that reads its configuration from
+ * a `NodePtr`.
+ *
+ * ---
+ *
+ * @section ss_bvh Acceleration Structure
+ *
+ * See @subpage space_partitioning for the full BVH documentation.
+ */

@@ -1,0 +1,96 @@
+/**
+ * @page materials_page Materials
+ *
+ * **Source files:** `src/Objects/Plugins/CorePlugin/Materials/`
+ *
+ * Materials describe how a surface responds to light. Each material implements the
+ * @ref RayTracer::IMaterial interface, which models the full physically-based shading
+ * contract used during path tracing in @ref RayTracer::Camera::castRay.
+ *
+ * ---
+ *
+ * @section mat_brdf The BRDF Interface
+ *
+ * Four methods on @ref RayTracer::IMaterial drive the rendering equation:
+ *
+ * | Method | Purpose |
+ * |--------|---------|
+ * | `evaluate(normal, viewDir, lightDir)` | BRDF value at the surface — how much light is reflected from `lightDir` toward `viewDir` |
+ * | `sample(normal, viewDir)` | Deterministic outgoing direction for the next bounce — no random sampling |
+ * | `pdf(normal, viewDir, sampleDir)` | Probability density of `sampleDir` under `sample()` — weights the Monte Carlo estimator |
+ * | `emission()` | Radiance emitted by the surface itself — zero for non-emissive materials |
+ *
+ * The renderer calls `sample()` to get the next ray direction, then weights the
+ * accumulated radiance by `evaluate() / pdf()` before recursing.
+ *
+ * All standard materials inherit from @ref RayTracer::AMaterial which adds `_albedo`
+ * (@ref RayTracer::Color) as shared base state.
+ *
+ * ---
+ *
+ * @section mat_lambertian Lambertian
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Materials/Lambertian/Lambertian.hpp`
+ *
+ * @ref RayTracer::Lambertian is a perfectly diffuse material that scatters light
+ * uniformly in all directions of the upper hemisphere.
+ *
+ * - `evaluate()` — returns `albedo / π`, the cosine-weighted Lambertian BRDF
+ * - `sample()` — returns a deterministic direction sampled from a cosine-weighted lobe
+ *   aligned to the surface normal
+ * - `pdf()` — cosine-over-π consistent with the sampling strategy
+ * - `emission()` — zero (non-emissive)
+ *
+ * Suitable for matte, chalky, or unpolished surfaces.
+ *
+ * ---
+ *
+ * @section mat_phong Phong
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Materials/Phong/Phong.hpp`
+ *
+ * @ref RayTracer::Phong models specular highlights using the classic Phong reflection
+ * model combined with a diffuse base.
+ *
+ * Members:
+ * - `_shininess` — `float`, controls the width of the specular lobe (default: `32.0`)
+ *
+ * - `evaluate()` — combines Lambertian diffuse and specular `(R·V)^shininess` term
+ * - `sample()` — deterministic direction biased toward the specular reflection lobe
+ * - `pdf()` — density matching the sample strategy
+ * - `emission()` — zero
+ *
+ * Suitable for plastic, polished, or shiny surfaces with directional highlights.
+ *
+ * ---
+ *
+ * @section mat_glass Glass
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Materials/Glass/Glass.hpp`
+ *
+ * @ref RayTracer::Glass models a dielectric (refractive and reflective) material using
+ * Snell's law and the Fresnel equations.
+ *
+ * Members:
+ * - `_refractiveIndex` — `float`, ratio of indices of refraction (default: `1.5` for glass)
+ *
+ * - `evaluate()` — Fresnel-weighted combination of reflection and refraction
+ * - `sample()` — deterministic refraction or reflection direction based on the angle
+ *   of incidence and the refractive index
+ * - `pdf()` — density for the chosen transmission or reflection event
+ * - `emission()` — zero
+ *
+ * Total internal reflection is handled automatically: when the refraction angle exceeds
+ * the critical angle the material reflects rather than refracts.
+ *
+ * Suitable for glass spheres, water, or any transparent dielectric surface.
+ *
+ * ---
+ *
+ * @section mat_extending Extending with New Materials
+ *
+ * To add a new material:
+ * 1. Subclass @ref RayTracer::AMaterial (or directly @ref RayTracer::IMaterial).
+ * 2. Implement `evaluate()`, `sample()`, `pdf()`, and `emission()`.
+ * 3. Register the class in a plugin's initializer map. See @ref plugin_system_page.
+ */

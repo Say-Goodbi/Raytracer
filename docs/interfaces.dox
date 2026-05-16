@@ -1,0 +1,76 @@
+/**
+ * @page interfaces_page Output Interfaces
+ *
+ * **Source files:**
+ * - `src/Objects/Plugins/CorePlugin/Interfaces/SceneWriter/`
+ * - `src/Objects/Plugins/LivescenePlugin/Interfaces/Livescene/`
+ *
+ * Output interfaces implement @ref RayTracer::AInterface. They own the
+ * @ref RayTracer::ARenderer, invoke rendering, and handle all I/O — the renderer itself
+ * remains stateless and knows nothing about output.
+ *
+ * The `execute(Scene&, std::map<std::string, std::string>&)` method drives the complete
+ * render-output cycle. The parameter map carries command-line or config-level options
+ * (e.g. output filename).
+ *
+ * ---
+ *
+ * @section iface_scenewriter SceneWriter
+ *
+ * **Source:** `src/Objects/Plugins/CorePlugin/Interfaces/SceneWriter/SceneWriter.hpp`
+ *
+ * @ref RayTracer::SceneWriter renders a scene offline and writes the result to a PPM
+ * image file.
+ *
+ * Execution flow (`execute`):
+ * 1. Call @ref RayTracer::ARenderer::render to produce a 2D
+ *    `std::vector<std::vector<Color>>` framebuffer.
+ * 2. Open the output file (path taken from the parameter map).
+ * 3. Write the PPM P3 header (`P3`, width, height, max-value).
+ * 4. Iterate the framebuffer row by row, converting each @ref RayTracer::Color to
+ *    clamped 8-bit RGB and writing ASCII values.
+ *
+ * This is the simplest interface — single-threaded, no window, no interaction.
+ *
+ * ---
+ *
+ * @section iface_livescene Livescene
+ *
+ * **Source:** `src/Objects/Plugins/LivescenePlugin/Interfaces/Livescene/Livescene.hpp`
+ *
+ * @ref RayTracer::Livescene displays the rendered scene in a real-time SFML window
+ * with asynchronous background rendering.
+ *
+ * Members:
+ * - SFML window and texture objects for display
+ * - A @ref RayTracer::FrameBufferMutex -protected framebuffer shared between the render
+ *   thread and the display thread
+ *
+ * Key internal methods:
+ * - `renderSceneAsync()` — spawns a background thread that calls
+ *   @ref RayTracer::ARenderer::render and writes tiles into the shared framebuffer
+ * - `framebufferToTexture()` — converts the current framebuffer state into an SFML
+ *   texture for display, acquiring the mutex during the copy
+ * - `handleWindowEvents()` — processes the SFML event loop (close, resize, key input)
+ * - `displayFrame()` — draws the current texture to the window and calls `display()`
+ *
+ * Execution flow (`execute`):
+ * 1. Open an SFML window at the renderer's resolution.
+ * 2. Launch `renderSceneAsync()` in a background thread.
+ * 3. Enter the main loop: `handleWindowEvents()` → `framebufferToTexture()` →
+ *    `displayFrame()` until the window is closed.
+ * 4. Join the render thread on exit.
+ *
+ * The @ref RayTracer::FrameBufferMutex ensures that the render thread and display
+ * thread never access the framebuffer simultaneously. See @ref utils_page.
+ *
+ * ---
+ *
+ * @section iface_extending Extending with New Interfaces
+ *
+ * To add a new output backend (e.g. network streaming, game loop integration):
+ * 1. Subclass @ref RayTracer::AInterface.
+ * 2. Implement `execute(Scene&, params)` — call `_renderer->render()` and handle the
+ *    framebuffer as needed.
+ * 3. Register the class in a plugin's initializer map. See @ref plugin_system_page.
+ */
