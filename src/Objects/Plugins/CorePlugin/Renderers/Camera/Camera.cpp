@@ -109,33 +109,33 @@ namespace RayTracer
     }
 
     /**
-     * @brief Evaluate the rendering equation along a ray, deterministically.
+     * @brief Evaluate radiance along a ray using a two-branch shading model.
      *
-     * Implements the standard Monte Carlo path-tracing estimator:
+     * The branch is chosen by the material's PDF for its sampled direction:
+     *
+     * **Specular / glass branch** (`pdf ≈ 0`, delta BSDFs):
      * @code
-     *   L(x, ωo) = Le(x, ωo) + ∫ f(x, ωi, ωo) Li(x, ωi) cosθi dωi
+     *   L = Le + evaluate(ωi, ωo) * π * castRay(ωi)
      * @endcode
-     * but evaluates the integral at a **single deterministic direction** supplied
-     * by `IMaterial::sample()` instead of drawing a random sample.  The
-     * estimator is then:
+     * The bounce origin is offset by 1e-4 along `ωi` to avoid self-intersection.
+     *
+     * **Diffuse branch** (`pdf > 0`):
      * @code
-     *   L ≈ Le + f(ωi, ωo) * Li(ωi) * cosθi / pdf(ωi)
+     *   L = Le + evaluate(n, ωo, n) * π * Σ light->computeLight(hit)
      * @endcode
-     * This removes noise and makes rendering fully reproducible at the cost of
-     * variance reduction that random multi-sampling would otherwise provide.
+     * Incoming radiance comes from direct lighting only — no recursive bounce.
      *
      * Steps:
      * 1. Return black if the bounce budget is exhausted.
      * 2. Find the nearest primitive intersection; return black on miss.
-     * 3. Query the material for its emitted radiance (`Le`).
-     * 4. Ask the material for a deterministic bounce direction (`ωi`).
-     * 5. If `pdf(ωi) ≈ 0`, return only the emitted term (degenerate surface).
-     * 6. Recurse along `ωi` (with a small normal-bias offset to avoid
-     *    self-intersection) to get incoming radiance `Li`.
-     * 7. Combine: `Le + brdf * Li * cosθ / pdf`.
+     * 3. Query the material for emitted radiance (`Le`) and a bounce direction.
+     * 4. Compute `pdf` for that direction.
+     * 5. If `pdf < 1e-6` (specular/glass): recurse along the bounce direction.
+     * 6. Otherwise: accumulate direct light from every scene light.
+     * 7. Combine emitted + shaded term and return.
      *
      * @param ray   Incoming ray to evaluate.
-     * @param scene Scene containing all primitives.
+     * @param scene Scene containing all primitives and lights.
      * @param depth Remaining bounce budget; returns black when ≤ 0.
      * @return Radiance estimate along @p ray.
      */
