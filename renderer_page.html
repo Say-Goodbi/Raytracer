@@ -163,7 +163,7 @@ Path Tracing — castRay</h2>
 </ol>
 <h2><a class="anchor" id="rend_bvh"></a>
 BVH Integration</h2>
-<p>When <code>_useBVH = true</code>, <a class="el" href="classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187">RayTracer::Camera::render</a> calls <a class="el" href="classRayTracer_1_1Scene.html#a2d2ae74843e7fcd0b4d67123deae989f">RayTracer::Scene::prepareAccelerationStructure</a> before iterating pixels. Subsequent <code>castRay</code> calls query <a class="el" href="classRayTracer_1_1Scene.html#a67328ab35346b609ab3b7220fa08098c">RayTracer::Scene::hit</a>, which routes bounded primitives through the <a class="el" href="classRayTracer_1_1BVH.html">RayTracer::BVH</a> and unbounded ones through linear search.</p>
+<p>When <code>_useBVH = true</code>, <a class="el" href="classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187">RayTracer::Camera::render</a> calls <a class="el" href="classRayTracer_1_1Scene.html#a95fa63f62bcc5ebefabf3209eb5af01a">RayTracer::Scene::prepareAccelerationStructure</a> before iterating pixels. Subsequent <code>castRay</code> calls query <a class="el" href="classRayTracer_1_1Scene.html#a67328ab35346b609ab3b7220fa08098c">RayTracer::Scene::hit</a>, which routes bounded primitives through the <a class="el" href="classRayTracer_1_1BVH.html">RayTracer::BVH</a> and unbounded ones through linear search.</p>
 <p>See <a class="el" href="space_partitioning.html">Space Partitioning</a> for the full BVH documentation. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

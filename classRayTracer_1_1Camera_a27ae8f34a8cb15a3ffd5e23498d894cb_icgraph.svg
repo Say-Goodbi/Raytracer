@@ -50,7 +50,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" target="_top" xlink:title="Construct a camera from a 4x4 affine transform matrix.">
+<g id="a_Node000003"><a xlink:href="classRayTracer_1_1Camera.html#a502f05c3a82d9627f26300d71569ffad" target="_top" xlink:title="Construct a camera from a 4x4 affine transform matrix.">
 <polygon fill="white" stroke="#666666" points="115,-30 0,-30 0,0 115,0 115,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Camera::</text>
 <text text-anchor="middle" x="57.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Camera</text>

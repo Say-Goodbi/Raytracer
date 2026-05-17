@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="207,37,403,77"/>
 <area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="5,5,159,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,44,158,39,159,34,193,39"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="5,69,159,109"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a502f05c3a82d9627f26300d71569ffad" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="5,69,159,109"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,76,159,81,158,76,192,71"/>
 </map>

@@ -1,75 +1,61 @@
 <map id="Geometry::Point3D::Point3D" name="Geometry::Point3D::Point3D">
-<area shape="rect" id="Node000001" title=" " alt="" coords="959,663,1112,703"/>
-<area shape="rect" id="Node000002" href="$classGeometry_1_1Ray.html#ab2ee230ea6c5b866a94d7bfd57c98845" title="Compute a point at parameter t along the ray." alt="" coords="741,169,879,194"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1024,650,983,501,950,407,908,315,863,246,821,196,825,193,867,243,913,312,955,405,988,499,1029,649"/>
-<area shape="rect" id="Node000007" href="$classRayTracer_1_1BVH.html#a6d1f432f54cdd62367f622f22be4eb90" title=" " alt="" coords="226,355,389,381"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1021,651,1005,610,982,562,950,515,909,475,870,455,814,436,747,421,673,407,520,388,389,376,389,371,520,382,674,402,748,415,816,431,872,450,912,471,954,512,986,559,1010,608,1026,649"/>
-<area shape="rect" id="Node000009" href="$classRayTracer_1_1BVHCam.html#a343291f29df2a424797e29651a34dd34" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="712,541,908,581"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="998,656,957,625,909,596,882,584,884,579,912,591,960,620,1002,651"/>
-<area shape="rect" id="Node000012" href="$classRayTracer_1_1Camera.html#a27ae8f34a8cb15a3ffd5e23498d894cb" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="712,605,908,645"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="945,662,889,648,890,643,946,657"/>
-<area shape="rect" id="Node000015" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="479,764,633,804"/>
-<area shape="poly" id="edge15_Node000001_Node000015" title=" " alt="" coords="945,686,832,695,770,704,710,717,648,740,594,766,592,761,646,735,709,712,769,699,831,690,945,681"/>
-<area shape="rect" id="Node000017" href="$classGeometry_1_1AABB.html#ab0044437bd506a05e83b4fa2154112bd" title=" " alt="" coords="212,419,403,445"/>
-<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="1015,652,972,590,943,558,909,532,848,499,782,473,713,455,645,442,513,429,403,428,403,423,513,424,645,436,715,449,783,468,850,494,912,527,947,554,976,586,1019,649"/>
-<area shape="rect" id="Node000018" href="$classRayTracer_1_1DirectionalLight.html#a7170b3c9d9e2c2e697139f0dae68ab5b" title="Compute light contribution, shadow ray cast in opposite direction." alt="" coords="711,949,909,989"/>
-<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="1028,717,1013,764,990,822,957,881,936,908,912,933,884,951,881,947,909,929,932,905,952,878,985,819,1008,762,1023,715"/>
-<area shape="rect" id="Node000019" href="$classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20" title="Compute light contribution." alt="" coords="731,1013,889,1053"/>
-<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="1033,717,1022,778,1001,854,985,895,966,934,942,971,912,1003,891,1018,888,1014,909,999,937,967,961,931,981,892,996,853,1017,776,1028,716"/>
-<area shape="rect" id="Node000020" href="$namespaceRaytracer.html#a4804feabf04b641269bc1db2afd57459" title=" " alt="" coords="723,1077,897,1117"/>
-<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="1036,717,1029,789,1010,883,994,932,973,981,946,1027,913,1067,897,1079,893,1075,909,1063,942,1024,968,979,989,930,1005,881,1023,788,1030,716"/>
-<area shape="rect" id="Node000021" href="$classRayTracer_1_1BVHCam.html#a4a4e49d9f065cf0844d84706c340147f" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="476,892,636,932"/>
-<area shape="poly" id="edge23_Node000001_Node000021" title=" " alt="" coords="1027,717,1012,758,988,806,955,852,935,872,912,889,879,906,844,918,771,931,699,934,636,929,636,923,700,928,771,926,843,913,877,901,909,884,931,868,951,849,983,803,1007,756,1022,715"/>
-<area shape="rect" id="Node000023" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="479,828,633,868"/>
-<area shape="poly" id="edge25_Node000001_Node000023" title=" " alt="" coords="946,709,911,717,853,726,806,730,762,737,711,761,696,774,687,788,679,803,663,818,634,833,632,828,660,814,674,800,683,786,692,771,708,756,761,732,806,724,852,721,910,712,945,704"/>
-<area shape="rect" id="Node000024" href="$BVHCamPlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3" title=" " alt="" coords="755,1142,865,1167"/>
-<area shape="poly" id="edge27_Node000001_Node000024" title=" " alt="" coords="1032,717,1016,813,990,937,955,1054,935,1100,913,1131,891,1146,866,1154,865,1149,888,1141,909,1127,930,1097,950,1052,984,935,1010,812,1026,716"/>
-<area shape="rect" id="Node000025" href="$classGeometry_1_1TransformMatrix.html#a136a1573f63564d63426b89fcafeb21b" title=" " alt="" coords="709,835,911,875"/>
-<area shape="poly" id="edge28_Node000001_Node000025" title=" " alt="" coords="1016,716,972,771,944,800,912,825,889,837,887,832,909,820,940,796,968,768,1012,713"/>
-<area shape="rect" id="Node000026" href="$classGeometry_1_1Point3D.html#a59644f9fa320bfc8f33e3761fd7577b0" title=" " alt="" coords="733,69,887,109"/>
-<area shape="poly" id="edge31_Node000001_Node000026" title=" " alt="" coords="1032,649,1027,557,1011,429,995,359,974,288,945,220,909,158,884,132,854,112,857,107,887,127,913,154,950,218,979,287,1001,358,1016,428,1033,556,1037,648"/>
-<area shape="rect" id="Node000028" href="$classGeometry_1_1Point3D.html#a317d081effd79290e9d5e314ee335484" title=" " alt="" coords="733,5,887,45"/>
-<area shape="poly" id="edge34_Node000001_Node000028" title=" " alt="" coords="1029,649,1018,520,995,343,979,253,959,172,936,105,923,79,909,59,886,42,889,38,913,55,927,76,941,103,965,170,984,252,1001,342,1023,519,1034,648"/>
-<area shape="rect" id="Node000029" href="$classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0" title="Get a point on the rectangle at normalized coordinates (u, v)." alt="" coords="721,771,899,811"/>
-<area shape="poly" id="edge36_Node000001_Node000029" title=" " alt="" coords="991,712,912,754,868,773,866,768,910,750,988,707"/>
-<area shape="rect" id="Node000030" href="$classGeometry_1_1AABB.html#ad625c435b383175aae100d15fa0f3cca" title=" " alt="" coords="725,326,895,351"/>
-<area shape="poly" id="edge39_Node000001_Node000030" title=" " alt="" coords="1027,650,1015,592,993,520,958,445,936,410,909,379,889,364,866,354,868,349,892,360,912,375,940,407,963,442,998,518,1020,591,1032,649"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Cone.html#a19623c2790fd4ab917eb624508e57e5d" title="Test ray–cone intersection using the quadratic form of the cone equation." alt="" coords="480,218,632,243"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="731,199,623,221,622,215,730,194"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="469,70,643,95"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="774,164,722,136,660,109,623,98,624,93,662,104,724,131,777,159"/>
-<area shape="rect" id="Node000005" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title="Test ray–plane intersection using the algebraic plane equation." alt="" coords="479,119,633,145"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="730,169,622,147,623,142,731,163"/>
-<area shape="rect" id="Node000006" href="$classRayTracer_1_1Sphere.html#a40d439c5a658465a6eeef01f7679ecc9" title="Test ray intersection with this primitive." alt="" coords="474,169,638,194"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="727,184,638,184,638,179,727,179"/>
-<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="347,346,336,337,307,334,284,336,271,341,269,346,275,354,271,357,263,347,267,337,282,331,307,329,338,332,350,341"/>
-<area shape="rect" id="Node000008" href="$classRayTracer_1_1BVH.html#a68e74bb5f748dbf38d86eea0a21d2b76" title=" " alt="" coords="5,394,164,419"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="221,386,159,397,158,391,220,380"/>
-<area shape="rect" id="Node000010" href="$classRayTracer_1_1BVHCam.html#a1dadda5103abfe56bd9bd73729f8be3f" title="Construct a camera renderer." alt="" coords="476,484,636,524"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="707,541,636,525,637,519,708,536"/>
-<area shape="rect" id="Node000011" href="$classRayTracer_1_1BVHCam.html#a12c8b8553f66adaccedd88016dc89d1e" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="476,548,636,588"/>
-<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="698,567,636,569,636,563,698,562"/>
-<area shape="rect" id="Node000013" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="479,612,633,652"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="698,631,633,633,633,627,698,626"/>
-<area shape="rect" id="Node000014" href="$classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="479,676,633,716"/>
-<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="725,652,630,678,628,673,724,646"/>
-<area shape="poly" id="edge16_Node000015_Node000015" title=" " alt="" coords="598,752,583,745,556,743,532,745,518,749,512,755,515,763,510,764,507,754,515,745,531,739,556,737,585,740,601,747"/>
-<area shape="rect" id="Node000016" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="231,796,384,836"/>
-<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="466,798,384,809,384,804,465,793"/>
-<area shape="poly" id="edge19_Node000017_Node000008" title=" " alt="" coords="198,422,164,418,165,413,198,417"/>
-<area shape="rect" id="Node000022" href="$classRayTracer_1_1BVHCam.html#a26338649c825eb2ded1c9e4c9e889452" title="Render the scene into a 2D framebuffer." alt="" coords="227,892,387,932"/>
-<area shape="poly" id="edge24_Node000021_Node000022" title=" " alt="" coords="462,915,387,915,387,909,462,909"/>
-<area shape="poly" id="edge26_Node000023_Node000016" title=" " alt="" coords="465,839,384,828,384,823,466,834"/>
-<area shape="poly" id="edge29_Node000025_Node000021" title=" " alt="" coords="708,880,637,897,636,891,707,875"/>
-<area shape="poly" id="edge30_Node000025_Node000023" title=" " alt="" coords="695,854,633,853,633,847,696,849"/>
-<area shape="poly" id="edge33_Node000026_Node000004" title=" " alt="" coords="720,90,643,88,643,82,720,84"/>
-<area shape="rect" id="Node000027" href="$classRayTracer_1_1Sphere.html#a873777f6a7ae521b8e940f7b94c80fd8" title="Get the primitive&#39;s axis&#45;aligned bounds, if any. Unbounded primitives may return std::nullopt." alt="" coords="483,5,629,45"/>
-<area shape="poly" id="edge32_Node000026_Node000027" title=" " alt="" coords="720,69,629,46,630,41,721,64"/>
-<area shape="poly" id="edge35_Node000028_Node000027" title=" " alt="" coords="720,28,630,28,630,23,720,23"/>
-<area shape="poly" id="edge37_Node000029_Node000021" title=" " alt="" coords="721,819,711,825,696,839,688,853,679,868,663,882,637,895,635,891,660,878,675,864,683,850,692,835,708,821,718,814"/>
-<area shape="poly" id="edge38_Node000029_Node000023" title=" " alt="" coords="708,816,633,833,632,828,707,811"/>
-<area shape="poly" id="edge42_Node000030_Node000007" title=" " alt="" coords="748,325,686,313,611,303,531,300,451,309,385,331,332,358,329,353,383,326,450,304,531,295,612,298,687,308,749,320"/>
-<area shape="rect" id="Node000031" href="$classRayTracer_1_1BVH.html#ae7a593c0ee607404fdc95024f8a17fab" title=" " alt="" coords="451,319,661,359"/>
-<area shape="poly" id="edge40_Node000030_Node000031" title=" " alt="" coords="711,341,661,341,661,336,711,336"/>
-<area shape="poly" id="edge41_Node000031_Node000007" title=" " alt="" coords="437,355,389,361,389,356,436,350"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="959,492,1112,532"/>
+<area shape="rect" id="Node000002" href="$classGeometry_1_1Ray.html#ab2ee230ea6c5b866a94d7bfd57c98845" title="Compute a point at parameter t along the ray." alt="" coords="741,151,879,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1026,479,1012,423,990,354,956,281,934,246,909,215,882,194,851,179,853,174,884,189,913,211,938,243,960,278,995,352,1018,422,1031,478"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1BVH.html#a6d1f432f54cdd62367f622f22be4eb90" title=" " alt="" coords="226,299,389,325"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1021,480,1005,440,981,395,950,352,931,333,909,317,874,298,837,282,760,262,679,254,599,255,523,263,453,275,348,302,347,297,452,270,522,258,599,250,679,248,760,257,839,277,877,293,912,312,934,329,954,348,986,392,1010,438,1026,478"/>
+<area shape="rect" id="Node000008" href="$classRayTracer_1_1Camera.html#a27ae8f34a8cb15a3ffd5e23498d894cb" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="712,435,908,475"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="945,492,889,477,890,472,946,487"/>
+<area shape="rect" id="Node000011" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="479,587,633,627"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="945,516,832,525,770,534,710,547,650,566,598,589,596,584,649,561,709,541,769,529,831,520,944,511"/>
+<area shape="rect" id="Node000013" href="$classGeometry_1_1AABB.html#ab0044437bd506a05e83b4fa2154112bd" title=" " alt="" coords="212,381,403,406"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="1002,485,960,452,936,437,910,425,844,406,776,392,707,383,638,378,510,378,403,384,403,379,509,372,638,373,707,378,777,387,845,401,912,420,938,432,963,447,1006,480"/>
+<area shape="rect" id="Node000014" href="$classRayTracer_1_1DirectionalLight.html#a7170b3c9d9e2c2e697139f0dae68ab5b" title="Compute light contribution, shadow ray cast in opposite direction." alt="" coords="711,728,909,768"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="1025,546,1008,585,984,632,952,678,912,718,893,730,890,726,909,714,948,675,979,629,1004,583,1020,544"/>
+<area shape="rect" id="Node000015" href="$classRayTracer_1_1PointLight.html#a4fdb35dd47674e655119b54c30b48b20" title="Compute light contribution." alt="" coords="731,792,889,832"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="1030,546,1017,598,994,661,960,726,938,756,912,782,891,796,888,792,909,778,934,752,955,723,989,659,1012,596,1025,545"/>
+<area shape="rect" id="Node000016" href="$namespaceRaytracer.html#a4804feabf04b641269bc1db2afd57459" title=" " alt="" coords="723,856,897,896"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="1034,546,1024,609,1003,690,987,732,967,773,943,812,912,846,896,858,893,854,909,842,938,809,963,771,982,730,998,688,1019,608,1028,545"/>
+<area shape="rect" id="Node000017" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="479,651,633,691"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="946,538,911,547,853,556,807,560,763,568,711,590,696,602,687,614,678,628,663,641,634,655,632,650,660,636,674,624,683,611,692,598,708,586,761,563,806,554,853,551,910,541,945,533"/>
+<area shape="rect" id="Node000018" href="$CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3" title=" " alt="" coords="755,921,865,946"/>
+<area shape="poly" id="edge21_Node000001_Node000018" title=" " alt="" coords="1037,546,1031,621,1013,719,998,771,976,822,948,869,912,910,891,924,867,932,865,927,889,919,909,906,944,866,971,819,993,769,1008,718,1026,621,1031,546"/>
+<area shape="rect" id="Node000019" href="$classGeometry_1_1TransformMatrix.html#a136a1573f63564d63426b89fcafeb21b" title=" " alt="" coords="709,600,911,640"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="991,541,912,584,868,602,866,597,910,579,988,537"/>
+<area shape="rect" id="Node000020" href="$classGeometry_1_1Point3D.html#a59644f9fa320bfc8f33e3761fd7577b0" title=" " alt="" coords="733,69,887,109"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="1029,479,1019,410,999,321,983,273,963,226,939,181,909,140,891,124,869,112,872,107,894,120,913,137,943,178,968,224,988,271,1004,319,1025,409,1034,478"/>
+<area shape="rect" id="Node000022" href="$classGeometry_1_1Point3D.html#a317d081effd79290e9d5e314ee335484" title=" " alt="" coords="733,5,887,45"/>
+<area shape="poly" id="edge27_Node000001_Node000022" title=" " alt="" coords="1032,478,1029,394,1024,340,1014,282,998,222,976,163,947,108,909,59,886,43,889,39,913,55,951,105,981,161,1003,221,1019,281,1029,340,1035,394,1038,478"/>
+<area shape="rect" id="Node000023" href="$classGeometry_1_1Rectangle3D.html#a2b17f489ad6e57c131dc0e1c8ac2f1a0" title="Get a point on the rectangle at normalized coordinates (u, v)." alt="" coords="721,664,899,704"/>
+<area shape="poly" id="edge29_Node000001_Node000023" title=" " alt="" coords="1016,545,972,601,944,629,912,654,889,666,887,662,909,650,940,625,968,597,1012,542"/>
+<area shape="rect" id="Node000024" href="$classGeometry_1_1AABB.html#ad625c435b383175aae100d15fa0f3cca" title=" " alt="" coords="725,327,895,353"/>
+<area shape="poly" id="edge31_Node000001_Node000024" title=" " alt="" coords="1010,482,966,431,939,404,909,381,883,366,855,355,857,350,885,361,912,376,942,400,970,427,1014,479"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="469,70,643,95"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="766,148,661,109,619,98,620,93,662,104,768,143"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title="Test ray–plane intersection using the algebraic plane equation." alt="" coords="479,119,633,145"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="727,156,633,144,634,139,727,151"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1Sphere.html#a40d439c5a658465a6eeef01f7679ecc9" title="Test ray intersection with this primitive." alt="" coords="474,169,638,194"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="727,172,639,178,638,173,727,167"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="347,290,336,281,307,278,284,280,271,285,269,290,275,298,271,301,263,291,267,281,282,275,307,273,338,276,350,285"/>
+<area shape="rect" id="Node000007" href="$classRayTracer_1_1BVH.html#a68e74bb5f748dbf38d86eea0a21d2b76" title=" " alt="" coords="5,353,164,378"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="241,331,139,355,138,350,240,325"/>
+<area shape="rect" id="Node000009" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="479,435,633,475"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="698,457,633,457,633,452,698,452"/>
+<area shape="rect" id="Node000010" href="$classRayTracer_1_1Camera.html#a502f05c3a82d9627f26300d71569ffad" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="479,499,633,539"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="717,481,634,502,632,497,716,476"/>
+<area shape="poly" id="edge12_Node000011_Node000011" title=" " alt="" coords="598,575,583,568,556,565,532,567,518,572,512,578,515,586,510,587,507,577,515,568,531,562,556,560,585,563,601,570"/>
+<area shape="rect" id="Node000012" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="231,619,384,659"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="466,621,384,632,384,626,465,616"/>
+<area shape="poly" id="edge15_Node000013_Node000007" title=" " alt="" coords="198,382,164,378,165,373,198,377"/>
+<area shape="poly" id="edge20_Node000017_Node000012" title=" " alt="" coords="465,662,384,651,384,646,466,656"/>
+<area shape="poly" id="edge23_Node000019_Node000017" title=" " alt="" coords="697,645,633,658,632,653,696,640"/>
+<area shape="poly" id="edge26_Node000020_Node000003" title=" " alt="" coords="720,90,643,88,643,82,720,84"/>
+<area shape="rect" id="Node000021" href="$classRayTracer_1_1Sphere.html#a873777f6a7ae521b8e940f7b94c80fd8" title="Get the primitive&#39;s axis&#45;aligned bounds, if any. Unbounded primitives may return std::nullopt." alt="" coords="483,5,629,45"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="720,69,629,46,630,41,721,64"/>
+<area shape="poly" id="edge28_Node000022_Node000021" title=" " alt="" coords="720,28,630,28,630,23,720,23"/>
+<area shape="poly" id="edge30_Node000023_Node000017" title=" " alt="" coords="708,681,633,677,633,672,708,676"/>
+<area shape="poly" id="edge34_Node000024_Node000006" title=" " alt="" coords="748,327,661,311,589,305,517,304,389,308,389,303,517,299,590,300,662,305,749,321"/>
+<area shape="rect" id="Node000025" href="$classRayTracer_1_1BVH.html#ae7a593c0ee607404fdc95024f8a17fab" title=" " alt="" coords="451,320,661,360"/>
+<area shape="poly" id="edge32_Node000024_Node000025" title=" " alt="" coords="711,343,661,343,661,337,711,337"/>
+<area shape="poly" id="edge33_Node000025_Node000006" title=" " alt="" coords="436,329,389,324,389,318,437,324"/>
 </map>

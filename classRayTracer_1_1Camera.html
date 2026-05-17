@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('classRayTracer_1_1Camera.html',''); in
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera__inherit__graph.svg" width="224" height="510"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera__inherit__graph.svg" width="224" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for RayTracer::Camera:</div>
@@ -123,9 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa88a1643d3067605407808bf3a5c14d4" id="r_aa88a1643d3067605407808bf3a5c14d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4">Camera</a> (<a class="el" href="classGeometry_1_1Point3D.html">Geometry::Point3D</a> pos, <a class="el" href="classGeometry_1_1Vector3D.html">Geometry::Vector3D</a> direction, float fov, int width=800, int height=600)</td></tr>
 <tr class="memdesc:aa88a1643d3067605407808bf3a5c14d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a camera renderer.  <br /></td></tr>
 <tr class="separator:aa88a1643d3067605407808bf3a5c14d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adebcfa0c259280f3d4bcf037fa2192b8" id="r_adebcfa0c259280f3d4bcf037fa2192b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8">Camera</a> (<a class="el" href="classGeometry_1_1TransformMatrix.html">Geometry::TransformMatrix</a> transform, float fov, int width=800, int height=600)</td></tr>
-<tr class="memdesc:adebcfa0c259280f3d4bcf037fa2192b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a camera from a 4x4 affine transform matrix.  <br /></td></tr>
-<tr class="separator:adebcfa0c259280f3d4bcf037fa2192b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502f05c3a82d9627f26300d71569ffad" id="r_a502f05c3a82d9627f26300d71569ffad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a502f05c3a82d9627f26300d71569ffad">Camera</a> (<a class="el" href="classGeometry_1_1TransformMatrix.html">Geometry::TransformMatrix</a> transform, float fov, int width=800, int height=600, bool useBVH=false)</td></tr>
+<tr class="memdesc:a502f05c3a82d9627f26300d71569ffad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a camera from a 4x4 affine transform matrix.  <br /></td></tr>
+<tr class="separator:a502f05c3a82d9627f26300d71569ffad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a985a4622654cd8ff6379cd2ae288250e" id="r_a985a4622654cd8ff6379cd2ae288250e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a985a4622654cd8ff6379cd2ae288250e">~Camera</a> ()=default</td></tr>
 <tr class="separator:a985a4622654cd8ff6379cd2ae288250e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7f4b6a0e5bf44d17162fb324c289bd" id="r_a4a7f4b6a0e5bf44d17162fb324c289bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd">generateRay</a> (double u, double v)</td></tr>
@@ -170,6 +170,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:afd030b5ff9d29c786fbcf725de67085f" id="r_afd030b5ff9d29c786fbcf725de67085f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#afd030b5ff9d29c786fbcf725de67085f">_fov</a></td></tr>
 <tr class="memdesc:afd030b5ff9d29c786fbcf725de67085f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field of view in degrees.  <br /></td></tr>
 <tr class="separator:afd030b5ff9d29c786fbcf725de67085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe07071acb44d6a8eef1b0116945a831" id="r_abe07071acb44d6a8eef1b0116945a831"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#abe07071acb44d6a8eef1b0116945a831">_useBVH</a></td></tr>
+<tr class="memdesc:abe07071acb44d6a8eef1b0116945a831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to accelerate primitive hits with a <a class="el" href="classRayTracer_1_1BVH.html">BVH</a>.  <br /></td></tr>
+<tr class="separator:abe07071acb44d6a8eef1b0116945a831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a825cc6f2b9d15e5b1ee67a7e23d866e8" id="r_a825cc6f2b9d15e5b1ee67a7e23d866e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Camera.html#a825cc6f2b9d15e5b1ee67a7e23d866e8">_maxDepth</a> = 8</td></tr>
 <tr class="memdesc:a825cc6f2b9d15e5b1ee67a7e23d866e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of recursive ray bounces before the path is terminated.  <br /></td></tr>
 <tr class="separator:a825cc6f2b9d15e5b1ee67a7e23d866e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,8 +268,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="adebcfa0c259280f3d4bcf037fa2192b8" name="adebcfa0c259280f3d4bcf037fa2192b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adebcfa0c259280f3d4bcf037fa2192b8">&#9670;&#160;</a></span>Camera() <span class="overload">[2/2]</span></h2>
+<a id="a502f05c3a82d9627f26300d71569ffad" name="a502f05c3a82d9627f26300d71569ffad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502f05c3a82d9627f26300d71569ffad">&#9670;&#160;</a></span>Camera() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +296,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em> = <code>600</code>&#160;</td>
+          <td class="paramname"><em>height</em> = <code>600</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useBVH</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -317,7 +326,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_adebcfa0c259280f3d4bcf037fa2192b8_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Camera_a502f05c3a82d9627f26300d71569ffad_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -669,7 +678,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Maximum number of recursive ray bounces before the path is terminated. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00049">49</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00051">51</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -721,7 +730,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Side length of the per-pixel stratified sample grid (total samples = _sqrtSamples²). </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00051">51</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00053">53</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -748,6 +757,32 @@ Additional Inherited Members</h2></td></tr>
 <p><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> transform (world-space): encodes position + orientation. </p>
 
 <p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00043">43</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abe07071acb44d6a8eef1b0116945a831" name="abe07071acb44d6a8eef1b0116945a831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe07071acb44d6a8eef1b0116945a831">&#9670;&#160;</a></span>_useBVH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RayTracer::Camera::_useBVH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether to accelerate primitive hits with a <a class="el" href="classRayTracer_1_1BVH.html">BVH</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00049">49</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>

@@ -103,123 +103,129 @@ $(document).ready(function(){initNavTree('Livescene_8cpp_source.html',''); initR
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&quot;../../../../../Utils/Color.hpp&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">algorithm</span><span class="preprocessor">&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">chrono</span><span class="preprocessor">&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">constexpr</span> std::chrono::milliseconds kFramePollDelay{32};</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceRayTracer.html">RayTracer</a></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#aa3cf3e70ee5a6163dfdba5eccb5987fe">   14</a></span>    <span class="keywordtype">void</span> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#aa3cf3e70ee5a6163dfdba5eccb5987fe">renderSceneAsync</a>(<a class="code hl_class" href="classRayTracer_1_1Scene.html">Scene</a>&amp; scene,</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        std::shared_ptr&lt;FrameBuffer&gt; frameBuffer,</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        std::shared_ptr&lt;std::exception_ptr&gt; error)</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0">_renderer</a> == <span class="keywordtype">nullptr</span>)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                <span class="keywordflow">throw</span> RayTracer::Exception(<span class="stringliteral">&quot;Livescene renderer is not attached.&quot;</span>);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_variable" href="classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0">_renderer</a>-&gt;render(scene, *frameBuffer);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            *error = std::current_exception();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        }</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">   27</a></span>    <a class="code hl_function" href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">sf</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">Texture</a> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">framebufferToTexture</a>(<span class="keyword">const</span> FrameBuffer&amp; frameBuffer)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        sf::Texture texture;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">if</span> (frameBuffer.empty() || frameBuffer[0].empty())</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keywordflow">return</span> texture;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width = <span class="keyword">static_cast</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt;(frameBuffer[0].size());</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height = <span class="keyword">static_cast</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt;(frameBuffer.size());</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        sf::Image image;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        image.create(width, height, sf::Color::Black);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y = 0; y &lt; height; ++y) {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x = 0; x &lt; width; ++x) {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structRayTracer_1_1Color.html">Color</a>&amp; color = frameBuffer[y][x];</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keyword">const</span> sf::Uint8 red = <span class="keyword">static_cast</span>&lt;sf::Uint8&gt;(std::clamp(color.r, 0.0, 1.0) * 255.0);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keyword">const</span> sf::Uint8 green = <span class="keyword">static_cast</span>&lt;sf::Uint8&gt;(std::clamp(color.g, 0.0, 1.0) * 255.0);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keyword">const</span> sf::Uint8 blue = <span class="keyword">static_cast</span>&lt;sf::Uint8&gt;(std::clamp(color.b, 0.0, 1.0) * 255.0);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                image.setPixel(x, y, sf::Color(red, green, blue));</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        texture.loadFromImage(image);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> texture;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#a2cc2fd1f9e3892ebd6985182089494b4">   53</a></span>    <span class="keywordtype">void</span> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#a2cc2fd1f9e3892ebd6985182089494b4">handleWindowEvents</a>(sf::RenderWindow&amp; window)</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        sf::Event event;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">while</span> (window.pollEvent(event)) {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">if</span> (event.type == sf::Event::Closed)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                window.close();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span> (event.type == sf::Event::KeyPressed &amp;&amp;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                (event.key.code == sf::Keyboard::Q || event.key.code == sf::Keyboard::Escape))</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                window.close();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#ae30cec23d0face3195c3be440aa0c875">   65</a></span>    <span class="keywordtype">void</span> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#ae30cec23d0face3195c3be440aa0c875">displayFrame</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> sf::Texture&amp; texture)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        sf::Sprite sprite(texture);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keyword">const</span> sf::Vector2u size = window.getSize();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keyword">const</span> sf::Vector2u textureSize = texture.getSize();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">if</span> (textureSize.x &gt; 0 &amp;&amp; textureSize.y &gt; 0) {</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            sprite.setScale(</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(size.x) / <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(textureSize.x),</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(size.y) / <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(textureSize.y));</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        window.clear(sf::Color::Black);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        window.draw(sprite);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        window.display();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">/// @todo Add a way to signal the render thread to stop early when the window is closed, to avoid unnecessary work and issues with detached threads. Early termination currently results in a segmentation fault.</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#abfe59ac0e3070057dcc961dd5b4b0c82">   83</a></span>    <span class="keywordtype">void</span> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#abfe59ac0e3070057dcc961dd5b4b0c82">execute</a>(<a class="code hl_class" href="classRayTracer_1_1Scene.html">Scene</a>&amp; scene, std::map&lt;std::string, std::string&gt; &amp;parameters)</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0">_renderer</a> == <span class="keywordtype">nullptr</span>)</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">throw</span> RayTracer::Exception(<span class="stringliteral">&quot;Livescene renderer is not attached.&quot;</span>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keyword">auto</span> frameBuffer = std::make_shared&lt;FrameBuffer&gt;();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keyword">auto</span> renderError = std::make_shared&lt;std::exception_ptr&gt;();</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        std::thread renderThread(&amp;Livescene::renderSceneAsync, <span class="keyword">this</span>,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            std::ref(scene), frameBuffer, renderError);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        pthread_t renderThreadHandle = renderThread.native_handle();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        renderThread.detach();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        sf::RenderWindow window(</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            sf::VideoMode(_renderer-&gt;getWidth(), _renderer-&gt;getHeight()),</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="stringliteral">&quot;LiveScene&quot;</span>,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            sf::Style::Titlebar | sf::Style::Close);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        window.setVerticalSyncEnabled(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        sf::Texture texture;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">while</span> (window.isOpen()) {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            handleWindowEvents(window);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            texture = framebufferToTexture(*frameBuffer);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            displayFrame(window, texture);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            std::this_thread::sleep_for(kFramePollDelay);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        std::this_thread::sleep_for(kFramePollDelay);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        pthread_cancel(renderThreadHandle);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span> (*renderError)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            std::rethrow_exception(*renderError);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>} <span class="comment">// namespace RayTracer</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">cstdint</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#</span><span class="preprocessor">include</span> <span class="preprocessor">&lt;</span><span class="preprocessor">optional</span><span class="preprocessor">&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">constexpr</span> std::chrono::milliseconds kFramePollDelay{32};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace</span> <a class="code hl_namespace" href="namespaceRayTracer.html">RayTracer</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#aa3cf3e70ee5a6163dfdba5eccb5987fe">   16</a></span>    <span class="keywordtype">void</span> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#aa3cf3e70ee5a6163dfdba5eccb5987fe">renderSceneAsync</a>(<a class="code hl_class" href="classRayTracer_1_1Scene.html">Scene</a>&amp; scene,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        std::shared_ptr&lt;FrameBuffer&gt; frameBuffer,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        std::shared_ptr&lt;std::exception_ptr&gt; error)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0">_renderer</a> == <span class="keywordtype">nullptr</span>)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <span class="keywordflow">throw</span> RayTracer::Exception(<span class="stringliteral">&quot;Livescene renderer is not attached.&quot;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <a class="code hl_variable" href="classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0">_renderer</a>-&gt;render(scene, *frameBuffer);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            *error = std::current_exception();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">   29</a></span>    <a class="code hl_function" href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">sf</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">Texture</a> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">framebufferToTexture</a>(<span class="keyword">const</span> FrameBuffer&amp; frameBuffer)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        sf::Texture texture;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">if</span> (frameBuffer.empty() || frameBuffer[0].empty())</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">return</span> texture;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width = <span class="keyword">static_cast</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt;(frameBuffer[0].size());</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height = <span class="keyword">static_cast</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt;(frameBuffer.size());</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        sf::Image image;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        image.resize(sf::Vector2u(width, height), sf::Color::Black);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y = 0; y &lt; height; ++y) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x = 0; x &lt; width; ++x) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structRayTracer_1_1Color.html">Color</a>&amp; color = frameBuffer[y][x];</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <span class="keyword">const</span> std::uint8_t red = <span class="keyword">static_cast</span>&lt;std::uint8_t&gt;(std::clamp(color<a class="code hl_variable" href="structRayTracer_1_1Color.html#a743e525cffb3a3a3b63267b76b615432">.</a><a class="code hl_variable" href="structRayTracer_1_1Color.html#a743e525cffb3a3a3b63267b76b615432">r</a>, 0.0, 1.0) * 255.0);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keyword">const</span> std::uint8_t green = <span class="keyword">static_cast</span>&lt;std::uint8_t&gt;(std::clamp(color<a class="code hl_variable" href="structRayTracer_1_1Color.html#a2867dd8ad913426dfa277ffb141241dc">.</a><a class="code hl_variable" href="structRayTracer_1_1Color.html#a2867dd8ad913426dfa277ffb141241dc">g</a>, 0.0, 1.0) * 255.0);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="keyword">const</span> std::uint8_t blue = <span class="keyword">static_cast</span>&lt;std::uint8_t&gt;(std::clamp(color<a class="code hl_variable" href="structRayTracer_1_1Color.html#ac6ad4511d2e9abc6bcbb5401532702ae">.</a><a class="code hl_variable" href="structRayTracer_1_1Color.html#ac6ad4511d2e9abc6bcbb5401532702ae">b</a>, 0.0, 1.0) * 255.0);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                image.setPixel(sf::Vector2u(x, y), sf::Color(red, green, blue));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span> (!texture.loadFromImage(image))</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">return</span> texture;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> texture;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#a2cc2fd1f9e3892ebd6985182089494b4">   56</a></span>    <span class="keywordtype">void</span> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#a2cc2fd1f9e3892ebd6985182089494b4">handleWindowEvents</a>(sf::RenderWindow&amp; window)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">while</span> (<span class="keyword">const</span> std::optional event = window.pollEvent()) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span> (event-&gt;is&lt;sf::Event::Closed&gt;())</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                window.close();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">if</span> (event-&gt;is&lt;sf::Event::KeyPressed&gt;() &amp;&amp;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                (event-&gt;getIf&lt;sf::Event::KeyPressed&gt;()-&gt;code == sf::Keyboard::Key::Q ||</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    event-&gt;getIf&lt;sf::Event::KeyPressed&gt;()-&gt;code == sf::Keyboard::Key::Escape))</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                window.close();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#ae30cec23d0face3195c3be440aa0c875">   68</a></span>    <span class="keywordtype">void</span> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#ae30cec23d0face3195c3be440aa0c875">displayFrame</a>(sf::RenderWindow&amp; window, <span class="keyword">const</span> sf::Texture&amp; texture)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        sf::Sprite sprite(texture);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keyword">const</span> sf::Vector2u size = window.getSize();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keyword">const</span> sf::Vector2u textureSize = texture.getSize();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">if</span> (textureSize.x &gt; 0 &amp;&amp; textureSize.y &gt; 0) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            sprite.setScale(sf::Vector2f(</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(size.x) / <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(textureSize.x),</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(size.y) / <span class="keyword">static_cast</span>&lt;<span class="keywordtype">float</span>&gt;(textureSize.y)));</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        window.clear(sf::Color::Black);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        window.draw(sprite);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        window.display();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">/// @todo Add a way to signal the render thread to stop early when the window is closed, to avoid unnecessary work and issues with detached threads. Early termination currently results in a segmentation fault.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classRayTracer_1_1Livescene.html#abfe59ac0e3070057dcc961dd5b4b0c82">   86</a></span>    <span class="keywordtype">void</span> <a class="code hl_class" href="classRayTracer_1_1Livescene.html">Livescene</a>::<a class="code hl_function" href="classRayTracer_1_1Livescene.html#abfe59ac0e3070057dcc961dd5b4b0c82">execute</a>(<a class="code hl_class" href="classRayTracer_1_1Scene.html">Scene</a>&amp; scene, std::map&lt;std::string, std::string&gt; &amp;parameters)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0">_renderer</a> == <span class="keywordtype">nullptr</span>)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">throw</span> RayTracer::Exception(<span class="stringliteral">&quot;Livescene renderer is not attached.&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keyword">auto</span> frameBuffer = std::make_shared&lt;FrameBuffer&gt;();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keyword">auto</span> renderError = std::make_shared&lt;std::exception_ptr&gt;();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        std::thread renderThread(&amp;Livescene::renderSceneAsync, <span class="keyword">this</span>,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            std::ref(scene), frameBuffer, renderError);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        pthread_t renderThreadHandle = renderThread.native_handle();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        renderThread.detach();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        sf::RenderWindow window(</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            sf::VideoMode(sf::Vector2u(<span class="keyword">static_cast</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt;(_renderer-&gt;getWidth()), <span class="keyword">static_cast</span>&lt;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&gt;(_renderer-&gt;getHeight()))),</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="stringliteral">&quot;LiveScene&quot;</span>,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            sf::Style::Titlebar | sf::Style::Close);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        window.setVerticalSyncEnabled(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        sf::Texture texture;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordflow">while</span> (window.isOpen()) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            handleWindowEvents(window);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            texture = framebufferToTexture(*frameBuffer);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            displayFrame(window, texture);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            std::this_thread::sleep_for(kFramePollDelay);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        std::this_thread::sleep_for(kFramePollDelay);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        pthread_cancel(renderThreadHandle);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">if</span> (*renderError)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            std::rethrow_exception(*renderError);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>} <span class="comment">// namespace RayTracer</span></div>
 <div class="ttc" id="aclassRayTracer_1_1AInterface_html_a7469370177c3dabca78862c9a3e18ef0"><div class="ttname"><a href="classRayTracer_1_1AInterface.html#a7469370177c3dabca78862c9a3e18ef0">RayTracer::AInterface::_renderer</a></div><div class="ttdeci">ARenderer * _renderer</div><div class="ttdoc">Owned renderer instance.</div><div class="ttdef"><b>Definition</b> <a href="AInterface_8hpp_source.html#l00013">AInterface.hpp:13</a></div></div>
 <div class="ttc" id="aclassRayTracer_1_1Livescene_html"><div class="ttname"><a href="classRayTracer_1_1Livescene.html">RayTracer::Livescene</a></div><div class="ttdoc">Concrete interface implementation that renders a scene in an SFML window.</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8hpp_source.html#l00010">Livescene.hpp:11</a></div></div>
-<div class="ttc" id="aclassRayTracer_1_1Livescene_html_a2cc2fd1f9e3892ebd6985182089494b4"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#a2cc2fd1f9e3892ebd6985182089494b4">RayTracer::Livescene::handleWindowEvents</a></div><div class="ttdeci">void handleWindowEvents(sf::RenderWindow &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00053">Livescene.cpp:53</a></div></div>
-<div class="ttc" id="aclassRayTracer_1_1Livescene_html_a5c0de30d1a6c391b3042c13dbb80c56c"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">RayTracer::Livescene::framebufferToTexture</a></div><div class="ttdeci">sf::Texture framebufferToTexture(const FrameBuffer &amp;frameBuffer)</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00027">Livescene.cpp:27</a></div></div>
-<div class="ttc" id="aclassRayTracer_1_1Livescene_html_aa3cf3e70ee5a6163dfdba5eccb5987fe"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#aa3cf3e70ee5a6163dfdba5eccb5987fe">RayTracer::Livescene::renderSceneAsync</a></div><div class="ttdeci">void renderSceneAsync(Scene &amp;scene, std::shared_ptr&lt; FrameBuffer &gt; frameBuffer, std::shared_ptr&lt; std::exception_ptr &gt; error)</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00014">Livescene.cpp:14</a></div></div>
-<div class="ttc" id="aclassRayTracer_1_1Livescene_html_abfe59ac0e3070057dcc961dd5b4b0c82"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#abfe59ac0e3070057dcc961dd5b4b0c82">RayTracer::Livescene::execute</a></div><div class="ttdeci">void execute(Scene &amp;scene, std::map&lt; std::string, std::string &gt; &amp;parameters) override</div><div class="ttdoc">Render the scene (and the image build) and in a SFML graphical window.</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00083">Livescene.cpp:83</a></div></div>
-<div class="ttc" id="aclassRayTracer_1_1Livescene_html_ae30cec23d0face3195c3be440aa0c875"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#ae30cec23d0face3195c3be440aa0c875">RayTracer::Livescene::displayFrame</a></div><div class="ttdeci">void displayFrame(sf::RenderWindow &amp;window, const sf::Texture &amp;texture)</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00065">Livescene.cpp:65</a></div></div>
-<div class="ttc" id="aclassRayTracer_1_1Scene_html"><div class="ttname"><a href="classRayTracer_1_1Scene.html">RayTracer::Scene</a></div><div class="ttdoc">Represents a scene containing a camera, primitives, and lights.</div><div class="ttdef"><b>Definition</b> <a href="Scene_8hpp_source.html#l00023">Scene.hpp:24</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Livescene_html_a2cc2fd1f9e3892ebd6985182089494b4"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#a2cc2fd1f9e3892ebd6985182089494b4">RayTracer::Livescene::handleWindowEvents</a></div><div class="ttdeci">void handleWindowEvents(sf::RenderWindow &amp;window)</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00056">Livescene.cpp:56</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Livescene_html_a5c0de30d1a6c391b3042c13dbb80c56c"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#a5c0de30d1a6c391b3042c13dbb80c56c">RayTracer::Livescene::framebufferToTexture</a></div><div class="ttdeci">sf::Texture framebufferToTexture(const FrameBuffer &amp;frameBuffer)</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00029">Livescene.cpp:29</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Livescene_html_aa3cf3e70ee5a6163dfdba5eccb5987fe"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#aa3cf3e70ee5a6163dfdba5eccb5987fe">RayTracer::Livescene::renderSceneAsync</a></div><div class="ttdeci">void renderSceneAsync(Scene &amp;scene, std::shared_ptr&lt; FrameBuffer &gt; frameBuffer, std::shared_ptr&lt; std::exception_ptr &gt; error)</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00016">Livescene.cpp:16</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Livescene_html_abfe59ac0e3070057dcc961dd5b4b0c82"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#abfe59ac0e3070057dcc961dd5b4b0c82">RayTracer::Livescene::execute</a></div><div class="ttdeci">void execute(Scene &amp;scene, std::map&lt; std::string, std::string &gt; &amp;parameters) override</div><div class="ttdoc">Render the scene (and the image build) and in a SFML graphical window.</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00086">Livescene.cpp:86</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Livescene_html_ae30cec23d0face3195c3be440aa0c875"><div class="ttname"><a href="classRayTracer_1_1Livescene.html#ae30cec23d0face3195c3be440aa0c875">RayTracer::Livescene::displayFrame</a></div><div class="ttdeci">void displayFrame(sf::RenderWindow &amp;window, const sf::Texture &amp;texture)</div><div class="ttdef"><b>Definition</b> <a href="Livescene_8cpp_source.html#l00068">Livescene.cpp:68</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Scene_html"><div class="ttname"><a href="classRayTracer_1_1Scene.html">RayTracer::Scene</a></div><div class="ttdoc">Represents a scene containing a camera, primitives, and lights.</div><div class="ttdef"><b>Definition</b> <a href="Scene_8hpp_source.html#l00022">Scene.hpp:23</a></div></div>
 <div class="ttc" id="anamespaceRayTracer_html"><div class="ttname"><a href="namespaceRayTracer.html">RayTracer</a></div><div class="ttdef"><b>Definition</b> <a href="RaytracerException_8hpp_source.html#l00007">RaytracerException.hpp:8</a></div></div>
 <div class="ttc" id="astructRayTracer_1_1Color_html"><div class="ttname"><a href="structRayTracer_1_1Color.html">RayTracer::Color</a></div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00005">Color.hpp:6</a></div></div>
+<div class="ttc" id="astructRayTracer_1_1Color_html_a2867dd8ad913426dfa277ffb141241dc"><div class="ttname"><a href="structRayTracer_1_1Color.html#a2867dd8ad913426dfa277ffb141241dc">RayTracer::Color::g</a></div><div class="ttdeci">double g</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00008">Color.hpp:8</a></div></div>
+<div class="ttc" id="astructRayTracer_1_1Color_html_a743e525cffb3a3a3b63267b76b615432"><div class="ttname"><a href="structRayTracer_1_1Color.html#a743e525cffb3a3a3b63267b76b615432">RayTracer::Color::r</a></div><div class="ttdeci">double r</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00007">Color.hpp:7</a></div></div>
+<div class="ttc" id="astructRayTracer_1_1Color_html_ac6ad4511d2e9abc6bcbb5401532702ae"><div class="ttname"><a href="structRayTracer_1_1Color.html#ac6ad4511d2e9abc6bcbb5401532702ae">RayTracer::Color::b</a></div><div class="ttdeci">double b</div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00009">Color.hpp:9</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

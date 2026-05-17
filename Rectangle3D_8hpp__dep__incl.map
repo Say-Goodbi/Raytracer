@@ -1,17 +1,11 @@
 <map id="src/Geometry/Rectangle3D/Rectangle3D.hpp" name="src/Geometry/Rectangle3D/Rectangle3D.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="281,5,479,45"/>
-<area shape="rect" id="Node000002" href="$Rectangle3D_8cpp.html" title=" " alt="" coords="61,101,259,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="324,53,205,103,203,98,322,48"/>
-<area shape="rect" id="Node000003" href="$BVHCam_8hpp.html" title=" " alt="" coords="283,93,477,148"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="383,59,383,93,377,93,377,59"/>
-<area shape="rect" id="Node000006" href="$Camera_8hpp.html" title="Declaration for the camera&#45;based renderer used by the raytracer." alt="" coords="517,93,683,148"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="438,48,539,91,537,96,436,53"/>
-<area shape="rect" id="Node000004" href="$BVHCamPlugin_8cpp.html" title=" " alt="" coords="5,203,259,243"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="304,155,180,206,178,201,302,151"/>
-<area shape="rect" id="Node000005" href="$BVHCam_8cpp.html" title=" " alt="" coords="283,196,477,251"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="383,162,383,196,377,196,377,162"/>
-<area shape="rect" id="Node000007" href="$CorePlugin_8cpp.html" title="Core plugin implementation that provides primitives, materials and the camera." alt="" coords="501,203,699,243"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="603,162,603,203,597,203,597,162"/>
-<area shape="rect" id="Node000008" href="$Camera_8cpp.html" title="Implementation of the RayTracer::BVHCam renderer." alt="" coords="723,196,890,251"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="667,151,754,194,752,198,665,156"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="108,5,305,45"/>
+<area shape="rect" id="Node000002" href="$Rectangle3D_8cpp.html" title=" " alt="" coords="5,101,203,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,57,127,103,123,99,174,53"/>
+<area shape="rect" id="Node000003" href="$Camera_8hpp.html" title="Declaration for the camera&#45;based renderer used by the raytracer." alt="" coords="227,93,394,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,52,283,91,280,95,236,56"/>
+<area shape="rect" id="Node000004" href="$CorePlugin_8cpp.html" title="Core plugin implementation that provides primitives, materials and the camera." alt="" coords="108,203,305,243"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="275,160,228,205,225,201,271,156"/>
+<area shape="rect" id="Node000005" href="$Camera_8cpp.html" title="Implementation of the RayTracer::Camera renderer." alt="" coords="330,196,497,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="349,156,388,194,385,198,345,160"/>
 </map>

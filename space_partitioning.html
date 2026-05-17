@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('space_partitioning.html',''); initResi
 <li><a href="../src/Objects/Abstracts/APrimitive/APrimitive.hpp#L30">RayTracer::APrimitive::getBounds</a> defines the contract used to decide whether a primitive can enter the tree</li>
 </ul>
 <p>BVH build flow:</p><ol type="1">
-<li><code><a class="el" href="classRayTracer_1_1Scene.html#a2d2ae74843e7fcd0b4d67123deae989f" title="Prepare the scene hit structure for the next render pass.">RayTracer::Scene::prepareAccelerationStructure()</a></code> walks the current primitive list.</li>
+<li><code><a class="el" href="classRayTracer_1_1Scene.html#a95fa63f62bcc5ebefabf3209eb5af01a" title="Prepare the scene hit structure for the next render pass.">RayTracer::Scene::prepareAccelerationStructure()</a></code> walks the current primitive list.</li>
 <li>Primitives that return a finite <code>getBounds()</code> are inserted into the BVH candidate set.</li>
 <li>Primitives without bounds are stored in the unbounded fallback list.</li>
 <li><code>BVH</code> builds a hierarchy by sorting candidate records by centroid on each axis.</li>

@@ -1,7 +1,5 @@
 <map id="RayTracer::ARenderer" name="RayTracer::ARenderer">
-<area shape="rect" id="Node000001" title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr..." alt="" coords="153,5,308,191"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1BVHCam.html" title="Renderer that evaluates the rendering equation deterministically." alt="" coords="5,259,219,484"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,204,163,259,159,257,183,202"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically." alt="" coords="243,239,456,504"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="279,202,294,238,289,240,274,204"/>
+<area shape="rect" id="Node000001" title="Abstract base class for all renderers. Defines the interface for rendering a scene and producing a fr..." alt="" coords="35,5,189,191"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically." alt="" coords="5,239,219,524"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,204,115,238,109,238,109,204"/>
 </map>

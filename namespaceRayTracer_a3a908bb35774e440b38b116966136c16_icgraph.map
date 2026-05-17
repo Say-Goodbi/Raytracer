@@ -1,7 +1,5 @@
 <map id="RayTracer::FrameBufferMutex" name="RayTracer::FrameBufferMutex">
-<area shape="rect" id="Node000001" title=" " alt="" coords="213,45,428,70"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1BVHCam.html#a26338649c825eb2ded1c9e4c9e889452" title="Render the scene into a 2D framebuffer." alt="" coords="5,5,165,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,45,165,39,166,34,214,40"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="9,69,162,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,74,162,82,162,76,213,69"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="207,13,421,38"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,5,159,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
 </map>

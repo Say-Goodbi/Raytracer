@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 747;
+var viewWidth = 506;
 var viewHeight = 258;
 var sectionId = 'dynsection-0';
 </script>
@@ -58,9 +58,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Fixed&#45;size generic matrix template used across geometry types.">
-<polygon fill="#999999" stroke="#666666" points="403.5,-250 286.5,-250 286.5,-220 403.5,-220 403.5,-250"/>
-<text text-anchor="start" x="294.5" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/Matrix</text>
-<text text-anchor="middle" x="345" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">/Matrix.hpp</text>
+<polygon fill="#999999" stroke="#666666" points="327.5,-250 210.5,-250 210.5,-220 327.5,-220 327.5,-250"/>
+<text text-anchor="start" x="218.5" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/Matrix</text>
+<text text-anchor="middle" x="269" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00">/Matrix.hpp</text>
 </a>
 </g>
 </g>
@@ -68,9 +68,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="TransformMatrix_8hpp.html" target="_top" xlink:title="Affine transform matrix utilities used for camera and object transforms.">
-<polygon fill="white" stroke="#666666" points="428,-184 262,-184 262,-154 428,-154 428,-184"/>
-<text text-anchor="start" x="270" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/TransformMatrix</text>
-<text text-anchor="middle" x="345" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00">/TransformMatrix.hpp</text>
+<polygon fill="white" stroke="#666666" points="352,-184 186,-184 186,-154 352,-154 352,-184"/>
+<text text-anchor="start" x="194" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/TransformMatrix</text>
+<text text-anchor="middle" x="269" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00">/TransformMatrix.hpp</text>
 </a>
 </g>
 </g>
@@ -78,8 +78,8 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M345,-209.54C345,-200.96 345,-191.61 345,-184.16"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="341.5,-209.8 345,-219.8 348.5,-209.8 341.5,-209.8"/>
+<path fill="none" stroke="#63b8ff" d="M269,-209.54C269,-200.96 269,-191.61 269,-184.16"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="265.5,-209.8 269,-219.8 272.5,-209.8 265.5,-209.8"/>
 </a>
 </g>
 </g>
@@ -97,19 +97,19 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M282.11,-151.32C237.46,-139.47 178.18,-123.75 135.94,-112.54"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="281.42,-154.75 291.98,-153.94 283.21,-147.99 281.42,-154.75"/>
+<path fill="none" stroke="#63b8ff" d="M221.94,-150.42C190.54,-138.68 149.81,-123.47 120.58,-112.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="220.77,-153.71 231.36,-153.94 223.22,-147.16 220.77,-153.71"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="BVHCam_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="330,-118 184,-118 184,-77 330,-77 330,-118"/>
-<text text-anchor="start" x="192" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
-<text text-anchor="start" x="192" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">/BVHCamPlugin/Renderers</text>
-<text text-anchor="middle" x="257" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">/BVHCam.hpp</text>
+<g id="a_Node000004"><a xlink:href="Camera_8hpp.html" target="_top" xlink:title="Declaration for the camera&#45;based renderer used by the raytracer.">
+<polygon fill="white" stroke="#666666" points="497.5,-118 372.5,-118 372.5,-77 497.5,-77 497.5,-118"/>
+<text text-anchor="start" x="380.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
+<text text-anchor="start" x="380.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
+<text text-anchor="middle" x="435" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">/Camera/Camera.hpp</text>
 </a>
 </g>
 </g>
@@ -117,19 +117,18 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
 <g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M319.05,-147.5C307.27,-138.21 293.41,-127.26 281.78,-118.07"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="317.17,-150.48 327.19,-153.94 321.51,-144.99 317.17,-150.48"/>
+<path fill="none" stroke="#63b8ff" d="M311.91,-150.03C335.31,-140.24 364.29,-128.11 388.25,-118.07"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="310.47,-146.85 302.59,-153.94 313.17,-153.3 310.47,-146.85"/>
 </a>
 </g>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="Camera_8hpp.html" target="_top" xlink:title="Declaration for the camera&#45;based renderer used by the raytracer.">
-<polygon fill="white" stroke="#666666" points="661.5,-118 536.5,-118 536.5,-77 661.5,-77 661.5,-118"/>
-<text text-anchor="start" x="544.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
-<text text-anchor="start" x="544.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
-<text text-anchor="middle" x="599" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">/Camera/Camera.hpp</text>
+<g id="a_Node000007"><a xlink:href="SceneNodeHelpers_8hpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="354,-112.5 184,-112.5 184,-82.5 354,-82.5 354,-112.5"/>
+<text text-anchor="start" x="192" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneNode</text>
+<text text-anchor="middle" x="269" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">Helpers/SceneNodeHelpers.hpp</text>
 </a>
 </g>
 </g>
@@ -137,37 +136,18 @@ var sectionId = 'dynsection-0';
 <g id="edge6_Node000002_Node000007" class="edge">
 <title>Node2&#45;&gt;Node7</title>
 <g id="a_edge6_Node000002_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M406.16,-151.27C445.59,-140.48 496.74,-126.48 536.44,-115.62"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="405.12,-147.92 396.4,-153.94 406.97,-154.67 405.12,-147.92"/>
-</a>
-</g>
-</g>
-<!-- Node10 -->
-<g id="Node000010" class="node">
-<title>Node10</title>
-<g id="a_Node000010"><a xlink:href="SceneNodeHelpers_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="518,-112.5 348,-112.5 348,-82.5 518,-82.5 518,-112.5"/>
-<text text-anchor="start" x="356" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneNode</text>
-<text text-anchor="middle" x="433" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">Helpers/SceneNodeHelpers.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node2&#45;&gt;Node10 -->
-<g id="edge9_Node000002_Node000010" class="edge">
-<title>Node2&#45;&gt;Node10</title>
-<g id="a_edge9_Node000002_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M370.8,-147.63C385.08,-136.35 402.46,-122.62 415.22,-112.54"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="368.49,-144.99 362.81,-153.94 372.83,-150.48 368.49,-144.99"/>
+<path fill="none" stroke="#63b8ff" d="M269,-143.75C269,-133.31 269,-121.49 269,-112.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="265.5,-143.94 269,-153.94 272.5,-143.94 265.5,-143.94"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="BVHCamPlugin_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="429,-35.5 239,-35.5 239,-5.5 429,-5.5 429,-35.5"/>
-<text text-anchor="start" x="247" y="-23.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
-<text text-anchor="middle" x="334" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">/BVHCamPlugin/BVHCamPlugin.cpp</text>
+<g id="a_Node000005"><a xlink:href="CorePlugin_8cpp.html" target="_top" xlink:title="Core plugin implementation that provides primitives, materials and the camera.">
+<polygon fill="white" stroke="#666666" points="349,-35.5 201,-35.5 201,-5.5 349,-5.5 349,-35.5"/>
+<text text-anchor="start" x="209" y="-23.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
+<text text-anchor="middle" x="275" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/CorePlugin.cpp</text>
 </a>
 </g>
 </g>
@@ -175,19 +155,19 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M284.65,-69.57C296.34,-58.18 309.48,-45.39 319.26,-35.86"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="281.95,-67.31 277.23,-76.79 286.84,-72.32 281.95,-67.31"/>
+<path fill="none" stroke="#63b8ff" d="M384.03,-72.61C358.01,-60.41 327.25,-45.99 305.04,-35.58"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="382.84,-75.92 393.38,-76.99 385.81,-69.58 382.84,-75.92"/>
 </a>
 </g>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="BVHCam_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="221,-41 75,-41 75,0 221,0 221,-41"/>
-<text text-anchor="start" x="83" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
-<text text-anchor="start" x="83" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/BVHCamPlugin/Renderers</text>
-<text text-anchor="middle" x="148" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/BVHCam.cpp</text>
+<g id="a_Node000006"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::Camera renderer.">
+<polygon fill="white" stroke="#666666" points="497.5,-41 372.5,-41 372.5,0 497.5,0 497.5,-41"/>
+<text text-anchor="start" x="380.5" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
+<text text-anchor="start" x="380.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
+<text text-anchor="middle" x="435" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/Camera/Camera.cpp</text>
 </a>
 </g>
 </g>
@@ -195,65 +175,17 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000004_Node000006" class="edge">
 <title>Node4&#45;&gt;Node6</title>
 <g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M220.07,-71.09C205.87,-61.32 189.89,-50.32 176.59,-41.17"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="218.42,-74.21 228.65,-76.99 222.39,-68.44 218.42,-74.21"/>
+<path fill="none" stroke="#63b8ff" d="M435,-66.69C435,-58.08 435,-48.9 435,-41.07"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="431.5,-66.79 435,-76.79 438.5,-66.79 431.5,-66.79"/>
 </a>
 </g>
 </g>
-<!-- Node8 -->
-<g id="Node000008" class="node">
-<title>Node8</title>
-<g id="a_Node000008"><a xlink:href="CorePlugin_8cpp.html" target="_top" xlink:title="Core plugin implementation that provides primitives, materials and the camera.">
-<polygon fill="white" stroke="#666666" points="595,-35.5 447,-35.5 447,-5.5 595,-5.5 595,-35.5"/>
-<text text-anchor="start" x="455" y="-23.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
-<text text-anchor="middle" x="521" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/CorePlugin.cpp</text>
-</a>
-</g>
-</g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge7_Node000007_Node000008" class="edge">
-<title>Node7&#45;&gt;Node8</title>
-<g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M570.99,-69.57C559.15,-58.18 545.84,-45.39 535.94,-35.86"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="568.87,-72.39 578.51,-76.79 573.72,-67.34 568.87,-72.39"/>
-</a>
-</g>
-</g>
-<!-- Node9 -->
-<g id="Node000009" class="node">
-<title>Node9</title>
-<g id="a_Node000009"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::BVHCam renderer.">
-<polygon fill="white" stroke="#666666" points="738.5,-41 613.5,-41 613.5,0 738.5,0 738.5,-41"/>
-<text text-anchor="start" x="621.5" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
-<text text-anchor="start" x="621.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
-<text text-anchor="middle" x="676" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/Camera/Camera.cpp</text>
-</a>
-</g>
-</g>
-<!-- Node7&#45;&gt;Node9 -->
-<g id="edge8_Node000007_Node000009" class="edge">
-<title>Node7&#45;&gt;Node9</title>
-<g id="a_edge8_Node000007_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M626.42,-69.79C636.15,-60.32 646.9,-49.84 655.9,-41.07"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="623.95,-67.31 619.23,-76.79 628.84,-72.32 623.95,-67.31"/>
-</a>
-</g>
-</g>
-<!-- Node10&#45;&gt;Node5 -->
-<g id="edge10_Node000010_Node000005" class="edge">
-<title>Node10&#45;&gt;Node5</title>
-<g id="a_edge10_Node000010_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M405.97,-76.03C389.01,-63.18 367.59,-46.94 352.54,-35.54"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="404.29,-79.14 414.38,-82.39 408.52,-73.56 404.29,-79.14"/>
-</a>
-</g>
-</g>
-<!-- Node10&#45;&gt;Node8 -->
-<g id="edge11_Node000010_Node000008" class="edge">
-<title>Node10&#45;&gt;Node8</title>
-<g id="a_edge11_Node000010_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M457.44,-75.67C472.45,-62.88 491.27,-46.84 504.52,-35.54"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="454.89,-73.24 449.55,-82.39 459.43,-78.57 454.89,-73.24"/>
+<!-- Node7&#45;&gt;Node5 -->
+<g id="edge7_Node000007_Node000005" class="edge">
+<title>Node7&#45;&gt;Node5</title>
+<g id="a_edge7_Node000007_Node000005"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M270.93,-72.41C271.9,-60.24 273.05,-45.9 273.88,-35.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="267.44,-72.15 270.13,-82.39 274.41,-72.7 267.44,-72.15"/>
 </a>
 </g>
 </g>

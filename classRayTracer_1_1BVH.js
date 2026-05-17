@@ -6,6 +6,5 @@ var classRayTracer_1_1BVH =
     [ "BVH", "classRayTracer_1_1BVH.html#a68e74bb5f748dbf38d86eea0a21d2b76", null ],
     [ "empty", "classRayTracer_1_1BVH.html#a45d955b710820b8f681bbfc7f5360e5d", null ],
     [ "hit", "classRayTracer_1_1BVH.html#a5385dd9961d6eb9148833e83538b24f9", null ],
-    [ "root", "classRayTracer_1_1BVH.html#acbb26478ae1f75eee81e679281416c0e", null ],
     [ "_root", "classRayTracer_1_1BVH.html#a4c53b860aff82c489a44591277487d26", null ]
 ];

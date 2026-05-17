@@ -1,29 +1,18 @@
 <map id="Geometry::Matrix::operator()" name="Geometry::Matrix::operator()">
-<area shape="rect" id="Node000001" title="Mutable element access." alt="" coords="671,170,880,195"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1BVHCam.html#a1dadda5103abfe56bd9bd73729f8be3f" title="Construct a camera renderer." alt="" coords="213,5,373,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="753,162,698,108,661,81,622,60,559,40,493,28,430,23,374,23,374,18,430,18,494,23,560,35,624,55,664,77,701,104,756,158"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="217,133,370,173"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="657,178,370,161,370,155,657,173"/>
-<area shape="rect" id="Node000004" href="$classRayTracer_1_1BVHCam.html#a343291f29df2a424797e29651a34dd34" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="424,69,620,109"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="726,168,576,112,578,107,728,163"/>
-<area shape="rect" id="Node000006" href="$classRayTracer_1_1Camera.html#a27ae8f34a8cb15a3ffd5e23498d894cb" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="424,191,620,231"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="657,198,620,203,620,197,657,193"/>
-<area shape="rect" id="Node000008" href="$classGeometry_1_1TransformMatrix.html#a136a1573f63564d63426b89fcafeb21b" title=" " alt="" coords="421,257,623,297"/>
-<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="731,203,624,245,583,260,581,255,622,240,729,198"/>
-<area shape="rect" id="Node000013" href="$classGeometry_1_1TransformMatrix.html#a065621a852d662251597213f484ea3f6" title=" " alt="" coords="421,321,623,361"/>
-<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="754,207,698,259,662,287,624,312,598,324,596,319,621,307,659,283,695,255,751,203"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="436,68,365,48,366,43,438,63"/>
-<area shape="rect" id="Node000005" href="$classRayTracer_1_1BVHCam.html#a12c8b8553f66adaccedd88016dc89d1e" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="213,69,373,109"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="410,92,373,92,373,87,410,87"/>
-<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="428,190,370,175,371,170,429,185"/>
-<area shape="rect" id="Node000007" href="$classRayTracer_1_1Camera.html#adebcfa0c259280f3d4bcf037fa2192b8" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="217,197,370,237"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="410,217,370,218,370,212,410,211"/>
-<area shape="rect" id="Node000009" href="$classRayTracer_1_1BVHCam.html#a4a4e49d9f065cf0844d84706c340147f" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="213,261,373,301"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="408,282,374,283,374,277,407,277"/>
-<area shape="rect" id="Node000011" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="217,325,370,365"/>
-<area shape="poly" id="edge12_Node000008_Node000011" title=" " alt="" coords="442,304,362,328,360,323,440,299"/>
-<area shape="rect" id="Node000010" href="$classRayTracer_1_1BVHCam.html#a26338649c825eb2ded1c9e4c9e889452" title="Render the scene into a 2D framebuffer." alt="" coords="5,261,165,301"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="200,284,166,284,166,279,200,279"/>
-<area shape="rect" id="Node000012" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="9,325,162,365"/>
-<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="203,348,162,348,162,343,203,343"/>
+<area shape="rect" id="Node000001" title="Mutable element access." alt="" coords="657,106,867,131"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#aa88a1643d3067605407808bf3a5c14d4" title="Construct a camera renderer." alt="" coords="207,5,360,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="724,102,670,78,609,57,544,44,478,36,360,28,361,23,479,30,545,39,610,52,672,73,726,97"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a27ae8f34a8cb15a3ffd5e23498d894cb" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="411,67,607,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="647,107,607,102,607,96,648,102"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1TransformMatrix.html#a136a1573f63564d63426b89fcafeb21b" title=" " alt="" coords="408,131,609,171"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="648,136,610,141,609,135,647,130"/>
+<area shape="rect" id="Node000008" href="$classGeometry_1_1TransformMatrix.html#a065621a852d662251597213f484ea3f6" title=" " alt="" coords="408,195,609,235"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="721,140,610,185,576,197,574,192,608,180,719,135"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="421,66,357,48,358,43,422,60"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#a502f05c3a82d9627f26300d71569ffad" title="Construct a camera from a 4x4 affine transform matrix." alt="" coords="207,69,360,109"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="397,91,360,91,360,86,397,85"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="207,133,360,173"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="394,155,360,155,360,150,394,149"/>
+<area shape="rect" id="Node000007" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,133,159,173"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="193,156,159,156,159,151,193,151"/>
 </map>
