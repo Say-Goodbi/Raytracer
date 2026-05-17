@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.16)
 project(raytracer CXX)
 
+cmake_policy(SET CMP0110 NEW)
+
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -76,17 +78,38 @@ endforeach()
 
 # ── Unit tests ───────────────────────────────────────────────────────────────
 
+include(CTest)
+
 enable_testing()
 
 file(GLOB_RECURSE TEST_SOURCES tests/*.cpp)
 
 add_executable(tests_run
     ${TEST_SOURCES}
+    ${SYSTEM_SOURCES}
     ${INTERFACE_SOURCES}
+    ${SCENE_WRITER_SOURCES}
 )
 
-target_link_libraries(tests_run PRIVATE criterion)
+target_include_directories(tests_run PRIVATE src)
 
-# register the tests executable with CTest
-add_test(NAME tests_run COMMAND tests_run)
-set_tests_properties(tests_run PROPERTIES WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
+target_link_libraries(tests_run PRIVATE criterion config++)
+
+# Register each Criterion test case as an individual CTest entry
+# so that one test failure doesn't cause all tests to fail
+foreach(TEST_FILE ${TEST_SOURCES})
+    file(READ ${TEST_FILE} TEST_CONTENTS)
+    
+    # Extract all Test(testname, suite) declarations
+    string(REGEX MATCHALL "Test\\(([^,]+)," TEST_MATCHES "${TEST_CONTENTS}")
+    
+    foreach(TEST_MATCH ${TEST_MATCHES})
+        # Extract test name from "Test(testname,"
+        string(REGEX REPLACE "Test\\(([^,]+)," "\\1" TEST_NAME "${TEST_MATCH}")
+        string(STRIP "${TEST_NAME}" TEST_NAME)
+
+        # Register each test with --filter so failures are independent
+        add_test(NAME ${TEST_NAME} COMMAND tests_run --filter "${TEST_NAME}*" --timeout 10)
+        set_tests_properties(${TEST_NAME} PROPERTIES WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
+    endforeach()
+endforeach()
