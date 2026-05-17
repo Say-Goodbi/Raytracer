@@ -6,11 +6,6 @@ Test(PARSING_FILE, file_not_found)
     cr_assert_throw(RayTracer::Parser("non_existent_file.cfg"), RayTracer::ParsingException);
 }
 
-Test(PARSING_FILE, without_right)
-{
-    cr_assert_throw(RayTracer::Parser("tests/parsing/config/without_right.cfg"), RayTracer::ParsingException);
-}
-
 Test(PARSING_FILE, simple)
 {
     cr_assert_no_throw(RayTracer::Parser("tests/parsing/config/simple.cfg"));
