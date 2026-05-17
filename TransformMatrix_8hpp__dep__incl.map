@@ -1,14 +1,21 @@
 <map id="src/Geometry/TransformMatrix/TransformMatrix.hpp" name="src/Geometry/TransformMatrix/TransformMatrix.hpp">
-<area shape="rect" id="Node000001" title="Affine transform matrix utilities used for camera and object transforms." alt="" coords="253,5,475,45"/>
+<area shape="rect" id="Node000001" title="Affine transform matrix utilities used for camera and object transforms." alt="" coords="355,5,576,45"/>
 <area shape="rect" id="Node000002" href="$TransformMatrix_8cpp.html" title="Implementation of affine transform helpers used across geometry." alt="" coords="5,101,227,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,53,167,103,165,98,300,48"/>
-<area shape="rect" id="Node000003" href="$Camera_8hpp.html" title="Declaration for the camera&#45;based renderer used by the raytracer." alt="" coords="502,93,669,148"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="422,48,524,91,522,96,420,53"/>
-<area shape="rect" id="Node000006" href="$SceneNodeHelpers_8hpp.html" title=" " alt="" coords="251,101,477,141"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="367,59,367,101,361,101,361,59"/>
-<area shape="rect" id="Node000004" href="$CorePlugin_8cpp.html" title="Core plugin implementation that provides primitives, materials and the camera." alt="" coords="273,203,471,243"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="519,156,413,206,411,201,516,151"/>
-<area shape="rect" id="Node000005" href="$Camera_8cpp.html" title="Implementation of the RayTracer::Camera renderer." alt="" coords="502,196,669,251"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="588,162,588,196,583,196,583,162"/>
-<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="369,154,373,203,368,203,364,154"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="382,51,187,103,186,98,381,46"/>
+<area shape="rect" id="Node000003" href="$BVHCam_8hpp.html" title=" " alt="" coords="251,93,445,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="432,56,383,95,379,91,429,52"/>
+<area shape="rect" id="Node000006" href="$Camera_8hpp.html" title="Declaration for the camera&#45;based renderer used by the raytracer." alt="" coords="721,93,887,148"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="548,46,721,94,720,99,546,52"/>
+<area shape="rect" id="Node000009" href="$SceneNodeHelpers_8hpp.html" title=" " alt="" coords="469,101,696,141"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="501,52,561,99,557,103,498,56"/>
+<area shape="rect" id="Node000004" href="$BVHCamPlugin_8cpp.html" title=" " alt="" coords="324,203,577,243"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="387,156,433,201,429,205,383,160"/>
+<area shape="rect" id="Node000005" href="$BVHCam_8cpp.html" title=" " alt="" coords="105,196,300,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="300,158,242,198,239,194,297,154"/>
+<area shape="rect" id="Node000007" href="$CorePlugin_8cpp.html" title="Core plugin implementation that provides primitives, materials and the camera." alt="" coords="601,203,799,243"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="769,160,722,205,718,201,765,156"/>
+<area shape="rect" id="Node000008" href="$Camera_8cpp.html" title="Implementation of the RayTracer::BVHCam renderer." alt="" coords="823,196,990,251"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="842,156,882,194,878,198,839,160"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="548,151,477,205,474,201,545,147"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="617,148,680,201,676,205,614,152"/>
 </map>

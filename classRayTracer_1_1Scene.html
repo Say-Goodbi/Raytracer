@@ -128,9 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad36d89648fcb66900a06ee71b8324bcc" id="r_ad36d89648fcb66900a06ee71b8324bcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#ad36d89648fcb66900a06ee71b8324bcc">addLight</a> (std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> &gt; light)</td></tr>
 <tr class="memdesc:ad36d89648fcb66900a06ee71b8324bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a light to the scene.  <br /></td></tr>
 <tr class="separator:ad36d89648fcb66900a06ee71b8324bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95fa63f62bcc5ebefabf3209eb5af01a" id="r_a95fa63f62bcc5ebefabf3209eb5af01a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a95fa63f62bcc5ebefabf3209eb5af01a">prepareAccelerationStructure</a> (bool useBVH)</td></tr>
-<tr class="memdesc:a95fa63f62bcc5ebefabf3209eb5af01a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the scene hit structure for the next render pass.  <br /></td></tr>
-<tr class="separator:a95fa63f62bcc5ebefabf3209eb5af01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2ae74843e7fcd0b4d67123deae989f" id="r_a2d2ae74843e7fcd0b4d67123deae989f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a2d2ae74843e7fcd0b4d67123deae989f">prepareAccelerationStructure</a> ()</td></tr>
+<tr class="memdesc:a2d2ae74843e7fcd0b4d67123deae989f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the scene hit structure for the next render pass.  <br /></td></tr>
+<tr class="separator:a2d2ae74843e7fcd0b4d67123deae989f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67328ab35346b609ab3b7220fa08098c" id="r_a67328ab35346b609ab3b7220fa08098c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structGeometry_1_1HitRecord.html">Geometry::HitRecord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a67328ab35346b609ab3b7220fa08098c">hit</a> (const <a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> &amp;ray) const</td></tr>
 <tr class="memdesc:a67328ab35346b609ab3b7220fa08098c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the closest hit for a ray using the current acceleration state.  <br /></td></tr>
 <tr class="separator:a67328ab35346b609ab3b7220fa08098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43b223d3c67aa2b66eb5eca01470f09d" id="r_a43b223d3c67aa2b66eb5eca01470f09d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a43b223d3c67aa2b66eb5eca01470f09d">getLights</a> ()</td></tr>
 <tr class="memdesc:a43b223d3c67aa2b66eb5eca01470f09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get mutable reference to lights.  <br /></td></tr>
 <tr class="separator:a43b223d3c67aa2b66eb5eca01470f09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c957fc6dd8e6ff177c8d7b2cfc2113" id="r_a06c957fc6dd8e6ff177c8d7b2cfc2113"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::reference_wrapper&lt; const <a class="el" href="classRayTracer_1_1BVH.html">BVH</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a06c957fc6dd8e6ff177c8d7b2cfc2113">getBVH</a> () const</td></tr>
+<tr class="memdesc:a06c957fc6dd8e6ff177c8d7b2cfc2113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scene's <a class="el" href="classRayTracer_1_1BVH.html">BVH</a> acceleration structure, for custom render implementation.  <br /></td></tr>
+<tr class="separator:a06c957fc6dd8e6ff177c8d7b2cfc2113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac424dda50f9256b506b8a1a10f1b78f5" id="r_ac424dda50f9256b506b8a1a10f1b78f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#ac424dda50f9256b506b8a1a10f1b78f5">updateCamera</a> (<a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">RayTracer::NodePtr</a> &amp;camera, <a class="el" href="classRayTracer_1_1PluginManager.html">PluginManager</a> &amp;pluginManager)</td></tr>
 <tr class="memdesc:ac424dda50f9256b506b8a1a10f1b78f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the scene's camera.  <br /></td></tr>
 <tr class="separator:ac424dda50f9256b506b8a1a10f1b78f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,8 +164,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a71377fefedb29f6c467749e6dd731266" id="r_a71377fefedb29f6c467749e6dd731266"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1ILight.html">ILight</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a71377fefedb29f6c467749e6dd731266">_lights</a></td></tr>
 <tr class="memdesc:a71377fefedb29f6c467749e6dd731266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light sources.  <br /></td></tr>
 <tr class="separator:a71377fefedb29f6c467749e6dd731266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af98e4bab00cba1dccd7121fd8ac12f14" id="r_af98e4bab00cba1dccd7121fd8ac12f14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#af98e4bab00cba1dccd7121fd8ac12f14">_useBVH</a></td></tr>
-<tr class="separator:af98e4bab00cba1dccd7121fd8ac12f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9595d84ba5f4051ce68f77c92fb60d81" id="r_a9595d84ba5f4051ce68f77c92fb60d81"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classRayTracer_1_1BVH.html">BVH</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a9595d84ba5f4051ce68f77c92fb60d81">_bvh</a></td></tr>
 <tr class="separator:a9595d84ba5f4051ce68f77c92fb60d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6470ce977b5b52fe48678c712f3ba03c" id="r_a6470ce977b5b52fe48678c712f3ba03c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1APrimitive.html">APrimitive</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRayTracer_1_1Scene.html#a6470ce977b5b52fe48678c712f3ba03c">_unboundedPrimitives</a></td></tr>
@@ -171,7 +172,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a scene containing a camera, primitives, and lights. </p>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00022">22</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00023">23</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a277945e924155a3d5b90a4d4317f826e" name="a277945e924155a3d5b90a4d4317f826e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a277945e924155a3d5b90a4d4317f826e">&#9670;&#160;</a></span>Scene() <span class="overload">[1/2]</span></h2>
@@ -197,7 +198,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00030">30</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00042">42</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 
 </div>
 </div>
@@ -217,7 +218,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00034">34</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00046">46</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 
 </div>
 </div>
@@ -271,7 +272,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00115">115</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00123">123</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -317,7 +318,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00120">120</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00128">128</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -352,7 +353,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00045">45</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00060">60</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -398,7 +399,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00090">90</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00098">98</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -406,6 +407,28 @@ Private Attributes</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Scene_a1a093437840c6f1feefa3af43e73e2e8_cgraph.svg" width="514" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a06c957fc6dd8e6ff177c8d7b2cfc2113" name="a06c957fc6dd8e6ff177c8d7b2cfc2113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c957fc6dd8e6ff177c8d7b2cfc2113">&#9670;&#160;</a></span>getBVH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::reference_wrapper&lt; const <a class="el" href="classRayTracer_1_1BVH.html">BVH</a> &gt; &gt; RayTracer::Scene::getBVH </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the scene's <a class="el" href="classRayTracer_1_1BVH.html">BVH</a> acceleration structure, for custom render implementation. </p>
+<dl class="section return"><dt>Returns</dt><dd>Optional reference to the <a class="el" href="classRayTracer_1_1BVH.html">BVH</a>, if it is built and in use </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00168">168</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 
 </div>
 </div>
@@ -427,7 +450,7 @@ Private Attributes</h2></td></tr>
 <p>Get mutable reference to lights. </p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the lights vector </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00150">150</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00158">158</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -456,7 +479,7 @@ Private Attributes</h2></td></tr>
 <p>Get mutable reference to primitives. </p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the primitives vector </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00110">110</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00118">118</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -485,7 +508,7 @@ Private Attributes</h2></td></tr>
 <p>Get the scene's camera. </p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the camera </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00155">155</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00163">163</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 
 </div>
 </div>
@@ -514,7 +537,7 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Closest hit record, if any. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00073">73</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00084">84</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -532,8 +555,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a95fa63f62bcc5ebefabf3209eb5af01a" name="a95fa63f62bcc5ebefabf3209eb5af01a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95fa63f62bcc5ebefabf3209eb5af01a">&#9670;&#160;</a></span>prepareAccelerationStructure()</h2>
+<a id="a2d2ae74843e7fcd0b4d67123deae989f" name="a2d2ae74843e7fcd0b4d67123deae989f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d2ae74843e7fcd0b4d67123deae989f">&#9670;&#160;</a></span>prepareAccelerationStructure()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -541,35 +564,28 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void RayTracer::Scene::prepareAccelerationStructure </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useBVH</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Prepare the scene hit structure for the next render pass. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">useBVH</td><td>Whether to build and use the <a class="el" href="classRayTracer_1_1BVH.html">BVH</a> acceleration structure. </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00050">50</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00065">65</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Scene_a95fa63f62bcc5ebefabf3209eb5af01a_cgraph.svg" width="412" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Scene_a2d2ae74843e7fcd0b4d67123deae989f_cgraph.svg" width="412" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Scene_a95fa63f62bcc5ebefabf3209eb5af01a_icgraph.svg" width="403" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRayTracer_1_1Scene_a2d2ae74843e7fcd0b4d67123deae989f_icgraph.svg" width="410" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -608,7 +624,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00036">36</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8cpp_source.html#l00048">48</a> of file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
@@ -666,7 +682,7 @@ Private Attributes</h2></td></tr>
 
 <p>Light sources. </p>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00027">27</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00028">28</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 </div>
 </div>
@@ -692,7 +708,7 @@ Private Attributes</h2></td></tr>
 
 <p>Renderable objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00026">26</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00027">27</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 </div>
 </div>
@@ -718,7 +734,7 @@ Private Attributes</h2></td></tr>
 
 <p>Active camera/renderer. </p>
 
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00025">25</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00026">26</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 </div>
 </div>
@@ -743,30 +759,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00030">30</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
-
-</div>
-</div>
-<a id="af98e4bab00cba1dccd7121fd8ac12f14" name="af98e4bab00cba1dccd7121fd8ac12f14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af98e4bab00cba1dccd7121fd8ac12f14">&#9670;&#160;</a></span>_useBVH</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool RayTracer::Scene::_useBVH</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="Scene_8hpp_source.html#l00028">28</a> of file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
 
 </div>
 </div>

@@ -11,6 +11,7 @@ var hierarchy =
       [ "RayTracer::Sphere", "classRayTracer_1_1Sphere.html", null ]
     ] ],
     [ "RayTracer::ARenderer", "classRayTracer_1_1ARenderer.html", [
+      [ "RayTracer::BVHCam", "classRayTracer_1_1BVHCam.html", null ],
       [ "RayTracer::Camera", "classRayTracer_1_1Camera.html", null ]
     ] ],
     [ "RayTracer::BVH", "classRayTracer_1_1BVH.html", null ],

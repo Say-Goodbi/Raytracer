@@ -1,0 +1,21 @@
+var NAVTREEINDEX4 =
+{
+"structRayTracer_1_1Color.html#ac6ad4511d2e9abc6bcbb5401532702ae":[2,0,1,8,8],
+"structRayTracer_1_1Color.html#ac6ad4511d2e9abc6bcbb5401532702ae":[3,0,1,8,8],
+"structRayTracer_1_1Color.html#ad224166942560c4b3930f6ec1939602f":[2,0,1,8,7],
+"structRayTracer_1_1Color.html#ad224166942560c4b3930f6ec1939602f":[3,0,1,8,7],
+"structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8":[2,0,1,8,5],
+"structRayTracer_1_1Color.html#aefc65f4c5ffc2e9bca0a35e4e55d68b8":[3,0,1,8,5],
+"structRayTracer_1_1Color.html#afa5432590a85b4f39279dc5c84d66c0f":[3,0,1,8,1],
+"structRayTracer_1_1Color.html#afa5432590a85b4f39279dc5c84d66c0f":[2,0,1,8,1],
+"structRayTracer_1_1Node.html":[3,0,1,18],
+"structRayTracer_1_1Node.html":[2,0,1,18],
+"structRayTracer_1_1Node.html#ac29da55cad5c5065be2b90994023e81f":[3,0,1,18,0],
+"structRayTracer_1_1Node.html#ac29da55cad5c5065be2b90994023e81f":[2,0,1,18,0],
+"todo.html":[1],
+"utils_page.html":[0,15],
+"utils_page.html#util_color":[0,15,0],
+"utils_page.html#util_exceptions":[0,15,3],
+"utils_page.html#util_mutex":[0,15,2],
+"utils_page.html#util_utils":[0,15,1]
+};
