@@ -91,25 +91,29 @@ add_executable(tests_run
     ${SCENE_WRITER_SOURCES}
 )
 
+target_compile_options(tests_run PRIVATE -O0 -g --coverage)
+target_link_options(tests_run PRIVATE --coverage)
+
 target_include_directories(tests_run PRIVATE src)
 
 target_link_libraries(tests_run PRIVATE criterion config++)
 
-# Register each Criterion test case as an individual CTest entry
-# so that one test failure doesn't cause all tests to fail
 foreach(TEST_FILE ${TEST_SOURCES})
     file(READ ${TEST_FILE} TEST_CONTENTS)
-    
-    # Extract all Test(testname, suite) declarations
-    string(REGEX MATCHALL "Test\\(([^,]+)," TEST_MATCHES "${TEST_CONTENTS}")
-    
+
+    string(REGEX MATCHALL "Test\\([^,]+,\\s*[^)]+\\)" TEST_MATCHES "${TEST_CONTENTS}")
+
     foreach(TEST_MATCH ${TEST_MATCHES})
-        # Extract test name from "Test(testname,"
-        string(REGEX REPLACE "Test\\(([^,]+)," "\\1" TEST_NAME "${TEST_MATCH}")
+        string(REGEX REPLACE "Test\\(\\s*([^,]+),.*" "\\1" TEST_SUITE "${TEST_MATCH}")
+        string(STRIP "${TEST_SUITE}" TEST_SUITE)
+
+        string(REGEX REPLACE "Test\\([^,]+,\\s*([^)]+)\\).*" "\\1" TEST_NAME "${TEST_MATCH}")
         string(STRIP "${TEST_NAME}" TEST_NAME)
 
-        # Register each test with --filter so failures are independent
-        add_test(NAME ${TEST_NAME} COMMAND tests_run --filter "${TEST_NAME}*" --timeout 10)
-        set_tests_properties(${TEST_NAME} PROPERTIES WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
+        string(REPLACE "/" "_" CT_NAME "${TEST_SUITE}_${TEST_NAME}")
+        string(REGEX REPLACE "[^A-Za-z0-9_.-]" "_" CT_NAME "${CT_NAME}")
+
+        add_test(NAME ${CT_NAME} COMMAND tests_run --filter "${TEST_SUITE}/${TEST_NAME}" --timeout 10)
+        set_tests_properties(${CT_NAME} PROPERTIES WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
     endforeach()
 endforeach()
