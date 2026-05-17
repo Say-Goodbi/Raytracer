@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.7.0...v1.8.0) (2026-05-17)
+
+
+### Features
+
+* cone primitive ([a1543de](https://github.com/Say-Goodbi/Raytracer/commit/a1543deff08f5a5faec03764a841bb6a27b87db5))
+
 # [1.7.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.6.1...v1.7.0) (2026-05-17)
 
 
