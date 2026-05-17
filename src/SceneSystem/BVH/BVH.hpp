@@ -21,6 +21,7 @@ namespace RayTracer
             Geometry::Point3D centroid;
         };
 
+    public:
         struct Node
         {
             Geometry::AABB bounds;
@@ -33,6 +34,8 @@ namespace RayTracer
                 return !left && !right;
             }
         };
+
+    private:
 
         std::unique_ptr<Node> _root;
 
@@ -210,6 +213,11 @@ namespace RayTracer
         std::optional<Geometry::HitRecord> hit(const Geometry::Ray &ray) const
         {
             return hitNode(_root.get(), ray);
+        }
+
+        const Node *root() const
+        {
+            return _root.get();
         }
     };
 }

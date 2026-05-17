@@ -11,6 +11,18 @@
 
 namespace
 {
+    std::string getStringScalar(const RayTracer::NodePtr &node)
+    {
+        if (!node || !std::holds_alternative<RayTracer::ScalarValue>(node->value))
+            throw RayTracer::Exception("Expected a scalar node");
+
+        const RayTracer::ScalarValue &value = std::get<RayTracer::ScalarValue>(node->value);
+        if (!std::holds_alternative<std::string>(value))
+            throw RayTracer::Exception("Expected a string scalar value");
+
+        return std::get<std::string>(value);
+    }
+
     std::optional<Geometry::HitRecord> findClosestLinear(const Geometry::Ray &ray, const std::vector<std::shared_ptr<RayTracer::APrimitive>> &primitives)
     {
         std::optional<Geometry::HitRecord> closest;
@@ -27,18 +39,21 @@ namespace
 
 namespace RayTracer
 {
-    Scene::Scene(ARenderer &camera) : _renderer(&camera, [](ARenderer *) {}), _useBVH(false)
+    Scene::Scene(ARenderer &camera) : _renderer(&camera, [](ARenderer *) {})
     {
     }
 
-    Scene::Scene(void) : _renderer(nullptr), _useBVH(false) {}
+    Scene::Scene(void) : _renderer(nullptr) {}
 
     void Scene::updateCamera(RayTracer::NodePtr &camera, PluginManager &pluginManager)
     {
-        auto initializer = pluginManager.getInitializer("camera");
+        std::string type = std::get<Object>(camera->value)["type"]
+            ? getStringScalar(std::get<Object>(camera->value)["type"])
+            : "camera";
+        auto initializer = pluginManager.getInitializer(type);
 
         if (!initializer)
-            throw RayTracer::Exception("Camera initializer not found in plugins.");
+            throw RayTracer::Exception(type + " initializer not found in plugins.");
         this->_renderer = std::get<std::shared_ptr<ARenderer>>(initializer(std::move(camera)));
     }
 
@@ -47,14 +62,10 @@ namespace RayTracer
         this->_primitives.push_back(primitive);
     }
 
-    void Scene::prepareAccelerationStructure(bool useBVH)
+    void Scene::prepareAccelerationStructure()
     {
-        this->_useBVH = useBVH;
         this->_bvh.reset();
         this->_unboundedPrimitives.clear();
-
-        if (!this->_useBVH)
-            return;
 
         std::vector<std::shared_ptr<APrimitive>> boundedPrimitives;
         boundedPrimitives.reserve(this->_primitives.size());
@@ -72,9 +83,6 @@ namespace RayTracer
 
     std::optional<Geometry::HitRecord> Scene::hit(const Geometry::Ray &ray) const
     {
-        if (!this->_useBVH)
-            return findClosestLinear(ray, this->_primitives);
-
         std::optional<Geometry::HitRecord> closest;
 
         if (this->_bvh)
@@ -156,5 +164,13 @@ namespace RayTracer
     {
         return this->_renderer;
     }
+
+    std::optional<std::reference_wrapper<const BVH>> Scene::getBVH() const
+    {
+        if (this->_bvh)
+            return std::cref(*this->_bvh);
+        return std::nullopt;
+    }
+
 
 } // namespace RayTracer

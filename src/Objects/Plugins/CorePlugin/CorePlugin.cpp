@@ -80,9 +80,6 @@ extern "C"
                     const float fieldOfView = settingsMap.find("fieldOfView") != settingsMap.end()
                         ? Raytracer::fromNode<float>(settingsMap.at("fieldOfView"))
                         : 50.0f;
-                    const bool useBVH = settingsMap.find("bvh") != settingsMap.end()
-                        ? Raytracer::fromNode<bool>(settingsMap.at("bvh"))
-                        : true;
 
                     Geometry::TransformMatrix transform = Geometry::TransformMatrix::translation(
                         static_cast<float>(position.x),
@@ -98,7 +95,7 @@ extern "C"
                         static_cast<float>(scale.y),
                         static_cast<float>(scale.z)
                     );
-                    std::shared_ptr<RayTracer::ARenderer> camera = std::make_shared<RayTracer::Camera>(transform, fieldOfView, resolution.first, resolution.second, useBVH);
+                    std::shared_ptr<RayTracer::ARenderer> camera = std::make_shared<RayTracer::Camera>(transform, fieldOfView, resolution.first, resolution.second);
                     return std::static_pointer_cast<RayTracer::ARenderer>(camera);
                 }
             },

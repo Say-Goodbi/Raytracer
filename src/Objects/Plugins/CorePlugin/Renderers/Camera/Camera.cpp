@@ -45,8 +45,8 @@ namespace RayTracer
         buildScreenFromTransform();
     }
 
-    Camera::Camera(Geometry::TransformMatrix transform, float fov, int width, int height, bool useBVH)
-        : ARenderer(width, height), _transform(transform), _fov(fov), _useBVH(useBVH)
+    Camera::Camera(Geometry::TransformMatrix transform, float fov, int width, int height)
+        : ARenderer(width, height), _transform(transform), _fov(fov)
     {
         buildScreenFromTransform();
     }
@@ -206,7 +206,7 @@ namespace RayTracer
      * @return 2D grid of clamped colors: `frame[height][width]`.
      */
     std::vector<std::vector<Color>> Camera::render(Scene& scene, std::vector<std::vector<Color>>& framebuffer) {
-        scene.prepareAccelerationStructure(_useBVH);
+        scene.prepareAccelerationStructure();
 
         {
             std::unique_lock<std::shared_mutex> lock(FrameBufferMutex());

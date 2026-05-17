@@ -15,6 +15,7 @@
 #include <vector>
 #include <memory>
 #include <optional>
+#include <functional>
 
 namespace RayTracer
 {
@@ -25,7 +26,6 @@ namespace RayTracer
             std::shared_ptr<ARenderer> _renderer;                  ///< Active camera/renderer
             std::vector<std::shared_ptr<APrimitive>> _primitives;  ///< Renderable objects
             std::vector<std::shared_ptr<ILight>> _lights;          ///< Light sources
-            bool _useBVH;
             std::optional<BVH> _bvh;
             std::vector<std::shared_ptr<APrimitive>> _unboundedPrimitives;
         protected:
@@ -50,8 +50,7 @@ namespace RayTracer
             void addLight(std::shared_ptr<ILight> light);
 
             /// Prepare the scene hit structure for the next render pass.
-            /// @param useBVH Whether to build and use the BVH acceleration structure.
-            void prepareAccelerationStructure(bool useBVH);
+            void prepareAccelerationStructure();
 
             /// Find the closest hit for a ray using the current acceleration state.
             /// @param ray Ray to trace through the scene.
@@ -74,6 +73,10 @@ namespace RayTracer
             /// Get mutable reference to lights.
             /// @return Reference to the lights vector
             std::vector<std::shared_ptr<ILight>>& getLights();
+
+            /// Get the scene's BVH acceleration structure, for custom render implementation.
+            /// @return Optional reference to the BVH, if it is built and in use
+            std::optional<std::reference_wrapper<const BVH>> getBVH() const;
 
             /// Update the scene's camera.
             /// @param newCamera Reference to the new camera to set
