@@ -21,7 +21,6 @@ FetchContent_MakeAvailable(libconfig)
 FetchContent_Declare(
     SFML
     GIT_REPOSITORY https://github.com/SFML/SFML.git
-    GIT_TAG 2.5.1
 )
 set(SFML_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(SFML_BUILD_TESTS    OFF CACHE BOOL "" FORCE)
