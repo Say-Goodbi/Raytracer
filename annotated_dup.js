@@ -20,6 +20,7 @@ var annotated_dup =
       [ "BVHCam", "classRayTracer_1_1BVHCam.html", "classRayTracer_1_1BVHCam" ],
       [ "Camera", "classRayTracer_1_1Camera.html", "classRayTracer_1_1Camera" ],
       [ "Color", "structRayTracer_1_1Color.html", "structRayTracer_1_1Color" ],
+      [ "Cone", "classRayTracer_1_1Cone.html", "classRayTracer_1_1Cone" ],
       [ "Cylinder", "classRayTracer_1_1Cylinder.html", "classRayTracer_1_1Cylinder" ],
       [ "DirectionalLight", "classRayTracer_1_1DirectionalLight.html", "classRayTracer_1_1DirectionalLight" ],
       [ "DivisionByZeroException", "classRayTracer_1_1DivisionByZeroException.html", "classRayTracer_1_1DivisionByZeroException" ],

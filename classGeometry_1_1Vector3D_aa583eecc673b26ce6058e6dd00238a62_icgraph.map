@@ -1,19 +1,21 @@
 <map id="Geometry::Vector3D::operator*" name="Geometry::Vector3D::operator*">
-<area shape="rect" id="Node000001" title=" " alt="" coords="453,185,607,225"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="453,211,607,251"/>
 <area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571" title="Evaluate the rendering equation along a ray, deterministically." alt="" coords="229,29,383,69"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="503,176,460,129,433,104,404,84,381,72,383,67,407,79,436,100,464,125,507,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="508,201,465,141,436,110,404,84,381,71,384,67,407,79,440,106,469,138,512,198"/>
 <area shape="rect" id="Node000004" href="$classRayTracer_1_1Phong.html#a2526bd20be0b2cbb045250c4a6573b27" title="Evaluate the BRDF for a given pair of directions." alt="" coords="207,94,405,119"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="488,180,448,155,404,133,371,122,372,117,406,128,451,150,491,175"/>
-<area shape="rect" id="Node000005" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="219,143,393,169"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="439,188,364,171,365,166,441,183"/>
-<area shape="rect" id="Node000006" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title="Test ray–plane intersection using the algebraic plane equation." alt="" coords="229,193,383,218"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="440,208,384,208,384,203,440,203"/>
-<area shape="rect" id="Node000007" href="$classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2" title="Return the probability density of the direction from sample()." alt="" coords="225,242,387,267"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="441,228,365,245,364,239,439,223"/>
-<area shape="rect" id="Node000008" href="$classRayTracer_1_1Glass.html#a2c9fb925e8ccd41d68e1126530937c84" title="Return the deterministic bounce direction for this material." alt="" coords="213,291,399,317"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="490,235,450,259,406,281,369,294,367,289,404,276,448,255,487,231"/>
-<area shape="rect" id="Node000009" href="$classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd" title="Return the deterministic bounce direction for this material." alt="" coords="211,341,401,366"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="507,238,464,286,437,310,407,330,377,343,375,338,404,326,433,306,460,282,503,235"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="498,203,456,166,404,133,375,122,377,117,407,128,459,162,501,199"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1Cone.html#a19623c2790fd4ab917eb624508e57e5d" title="Test ray–cone intersection using the quadratic form of the cone equation." alt="" coords="230,143,382,169"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="471,208,404,183,365,171,367,166,406,177,473,203"/>
+<area shape="rect" id="Node000006" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="219,193,393,218"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="439,223,393,218,393,212,440,218"/>
+<area shape="rect" id="Node000007" href="$classRayTracer_1_1Plane.html#a7b741696eb186f6ec9df62e58e795916" title="Test ray–plane intersection using the algebraic plane equation." alt="" coords="229,242,383,267"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="440,243,384,249,383,244,439,238"/>
+<area shape="rect" id="Node000008" href="$classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2" title="Return the probability density of the direction from sample()." alt="" coords="225,291,387,317"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="469,258,406,281,362,294,360,289,405,276,468,253"/>
+<area shape="rect" id="Node000009" href="$classRayTracer_1_1Glass.html#a2c9fb925e8ccd41d68e1126530937c84" title="Return the deterministic bounce direction for this material." alt="" coords="213,341,399,366"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="500,262,458,298,407,330,373,343,372,338,404,326,455,294,497,258"/>
+<area shape="rect" id="Node000010" href="$classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd" title="Return the deterministic bounce direction for this material." alt="" coords="211,390,401,415"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="513,264,469,323,440,354,407,380,380,392,377,387,404,375,437,350,465,320,508,261"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="344,18,330,11,306,8,285,10,272,15,267,21,270,28,265,30,262,20,269,10,284,5,306,3,332,6,346,13"/>
 <area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,29,159,69"/>
 <area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="216,52,159,52,159,47,216,47"/>

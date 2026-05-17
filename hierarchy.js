@@ -6,6 +6,7 @@ var hierarchy =
       [ "RayTracer::SceneWriter", "classRayTracer_1_1SceneWriter.html", null ]
     ] ],
     [ "RayTracer::APrimitive", "classRayTracer_1_1APrimitive.html", [
+      [ "RayTracer::Cone", "classRayTracer_1_1Cone.html", null ],
       [ "RayTracer::Cylinder", "classRayTracer_1_1Cylinder.html", null ],
       [ "RayTracer::Plane", "classRayTracer_1_1Plane.html", null ],
       [ "RayTracer::Sphere", "classRayTracer_1_1Sphere.html", null ]

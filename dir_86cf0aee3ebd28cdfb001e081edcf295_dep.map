@@ -4,28 +4,28 @@
 <area shape="poly" id="edge2" href="dir_000008_000001.html" alt="" coords="110,87,145,124,141,128,106,90"/>
 <area shape="rect" id="edge2-headlabel" href="dir_000008_000001.html" title="2" alt="" coords="141,110,151,124"/>
 <area shape="rect" id="node6" href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" title="Scene orchestration, loading and BVH preparation." alt="" coords="738,136,849,161"/>
-<area shape="poly" id="edge1" href="dir_000008_000045.html" alt="" coords="130,85,170,96,252,109,323,117,444,121,567,122,725,133,724,139,567,127,444,126,322,122,252,114,169,101,128,91"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000008_000045.html" title="2" alt="" coords="716,120,725,134"/>
+<area shape="poly" id="edge1" href="dir_000008_000046.html" alt="" coords="130,85,170,96,252,109,323,117,444,121,567,122,725,133,724,139,567,127,444,126,322,122,252,114,169,101,128,91"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000008_000046.html" title="2" alt="" coords="716,120,725,134"/>
 <area shape="rect" id="node7" href="dir_a7363e98f9e0bdd87618633653859815.html" title="Utility helpers used across the project." alt="" coords="662,136,714,161"/>
-<area shape="poly" id="edge3" href="dir_000008_000050.html" alt="" coords="130,85,170,96,241,107,302,113,407,115,514,117,576,122,649,133,648,139,575,128,513,122,407,120,301,118,240,113,169,101,129,91"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000008_000050.html" title="2" alt="" coords="641,120,650,134"/>
+<area shape="poly" id="edge3" href="dir_000008_000051.html" alt="" coords="130,85,170,96,241,107,302,113,407,115,514,117,576,122,649,133,648,139,575,128,513,122,407,120,301,118,240,113,169,101,129,91"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000008_000051.html" title="2" alt="" coords="641,120,650,134"/>
 <area shape="rect" id="node8" href="dir_cae27912e177176a90175eee3a6288a5.html" title="Geometry primitives, vectors and math utilities." alt="" coords="551,136,638,161"/>
-<area shape="poly" id="edge4" href="dir_000008_000017.html" alt="" coords="130,85,170,96,272,112,354,117,435,121,538,132,538,138,435,126,353,122,272,117,169,101,129,91"/>
-<area shape="rect" id="edge4-headlabel" href="dir_000008_000017.html" title="6" alt="" coords="530,118,539,133"/>
+<area shape="poly" id="edge4" href="dir_000008_000018.html" alt="" coords="130,85,170,96,272,112,354,117,435,121,538,132,538,138,435,126,353,122,272,117,169,101,129,91"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000008_000018.html" title="6" alt="" coords="530,118,539,133"/>
 <area shape="rect" id="node4" href="dir_bcb78dd210b4a6eed89bcede11e18332.html" title="Built&#45;in plugin providing the camera renderer and core initializers." alt="" coords="182,63,274,88"/>
-<area shape="poly" id="edge6" href="dir_000011_000001.html" alt="" coords="219,90,184,128,181,124,215,87"/>
-<area shape="rect" id="edge6-headlabel" href="dir_000011_000001.html" title="15" alt="" coords="183,121,200,136"/>
-<area shape="poly" id="edge5" href="dir_000011_000045.html" alt="" coords="254,86,286,96,406,117,502,122,600,124,724,133,724,138,599,129,502,127,405,122,285,101,252,91"/>
-<area shape="rect" id="edge5-headlabel" href="dir_000011_000045.html" title="3" alt="" coords="716,120,725,134"/>
-<area shape="poly" id="edge7" href="dir_000011_000050.html" alt="" coords="254,85,286,96,385,113,465,117,546,120,649,133,648,139,546,125,465,122,384,118,285,101,252,91"/>
-<area shape="rect" id="edge7-headlabel" href="dir_000011_000050.html" title="4" alt="" coords="641,120,650,134"/>
-<area shape="poly" id="edge8" href="dir_000011_000017.html" alt="" coords="255,86,286,96,356,111,411,117,468,122,538,132,537,137,467,128,411,123,355,116,285,101,254,91"/>
-<area shape="rect" id="edge8-headlabel" href="dir_000011_000017.html" title="11" alt="" coords="526,118,543,133"/>
+<area shape="poly" id="edge6" href="dir_000012_000001.html" alt="" coords="219,90,184,128,181,124,215,87"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000012_000001.html" title="17" alt="" coords="183,121,200,136"/>
+<area shape="poly" id="edge5" href="dir_000012_000046.html" alt="" coords="254,86,286,96,406,117,502,122,600,124,724,133,724,138,599,129,502,127,405,122,285,101,252,91"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000012_000046.html" title="3" alt="" coords="716,120,725,134"/>
+<area shape="poly" id="edge7" href="dir_000012_000051.html" alt="" coords="254,85,286,96,385,113,465,117,546,120,649,133,648,139,546,125,465,122,384,118,285,101,252,91"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000012_000051.html" title="4" alt="" coords="641,120,650,134"/>
+<area shape="poly" id="edge8" href="dir_000012_000018.html" alt="" coords="255,86,286,96,356,111,411,117,468,122,538,132,537,137,467,128,411,123,355,116,285,101,254,91"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000012_000018.html" title="12" alt="" coords="526,118,543,133"/>
 <area shape="rect" id="node5" href="dir_a59d98741bd4255aa4724bdc86d0f6a0.html" title="LivescenePlugin" alt="" coords="298,63,425,88"/>
-<area shape="poly" id="edge9" href="dir_000025_000045.html" alt="" coords="397,86,438,96,516,110,579,117,724,133,724,138,578,123,516,115,437,101,396,91"/>
-<area shape="rect" id="edge9-headlabel" href="dir_000025_000045.html" title="1" alt="" coords="716,119,726,134"/>
-<area shape="poly" id="edge10" href="dir_000025_000050.html" alt="" coords="399,86,438,96,542,114,649,133,648,138,541,120,437,101,397,91"/>
-<area shape="rect" id="edge10-headlabel" href="dir_000025_000050.html" title="1" alt="" coords="641,119,651,134"/>
+<area shape="poly" id="edge9" href="dir_000026_000046.html" alt="" coords="397,86,438,96,516,110,579,117,724,133,724,138,578,123,516,115,437,101,396,91"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000026_000046.html" title="1" alt="" coords="716,119,726,134"/>
+<area shape="poly" id="edge10" href="dir_000026_000051.html" alt="" coords="399,86,438,96,542,114,649,133,648,138,541,120,437,101,397,91"/>
+<area shape="rect" id="edge10-headlabel" href="dir_000026_000051.html" title="1" alt="" coords="641,119,651,134"/>
 <area shape="rect" id="clust2" href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" title="Plugin modules and their implementations." alt="" coords="27,52,529,99"/>
 <area shape="rect" id="clust1" href="dir_55b41fb77a5097913bc464fb6a145e9c.html" title="Scene objects, primitives and materials." alt="" coords="16,16,540,172"/>
 </map>
