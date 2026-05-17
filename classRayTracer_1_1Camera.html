@@ -454,7 +454,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Radiance estimate along <code>ray</code>.</dd></dl>
 <p>The branch is chosen by the material's PDF for its sampled direction:</p>
 <p><b>Specular / glass branch</b> (<code>pdf ≈ 0</code>, delta BSDFs): </p><div class="fragment"><div class="line">L = Le + evaluate(ωi, ωo) * π * <a class="code hl_function" href="classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571">castRay</a>(ωi)</div>
-<div class="ttc" id="aclassRayTracer_1_1Camera_html_a7cd2251f34b6dda51fe338512e598571"><div class="ttname"><a href="classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571">RayTracer::Camera::castRay</a></div><div class="ttdeci">Color castRay(const Geometry::Ray &amp;ray, Scene &amp;scene, int depth)</div><div class="ttdoc">Evaluate the rendering equation along a ray, deterministically.</div><div class="ttdef"><b>Definition</b> <a href="Camera_8cpp_source.html#l00144">Camera.cpp:144</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Camera_html_a7cd2251f34b6dda51fe338512e598571"><div class="ttname"><a href="classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571">RayTracer::Camera::castRay</a></div><div class="ttdeci">Color castRay(const Geometry::Ray &amp;ray, Scene &amp;scene, int depth)</div><div class="ttdoc">Evaluate the rendering equation along a ray, deterministically.</div><div class="ttdef"><b>Definition</b> <a href="Camera_8cpp_source.html#l00147">Camera.cpp:147</a></div></div>
 </div><!-- fragment --><p> The bounce origin is offset by 1e-4 along <code>ωi</code> to avoid self-intersection.</p>
 <p><b>Diffuse branch</b> (<code>pdf &gt; 0</code>): </p><div class="fragment"><div class="line">L = Le + evaluate(n, ωo, n) * π * Σ light-&gt;computeLight(hit)</div>
 </div><!-- fragment --><p> Incoming radiance comes from direct lighting only — no recursive bounce.</p>
@@ -477,7 +477,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Radiance estimate along <code>ray</code>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00144">144</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00147">147</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -618,7 +618,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classRayTracer_1_1ARenderer.html#aba1715a2e7e2f5555194f9ed67fb2d69">RayTracer::ARenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00196">196</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00199">199</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
