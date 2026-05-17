@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.6.1...v1.7.0) (2026-05-17)
+
+
+### Features
+
+* implement BVH camera renderer and related configuration updates, and delete useBVH from Camera ([c56d176](https://github.com/Say-Goodbi/Raytracer/commit/c56d1760c51c26e8ffda75f4aa41b5b51789ace6))
+
 ## [1.6.1](https://github.com/Say-Goodbi/Raytracer/compare/v1.6.0...v1.6.1) (2026-05-17)
 
 
