@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/Say-Goodbi/Raytracer/compare/v1.6.0...v1.6.1) (2026-05-17)
+
+
+### Bug Fixes
+
+* scale on camera transform matrix now functional ([c634034](https://github.com/Say-Goodbi/Raytracer/commit/c634034832baaf11f35261ffb864735b07a1e4b6))
+
 # [1.6.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.5.0...v1.6.0) (2026-05-16)
 
 
