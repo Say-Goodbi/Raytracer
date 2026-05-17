@@ -95,6 +95,9 @@ $(document).ready(function(){initNavTree('Camera_8cpp.html',''); initResizable()
   <div class="headertitle"><div class="title">Camera.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementation of the <code><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">RayTracer::Camera</a></code> renderer.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Scene_8hpp_source.html">../../../../../SceneSystem/Scene/Scene.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="APrimitive_8hpp_source.html">../../../../../Objects/Abstracts/APrimitive/APrimitive.hpp</a>&quot;</code><br />
@@ -118,7 +121,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceRayTracer" id="r_namespaceRayTracer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html">RayTracer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implementation of the <code><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">RayTracer::Camera</a></code> renderer. </p>
+<p>Implements ray generation and deterministic path-tracing for the camera renderer. The camera builds a view plane from a <code><a class="el" href="classGeometry_1_1TransformMatrix.html">Geometry::TransformMatrix</a></code> and exposes <code>generateRay()</code> and <code>render()</code> used by the scene writer. See <a class="el" href="classRayTracer_1_1Camera.html">RayTracer::Camera</a> and <a class="el" href="classGeometry_1_1Ray.html">Geometry::Ray</a> for related types. </p>
+
+<p class="definition">Definition in file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,6 +1,6 @@
 <map id="src/Geometry/TransformMatrix/TransformMatrix.cpp" name="src/Geometry/TransformMatrix/TransformMatrix.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="154,5,375,45"/>
-<area shape="rect" id="Node000002" href="$TransformMatrix_8hpp.html" title=" " alt="" coords="186,93,343,119"/>
+<area shape="rect" id="Node000001" title="Implementation of affine transform helpers used across geometry." alt="" coords="154,5,375,45"/>
+<area shape="rect" id="Node000002" href="$TransformMatrix_8hpp.html" title="Affine transform matrix utilities used for camera and object transforms." alt="" coords="186,93,343,119"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,46,267,79,262,79,262,46"/>
 <area shape="rect" id="Node000003" href="$Matrix_8hpp.html" title="Fixed&#45;size generic matrix template used across geometry types." alt="" coords="5,167,156,192"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="236,121,125,164,123,159,234,116"/>

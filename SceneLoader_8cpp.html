@@ -96,6 +96,9 @@ $(document).ready(function(){initNavTree('SceneLoader_8cpp.html',''); initResiza
   <div class="headertitle"><div class="title">SceneLoader.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Scene parsing and construction from configuration nodes.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="SceneLoader_8hpp_source.html">SceneLoader.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for SceneLoader.cpp:</div>
@@ -117,7 +120,12 @@ Variables</h2></td></tr>
 <tr class="memitem:ab1df109502a449ddaefce71c0d041175" id="r_ab1df109502a449ddaefce71c0d041175"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::function&lt; void(<a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">NodePtr</a> &amp;, <a class="el" href="classRayTracer_1_1PluginManager.html">PluginManager</a> &amp;, std::unique_ptr&lt; <a class="el" href="classRayTracer_1_1Scene.html">Scene</a> &gt; &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html#ab1df109502a449ddaefce71c0d041175">RayTracer::_componentCreators</a></td></tr>
 <tr class="separator:ab1df109502a449ddaefce71c0d041175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Scene parsing and construction from configuration nodes. </p>
+<p>Implements the <code>SceneLoader</code> which walks parsed config nodes and uses <code>PluginManager</code> initializers to create renderers, primitives and lights, assembling a <code><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">RayTracer::Scene</a></code> instance. See SceneSystem::ConfigParser for parsing details. </p>
+
+<p class="definition">Definition in file <a class="el" href="SceneLoader_8cpp_source.html">SceneLoader.cpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

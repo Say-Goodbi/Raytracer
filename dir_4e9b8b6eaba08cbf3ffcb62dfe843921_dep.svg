@@ -20,7 +20,7 @@
 <title>src/Geometry/Ray</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_cae27912e177176a90175eee3a6288a5</title>
-<g id="a_clust1"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry">
+<g id="a_clust1"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry primitives, vectors and math utilities.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-8 8,-117 159,-117 159,-8 8,-8"/>
 <text text-anchor="middle" x="83.5" y="-105" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry</text>
 </a>
@@ -47,7 +47,7 @@
 <!-- dir_4e9b8b6eaba08cbf3ffcb62dfe843921 -->
 <g id="node3" class="node">
 <title>dir_4e9b8b6eaba08cbf3ffcb62dfe843921</title>
-<g id="a_node3"><a xlink:href="dir_4e9b8b6eaba08cbf3ffcb62dfe843921.html" target="_top" xlink:title="Ray">
+<g id="a_node3"><a xlink:href="dir_4e9b8b6eaba08cbf3ffcb62dfe843921.html" target="_top" xlink:title="Ray datatype and helpers for ray operations and intersection.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="99.5,-90 64.5,-90 64.5,-71 99.5,-71 99.5,-90"/>
 <text text-anchor="middle" x="82" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">Ray</text>
 </a>

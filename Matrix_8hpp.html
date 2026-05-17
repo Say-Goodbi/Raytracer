@@ -121,7 +121,8 @@ Namespaces</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Fixed-size generic matrix template used across geometry types. </p>
-<p>The Matrix template provides a small, stack-allocated, row-major storage for floating point values and implements common matrix operations used by the geometry primitives. It is intentionally lightweight and header-only so it can be used as a base class for <code>Point</code> and <code>Vector</code> specializations.</p>
+<p>Fixed-size matrix template used by geometry types.</p>
+<p>The Matrix template provides a small, stack-allocated, row-major storage for floating point values and implements common matrix operations used by the geometry primitives. It is intentionally lightweight and header-only so it can be used as a base class for <code>Point</code> and <code>Vector</code> specializations. See <a class="el" href="classGeometry_1_1TransformMatrix.html">Geometry::TransformMatrix</a> for affine transform helpers.</p>
 <p>Template parameters:</p><ul>
 <li>Rows: number of rows (compile-time constant)</li>
 <li>Cols: number of columns (compile-time constant)</li>
@@ -130,8 +131,9 @@ Namespaces</h2></td></tr>
 <li>Storage is a plain C-style array of <code>float</code> in row-major order.</li>
 <li>Default constructor zero-initializes the contents.</li>
 <li>A copy constructor is defaulted to allow trivial copying.</li>
-<li><code>identity()</code> is only available for square matrices (Rows == Cols). </li>
+<li><code>identity()</code> is only available for square matrices (Rows == Cols).</li>
 </ul>
+<p>Provides a lightweight, header-only <code>Matrix&lt;Rows,Cols&gt;</code> template which is the foundation for <code><a class="el" href="classGeometry_1_1TransformMatrix.html">Geometry::TransformMatrix</a></code> and other mathematical primitives. </p>
 
 <p class="definition">Definition in file <a class="el" href="Matrix_8hpp_source.html">Matrix.hpp</a>.</p>
 </div></div><!-- contents -->

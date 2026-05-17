@@ -20,7 +20,7 @@
 <title>src/Objects/Plugins/CorePlugin</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_86cf0aee3ebd28cdfb001e081edcf295</title>
-<g id="a_clust1"><a xlink:href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" target="_top" xlink:title="Plugins">
+<g id="a_clust1"><a xlink:href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" target="_top" xlink:title="Plugin modules and their implementations.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-39 8,-164 418,-164 418,-39 8,-39"/>
 <text text-anchor="middle" x="213" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00">Plugins</text>
 </a>
@@ -28,7 +28,7 @@
 </g>
 <g id="clust2" class="cluster">
 <title>clusterdir_bcb78dd210b4a6eed89bcede11e18332</title>
-<g id="a_clust2"><a xlink:href="dir_bcb78dd210b4a6eed89bcede11e18332.html" target="_top">
+<g id="a_clust2"><a xlink:href="dir_bcb78dd210b4a6eed89bcede11e18332.html" target="_top" xlink:title="Built&#45;in plugin providing the camera renderer and core initializers.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="16,-47 16,-137 410,-137 410,-47 16,-47"/>
 </a>
 </g>
@@ -151,7 +151,7 @@
 <!-- dir_49f80dbd7683ed98b39c0cd73917c2a0 -->
 <g id="node7" class="node">
 <title>dir_49f80dbd7683ed98b39c0cd73917c2a0</title>
-<g id="a_node7"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="SceneSystem">
+<g id="a_node7"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="Scene orchestration, loading and BVH preparation.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="98.5,-19 15.5,-19 15.5,0 98.5,0 98.5,-19"/>
 <text text-anchor="middle" x="57" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">SceneSystem</text>
 </a>
@@ -186,7 +186,7 @@
 <!-- dir_a7363e98f9e0bdd87618633653859815 -->
 <g id="node9" class="node">
 <title>dir_a7363e98f9e0bdd87618633653859815</title>
-<g id="a_node9"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utils">
+<g id="a_node9"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utility helpers used across the project.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" points="160.5,-19 121.5,-19 121.5,0 160.5,0 160.5,-19"/>
 <text text-anchor="middle" x="141" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Utils</text>
 </a>
@@ -208,7 +208,7 @@
 <!-- dir_7f2e168896bc22155d1dd7adee44c1a1 -->
 <g id="node8" class="node">
 <title>dir_7f2e168896bc22155d1dd7adee44c1a1</title>
-<g id="a_node8"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstracts">
+<g id="a_node8"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstract base classes and plugin&#45;facing interfaces.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="254,-19 192,-19 192,0 254,0 254,-19"/>
 <text text-anchor="middle" x="223" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Abstracts</text>
 </a>
@@ -230,7 +230,7 @@
 <!-- dir_cae27912e177176a90175eee3a6288a5 -->
 <g id="node10" class="node">
 <title>dir_cae27912e177176a90175eee3a6288a5</title>
-<g id="a_node10"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry">
+<g id="a_node10"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry primitives, vectors and math utilities.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="337.5,-19 272.5,-19 272.5,0 337.5,0 337.5,-19"/>
 <text text-anchor="middle" x="305" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry</text>
 </a>

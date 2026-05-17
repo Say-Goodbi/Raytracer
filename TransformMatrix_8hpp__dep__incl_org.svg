@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Affine transform matrix utilities used for camera and object transforms.">
 <polygon fill="#999999" stroke="#666666" points="352,-184 186,-184 186,-154 352,-154 352,-184"/>
 <text text-anchor="start" x="194" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/TransformMatrix</text>
 <text text-anchor="middle" x="269" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00">/TransformMatrix.hpp</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="TransformMatrix_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="TransformMatrix_8cpp.html" target="_top" xlink:title="Implementation of affine transform helpers used across geometry.">
 <polygon fill="white" stroke="#666666" points="166,-112.5 0,-112.5 0,-82.5 166,-82.5 166,-112.5"/>
 <text text-anchor="start" x="8" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/TransformMatrix</text>
 <text text-anchor="middle" x="83" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">/TransformMatrix.cpp</text>
@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="Camera_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="Camera_8hpp.html" target="_top" xlink:title="Declaration for the camera&#45;based renderer used by the raytracer.">
 <polygon fill="white" stroke="#666666" points="497.5,-118 372.5,-118 372.5,-77 497.5,-77 497.5,-118"/>
 <text text-anchor="start" x="380.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="start" x="380.5" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
@@ -79,7 +79,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="CorePlugin_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="CorePlugin_8cpp.html" target="_top" xlink:title="Core plugin implementation that provides primitives, materials and the camera.">
 <polygon fill="white" stroke="#666666" points="349,-35.5 201,-35.5 201,-5.5 349,-5.5 349,-35.5"/>
 <text text-anchor="start" x="209" y="-23.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="middle" x="275" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/CorePlugin.cpp</text>
@@ -98,7 +98,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::Camera renderer.">
 <polygon fill="white" stroke="#666666" points="497.5,-41 372.5,-41 372.5,0 497.5,0 497.5,-41"/>
 <text text-anchor="start" x="380.5" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="start" x="380.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>

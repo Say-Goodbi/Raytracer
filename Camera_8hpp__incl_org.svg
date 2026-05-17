@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Declaration for the camera&#45;based renderer used by the raytracer.">
 <polygon fill="#999999" stroke="#666666" points="666.5,-283 541.5,-283 541.5,-242 666.5,-242 666.5,-283"/>
 <text text-anchor="start" x="549.5" y="-271" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="start" x="549.5" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
@@ -115,7 +115,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title="Ray primitive used to represent a parametric line (origin + direction).">
 <polygon fill="white" stroke="#666666" points="742,-206 632,-206 632,-176 742,-176 742,-206"/>
 <text text-anchor="start" x="640" y="-194" font-family="Helvetica,sans-Serif" font-size="10.00">../../../../../Geometry</text>
 <text text-anchor="middle" x="687" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">/Ray/Ray.hpp</text>
@@ -153,7 +153,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="TransformMatrix_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="TransformMatrix_8hpp.html" target="_top" xlink:title="Affine transform matrix utilities used for camera and object transforms.">
 <polygon fill="white" stroke="#666666" points="964,-206 760,-206 760,-176 964,-176 964,-206"/>
 <text text-anchor="start" x="768" y="-194" font-family="Helvetica,sans-Serif" font-size="10.00">../../../../../Geometry</text>
 <text text-anchor="middle" x="862" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">/TransformMatrix/TransformMatrix.hpp</text>

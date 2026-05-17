@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Scene container and ray query interface used by renderers.">
 <polygon fill="#999999" stroke="#666666" points="542.5,-173 410.5,-173 410.5,-143 542.5,-143 542.5,-173"/>
 <text text-anchor="start" x="418.5" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/Scene</text>
 <text text-anchor="middle" x="476.5" y="-150" font-family="Helvetica,sans-Serif" font-size="10.00">/Scene.hpp</text>
@@ -41,7 +41,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::Camera renderer.">
 <polygon fill="white" stroke="#666666" points="304,-107 179,-107 179,-66 304,-66 304,-107"/>
 <text text-anchor="start" x="187" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="start" x="187" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
@@ -81,7 +81,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="Scene_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="Scene_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::Scene container and utilities.">
 <polygon fill="white" stroke="#666666" points="622.5,-101.5 490.5,-101.5 490.5,-71.5 622.5,-71.5 622.5,-101.5"/>
 <text text-anchor="start" x="498.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/Scene</text>
 <text text-anchor="middle" x="556.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Scene.cpp</text>
@@ -100,7 +100,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="SceneLoader_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="SceneLoader_8hpp.html" target="_top" xlink:title="Loads scene graphs from parsed configuration nodes.">
 <polygon fill="white" stroke="#666666" points="806,-101.5 641,-101.5 641,-71.5 806,-71.5 806,-101.5"/>
 <text text-anchor="start" x="649" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneLoader</text>
 <text text-anchor="middle" x="723.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneLoader.hpp</text>
@@ -119,7 +119,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="main_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="main_8cpp.html" target="_top" xlink:title="Entry point and CLI for the raytracer application.">
 <polygon fill="white" stroke="#666666" points="874,-24.5 795,-24.5 795,-5.5 874,-5.5 874,-24.5"/>
 <text text-anchor="middle" x="834.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main.cpp</text>
 </a>
@@ -137,7 +137,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="SceneLoader_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="SceneLoader_8cpp.html" target="_top" xlink:title="Scene parsing and construction from configuration nodes.">
 <polygon fill="white" stroke="#666666" points="777,-30 612,-30 612,0 777,0 777,-30"/>
 <text text-anchor="start" x="620" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneLoader</text>
 <text text-anchor="middle" x="694.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneLoader.cpp</text>

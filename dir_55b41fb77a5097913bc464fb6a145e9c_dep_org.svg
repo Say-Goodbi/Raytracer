@@ -10,7 +10,7 @@
 <title>src/Objects</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_68267d1309a1af8e8297ef4c3efbcdba</title>
-<g id="a_clust1"><a xlink:href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" target="_top" xlink:title="src">
+<g id="a_clust1"><a xlink:href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" target="_top" xlink:title="Root of the C++ source tree containing the raytracer implementation.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-dasharray="5,2" points="8,-8 8,-180 344,-180 344,-8 8,-8"/>
 <text text-anchor="middle" x="176" y="-168" font-family="Helvetica,sans-Serif" font-size="10.00">src</text>
 </a>
@@ -18,7 +18,7 @@
 </g>
 <g id="clust2" class="cluster">
 <title>clusterdir_55b41fb77a5097913bc464fb6a145e9c</title>
-<g id="a_clust2"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top">
+<g id="a_clust2"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Scene objects, primitives and materials.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="196,-63 196,-153 336,-153 336,-63 196,-63"/>
 </a>
 </g>
@@ -26,7 +26,7 @@
 <!-- dir_49f80dbd7683ed98b39c0cd73917c2a0 -->
 <g id="node1" class="node">
 <title>dir_49f80dbd7683ed98b39c0cd73917c2a0</title>
-<g id="a_node1"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="SceneSystem">
+<g id="a_node1"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="Scene orchestration, loading and BVH preparation.">
 <polygon fill="#a2b4d6" stroke="red" points="187.5,-90 104.5,-90 104.5,-71 187.5,-71 187.5,-90"/>
 <text text-anchor="middle" x="146" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">SceneSystem</text>
 </a>
@@ -44,7 +44,7 @@
 <!-- dir_a7363e98f9e0bdd87618633653859815 -->
 <g id="node3" class="node">
 <title>dir_a7363e98f9e0bdd87618633653859815</title>
-<g id="a_node3"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utils">
+<g id="a_node3"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utility helpers used across the project.">
 <polygon fill="#a2b4d6" stroke="#404040" points="235.5,-35 196.5,-35 196.5,-16 235.5,-16 235.5,-35"/>
 <text text-anchor="middle" x="216" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Utils</text>
 </a>
@@ -53,7 +53,7 @@
 <!-- dir_cae27912e177176a90175eee3a6288a5 -->
 <g id="node4" class="node">
 <title>dir_cae27912e177176a90175eee3a6288a5</title>
-<g id="a_node4"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry">
+<g id="a_node4"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry primitives, vectors and math utilities.">
 <polygon fill="#a2b4d6" stroke="red" points="331.5,-35 266.5,-35 266.5,-16 331.5,-16 331.5,-35"/>
 <text text-anchor="middle" x="299" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- dir_7f2e168896bc22155d1dd7adee44c1a1 -->
 <g id="node6" class="node">
 <title>dir_7f2e168896bc22155d1dd7adee44c1a1</title>
-<g id="a_node6"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstracts">
+<g id="a_node6"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstract base classes and plugin&#45;facing interfaces.">
 <polygon fill="#a2b4d6" stroke="#404040" points="294,-90 232,-90 232,-71 294,-71 294,-90"/>
 <text text-anchor="middle" x="263" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">Abstracts</text>
 </a>
@@ -128,7 +128,7 @@
 <!-- dir_86cf0aee3ebd28cdfb001e081edcf295 -->
 <g id="node7" class="node">
 <title>dir_86cf0aee3ebd28cdfb001e081edcf295</title>
-<g id="a_node7"><a xlink:href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" target="_top" xlink:title="Plugins">
+<g id="a_node7"><a xlink:href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" target="_top" xlink:title="Plugin modules and their implementations.">
 <polygon fill="#a2b4d6" stroke="#404040" points="328,-145 276,-145 276,-126 328,-126 328,-145"/>
 <text text-anchor="middle" x="302" y="-133" font-family="Helvetica,sans-Serif" font-size="10.00">Plugins</text>
 </a>

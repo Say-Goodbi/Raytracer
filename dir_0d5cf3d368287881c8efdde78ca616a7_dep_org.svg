@@ -28,7 +28,7 @@
 <!-- dir_7f2e168896bc22155d1dd7adee44c1a1 -->
 <g id="node2" class="node">
 <title>dir_7f2e168896bc22155d1dd7adee44c1a1</title>
-<g id="a_node2"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstracts">
+<g id="a_node2"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstract base classes and plugin&#45;facing interfaces.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="62,-19 0,-19 0,0 62,0 62,-19"/>
 <text text-anchor="middle" x="31" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Abstracts</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- dir_cae27912e177176a90175eee3a6288a5 -->
 <g id="node3" class="node">
 <title>dir_cae27912e177176a90175eee3a6288a5</title>
-<g id="a_node3"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry">
+<g id="a_node3"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry primitives, vectors and math utilities.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="145.5,-19 80.5,-19 80.5,0 145.5,0 145.5,-19"/>
 <text text-anchor="middle" x="113" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry</text>
 </a>

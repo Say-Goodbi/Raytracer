@@ -20,7 +20,7 @@
 <title>src/Utils</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_68267d1309a1af8e8297ef4c3efbcdba</title>
-<g id="a_clust1"><a xlink:href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" target="_top" xlink:title="src">
+<g id="a_clust1"><a xlink:href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" target="_top" xlink:title="Root of the C++ source tree containing the raytracer implementation.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-dasharray="5,2" points="8,-8 8,-62 64,-62 64,-8 8,-8"/>
 <text text-anchor="middle" x="36" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">src</text>
 </a>
@@ -29,7 +29,7 @@
 <!-- dir_a7363e98f9e0bdd87618633653859815 -->
 <g id="node1" class="node">
 <title>dir_a7363e98f9e0bdd87618633653859815</title>
-<g id="a_node1"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utils">
+<g id="a_node1"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utility helpers used across the project.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="55.5,-35 16.5,-35 16.5,-16 55.5,-16 55.5,-35"/>
 <text text-anchor="middle" x="36" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Utils</text>
 </a>

@@ -77,7 +77,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title="Ray primitive used to represent a parametric line (origin + direction).">
 <polygon fill="white" stroke="#666666" points="110,-195 0,-195 0,-165 110,-165 110,-195"/>
 <text text-anchor="start" x="8" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">../../../../../Geometry</text>
 <text text-anchor="middle" x="55" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">/Ray/Ray.hpp</text>

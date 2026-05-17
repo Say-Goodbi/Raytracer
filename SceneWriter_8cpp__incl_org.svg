@@ -58,7 +58,7 @@
 <!-- Node31 -->
 <g id="Node000031" class="node">
 <title>Node31</title>
-<g id="a_Node000031"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000031"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title="Scene container and ray query interface used by renderers.">
 <polygon fill="white" stroke="#666666" points="1097.48,-558 969.48,-558 969.48,-528 1097.48,-528 1097.48,-558"/>
 <text text-anchor="start" x="977.48" y="-546" font-family="Helvetica,sans-Serif" font-size="10.00">../../../../../SceneSystem</text>
 <text text-anchor="middle" x="1033.48" y="-535" font-family="Helvetica,sans-Serif" font-size="10.00">/Scene/Scene.hpp</text>
@@ -496,7 +496,7 @@
 <!-- Node30 -->
 <g id="Node000030" class="node">
 <title>Node30</title>
-<g id="a_Node000030"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000030"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title="Ray primitive used to represent a parametric line (origin + direction).">
 <polygon fill="white" stroke="#666666" points="1403.48,-250 1317.48,-250 1317.48,-231 1403.48,-231 1403.48,-250"/>
 <text text-anchor="middle" x="1360.48" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">../Ray/Ray.hpp</text>
 </a>
@@ -776,7 +776,7 @@
 <!-- Node32 -->
 <g id="Node000032" class="node">
 <title>Node32</title>
-<g id="a_Node000032"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin manager for loading and managing plugins.">
+<g id="a_Node000032"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin loader interface for dynamic plugins.">
 <polygon fill="white" stroke="#666666" points="220.48,-492 26.48,-492 26.48,-473 220.48,-473 220.48,-492"/>
 <text text-anchor="middle" x="123.48" y="-480" font-family="Helvetica,sans-Serif" font-size="10.00">../PluginManager/PluginManager.hpp</text>
 </a>

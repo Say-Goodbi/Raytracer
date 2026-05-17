@@ -12,7 +12,7 @@
 <area shape="poly" id="edge29_Node000002_Node000013" title=" " alt="" coords="472,132,495,153,516,180,540,217,556,249,563,283,555,325,540,360,520,393,478,444,474,441,515,390,535,358,550,323,557,283,551,251,535,220,512,183,491,156,469,135"/>
 <area shape="rect" id="Node000014" title=" " alt="" coords="466,291,541,317"/>
 <area shape="poly" id="edge30_Node000002_Node000014" title=" " alt="" coords="467,132,480,154,491,181,502,232,506,277,500,278,497,232,486,182,475,156,462,135"/>
-<area shape="rect" id="Node000018" href="$Ray_8hpp.html" title=" " alt="" coords="93,372,207,397"/>
+<area shape="rect" id="Node000018" href="$Ray_8hpp.html" title="Ray primitive used to represent a parametric line (origin + direction)." alt="" coords="93,372,207,397"/>
 <area shape="poly" id="edge28_Node000002_Node000018" title=" " alt="" coords="416,136,360,156,295,186,232,229,204,256,180,285,163,323,155,359,150,358,158,321,176,283,200,252,228,225,293,182,358,151,414,131"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="477,234,629,285,628,290,475,239"/>
 <area shape="poly" id="edge16_Node000003_Node000013" title=" " alt="" coords="406,236,451,438,446,440,401,237"/>

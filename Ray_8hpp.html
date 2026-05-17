@@ -96,6 +96,9 @@ $(document).ready(function(){initNavTree('Ray_8hpp.html',''); initResizable(); }
   <div class="headertitle"><div class="title">Ray.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ray primitive used to represent a parametric line (origin + direction).  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Point3D_8hpp_source.html">../../Geometry/Point3D/Point3D.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Vector3D_8hpp_source.html">../../Geometry/Vector3D/Vector3D.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -126,7 +129,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceGeometry" id="r_namespaceGeometry"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGeometry.html">Geometry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Ray primitive used to represent a parametric line (origin + direction). </p>
+<p>Declares <code><a class="el" href="classGeometry_1_1Ray.html" title="Represents a ray: an origin point and a direction vector.">Geometry::Ray</a></code>, a small POD containing an origin <code>Point3D</code> and a normalized direction <code>Vector3D</code>. Rays are the primary input to intersection queries via <a class="el" href="classRayTracer_1_1Scene.html#a67328ab35346b609ab3b7220fa08098c">RayTracer::Scene::hit</a>. </p>
+
+<p class="definition">Definition in file <a class="el" href="Ray_8hpp_source.html">Ray.hpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

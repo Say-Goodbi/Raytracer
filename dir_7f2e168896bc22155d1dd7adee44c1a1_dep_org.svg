@@ -10,7 +10,7 @@
 <title>src/Objects/Abstracts</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_55b41fb77a5097913bc464fb6a145e9c</title>
-<g id="a_clust1"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Objects">
+<g id="a_clust1"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Scene objects, primitives and materials.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-39 8,-164 356,-164 356,-39 8,-39"/>
 <text text-anchor="middle" x="182" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00">Objects</text>
 </a>
@@ -18,7 +18,7 @@
 </g>
 <g id="clust2" class="cluster">
 <title>clusterdir_7f2e168896bc22155d1dd7adee44c1a1</title>
-<g id="a_clust2"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top">
+<g id="a_clust2"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstract base classes and plugin&#45;facing interfaces.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="16,-47 16,-137 348,-137 348,-47 16,-47"/>
 </a>
 </g>
@@ -31,7 +31,7 @@
 <!-- dir_a7363e98f9e0bdd87618633653859815 -->
 <g id="node6" class="node">
 <title>dir_a7363e98f9e0bdd87618633653859815</title>
-<g id="a_node6"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utils">
+<g id="a_node6"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utility helpers used across the project.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" points="172.5,-19 133.5,-19 133.5,0 172.5,0 172.5,-19"/>
 <text text-anchor="middle" x="153" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Utils</text>
 </a>
@@ -53,7 +53,7 @@
 <!-- dir_cae27912e177176a90175eee3a6288a5 -->
 <g id="node7" class="node">
 <title>dir_cae27912e177176a90175eee3a6288a5</title>
-<g id="a_node7"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry">
+<g id="a_node7"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry primitives, vectors and math utilities.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="429.5,-74 364.5,-74 364.5,-55 429.5,-55 429.5,-74"/>
 <text text-anchor="middle" x="397" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry</text>
 </a>

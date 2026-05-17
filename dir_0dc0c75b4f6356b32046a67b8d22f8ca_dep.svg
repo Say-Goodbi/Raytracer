@@ -20,7 +20,7 @@
 <title>src/Objects/Plugins/CorePlugin/Materials</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_bcb78dd210b4a6eed89bcede11e18332</title>
-<g id="a_clust1"><a xlink:href="dir_bcb78dd210b4a6eed89bcede11e18332.html" target="_top" xlink:title="CorePlugin">
+<g id="a_clust1"><a xlink:href="dir_bcb78dd210b4a6eed89bcede11e18332.html" target="_top" xlink:title="Built&#45;in plugin providing the camera renderer and core initializers.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-39 8,-109 320,-109 320,-39 8,-39"/>
 <text text-anchor="middle" x="164" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00">CorePlugin</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- dir_7f2e168896bc22155d1dd7adee44c1a1 -->
 <g id="node5" class="node">
 <title>dir_7f2e168896bc22155d1dd7adee44c1a1</title>
-<g id="a_node5"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstracts">
+<g id="a_node5"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstract base classes and plugin&#45;facing interfaces.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="141,-19 79,-19 79,0 141,0 141,-19"/>
 <text text-anchor="middle" x="110" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Abstracts</text>
 </a>
@@ -94,7 +94,7 @@
 <!-- dir_a7363e98f9e0bdd87618633653859815 -->
 <g id="node6" class="node">
 <title>dir_a7363e98f9e0bdd87618633653859815</title>
-<g id="a_node6"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utils">
+<g id="a_node6"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utility helpers used across the project.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" points="207.5,-19 168.5,-19 168.5,0 207.5,0 207.5,-19"/>
 <text text-anchor="middle" x="188" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Utils</text>
 </a>

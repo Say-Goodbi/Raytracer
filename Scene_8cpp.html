@@ -95,6 +95,9 @@ $(document).ready(function(){initNavTree('Scene_8cpp.html',''); initResizable();
   <div class="headertitle"><div class="title">Scene.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implementation of the <code><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">RayTracer::Scene</a></code> container and utilities.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Scene.cpp:</div>
@@ -111,7 +114,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceRayTracer" id="r_namespaceRayTracer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html">RayTracer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implementation of the <code><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">RayTracer::Scene</a></code> container and utilities. </p>
+<p>The <code>Scene</code> owns primitives, lights and the renderer instance. It provides acceleration structure preparation (<code>BVH</code>) and the <code>hit()</code> interface used by the renderer to perform ray-primitive intersection queries. See <a class="el" href="classRayTracer_1_1Scene.html">RayTracer::Scene</a> and <a class="el" href="classRayTracer_1_1ARenderer.html">RayTracer::ARenderer</a> for integration points. </p>
+
+<p class="definition">Definition in file <a class="el" href="Scene_8cpp_source.html">Scene.cpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

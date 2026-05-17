@@ -96,6 +96,9 @@ $(document).ready(function(){initNavTree('Scene_8hpp.html',''); initResizable();
   <div class="headertitle"><div class="title">Scene.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Scene container and ray query interface used by renderers.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Plugin_8hpp_source.html">../../Objects/Plugin.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PluginManager_8hpp_source.html">../PluginManager/PluginManager.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BVH_8hpp_source.html">../BVH/BVH.hpp</a>&quot;</code><br />
@@ -131,7 +134,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceRayTracer" id="r_namespaceRayTracer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html">RayTracer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Scene container and ray query interface used by renderers. </p>
+<p>Declares <code><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">RayTracer::Scene</a></code>, which aggregates primitives and lights and exposes <code>hit()</code> for intersection tests. The scene coordinates with the renderer to prepare acceleration structures (BVH) when requested. See also <a class="el" href="classRayTracer_1_1ARenderer.html">RayTracer::ARenderer</a> and <a class="el" href="classRayTracer_1_1APrimitive.html">RayTracer::APrimitive</a>. </p>
+
+<p class="definition">Definition in file <a class="el" href="Scene_8hpp_source.html">Scene.hpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

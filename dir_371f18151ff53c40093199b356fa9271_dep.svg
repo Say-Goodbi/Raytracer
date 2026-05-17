@@ -20,7 +20,7 @@
 <title>src/SceneSystem/SceneLoader</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_49f80dbd7683ed98b39c0cd73917c2a0</title>
-<g id="a_clust1"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="SceneSystem">
+<g id="a_clust1"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="Scene orchestration, loading and BVH preparation.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-8 8,-117 273,-117 273,-8 8,-8"/>
 <text text-anchor="middle" x="140.5" y="-105" font-family="Helvetica,sans-Serif" font-size="10.00">SceneSystem</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- dir_c885c4bcce55d6fe81345b3413717718 -->
 <g id="node2" class="node">
 <title>dir_c885c4bcce55d6fe81345b3413717718</title>
-<g id="a_node2"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="PluginManager">
+<g id="a_node2"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="Plugin loading, discovery and factory registration.">
 <polygon fill="#a2b4d6" stroke="#404040" points="200.5,-35 111.5,-35 111.5,-16 200.5,-16 200.5,-35"/>
 <text text-anchor="middle" x="156" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">PluginManager</text>
 </a>
@@ -47,7 +47,7 @@
 <!-- dir_d463935c42a880f8392bc37d38dc00e7 -->
 <g id="node3" class="node">
 <title>dir_d463935c42a880f8392bc37d38dc00e7</title>
-<g id="a_node3"><a xlink:href="dir_d463935c42a880f8392bc37d38dc00e7.html" target="_top" xlink:title="Scene">
+<g id="a_node3"><a xlink:href="dir_d463935c42a880f8392bc37d38dc00e7.html" target="_top" xlink:title="The Scene model: primitives, lights, and traversal helpers.">
 <polygon fill="#a2b4d6" stroke="#404040" points="265,-35 219,-35 219,-16 265,-16 265,-35"/>
 <text text-anchor="middle" x="242" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Scene</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- dir_371f18151ff53c40093199b356fa9271 -->
 <g id="node4" class="node">
 <title>dir_371f18151ff53c40093199b356fa9271</title>
-<g id="a_node4"><a xlink:href="dir_371f18151ff53c40093199b356fa9271.html" target="_top" xlink:title="SceneLoader">
+<g id="a_node4"><a xlink:href="dir_371f18151ff53c40093199b356fa9271.html" target="_top" xlink:title="Scene parsing and node&#45;to&#45;component translation.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="230.5,-90 151.5,-90 151.5,-71 230.5,-71 230.5,-90"/>
 <text text-anchor="middle" x="191" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">SceneLoader</text>
 </a>

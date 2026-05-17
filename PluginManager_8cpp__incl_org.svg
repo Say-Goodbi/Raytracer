@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Runtime plugin loader and initializer registry implementation.">
 <polygon fill="#999999" stroke="#666666" points="238,-569 62,-569 62,-539 238,-539 238,-569"/>
 <text text-anchor="start" x="70" y="-557" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/PluginManager</text>
 <text text-anchor="middle" x="150" y="-546" font-family="Helvetica,sans-Serif" font-size="10.00">/PluginManager.cpp</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin manager for loading and managing plugins.">
+<g id="a_Node000002"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin loader interface for dynamic plugins.">
 <polygon fill="white" stroke="#666666" points="205,-503 95,-503 95,-484 205,-484 205,-503"/>
 <text text-anchor="middle" x="150" y="-491" font-family="Helvetica,sans-Serif" font-size="10.00">PluginManager.hpp</text>
 </a>
@@ -503,7 +503,7 @@
 <!-- Node32 -->
 <g id="Node000032" class="node">
 <title>Node32</title>
-<g id="a_Node000032"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000032"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title="Ray primitive used to represent a parametric line (origin + direction).">
 <polygon fill="white" stroke="#666666" points="1045,-189.5 959,-189.5 959,-170.5 1045,-170.5 1045,-189.5"/>
 <text text-anchor="middle" x="1002" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">../Ray/Ray.hpp</text>
 </a>

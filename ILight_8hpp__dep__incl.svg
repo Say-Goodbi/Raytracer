@@ -311,7 +311,7 @@ var sectionId = 'dynsection-1';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="CorePlugin_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="CorePlugin_8cpp.html" target="_top" xlink:title="Core plugin implementation that provides primitives, materials and the camera.">
 <polygon fill="white" stroke="#666666" points="899.5,-178.5 751.5,-178.5 751.5,-148.5 899.5,-148.5 899.5,-178.5"/>
 <text text-anchor="start" x="759.5" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="middle" x="825.5" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/CorePlugin.cpp</text>
@@ -436,7 +436,7 @@ var sectionId = 'dynsection-1';
 <!-- Node27 -->
 <g id="Node000027" class="node">
 <title>Node27</title>
-<g id="a_Node000027"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000027"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::Camera renderer.">
 <polygon fill="white" stroke="#666666" points="1412,-107 1287,-107 1287,-66 1412,-66 1412,-107"/>
 <text text-anchor="start" x="1295" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="start" x="1295" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
@@ -641,7 +641,7 @@ var sectionId = 'dynsection-1';
 <!-- Node23 -->
 <g id="Node000023" class="node">
 <title>Node23</title>
-<g id="a_Node000023"><a xlink:href="main_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000023"><a xlink:href="main_8cpp.html" target="_top" xlink:title="Entry point and CLI for the raytracer application.">
 <polygon fill="white" stroke="#666666" points="1864,-24.5 1785,-24.5 1785,-5.5 1864,-5.5 1864,-24.5"/>
 <text text-anchor="middle" x="1824.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main.cpp</text>
 </a>
@@ -659,7 +659,7 @@ var sectionId = 'dynsection-1';
 <!-- Node24 -->
 <g id="Node000024" class="node">
 <title>Node24</title>
-<g id="a_Node000024"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin manager for loading and managing plugins.">
+<g id="a_Node000024"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin loader interface for dynamic plugins.">
 <polygon fill="white" stroke="#666666" points="1860.5,-255.5 1684.5,-255.5 1684.5,-225.5 1860.5,-225.5 1860.5,-255.5"/>
 <text text-anchor="start" x="1692.5" y="-243.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/PluginManager</text>
 <text text-anchor="middle" x="1772.5" y="-232.5" font-family="Helvetica,sans-Serif" font-size="10.00">/PluginManager.hpp</text>
@@ -678,7 +678,7 @@ var sectionId = 'dynsection-1';
 <!-- Node26 -->
 <g id="Node000026" class="node">
 <title>Node26</title>
-<g id="a_Node000026"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000026"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title="Scene container and ray query interface used by renderers.">
 <polygon fill="white" stroke="#666666" points="1683.5,-178.5 1551.5,-178.5 1551.5,-148.5 1683.5,-148.5 1683.5,-178.5"/>
 <text text-anchor="start" x="1559.5" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/Scene</text>
 <text text-anchor="middle" x="1617.5" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Scene.hpp</text>
@@ -793,7 +793,7 @@ var sectionId = 'dynsection-1';
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="SceneLoader_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="SceneLoader_8hpp.html" target="_top" xlink:title="Loads scene graphs from parsed configuration nodes.">
 <polygon fill="white" stroke="#666666" points="1963,-101.5 1798,-101.5 1798,-71.5 1963,-71.5 1963,-101.5"/>
 <text text-anchor="start" x="1806" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneLoader</text>
 <text text-anchor="middle" x="1880.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneLoader.hpp</text>
@@ -812,7 +812,7 @@ var sectionId = 'dynsection-1';
 <!-- Node22 -->
 <g id="Node000022" class="node">
 <title>Node22</title>
-<g id="a_Node000022"><a xlink:href="SceneLoader_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000022"><a xlink:href="SceneLoader_8cpp.html" target="_top" xlink:title="Scene parsing and construction from configuration nodes.">
 <polygon fill="white" stroke="#666666" points="2047,-30 1882,-30 1882,0 2047,0 2047,-30"/>
 <text text-anchor="start" x="1890" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneLoader</text>
 <text text-anchor="middle" x="1964.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneLoader.cpp</text>
@@ -849,7 +849,7 @@ var sectionId = 'dynsection-1';
 <!-- Node25 -->
 <g id="Node000025" class="node">
 <title>Node25</title>
-<g id="a_Node000025"><a xlink:href="PluginManager_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000025"><a xlink:href="PluginManager_8cpp.html" target="_top" xlink:title="Runtime plugin loader and initializer registry implementation.">
 <polygon fill="white" stroke="#666666" points="1915.5,-178.5 1739.5,-178.5 1739.5,-148.5 1915.5,-148.5 1915.5,-178.5"/>
 <text text-anchor="start" x="1747.5" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/PluginManager</text>
 <text text-anchor="middle" x="1827.5" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">/PluginManager.cpp</text>
@@ -922,7 +922,7 @@ var sectionId = 'dynsection-1';
 <!-- Node28 -->
 <g id="Node000028" class="node">
 <title>Node28</title>
-<g id="a_Node000028"><a xlink:href="Scene_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000028"><a xlink:href="Scene_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::Scene container and utilities.">
 <polygon fill="white" stroke="#666666" points="1741.5,-101.5 1609.5,-101.5 1609.5,-71.5 1741.5,-71.5 1741.5,-101.5"/>
 <text text-anchor="start" x="1617.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/Scene</text>
 <text text-anchor="middle" x="1675.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Scene.cpp</text>

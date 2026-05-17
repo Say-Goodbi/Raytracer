@@ -95,6 +95,9 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Entry point and CLI for the raytracer application.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Scene_8hpp_source.html">SceneSystem/Scene/Scene.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SceneLoader_8hpp_source.html">SceneSystem/SceneLoader/SceneLoader.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="RaytracerException_8hpp_source.html">Exceptions/RaytracerException/RaytracerException.hpp</a>&quot;</code><br />
@@ -115,7 +118,12 @@ Functions</h2></td></tr>
 <tr class="memitem:adacbe0175a79dff748855d8c9839f82b" id="r_adacbe0175a79dff748855d8c9839f82b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adacbe0175a79dff748855d8c9839f82b">main</a> (int ac, char *av[])</td></tr>
 <tr class="separator:adacbe0175a79dff748855d8c9839f82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Entry point and CLI for the raytracer application. </p>
+<p>This binary parses command-line arguments, loads a scene configuration via the <code>SceneLoader</code> and dispatches rendering through the plugin-provided interface (e.g., SceneWriter). It wires together PluginManager, SceneLoader and the runtime interfaces used for output. </p>
+
+<p class="definition">Definition in file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="adacbe0175a79dff748855d8c9839f82b" name="adacbe0175a79dff748855d8c9839f82b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adacbe0175a79dff748855d8c9839f82b">&#9670;&#160;</a></span>main()</h2>
 
@@ -142,7 +150,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00024">24</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00033">33</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">

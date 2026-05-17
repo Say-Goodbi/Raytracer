@@ -57,7 +57,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Core plugin implementation that provides primitives, materials and the camera.">
 <polygon fill="#999999" stroke="#666666" points="1091.12,-602 943.12,-602 943.12,-572 1091.12,-572 1091.12,-602"/>
 <text text-anchor="start" x="951.12" y="-590" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="middle" x="1017.12" y="-579" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/CorePlugin.cpp</text>
@@ -308,7 +308,7 @@ var sectionId = 'dynsection-0';
 <!-- Node46 -->
 <g id="Node000046" class="node">
 <title>Node46</title>
-<g id="a_Node000046"><a xlink:href="Camera_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000046"><a xlink:href="Camera_8hpp.html" target="_top" xlink:title="Declaration for the camera&#45;based renderer used by the raytracer.">
 <polygon fill="white" stroke="#666666" points="1786.12,-321.5 1616.12,-321.5 1616.12,-302.5 1786.12,-302.5 1786.12,-321.5"/>
 <text text-anchor="middle" x="1701.12" y="-309.5" font-family="Helvetica,sans-Serif" font-size="10.00">Renderers/Camera/Camera.hpp</text>
 </a>
@@ -727,7 +727,7 @@ var sectionId = 'dynsection-0';
 <!-- Node30 -->
 <g id="Node000030" class="node">
 <title>Node30</title>
-<g id="a_Node000030"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000030"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title="Ray primitive used to represent a parametric line (origin + direction).">
 <polygon fill="white" stroke="#666666" points="1599.12,-255.5 1513.12,-255.5 1513.12,-236.5 1599.12,-236.5 1599.12,-255.5"/>
 <text text-anchor="middle" x="1556.12" y="-243.5" font-family="Helvetica,sans-Serif" font-size="10.00">../Ray/Ray.hpp</text>
 </a>
@@ -1025,7 +1025,7 @@ var sectionId = 'dynsection-0';
 <!-- Node34 -->
 <g id="Node000034" class="node">
 <title>Node34</title>
-<g id="a_Node000034"><a xlink:href="TransformMatrix_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000034"><a xlink:href="TransformMatrix_8hpp.html" target="_top" xlink:title="Affine transform matrix utilities used for camera and object transforms.">
 <polygon fill="white" stroke="#666666" points="1928.12,-261 1776.12,-261 1776.12,-231 1928.12,-231 1928.12,-261"/>
 <text text-anchor="start" x="1784.12" y="-249" font-family="Helvetica,sans-Serif" font-size="10.00">../../Geometry/Transform</text>
 <text text-anchor="middle" x="1852.12" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">Matrix/TransformMatrix.hpp</text>

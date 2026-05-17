@@ -93,6 +93,10 @@ $(document).ready(function(){initNavTree('dir_49f80dbd7683ed98b39c0cd73917c2a0.h
   <div class="headertitle"><div class="title">SceneSystem Directory Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><p>Scene orchestration, loading and BVH preparation. </p>
+ 
+<a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Directory dependency graph for SceneSystem:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -108,14 +112,20 @@ Directories</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="iconfclosed"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_b0ab8d8490fb038bed899aba6a2440ac.html">ConfigParser</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="iconfclosed"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_c885c4bcce55d6fe81345b3413717718.html">PluginManager</a></td></tr>
+<tr class="memdesc:dir_c885c4bcce55d6fe81345b3413717718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin loading, discovery and factory registration. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="iconfclosed"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_d463935c42a880f8392bc37d38dc00e7.html">Scene</a></td></tr>
+<tr class="memdesc:dir_d463935c42a880f8392bc37d38dc00e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>Scene</code> model: primitives, lights, and traversal helpers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="iconfclosed"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_371f18151ff53c40093199b356fa9271.html">SceneLoader</a></td></tr>
+<tr class="memdesc:dir_371f18151ff53c40093199b356fa9271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scene parsing and node-to-component translation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><span class="iconfclosed"></span>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_d4d9038d713afba3f16da559c03994be.html">SceneNodeHelpers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Scene orchestration, loading and BVH preparation. </p>
+<p>Responsible for parsing scene config, building the <a class="el" href="classRayTracer_1_1Scene.html">RayTracer::Scene</a> object, preparing acceleration structures and wiring plugins to initializers. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

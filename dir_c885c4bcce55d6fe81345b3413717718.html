@@ -93,6 +93,10 @@ $(document).ready(function(){initNavTree('dir_c885c4bcce55d6fe81345b3413717718.h
   <div class="headertitle"><div class="title">PluginManager Directory Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><p>Plugin loading, discovery and factory registration. </p>
+ 
+<a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Directory dependency graph for PluginManager:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -104,11 +108,15 @@ $(document).ready(function(){initNavTree('dir_c885c4bcce55d6fe81345b3413717718.h
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
 Files</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="PluginManager_8cpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PluginManager_8cpp.html">PluginManager.cpp</a></td></tr>
+<tr class="memdesc:PluginManager_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runtime plugin loader and initializer registry implementation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top"><a href="PluginManager_8hpp_source.html"><span class="icondoc"></span></a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PluginManager_8hpp.html">PluginManager.hpp</a></td></tr>
-<tr class="memdesc:PluginManager_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin manager for loading and managing plugins. <br /></td></tr>
+<tr class="memdesc:PluginManager_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plugin loader interface for dynamic plugins. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Plugin loading, discovery and factory registration. </p>
+<p>Loads dynamic libraries, exposes initializers and factories used by the <a class="el" href="classRayTracer_1_1SceneLoader.html">RayTracer::SceneLoader</a> to instantiate cameras, primitives and lights. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -96,6 +96,9 @@ $(document).ready(function(){initNavTree('SceneLoader_8hpp.html',''); initResiza
   <div class="headertitle"><div class="title">SceneLoader.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Loads scene graphs from parsed configuration nodes.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="PluginManager_8hpp_source.html">../PluginManager/PluginManager.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Parser_8hpp_source.html">../ConfigParser/Parser.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Scene_8hpp_source.html">../Scene/Scene.hpp</a>&quot;</code><br />
@@ -127,7 +130,12 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceRayTracer" id="r_namespaceRayTracer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRayTracer.html">RayTracer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Loads scene graphs from parsed configuration nodes. </p>
+<p>Declares <code>SceneLoader</code>, which maps configuration nodes to plugin initializers to build a <code><a class="el" href="classRayTracer_1_1Scene.html" title="Represents a scene containing a camera, primitives, and lights.">RayTracer::Scene</a></code>. This module decouples parsing from object construction and uses PluginManager for plugin-provided factories. </p>
+
+<p class="definition">Definition in file <a class="el" href="SceneLoader_8hpp_source.html">SceneLoader.hpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

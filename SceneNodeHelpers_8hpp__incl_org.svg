@@ -129,7 +129,7 @@
 <!-- Node32 -->
 <g id="Node000032" class="node">
 <title>Node32</title>
-<g id="a_Node000032"><a xlink:href="TransformMatrix_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000032"><a xlink:href="TransformMatrix_8hpp.html" target="_top" xlink:title="Affine transform matrix utilities used for camera and object transforms.">
 <polygon fill="white" stroke="#666666" points="1389.5,-195 1237.5,-195 1237.5,-165 1389.5,-165 1389.5,-195"/>
 <text text-anchor="start" x="1245.5" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00">../../Geometry/Transform</text>
 <text text-anchor="middle" x="1313.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">Matrix/TransformMatrix.hpp</text>
@@ -531,7 +531,7 @@
 <!-- Node31 -->
 <g id="Node000031" class="node">
 <title>Node31</title>
-<g id="a_Node000031"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000031"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title="Ray primitive used to represent a parametric line (origin + direction).">
 <polygon fill="white" stroke="#666666" points="790.5,-189.5 704.5,-189.5 704.5,-170.5 790.5,-170.5 790.5,-189.5"/>
 <text text-anchor="middle" x="747.5" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">../Ray/Ray.hpp</text>
 </a>

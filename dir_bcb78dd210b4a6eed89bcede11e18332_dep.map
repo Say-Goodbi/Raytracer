@@ -14,18 +14,18 @@
 <area shape="rect" id="node6" href="dir_c186a0af92c282e284ae6676b3418fef.html" title="Renderers" alt="" coords="149,136,237,161"/>
 <area shape="poly" id="edge5" href="dir_000010_000039.html" alt="" coords="241,90,213,127,208,124,237,87"/>
 <area shape="rect" id="edge5-headlabel" href="dir_000010_000039.html" title="1" alt="" coords="215,119,225,134"/>
-<area shape="rect" id="node7" href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" title="SceneSystem" alt="" coords="26,209,137,235"/>
+<area shape="rect" id="node7" href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" title="Scene orchestration, loading and BVH preparation." alt="" coords="26,209,137,235"/>
 <area shape="poly" id="edge3" href="dir_000010_000043.html" alt="" coords="202,85,101,105,56,120,39,128,29,138,23,149,21,158,29,181,45,200,41,203,24,184,16,159,17,147,25,134,36,124,54,115,100,99,201,80"/>
 <area shape="rect" id="edge3-headlabel" href="dir_000010_000043.html" title="3" alt="" coords="40,185,49,199"/>
 <area shape="poly" id="edge7" href="dir_000019_000043.html" alt="" coords="84,162,84,196,79,196,79,162"/>
 <area shape="rect" id="edge7-headlabel" href="dir_000019_000043.html" title="1" alt="" coords="85,184,94,198"/>
-<area shape="rect" id="node9" href="dir_a7363e98f9e0bdd87618633653859815.html" title="Utils" alt="" coords="167,209,219,235"/>
+<area shape="rect" id="node9" href="dir_a7363e98f9e0bdd87618633653859815.html" title="Utility helpers used across the project." alt="" coords="167,209,219,235"/>
 <area shape="poly" id="edge8" href="dir_000019_000048.html" alt="" coords="101,159,165,199,162,204,98,164"/>
 <area shape="rect" id="edge8-headlabel" href="dir_000019_000048.html" title="1" alt="" coords="160,185,169,200"/>
-<area shape="rect" id="node8" href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" title="Abstracts" alt="" coords="261,209,344,235"/>
+<area shape="rect" id="node8" href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" title="Abstract base classes and plugin&#45;facing interfaces." alt="" coords="261,209,344,235"/>
 <area shape="poly" id="edge9" href="dir_000022_000001.html" alt="" coords="500,164,469,185,358,212,357,207,467,180,497,159"/>
 <area shape="rect" id="edge9-headlabel" href="dir_000022_000001.html" title="5" alt="" coords="359,209,368,224"/>
-<area shape="rect" id="node10" href="dir_cae27912e177176a90175eee3a6288a5.html" title="Geometry" alt="" coords="369,209,455,235"/>
+<area shape="rect" id="node10" href="dir_cae27912e177176a90175eee3a6288a5.html" title="Geometry primitives, vectors and math utilities." alt="" coords="369,209,455,235"/>
 <area shape="poly" id="edge10" href="dir_000022_000016.html" alt="" coords="498,164,470,185,442,204,439,199,466,181,495,159"/>
 <area shape="rect" id="edge10-headlabel" href="dir_000022_000016.html" title="3" alt="" coords="444,199,454,214"/>
 <area shape="poly" id="edge11" href="dir_000025_000001.html" alt="" coords="305,162,305,196,300,196,300,162"/>
@@ -44,6 +44,6 @@
 <area shape="rect" id="edge17-headlabel" href="dir_000039_000048.html" title="2" alt="" coords="197,184,206,198"/>
 <area shape="poly" id="edge18" href="dir_000039_000016.html" alt="" coords="211,159,250,180,356,206,354,211,248,185,209,164"/>
 <area shape="rect" id="edge18-headlabel" href="dir_000039_000016.html" title="6" alt="" coords="348,192,357,206"/>
-<area shape="rect" id="clust2" href="dir_bcb78dd210b4a6eed89bcede11e18332.html" alt="" coords="27,52,552,172"/>
-<area shape="rect" id="clust1" href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" title="Plugins" alt="" coords="16,16,563,183"/>
+<area shape="rect" id="clust2" href="dir_bcb78dd210b4a6eed89bcede11e18332.html" title="Built&#45;in plugin providing the camera renderer and core initializers." alt="" coords="27,52,552,172"/>
+<area shape="rect" id="clust1" href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" title="Plugin modules and their implementations." alt="" coords="16,16,563,183"/>
 </map>

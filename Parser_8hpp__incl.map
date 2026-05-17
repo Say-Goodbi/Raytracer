@@ -51,7 +51,7 @@
 <area shape="poly" id="edge36_Node000019_Node000026" title=" " alt="" coords="465,206,485,248,480,251,460,208"/>
 <area shape="rect" id="Node000027" href="$AABB_8hpp.html" title=" " alt="" coords="168,343,331,383"/>
 <area shape="poly" id="edge37_Node000019_Node000027" title=" " alt="" coords="433,209,284,336,280,332,429,205"/>
-<area shape="rect" id="Node000030" href="$Ray_8hpp.html" title=" " alt="" coords="5,438,120,463"/>
+<area shape="rect" id="Node000030" href="$Ray_8hpp.html" title="Ray primitive used to represent a parametric line (origin + direction)." alt="" coords="5,438,120,463"/>
 <area shape="poly" id="edge45_Node000019_Node000030" title=" " alt="" coords="405,209,288,263,221,301,158,345,114,387,81,428,77,425,110,383,154,341,218,297,285,259,403,204"/>
 <area shape="poly" id="edge34_Node000020_Node000005" title=" " alt="" coords="721,287,738,333,754,359,775,381,797,392,827,403,906,421,1063,442,1063,448,905,426,826,408,794,397,772,385,750,362,734,335,716,288"/>
 <area shape="poly" id="edge24_Node000020_Node000017" title=" " alt="" coords="718,288,719,331,723,357,732,381,749,407,771,427,767,431,745,410,727,384,718,358,713,331,712,288"/>

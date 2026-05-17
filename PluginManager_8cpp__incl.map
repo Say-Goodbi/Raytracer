@@ -1,6 +1,6 @@
 <map id="src/SceneSystem/PluginManager/PluginManager.cpp" name="src/SceneSystem/PluginManager/PluginManager.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="88,5,323,45"/>
-<area shape="rect" id="Node000002" href="$PluginManager_8hpp.html" title="Plugin manager for loading and managing plugins." alt="" coords="132,93,279,119"/>
+<area shape="rect" id="Node000001" title="Runtime plugin loader and initializer registry implementation." alt="" coords="88,5,323,45"/>
+<area shape="rect" id="Node000002" href="$PluginManager_8hpp.html" title="Plugin loader interface for dynamic plugins." alt="" coords="132,93,279,119"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,46,208,79,203,79,203,46"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,167,72,192"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,121,79,164,77,159,178,116"/>
@@ -53,7 +53,7 @@
 <area shape="poly" id="edge36_Node000021_Node000028" title=" " alt="" coords="1190,278,1300,327,1298,332,1188,282"/>
 <area shape="rect" id="Node000029" href="$AABB_8hpp.html" title=" " alt="" coords="1061,416,1224,456"/>
 <area shape="poly" id="edge37_Node000021_Node000029" title=" " alt="" coords="1150,280,1146,402,1141,402,1145,280"/>
-<area shape="rect" id="Node000032" href="$Ray_8hpp.html" title=" " alt="" coords="1284,511,1399,537"/>
+<area shape="rect" id="Node000032" href="$Ray_8hpp.html" title="Ray primitive used to represent a parametric line (origin + direction)." alt="" coords="1284,511,1399,537"/>
 <area shape="poly" id="edge45_Node000021_Node000032" title=" " alt="" coords="1164,279,1326,498,1322,501,1160,282"/>
 <area shape="poly" id="edge34_Node000022_Node000006" title=" " alt="" coords="914,363,613,508,611,503,911,358"/>
 <area shape="poly" id="edge24_Node000022_Node000019" title=" " alt="" coords="928,363,887,407,830,458,787,486,746,508,744,503,785,481,826,454,883,403,924,359"/>

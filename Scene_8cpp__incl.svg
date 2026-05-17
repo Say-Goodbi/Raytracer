@@ -57,7 +57,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Implementation of the RayTracer::Scene container and utilities.">
 <polygon fill="#999999" stroke="#666666" points="898,-613 766,-613 766,-583 898,-583 898,-613"/>
 <text text-anchor="start" x="774" y="-601" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/Scene</text>
 <text text-anchor="middle" x="832" y="-590" font-family="Helvetica,sans-Serif" font-size="10.00">/Scene.cpp</text>
@@ -67,7 +67,7 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title="Scene container and ray query interface used by renderers.">
 <polygon fill="white" stroke="#666666" points="865.5,-547 798.5,-547 798.5,-528 865.5,-528 865.5,-547"/>
 <text text-anchor="middle" x="832" y="-535" font-family="Helvetica,sans-Serif" font-size="10.00">Scene.hpp</text>
 </a>
@@ -157,7 +157,7 @@ var sectionId = 'dynsection-0';
 <!-- Node30 -->
 <g id="Node000030" class="node">
 <title>Node30</title>
-<g id="a_Node000030"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000030"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title="Ray primitive used to represent a parametric line (origin + direction).">
 <polygon fill="white" stroke="#666666" points="1022,-250 936,-250 936,-231 1022,-231 1022,-250"/>
 <text text-anchor="middle" x="979" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">../Ray/Ray.hpp</text>
 </a>
@@ -175,7 +175,7 @@ var sectionId = 'dynsection-0';
 <!-- Node31 -->
 <g id="Node000031" class="node">
 <title>Node31</title>
-<g id="a_Node000031"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin manager for loading and managing plugins.">
+<g id="a_Node000031"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin loader interface for dynamic plugins.">
 <polygon fill="white" stroke="#666666" points="394,-492 200,-492 200,-473 394,-473 394,-492"/>
 <text text-anchor="middle" x="297" y="-480" font-family="Helvetica,sans-Serif" font-size="10.00">../PluginManager/PluginManager.hpp</text>
 </a>

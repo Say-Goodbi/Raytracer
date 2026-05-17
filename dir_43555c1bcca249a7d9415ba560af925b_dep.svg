@@ -20,7 +20,7 @@
 <title>src/Geometry/TransformMatrix</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_cae27912e177176a90175eee3a6288a5</title>
-<g id="a_clust1"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry">
+<g id="a_clust1"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry primitives, vectors and math utilities.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-8 8,-117 225,-117 225,-8 8,-8"/>
 <text text-anchor="middle" x="116.5" y="-105" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry</text>
 </a>
@@ -47,7 +47,7 @@
 <!-- dir_db4a8bb9a30e47be947f40f6e0a76447 -->
 <g id="node3" class="node">
 <title>dir_db4a8bb9a30e47be947f40f6e0a76447</title>
-<g id="a_node3"><a xlink:href="dir_db4a8bb9a30e47be947f40f6e0a76447.html" target="_top" xlink:title="Matrix">
+<g id="a_node3"><a xlink:href="dir_db4a8bb9a30e47be947f40f6e0a76447.html" target="_top" xlink:title="Generic fixed&#45;size matrix template used by geometry types.">
 <polygon fill="#a2b4d6" stroke="#404040" points="217,-35 169,-35 169,-16 217,-16 217,-35"/>
 <text text-anchor="middle" x="193" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Matrix</text>
 </a>
@@ -56,7 +56,7 @@
 <!-- dir_43555c1bcca249a7d9415ba560af925b -->
 <g id="node4" class="node">
 <title>dir_43555c1bcca249a7d9415ba560af925b</title>
-<g id="a_node4"><a xlink:href="dir_43555c1bcca249a7d9415ba560af925b.html" target="_top" xlink:title="TransformMatrix">
+<g id="a_node4"><a xlink:href="dir_43555c1bcca249a7d9415ba560af925b.html" target="_top" xlink:title="4×4 affine transform helpers.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="168.5,-90 71.5,-90 71.5,-71 168.5,-71 168.5,-90"/>
 <text text-anchor="middle" x="120" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">TransformMatrix</text>
 </a>

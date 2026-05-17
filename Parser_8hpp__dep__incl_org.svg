@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="SceneLoader_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="SceneLoader_8hpp.html" target="_top" xlink:title="Loads scene graphs from parsed configuration nodes.">
 <polygon fill="white" stroke="#666666" points="347.5,-96 182.5,-96 182.5,-66 347.5,-66 347.5,-96"/>
 <text text-anchor="start" x="190.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneLoader</text>
 <text text-anchor="middle" x="265" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneLoader.hpp</text>
@@ -59,7 +59,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="SceneLoader_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="SceneLoader_8cpp.html" target="_top" xlink:title="Scene parsing and construction from configuration nodes.">
 <polygon fill="white" stroke="#666666" points="277.5,-30 112.5,-30 112.5,0 277.5,0 277.5,-30"/>
 <text text-anchor="start" x="120.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneLoader</text>
 <text text-anchor="middle" x="195" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneLoader.cpp</text>
@@ -78,7 +78,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="main_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="main_8cpp.html" target="_top" xlink:title="Entry point and CLI for the raytracer application.">
 <polygon fill="white" stroke="#666666" points="374.5,-24.5 295.5,-24.5 295.5,-5.5 374.5,-5.5 374.5,-24.5"/>
 <text text-anchor="middle" x="335" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main.cpp</text>
 </a>

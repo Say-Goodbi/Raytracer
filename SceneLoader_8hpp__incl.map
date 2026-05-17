@@ -1,12 +1,12 @@
 <map id="src/SceneSystem/SceneLoader/SceneLoader.hpp" name="src/SceneSystem/SceneLoader/SceneLoader.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="506,5,726,45"/>
-<area shape="rect" id="Node000002" href="$PluginManager_8hpp.html" title="Plugin manager for loading and managing plugins." alt="" coords="121,167,380,192"/>
+<area shape="rect" id="Node000001" title="Loads scene graphs from parsed configuration nodes." alt="" coords="506,5,726,45"/>
+<area shape="rect" id="Node000002" href="$PluginManager_8hpp.html" title="Plugin loader interface for dynamic plugins." alt="" coords="121,167,380,192"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="541,48,472,69,400,96,335,129,280,161,278,157,332,124,398,91,470,64,540,43"/>
 <area shape="rect" id="Node000013" href="$RaytracerException_8hpp.html" title=" " alt="" coords="388,401,569,441"/>
 <area shape="poly" id="edge71_Node000001_Node000013" title=" " alt="" coords="554,48,508,68,465,96,447,113,433,132,423,154,420,178,420,254,424,291,434,327,462,388,457,390,429,329,419,292,415,254,415,178,418,153,428,130,443,110,462,92,506,63,552,43"/>
 <area shape="rect" id="Node000033" href="$Parser_8hpp.html" title=" " alt="" coords="1197,167,1384,192"/>
 <area shape="poly" id="edge49_Node000001_Node000033" title=" " alt="" coords="726,43,969,91,1116,127,1238,160,1237,165,1114,132,967,96,725,48"/>
-<area shape="rect" id="Node000035" href="$Scene_8hpp.html" title=" " alt="" coords="812,93,956,119"/>
+<area shape="rect" id="Node000035" href="$Scene_8hpp.html" title="Scene container and ray query interface used by renderers." alt="" coords="812,93,956,119"/>
 <area shape="poly" id="edge56_Node000001_Node000035" title=" " alt="" coords="681,43,833,87,831,92,679,48"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,240,72,265"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="217,195,86,238,84,233,216,189"/>
@@ -58,7 +58,7 @@
 <area shape="poly" id="edge36_Node000021_Node000028" title=" " alt="" coords="1663,352,1711,397,1708,401,1660,356"/>
 <area shape="rect" id="Node000029" href="$AABB_8hpp.html" title=" " alt="" coords="1996,401,2159,441"/>
 <area shape="poly" id="edge37_Node000021_Node000029" title=" " alt="" coords="1719,347,1983,399,1982,404,1718,352"/>
-<area shape="rect" id="Node000032" href="$Ray_8hpp.html" title=" " alt="" coords="1880,489,1995,515"/>
+<area shape="rect" id="Node000032" href="$Ray_8hpp.html" title="Ray primitive used to represent a parametric line (origin + direction)." alt="" coords="1880,489,1995,515"/>
 <area shape="poly" id="edge45_Node000021_Node000032" title=" " alt="" coords="1646,353,1657,397,1668,420,1684,439,1715,455,1761,469,1867,489,1866,494,1759,474,1713,460,1681,443,1664,423,1652,399,1641,354"/>
 <area shape="poly" id="edge34_Node000022_Node000006" title=" " alt="" coords="1119,436,1029,560,1025,557,1115,433"/>
 <area shape="poly" id="edge24_Node000022_Node000019" title=" " alt="" coords="1149,432,1251,487,1359,559,1356,564,1248,492,1147,436"/>

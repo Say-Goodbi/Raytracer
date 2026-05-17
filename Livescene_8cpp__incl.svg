@@ -122,7 +122,7 @@ var sectionId = 'dynsection-0';
 <!-- Node34 -->
 <g id="Node000034" class="node">
 <title>Node34</title>
-<g id="a_Node000034"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000034"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title="Scene container and ray query interface used by renderers.">
 <polygon fill="white" stroke="#666666" points="959,-558 831,-558 831,-528 959,-528 959,-558"/>
 <text text-anchor="start" x="839" y="-546" font-family="Helvetica,sans-Serif" font-size="10.00">../../../../../SceneSystem</text>
 <text text-anchor="middle" x="895" y="-535" font-family="Helvetica,sans-Serif" font-size="10.00">/Scene/Scene.hpp</text>
@@ -605,7 +605,7 @@ var sectionId = 'dynsection-0';
 <!-- Node30 -->
 <g id="Node000030" class="node">
 <title>Node30</title>
-<g id="a_Node000030"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000030"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title="Ray primitive used to represent a parametric line (origin + direction).">
 <polygon fill="white" stroke="#666666" points="1468,-250 1382,-250 1382,-231 1468,-231 1468,-250"/>
 <text text-anchor="middle" x="1425" y="-238" font-family="Helvetica,sans-Serif" font-size="10.00">../Ray/Ray.hpp</text>
 </a>
@@ -885,7 +885,7 @@ var sectionId = 'dynsection-0';
 <!-- Node35 -->
 <g id="Node000035" class="node">
 <title>Node35</title>
-<g id="a_Node000035"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin manager for loading and managing plugins.">
+<g id="a_Node000035"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin loader interface for dynamic plugins.">
 <polygon fill="white" stroke="#666666" points="790,-492 596,-492 596,-473 790,-473 790,-492"/>
 <text text-anchor="middle" x="693" y="-480" font-family="Helvetica,sans-Serif" font-size="10.00">../PluginManager/PluginManager.hpp</text>
 </a>

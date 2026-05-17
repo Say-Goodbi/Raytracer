@@ -96,6 +96,9 @@ $(document).ready(function(){initNavTree('CorePlugin_8cpp.html',''); initResizab
   <div class="headertitle"><div class="title">CorePlugin.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Core plugin implementation that provides primitives, materials and the camera.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="SceneWriter_8hpp_source.html">Interfaces/SceneWriter/SceneWriter.hpp</a>&quot;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &quot;<a class="el" href="Plugin_8hpp_source.html">../../Plugin.hpp</a>&quot;</code><br />
@@ -134,7 +137,12 @@ Variables</h2></td></tr>
 <tr class="memitem:ad12fe6f23d6017758b6e9f760091d04c" id="r_ad12fe6f23d6017758b6e9f760091d04c"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::function&lt; std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">RayTracer::IMaterial</a> &gt;(const <a class="el" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CorePlugin_8cpp.html#ad12fe6f23d6017758b6e9f760091d04c">_materials</a></td></tr>
 <tr class="separator:ad12fe6f23d6017758b6e9f760091d04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Core plugin implementation that provides primitives, materials and the camera. </p>
+<p>This plugin exposes initializer factories (via the plugin API) for scene components such as <code>camera</code>, <code>spheres</code>, <code>planes</code>, and lights. It is used by the scene loader to construct renderer and scene objects. See <a class="el" href="Plugin_8hpp.html">Plugin.hpp</a> and RayTracer::getMaterialInstance for material construction helpers. </p>
+
+<p class="definition">Definition in file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0e14e2166e2799c71d21f343a3d543f3" name="a0e14e2166e2799c71d21f343a3d543f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e14e2166e2799c71d21f343a3d543f3">&#9670;&#160;</a></span>getInitializers()</h2>
 
@@ -150,7 +158,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00045">45</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00054">54</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -187,7 +195,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00034">34</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00043">43</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -213,7 +221,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00043">43</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00052">52</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +253,7 @@ Variables</h2></td></tr>
 <div class="line">    }</div>
 <div class="ttc" id="astructRayTracer_1_1Color_html"><div class="ttname"><a href="structRayTracer_1_1Color.html">RayTracer::Color</a></div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00005">Color.hpp:6</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00019">19</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00028">28</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 
 </div>
 </div>

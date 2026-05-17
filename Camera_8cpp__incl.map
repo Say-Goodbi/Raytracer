@@ -1,10 +1,10 @@
 <map id="src/Objects/Plugins/CorePlugin/Renderers/Camera/Camera.cpp" name="src/Objects/Plugins/CorePlugin/Renderers/Camera/Camera.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="2506,5,2673,60"/>
-<area shape="rect" id="Node000002" href="$Camera_8hpp.html" title=" " alt="" coords="557,438,659,463"/>
+<area shape="rect" id="Node000001" title="Implementation of the RayTracer::Camera renderer." alt="" coords="2506,5,2673,60"/>
+<area shape="rect" id="Node000002" href="$Camera_8hpp.html" title="Declaration for the camera&#45;based renderer used by the raytracer." alt="" coords="557,438,659,463"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2506,40,2054,59,1426,94,1123,118,868,145,768,160,693,176,645,192,633,200,629,208,629,283,624,361,615,425,610,424,619,360,624,283,624,207,629,197,642,187,691,170,767,155,867,140,1122,112,1425,89,2054,53,2506,34"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="2182,614,2245,639"/>
 <area shape="poly" id="edge79_Node000001_Node000006" title=" " alt="" coords="2606,59,2625,100,2646,155,2663,217,2669,281,2669,452,2666,488,2653,516,2633,539,2603,561,2575,574,2538,586,2443,605,2342,617,2258,625,2258,620,2342,612,2442,599,2536,581,2573,569,2600,556,2629,535,2649,513,2660,487,2664,452,2664,281,2657,218,2641,156,2620,103,2601,61"/>
-<area shape="rect" id="Node000016" href="$Scene_8hpp.html" title=" " alt="" coords="1407,108,1577,148"/>
+<area shape="rect" id="Node000016" href="$Scene_8hpp.html" title="Scene container and ray query interface used by renderers." alt="" coords="1407,108,1577,148"/>
 <area shape="poly" id="edge25_Node000001_Node000016" title=" " alt="" coords="2506,44,1591,121,1591,116,2506,38"/>
 <area shape="rect" id="Node000029" href="$APrimitive_8hpp.html" title=" " alt="" coords="995,343,1149,383"/>
 <area shape="poly" id="edge78_Node000001_Node000029" title=" " alt="" coords="2506,36,2262,39,1940,49,1775,58,1623,71,1493,88,1395,111,1316,140,1257,172,1204,213,1141,271,1114,301,1092,332,1088,329,1110,298,1137,267,1200,209,1254,167,1313,135,1394,105,1492,83,1622,66,1775,53,1939,43,2262,33,2506,31"/>
@@ -14,7 +14,7 @@
 <area shape="poly" id="edge81_Node000001_Node000039" title=" " alt="" coords="2625,58,2686,105,2683,109,2622,62"/>
 <area shape="rect" id="Node000040" href="$FrameBufferMutex_8hpp.html" title=" " alt="" coords="2767,108,2942,148"/>
 <area shape="poly" id="edge82_Node000001_Node000040" title=" " alt="" coords="2665,58,2789,101,2787,106,2663,63"/>
-<area shape="rect" id="Node000042" href="$Utils_8hpp.html" title=" " alt="" coords="2967,108,3079,148"/>
+<area shape="rect" id="Node000042" href="$Utils_8hpp.html" title="Utility declarations for common helpers used by the renderer." alt="" coords="2967,108,3079,148"/>
 <area shape="poly" id="edge84_Node000001_Node000042" title=" " alt="" coords="2673,47,2801,72,2954,105,2952,110,2800,77,2672,52"/>
 <area shape="rect" id="Node000003" href="$ARenderer_8hpp.html" title=" " alt="" coords="1633,519,1892,559"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="659,452,1133,481,1615,516,1620,517,1620,522,1614,521,1132,487,659,458"/>
@@ -25,11 +25,11 @@
 <area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="607,464,596,509,585,576,580,655,583,695,591,734,607,770,603,773,585,735,578,696,575,655,579,575,591,507,602,463"/>
 <area shape="rect" id="Node000010" href="$Rectangle3D_8hpp.html" title=" " alt="" coords="5,607,229,647"/>
 <area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="577,466,184,604,183,599,575,461"/>
-<area shape="rect" id="Node000011" href="$Ray_8hpp.html" title=" " alt="" coords="800,519,947,559"/>
+<area shape="rect" id="Node000011" href="$Ray_8hpp.html" title="Ray primitive used to represent a parametric line (origin + direction)." alt="" coords="800,519,947,559"/>
 <area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="645,461,802,512,801,517,643,466"/>
 <area shape="rect" id="Node000012" href="$HitRecord_8hpp.html" title=" " alt="" coords="760,607,947,647"/>
 <area shape="poly" id="edge16_Node000002_Node000012" title=" " alt="" coords="616,462,645,507,666,534,691,557,731,581,773,600,771,605,728,586,688,561,662,537,641,511,612,465"/>
-<area shape="rect" id="Node000013" href="$TransformMatrix_8hpp.html" title=" " alt="" coords="253,607,525,647"/>
+<area shape="rect" id="Node000013" href="$TransformMatrix_8hpp.html" title="Affine transform matrix utilities used for camera and object transforms." alt="" coords="253,607,525,647"/>
 <area shape="poly" id="edge19_Node000002_Node000013" title=" " alt="" coords="595,465,426,600,422,596,592,461"/>
 <area shape="rect" id="Node000015" title=" " alt="" coords="701,526,776,551"/>
 <area shape="poly" id="edge23_Node000002_Node000015" title=" " alt="" coords="627,461,711,516,708,521,624,466"/>
@@ -58,7 +58,7 @@
 <area shape="poly" id="edge26_Node000016_Node000017" title=" " alt="" coords="1524,146,1712,260,1709,264,1522,150"/>
 <area shape="rect" id="Node000019" title=" " alt="" coords="1293,614,1371,639"/>
 <area shape="poly" id="edge76_Node000016_Node000019" title=" " alt="" coords="1452,150,1415,172,1379,202,1352,238,1344,259,1341,281,1341,364,1336,600,1330,600,1336,364,1336,280,1339,257,1347,235,1376,198,1412,168,1449,146"/>
-<area shape="rect" id="Node000035" href="$PluginManager_8hpp.html" title="Plugin manager for loading and managing plugins." alt="" coords="1889,196,2148,221"/>
+<area shape="rect" id="Node000035" href="$PluginManager_8hpp.html" title="Plugin loader interface for dynamic plugins." alt="" coords="1889,196,2148,221"/>
 <area shape="poly" id="edge60_Node000016_Node000035" title=" " alt="" coords="1578,139,1929,191,1928,197,1577,145"/>
 <area shape="rect" id="Node000038" href="$BVH_8hpp.html" title=" " alt="" coords="1151,269,1273,295"/>
 <area shape="poly" id="edge66_Node000016_Node000038" title=" " alt="" coords="1432,151,1377,171,1321,198,1275,230,1236,262,1233,257,1272,225,1319,194,1375,166,1430,146"/>

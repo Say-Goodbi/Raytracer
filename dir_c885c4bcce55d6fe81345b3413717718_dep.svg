@@ -20,7 +20,7 @@
 <title>src/SceneSystem/PluginManager</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_49f80dbd7683ed98b39c0cd73917c2a0</title>
-<g id="a_clust1"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="SceneSystem">
+<g id="a_clust1"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="Scene orchestration, loading and BVH preparation.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-47 8,-101 112,-101 112,-47 8,-47"/>
 <text text-anchor="middle" x="60" y="-89" font-family="Helvetica,sans-Serif" font-size="10.00">SceneSystem</text>
 </a>
@@ -29,7 +29,7 @@
 <!-- dir_c885c4bcce55d6fe81345b3413717718 -->
 <g id="node1" class="node">
 <title>dir_c885c4bcce55d6fe81345b3413717718</title>
-<g id="a_node1"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="PluginManager">
+<g id="a_node1"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="Plugin loading, discovery and factory registration.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="104.5,-74 15.5,-74 15.5,-55 104.5,-55 104.5,-74"/>
 <text text-anchor="middle" x="60" y="-62" font-family="Helvetica,sans-Serif" font-size="10.00">PluginManager</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- dir_55b41fb77a5097913bc464fb6a145e9c -->
 <g id="node2" class="node">
 <title>dir_55b41fb77a5097913bc464fb6a145e9c</title>
-<g id="a_node2"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Objects">
+<g id="a_node2"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Scene objects, primitives and materials.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="86.5,-19 33.5,-19 33.5,0 86.5,0 86.5,-19"/>
 <text text-anchor="middle" x="60" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Objects</text>
 </a>

@@ -21,7 +21,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Utility declarations for common helpers used by the renderer.">
 <polygon fill="#999999" stroke="#666666" points="180,-96 77,-96 77,-77 180,-77 180,-96"/>
 <text text-anchor="middle" x="128.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">src/Utils/Utils.hpp</text>
 </a>
@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::Camera renderer.">
 <polygon fill="white" stroke="#666666" points="125,-41 0,-41 0,0 125,0 125,-41"/>
 <text text-anchor="start" x="8" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
@@ -50,7 +50,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="Utils_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="Utils_8cpp.html" target="_top" xlink:title="Miscellaneous utility functions used across the codebase.">
 <polygon fill="white" stroke="#666666" points="245.5,-30 143.5,-30 143.5,-11 245.5,-11 245.5,-30"/>
 <text text-anchor="middle" x="194.5" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">src/Utils/Utils.cpp</text>
 </a>

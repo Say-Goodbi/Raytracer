@@ -105,7 +105,7 @@ var sectionId = 'dynsection-1';
 <!-- Node45 -->
 <g id="Node000045" class="node">
 <title>Node45</title>
-<g id="a_Node000045"><a xlink:href="Camera_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000045"><a xlink:href="Camera_8hpp.html" target="_top" xlink:title="Declaration for the camera&#45;based renderer used by the raytracer.">
 <polygon fill="white" stroke="#666666" points="1905.34,-492 1780.34,-492 1780.34,-451 1905.34,-451 1905.34,-492"/>
 <text text-anchor="start" x="1788.34" y="-480" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="start" x="1788.34" y="-469" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
@@ -144,7 +144,7 @@ var sectionId = 'dynsection-1';
 <!-- Node49 -->
 <g id="Node000049" class="node">
 <title>Node49</title>
-<g id="a_Node000049"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000049"><a xlink:href="Ray_8hpp.html" target="_top" xlink:title="Ray primitive used to represent a parametric line (origin + direction).">
 <polygon fill="white" stroke="#666666" points="1588.84,-552.5 1442.84,-552.5 1442.84,-533.5 1588.84,-533.5 1588.84,-552.5"/>
 <text text-anchor="middle" x="1515.84" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/Ray/Ray.hpp</text>
 </a>
@@ -181,7 +181,7 @@ var sectionId = 'dynsection-1';
 <!-- Node53 -->
 <g id="Node000053" class="node">
 <title>Node53</title>
-<g id="a_Node000053"><a xlink:href="TransformMatrix_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000053"><a xlink:href="TransformMatrix_8hpp.html" target="_top" xlink:title="Affine transform matrix utilities used for camera and object transforms.">
 <polygon fill="white" stroke="#666666" points="2207.84,-558 2041.84,-558 2041.84,-528 2207.84,-528 2207.84,-558"/>
 <text text-anchor="start" x="2049.84" y="-546" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/TransformMatrix</text>
 <text text-anchor="middle" x="2124.84" y="-535" font-family="Helvetica,sans-Serif" font-size="10.00">/TransformMatrix.hpp</text>
@@ -511,7 +511,7 @@ var sectionId = 'dynsection-1';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="CorePlugin_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="CorePlugin_8cpp.html" target="_top" xlink:title="Core plugin implementation that provides primitives, materials and the camera.">
 <polygon fill="white" stroke="#666666" points="1272.84,-178.5 1124.84,-178.5 1124.84,-148.5 1272.84,-148.5 1272.84,-178.5"/>
 <text text-anchor="start" x="1132.84" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="middle" x="1198.84" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/CorePlugin.cpp</text>
@@ -576,7 +576,7 @@ var sectionId = 'dynsection-1';
 <!-- Node29 -->
 <g id="Node000029" class="node">
 <title>Node29</title>
-<g id="a_Node000029"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000029"><a xlink:href="Camera_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::Camera renderer.">
 <polygon fill="white" stroke="#666666" points="2260.34,-107 2135.34,-107 2135.34,-66 2260.34,-66 2260.34,-107"/>
 <text text-anchor="start" x="2143.34" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00">src/Objects/Plugins</text>
 <text text-anchor="start" x="2143.34" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">/CorePlugin/Renderers</text>
@@ -770,7 +770,7 @@ var sectionId = 'dynsection-1';
 <!-- Node25 -->
 <g id="Node000025" class="node">
 <title>Node25</title>
-<g id="a_Node000025"><a xlink:href="main_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000025"><a xlink:href="main_8cpp.html" target="_top" xlink:title="Entry point and CLI for the raytracer application.">
 <polygon fill="white" stroke="#666666" points="458.34,-24.5 379.34,-24.5 379.34,-5.5 458.34,-5.5 458.34,-24.5"/>
 <text text-anchor="middle" x="418.84" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main.cpp</text>
 </a>
@@ -788,7 +788,7 @@ var sectionId = 'dynsection-1';
 <!-- Node26 -->
 <g id="Node000026" class="node">
 <title>Node26</title>
-<g id="a_Node000026"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin manager for loading and managing plugins.">
+<g id="a_Node000026"><a xlink:href="PluginManager_8hpp.html" target="_top" xlink:title="Plugin loader interface for dynamic plugins.">
 <polygon fill="#fff0f0" stroke="red" points="500.84,-255.5 324.84,-255.5 324.84,-225.5 500.84,-225.5 500.84,-255.5"/>
 <text text-anchor="start" x="332.84" y="-243.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/PluginManager</text>
 <text text-anchor="middle" x="412.84" y="-232.5" font-family="Helvetica,sans-Serif" font-size="10.00">/PluginManager.hpp</text>
@@ -807,7 +807,7 @@ var sectionId = 'dynsection-1';
 <!-- Node28 -->
 <g id="Node000028" class="node">
 <title>Node28</title>
-<g id="a_Node000028"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000028"><a xlink:href="Scene_8hpp.html" target="_top" xlink:title="Scene container and ray query interface used by renderers.">
 <polygon fill="white" stroke="#666666" points="613.84,-178.5 481.84,-178.5 481.84,-148.5 613.84,-148.5 613.84,-178.5"/>
 <text text-anchor="start" x="489.84" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/Scene</text>
 <text text-anchor="middle" x="547.84" y="-155.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Scene.hpp</text>
@@ -893,7 +893,7 @@ var sectionId = 'dynsection-1';
 <!-- Node23 -->
 <g id="Node000023" class="node">
 <title>Node23</title>
-<g id="a_Node000023"><a xlink:href="SceneLoader_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000023"><a xlink:href="SceneLoader_8hpp.html" target="_top" xlink:title="Loads scene graphs from parsed configuration nodes.">
 <polygon fill="white" stroke="#666666" points="446.34,-101.5 281.34,-101.5 281.34,-71.5 446.34,-71.5 446.34,-101.5"/>
 <text text-anchor="start" x="289.34" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneLoader</text>
 <text text-anchor="middle" x="363.84" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneLoader.hpp</text>
@@ -912,7 +912,7 @@ var sectionId = 'dynsection-1';
 <!-- Node24 -->
 <g id="Node000024" class="node">
 <title>Node24</title>
-<g id="a_Node000024"><a xlink:href="SceneLoader_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000024"><a xlink:href="SceneLoader_8cpp.html" target="_top" xlink:title="Scene parsing and construction from configuration nodes.">
 <polygon fill="white" stroke="#666666" points="361.34,-30 196.34,-30 196.34,0 361.34,0 361.34,-30"/>
 <text text-anchor="start" x="204.34" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/SceneLoader</text>
 <text text-anchor="middle" x="278.84" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">/SceneLoader.cpp</text>
@@ -1003,7 +1003,7 @@ var sectionId = 'dynsection-1';
 <!-- Node30 -->
 <g id="Node000030" class="node">
 <title>Node30</title>
-<g id="a_Node000030"><a xlink:href="Scene_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000030"><a xlink:href="Scene_8cpp.html" target="_top" xlink:title="Implementation of the RayTracer::Scene container and utilities.">
 <polygon fill="white" stroke="#666666" points="634.84,-101.5 502.84,-101.5 502.84,-71.5 634.84,-71.5 634.84,-101.5"/>
 <text text-anchor="start" x="510.84" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/SceneSystem/Scene</text>
 <text text-anchor="middle" x="568.84" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Scene.cpp</text>
@@ -1391,7 +1391,7 @@ var sectionId = 'dynsection-1';
 <!-- Node50 -->
 <g id="Node000050" class="node">
 <title>Node50</title>
-<g id="a_Node000050"><a xlink:href="Ray_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000050"><a xlink:href="Ray_8cpp.html" target="_top" xlink:title="Implementation of the Geometry::Ray type.">
 <polygon fill="white" stroke="#666666" points="1588.34,-481 1443.34,-481 1443.34,-462 1588.34,-462 1588.34,-481"/>
 <text text-anchor="middle" x="1515.84" y="-469" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/Ray/Ray.cpp</text>
 </a>
@@ -1455,7 +1455,7 @@ var sectionId = 'dynsection-1';
 <!-- Node54 -->
 <g id="Node000054" class="node">
 <title>Node54</title>
-<g id="a_Node000054"><a xlink:href="TransformMatrix_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_Node000054"><a xlink:href="TransformMatrix_8cpp.html" target="_top" xlink:title="Implementation of affine transform helpers used across geometry.">
 <polygon fill="white" stroke="#666666" points="2169.84,-486.5 2003.84,-486.5 2003.84,-456.5 2169.84,-456.5 2169.84,-486.5"/>
 <text text-anchor="start" x="2011.84" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/Geometry/TransformMatrix</text>
 <text text-anchor="middle" x="2086.84" y="-463.5" font-family="Helvetica,sans-Serif" font-size="10.00">/TransformMatrix.cpp</text>

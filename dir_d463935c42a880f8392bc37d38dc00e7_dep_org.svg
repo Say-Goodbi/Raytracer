@@ -10,7 +10,7 @@
 <title>src/SceneSystem/Scene</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_49f80dbd7683ed98b39c0cd73917c2a0</title>
-<g id="a_clust1"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="SceneSystem">
+<g id="a_clust1"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="Scene orchestration, loading and BVH preparation.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-8 8,-117 169,-117 169,-8 8,-8"/>
 <text text-anchor="middle" x="88.5" y="-105" font-family="Helvetica,sans-Serif" font-size="10.00">SceneSystem</text>
 </a>
@@ -28,7 +28,7 @@
 <!-- dir_c885c4bcce55d6fe81345b3413717718 -->
 <g id="node2" class="node">
 <title>dir_c885c4bcce55d6fe81345b3413717718</title>
-<g id="a_node2"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="PluginManager">
+<g id="a_node2"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="Plugin loading, discovery and factory registration.">
 <polygon fill="#a2b4d6" stroke="#404040" points="161.5,-35 72.5,-35 72.5,-16 161.5,-16 161.5,-35"/>
 <text text-anchor="middle" x="117" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">PluginManager</text>
 </a>
@@ -37,7 +37,7 @@
 <!-- dir_d463935c42a880f8392bc37d38dc00e7 -->
 <g id="node3" class="node">
 <title>dir_d463935c42a880f8392bc37d38dc00e7</title>
-<g id="a_node3"><a xlink:href="dir_d463935c42a880f8392bc37d38dc00e7.html" target="_top" xlink:title="Scene">
+<g id="a_node3"><a xlink:href="dir_d463935c42a880f8392bc37d38dc00e7.html" target="_top" xlink:title="The Scene model: primitives, lights, and traversal helpers.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="150,-90 104,-90 104,-71 150,-71 150,-90"/>
 <text text-anchor="middle" x="127" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">Scene</text>
 </a>
@@ -72,7 +72,7 @@
 <!-- dir_55b41fb77a5097913bc464fb6a145e9c -->
 <g id="node4" class="node">
 <title>dir_55b41fb77a5097913bc464fb6a145e9c</title>
-<g id="a_node4"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Objects">
+<g id="a_node4"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Scene objects, primitives and materials.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="232.5,-35 179.5,-35 179.5,-16 232.5,-16 232.5,-35"/>
 <text text-anchor="middle" x="206" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Objects</text>
 </a>
@@ -94,7 +94,7 @@
 <!-- dir_cae27912e177176a90175eee3a6288a5 -->
 <g id="node5" class="node">
 <title>dir_cae27912e177176a90175eee3a6288a5</title>
-<g id="a_node5"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry">
+<g id="a_node5"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry primitives, vectors and math utilities.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="315.5,-35 250.5,-35 250.5,-16 315.5,-16 315.5,-35"/>
 <text text-anchor="middle" x="283" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry</text>
 </a>

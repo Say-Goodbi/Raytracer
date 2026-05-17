@@ -20,7 +20,7 @@
 <title>src/SceneSystem</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_68267d1309a1af8e8297ef4c3efbcdba</title>
-<g id="a_clust1"><a xlink:href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" target="_top" xlink:title="src">
+<g id="a_clust1"><a xlink:href="dir_68267d1309a1af8e8297ef4c3efbcdba.html" target="_top" xlink:title="Root of the C++ source tree containing the raytracer implementation.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-dasharray="5,2" points="8,-8 8,-235 473,-235 473,-8 8,-8"/>
 <text text-anchor="middle" x="240.5" y="-223" font-family="Helvetica,sans-Serif" font-size="10.00">src</text>
 </a>
@@ -28,7 +28,7 @@
 </g>
 <g id="clust2" class="cluster">
 <title>clusterdir_49f80dbd7683ed98b39c0cd73917c2a0</title>
-<g id="a_clust2"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top">
+<g id="a_clust2"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="Scene orchestration, loading and BVH preparation.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="94,-63 94,-208 417,-208 417,-63 94,-63"/>
 </a>
 </g>
@@ -36,7 +36,7 @@
 <!-- dir_55b41fb77a5097913bc464fb6a145e9c -->
 <g id="node1" class="node">
 <title>dir_55b41fb77a5097913bc464fb6a145e9c</title>
-<g id="a_node1"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Objects">
+<g id="a_node1"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Scene objects, primitives and materials.">
 <polygon fill="#a2b4d6" stroke="red" points="326.5,-35 273.5,-35 273.5,-16 326.5,-16 326.5,-35"/>
 <text text-anchor="middle" x="300" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Objects</text>
 </a>
@@ -54,7 +54,7 @@
 <!-- dir_a7363e98f9e0bdd87618633653859815 -->
 <g id="node3" class="node">
 <title>dir_a7363e98f9e0bdd87618633653859815</title>
-<g id="a_node3"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utils">
+<g id="a_node3"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utility helpers used across the project.">
 <polygon fill="#a2b4d6" stroke="#404040" points="464.5,-145 425.5,-145 425.5,-126 464.5,-126 464.5,-145"/>
 <text text-anchor="middle" x="445" y="-133" font-family="Helvetica,sans-Serif" font-size="10.00">Utils</text>
 </a>
@@ -63,7 +63,7 @@
 <!-- dir_cae27912e177176a90175eee3a6288a5 -->
 <g id="node4" class="node">
 <title>dir_cae27912e177176a90175eee3a6288a5</title>
-<g id="a_node4"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry">
+<g id="a_node4"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry primitives, vectors and math utilities.">
 <polygon fill="#a2b4d6" stroke="red" points="149.5,-35 84.5,-35 84.5,-16 149.5,-16 149.5,-35"/>
 <text text-anchor="middle" x="117" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry</text>
 </a>
@@ -134,7 +134,7 @@
 <!-- dir_c885c4bcce55d6fe81345b3413717718 -->
 <g id="node8" class="node">
 <title>dir_c885c4bcce55d6fe81345b3413717718</title>
-<g id="a_node8"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="PluginManager">
+<g id="a_node8"><a xlink:href="dir_c885c4bcce55d6fe81345b3413717718.html" target="_top" xlink:title="Plugin loading, discovery and factory registration.">
 <polygon fill="#a2b4d6" stroke="#404040" points="281.5,-90 192.5,-90 192.5,-71 281.5,-71 281.5,-90"/>
 <text text-anchor="middle" x="237" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">PluginManager</text>
 </a>
@@ -156,7 +156,7 @@
 <!-- dir_d463935c42a880f8392bc37d38dc00e7 -->
 <g id="node9" class="node">
 <title>dir_d463935c42a880f8392bc37d38dc00e7</title>
-<g id="a_node9"><a xlink:href="dir_d463935c42a880f8392bc37d38dc00e7.html" target="_top" xlink:title="Scene">
+<g id="a_node9"><a xlink:href="dir_d463935c42a880f8392bc37d38dc00e7.html" target="_top" xlink:title="The Scene model: primitives, lights, and traversal helpers.">
 <polygon fill="#a2b4d6" stroke="#404040" points="178,-145 132,-145 132,-126 178,-126 178,-145"/>
 <text text-anchor="middle" x="155" y="-133" font-family="Helvetica,sans-Serif" font-size="10.00">Scene</text>
 </a>
@@ -217,7 +217,7 @@
 <!-- dir_371f18151ff53c40093199b356fa9271 -->
 <g id="node10" class="node">
 <title>dir_371f18151ff53c40093199b356fa9271</title>
-<g id="a_node10"><a xlink:href="dir_371f18151ff53c40093199b356fa9271.html" target="_top" xlink:title="SceneLoader">
+<g id="a_node10"><a xlink:href="dir_371f18151ff53c40093199b356fa9271.html" target="_top" xlink:title="Scene parsing and node&#45;to&#45;component translation.">
 <polygon fill="#a2b4d6" stroke="#404040" points="180.5,-200 101.5,-200 101.5,-181 180.5,-181 180.5,-200"/>
 <text text-anchor="middle" x="141" y="-188" font-family="Helvetica,sans-Serif" font-size="10.00">SceneLoader</text>
 </a>

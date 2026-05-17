@@ -20,7 +20,7 @@
 <title>src/Objects/Plugins/LivescenePlugin</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_86cf0aee3ebd28cdfb001e081edcf295</title>
-<g id="a_clust1"><a xlink:href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" target="_top" xlink:title="Plugins">
+<g id="a_clust1"><a xlink:href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" target="_top" xlink:title="Plugin modules and their implementations.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="16.5,-39 16.5,-164 144.5,-164 144.5,-39 16.5,-39"/>
 <text text-anchor="middle" x="80.5" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00">Plugins</text>
 </a>
@@ -63,7 +63,7 @@
 <!-- dir_49f80dbd7683ed98b39c0cd73917c2a0 -->
 <g id="node3" class="node">
 <title>dir_49f80dbd7683ed98b39c0cd73917c2a0</title>
-<g id="a_node3"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="SceneSystem">
+<g id="a_node3"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="Scene orchestration, loading and BVH preparation.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="83,-19 0,-19 0,0 83,0 83,-19"/>
 <text text-anchor="middle" x="41.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">SceneSystem</text>
 </a>
@@ -85,7 +85,7 @@
 <!-- dir_a7363e98f9e0bdd87618633653859815 -->
 <g id="node4" class="node">
 <title>dir_a7363e98f9e0bdd87618633653859815</title>
-<g id="a_node4"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utils">
+<g id="a_node4"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utility helpers used across the project.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" points="140,-19 101,-19 101,0 140,0 140,-19"/>
 <text text-anchor="middle" x="120.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Utils</text>
 </a>

@@ -199,7 +199,7 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <p>The result is fully reproducible: identical inputs always produce identical output, with no noise and no need for a random seed. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00031">31</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00039">39</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa88a1643d3067605407808bf3a5c14d4" name="aa88a1643d3067605407808bf3a5c14d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa88a1643d3067605407808bf3a5c14d4">&#9670;&#160;</a></span>Camera() <span class="overload">[1/2]</span></h2>
@@ -257,7 +257,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00012">12</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00021">21</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -320,7 +320,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00039">39</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00048">48</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
@@ -382,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Rebuild the _screen rectangle from the current _transform and _fov. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00067">67</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00076">76</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -454,7 +454,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Radiance estimate along <code>ray</code>.</dd></dl>
 <p>The branch is chosen by the material's PDF for its sampled direction:</p>
 <p><b>Specular / glass branch</b> (<code>pdf ≈ 0</code>, delta BSDFs): </p><div class="fragment"><div class="line">L = Le + evaluate(ωi, ωo) * π * <a class="code hl_function" href="classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571">castRay</a>(ωi)</div>
-<div class="ttc" id="aclassRayTracer_1_1Camera_html_a7cd2251f34b6dda51fe338512e598571"><div class="ttname"><a href="classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571">RayTracer::Camera::castRay</a></div><div class="ttdeci">Color castRay(const Geometry::Ray &amp;ray, Scene &amp;scene, int depth)</div><div class="ttdoc">Evaluate the rendering equation along a ray, deterministically.</div><div class="ttdef"><b>Definition</b> <a href="Camera_8cpp_source.html#l00147">Camera.cpp:147</a></div></div>
+<div class="ttc" id="aclassRayTracer_1_1Camera_html_a7cd2251f34b6dda51fe338512e598571"><div class="ttname"><a href="classRayTracer_1_1Camera.html#a7cd2251f34b6dda51fe338512e598571">RayTracer::Camera::castRay</a></div><div class="ttdeci">Color castRay(const Geometry::Ray &amp;ray, Scene &amp;scene, int depth)</div><div class="ttdoc">Evaluate the rendering equation along a ray, deterministically.</div><div class="ttdef"><b>Definition</b> <a href="Camera_8cpp_source.html#l00156">Camera.cpp:156</a></div></div>
 </div><!-- fragment --><p> The bounce origin is offset by 1e-4 along <code>ωi</code> to avoid self-intersection.</p>
 <p><b>Diffuse branch</b> (<code>pdf &gt; 0</code>): </p><div class="fragment"><div class="line">L = Le + evaluate(n, ωo, n) * π * Σ light-&gt;computeLight(hit)</div>
 </div><!-- fragment --><p> Incoming radiance comes from direct lighting only — no recursive bounce.</p>
@@ -477,7 +477,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Radiance estimate along <code>ray</code>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00147">147</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00156">156</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
@@ -540,7 +540,7 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Unit-direction ray from the camera through the screen point. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00055">55</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00064">64</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
@@ -618,7 +618,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classRayTracer_1_1ARenderer.html#aba1715a2e7e2f5555194f9ed67fb2d69">RayTracer::ARenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00199">199</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8cpp_source.html#l00208">208</a> of file <a class="el" href="Camera_8cpp_source.html">Camera.cpp</a>.</p>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
@@ -652,7 +652,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Field of view in degrees. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00039">39</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00047">47</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -678,7 +678,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Maximum number of recursive ray bounces before the path is terminated. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00043">43</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00051">51</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -704,7 +704,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> projection/screen rectangle in world space. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00037">37</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00045">45</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -730,7 +730,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Side length of the per-pixel stratified sample grid (total samples = _sqrtSamples²). </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00045">45</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00053">53</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -756,7 +756,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classRayTracer_1_1Camera.html" title="Renderer that evaluates the rendering equation deterministically.">Camera</a> transform (world-space): encodes position + orientation. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00035">35</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00043">43</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>
@@ -782,7 +782,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Whether to accelerate primitive hits with a <a class="el" href="classRayTracer_1_1BVH.html">BVH</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00041">41</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Camera_8hpp_source.html#l00049">49</a> of file <a class="el" href="Camera_8hpp_source.html">Camera.hpp</a>.</p>
 
 </div>
 </div>

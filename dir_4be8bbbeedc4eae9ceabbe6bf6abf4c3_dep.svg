@@ -20,7 +20,7 @@
 <title>src/Objects/Abstracts/ARenderer</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_7f2e168896bc22155d1dd7adee44c1a1</title>
-<g id="a_clust1"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstracts">
+<g id="a_clust1"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstract base classes and plugin&#45;facing interfaces.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-47 8,-101 92,-101 92,-47 8,-47"/>
 <text text-anchor="middle" x="50" y="-89" font-family="Helvetica,sans-Serif" font-size="10.00">Abstracts</text>
 </a>
@@ -38,7 +38,7 @@
 <!-- dir_a7363e98f9e0bdd87618633653859815 -->
 <g id="node2" class="node">
 <title>dir_a7363e98f9e0bdd87618633653859815</title>
-<g id="a_node2"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utils">
+<g id="a_node2"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utility helpers used across the project.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" points="69.5,-19 30.5,-19 30.5,0 69.5,0 69.5,-19"/>
 <text text-anchor="middle" x="50" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Utils</text>
 </a>

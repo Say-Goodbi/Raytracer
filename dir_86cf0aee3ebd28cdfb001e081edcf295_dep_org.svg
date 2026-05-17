@@ -10,7 +10,7 @@
 <title>src/Objects/Plugins</title>
 <g id="clust1" class="cluster">
 <title>clusterdir_55b41fb77a5097913bc464fb6a145e9c</title>
-<g id="a_clust1"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Objects">
+<g id="a_clust1"><a xlink:href="dir_55b41fb77a5097913bc464fb6a145e9c.html" target="_top" xlink:title="Scene objects, primitives and materials.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-8 8,-125 293,-125 293,-8 8,-8"/>
 <text text-anchor="middle" x="150.5" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">Objects</text>
 </a>
@@ -18,7 +18,7 @@
 </g>
 <g id="clust2" class="cluster">
 <title>clusterdir_86cf0aee3ebd28cdfb001e081edcf295</title>
-<g id="a_clust2"><a xlink:href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" target="_top">
+<g id="a_clust2"><a xlink:href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" target="_top" xlink:title="Plugin modules and their implementations.">
 <polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="16,-63 16,-98 285,-98 285,-63 16,-63"/>
 </a>
 </g>
@@ -26,7 +26,7 @@
 <!-- dir_7f2e168896bc22155d1dd7adee44c1a1 -->
 <g id="node1" class="node">
 <title>dir_7f2e168896bc22155d1dd7adee44c1a1</title>
-<g id="a_node1"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstracts">
+<g id="a_node1"><a xlink:href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" target="_top" xlink:title="Abstract base classes and plugin&#45;facing interfaces.">
 <polygon fill="#a2b4d6" stroke="red" points="90,-35 28,-35 28,-16 90,-16 90,-35"/>
 <text text-anchor="middle" x="59" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Abstracts</text>
 </a>
@@ -40,7 +40,7 @@
 <!-- dir_bcb78dd210b4a6eed89bcede11e18332 -->
 <g id="node3" class="node">
 <title>dir_bcb78dd210b4a6eed89bcede11e18332</title>
-<g id="a_node3"><a xlink:href="dir_bcb78dd210b4a6eed89bcede11e18332.html" target="_top" xlink:title="CorePlugin">
+<g id="a_node3"><a xlink:href="dir_bcb78dd210b4a6eed89bcede11e18332.html" target="_top" xlink:title="Built&#45;in plugin providing the camera renderer and core initializers.">
 <polygon fill="#a2b4d6" stroke="#404040" points="93.5,-90 24.5,-90 24.5,-71 93.5,-71 93.5,-90"/>
 <text text-anchor="middle" x="59" y="-78" font-family="Helvetica,sans-Serif" font-size="10.00">CorePlugin</text>
 </a>
@@ -62,7 +62,7 @@
 <!-- dir_49f80dbd7683ed98b39c0cd73917c2a0 -->
 <g id="node5" class="node">
 <title>dir_49f80dbd7683ed98b39c0cd73917c2a0</title>
-<g id="a_node5"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="SceneSystem">
+<g id="a_node5"><a xlink:href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" target="_top" xlink:title="Scene orchestration, loading and BVH preparation.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="467.5,-35 384.5,-35 384.5,-16 467.5,-16 467.5,-35"/>
 <text text-anchor="middle" x="426" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">SceneSystem</text>
 </a>
@@ -84,7 +84,7 @@
 <!-- dir_a7363e98f9e0bdd87618633653859815 -->
 <g id="node6" class="node">
 <title>dir_a7363e98f9e0bdd87618633653859815</title>
-<g id="a_node6"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utils">
+<g id="a_node6"><a xlink:href="dir_a7363e98f9e0bdd87618633653859815.html" target="_top" xlink:title="Utility helpers used across the project.">
 <polygon fill="#edf0f7" stroke="#7f7f7f" points="524.5,-35 485.5,-35 485.5,-16 524.5,-16 524.5,-35"/>
 <text text-anchor="middle" x="505" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Utils</text>
 </a>
@@ -106,7 +106,7 @@
 <!-- dir_cae27912e177176a90175eee3a6288a5 -->
 <g id="node7" class="node">
 <title>dir_cae27912e177176a90175eee3a6288a5</title>
-<g id="a_node7"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry">
+<g id="a_node7"><a xlink:href="dir_cae27912e177176a90175eee3a6288a5.html" target="_top" xlink:title="Geometry primitives, vectors and math utilities.">
 <polygon fill="#edf0f7" stroke="red" stroke-dasharray="5,2" points="366.5,-35 301.5,-35 301.5,-16 366.5,-16 366.5,-35"/>
 <text text-anchor="middle" x="334" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">Geometry</text>
 </a>

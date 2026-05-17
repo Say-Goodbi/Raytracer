@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('PluginManager_8hpp.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>Plugin manager for loading and managing plugins.  
+<p>Plugin loader interface for dynamic plugins.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;dlfcn.h&gt;</code><br />
 <code>#include &lt;dirent.h&gt;</code><br />
@@ -132,8 +132,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Plugin manager for loading and managing plugins. </p>
-<p>This file defines the PluginManager class, which is responsible for loading and managing plugins in the ray tracer application. The PluginManager allows for dynamic loading of plugins at runtime, enabling users to extend the functionality of the ray tracer without modifying the core codebase. </p>
+<div class="textblock"><p>Plugin loader interface for dynamic plugins. </p>
+<p>Declares the <code>PluginManager</code> which loads shared libraries and exposes initializer factory functions for scene elements (renderers, primitives, lights, interfaces). See SceneLoader for how initializers are used. </p>
 
 <p class="definition">Definition in file <a class="el" href="PluginManager_8hpp_source.html">PluginManager.hpp</a>.</p>
 </div></div><!-- contents -->
