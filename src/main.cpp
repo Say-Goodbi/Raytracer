@@ -1,3 +1,12 @@
+/**
+ * @file src/main.cpp
+ * @brief Entry point and CLI for the raytracer application.
+ *
+ * This binary parses command-line arguments, loads a scene configuration via
+ * the `SceneLoader` and dispatches rendering through the plugin-provided
+ * interface (e.g., @ref SceneWriter). It wires together @ref PluginManager,
+ * @ref SceneLoader and the runtime interfaces used for output.
+ */
 #include "SceneSystem/Scene/Scene.hpp"
 #include "SceneSystem/SceneLoader/SceneLoader.hpp"
 #include "Exceptions/RaytracerException/RaytracerException.hpp"

@@ -1,3 +1,10 @@
+/**
+ * @file src/Geometry/Ray/Ray.cpp
+ * @brief Implementation of the `Geometry::Ray` type.
+ *
+ * Implements the lightweight `Ray` structure used by renderers to represent
+ * origins and directions for intersection queries. See @ref Geometry::Ray.
+ */
 #include "Ray.hpp"
 
 namespace Geometry

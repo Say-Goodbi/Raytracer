@@ -1,0 +1,153 @@
+/**
+ * @file docs/doxygen_dirs.dox
+ * @brief Directory-level briefs for Doxygen File List.
+ *
+ * This file contains `@dir` blocks documenting the main source directories
+ * so they appear with a short description in Doxygen's File List view.
+ */
+
+/**
+ * @dir src
+ * @brief Root of the C++ source tree containing the raytracer implementation.
+ *
+ * Holds the main program entry, renderer implementations,
+ * scene management, plugins and utility code. See @ref main and the
+ * subdirectories for details.
+ */
+
+/**
+ * @dir src/Geometry
+ * @brief Geometry primitives, vectors and math utilities.
+ *
+ * Contains @ref Geometry::Point3D, @ref Geometry::Vector3D, @ref Geometry::Ray,
+ * @ref Geometry::HitRecord, @ref Geometry::Rectangle3D, and low-level linear
+ * algebra used by the renderer and intersection code.
+ * Useful classes: @ref Geometry::Ray, @ref Geometry::Vector3D.
+ */
+
+/**
+ * @dir src/Geometry/TransformMatrix
+ * @brief 4×4 affine transform helpers.
+ *
+ * Provides translation/rotation/scaling matrix constructors and
+ * application operators for transforming points and vectors.
+ * Main type: @ref Geometry::TransformMatrix.
+ */
+
+/**
+ * @dir src/Geometry/Matrix
+ * @brief Generic fixed-size matrix template used by geometry types.
+ *
+ * Implements a lightweight, stack-allocated matrix template which is used
+ * as the basis for @ref Geometry::TransformMatrix and other algebraic helpers.
+ */
+
+/**
+ * @dir src/Geometry/Ray
+ * @brief Ray datatype and helpers for ray operations and intersection.
+ *
+ * Defines the @ref Geometry::Ray class used throughout rendering and
+ * acceleration structures. See @ref Geometry::Ray for details.
+ */
+
+/**
+ * @dir src/Objects
+ * @brief Scene objects, primitives and materials.
+ *
+ * Hosts concrete primitives (spheres, planes, cylinders), material
+ * implementations and light definitions that the renderer queries.
+ * Common entry points include @ref RayTracer::APrimitive and
+ * @ref RayTracer::ILight.
+ */
+
+/**
+ * @dir src/Objects/Abstracts
+ * @brief Abstract base classes and plugin-facing interfaces.
+ *
+ * Contains @ref RayTracer::ARenderer, @ref RayTracer::APrimitive and other
+ * abstract interfaces used by the plugin system to instantiate runtime
+ * components.
+ */
+
+/**
+ * @dir src/Objects/Plugins
+ * @brief Plugin modules and their implementations.
+ *
+ * Dynamic plugins are implemented here. The @ref CorePlugin directory contains
+ * the bundled implementations (camera renderer, core materials, lights and
+ * primitive initializers) that map configuration nodes to concrete objects.
+ */
+
+/**
+ * @dir src/Objects/Plugins/CorePlugin
+ * @brief Built-in plugin providing the camera renderer and core initializers.
+ *
+ * The @ref CorePlugin exposes the `camera` initializer, material factories and
+ * primitive constructors used by the default scene loader.
+ * Main runtime types: @ref RayTracer::Camera, @ref RayTracer::Lambertian,
+ * @ref RayTracer::Phong, @ref RayTracer::Glass.
+ */
+
+/**
+ * @dir src/SceneSystem
+ * @brief Scene orchestration, loading and BVH preparation.
+ *
+ * Responsible for parsing scene config, building the @ref RayTracer::Scene
+ * object, preparing acceleration structures and wiring plugins to initializers.
+ */
+
+/**
+ * @dir src/SceneSystem/Scene
+ * @brief The `Scene` model: primitives, lights, and traversal helpers.
+ *
+ * Implements @ref RayTracer::Scene::hit(), primitive storage and BVH
+ * preparation used by renderers during ray traversal.
+ */
+
+/**
+ * @dir src/SceneSystem/SceneLoader
+ * @brief Scene parsing and node-to-component translation.
+ *
+ * Converts configuration nodes into plugin components via the
+ * @ref RayTracer::PluginManager initializers and populates the @ref RayTracer::Scene
+ * instance.
+ */
+
+/**
+ * @dir src/SceneSystem/PluginManager
+ * @brief Plugin loading, discovery and factory registration.
+ *
+ * Loads dynamic libraries, exposes initializers and factories used by the
+ * @ref RayTracer::SceneLoader to instantiate cameras, primitives and lights.
+ */
+
+/**
+ * @dir src/Utils
+ * @brief Utility helpers used across the project.
+ *
+ * Contains small helpers (parsers, framebuffer sync utilities, parsing
+ * helpers) that do not belong to a single subsystem.
+ * Notable utilities include @ref RayTracer::FrameBufferMutex() and helper
+ * functions in @ref RayTracer.
+ */
+
+/**
+ * @dir plugins
+ * @brief External plugin sources and compiled plugin artifacts.
+ *
+ * Optional directory for third-party or user-provided plugins that extend
+ * the core runtime plugin API.
+ */
+
+/**
+ * @dir config
+ * @brief Example scene configuration files used by the `SceneLoader`.
+ *
+ * Contains libconfig files defining camera parameters, primitives and
+ * lights that the application loads at runtime via @ref RayTracer::SceneLoader.
+ */
+
+/**
+ * @dir docs
+ * @brief Doxygen sources and extended project documentation.
+ */

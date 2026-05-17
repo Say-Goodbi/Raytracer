@@ -1,3 +1,12 @@
+/**
+ * @file src/Objects/Plugins/CorePlugin/CorePlugin.cpp
+ * @brief Core plugin implementation that provides primitives, materials and the camera.
+ *
+ * This plugin exposes initializer factories (via the plugin API) for scene
+ * components such as `camera`, `spheres`, `planes`, and lights. It is used by
+ * the scene loader to construct renderer and scene objects. See @ref Plugin.hpp
+ * and @ref RayTracer::getMaterialInstance for material construction helpers.
+ */
 #include "Interfaces/SceneWriter/SceneWriter.hpp"
 #include <cmath>
 #include "../../Plugin.hpp"

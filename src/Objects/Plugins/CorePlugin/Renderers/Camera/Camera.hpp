@@ -1,3 +1,11 @@
+/**
+ * @file src/Objects/Plugins/CorePlugin/Renderers/Camera/Camera.hpp
+ * @brief Declaration for the camera-based renderer used by the raytracer.
+ *
+ * Declares `RayTracer::Camera`, an `ARenderer` subclass that constructs rays
+ * from a camera transform and evaluates the rendering equation deterministically
+ * using the scene. See @ref RayTracer::ARenderer and @ref Geometry::TransformMatrix.
+ */
 #pragma once
 #include "../../../../../Objects/Abstracts/ARenderer/ARenderer.hpp"
 #include "../../../../../Geometry/Point3D/Point3D.hpp"

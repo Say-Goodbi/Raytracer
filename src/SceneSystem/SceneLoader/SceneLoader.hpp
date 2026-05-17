@@ -1,3 +1,11 @@
+/**
+ * @file src/SceneSystem/SceneLoader/SceneLoader.hpp
+ * @brief Loads scene graphs from parsed configuration nodes.
+ *
+ * Declares `SceneLoader`, which maps configuration nodes to plugin initializers
+ * to build a `RayTracer::Scene`. This module decouples parsing from object
+ * construction and uses @ref PluginManager for plugin-provided factories.
+ */
 #pragma once
 #include "../PluginManager/PluginManager.hpp"
 #include "../ConfigParser/Parser.hpp"

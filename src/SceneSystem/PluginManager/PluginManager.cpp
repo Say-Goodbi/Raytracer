@@ -1,3 +1,12 @@
+/**
+ * @file src/SceneSystem/PluginManager/PluginManager.cpp
+ * @brief Runtime plugin loader and initializer registry implementation.
+ *
+ * Manages dynamic library handles and initializer functions for plugins.
+ * The manager is responsible for loading shared libraries, storing handles
+ * (which should be closed on unload), and exposing initializer lookup used
+ * by the `SceneLoader` to construct scene components.
+ */
 #include "PluginManager.hpp"
 
 RayTracer::PluginManager::PluginManager(std::string pluginDirectory) : _pluginDirectory(pluginDirectory)

@@ -1,11 +1,11 @@
 /**
- * @file PluginManager.hpp
- * @brief Plugin manager for loading and managing plugins
- * 
- * @details This file defines the PluginManager class, which is responsible for loading and managing plugins in the ray tracer application. 
- * The PluginManager allows for dynamic loading of plugins at runtime, enabling users to extend the functionality of the ray tracer without modifying the core codebase.
+ * @file src/SceneSystem/PluginManager/PluginManager.hpp
+ * @brief Plugin loader interface for dynamic plugins.
+ *
+ * Declares the `PluginManager` which loads shared libraries and exposes
+ * initializer factory functions for scene elements (renderers, primitives,
+ * lights, interfaces). See @ref SceneLoader for how initializers are used.
  */
-
 #pragma once
 #include <dlfcn.h>
 #include <dirent.h>

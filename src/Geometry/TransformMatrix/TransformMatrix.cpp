@@ -1,3 +1,12 @@
+/**
+ * @file src/Geometry/TransformMatrix/TransformMatrix.cpp
+ * @brief Implementation of affine transform helpers used across geometry.
+ *
+ * Provides construction helpers for translation, scaling and rotation matrices
+ * and multiplication to transform `Point3D` and `Vector3D` values. These
+ * transforms are used by scene nodes, cameras and primitives. See
+ * @ref Geometry::TransformMatrix and @ref Geometry::Matrix for details.
+ */
 #include "TransformMatrix.hpp"
 
 namespace Geometry

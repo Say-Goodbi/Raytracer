@@ -1,3 +1,12 @@
+/**
+ * @file src/Geometry/TransformMatrix/TransformMatrix.hpp
+ * @brief Affine transform matrix utilities used for camera and object transforms.
+ *
+ * Declares `Geometry::TransformMatrix`, a 4x4 affine matrix type built on
+ * `Geometry::Matrix<4,4>` that provides constructors for translation,
+ * scaling and rotation. It offers convenience operators to transform
+ * `Point3D` and `Vector3D` values in world and object space.
+ */
 #pragma once
 #include "../Matrix/Matrix.hpp"
 #include "../Point3D/Point3D.hpp"

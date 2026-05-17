@@ -1,3 +1,12 @@
+/**
+ * @file src/SceneSystem/Scene/Scene.cpp
+ * @brief Implementation of the `RayTracer::Scene` container and utilities.
+ *
+ * The `Scene` owns primitives, lights and the renderer instance. It provides
+ * acceleration structure preparation (`BVH`) and the `hit()` interface used by
+ * the renderer to perform ray-primitive intersection queries. See
+ * @ref RayTracer::Scene and @ref RayTracer::ARenderer for integration points.
+ */
 #include "Scene.hpp"
 
 namespace

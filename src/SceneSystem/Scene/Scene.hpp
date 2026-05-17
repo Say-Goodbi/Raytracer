@@ -1,3 +1,12 @@
+/**
+ * @file src/SceneSystem/Scene/Scene.hpp
+ * @brief Scene container and ray query interface used by renderers.
+ *
+ * Declares `RayTracer::Scene`, which aggregates primitives and lights and
+ * exposes `hit()` for intersection tests. The scene coordinates with the
+ * renderer to prepare acceleration structures (BVH) when requested. See also
+ * @ref RayTracer::ARenderer and @ref RayTracer::APrimitive.
+ */
 #pragma once
 #include "../../Objects/Plugin.hpp"
 #include "../PluginManager/PluginManager.hpp"

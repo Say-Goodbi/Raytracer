@@ -1,3 +1,12 @@
+/**
+ * @file src/SceneSystem/SceneLoader/SceneLoader.cpp
+ * @brief Scene parsing and construction from configuration nodes.
+ *
+ * Implements the `SceneLoader` which walks parsed config nodes and uses
+ * `PluginManager` initializers to create renderers, primitives and lights,
+ * assembling a `RayTracer::Scene` instance. See @ref SceneSystem::ConfigParser
+ * for parsing details.
+ */
 #include "SceneLoader.hpp"
 
 namespace RayTracer {

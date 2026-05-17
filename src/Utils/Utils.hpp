@@ -6,6 +6,14 @@
  *     rand                                                                             *
  * ------------------------------------------------------------------------------------ */
 
+/**
+ * @file src/Utils/Utils.hpp
+ * @brief Utility declarations for common helpers used by the renderer.
+ *
+ * Declares small helper functions and constants used around the project. See
+ * corresponding implementations in @ref src/Utils/Utils.cpp.
+ */
+ #pragma once
 #include <random>
 
 namespace RayTracer

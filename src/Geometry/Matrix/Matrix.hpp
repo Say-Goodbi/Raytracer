@@ -6,6 +6,7 @@
  * for floating point values and implements common matrix operations used by
  * the geometry primitives. It is intentionally lightweight and header-only
  * so it can be used as a base class for `Point` and `Vector` specializations.
+ * See @ref Geometry::TransformMatrix for affine transform helpers.
  *
  * Template parameters:
  * - Rows: number of rows (compile-time constant)
@@ -19,6 +20,14 @@
  */
 
 #pragma once
+/**
+ * @file src/Geometry/Matrix/Matrix.hpp
+ * @brief Fixed-size matrix template used by geometry types.
+ *
+ * Provides a lightweight, header-only `Matrix<Rows,Cols>` template which is
+ * the foundation for `Geometry::TransformMatrix` and other mathematical
+ * primitives. 
+ */
 
 namespace Geometry
 {

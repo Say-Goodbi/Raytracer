@@ -1,3 +1,12 @@
+/**
+ * @file src/Objects/Plugins/CorePlugin/Renderers/Camera/Camera.cpp
+ * @brief Implementation of the `RayTracer::Camera` renderer.
+ *
+ * Implements ray generation and deterministic path-tracing for the camera
+ * renderer. The camera builds a view plane from a `Geometry::TransformMatrix`
+ * and exposes `generateRay()` and `render()` used by the scene writer. See
+ * @ref RayTracer::Camera and @ref Geometry::Ray for related types.
+ */
 #include "Camera.hpp"
 #include "../../../../../SceneSystem/Scene/Scene.hpp"
 #include "../../../../../Objects/Abstracts/APrimitive/APrimitive.hpp"

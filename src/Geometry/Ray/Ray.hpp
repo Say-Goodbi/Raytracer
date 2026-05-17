@@ -1,3 +1,11 @@
+/**
+ * @file src/Geometry/Ray/Ray.hpp
+ * @brief Ray primitive used to represent a parametric line (origin + direction).
+ *
+ * Declares `Geometry::Ray`, a small POD containing an origin `Point3D` and a
+ * normalized direction `Vector3D`. Rays are the primary input to intersection
+ * queries via @ref RayTracer::Scene::hit.
+ */
 #pragma once
 #include "../../Geometry/Point3D/Point3D.hpp"
 #include "../../Geometry/Vector3D/Vector3D.hpp"

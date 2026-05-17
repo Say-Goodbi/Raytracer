@@ -6,6 +6,13 @@
  *     Utils                                                                            *
  * ------------------------------------------------------------------------------------ */
 
+/**
+ * @file src/Utils/Utils.cpp
+ * @brief Miscellaneous utility functions used across the codebase.
+ *
+ * Contains helpers for conversions, logging, and small convenience routines.
+ * Link to related utility declarations in @ref Utils::Utils (see Utils.hpp).
+ */
 #include "Utils.hpp"
 
 namespace RayTracer
