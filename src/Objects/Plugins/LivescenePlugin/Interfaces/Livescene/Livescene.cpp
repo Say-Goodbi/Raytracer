@@ -9,6 +9,8 @@ namespace
     constexpr std::chrono::milliseconds kFramePollDelay{32};
 }
 
+using namespace sf;
+
 namespace RayTracer
 {
     void Livescene::renderSceneAsync(Scene& scene,
