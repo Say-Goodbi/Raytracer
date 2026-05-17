@@ -87,14 +87,17 @@ namespace RayTracer
             _transform(1,2),
             _transform(2,2));
 
+        const double rightScale = std::max(right.length(), 1e-6);
+        const double upScale = std::max(up.length(), 1e-6);
+
         // Normalize basis vectors (in case transform wasn't orthonormal)
         forward = (forward.length() > 1e-6) ? forward.normalize() : Geometry::Vector3D(0, 1, 0);
         right = (right.length() > 1e-6) ? right.normalize() : Geometry::Vector3D::cross(forward, Geometry::Vector3D(0,0,1)).normalize();
         up = Geometry::Vector3D::cross(right, forward).normalize();
 
         double fovRad = _fov * M_PI / 180.0;
-        double halfW  = std::tan(fovRad / 2.0);
-        double halfH  = halfW * ((double)_height / _width);
+        double halfW  = std::tan(fovRad / 2.0) * rightScale;
+        double halfH  = std::tan(fovRad / 2.0) * ((double)_height / _width) * upScale;
 
         // Screen center is 1 unit in front of the camera
         Geometry::Point3D center(pos.x + forward.x, pos.y + forward.y, pos.z + forward.z);
