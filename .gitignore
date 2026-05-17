@@ -10,6 +10,7 @@ tests_run
 not-to-push
 lib*
 Makefile
+Testing
 .vscode
 CMakeFiles
 CMakeCache.txt
