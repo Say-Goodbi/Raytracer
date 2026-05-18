@@ -13,7 +13,7 @@
   },
   "scripts": {
     "prepare": "husky",
-    "build": "echo \"No build step defined\"",
-    "test": "echo \"No test step defined\""
+    "build": "mkdir build && cd build && cmake .. && make",
+    "test": "mkdir build && cd build && cmake .. && make && ctest"
   }
 }

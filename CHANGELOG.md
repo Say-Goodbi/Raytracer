@@ -1,3 +1,46 @@
+# [1.9.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.8.0...v1.9.0) (2026-05-18)
+
+
+### Bug Fixes
+
+* CMake SFML fetch & output directory ([dbfd866](https://github.com/Say-Goodbi/Raytracer/commit/dbfd8663cdba27c72bbf44f384a911db75e55147))
+
+
+### Features
+
+* add using directive for sf namespace in Livescene.cpp ([ae7c6f3](https://github.com/Say-Goodbi/Raytracer/commit/ae7c6f34945755a623d55036425aceeb369d94b3))
+* **build:** remove specific GIT_TAG for SFML dependency in CMakeLists.txt ([261a251](https://github.com/Say-Goodbi/Raytracer/commit/261a2516c73bb322ae8716291565b4f35d833b24))
+* **build:** update SFML dependency to use FetchContent with specific version ([3119403](https://github.com/Say-Goodbi/Raytracer/commit/3119403822c771d327377d2a1077fba6c5109404))
+* **ci:** add feat/test-release-mirror branch to CI workflow triggers ([a354ba8](https://github.com/Say-Goodbi/Raytracer/commit/a354ba8a4da5c49a7d0407b37d3bc0abe621f54a))
+* **ci:** add libudev-dev dependency ([310ef8b](https://github.com/Say-Goodbi/Raytracer/commit/310ef8bec9dab1e3192fb983e2407c202f63c7fd))
+* **ci:** add libudev-dev dependency ([b49d9dc](https://github.com/Say-Goodbi/Raytracer/commit/b49d9dc21f12a84e78e41dc811f3e8eca7794e04))
+* **ci:** add libudev-dev dependency ([7a14f35](https://github.com/Say-Goodbi/Raytracer/commit/7a14f357fcff7058a5173c5b46110e5e00904fc1))
+* **ci:** add libudev-dev dependency for Doxygen installation ([be0e5fb](https://github.com/Say-Goodbi/Raytracer/commit/be0e5fbd5ec25bf488c57eade692c070da514f6a))
+* **ci:** add libudev-dev dependency for Doxygen installation ([c3d52de](https://github.com/Say-Goodbi/Raytracer/commit/c3d52de2af2564ba95ec6b2562469019c80c0372))
+* **ci:** update CI dependencies to include libcriterion-dev ([cf90988](https://github.com/Say-Goodbi/Raytracer/commit/cf90988828825fefe91f9500a5b92993884558a5))
+* **ci:** update dependency installation step to include package update ([52794c7](https://github.com/Say-Goodbi/Raytracer/commit/52794c7d4128830356b449da72b835df3c83baef))
+* refactor Livescene rendering and event handling for improved clarity and performance ([f344203](https://github.com/Say-Goodbi/Raytracer/commit/f344203f4fa21e2c06eb596a38cfc9b57625ffac))
+* refactor material instance retrieval to use a lambda function ([014141c](https://github.com/Say-Goodbi/Raytracer/commit/014141cc25d859dcc0bae045a4f098e024d7cd99))
+* **tests:** add comprehensive parsing tests and improve error handling in Parser ([1bcf73a](https://github.com/Say-Goodbi/Raytracer/commit/1bcf73a2ab4b4b8a7a9fe5184643efad400d905c))
+* **tests:** add unit testing framework and initial test case ([66a5e75](https://github.com/Say-Goodbi/Raytracer/commit/66a5e7575fcc66ad1029c4dc75f3c21ecd8e3404))
+* **tests:** enhance unit test setup to include additional sources and independent test registration ([329db20](https://github.com/Say-Goodbi/Raytracer/commit/329db202fc381d2bed09eff8b9e37b22dbc4ad53))
+* **tests:** improve test registration and coverage options for unit tests ([1ed3398](https://github.com/Say-Goodbi/Raytracer/commit/1ed33988f9372a3baaaceb2b276c2fd16bacab45))
+* **tests:** remove test case for non-existent configuration file ([d625fc7](https://github.com/Say-Goodbi/Raytracer/commit/d625fc71e8e0ea83add4e04962f6d6cf2870b8b1))
+
+# [1.8.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.7.0...v1.8.0) (2026-05-17)
+
+
+### Features
+
+* cone primitive ([a1543de](https://github.com/Say-Goodbi/Raytracer/commit/a1543deff08f5a5faec03764a841bb6a27b87db5))
+
+# [1.7.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.6.1...v1.7.0) (2026-05-17)
+
+
+### Features
+
+* implement BVH camera renderer and related configuration updates, and delete useBVH from Camera ([c56d176](https://github.com/Say-Goodbi/Raytracer/commit/c56d1760c51c26e8ffda75f4aa41b5b51789ace6))
+
 ## [1.6.1](https://github.com/Say-Goodbi/Raytracer/compare/v1.6.0...v1.6.1) (2026-05-17)
 
 

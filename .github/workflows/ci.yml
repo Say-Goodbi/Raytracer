@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - feat/test-release-mirror
   pull_request:
     branches:
       - main
@@ -20,6 +21,10 @@ jobs:
     if: github.repository == 'Say-Goodbi/Raytracer'
     runs-on: ubuntu-latest
     steps:
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y libx11-dev libxrandr-dev libxcursor-dev libxi-dev libxext-dev libxinerama-dev libxss-dev libgl1-mesa-dev libudev-dev libmbedtls-dev libfreetype-dev libssh2-1-dev libharfbuzz-dev libcriterion-dev
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -38,6 +43,10 @@ jobs:
       runs-on: ubuntu-latest
       needs: build
       steps:
+          - name: Install dependencies
+            run: |
+              sudo apt update
+              sudo apt install -y libx11-dev libxrandr-dev libxcursor-dev libxi-dev libxext-dev libxinerama-dev libxss-dev libgl1-mesa-dev libudev-dev libmbedtls-dev libfreetype-dev libssh2-1-dev libharfbuzz-dev libcriterion-dev
           - name: check
             uses: actions/checkout@v4
             with:

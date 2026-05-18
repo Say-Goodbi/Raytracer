@@ -17,6 +17,7 @@
 #include "Primitives/Plane/Plane.hpp"
 #include "Primitives/Sphere/Sphere.hpp"
 #include "Primitives/Cylinder/Cylinder.hpp"
+#include "Primitives/Cone/Cone.hpp"
 #include "Lights/PointLight/PointLight.hpp"
 #include "Lights/DirectionalLight/DirectionalLight.hpp"
 #include "Lights/AmbientLight/AmbientLight.hpp"
@@ -25,34 +26,34 @@
 
 extern "C"
 {
-    std::map<std::string, std::function<std::shared_ptr<RayTracer::IMaterial>(const RayTracer::Color &)>> _materials = {
-        {"lambertian", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
-        {
-            return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Lambertian>(color));
-        }},
-        {"phong", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
-        {
-            return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Phong>(color));
-        }},
-        {"glass", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
-        {
-            return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Glass>(color));
-        }}
-    };
-
-    std::shared_ptr<RayTracer::IMaterial> getMaterialInstance(const std::string &type, const RayTracer::Color &color)
-    {
-        std::map<std::string, std::function<std::shared_ptr<RayTracer::IMaterial>(const RayTracer::Color &)>>::const_iterator it = _materials.find(type);
     
-        if (it == _materials.end())
-            throw RayTracer::ParsingException("Unknown material type: " + type);
-        return it->second(color);
-    }
-
     std::string getName() { return "CorePlugin"; };
-
+    
     std::map<std::string, std::function<RayTracer::Component(RayTracer::NodePtr)>> getInitializers()
     {
+        std::map<std::string, std::function<std::shared_ptr<RayTracer::IMaterial>(const RayTracer::Color &)>> _materials = {
+            {"lambertian", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
+            {
+                return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Lambertian>(color));
+            }},
+            {"phong", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
+            {
+                return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Phong>(color));
+            }},
+            {"glass", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
+            {
+                return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Glass>(color));
+            }}
+        };
+    
+        std::function<std::shared_ptr<RayTracer::IMaterial>(const std::string&, const RayTracer::Color&)>
+            getMaterialInstance = [_materials](const std::string &type, const RayTracer::Color &color) {
+                auto it = _materials.find(type);
+                if (it == _materials.end())
+                    throw RayTracer::ParsingException("Unknown material type: " + type);
+                return it->second(color);
+            };
+        
         return {
             {
                 "SceneWriter", [](RayTracer::NodePtr) -> RayTracer::Component
@@ -101,7 +102,7 @@ extern "C"
             },
             // Primitive
             {
-                "planes", [](RayTracer::NodePtr node) -> RayTracer::Component
+                "planes", [getMaterialInstance](RayTracer::NodePtr node) -> RayTracer::Component
                 {
                     const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
 
@@ -120,7 +121,7 @@ extern "C"
                 }
             },
             {
-                "spheres", [](RayTracer::NodePtr node) -> RayTracer::Component
+                "spheres", [getMaterialInstance](RayTracer::NodePtr node) -> RayTracer::Component
                 {
                     const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
 
@@ -138,7 +139,7 @@ extern "C"
                 }
             },
             {
-                "cylinders", [](RayTracer::NodePtr node) -> RayTracer::Component
+                "cylinders", [getMaterialInstance](RayTracer::NodePtr node) -> RayTracer::Component
                 {
                     const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
 
@@ -157,6 +158,28 @@ extern "C"
                         height = Raytracer::fromNode<float>(settingsMap.at("height"));
                     std::shared_ptr<RayTracer::APrimitive> cylinder = std::make_shared<RayTracer::Cylinder>(origin, axis, radius, getMaterialInstance(material, color), height);
                     return std::static_pointer_cast<RayTracer::APrimitive>(cylinder);
+                }
+            },
+            {
+                "cones", [getMaterialInstance](RayTracer::NodePtr node) -> RayTracer::Component
+                {
+                    const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
+
+                    if (settingsMap.find("apex") == settingsMap.end() || settingsMap.find("axis") == settingsMap.end() || settingsMap.find("radius") == settingsMap.end() || settingsMap.find("color") == settingsMap.end())
+                        throw RayTracer::ParsingException("Missing required parameters for Cone primitive: apex, axis, radius, color");
+
+                    const float radius = Raytracer::fromNode<float>(settingsMap.at("radius"));
+                    Geometry::Point3D apex = Raytracer::fromNode<Geometry::Point3D>(settingsMap.at("apex"));
+                    Geometry::Vector3D axis = Raytracer::fromNode<Geometry::Vector3D>(settingsMap.at("axis"));
+                    RayTracer::Color color = Raytracer::fromNode<RayTracer::Color>(settingsMap.at("color"));
+                    std::string material = std::string("lambertian");
+                    if (settingsMap.find("material") != settingsMap.end())
+                        material = Raytracer::fromNode<std::string>(settingsMap.at("material"));
+                    float height = 0.0f;
+                    if (settingsMap.find("height") != settingsMap.end())
+                        height = Raytracer::fromNode<float>(settingsMap.at("height"));
+                    std::shared_ptr<RayTracer::APrimitive> cone = std::make_shared<RayTracer::Cone>(apex, axis, radius, getMaterialInstance(material, color), height);
+                    return std::static_pointer_cast<RayTracer::APrimitive>(cone);
                 }
             },
             // Light

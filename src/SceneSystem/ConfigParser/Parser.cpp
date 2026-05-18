@@ -3,12 +3,12 @@
 RayTracer::Parser::Parser(const std::string &filename) : _root(nullptr)
 {
     try {
-            std::cout << "Loading configuration file: " << filename << std::endl;
         _cfg.readFile(filename.c_str());
-        std::cout << "Configuration file loaded successfully: " << filename << std::endl;
         _root = &_cfg.getRoot();
         if (!_root)
-            throw RayTracer::Exception("Failed to read configuration file: " + filename);
+            throw RayTracer::ParsingException("Failed to read configuration file: " + filename);
+        if (_root->getLength() == 0)
+            throw RayTracer::ParsingException("Configuration file is empty: " + filename);
         _node = RayTracer::NodePtr(new RayTracer::Node);
         _node->value = RayTracer::Object{};
         RayTracer::Object &rootObj = std::get<RayTracer::Object>(_node->value);
@@ -16,11 +16,11 @@ RayTracer::Parser::Parser(const std::string &filename) : _root(nullptr)
     }
     catch (const libconfig::FileIOException &e)
     {
-        throw RayTracer::Exception("Failed to read configuration file: " + filename);
+        throw RayTracer::ParsingException("Failed to read configuration file: " + filename);
     }
     catch (const libconfig::ParseException &e)
     {
-        throw RayTracer::Exception("Failed to parse configuration file: " + filename + " at line " + std::to_string(e.getLine()));
+        throw RayTracer::ParsingException("Failed to parse configuration file: " + filename + " at line " + std::to_string(e.getLine()));
     }
 }
 
