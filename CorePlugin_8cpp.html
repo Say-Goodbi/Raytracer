@@ -91,8 +91,7 @@ $(document).ready(function(){initNavTree('CorePlugin_8cpp.html',''); initResizab
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">CorePlugin.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -109,6 +108,7 @@ $(document).ready(function(){initNavTree('CorePlugin_8cpp.html',''); initResizab
 <code>#include &quot;<a class="el" href="Plane_8hpp_source.html">Primitives/Plane/Plane.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Sphere_8hpp_source.html">Primitives/Sphere/Sphere.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Cylinder_8hpp_source.html">Primitives/Cylinder/Cylinder.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Cone_8hpp_source.html">Primitives/Cone/Cone.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PointLight_8hpp_source.html">Lights/PointLight/PointLight.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DirectionalLight_8hpp_source.html">Lights/DirectionalLight/DirectionalLight.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AmbientLight_8hpp_source.html">Lights/AmbientLight/AmbientLight.hpp</a>&quot;</code><br />
@@ -125,17 +125,10 @@ $(document).ready(function(){initNavTree('CorePlugin_8cpp.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae5215844996d60e041a8a21b4d0057c0" id="r_ae5215844996d60e041a8a21b4d0057c0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">RayTracer::IMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CorePlugin_8cpp.html#ae5215844996d60e041a8a21b4d0057c0">getMaterialInstance</a> (const std::string &amp;type, const <a class="el" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;color)</td></tr>
-<tr class="separator:ae5215844996d60e041a8a21b4d0057c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0fc966d4386ddb71d99361e3fccb311" id="r_ac0fc966d4386ddb71d99361e3fccb311"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CorePlugin_8cpp.html#ac0fc966d4386ddb71d99361e3fccb311">getName</a> ()</td></tr>
 <tr class="separator:ac0fc966d4386ddb71d99361e3fccb311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e14e2166e2799c71d21f343a3d543f3" id="r_a0e14e2166e2799c71d21f343a3d543f3"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::function&lt; <a class="el" href="namespaceRayTracer.html#a228fef096342529f46bdf5298d0adb06">RayTracer::Component</a>(<a class="el" href="namespaceRayTracer.html#adb4fc8b90b2ae3342f5cd44b5043166c">RayTracer::NodePtr</a>)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CorePlugin_8cpp.html#a0e14e2166e2799c71d21f343a3d543f3">getInitializers</a> ()</td></tr>
 <tr class="separator:a0e14e2166e2799c71d21f343a3d543f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ad12fe6f23d6017758b6e9f760091d04c" id="r_ad12fe6f23d6017758b6e9f760091d04c"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::function&lt; std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">RayTracer::IMaterial</a> &gt;(const <a class="el" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CorePlugin_8cpp.html#ad12fe6f23d6017758b6e9f760091d04c">_materials</a></td></tr>
-<tr class="separator:ad12fe6f23d6017758b6e9f760091d04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Core plugin implementation that provides primitives, materials and the camera. </p>
@@ -158,50 +151,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00054">54</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00032">32</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="CorePlugin_8cpp_a0e14e2166e2799c71d21f343a3d543f3_cgraph.svg" width="614" height="535"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="ae5215844996d60e041a8a21b4d0057c0" name="ae5215844996d60e041a8a21b4d0057c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5215844996d60e041a8a21b4d0057c0">&#9670;&#160;</a></span>getMaterialInstance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">RayTracer::IMaterial</a> &gt; getMaterialInstance </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00043">43</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
-<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="CorePlugin_8cpp_ae5215844996d60e041a8a21b4d0057c0_icgraph.svg" width="322" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="CorePlugin_8cpp_a0e14e2166e2799c71d21f343a3d543f3_cgraph.svg" width="614" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -221,39 +177,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00052">52</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="ad12fe6f23d6017758b6e9f760091d04c" name="ad12fe6f23d6017758b6e9f760091d04c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad12fe6f23d6017758b6e9f760091d04c">&#9670;&#160;</a></span>_materials</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt; std::string, std::function&lt; std::shared_ptr&lt; <a class="el" href="classRayTracer_1_1IMaterial.html">RayTracer::IMaterial</a> &gt;(const <a class="el" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;)&gt; &gt; _materials</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">        {<span class="stringliteral">&quot;lambertian&quot;</span>, [](<span class="keyword">const</span> <a class="code hl_struct" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;color) -&gt; std::shared_ptr&lt;RayTracer::IMaterial&gt;</div>
-<div class="line">        {</div>
-<div class="line">            <span class="keywordflow">return</span> std::static_pointer_cast&lt;RayTracer::IMaterial&gt;(std::make_shared&lt;RayTracer::Lambertian&gt;(color));</div>
-<div class="line">        }},</div>
-<div class="line">        {<span class="stringliteral">&quot;phong&quot;</span>, [](<span class="keyword">const</span> <a class="code hl_struct" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;color) -&gt; std::shared_ptr&lt;RayTracer::IMaterial&gt;</div>
-<div class="line">        {</div>
-<div class="line">            <span class="keywordflow">return</span> std::static_pointer_cast&lt;RayTracer::IMaterial&gt;(std::make_shared&lt;RayTracer::Phong&gt;(color));</div>
-<div class="line">        }},</div>
-<div class="line">        {<span class="stringliteral">&quot;glass&quot;</span>, [](<span class="keyword">const</span> <a class="code hl_struct" href="structRayTracer_1_1Color.html">RayTracer::Color</a> &amp;color) -&gt; std::shared_ptr&lt;RayTracer::IMaterial&gt;</div>
-<div class="line">        {</div>
-<div class="line">            <span class="keywordflow">return</span> std::static_pointer_cast&lt;RayTracer::IMaterial&gt;(std::make_shared&lt;RayTracer::Glass&gt;(color));</div>
-<div class="line">        }}</div>
-<div class="line">    }</div>
-<div class="ttc" id="astructRayTracer_1_1Color_html"><div class="ttname"><a href="structRayTracer_1_1Color.html">RayTracer::Color</a></div><div class="ttdef"><b>Definition</b> <a href="Color_8hpp_source.html#l00005">Color.hpp:6</a></div></div>
-</div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00028">28</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CorePlugin_8cpp_source.html#l00030">30</a> of file <a class="el" href="CorePlugin_8cpp_source.html">CorePlugin.cpp</a>.</p>
 
 </div>
 </div>

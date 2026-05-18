@@ -1,5 +1,7 @@
 <map id="src/Utils/FrameBufferMutex.hpp" name="src/Utils/FrameBufferMutex.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,233,31"/>
-<area shape="rect" id="Node000002" href="$Camera_8cpp.html" title="Implementation of the RayTracer::Camera renderer." alt="" coords="36,79,203,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,44,122,79,117,79,117,44"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="91,5,319,31"/>
+<area shape="rect" id="Node000002" href="$BVHCam_8cpp.html" title=" " alt="" coords="5,79,200,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,41,136,81,132,77,179,37"/>
+<area shape="rect" id="Node000003" href="$Camera_8cpp.html" title="Implementation of the RayTracer::BVHCam renderer." alt="" coords="225,79,391,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,37,278,77,275,81,228,41"/>
 </map>

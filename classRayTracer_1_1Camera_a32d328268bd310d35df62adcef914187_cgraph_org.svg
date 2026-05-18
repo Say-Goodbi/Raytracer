@@ -149,7 +149,7 @@
 <!-- Node32 -->
 <g id="Node000032" class="node">
 <title>Node32</title>
-<g id="a_Node000032"><a xlink:href="classRayTracer_1_1Scene.html#a95fa63f62bcc5ebefabf3209eb5af01a" target="_top" xlink:title="Prepare the scene hit structure for the next render pass.">
+<g id="a_Node000032"><a xlink:href="classRayTracer_1_1Scene.html#a2d2ae74843e7fcd0b4d67123deae989f" target="_top" xlink:title="Prepare the scene hit structure for the next render pass.">
 <polygon fill="white" stroke="#666666" points="303,-95 160,-95 160,-65 303,-65 303,-95"/>
 <text text-anchor="start" x="168" y="-83" font-family="Helvetica,sans-Serif" font-size="10.00">RayTracer::Scene::prepare</text>
 <text text-anchor="middle" x="231.5" y="-72" font-family="Helvetica,sans-Serif" font-size="10.00">AccelerationStructure</text>

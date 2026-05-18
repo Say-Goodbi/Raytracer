@@ -1,0 +1,34 @@
+<map id="RayTracer::BVHCam::BVHCam" name="RayTracer::BVHCam::BVHCam">
+<area shape="rect" id="Node000001" title="Construct a camera renderer." alt="" coords="5,227,165,267"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1ARenderer.html#a44a60f0d86ca19731689141bfea654c7" title="Constructor." alt="" coords="230,5,393,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,225,137,147,171,102,212,62,231,49,234,54,215,66,175,105,142,150,98,228"/>
+<area shape="rect" id="Node000003" href="$classGeometry_1_1Vector3D.html#ae4c5a52ebf282e334801c8ee28ad8d5d" title=" " alt="" coords="715,120,868,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,224,158,195,212,167,334,120,385,106,434,97,484,93,537,93,667,105,713,114,712,119,666,111,537,98,484,98,435,102,387,111,336,125,214,172,161,199,115,229"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1BVHCam.html#a343291f29df2a424797e29651a34dd34" title="Rebuild the _screen rectangle from the current _transform and _fov." alt="" coords="213,284,409,324"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,264,220,278,218,283,164,269"/>
+<area shape="rect" id="Node000006" href="$classGeometry_1_1Vector3D.html#a7157de1fcf830b27bf4b2df43e6b6112" title=" " alt="" coords="485,120,639,160"/>
+<area shape="poly" id="edge15_Node000001_Node000006" title=" " alt="" coords="147,224,213,205,348,175,472,152,473,157,349,180,214,211,149,229"/>
+<area shape="rect" id="Node000007" href="$classGeometry_1_1Vector3D.html#ae2861f32c5661f184b655cf412e38b91" title=" " alt="" coords="485,491,639,531"/>
+<area shape="poly" id="edge17_Node000001_Node000007" title=" " alt="" coords="112,265,158,300,215,334,243,345,269,351,316,356,361,364,385,374,411,391,429,413,436,435,443,456,459,477,474,487,471,491,456,481,438,459,431,437,424,416,408,395,383,379,359,369,315,361,268,356,242,350,212,338,155,304,108,269"/>
+<area shape="rect" id="Node000008" href="$classGeometry_1_1Vector3D.html#a388f7af8bf0095c817e89b5b2518fda7" title=" " alt="" coords="485,184,639,224"/>
+<area shape="poly" id="edge18_Node000001_Node000008" title=" " alt="" coords="165,237,471,209,472,215,166,242"/>
+<area shape="rect" id="Node000010" href="$classGeometry_1_1Matrix.html#a55bca424225b20c0490c21b93faea578" title="Mutable element access." alt="" coords="457,555,667,581"/>
+<area shape="poly" id="edge19_Node000001_Node000010" title=" " alt="" coords="100,265,145,328,177,363,215,391,242,404,267,409,314,409,361,412,385,420,411,437,423,449,430,463,436,490,441,516,448,529,459,541,468,547,464,551,456,545,443,532,436,518,431,491,425,465,419,453,408,441,383,425,360,417,314,415,266,415,240,409,212,396,174,366,141,332,96,268"/>
+<area shape="rect" id="Node000013" href="$classGeometry_1_1Matrix.html#abd9223e4aa03cc11a3e03dc17872a198" title="Create an identity matrix." alt="" coords="214,450,409,475"/>
+<area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="98,266,115,301,141,345,174,390,215,429,240,443,238,447,212,433,170,393,136,348,110,304,93,268"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="409,286,566,259,630,245,665,234,681,219,689,204,697,187,713,170,720,165,723,169,716,174,702,190,694,206,685,223,668,238,632,250,567,264,410,292"/>
+<area shape="rect" id="Node000005" href="$classGeometry_1_1Point3D.html#a6a08342f9542eb6d6ff7bcf2278a240d" title=" " alt="" coords="485,299,639,339"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="410,307,472,311,471,316,409,312"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="328,282,381,226,417,196,456,170,471,162,474,167,459,174,420,200,385,230,332,285"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="385,322,411,341,425,359,432,377,435,411,439,444,446,461,459,477,475,488,471,492,455,481,442,463,434,446,430,412,426,378,420,361,407,345,382,326"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="358,281,456,240,492,226,494,231,458,245,360,286"/>
+<area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="343,322,379,352,412,392,423,414,428,434,431,472,436,507,444,524,459,541,466,546,463,551,455,545,440,526,431,508,426,473,423,435,418,416,407,395,375,356,340,326"/>
+<area shape="rect" id="Node000011" href="$classGeometry_1_1Point3D.html#a8650efc8765c2d5a3ed1ee3b9139a997" title=" " alt="" coords="485,363,639,403"/>
+<area shape="poly" id="edge13_Node000004_Node000011" title=" " alt="" coords="375,321,458,348,483,356,482,361,457,353,373,327"/>
+<area shape="rect" id="Node000012" href="$classGeometry_1_1Vector3D.html#a4f0165ac7ffb25816ce35d148b6524fa" title=" " alt="" coords="485,427,639,467"/>
+<area shape="poly" id="edge14_Node000004_Node000012" title=" " alt="" coords="380,322,411,341,427,359,435,378,443,396,459,413,474,422,471,427,456,417,439,399,431,380,423,362,408,345,377,326"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="639,137,701,137,701,143,639,143"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="634,181,706,161,707,166,635,186"/>
+<area shape="rect" id="Node000009" href="$classGeometry_1_1Vector3D.html#a8966b188a3b6d27793b3896618fea42c" title="Calculate the length (magnitude) of this vector." alt="" coords="715,184,868,224"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="639,201,701,201,701,207,639,207"/>
+</map>

@@ -14,7 +14,7 @@
 <area shape="poly" id="edge33_Node000001_Node000027" title=" " alt="" coords="127,491,208,523,239,532,238,537,206,528,125,496"/>
 <area shape="rect" id="Node000028" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="237,926,391,966"/>
 <area shape="poly" id="edge34_Node000001_Node000028" title=" " alt="" coords="96,493,299,912,295,914,91,495"/>
-<area shape="rect" id="Node000032" href="$classRayTracer_1_1Scene.html#a95fa63f62bcc5ebefabf3209eb5af01a" title="Prepare the scene hit structure for the next render pass." alt="" coords="219,1075,409,1115"/>
+<area shape="rect" id="Node000032" href="$classRayTracer_1_1Scene.html#a2d2ae74843e7fcd0b4d67123deae989f" title="Prepare the scene hit structure for the next render pass." alt="" coords="219,1075,409,1115"/>
 <area shape="poly" id="edge46_Node000001_Node000032" title=" " alt="" coords="87,494,96,575,116,698,132,767,153,839,178,909,209,976,242,1024,280,1063,276,1067,238,1028,204,979,173,911,147,840,127,768,111,699,91,576,82,494"/>
 <area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="391,459,473,474,562,486,642,488,674,483,696,474,736,440,768,398,793,351,812,302,826,253,836,207,845,135,850,136,841,208,831,254,817,303,798,353,772,401,740,444,699,479,675,488,643,493,562,491,472,480,390,464"/>
 <area shape="poly" id="edge6_Node000003_Node000003" title=" " alt="" coords="271,425,268,415,275,405,290,400,314,398,341,400,356,408,353,413,340,406,314,403,292,405,278,410,273,416,276,423"/>

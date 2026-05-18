@@ -1,7 +1,9 @@
 <map id="src/Utils/Utils.hpp" name="src/Utils/Utils.hpp">
-<area shape="rect" id="Node000001" title="Utility declarations for common helpers used by the renderer." alt="" coords="108,5,245,31"/>
-<area shape="rect" id="Node000002" href="$Camera_8cpp.html" title="Implementation of the RayTracer::Camera renderer." alt="" coords="5,79,172,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,42,117,81,114,77,153,38"/>
-<area shape="rect" id="Node000003" href="$Utils_8cpp.html" title="Miscellaneous utility functions used across the codebase." alt="" coords="197,93,333,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,38,254,91,251,95,196,42"/>
+<area shape="rect" id="Node000001" title="Utility declarations for common helpers used by the renderer." alt="" coords="239,5,377,31"/>
+<area shape="rect" id="Node000002" href="$BVHCam_8cpp.html" title=" " alt="" coords="5,79,200,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,39,166,81,164,76,267,34"/>
+<area shape="rect" id="Node000003" href="$Camera_8cpp.html" title="Implementation of the RayTracer::BVHCam renderer." alt="" coords="225,79,391,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="311,44,311,79,305,79,305,44"/>
+<area shape="rect" id="Node000004" href="$Utils_8cpp.html" title="Miscellaneous utility functions used across the codebase." alt="" coords="416,93,552,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="345,34,461,91,459,95,343,39"/>
 </map>

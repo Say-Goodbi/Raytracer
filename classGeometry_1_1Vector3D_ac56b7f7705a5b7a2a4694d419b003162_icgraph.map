@@ -1,5 +1,7 @@
 <map id="Geometry::Vector3D::operator/" name="Geometry::Vector3D::operator/">
-<area shape="rect" id="Node000001" title=" " alt="" coords="227,5,380,45"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="5,13,179,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,28,179,28,179,23,213,23"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="227,23,380,63"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1Cone.html#a19623c2790fd4ab917eb624508e57e5d" title="Test ray–cone intersection using the quadratic form of the cone equation." alt="" coords="16,5,168,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,35,168,30,169,24,213,30"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af" title="Test ray–cylinder intersection using the quadratic form of the cylinder equation." alt="" coords="5,55,179,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,56,179,60,179,55,213,51"/>
 </map>

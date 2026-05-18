@@ -1,0 +1,21 @@
+<map id="src/Objects/Plugins/BVHCamPlugin" name="src/Objects/Plugins/BVHCamPlugin">
+<area shape="rect" id="node2" href="dir_90aaa268eb9f5027813ddccf77193088.html" title="Renderers" alt="" coords="138,136,226,161"/>
+<area shape="poly" id="edge2" href="dir_000008_000041.html" alt="" coords="178,88,182,122,177,123,173,89"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000008_000041.html" title="1" alt="" coords="182,110,192,124"/>
+<area shape="rect" id="node3" href="dir_49f80dbd7683ed98b39c0cd73917c2a0.html" title="Scene orchestration, loading and BVH preparation." alt="" coords="5,209,116,235"/>
+<area shape="poly" id="edge1" href="dir_000008_000046.html" alt="" coords="166,90,128,138,80,200,75,197,124,134,162,87"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000008_000046.html" title="2" alt="" coords="83,192,92,207"/>
+<area shape="poly" id="edge3" href="dir_000041_000046.html" alt="" coords="164,164,93,205,91,200,161,159"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000041_000046.html" title="1" alt="" coords="96,200,105,215"/>
+<area shape="rect" id="node4" href="dir_7f2e168896bc22155d1dd7adee44c1a1.html" title="Abstract base classes and plugin&#45;facing interfaces." alt="" coords="141,209,223,235"/>
+<area shape="poly" id="edge4" href="dir_000041_000001.html" alt="" coords="185,162,185,196,179,196,179,162"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000041_000001.html" title="2" alt="" coords="186,184,195,198"/>
+<area shape="rect" id="node5" href="dir_a7363e98f9e0bdd87618633653859815.html" title="Utility helpers used across the project." alt="" coords="248,209,300,235"/>
+<area shape="poly" id="edge5" href="dir_000041_000051.html" alt="" coords="198,159,250,199,247,203,195,163"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000041_000051.html" title="2" alt="" coords="245,184,254,199"/>
+<area shape="rect" id="node6" href="dir_cae27912e177176a90175eee3a6288a5.html" title="Geometry primitives, vectors and math utilities." alt="" coords="324,209,411,235"/>
+<area shape="poly" id="edge6" href="dir_000041_000018.html" alt="" coords="213,159,325,202,324,207,211,164"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000041_000018.html" title="6" alt="" coords="318,187,328,202"/>
+<area shape="rect" id="clust2" href="dir_b8007967a1960f4b2dda88288d69d7a3.html" alt="" coords="103,52,245,172"/>
+<area shape="rect" id="clust1" href="dir_86cf0aee3ebd28cdfb001e081edcf295.html" title="Plugin modules and their implementations." alt="" coords="93,16,255,183"/>
+</map>

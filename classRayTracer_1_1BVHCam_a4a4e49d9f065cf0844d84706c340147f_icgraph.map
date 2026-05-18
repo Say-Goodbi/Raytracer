@@ -1,0 +1,5 @@
+<map id="RayTracer::BVHCam::generateRay" name="RayTracer::BVHCam::generateRay">
+<area shape="rect" id="Node000001" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="213,5,373,45"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1BVHCam.html#a26338649c825eb2ded1c9e4c9e889452" title="Render the scene into a 2D framebuffer." alt="" coords="5,5,165,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,28,166,28,166,23,200,23"/>
+</map>

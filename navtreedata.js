@@ -61,9 +61,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AABB_8hpp.html",
-"classGeometry_1_1Ray.html#ab2ee230ea6c5b866a94d7bfd57c98845",
-"classRayTracer_1_1ILight.html#ad73c94dce4fad84ce321082bee288ae1",
-"dir_92a1a61be5fcf1c546bdf161308590dc.html"
+"classGeometry_1_1Point3D.html#ae9af5cd5e04e5f0635d250cf80e4e78f",
+"classRayTracer_1_1Cylinder.html#ab42450e2290b96bccdf83ba79fa9d8af",
+"classRayTracer_1_1SceneWriter.html#aca1c15e39a2ec4be945d4fe246c7c9d8",
+"structRayTracer_1_1BVH_1_1Record.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

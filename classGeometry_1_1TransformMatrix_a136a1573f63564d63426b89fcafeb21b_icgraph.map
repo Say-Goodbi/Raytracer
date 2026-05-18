@@ -1,7 +1,11 @@
 <map id="Geometry::TransformMatrix::operator*" name="Geometry::TransformMatrix::operator*">
-<area shape="rect" id="Node000001" title=" " alt="" coords="408,5,609,45"/>
-<area shape="rect" id="Node000002" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="207,5,360,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="394,28,360,28,360,23,394,23"/>
-<area shape="rect" id="Node000003" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="5,5,159,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="193,28,159,28,159,23,193,23"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="421,37,623,77"/>
+<area shape="rect" id="Node000002" href="$classRayTracer_1_1BVHCam.html#a4a4e49d9f065cf0844d84706c340147f" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="213,5,373,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="407,44,373,39,374,34,408,39"/>
+<area shape="rect" id="Node000004" href="$classRayTracer_1_1Camera.html#a4a7f4b6a0e5bf44d17162fb324c289bd" title="Build a world&#45;space ray from normalized screen coordinates." alt="" coords="217,69,370,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="408,76,371,81,370,76,407,71"/>
+<area shape="rect" id="Node000003" href="$classRayTracer_1_1BVHCam.html#a26338649c825eb2ded1c9e4c9e889452" title="Render the scene into a 2D framebuffer." alt="" coords="5,5,165,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="200,28,166,28,166,23,200,23"/>
+<area shape="rect" id="Node000005" href="$classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187" title="Render the scene into a 2D framebuffer." alt="" coords="9,69,162,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="203,92,162,92,162,87,203,87"/>
 </map>

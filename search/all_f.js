@@ -16,14 +16,15 @@ var searchData=
   ['rectangle3d_13',['rectangle3d',['../classGeometry_1_1Rectangle3D.html#a2d143a0f3469df16a3e20011d382b6ef',1,'Geometry::Rectangle3D::Rectangle3D()'],['../classGeometry_1_1Rectangle3D.html',1,'Geometry::Rectangle3D'],['../geometry_page.html#geo_rect',1,'Rectangle3D']]],
   ['rectangle3d_2ecpp_14',['Rectangle3D.cpp',['../Rectangle3D_8cpp.html',1,'']]],
   ['rectangle3d_2ehpp_15',['Rectangle3D.hpp',['../Rectangle3D_8hpp.html',1,'']]],
-  ['render_16',['render',['../classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187',1,'RayTracer::Camera::render()'],['../classRayTracer_1_1ARenderer.html#a3280ccfc3779b2f93695b65e94166294',1,'RayTracer::ARenderer::render(Scene &amp;scene)'],['../classRayTracer_1_1ARenderer.html#aba1715a2e7e2f5555194f9ed67fb2d69',1,'RayTracer::ARenderer::render(Scene &amp;scene, std::vector&lt; std::vector&lt; Color &gt; &gt; &amp;framebuffer)=0']]],
+  ['render_16',['render',['../classRayTracer_1_1BVHCam.html#a26338649c825eb2ded1c9e4c9e889452',1,'RayTracer::BVHCam::render()'],['../classRayTracer_1_1Camera.html#a32d328268bd310d35df62adcef914187',1,'RayTracer::Camera::render()'],['../classRayTracer_1_1ARenderer.html#a3280ccfc3779b2f93695b65e94166294',1,'RayTracer::ARenderer::render(Scene &amp;scene)'],['../classRayTracer_1_1ARenderer.html#aba1715a2e7e2f5555194f9ed67fb2d69',1,'RayTracer::ARenderer::render(Scene &amp;scene, std::vector&lt; std::vector&lt; Color &gt; &gt; &amp;framebuffer)=0']]],
   ['renderer_17',['Renderer',['../renderer_page.html',1,'index']]],
   ['renderer_2edox_18',['renderer.dox',['../renderer_8dox.html',1,'']]],
   ['rendering_20pipeline_19',['Rendering Pipeline',['../index.html#pipeline',1,'']]],
   ['rendersceneasync_20',['renderSceneAsync',['../classRayTracer_1_1Livescene.html#aa3cf3e70ee5a6163dfdba5eccb5987fe',1,'RayTracer::Livescene']]],
   ['right_21',['right',['../structRayTracer_1_1BVH_1_1Node.html#a9f74ad3fe044b03a0c5bbe6cd0cdc372',1,'RayTracer::BVH::Node']]],
   ['rng_22',['rng',['../classRayTracer_1_1Utils.html#a30d72a060a1b268a6ca81e900c2616d1',1,'RayTracer::Utils']]],
-  ['rotationx_23',['rotationX',['../classGeometry_1_1TransformMatrix.html#acff8638f8a3e9f4ed6e462c1b39c4083',1,'Geometry::TransformMatrix']]],
-  ['rotationy_24',['rotationY',['../classGeometry_1_1TransformMatrix.html#a75fbc44956cff1212e332c49862f6b09',1,'Geometry::TransformMatrix']]],
-  ['rotationz_25',['rotationZ',['../classGeometry_1_1TransformMatrix.html#aea39d6665c49e892c46f10c545622ec5',1,'Geometry::TransformMatrix']]]
+  ['root_23',['root',['../classRayTracer_1_1BVH.html#acbb26478ae1f75eee81e679281416c0e',1,'RayTracer::BVH']]],
+  ['rotationx_24',['rotationX',['../classGeometry_1_1TransformMatrix.html#acff8638f8a3e9f4ed6e462c1b39c4083',1,'Geometry::TransformMatrix']]],
+  ['rotationy_25',['rotationY',['../classGeometry_1_1TransformMatrix.html#a75fbc44956cff1212e332c49862f6b09',1,'Geometry::TransformMatrix']]],
+  ['rotationz_26',['rotationZ',['../classGeometry_1_1TransformMatrix.html#aea39d6665c49e892c46f10c545622ec5',1,'Geometry::TransformMatrix']]]
 ];

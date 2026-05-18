@@ -1,11 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" href="$classRayTracer_1_1IMaterial.html" title="Interface for physically&#45;based surface materials." alt="" coords="5,55,157,80"/>
 <area shape="rect" id="Node000001" href="$classRayTracer_1_1AMaterial.html" title="Abstract base class for all materials. Defines the interface for evaluating the BRDF,..." alt="" coords="205,55,363,80"/>
-<area shape="poly" id="edge11_Node000000_Node000001" title=" " alt="" coords="171,65,205,65,205,70,171,70"/>
+<area shape="poly" id="edge13_Node000000_Node000001" title=" " alt="" coords="171,65,205,65,205,70,171,70"/>
 <area shape="rect" id="Node000002" href="$classRayTracer_1_1Glass.html" title=" " alt="" coords="429,5,560,31"/>
-<area shape="poly" id="edge12_Node000001_Node000002" title=" " alt="" coords="351,49,439,28,440,33,353,54"/>
+<area shape="poly" id="edge14_Node000001_Node000002" title=" " alt="" coords="351,49,439,28,440,33,353,54"/>
 <area shape="rect" id="Node000003" href="$classRayTracer_1_1Lambertian.html" title=" " alt="" coords="411,55,579,80"/>
-<area shape="poly" id="edge13_Node000001_Node000003" title=" " alt="" coords="376,65,411,65,411,70,376,70"/>
+<area shape="poly" id="edge15_Node000001_Node000003" title=" " alt="" coords="376,65,411,65,411,70,376,70"/>
 <area shape="rect" id="Node000004" href="$classRayTracer_1_1Phong.html" title=" " alt="" coords="427,104,562,129"/>
-<area shape="poly" id="edge14_Node000001_Node000004" title=" " alt="" coords="353,81,440,101,439,107,351,86"/>
+<area shape="poly" id="edge16_Node000001_Node000004" title=" " alt="" coords="353,81,440,101,439,107,351,86"/>
 </map>

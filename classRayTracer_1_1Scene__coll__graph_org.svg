@@ -21,40 +21,40 @@
 <text text-anchor="start" x="6.5" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="17" y="-247" font-family="Helvetica,sans-Serif" font-size="10.00">_lights</text>
 <text text-anchor="start" x="6.5" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="17" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00">_useBVH</text>
+<text text-anchor="start" x="17" y="-232" font-family="Helvetica,sans-Serif" font-size="10.00">_bvh</text>
 <text text-anchor="start" x="6.5" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="17" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00">_bvh</text>
-<text text-anchor="start" x="6.5" y="-202" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="17" y="-202" font-family="Helvetica,sans-Serif" font-size="10.00">_unboundedPrimitives</text>
+<text text-anchor="start" x="17" y="-217" font-family="Helvetica,sans-Serif" font-size="10.00">_unboundedPrimitives</text>
+<text text-anchor="start" x="4" y="-202" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-202" font-family="Helvetica,sans-Serif" font-size="10.00">Scene()</text>
 <text text-anchor="start" x="4" y="-187" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="17" y="-187" font-family="Helvetica,sans-Serif" font-size="10.00">Scene()</text>
 <text text-anchor="start" x="4" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">Scene()</text>
+<text text-anchor="start" x="17" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">~Scene()</text>
 <text text-anchor="start" x="4" y="-157" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-157" font-family="Helvetica,sans-Serif" font-size="10.00">~Scene()</text>
+<text text-anchor="start" x="17" y="-157" font-family="Helvetica,sans-Serif" font-size="10.00">addPrimitive()</text>
 <text text-anchor="start" x="4" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00">addPrimitive()</text>
+<text text-anchor="start" x="17" y="-142" font-family="Helvetica,sans-Serif" font-size="10.00">addPrimitives()</text>
 <text text-anchor="start" x="4" y="-127" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-127" font-family="Helvetica,sans-Serif" font-size="10.00">addPrimitives()</text>
+<text text-anchor="start" x="17" y="-127" font-family="Helvetica,sans-Serif" font-size="10.00">addLight()</text>
 <text text-anchor="start" x="4" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">addLight()</text>
+<text text-anchor="start" x="17" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">prepareAccelerationStructure()</text>
 <text text-anchor="start" x="4" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00">prepareAccelerationStructure()</text>
+<text text-anchor="start" x="17" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00">hit()</text>
 <text text-anchor="start" x="4" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">hit()</text>
+<text text-anchor="start" x="17" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">addLights()</text>
 <text text-anchor="start" x="4" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">addLights()</text>
+<text text-anchor="start" x="17" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">getRenderer()</text>
 <text text-anchor="start" x="4" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00">getRenderer()</text>
+<text text-anchor="start" x="17" y="-52" font-family="Helvetica,sans-Serif" font-size="10.00">getPrimitives()</text>
 <text text-anchor="start" x="4" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">getPrimitives()</text>
+<text text-anchor="start" x="17" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">getLights()</text>
 <text text-anchor="start" x="4" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">getLights()</text>
+<text text-anchor="start" x="17" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">getBVH()</text>
 <text text-anchor="start" x="4" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="17" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">updateCamera()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-287 0,-287 172,-287 172,-287 0,-287"/>
-<polygon fill="#666666" stroke="#666666" points="0,-197 0,-197 15,-197 15,-197 0,-197"/>
-<polygon fill="#666666" stroke="#666666" points="15,-197 15,-197 172,-197 172,-197 15,-197"/>
+<polygon fill="#666666" stroke="#666666" points="0,-212 0,-212 15,-212 15,-212 0,-212"/>
+<polygon fill="#666666" stroke="#666666" points="15,-212 15,-212 172,-212 172,-212 15,-212"/>
 <polygon fill="none" stroke="#666666" points="0,0 0,-304 172,-304 172,0 0,0"/>
 </a>
 </g>
