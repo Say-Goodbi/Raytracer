@@ -3,6 +3,8 @@
 #include "../../../../../Utils/Color.hpp"
 #include <algorithm>
 #include <chrono>
+#include <cstdint>
+#include <optional>
 
 namespace
 {
@@ -34,30 +36,31 @@ namespace RayTracer
         const unsigned int height = static_cast<unsigned int>(frameBuffer.size());
 
         sf::Image image;
-        image.create(width, height, sf::Color::Black);
+        image.resize(sf::Vector2u(width, height), sf::Color::Black);
 
         for (unsigned int y = 0; y < height; ++y) {
             for (unsigned int x = 0; x < width; ++x) {
                 const Color& color = frameBuffer[y][x];
-                const sf::Uint8 red = static_cast<sf::Uint8>(std::clamp(color.r, 0.0, 1.0) * 255.0);
-                const sf::Uint8 green = static_cast<sf::Uint8>(std::clamp(color.g, 0.0, 1.0) * 255.0);
-                const sf::Uint8 blue = static_cast<sf::Uint8>(std::clamp(color.b, 0.0, 1.0) * 255.0);
-                image.setPixel(x, y, sf::Color(red, green, blue));
+                const std::uint8_t red = static_cast<std::uint8_t>(std::clamp(color.r, 0.0, 1.0) * 255.0);
+                const std::uint8_t green = static_cast<std::uint8_t>(std::clamp(color.g, 0.0, 1.0) * 255.0);
+                const std::uint8_t blue = static_cast<std::uint8_t>(std::clamp(color.b, 0.0, 1.0) * 255.0);
+                image.setPixel(sf::Vector2u(x, y), sf::Color(red, green, blue));
             }
         }
 
-        texture.loadFromImage(image);
+        if (!texture.loadFromImage(image))
+            return texture;
         return texture;
     }
 
     void Livescene::handleWindowEvents(sf::RenderWindow& window)
     {
-        sf::Event event;
-        while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
+        while (const std::optional event = window.pollEvent()) {
+            if (event->is<sf::Event::Closed>())
                 window.close();
-            if (event.type == sf::Event::KeyPressed &&
-                (event.key.code == sf::Keyboard::Q || event.key.code == sf::Keyboard::Escape))
+            if (event->is<sf::Event::KeyPressed>() &&
+                (event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Q ||
+                    event->getIf<sf::Event::KeyPressed>()->code == sf::Keyboard::Key::Escape))
                 window.close();
         }
     }
@@ -69,9 +72,9 @@ namespace RayTracer
         const sf::Vector2u textureSize = texture.getSize();
 
         if (textureSize.x > 0 && textureSize.y > 0) {
-            sprite.setScale(
+            sprite.setScale(sf::Vector2f(
                 static_cast<float>(size.x) / static_cast<float>(textureSize.x),
-                static_cast<float>(size.y) / static_cast<float>(textureSize.y));
+                static_cast<float>(size.y) / static_cast<float>(textureSize.y)));
         }
 
         window.clear(sf::Color::Black);
@@ -93,7 +96,7 @@ namespace RayTracer
 
         renderThread.detach();
         sf::RenderWindow window(
-            sf::VideoMode(_renderer->getWidth(), _renderer->getHeight()),
+            sf::VideoMode(sf::Vector2u(static_cast<unsigned int>(_renderer->getWidth()), static_cast<unsigned int>(_renderer->getHeight()))),
             "LiveScene",
             sf::Style::Titlebar | sf::Style::Close);
         window.setVerticalSyncEnabled(true);
