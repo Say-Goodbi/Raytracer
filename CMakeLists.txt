@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
 project(raytracer CXX)
 
+cmake_policy(SET CMP0110 NEW)
+
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/plugins)
 
 include(FetchContent)
 FetchContent_Declare(
@@ -16,7 +17,15 @@ set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(BUILD_TESTS    OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(libconfig)
 
-find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+set(SFML_BUILD_NETWORK OFF CACHE BOOL "" FORCE)
+FetchContent_Declare(
+    SFML
+    GIT_REPOSITORY https://github.com/SFML/SFML.git
+)
+set(SFML_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(SFML_BUILD_TESTS    OFF CACHE BOOL "" FORCE)
+set(SFML_BUILD_AUDIO OFF CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(SFML)
 
 add_compile_options(-O3 -ffast-math -march=native)
 
@@ -49,6 +58,7 @@ target_link_libraries(raytracer PRIVATE
 target_link_options(raytracer PRIVATE -rdynamic)
 
 # ── Plugin shared libraries (.so) ─────────────────────────────────────────────
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/plugins)
 file(GLOB PLUGIN_DIRS ${CMAKE_SOURCE_DIR}/src/Objects/Plugins/*)
 
 foreach(PLUGIN_DIR ${PLUGIN_DIRS})
@@ -72,4 +82,46 @@ foreach(PLUGIN_DIR ${PLUGIN_DIRS})
             target_link_libraries(${PLUGIN_NAME} PRIVATE sfml-graphics sfml-window sfml-system)
         endif()
     endif()
+endforeach()
+
+# ── Unit tests ───────────────────────────────────────────────────────────────
+
+include(CTest)
+
+enable_testing()
+
+file(GLOB_RECURSE TEST_SOURCES tests/*.cpp)
+
+add_executable(tests_run
+    ${TEST_SOURCES}
+    ${SYSTEM_SOURCES}
+    ${INTERFACE_SOURCES}
+    ${SCENE_WRITER_SOURCES}
+)
+
+target_compile_options(tests_run PRIVATE -O0 -g --coverage)
+target_link_options(tests_run PRIVATE --coverage)
+
+target_include_directories(tests_run PRIVATE src)
+
+target_link_libraries(tests_run PRIVATE criterion config++)
+
+foreach(TEST_FILE ${TEST_SOURCES})
+    file(READ ${TEST_FILE} TEST_CONTENTS)
+
+    string(REGEX MATCHALL "Test\\([^,]+,\\s*[^)]+\\)" TEST_MATCHES "${TEST_CONTENTS}")
+
+    foreach(TEST_MATCH ${TEST_MATCHES})
+        string(REGEX REPLACE "Test\\(\\s*([^,]+),.*" "\\1" TEST_SUITE "${TEST_MATCH}")
+        string(STRIP "${TEST_SUITE}" TEST_SUITE)
+
+        string(REGEX REPLACE "Test\\([^,]+,\\s*([^)]+)\\).*" "\\1" TEST_NAME "${TEST_MATCH}")
+        string(STRIP "${TEST_NAME}" TEST_NAME)
+
+        string(REPLACE "/" "_" CT_NAME "${TEST_SUITE}_${TEST_NAME}")
+        string(REGEX REPLACE "[^A-Za-z0-9_.-]" "_" CT_NAME "${CT_NAME}")
+
+        add_test(NAME ${CT_NAME} COMMAND tests_run --filter "${TEST_SUITE}/${TEST_NAME}" --timeout 10)
+        set_tests_properties(${CT_NAME} PROPERTIES WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
+    endforeach()
 endforeach()

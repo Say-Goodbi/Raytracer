@@ -4,11 +4,13 @@ commitlint.config.js
 .husky/
 
 raytracer
+tests_run
 *.o
 *.so
 not-to-push
 lib*
 Makefile
+Testing
 .vscode
 CMakeFiles
 CMakeCache.txt

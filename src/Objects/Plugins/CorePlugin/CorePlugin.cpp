@@ -26,34 +26,34 @@
 
 extern "C"
 {
-    std::map<std::string, std::function<std::shared_ptr<RayTracer::IMaterial>(const RayTracer::Color &)>> _materials = {
-        {"lambertian", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
-        {
-            return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Lambertian>(color));
-        }},
-        {"phong", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
-        {
-            return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Phong>(color));
-        }},
-        {"glass", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
-        {
-            return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Glass>(color));
-        }}
-    };
-
-    std::shared_ptr<RayTracer::IMaterial> getMaterialInstance(const std::string &type, const RayTracer::Color &color)
-    {
-        std::map<std::string, std::function<std::shared_ptr<RayTracer::IMaterial>(const RayTracer::Color &)>>::const_iterator it = _materials.find(type);
     
-        if (it == _materials.end())
-            throw RayTracer::ParsingException("Unknown material type: " + type);
-        return it->second(color);
-    }
-
     std::string getName() { return "CorePlugin"; };
-
+    
     std::map<std::string, std::function<RayTracer::Component(RayTracer::NodePtr)>> getInitializers()
     {
+        std::map<std::string, std::function<std::shared_ptr<RayTracer::IMaterial>(const RayTracer::Color &)>> _materials = {
+            {"lambertian", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
+            {
+                return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Lambertian>(color));
+            }},
+            {"phong", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
+            {
+                return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Phong>(color));
+            }},
+            {"glass", [](const RayTracer::Color &color) -> std::shared_ptr<RayTracer::IMaterial>
+            {
+                return std::static_pointer_cast<RayTracer::IMaterial>(std::make_shared<RayTracer::Glass>(color));
+            }}
+        };
+    
+        std::function<std::shared_ptr<RayTracer::IMaterial>(const std::string&, const RayTracer::Color&)>
+            getMaterialInstance = [_materials](const std::string &type, const RayTracer::Color &color) {
+                auto it = _materials.find(type);
+                if (it == _materials.end())
+                    throw RayTracer::ParsingException("Unknown material type: " + type);
+                return it->second(color);
+            };
+        
         return {
             {
                 "SceneWriter", [](RayTracer::NodePtr) -> RayTracer::Component
@@ -102,7 +102,7 @@ extern "C"
             },
             // Primitive
             {
-                "planes", [](RayTracer::NodePtr node) -> RayTracer::Component
+                "planes", [getMaterialInstance](RayTracer::NodePtr node) -> RayTracer::Component
                 {
                     const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
 
@@ -121,7 +121,7 @@ extern "C"
                 }
             },
             {
-                "spheres", [](RayTracer::NodePtr node) -> RayTracer::Component
+                "spheres", [getMaterialInstance](RayTracer::NodePtr node) -> RayTracer::Component
                 {
                     const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
 
@@ -139,7 +139,7 @@ extern "C"
                 }
             },
             {
-                "cylinders", [](RayTracer::NodePtr node) -> RayTracer::Component
+                "cylinders", [getMaterialInstance](RayTracer::NodePtr node) -> RayTracer::Component
                 {
                     const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
 
@@ -161,7 +161,7 @@ extern "C"
                 }
             },
             {
-                "cones", [](RayTracer::NodePtr node) -> RayTracer::Component
+                "cones", [getMaterialInstance](RayTracer::NodePtr node) -> RayTracer::Component
                 {
                     const RayTracer::Object &settingsMap = std::get<RayTracer::Object>(node->value);
 
