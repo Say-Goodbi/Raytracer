@@ -79,7 +79,6 @@ namespace RayTracer
         window.display();
     }
 
-    /// @todo Add a way to signal the render thread to stop early when the window is closed, to avoid unnecessary work and issues with detached threads. Early termination currently results in a segmentation fault.
     void Livescene::execute(Scene& scene, std::map<std::string, std::string> &parameters)
     {
         if (_renderer == nullptr)
@@ -91,7 +90,6 @@ namespace RayTracer
             std::ref(scene), frameBuffer, renderError);
         pthread_t renderThreadHandle = renderThread.native_handle();
 
-        renderThread.detach();
         sf::RenderWindow window(
             sf::VideoMode(_renderer->getWidth(), _renderer->getHeight()),
             "LiveScene",
@@ -105,7 +103,8 @@ namespace RayTracer
             std::this_thread::sleep_for(kFramePollDelay);
         }
         std::this_thread::sleep_for(kFramePollDelay);
-        pthread_cancel(renderThreadHandle);
+        if (renderThread.joinable())
+            renderThread.join();
         if (*renderError)
             std::rethrow_exception(*renderError);
     }
