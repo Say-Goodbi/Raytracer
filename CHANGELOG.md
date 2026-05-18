@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/Say-Goodbi/Raytracer/compare/v1.9.0...v1.9.1) (2026-05-18)
+
+
+### Bug Fixes
+
+* livescene thread wait ([6d74d99](https://github.com/Say-Goodbi/Raytracer/commit/6d74d990d3de99e226c92c5f8f6f0f771a48043a))
+
 # [1.9.0](https://github.com/Say-Goodbi/Raytracer/compare/v1.8.0...v1.9.0) (2026-05-18)
 
 
