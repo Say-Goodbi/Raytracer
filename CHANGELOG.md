@@ -1,3 +1,13 @@
+## [1.9.2](https://github.com/Say-Goodbi/Raytracer/compare/v1.9.1...v1.9.2) (2026-05-20)
+
+
+### Bug Fixes
+
+* add gcovr installation to dependencies in CI workflow ([516c998](https://github.com/Say-Goodbi/Raytracer/commit/516c998cc0bb7286213ecf89f25cc60d14219491))
+* add gcovr to dependencies for coverage reporting ([203cb14](https://github.com/Say-Goodbi/Raytracer/commit/203cb145eab1bb6caf62d51cff16a2efb248595b))
+* correct command sequence in test script for coverage reporting ([094fc49](https://github.com/Say-Goodbi/Raytracer/commit/094fc499100e39f9da351923a7ec197d032b40c5))
+* enhance test script to include gcovr for coverage reporting ([a542be4](https://github.com/Say-Goodbi/Raytracer/commit/a542be4df0905b84d8b75c7becec4f457fd27616))
+
 ## [1.9.1](https://github.com/Say-Goodbi/Raytracer/compare/v1.9.0...v1.9.1) (2026-05-18)
 
 
