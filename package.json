@@ -14,6 +14,6 @@
   "scripts": {
     "prepare": "husky",
     "build": "mkdir build && cd build && cmake .. && make",
-    "test": "mkdir build && cd build && cmake .. && make && ctest && gcovr -r . --object-directory build"
+    "test": "mkdir build && cd build && cmake .. && make && ctest && cd .. && gcovr -r . --object-directory build"
   }
 }
