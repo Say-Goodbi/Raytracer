@@ -9,7 +9,7 @@ var searchData=
   ['parsingexception_2ehpp_6',['ParsingException.hpp',['../ParsingException_8hpp.html',1,'']]],
   ['partitioning_7',['Space Partitioning',['../space_partitioning.html',1,'scene_system_page']]],
   ['path_20tracing_20—_20castray_8',['Path Tracing — castRay',['../renderer_page.html#rend_pathtrace',1,'']]],
-  ['pdf_9',['pdf',['../classRayTracer_1_1Glass.html#abb0cef9dba78c9009feddb657ab45cef',1,'RayTracer::Glass::pdf()'],['../classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2',1,'RayTracer::Phong::pdf()'],['../classRayTracer_1_1Lambertian.html#a0a74c9347b24b236af1e44c302ac7c5e',1,'RayTracer::Lambertian::pdf()'],['../classRayTracer_1_1IMaterial.html#a2b3e2b7f5cf291a25885aaf2d39d5582',1,'RayTracer::IMaterial::pdf()']]],
+  ['pdf_9',['pdf',['../classRayTracer_1_1IMaterial.html#a2b3e2b7f5cf291a25885aaf2d39d5582',1,'RayTracer::IMaterial::pdf()'],['../classRayTracer_1_1Glass.html#abb0cef9dba78c9009feddb657ab45cef',1,'RayTracer::Glass::pdf()'],['../classRayTracer_1_1Phong.html#af9bc5125da9a856062f5284e36ceb5b2',1,'RayTracer::Phong::pdf()'],['../classRayTracer_1_1Lambertian.html#a0a74c9347b24b236af1e44c302ac7c5e',1,'RayTracer::Lambertian::pdf()']]],
   ['phong_10',['phong',['../classRayTracer_1_1Phong.html',1,'RayTracer::Phong'],['../classRayTracer_1_1Phong.html#aed034ba959eedee570e3572385c8ae09',1,'RayTracer::Phong::Phong()'],['../materials_page.html#mat_phong',1,'Phong']]],
   ['phong_2ecpp_11',['Phong.cpp',['../Phong_8cpp.html',1,'']]],
   ['phong_2ehpp_12',['Phong.hpp',['../Phong_8hpp.html',1,'']]],

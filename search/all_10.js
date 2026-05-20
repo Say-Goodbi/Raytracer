@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sample_0',['sample',['../classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd',1,'RayTracer::Phong::sample()'],['../classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838',1,'RayTracer::Lambertian::sample()'],['../classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80',1,'RayTracer::IMaterial::sample()'],['../classRayTracer_1_1Glass.html#a2c9fb925e8ccd41d68e1126530937c84',1,'RayTracer::Glass::sample()']]],
+  ['sample_0',['sample',['../classRayTracer_1_1Glass.html#a2c9fb925e8ccd41d68e1126530937c84',1,'RayTracer::Glass::sample()'],['../classRayTracer_1_1Phong.html#a2fe3eab64f5b9ab9ab73976f0c8b80fd',1,'RayTracer::Phong::sample()'],['../classRayTracer_1_1Lambertian.html#a9cf81ac3f6c0b5cc08c14d5f30e77838',1,'RayTracer::Lambertian::sample()'],['../classRayTracer_1_1IMaterial.html#ade12fb28f824d8b9f9627bc3692afa80',1,'RayTracer::IMaterial::sample()']]],
   ['sampling_1',['Stratified Sampling',['../renderer_page.html#rend_stratified',1,'']]],
   ['scalarvalue_2',['ScalarValue',['../namespaceRayTracer.html#a9feb69729b51161cd40926040c42c562',1,'RayTracer']]],
   ['scaling_3',['scaling',['../classGeometry_1_1TransformMatrix.html#a5c6d12321bf1dcf7aa84380811b20798',1,'Geometry::TransformMatrix']]],
